@@ -1,0 +1,35 @@
+
+/* Layout: one calm vertical scroll in the brand's ivory, ink and ochre; the LM mark leads, the L/V pattern breathes behind. */
+:root {
+  --bg: #F4F0E8;          /* ivory */
+  --surface: #FFFFFF;     /* white */
+  --sunk: #E9E1D0;        /* photo placeholder ground */
+  --fg: #17191B;          /* ink */
+  --muted: #5F5A50;
+  --line: #DCD3C0;
+  --accent: #7B5D08;      /* ochre */
+  --accent-2: #B48A1E;    /* lighter ochre for the sheen */
+  --band: #17191B;        /* dark band */
+  --band-fg: #F4F0E8;
+  --on-accent: #FFFFFF;
+  --pat: #7B5D08;
+  --font-ar: "Noto Kufi Arabic", "Segoe UI", Tahoma, sans-serif;
+  --font-en: "Almarai", "Noto Kufi Arabic", Arial, sans-serif;
+  --step--1: clamp(.85rem, .8rem + .2vw, .95rem);
+  --step-0: clamp(1rem, .95rem + .25vw, 1.12rem);
+  --step-1: clamp(1.2rem, 1.1rem + .5vw, 1.45rem);
+  --step-2: clamp(1.5rem, 1.25rem + 1.1vw, 2.2rem);
+  --step-3: clamp(2.1rem, 1.6rem + 2.4vw, 3.6rem);
+  --step-4: clamp(2.6rem, 1.8rem + 4vw, 5.2rem);
+  --wrap: 1180px;
+  --ease: cubic-bezier(.2,.7,.1,1);
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121315; --surface: #1B1D20; --sunk: #24231F; --fg: #F1ECE2; --muted: #B3AB9C; --line: #34322C;
+  --accent: #C9A040; --accent-2: #E3C27A; --band: #0B0C0D; --band-fg: #F1ECE2; --on-accent: #17191B; --pat: #C9A040;
+  color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #121315; --surface: #1B1D20; --sunk: #24231F; --fg: #F1ECE2; --muted: #B3AB9C; --line: #34322C;
+  --accent: #C9A040; --accent-2: #E3C27A; --band: #0B0C0D; --band-fg: #F1ECE2; --on-accent: #17191B; --pat: #C9A040;
+  color-scheme: dark }
+

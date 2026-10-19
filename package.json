@@ -1,0 +1,20 @@
+{
+  "name": "magic-look-profile",
+  "private": true,
+  "version": "1.0.0",
+  "description": "الملف التعريفي لمؤسسة النظرة الساحرة MAGIC LOOK كموقع ويب",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.3",
+    "typescript": "5.8.3",
+    "vite": "6.3.5",
+    "vitest": "3.2.4"
+  }
+}

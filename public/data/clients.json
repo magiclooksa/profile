@@ -1,0 +1,16 @@
+{
+  "segments": [
+    { "title": "الأفراد", "text": "أصحاب المنازل والفلل، والمقبلون على تجهيز منزل جديد، والراغبون في تجديد مساحة قائمة." },
+    { "title": "الأعمال", "text": "المكاتب، والمحلات، وصالات العرض، والمنشآت التجارية." },
+    { "title": "قطاع المشاريع", "text": "المقاولون، والمطورون العقاريون، ومكاتب التصميم، وشركات التشطيب." }
+  ],
+  "partners": [
+    { "name": null, "logo": null }, { "name": null, "logo": null }, { "name": null, "logo": null },
+    { "name": null, "logo": null }, { "name": null, "logo": null }, { "name": null, "logo": null }
+  ],
+  "credentials": [
+    { "title": "السجل التجاري", "image": { "src": null, "caption": "صورة الشهادة" } },
+    { "title": null, "image": { "src": null, "caption": "صورة الشهادة" } },
+    { "title": null, "image": { "src": null, "caption": "صورة من المشاركة في معرض أو فعالية" } }
+  ]
+}

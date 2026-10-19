@@ -1,0 +1,52 @@
+* { box-sizing: border-box }
+html { scroll-behavior: smooth }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-ar); font-size: var(--step-0); line-height: 1.85; direction: rtl; overflow-x: hidden }
+h1, h2, h3, p, ul, ol { margin: 0 }
+h1, h2, h3 { text-wrap: balance; line-height: 1.35 }
+a { color: inherit }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px }
+.wrap { max-width: var(--wrap); margin-inline: auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)) }
+.latin { font-family: var(--font-en); direction: ltr; unicode-bidi: isolate }
+
+/* mark rendered from the logo's own alpha, so it takes any token colour */
+.mark { display: block; aspect-ratio: 682 / 450; background: var(--accent);
+  -webkit-mask: url('../assets/mark.png') center / contain no-repeat; mask: url('../assets/mark.png') center / contain no-repeat }
+
+/* pattern from the identity: the L corner and the V of the mark */
+.pattern { position: absolute; inset: 0; pointer-events: none; overflow: hidden; color: var(--pat); opacity: .13 }
+.pattern svg { position: absolute; inset: -120px; width: calc(100% + 240px); height: calc(100% + 240px); animation: drift 60s linear infinite }
+@keyframes drift { to { transform: translate(-120px, -120px) } }
+
+/* nav */
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--bg) }
+.nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid transparent; transition: border-color .3s }
+.nav.scrolled { border-bottom-color: var(--line) }
+.nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none }
+.brand .mark { width: 46px }
+.brand b { display: block; font-weight: 500; font-size: 1rem; line-height: 1.2 }
+.brand small { display: block; font-family: var(--font-en); font-weight: 800; font-size: .66rem; letter-spacing: .28em; color: var(--accent); direction: ltr; text-align: right }
+.nav ul { display: flex; gap: clamp(12px, 2vw, 30px); list-style: none; padding: 0; font-size: var(--step--1) }
+.nav ul a { text-decoration: none; position: relative; padding-block: 4px }
+.nav ul a::after { content: ""; position: absolute; inset: auto 0 -2px 0; height: 2px; background: var(--accent); transform: scaleX(0); transform-origin: right; transition: transform .35s var(--ease) }
+.nav ul a:hover::after, .nav ul a.active::after { transform: scaleX(1) }
+@media (max-width: 760px) { .nav ul { display: none } }
+
+
+/* photos and their placeholders */
+.media { margin: 0; position: relative; overflow: hidden; background: var(--sunk) }
+.media img { display: block; width: 100%; height: 100%; object-fit: cover }
+.ph { position: relative; overflow: hidden; background: var(--sunk); min-height: 220px; display: grid; place-items: center; isolation: isolate }
+.ph .pattern { opacity: .16 }
+.ph .ph-in { position: relative; display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; padding: 16px }
+.ph .mark { width: 74px; opacity: .55 }
+.ph span { font-size: var(--step--1); color: var(--accent); background: color-mix(in srgb, var(--surface) 80%, transparent); padding: 4px 16px; border-radius: 99px }
+
+
+/* boot and error states */
+.boot { min-height: 60vh; display: grid; place-items: center }
+.boot::after { content: ""; width: 42px; height: 42px; border: 3px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: spin 1s linear infinite }
+@keyframes spin { to { transform: rotate(360deg) } }
+.load-error { max-width: 640px; margin: 15vh auto; padding-inline: 16px; display: flex; flex-direction: column; gap: 12px }
+.load-error h1 { font-size: var(--step-2); color: var(--accent) }

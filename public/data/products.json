@@ -1,0 +1,15 @@
+{
+  "intro": "مع إمكانية تخصيص المقاس واللون والقماش والتشطيب.",
+  "items": [
+    { "icon": "sofa", "name": "كنب ومجالس" },
+    { "icon": "bed", "name": "غرف نوم وأسرّة" },
+    { "icon": "chair", "name": "كراسي" },
+    { "icon": "table", "name": "طاولات" },
+    { "icon": "tv", "name": "وحدات تلفزيون" },
+    { "icon": "mirror", "name": "مرايا" },
+    { "icon": "partition", "name": "قواطع خشبية" },
+    { "icon": "cabinet", "name": "وحدات جدارية وخزائن" },
+    { "icon": "curtain", "name": "ستائر" },
+    { "icon": "lamp", "name": "إضاءة وإكسسوارات" }
+  ]
+}

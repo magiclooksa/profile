@@ -1,0 +1,62 @@
+[
+  {
+    "id": "residential-01",
+    "name": null,
+    "category": "سكني",
+    "city": null,
+    "colors": [],
+    "layout": "mosaic",
+    "images": [
+      { "src": null, "caption": "المجلس الرئيسي" },
+      { "src": null, "caption": "غرفة المعيشة" },
+      { "src": null, "caption": "غرفة الطعام" },
+      { "src": null, "caption": "تفصيلة الكنب" },
+      { "src": null, "caption": "الإضاءة والسقف" }
+    ]
+  },
+  {
+    "id": "bedrooms-01",
+    "name": null,
+    "category": "غرف نوم",
+    "city": null,
+    "colors": [],
+    "layout": "slideshow",
+    "images": [
+      { "src": null, "caption": "غرفة النوم الرئيسية" },
+      { "src": null, "caption": "لوح رأس السرير" },
+      { "src": null, "caption": "التسريحة والمرآة" },
+      { "src": null, "caption": "غرفة الملابس" },
+      { "src": null, "caption": "ركن الجلوس" }
+    ]
+  },
+  {
+    "id": "renovation-01",
+    "name": null,
+    "category": "قبل وبعد",
+    "city": null,
+    "colors": [],
+    "layout": "compare",
+    "before": { "src": null, "caption": "قبل التنفيذ" },
+    "after": { "src": null, "caption": "بعد التنفيذ" },
+    "images": [
+      { "src": null, "caption": "تفصيلة الوحدة" },
+      { "src": null, "caption": "القواطع الخشبية" }
+    ]
+  },
+  {
+    "id": "commercial-01",
+    "name": null,
+    "category": "تجاري",
+    "city": null,
+    "colors": [],
+    "layout": "filmstrip",
+    "images": [
+      { "src": null, "caption": "الواجهة" },
+      { "src": null, "caption": "منطقة الاستقبال" },
+      { "src": null, "caption": "منطقة الانتظار" },
+      { "src": null, "caption": "الإضاءة" },
+      { "src": null, "caption": "التفاصيل الخشبية" },
+      { "src": null, "caption": "صالة العرض" }
+    ]
+  }
+]
