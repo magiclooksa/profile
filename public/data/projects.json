@@ -1,62 +1,466 @@
 [
   {
-    "id": "residential-01",
-    "name": null,
-    "category": "سكني",
+    "id": "majlis-collection",
+    "name": "مجالس وكنب زاوية",
+    "category": "كنب ومجالس",
     "city": null,
-    "colors": [],
-    "layout": "mosaic",
-    "images": [
-      { "src": null, "caption": "المجلس الرئيسي" },
-      { "src": null, "caption": "غرفة المعيشة" },
-      { "src": null, "caption": "غرفة الطعام" },
-      { "src": null, "caption": "تفصيلة الكنب" },
-      { "src": null, "caption": "الإضاءة والسقف" }
-    ]
-  },
-  {
-    "id": "bedrooms-01",
-    "name": null,
-    "category": "غرف نوم",
-    "city": null,
-    "colors": [],
+    "colors": [
+      "#806A55",
+      "#D9D2C5",
+      "#F7F4EB"
+    ],
     "layout": "slideshow",
     "images": [
-      { "src": null, "caption": "غرفة النوم الرئيسية" },
-      { "src": null, "caption": "لوح رأس السرير" },
-      { "src": null, "caption": "التسريحة والمرآة" },
-      { "src": null, "caption": "غرفة الملابس" },
-      { "src": null, "caption": "ركن الجلوس" }
+      {
+        "src": "images/products/01-360-view-angles-bfa3cf86ae.webp",
+        "caption": "مجلس بني بتوزيع على شكل U — عرض للمنتج"
+      },
+      {
+        "src": "images/products/brown-majlis-interior-a7a46c3f15.webp",
+        "caption": "تصور تنسيقي للمجلس في مساحة معيشة مضيئة"
+      },
+      {
+        "src": "images/products/majlis-360-with-tables-21a707b94b.webp",
+        "caption": "مجلس بإطار خشبي محفور مع طاولات متناسقة"
+      },
+      {
+        "src": "images/products/360-png-aa30636d74.webp",
+        "caption": "كنب زاوية رمادي مع تفاصيل خشبية"
+      },
+      {
+        "src": "images/products/360-png-b547707d61.webp",
+        "caption": "مجلس زاوية بإطار خشبي ووحدات جانبية"
+      },
+      {
+        "src": "images/products/curved-majlis-sofa-0d36d04e84.webp",
+        "caption": "مجلس منحني بزخارف خشبية"
+      }
     ]
   },
   {
-    "id": "renovation-01",
-    "name": null,
-    "category": "قبل وبعد",
+    "id": "sofa-collection",
+    "name": "كنب بألوان وتفاصيل متنوعة",
+    "category": "كنب",
     "city": null,
-    "colors": [],
-    "layout": "compare",
-    "before": { "src": null, "caption": "قبل التنفيذ" },
-    "after": { "src": null, "caption": "بعد التنفيذ" },
-    "images": [
-      { "src": null, "caption": "تفصيلة الوحدة" },
-      { "src": null, "caption": "القواطع الخشبية" }
-    ]
-  },
-  {
-    "id": "commercial-01",
-    "name": null,
-    "category": "تجاري",
-    "city": null,
-    "colors": [],
+    "colors": [
+      "#E5DFD1",
+      "#9B4C3E",
+      "#6E86A3"
+    ],
     "layout": "filmstrip",
     "images": [
-      { "src": null, "caption": "الواجهة" },
-      { "src": null, "caption": "منطقة الاستقبال" },
-      { "src": null, "caption": "منطقة الانتظار" },
-      { "src": null, "caption": "الإضاءة" },
-      { "src": null, "caption": "التفاصيل الخشبية" },
-      { "src": null, "caption": "صالة العرض" }
+      {
+        "src": "images/products/ml-p001-dd09a33f1d.webp",
+        "caption": "كنبة عاجية بقاعدة داكنة"
+      },
+      {
+        "src": "images/products/ml-p008-b15e00d370.webp",
+        "caption": "كنبة حمراء بأذرع ملفوفة"
+      },
+      {
+        "src": "images/products/ml-p009-64e8cc48ba.webp",
+        "caption": "كنبة كريمية بتفاصيل حمراء وشراشيب"
+      },
+      {
+        "src": "images/products/ml-p013-d1040b31b2.webp",
+        "caption": "كنبة زرقاء بشراشيب"
+      },
+      {
+        "src": "images/products/ml-p014-142dc93f95.webp",
+        "caption": "كنبة كريمية بإطار خشبي منحني"
+      },
+      {
+        "src": "images/products/ml-p019-be9407d6bd.webp",
+        "caption": "كنبة منخفضة بلون طوبي"
+      },
+      {
+        "src": "images/products/0003-beige-sofa-scene-9201249651.webp",
+        "caption": "تنسيق كنبة بيج مع وسائد رمادية"
+      }
+    ]
+  },
+  {
+    "id": "bedroom-collection",
+    "name": "غرف نوم وأسرّة",
+    "category": "غرف نوم",
+    "city": null,
+    "colors": [
+      "#CEC1AE",
+      "#85939A",
+      "#A57552"
+    ],
+    "layout": "slideshow",
+    "images": [
+      {
+        "src": "images/products/beige-bedroom-set-f3571880d2.webp",
+        "caption": "عرض طقم غرفة نوم بيج مع كمدينتين ومقعد"
+      },
+      {
+        "src": "images/products/blue-gray-bedroom-interior-2d23665bc1.webp",
+        "caption": "تصور تنسيقي لغرفة نوم بدرجات الأزرق الرمادي"
+      },
+      {
+        "src": "images/products/brown-bedroom-interior-cd48d7b87c.webp",
+        "caption": "تصور تنسيقي لغرفة نوم بسرير بني منجد"
+      },
+      {
+        "src": "images/products/01-complete-set-cream-background-e02192cd08.webp",
+        "caption": "طقم سرير بلون تاوب مع كمدينتين دائريتين"
+      },
+      {
+        "src": "images/products/0002-beige-bedroom-room-angles-af61f19fe2.webp",
+        "caption": "تصور غرفة نوم بيج مع كسوة جدارية وإضاءة مخفية"
+      },
+      {
+        "src": "images/products/twin-beds-floral-bedding-221a7917e1.webp",
+        "caption": "غرفة بسريرين ومفروشات بنقوش نباتية"
+      }
+    ]
+  },
+  {
+    "id": "armchair-collection",
+    "name": "كراسي ومقاعد الاسترخاء",
+    "category": "كراسي",
+    "city": null,
+    "colors": [
+      "#244660",
+      "#8D7259",
+      "#E8E2D6"
+    ],
+    "layout": "filmstrip",
+    "images": [
+      {
+        "src": "images/products/blue-armchair-4df704ff29.webp",
+        "caption": "كرسي أزرق بإطار خشبي"
+      },
+      {
+        "src": "images/products/360-png-112908ea6d.webp",
+        "caption": "كرسي بني بأذرع خشبية"
+      },
+      {
+        "src": "images/products/01-wood-brown-chair-c8a99ea3be.webp",
+        "caption": "كرسي بإطار خشبي وتنجيد بني"
+      },
+      {
+        "src": "images/products/02-cream-round-chair-6cd4cd5604.webp",
+        "caption": "كرسي دائري كريمي"
+      },
+      {
+        "src": "images/products/palm-chair-360-8b530a72da.webp",
+        "caption": "كرسي بنقوش نباتية وقاعدة ذهبية"
+      },
+      {
+        "src": "images/products/ml-p002-5b82feb733.webp",
+        "caption": "مقعد استرخاء عاجي"
+      },
+      {
+        "src": "images/products/ml-p011-0be1a00eed.webp",
+        "caption": "شيزلونج أخضر رمادي"
+      },
+      {
+        "src": "images/products/beige-tweed-metal-leg-armchair-d597ab39e3.webp",
+        "caption": "كرسي بيج بأرجل معدنية"
+      },
+      {
+        "src": "images/products/round-ribbed-pouf-ottoman-fb94b86418.webp",
+        "caption": "بوف دائري مضلع"
+      },
+      {
+        "src": "images/products/wood-leg-fabric-accent-chair-301d191a76.webp",
+        "caption": "كرسي قماشي بأرجل خشبية"
+      }
+    ]
+  },
+  {
+    "id": "dining-collection",
+    "name": "طاولات الطعام",
+    "category": "طاولات طعام",
+    "city": null,
+    "colors": [
+      "#8B6B4B",
+      "#C8BEAD",
+      "#F7F4EB"
+    ],
+    "layout": "slideshow",
+    "images": [
+      {
+        "src": "images/products/arched-leg-wood-dining-table-a1aa0aae2a.webp",
+        "caption": "تفاصيل طاولة طعام خشبية بأرجل مقوسة"
+      },
+      {
+        "src": "images/products/arched-wood-dining-table-89d12c82bc.webp",
+        "caption": "طاولة الطعام الخشبية — زاوية أخرى"
+      },
+      {
+        "src": "images/products/marble-top-dining-table-floral-chairs-a0900a139f.webp",
+        "caption": "طاولة طعام بسطح رخامي مع كراسي منجدة"
+      },
+      {
+        "src": "images/products/marble-dining-table-0715afc04a.webp",
+        "caption": "تفاصيل طاولة الطعام والكراسي ذات النقوش النباتية"
+      },
+      {
+        "src": "images/products/oval-glass-top-dining-table-2887c5a816.webp",
+        "caption": "طاولة طعام بيضاوية بسطح زجاجي"
+      }
+    ]
+  },
+  {
+    "id": "occasional-tables",
+    "name": "طاولات الوسط والطاولات الجانبية",
+    "category": "طاولات",
+    "city": null,
+    "colors": [
+      "#292725",
+      "#8F6948",
+      "#C0A178"
+    ],
+    "layout": "mosaic",
+    "images": [
+      {
+        "src": "images/products/ml-p003-ff51dc9082.webp",
+        "caption": "طاولة وسط مستطيلة بسطح زجاجي"
+      },
+      {
+        "src": "images/products/ml-p004-45da6c1956.webp",
+        "caption": "طاولة جانبية سوداء بتفاصيل خشبية"
+      },
+      {
+        "src": "images/products/0013-black-rounded-triangle-table-360-png-aad53d088a.webp",
+        "caption": "طاولة سوداء مثلثة بحواف مستديرة"
+      },
+      {
+        "src": "images/products/round-wood-side-table-826e485b39.webp",
+        "caption": "طاولة جانبية خشبية دائرية"
+      },
+      {
+        "src": "images/products/cnc-3557f84c56.webp",
+        "caption": "كونسول خشبي بتفاصيل داكنة"
+      }
+    ]
+  },
+  {
+    "id": "curtain-collection",
+    "name": "ستائر وتنسيقات النوافذ",
+    "category": "ستائر",
+    "city": null,
+    "colors": [
+      "#C9BEA8",
+      "#354B5B",
+      "#EEE9DF"
+    ],
+    "layout": "filmstrip",
+    "images": [
+      {
+        "src": "images/products/beige-pleated-curtain-73d9f50a35.webp",
+        "caption": "ستائر بيج بطيات منتظمة"
+      },
+      {
+        "src": "images/products/charcoal-curtain-779c5e9fee.webp",
+        "caption": "ستائر داكنة مع طبقة داخلية فاتحة"
+      },
+      {
+        "src": "images/products/gold-trim-majlis-curtain-41995d299e.webp",
+        "caption": "تنسيق ستائر مع مجلس بتفاصيل ذهبية"
+      },
+      {
+        "src": "images/products/teal-velvet-curtain-5b979c9df8.webp",
+        "caption": "ستائر زرقاء مع طبقة شفافة"
+      },
+      {
+        "src": "images/products/ml-p017-da3bbbe08b.webp",
+        "caption": "عرض ستارة زرقاء طويلة"
+      },
+      {
+        "src": "images/products/ml-p018-f1ecb2a965.webp",
+        "caption": "عرض ستارة عاجية"
+      },
+      {
+        "src": "images/products/ml-p022-04e4f96f28.webp",
+        "caption": "عرض ستارة شفافة"
+      }
+    ]
+  },
+  {
+    "id": "cabinet-collection",
+    "name": "خزائن ووحدات تخزين",
+    "category": "خزائن",
+    "city": null,
+    "colors": [
+      "#786452",
+      "#CBC6BB",
+      "#4F504B"
+    ],
+    "layout": "filmstrip",
+    "images": [
+      {
+        "src": "images/products/mirrored-sliding-wardrobe-76079f919d.webp",
+        "caption": "خزانة بأبواب سحاب"
+      },
+      {
+        "src": "images/products/wardrobe-glass-accent-dressing-table-9333d65d67.webp",
+        "caption": "خزائن بتفاصيل زجاجية ووحدات مضاءة"
+      },
+      {
+        "src": "images/products/wardrobe-interior-3974adf713.webp",
+        "caption": "توزيع داخلي لخزائن الملابس"
+      },
+      {
+        "src": "images/products/wood-closet-open-shelving-b9eaf60f74.webp",
+        "caption": "خزانة خشبية برفوف مفتوحة"
+      },
+      {
+        "src": "images/products/wood-closet-shelving-rail-964546827e.webp",
+        "caption": "تفاصيل الرفوف ومساحة تعليق الملابس"
+      },
+      {
+        "src": "images/products/ornate-silver-display-cabinet-8bf887ed9e.webp",
+        "caption": "خزانة عرض بزخارف فضية"
+      }
+    ]
+  },
+  {
+    "id": "kitchen-cabinet",
+    "name": "وحدة مطبخ وتخزين",
+    "category": "مطابخ",
+    "city": null,
+    "colors": [
+      "#9A8065",
+      "#D5D0C8",
+      "#42382F"
+    ],
+    "layout": "slideshow",
+    "images": [
+      {
+        "src": "images/products/kitchen-front-372917c309.webp",
+        "caption": "عرض أمامي لوحدة المطبخ والتخزين"
+      },
+      {
+        "src": "images/products/kitchen-perspective-620e3cf7f9.webp",
+        "caption": "عرض جانبي لوحدة المطبخ"
+      },
+      {
+        "src": "images/products/kitchen-open-8027100ab5.webp",
+        "caption": "تصور الوحدة مع فتح حجرات التخزين"
+      },
+      {
+        "src": "images/products/kitchen-sink-detail-516444b92e.webp",
+        "caption": "تفاصيل منطقة الحوض ورف الأطباق"
+      },
+      {
+        "src": "images/products/kitchen-pantry-detail-f65962b63a.webp",
+        "caption": "تفاصيل خزانة المؤن والتخزين الداخلي"
+      }
+    ]
+  },
+  {
+    "id": "wall-decor",
+    "name": "تفاصيل الجدران والديكور",
+    "category": "كسوات وديكور",
+    "city": null,
+    "colors": [
+      "#D6CDBB",
+      "#B78C75",
+      "#F7F4EB"
+    ],
+    "layout": "mosaic",
+    "images": [
+      {
+        "src": "images/products/cnc-b3b67fc290.webp",
+        "caption": "كسوة جدارية بارزة بنقوش متموجة"
+      },
+      {
+        "src": "images/products/cnc-ef5c44550c.webp",
+        "caption": "تنسيق الكسوة الجدارية مع الإضاءة"
+      },
+      {
+        "src": "images/products/ml-p006-314ec323fe.webp",
+        "caption": "لوحة بلون خوخي وإطار داكن"
+      },
+      {
+        "src": "images/products/ml-p007-6f3b15b835.webp",
+        "caption": "لوحة بارزة بيضاء بنقش هندسي"
+      },
+      {
+        "src": "images/products/ml-p028-6a81b69e14.webp",
+        "caption": "وحدة رفوف جانبية مضاءة"
+      }
+    ]
+  },
+  {
+    "id": "lighting-collection",
+    "name": "إضاءة وإكسسوارات",
+    "category": "إضاءة",
+    "city": null,
+    "colors": [
+      "#C8A456",
+      "#252525",
+      "#E8E4DB"
+    ],
+    "layout": "filmstrip",
+    "images": [
+      {
+        "src": "images/products/ml-p005-8029372d01.webp",
+        "caption": "ثريا فضية بقطرات شفافة"
+      },
+      {
+        "src": "images/products/ml-p012-3e7ac62217.webp",
+        "caption": "معلقة سوداء بثلاث وحدات"
+      },
+      {
+        "src": "images/products/ml-p016-984854991e.webp",
+        "caption": "ثريا ذهبية دائرية متدرجة"
+      },
+      {
+        "src": "images/products/ml-p026-a1e0168bcb.webp",
+        "caption": "سبوت مزدوج بإطار أسود"
+      },
+      {
+        "src": "images/products/ml-p027-282d161b5a.webp",
+        "caption": "سبوت مفرد بإطار أسود"
+      }
+    ]
+  },
+  {
+    "id": "cushion-collection",
+    "name": "وسائد وتفاصيل مكملة",
+    "category": "إكسسوارات",
+    "city": null,
+    "colors": [
+      "#D6C7AE",
+      "#68726E",
+      "#576F8C"
+    ],
+    "layout": "filmstrip",
+    "images": [
+      {
+        "src": "images/products/ml-p029-8d595644c9.webp",
+        "caption": "وسادة عاجية بنقش هندسي"
+      },
+      {
+        "src": "images/products/ml-p033-cb3aea1abf.webp",
+        "caption": "وسادة بيج بأشكال هندسية كبيرة"
+      },
+      {
+        "src": "images/products/ml-p034-70341cf0ab.webp",
+        "caption": "وسادة خضراء رمادية بخطوط متكسرة"
+      },
+      {
+        "src": "images/products/ml-p035-8080666cbb.webp",
+        "caption": "وسادة حمراء داكنة"
+      },
+      {
+        "src": "images/products/ml-p039-f695bb5162.webp",
+        "caption": "وسادة زرقاء رمادية بنقش شرائط"
+      },
+      {
+        "src": "images/products/ml-p041-b32254fbe2.webp",
+        "caption": "وسادة زرقاء سادة"
+      },
+      {
+        "src": "images/products/ml-p038-d0ffb98536.webp",
+        "caption": "مسند أسطواني مخطط"
+      }
     ]
   }
 ]
