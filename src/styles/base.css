@@ -35,9 +35,37 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 
 
 /* photos and their placeholders */
-.media { margin: 0; position: relative; overflow: hidden; background: var(--sunk) }
-.media img { display: block; width: 100%; height: 100%; object-fit: cover }
-.ph { position: relative; overflow: hidden; background: var(--sunk); min-height: 220px; display: grid; place-items: center; isolation: isolate }
+.media { margin: 0; position: relative; overflow: hidden; background: var(--sunk); width: 100%; min-width: 0; aspect-ratio: var(--media-ratio, 16 / 9); align-self: start; justify-self: center }
+.media[data-orientation="portrait"] { max-width: 420px; margin-inline: auto }
+.media img, .media video { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: contain }
+.media-sound { position: absolute; inset-inline-start: 12px; top: 12px; z-index: 3; min-height: 44px; max-width: calc(100% - 24px); padding: 8px 14px; border: 1px solid #ffffff80; border-radius: 99px; background: #171717d9; color: #fff; font: inherit; font-size: .8rem; cursor: pointer }
+.media-sound:hover { background: #171717 }
+.media-sound:focus-visible { outline: 3px solid #fff; outline-offset: 2px }
+.media-error { position: absolute; inset: auto 12px 12px; padding: 8px; background: #171717d9; color: #fff; text-align: center }
+.media-open { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in; color: #fff; font: inherit }
+.media-open span { position: absolute; bottom: 12px; left: 12px; padding: 5px 12px; border-radius: 99px; background: #171717d9; font-size: .8rem }
+.media-open:focus-visible { outline: 3px solid var(--accent); outline-offset: -4px }
+.map-panel { display: grid; grid-template-rows: 1fr auto; gap: 8px }
+
+/* Full-screen image viewer, rendered in the browser's modal top layer. */
+.image-viewer { position: fixed; inset: 0; width: 100%; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: max(12px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(12px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left)); border: 0; background: #101114f5; color: #fff; overflow: hidden }
+.image-viewer[open] { display: flex; flex-direction: column; gap: 12px }
+.image-viewer::backdrop { background: #000c }
+.viewer-toolbar { display: flex; align-items: center; flex-shrink: 0; gap: 10px; flex-wrap: wrap }
+.viewer-toolbar > span { margin-inline-end: auto; font-weight: 700 }
+.viewer-toolbar button { min-height: 44px; padding: 8px 16px; border: 1px solid #ffffff59; border-radius: 8px; background: #ffffff12; color: #fff; font: inherit; font-size: .85rem; cursor: pointer }
+.viewer-toolbar button:hover { background: #ffffff29 }
+.viewer-toolbar button:focus-visible { outline-color: #fff }
+.viewer-viewport { flex: 1; min-height: 0; overflow: auto; direction: ltr; overscroll-behavior: contain; touch-action: pan-x pan-y pinch-zoom }
+.viewer-canvas { width: 100%; height: 100%; display: grid; place-items: center; container-type: size }
+.viewer-frame { position: relative; width: min(100cqw, calc(100cqh * var(--media-ratio, 1.777777778))); aspect-ratio: var(--media-ratio, 16 / 9); background: #101114 }
+.viewer-frame img { position: absolute; inset: 0 }
+.viewer-canvas img { display: block; width: 100%; height: 100%; object-fit: contain; cursor: zoom-in }
+.is-zoomed .viewer-canvas { width: 200%; height: 200% }
+.is-zoomed .viewer-canvas img { cursor: zoom-out }
+.viewer-caption { flex-shrink: 0; text-align: center; font-size: .9rem; max-height: 18dvh; overflow: auto; overflow-wrap: anywhere; color: #e8e8e8 }
+.viewer-status { text-align: center }
+.ph { position: relative; overflow: hidden; background: var(--sunk); display: grid; place-items: center; isolation: isolate }
 .ph .pattern { opacity: .16 }
 .ph .ph-in { position: relative; display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; padding: 16px }
 .ph .mark { width: 74px; opacity: .55 }

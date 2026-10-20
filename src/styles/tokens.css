@@ -1,6 +1,7 @@
 
 /* Layout: one calm vertical scroll in the brand's ivory, ink and ochre; the LM mark leads, the L/V pattern breathes behind. */
 :root {
+  color-scheme: only light;
   --bg: #F4F0E8;          /* ivory */
   --surface: #FFFFFF;     /* white */
   --sunk: #E9E1D0;        /* photo placeholder ground */
@@ -24,12 +25,4 @@
   --wrap: 1180px;
   --ease: cubic-bezier(.2,.7,.1,1);
 }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
-  --bg: #121315; --surface: #1B1D20; --sunk: #24231F; --fg: #F1ECE2; --muted: #B3AB9C; --line: #34322C;
-  --accent: #C9A040; --accent-2: #E3C27A; --band: #0B0C0D; --band-fg: #F1ECE2; --on-accent: #17191B; --pat: #C9A040;
-  color-scheme: dark } }
-:root[data-theme="dark"] {
-  --bg: #121315; --surface: #1B1D20; --sunk: #24231F; --fg: #F1ECE2; --muted: #B3AB9C; --line: #34322C;
-  --accent: #C9A040; --accent-2: #E3C27A; --band: #0B0C0D; --band-fg: #F1ECE2; --on-accent: #17191B; --pat: #C9A040;
-  color-scheme: dark }
 

@@ -12,7 +12,11 @@ const ICONS: readonly IconName[] = [
 ];
 
 const icon = oneOf(ICONS);
-const media: Decoder<Media> = object<Media>({ src: nullable(string), caption: string });
+const media: Decoder<Media> = object<Media>({
+  src: nullable(string), caption: string,
+  type: nullable(oneOf(['image', 'video'] as const)),
+  poster: nullable(string),
+});
 const titledText: Decoder<TitledText> = object<TitledText>({ title: string, text: string });
 
 export const companyDecoder = object<Company>({

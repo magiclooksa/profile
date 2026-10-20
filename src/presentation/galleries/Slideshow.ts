@@ -9,6 +9,7 @@ export function Slideshow(images: readonly Media[]): HTMLElement {
   const slides = images.map((m, i) => {
     const el = MediaView(m, i === 0 ? 'slide on' : 'slide');
     el.setAttribute('aria-hidden', String(i !== 0));
+    el.inert = i !== 0;
     return el;
   });
   const counter = h('span', { class: 'count latin', 'aria-live': 'polite' }, `1 / ${images.length}`);
@@ -22,7 +23,12 @@ export function Slideshow(images: readonly Media[]): HTMLElement {
 
   const show = (index: number): void => {
     current = (index + images.length) % images.length;
-    slides.forEach((s, i) => { s.classList.toggle('on', i === current); s.setAttribute('aria-hidden', String(i !== current)) });
+    slides.forEach((s, i) => {
+      s.classList.toggle('on', i === current);
+      s.setAttribute('aria-hidden', String(i !== current));
+      s.inert = i !== current;
+      if (i !== current) s.querySelector('video')?.pause();
+    });
     thumbs.forEach((t, i) => { t.classList.toggle('on', i === current); t.setAttribute('aria-pressed', String(i === current)) });
     counter.textContent = `${current + 1} / ${images.length}`;
   };
@@ -38,7 +44,10 @@ export function Slideshow(images: readonly Media[]): HTMLElement {
     h('div', { class: 'thumbs' }, thumbs));
 
   if (images.length > 1 && !prefersReducedMotion()) {
-    timer = window.setInterval(() => show(current + 1), AUTOPLAY_MS);
+    // Let videos loop until the visitor chooses another item.
+    timer = window.setInterval(() => {
+      if (!document.querySelector('.image-viewer[open]') && !slides[current]?.querySelector('video')) show(current + 1);
+    }, AUTOPLAY_MS);
     root.addEventListener('mouseenter', stop, { once: true });
     root.addEventListener('focusin', stop, { once: true });
   }

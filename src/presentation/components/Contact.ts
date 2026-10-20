@@ -23,5 +23,6 @@ export const Contact = (company: Company, contact: ContactData): HTMLElement => 
               contact.website ? `https://${contact.website.replace(/^https?:\/\//, '')}` : null),
             Card('pin', 'موقع المعرض',
               `${orPlaceholder(contact.address, 'الحي، الشارع، المدينة')}، المملكة العربية السعودية`, contact.mapUrl))),
-        contact.mapUrl ? h('a', { class: 'map-link', href: contact.mapUrl, target: '_blank', rel: 'noopener' }, map) : map)));
+        contact.mapUrl ? h('div', { class: 'map-panel' }, map,
+          h('a', { class: 'map-link', href: contact.mapUrl, target: '_blank', rel: 'noopener' }, 'فتح الموقع على الخريطة')) : map)));
 };

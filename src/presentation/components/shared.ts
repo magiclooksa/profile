@@ -1,16 +1,59 @@
 import type { Media } from '../../domain/entities';
 import { h } from '../dom';
 import { pattern } from '../icons';
+import { openImageViewer } from './ImageViewer';
+import { bindMediaAspectRatio } from '../behaviors/mediaAspectRatio';
 
 /** The LM mark, drawn from the logo's alpha so it follows the theme colour. */
 export const Mark = (className = ''): HTMLElement =>
   h('i', { class: `mark ${className}`.trim(), 'aria-hidden': 'true' });
 
-/** A photo, or a branded placeholder naming the photo still needed. */
+/** An image or looping video, with a branded placeholder for missing media. */
 export function MediaView(media: Media, className = ''): HTMLElement {
   if (media.src) {
-    return h('figure', { class: `media ${className}`.trim() },
-      h('img', { src: media.src, alt: media.caption, loading: 'lazy', decoding: 'async' }));
+    const isVideo = media.type === 'video' ||
+      (!media.type && /\.(mp4|webm|ogv|mov|m4v)(?:[?#]|$)/i.test(media.src));
+    if (isVideo) {
+      const video = h('video', {
+        autoplay: true, loop: true, muted: true, playsinline: true,
+        preload: 'metadata', poster: media.poster, 'aria-label': media.caption,
+      });
+      // Set the property as well as the attribute before assigning the source.
+      video.defaultMuted = true;
+      video.muted = true;
+      video.src = media.src;
+      const sound = h('button', {
+        type: 'button', class: 'media-sound', 'aria-label': 'تشغيل الصوت', 'aria-pressed': 'false',
+      }, 'تشغيل الصوت');
+      const syncSound = (): void => {
+        const label = video.muted ? 'تشغيل الصوت' : 'كتم الصوت';
+        sound.textContent = label;
+        sound.setAttribute('aria-label', label);
+        sound.setAttribute('aria-pressed', String(!video.muted));
+      };
+      sound.addEventListener('click', () => {
+        video.muted = !video.muted;
+        syncSound();
+        if (video.paused) void video.play().catch(() => { video.controls = true });
+      });
+      video.addEventListener('volumechange', syncSound);
+      const failure = h('span', { class: 'media-error', role: 'status', hidden: true },
+        'تعذّر تحميل الفيديو');
+      video.addEventListener('error', () => { failure.hidden = false; sound.hidden = true });
+      const frame = h('figure', { class: `media media-video ${className}`.trim() }, video, sound, failure);
+      bindMediaAspectRatio(frame, video);
+      return frame;
+    }
+    const src = media.src;
+    const open = h('button', {
+      type: 'button', class: 'media-open', 'aria-label': `تكبير الصورة: ${media.caption}`,
+      'aria-haspopup': 'dialog',
+    }, h('span', { 'aria-hidden': 'true' }, 'تكبير ⤢'));
+    open.addEventListener('click', () => openImageViewer(src, media.caption));
+    const image = h('img', { src, alt: media.caption, loading: 'lazy', decoding: 'async' });
+    const frame = h('figure', { class: `media ${className}`.trim() }, image, open);
+    bindMediaAspectRatio(frame, image);
+    return frame;
   }
   return h('div', { class: `media ph ${className}`.trim(), role: 'img', 'aria-label': `صورة مطلوبة: ${media.caption}` },
     pattern(),

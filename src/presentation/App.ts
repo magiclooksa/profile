@@ -2,6 +2,7 @@ import type { Profile } from '../domain/entities';
 import { initJourneyFill } from './behaviors/journeyFill';
 import { initNavState } from './behaviors/navState';
 import { initReveal } from './behaviors/reveal';
+import { initMediaPlayback } from './behaviors/mediaPlayback';
 import { About } from './components/About';
 import { Advantages } from './components/Advantages';
 import { Clients } from './components/Clients';
@@ -50,6 +51,7 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
 
   initNavState(document.getElementById('nav'));
   initReveal(root);
+  initMediaPlayback(root);
   initJourneyFill(document.getElementById('track'));
 }
 

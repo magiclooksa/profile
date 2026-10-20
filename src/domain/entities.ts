@@ -13,6 +13,9 @@ export type IconName =
 export interface Media {
   readonly src: Maybe<string>;
   readonly caption: string;
+  /** Omit to infer the kind from the file extension. */
+  readonly type?: Maybe<'image' | 'video'>;
+  readonly poster?: Maybe<string>;
 }
 
 export interface TitledText {

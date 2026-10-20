@@ -10,21 +10,22 @@
 .meta { display: flex; flex-wrap: wrap; gap: 8px 22px; color: var(--muted); font-size: var(--step--1) }
 .sw { display: flex; align-items: center; gap: 6px }
 .sw i { width: 18px; height: 18px; border: 1.5px dashed var(--line) }
-.g .media { min-height: 0; height: 100% }
+.g .media { min-height: 0 }
 .g .media .mark { width: 56px }
 
 /* 1 mosaic */
-.g-mosaic { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: repeat(2, clamp(150px, 18vw, 240px)); gap: 10px }
-.g-mosaic > :first-child { grid-row: span 2 }
+.g-mosaic { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 10px }
+.g-mosaic > :first-child { grid-column: span 2 }
 .g-mosaic .media { transition: transform .7s var(--ease) }
 .g-mosaic .media:hover { transform: scale(.97) }
-@media (max-width: 640px) { .g-mosaic { grid-template-columns: 1fr 1fr; grid-template-rows: 220px repeat(2, 130px) } .g-mosaic > :first-child { grid-row: auto; grid-column: span 2 } }
+@media (max-width: 640px) { .g-mosaic { grid-template-columns: 1fr } .g-mosaic > :first-child { grid-column: auto } }
 
 /* 2 slideshow */
 .g-show { display: grid; grid-template-columns: 1fr; gap: 10px }
-.stage { position: relative; aspect-ratio: 16 / 7; max-width: 100%; overflow: hidden; background: var(--sunk) }
-.stage .media { position: absolute; inset: 0; opacity: 0; transform: scale(1.04); transition: opacity .9s var(--ease), transform 1.6s var(--ease) }
-.stage .media.on { opacity: 1; transform: none }
+.stage { position: relative; aspect-ratio: 16 / 9; width: min(100%, calc(72dvh * 16 / 9)); margin-inline: auto; overflow: hidden; background: var(--sunk) }
+.stage:has(.media.on[data-orientation="portrait"]) { aspect-ratio: 9 / 16; width: min(100%, calc(72dvh * 9 / 16)) }
+.stage .media { position: absolute; inset: 0; height: 100%; max-width: none; aspect-ratio: auto; opacity: 0; pointer-events: none; transform: scale(1.04); transition: opacity .9s var(--ease), transform 1.6s var(--ease) }
+.stage .media.on { opacity: 1; transform: none; z-index: 1; pointer-events: auto }
 .stage .nav-b { position: absolute; top: 50%; translate: 0 -50%; width: 46px; height: 46px; border: 0; background: color-mix(in srgb, var(--surface) 85%, transparent); color: var(--fg); font-size: 1.3rem; cursor: pointer; z-index: 2; display: grid; place-items: center }
 .stage .prev { right: 12px } .stage .next { left: 12px }
 .stage .count { position: absolute; bottom: 12px; right: 14px; z-index: 2; font-family: var(--font-en); font-size: .85rem; background: var(--band); color: var(--band-fg); padding: 2px 10px; direction: ltr }
@@ -32,27 +33,32 @@
 .thumbs button { padding: 0; border: 0; background: var(--sunk); height: clamp(54px, 7vw, 90px); cursor: pointer; position: relative; overflow: hidden; color: var(--accent); font: inherit; font-size: .75rem }
 .thumbs button::after { content: ""; position: absolute; inset: auto 0 0 0; height: 3px; background: var(--accent); transform: scaleX(0); transform-origin: right; transition: transform .4s var(--ease) }
 .thumbs button.on::after { transform: scaleX(1) }
-@media (max-width: 640px) { .stage { aspect-ratio: 4 / 3 } .thumbs button { font-size: 0 } }
+@media (max-width: 640px) { .thumbs button { font-size: 0 } }
 
 /* 3 before / after */
-.g-compare { display: grid; grid-template-columns: 2fr 1fr; gap: 10px }
-.compare { position: relative; aspect-ratio: 4 / 3; max-width: 100%; overflow: hidden; --pos: 50% }
-.compare .media { position: absolute; inset: 0 }
+.g-compare { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); align-items: start; gap: 10px }
+.compare { position: relative; aspect-ratio: 16 / 9; width: 100%; overflow: hidden; --pos: 50% }
+.compare:has(.before[data-orientation="portrait"]) { aspect-ratio: 9 / 16; max-width: 420px; margin-inline: auto }
+.compare .media { position: absolute; inset: 0; height: 100%; max-width: none; aspect-ratio: auto }
 .compare .after { position: absolute; inset: 0; clip-path: inset(0 0 0 var(--pos)) }
 .compare .after .media { position: absolute; inset: 0 }
+.compare-sound { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 12px 24px }
+.compare-sound > div { display: flex; align-items: center; gap: 8px }
+.compare-sound .media-sound { position: static; max-width: none }
+.compare-sound .media-open { position: static; width: auto; height: auto; min-height: 44px }
+.compare-sound .media-open span { position: static; display: block }
 .compare .line { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 2px; background: var(--accent); translate: -1px 0; pointer-events: none }
 .compare .line::after { content: "⇆"; position: absolute; top: 50%; left: 50%; translate: -50% -50%; width: 44px; height: 44px; border-radius: 50%; background: var(--accent); color: var(--on-accent); display: grid; place-items: center; font-size: 1.1rem }
 .compare input { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: ew-resize; margin: 0 }
 .compare .lbl { position: absolute; top: 12px; z-index: 1; font-size: .8rem; background: var(--band); color: var(--band-fg); padding: 2px 12px }
 .compare .lbl.b { left: 12px } .compare .lbl.a { right: 12px }
-.g-compare .side { display: grid; grid-template-rows: 1fr 1fr; gap: 10px }
-@media (max-width: 700px) { .g-compare { grid-template-columns: 1fr } .g-compare .side { grid-template-columns: 1fr 1fr; grid-template-rows: 160px } }
+.g-compare .side { display: grid; align-items: start; gap: 10px }
+@media (max-width: 700px) { .g-compare { grid-template-columns: 1fr } .g-compare .side { grid-template-columns: repeat(2, minmax(0, 1fr)) } }
 
 /* 4 filmstrip */
 .g-strip { position: relative }
-.strip { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: thin; padding-bottom: 10px; overscroll-behavior-x: contain }
-.strip .media { flex: 0 0 clamp(200px, 26vw, 300px); height: clamp(280px, 36vw, 420px); scroll-snap-align: start }
-.strip .media:nth-child(even) { margin-top: 40px; height: clamp(240px, 32vw, 380px) }
+.strip { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: thin; padding-bottom: 10px; overscroll-behavior-x: contain; align-items: start }
+.strip .media { flex: 0 0 auto; width: auto; max-width: none; height: clamp(180px, 28vw, 360px); margin: 0; scroll-snap-align: start }
 .strip-ctl { display: flex; gap: 8px; justify-content: flex-end }
 .strip-ctl button { width: 42px; height: 42px; border: 1px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; font-size: 1.1rem; transition: background .3s, color .3s }
 .strip-ctl button:hover { background: var(--accent); color: var(--on-accent) }
