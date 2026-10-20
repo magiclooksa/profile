@@ -16,6 +16,7 @@ const media: Decoder<Media> = object<Media>({
   src: nullable(string), caption: string,
   type: nullable(oneOf(['image', 'video'] as const)),
   poster: nullable(string),
+  aspectRatio: nullable(oneOf(['9:16', '16:9', 'auto'] as const)),
 });
 const titledText: Decoder<TitledText> = object<TitledText>({ title: string, text: string });
 
@@ -25,6 +26,7 @@ export const companyDecoder = object<Company>({
   field: string,
   tagline: string,
   closingLine: string,
+  hero: nullable(media),
   about: object({ lead: string, highlight: string, paragraphs: array(string), image: media }),
   statements: array(titledText),
   interiorDesign: object({ intro: string, traits: array(string), images: array(media) }),

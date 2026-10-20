@@ -16,6 +16,8 @@ export interface Media {
   /** Omit to infer the kind from the file extension. */
   readonly type?: Maybe<'image' | 'video'>;
   readonly poster?: Maybe<string>;
+  /** Explicit display format; omitted, null or auto uses the source dimensions. */
+  readonly aspectRatio?: Maybe<'9:16' | '16:9' | 'auto'>;
 }
 
 export interface TitledText {
@@ -29,6 +31,7 @@ export interface Company {
   readonly field: string;
   readonly tagline: string;
   readonly closingLine: string;
+  readonly hero?: Maybe<Media>;
   readonly about: {
     readonly lead: string;
     readonly highlight: string;

@@ -41,7 +41,7 @@ export function MediaView(media: Media, className = ''): HTMLElement {
         'تعذّر تحميل الفيديو');
       video.addEventListener('error', () => { failure.hidden = false; sound.hidden = true });
       const frame = h('figure', { class: `media media-video ${className}`.trim() }, video, sound, failure);
-      bindMediaAspectRatio(frame, video);
+      bindMediaAspectRatio(frame, video, media.aspectRatio);
       return frame;
     }
     const src = media.src;
@@ -49,15 +49,17 @@ export function MediaView(media: Media, className = ''): HTMLElement {
       type: 'button', class: 'media-open', 'aria-label': `تكبير الصورة: ${media.caption}`,
       'aria-haspopup': 'dialog',
     }, h('span', { 'aria-hidden': 'true' }, 'تكبير ⤢'));
-    open.addEventListener('click', () => openImageViewer(src, media.caption));
+    open.addEventListener('click', () => openImageViewer(src, media.caption, media.aspectRatio));
     const image = h('img', { src, alt: media.caption, loading: 'lazy', decoding: 'async' });
     const frame = h('figure', { class: `media ${className}`.trim() }, image, open);
-    bindMediaAspectRatio(frame, image);
+    bindMediaAspectRatio(frame, image, media.aspectRatio);
     return frame;
   }
-  return h('div', { class: `media ph ${className}`.trim(), role: 'img', 'aria-label': `صورة مطلوبة: ${media.caption}` },
+  const placeholder = h('div', { class: `media ph ${className}`.trim(), role: 'img', 'aria-label': `صورة مطلوبة: ${media.caption}` },
     pattern(),
     h('div', { class: 'ph-in' }, Mark(), h('span', {}, `صورة: ${media.caption}`)));
+  bindMediaAspectRatio(placeholder, null, media.aspectRatio);
+  return placeholder;
 }
 
 interface SectionOptions {

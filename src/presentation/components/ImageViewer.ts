@@ -1,8 +1,9 @@
 import { h } from '../dom';
 import { bindMediaAspectRatio } from '../behaviors/mediaAspectRatio';
+import type { Media } from '../../domain/entities';
 
 /** A modal image viewer with native focus trapping and Escape handling. */
-export function openImageViewer(src: string, caption: string): void {
+export function openImageViewer(src: string, caption: string, aspectRatio?: Media['aspectRatio']): void {
   if (document.querySelector('.image-viewer[open]')) return;
   const trigger = document.activeElement;
   const previousOverflow = document.documentElement.style.overflow;
@@ -10,7 +11,7 @@ export function openImageViewer(src: string, caption: string): void {
   const zoom = h('button', { type: 'button', 'aria-pressed': 'false' }, 'تكبير +');
   const image = h('img', { src, alt: caption, draggable: false });
   const frame = h('div', { class: 'viewer-frame' }, image);
-  bindMediaAspectRatio(frame, image);
+  bindMediaAspectRatio(frame, image, aspectRatio);
   const canvas = h('div', { class: 'viewer-canvas' }, frame);
   const viewport = h('div', {
     class: 'viewer-viewport', tabindex: 0, role: 'region', 'aria-label': 'الصورة، استخدم الأسهم لتحريكها بعد التكبير',

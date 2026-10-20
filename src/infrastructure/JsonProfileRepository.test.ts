@@ -44,9 +44,9 @@ describe('JsonProfileRepository', () => {
     };
     const profile = await new JsonProfileRepository(mixed).load();
     expect(profile.projects[0]?.images).toEqual([
-      { src: 'room.jpg', caption: 'صورة', type: null, poster: null },
-      { src: 'room.MP4?version=2', caption: 'فيديو', type: null, poster: null },
-      { src: '/stream/123', caption: 'جولة', type: 'video', poster: 'room.jpg' },
+      { src: 'room.jpg', caption: 'صورة', type: null, poster: null, aspectRatio: null },
+      { src: 'room.MP4?version=2', caption: 'فيديو', type: null, poster: null, aspectRatio: null },
+      { src: '/stream/123', caption: 'جولة', type: 'video', poster: 'room.jpg', aspectRatio: null },
     ]);
   });
 
@@ -58,5 +58,29 @@ describe('JsonProfileRepository', () => {
       }] : data;
     };
     await expect(new JsonProfileRepository(broken).load()).rejects.toThrow('projects.json[0].images[0].type');
+  });
+
+  it('preserves explicit ratios and automatic sizing for both images and videos', async () => {
+    const ratios = ['9:16', '16:9', 'auto', null] as const;
+    const configured: JsonFetcher = async (file) => {
+      const data = await fromDisk(file);
+      return file === 'projects.json' ? [{
+        ...(data as object[])[0],
+        images: ['room.jpg', 'room.mp4'].flatMap((src) =>
+          ratios.map((aspectRatio) => ({ src, caption: 'عرض', aspectRatio }))),
+      }] : data;
+    };
+    const profile = await new JsonProfileRepository(configured).load();
+    expect(profile.projects[0]?.images.map((image) => image.aspectRatio)).toEqual([...ratios, ...ratios]);
+  });
+
+  it.each(['4:3', '', 1.77])('rejects unsupported aspectRatio %j with the exact data path', async (aspectRatio) => {
+    const broken: JsonFetcher = async (file) => {
+      const data = await fromDisk(file);
+      return file === 'projects.json' ? [{
+        ...(data as object[])[0], images: [{ src: 'room.jpg', caption: 'عرض', aspectRatio }],
+      }] : data;
+    };
+    await expect(new JsonProfileRepository(broken).load()).rejects.toThrow('projects.json[0].images[0].aspectRatio');
   });
 });

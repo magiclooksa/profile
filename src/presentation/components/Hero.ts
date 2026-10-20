@@ -1,10 +1,16 @@
 import type { Company } from '../../domain/entities';
 import { h } from '../dom';
 import { pattern } from '../icons';
-import { Mark } from './shared';
+import { Mark, MediaView } from './shared';
 
-export const Hero = (company: Company): HTMLElement =>
-  h('header', { class: 'hero', id: 'top' },
+export function Hero(company: Company): HTMLElement {
+  const background = company.hero?.src ? MediaView(company.hero, 'hero-background') : null;
+  // Keep the sound button above the gradient and separate from the background.
+  const sound = background?.querySelector<HTMLButtonElement>('.media-sound') ?? null;
+  sound?.classList.add('hero-sound');
+  return h('header', { class: background ? 'hero hero-with-media' : 'hero', id: 'top' },
+    background,
+    background ? h('div', { class: 'hero-shade', 'aria-hidden': 'true' }) : null,
     pattern(),
     h('div', { class: 'wrap' },
       h('div', { class: 'hero-copy' },
@@ -20,4 +26,6 @@ export const Hero = (company: Company): HTMLElement =>
         h('div', { class: 'frame' },
           h('div', { class: 'ring' }), h('div', { class: 'ring r2' }),
           h('i', { class: 'corner tr' }), h('i', { class: 'corner bl' }),
-          Mark('big')))));
+          Mark('big')))),
+    sound);
+}
