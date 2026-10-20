@@ -33,3 +33,21 @@ export const orPlaceholder = (value: string | null, placeholder: string): string
 
 export const prefersReducedMotion = (): boolean =>
   window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/**
+ * Splits text into word spans (`.w > span`) for masked reveals and scroll fills.
+ * Words stay whole so Arabic letters keep joining; spaces stay as text nodes.
+ */
+export function splitWords(text: string, start = 0, className = ''): Node[] {
+  const nodes: Node[] = [];
+  text.trim().split(/\s+/).forEach((word, i) => {
+    if (i > 0) nodes.push(document.createTextNode(' '));
+    const inner = h('span', {}, word);
+    inner.style.setProperty('--wi', String(start + i));
+    nodes.push(h('span', { class: `w ${className}`.trim() }, inner));
+  });
+  return nodes;
+}
+
+export const finePointer = (): boolean =>
+  window.matchMedia('(hover: hover) and (pointer: fine)').matches;

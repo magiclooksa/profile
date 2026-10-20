@@ -18,7 +18,7 @@ export function Compare(before: Media, after: Media, details: readonly Media[]):
   const range = h('input', {
     type: 'range', id, min: 0, max: 100, value: 50, 'aria-label': 'اسحب للمقارنة بين قبل التنفيذ وبعده',
   });
-  const frame = h('div', { class: 'compare' },
+  const frame = h('div', { class: 'compare', 'data-cursor': 'اسحب' },
     beforeView,
     h('div', { class: 'after' }, afterView),
     h('span', { class: 'lbl b' }, 'قبل'),

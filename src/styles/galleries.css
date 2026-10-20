@@ -1,45 +1,48 @@
 /* works: every project has its own way of showing its photos */
-.works { background: var(--surface) }
-.projects { display: flex; flex-direction: column; gap: clamp(56px, 8vw, 110px) }
-.proj { display: flex; flex-direction: column; gap: 22px; min-width: 0 }
-.proj-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 10px 24px; border-bottom: 1px solid var(--line); padding-bottom: 16px }
-.proj-head .t { display: flex; align-items: baseline; gap: 14px; min-width: 0 }
-.proj-head .t span { font-family: var(--font-en); font-weight: 800; color: var(--accent); font-size: var(--step-1) }
-.proj-head h3 { font-size: var(--step-2) }
-.proj-head .kind { font-size: var(--step--1); color: var(--accent); border: 1px solid var(--accent); padding: 0 12px; border-radius: 99px; align-self: center }
-.meta { display: flex; flex-wrap: wrap; gap: 8px 22px; color: var(--muted); font-size: var(--step--1) }
+.projects { display: flex; flex-direction: column; gap: clamp(80px, 11vw, 170px) }
+.proj { display: flex; flex-direction: column; gap: clamp(20px, 2.4vw, 32px); min-width: 0 }
+.proj-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 14px 32px; border-bottom: 1px solid var(--line); padding-bottom: 22px }
+.proj-head .t { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 20px; min-width: 0 }
+.proj-head .t span { font-family: var(--font-en); font-weight: 800; color: var(--accent); font-size: var(--step-0) }
+.proj-head h3 { font-size: var(--step-3); font-weight: 800; line-height: 1.2 }
+.proj-head .kind { font-style: normal; font-size: var(--step--1); color: var(--accent); border: 1.5px solid var(--accent); padding: 2px 16px; border-radius: 99px; align-self: center }
+.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 26px; color: var(--muted); font-size: var(--step--1) }
 .sw { display: flex; align-items: center; gap: 6px }
-.sw i { width: 18px; height: 18px; border: 1.5px dashed var(--line) }
+.sw i { width: 22px; height: 22px; border-radius: 50%; box-shadow: inset 0 0 0 1px #0000001f }
+.sw i.empty { border: 1.5px dashed var(--line); box-shadow: none }
 .g .media { min-height: 0 }
 .g .media .mark { width: 56px }
 
 /* 1 mosaic */
-.g-mosaic { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 10px }
+.g-mosaic { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 12px }
 .g-mosaic > :first-child { grid-column: span 2 }
-.g-mosaic .media { transition: transform .7s var(--ease) }
-.g-mosaic .media:hover { transform: scale(.97) }
 @media (max-width: 640px) { .g-mosaic { grid-template-columns: 1fr } .g-mosaic > :first-child { grid-column: auto } }
 
 /* 2 slideshow */
-.g-show { display: grid; grid-template-columns: 1fr; gap: 10px }
-.stage { position: relative; aspect-ratio: 16 / 9; width: min(100%, calc(72dvh * 16 / 9)); margin-inline: auto; overflow: hidden; background: var(--sunk) }
-.stage:has(.media.on[data-orientation="portrait"]) { aspect-ratio: 9 / 16; width: min(100%, calc(72dvh * 9 / 16)) }
-.stage .media { position: absolute; inset: 0; height: 100%; max-width: none; aspect-ratio: auto; opacity: 0; pointer-events: none; transform: scale(1.04); transition: opacity .9s var(--ease), transform 1.6s var(--ease) }
+.g-show { display: grid; grid-template-columns: 1fr; gap: 12px }
+.stage { position: relative; aspect-ratio: 16 / 9; width: min(100%, calc(78dvh * 16 / 9)); margin-inline: auto; overflow: hidden; isolation: isolate; border-radius: var(--r-lg); background: var(--sunk) }
+.stage:has(.media.on[data-orientation="portrait"]) { aspect-ratio: 9 / 16; width: min(100%, calc(78dvh * 9 / 16)) }
+.stage .media { position: absolute; inset: 0; height: 100%; max-width: none; aspect-ratio: auto; border-radius: 0; opacity: 0; pointer-events: none; transform: scale(1.06);
+  transition: opacity 1s var(--ease-out), transform 1.8s var(--ease-out) }
 .stage .media.on { opacity: 1; transform: none; z-index: 1; pointer-events: auto }
-.stage .nav-b { position: absolute; top: 50%; translate: 0 -50%; width: 46px; height: 46px; border: 0; background: color-mix(in srgb, var(--surface) 85%, transparent); color: var(--fg); font-size: 1.3rem; cursor: pointer; z-index: 2; display: grid; place-items: center }
-.stage .prev { right: 12px } .stage .next { left: 12px }
-.stage .count { position: absolute; bottom: 12px; right: 14px; z-index: 2; font-family: var(--font-en); font-size: .85rem; background: var(--band); color: var(--band-fg); padding: 2px 10px; direction: ltr }
-.thumbs { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px }
-.thumbs button { padding: 0; border: 0; background: var(--sunk); height: clamp(54px, 7vw, 90px); cursor: pointer; position: relative; overflow: hidden; color: var(--accent); font: inherit; font-size: .75rem }
-.thumbs button::after { content: ""; position: absolute; inset: auto 0 0 0; height: 3px; background: var(--accent); transform: scaleX(0); transform-origin: right; transition: transform .4s var(--ease) }
+.stage .nav-b { position: absolute; top: 50%; translate: 0 -50%; z-index: 2; width: 56px; height: 56px; border: 0; border-radius: 50%; display: grid; place-items: center;
+  background: color-mix(in srgb, var(--bg) 88%, transparent); color: var(--fg); font-size: 1.4rem; cursor: pointer; transition: background-color .4s, color .4s, scale .5s var(--ease-out) }
+.stage .nav-b:hover { background: var(--fg); color: var(--bg); scale: 1.08 }
+.stage .prev { right: 16px } .stage .next { left: 16px }
+.stage .count { position: absolute; bottom: 16px; right: 16px; z-index: 2; font-family: var(--font-en); font-size: .85rem; padding: 4px 14px; border-radius: 99px; background: var(--band); color: var(--band-fg); direction: ltr }
+.thumbs { display: grid; grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); gap: 10px }
+.thumbs button { position: relative; overflow: hidden; height: clamp(54px, 7vw, 90px); padding: 0 8px; border: 0; border-radius: var(--r-sm); background: var(--sunk); color: var(--accent);
+  font: inherit; font-size: .75rem; line-height: 1.5; cursor: pointer; transition: background-color .4s }
+.thumbs button:hover { background: var(--line) }
+.thumbs button::after { content: ""; position: absolute; inset: auto 0 0 0; height: 3px; background: var(--accent); transform: scaleX(0); transform-origin: right; transition: transform .5s var(--ease-out) }
 .thumbs button.on::after { transform: scaleX(1) }
 @media (max-width: 640px) { .thumbs button { font-size: 0 } }
 
 /* 3 before / after */
-.g-compare { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); align-items: start; gap: 10px }
-.compare { position: relative; aspect-ratio: 16 / 9; width: 100%; overflow: hidden; --pos: 50% }
+.g-compare { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); align-items: start; gap: 12px }
+.compare { position: relative; aspect-ratio: 16 / 9; width: 100%; overflow: hidden; isolation: isolate; border-radius: var(--r-lg); --pos: 50% }
 .compare:has(.before[data-orientation="portrait"]) { aspect-ratio: 9 / 16; max-width: 420px; margin-inline: auto }
-.compare .media { position: absolute; inset: 0; height: 100%; max-width: none; aspect-ratio: auto }
+.compare .media { position: absolute; inset: 0; height: 100%; max-width: none; aspect-ratio: auto; border-radius: 0 }
 .compare .after { position: absolute; inset: 0; clip-path: inset(0 0 0 var(--pos)) }
 .compare .after .media { position: absolute; inset: 0 }
 .compare-sound { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 12px 24px }
@@ -48,18 +51,21 @@
 .compare-sound .media-open { position: static; width: auto; height: auto; min-height: 44px }
 .compare-sound .media-open span { position: static; display: block }
 .compare .line { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 2px; background: var(--accent); translate: -1px 0; pointer-events: none }
-.compare .line::after { content: "⇆"; position: absolute; top: 50%; left: 50%; translate: -50% -50%; width: 44px; height: 44px; border-radius: 50%; background: var(--accent); color: var(--on-accent); display: grid; place-items: center; font-size: 1.1rem }
+.compare .line::after { content: "⇆"; position: absolute; top: 50%; left: 50%; translate: -50% -50%; width: 56px; height: 56px; border-radius: 50%; background: var(--accent); color: var(--on-accent); display: grid; place-items: center; font-size: 1.2rem }
 .compare input { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: ew-resize; margin: 0 }
-.compare .lbl { position: absolute; top: 12px; z-index: 1; font-size: .8rem; background: var(--band); color: var(--band-fg); padding: 2px 12px }
-.compare .lbl.b { left: 12px } .compare .lbl.a { right: 12px }
-.g-compare .side { display: grid; align-items: start; gap: 10px }
+.compare .lbl { position: absolute; top: 14px; z-index: 1; font-size: .8rem; padding: 3px 14px; border-radius: 99px; background: var(--band); color: var(--band-fg) }
+.compare .lbl.b { left: 14px } .compare .lbl.a { right: 14px }
+.g-compare .side { display: grid; align-items: start; gap: 12px }
 @media (max-width: 700px) { .g-compare { grid-template-columns: 1fr } .g-compare .side { grid-template-columns: repeat(2, minmax(0, 1fr)) } }
 
-/* 4 filmstrip */
-.g-strip { position: relative }
-.strip { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: thin; padding-bottom: 10px; overscroll-behavior-x: contain; align-items: start }
-.strip .media { flex: 0 0 auto; width: auto; max-width: none; height: clamp(180px, 28vw, 360px); margin: 0; scroll-snap-align: start }
-.strip-ctl { display: flex; gap: 8px; justify-content: flex-end }
-.strip-ctl button { width: 42px; height: 42px; border: 1px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; font-size: 1.1rem; transition: background .3s, color .3s }
-.strip-ctl button:hover { background: var(--accent); color: var(--on-accent) }
-
+/* 4 filmstrip: drag, swipe or use the arrows */
+.g-strip { position: relative; display: flex; flex-direction: column; gap: 14px }
+.strip { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain; align-items: start; border-radius: var(--r) }
+.strip::-webkit-scrollbar { display: none }
+.strip.dragging { scroll-snap-type: none; user-select: none }
+.strip.dragging .media { pointer-events: none }
+.strip .media { flex: 0 0 auto; width: auto; max-width: none; height: clamp(220px, 32vw, 460px); margin: 0; scroll-snap-align: start }
+.strip-ctl { display: flex; gap: 10px; justify-content: flex-end }
+.strip-ctl button { width: 56px; height: 56px; border: 1.5px solid var(--fg); border-radius: 50%; background: transparent; color: var(--fg); cursor: pointer; font-size: 1.2rem;
+  transition: background-color .4s, color .4s, scale .5s var(--ease-out) }
+.strip-ctl button:hover { background: var(--fg); color: var(--bg); scale: 1.06 }

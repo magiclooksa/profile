@@ -1,5 +1,5 @@
 import type { Media } from '../../domain/entities';
-import { h } from '../dom';
+import { h, pad2, splitWords } from '../dom';
 import { pattern } from '../icons';
 import { openImageViewer } from './ImageViewer';
 import { bindMediaAspectRatio } from '../behaviors/mediaAspectRatio';
@@ -47,7 +47,7 @@ export function MediaView(media: Media, className = ''): HTMLElement {
     const src = media.src;
     const open = h('button', {
       type: 'button', class: 'media-open', 'aria-label': `تكبير الصورة: ${media.caption}`,
-      'aria-haspopup': 'dialog',
+      'aria-haspopup': 'dialog', 'data-cursor': 'تكبير',
     }, h('span', { 'aria-hidden': 'true' }, 'تكبير ⤢'));
     open.addEventListener('click', () => openImageViewer(src, media.caption, media.aspectRatio));
     const image = h('img', { src, alt: media.caption, loading: 'lazy', decoding: 'async' });
@@ -71,15 +71,32 @@ interface SectionOptions {
   readonly withPattern?: boolean;
 }
 
+/** A big heading that rises word by word, with the section number as a small label. */
 export function Section(opts: SectionOptions, ...content: (Node | null)[]): HTMLElement {
-  const head = h('div', { class: 's-head reveal' },
-    opts.number !== undefined ? h('span', { class: 'no latin' }, String(opts.number).padStart(2, '0')) : null,
-    h('h2', {}, opts.title),
-    opts.intro ? h('p', {}, opts.intro) : null);
-  return h('section', { id: opts.id, class: opts.className ?? '', 'aria-labelledby': undefined },
+  const head = h('div', { class: 's-head' },
+    opts.number !== undefined ? h('span', { class: 'no latin reveal' }, `(${pad2(opts.number)})`) : null,
+    h('h2', { class: 'split reveal' }, splitWords(opts.title)),
+    opts.intro ? h('p', { class: 'reveal' }, opts.intro) : null);
+  return h('section', { id: opts.id, class: opts.className ?? '' },
     opts.withPattern ? pattern() : null,
     h('div', { class: 'wrap' }, head, ...content));
 }
+
+/** A label that rolls up to a copy of itself on hover. The copy is hidden from screen readers. */
+export const RollText = (label: string): HTMLElement =>
+  h('span', { class: 'roll' }, h('span', {}, label), h('span', { 'aria-hidden': 'true' }, label));
+
+/** Pill link whose fill rises from below on hover and which leans towards the pointer. */
+export const Button = (label: string, href: string, variant: 'solid' | 'ghost' = 'ghost'): HTMLElement =>
+  h('a', { class: `btn ${variant}`, href, 'data-magnetic': '0.25' },
+    h('span', { class: 'mag-inner' }, RollText(label)));
+
+/** The large round call-to-action button. */
+export const RoundButton = (label: string, href: string, external = false): HTMLElement =>
+  h('a', {
+    class: 'btn-round', href, 'data-magnetic': '0.35',
+    target: external ? '_blank' : undefined, rel: external ? 'noopener' : undefined,
+  }, h('span', { class: 'mag-inner' }, label));
 
 /** Staggers reveal animations inside a group. */
 export const stagger = (el: HTMLElement, index: number, every = 5): HTMLElement => {

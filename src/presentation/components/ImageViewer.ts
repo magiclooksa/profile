@@ -19,6 +19,7 @@ export function openImageViewer(src: string, caption: string, aspectRatio?: Medi
   const status = h('p', { class: 'viewer-status', role: 'status', hidden: true }, 'تعذّر تحميل الصورة');
   const dialog = h('dialog', {
     class: 'image-viewer', 'aria-label': 'عرض الصورة', 'aria-describedby': 'viewer-caption',
+    'data-lenis-prevent': '',
   },
   h('div', { class: 'viewer-toolbar' }, h('span', {}, 'عرض الصورة'), zoom, close),
   viewport,

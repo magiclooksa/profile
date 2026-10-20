@@ -1,18 +1,23 @@
 import type { Profile } from '../domain/entities';
+import { initCursor } from './behaviors/cursor';
 import { initJourneyFill } from './behaviors/journeyFill';
+import { initMagnetic } from './behaviors/magnetic';
+import { initMediaPlayback } from './behaviors/mediaPlayback';
+import { initMenu } from './behaviors/menu';
 import { initNavState } from './behaviors/navState';
 import { initReveal } from './behaviors/reveal';
-import { initMediaPlayback } from './behaviors/mediaPlayback';
+import { initScrollFx } from './behaviors/scrollFx';
+import { initSmoothScroll } from './behaviors/smoothScroll';
 import { About } from './components/About';
 import { Advantages } from './components/Advantages';
 import { Clients } from './components/Clients';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
-import { Hero } from './components/Hero';
+import { Hero, Reel } from './components/Hero';
 import { InteriorDesign } from './components/InteriorDesign';
 import { Journey } from './components/Journey';
 import { Levels } from './components/Levels';
-import { Nav, type NavLink } from './components/Nav';
+import { Menu, Nav, type NavLink } from './components/Nav';
 import { Products } from './components/Products';
 import { Projects } from './components/Projects';
 import { Services } from './components/Services';
@@ -35,6 +40,7 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
 
   const main = h('main', {},
     Hero(company),
+    Reel(company),
     About(company, next()),
     Services(profile.services, next()),
     Products(profile.products, next()),
@@ -46,17 +52,27 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
     Clients(profile.clients, next()),
     Contact(company, profile.contact));
 
-  root.replaceChildren(Nav(company, NAV_LINKS), main, Footer(company));
+  const nav = Nav(company, NAV_LINKS);
+  const footer = Footer(company);
+  root.replaceChildren(nav, Menu(company, NAV_LINKS), main, footer);
+  root.removeAttribute('aria-busy');
   document.title = `${company.name.ar} | ${company.name.en}`;
 
-  initNavState(document.getElementById('nav'));
+  initSmoothScroll();
+  initNavState(nav);
+  initMenu(document.querySelector<HTMLButtonElement>('#menu-btn'), document.getElementById('site-menu'),
+    [main, footer, nav.querySelector<HTMLElement>('.brand'), nav.querySelector<HTMLElement>('.nav-links')]);
   initReveal(root);
+  initScrollFx(root);
+  initMagnetic(root);
+  initCursor();
   initMediaPlayback(root);
   initJourneyFill(document.getElementById('track'));
 }
 
 export function renderError(root: HTMLElement, error: unknown): void {
   const message = error instanceof Error ? error.message : String(error);
+  root.removeAttribute('aria-busy');
   root.replaceChildren(
     h('div', { class: 'load-error', role: 'alert' },
       h('h1', {}, 'تعذّر عرض الملف التعريفي'),

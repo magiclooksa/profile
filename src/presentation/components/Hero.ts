@@ -1,31 +1,38 @@
 import type { Company } from '../../domain/entities';
-import { h } from '../dom';
+import { h, splitWords } from '../dom';
 import { pattern } from '../icons';
-import { Mark, MediaView } from './shared';
+import { Button, Mark, MediaView } from './shared';
 
+/**
+ * Oversized headline in the brand's ink: the name in bold, the field in light,
+ * with a rounded photo pill set between them like a word.
+ */
 export function Hero(company: Company): HTMLElement {
-  const background = company.hero?.src ? MediaView(company.hero, 'hero-background') : null;
-  // Keep the sound button above the gradient and separate from the background.
-  const sound = background?.querySelector<HTMLButtonElement>('.media-sound') ?? null;
-  sound?.classList.add('hero-sound');
-  return h('header', { class: background ? 'hero hero-with-media' : 'hero', id: 'top' },
-    background,
-    background ? h('div', { class: 'hero-shade', 'aria-hidden': 'true' }) : null,
+  const nameWords = `${company.entityType} ${company.name.ar}`;
+  const nameCount = nameWords.trim().split(/\s+/).length;
+  const pillImage = company.hero?.poster ?? company.about.image.src;
+  return h('header', { class: 'hero', id: 'top' },
     pattern(),
     h('div', { class: 'wrap' },
-      h('div', { class: 'hero-copy' },
-        h('p', { class: 'eyebrow' }, 'الملف التعريفي'),
-        h('h1', {}, `${company.entityType} ${company.name.ar}`),
+      h('p', { class: 'eyebrow' }, Mark(), 'الملف التعريفي'),
+      h('h1', { class: 'hero-title split' },
+        h('span', { class: 't-bold' }, splitWords(nameWords)),
+        ' ',
+        h('span', { class: 'w pill-w', 'aria-hidden': 'true' },
+          h('span', { class: 'hero-pill' }, pillImage ? h('img', { src: pillImage, alt: '' }) : Mark())),
+        ' ',
+        h('span', { class: 't-light' }, splitWords(company.field, nameCount + 1))),
+      h('div', { class: 'hero-foot' },
         h('p', { class: 'latin name-en' }, company.name.en),
-        h('p', { class: 'sub' }, company.field),
         h('p', { class: 'tag' }, company.tagline),
         h('div', { class: 'ctas' },
-          h('a', { class: 'btn solid', href: '#works' }, 'شاهد أعمالنا'),
-          h('a', { class: 'btn ghost', href: '#contact' }, 'تواصل معنا'))),
-      h('div', { class: 'hero-art', 'aria-hidden': 'true' },
-        h('div', { class: 'frame' },
-          h('div', { class: 'ring' }), h('div', { class: 'ring r2' }),
-          h('i', { class: 'corner tr' }), h('i', { class: 'corner bl' }),
-          Mark('big')))),
-    sound);
+          Button('شاهد أعمالنا', '#works', 'solid'),
+          Button('تواصل معنا', '#contact')))));
+}
+
+/** The hero video as a showreel that opens up to the full width while scrolling. */
+export function Reel(company: Company): HTMLElement | null {
+  if (!company.hero?.src) return null;
+  return h('section', { class: 'reel', id: 'reel', 'aria-label': company.hero.caption, 'data-grow': '' },
+    h('div', { class: 'reel-frame' }, MediaView(company.hero, 'reel-media')));
 }

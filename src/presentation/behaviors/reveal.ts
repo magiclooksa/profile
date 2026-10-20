@@ -1,16 +1,22 @@
+import { prefersReducedMotion } from '../dom';
+
 /**
- * Replays a short rise when a block scrolls into view.
- * Content is fully visible before this runs, so nothing depends on it.
+ * Blocks below the fold are hidden by script only, then rise into place as they arrive.
+ * `.split` headings rise word by word from behind a mask instead.
+ * Without script, or with reduced motion, everything is simply visible.
  */
 export function initReveal(root: ParentNode): void {
-  if (!('IntersectionObserver' in window)) return;
+  if (prefersReducedMotion() || !('IntersectionObserver' in window)) return;
   const observer = new IntersectionObserver((entries) => {
     for (const entry of entries) {
       if (!entry.isIntersecting) continue;
-      // Skip blocks already on screen at load: only animate what arrives by scrolling.
-      if (entry.boundingClientRect.top > window.innerHeight * 0.1) entry.target.classList.add('in');
+      entry.target.classList.add('in');
       observer.unobserve(entry.target);
     }
-  }, { threshold: 0.15 });
-  root.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+  root.querySelectorAll<HTMLElement>('.reveal').forEach((el) => {
+    if (el.getBoundingClientRect().top < window.innerHeight * 0.92) return;
+    el.classList.add('armed');
+    observer.observe(el);
+  });
 }
