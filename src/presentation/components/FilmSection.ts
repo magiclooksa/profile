@@ -59,4 +59,6 @@ const LAYOUTS: Record<Film['style'], (film: Film) => HTMLElement[]> = { cinema, 
 export const FilmSection = (film: Film, index: number): HTMLElement =>
   h('section', {
     class: `film film-${film.style}`, id: `film-${index + 1}`, 'aria-label': film.title,
+    // The expanding film reaches full size at 60% of its scroll, then holds.
+    'data-scroll-progress': film.style === 'expand', 'data-p-span': film.style === 'expand' ? '0.6' : undefined,
   }, ...LAYOUTS[film.style](film));

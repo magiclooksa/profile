@@ -367,3 +367,58 @@ ol.track, ol.lvls { list-style: none; padding: 0; margin: 0 }
   .set-side .set-media { aspect-ratio: 4 / 3 }
   .set-versus { display: none }
 }
+
+/* 7. journey: pinned horizontal travel through full-screen rooms (--p from 0 to 1) */
+.set--journey { --p: 0; padding: 0; height: calc(var(--n) * 100svh); background: #0c1113; color: #fffaf0; --accent: #e5c77f; --muted: #e7e1d6; --line: #e5c77f59; --surface: #0c1113 }
+.set--journey .set-pin { position: sticky; top: 0; height: 100svh; overflow: hidden }
+.set-rail { display: flex; height: 100%; width: calc(var(--n) * 100vw); transform: translateX(calc(var(--p) * (var(--n) - 1) * 100vw)); will-change: transform }
+.set-room { position: relative; flex: 0 0 100vw; height: 100%; margin: 0; overflow: hidden; display: grid; align-items: end }
+.set-room .set-media { position: absolute; inset: 0; transform: scale(1.06) }
+.set-room::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(0deg, #0c1113f0 0%, #0c111366 38%, transparent 62%), linear-gradient(180deg, #0c111399, transparent 22%) }
+.set-room-intro { align-items: center; background: radial-gradient(90% 70% at 70% 40%, #1f2a2b, #0c1113) }
+.set-room-intro::after { display: none }
+.set-room-intro .set-head h2 { font-size: var(--step-4); line-height: 1.15 }
+.set-hint { display: flex; align-items: center; gap: 14px; margin-top: 34px; color: var(--accent); font-size: var(--step--1) }
+.set-hint i { width: 64px; height: 1px; background: var(--accent); transform-origin: right }
+.set-giant { position: absolute; z-index: 2; top: clamp(70px, 10vh, 120px); inset-inline-start: clamp(16px, 4vw, 64px); font-weight: 800; font-size: clamp(6rem, 22vw, 20rem); line-height: .8; color: transparent; -webkit-text-stroke: 1.5px #e5c77fb3; pointer-events: none }
+.set-room-cap { position: relative; z-index: 2; display: grid; gap: 8px; justify-items: start; max-width: 38em; padding: 0 clamp(16px, 4vw, 64px) clamp(84px, 12vh, 120px) }
+.set-room-cap b { font-size: var(--step-3); font-weight: 700; line-height: 1.2 }
+.set-room-cap small { color: var(--muted); font-size: var(--step-0) }
+.set-room .media-open span { bottom: auto; top: clamp(76px, 10vh, 110px); left: 16px }
+.set-hud { position: absolute; z-index: 3; inset: auto clamp(16px, 4vw, 64px) clamp(24px, 4vh, 40px); display: flex; align-items: center; gap: 18px; pointer-events: none }
+.set-count { font-weight: 800; letter-spacing: .14em; color: var(--accent); white-space: nowrap }
+.set-hud-line { position: relative; flex: 1; height: 1px; background: #ffffff33 }
+.set-hud-line i { position: absolute; inset-block: 0; inset-inline-start: 0; width: calc(var(--p) * 100%); background: var(--accent) }
+@media (prefers-reduced-motion: no-preference) {
+  .set-hint i { animation: set-hint 1.8s var(--ease) infinite }
+}
+@keyframes set-hint { 0% { transform: scaleX(0) } 60%, 100% { transform: scaleX(1); opacity: 0 } }
+@media (prefers-reduced-motion: reduce) {
+  .set--journey { height: auto }
+  .set--journey .set-pin { position: static; height: auto }
+  .set-rail { flex-direction: column; width: auto; transform: none }
+  .set-room { flex: none; height: 80svh }
+  .set-hud { display: none }
+}
+
+/* 8. spotlight: the pointer lights a dim scene; scrolling floods it with light */
+.set--spotlight { --p: 0; padding: 0; height: 220svh; background: #07090a; color: #fffaf0; --accent: #e5c77f; --muted: #e7e1d6; --line: #e5c77f59; --surface: #07090a }
+.set--spotlight .set-pin { --x: 50%; --y: 55%; --rad: calc(clamp(110px, 16vmax, 230px) + var(--p) * 160vmax); position: sticky; top: 0; height: 100svh; overflow: hidden; display: grid; align-items: end; cursor: crosshair; touch-action: pan-y }
+.set-dim, .set-lit { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover }
+.set-dim { filter: grayscale(1) brightness(.28) contrast(1.1) }
+.set-lit { -webkit-mask: radial-gradient(circle var(--rad) at var(--x) var(--y), #000 62%, transparent 100%); mask: radial-gradient(circle var(--rad) at var(--x) var(--y), #000 62%, transparent 100%) }
+.set-glow { position: absolute; left: var(--x); top: var(--y); width: calc(var(--rad) * 2); height: calc(var(--rad) * 2); transform: translate(-50%, -50%); border-radius: 50%; pointer-events: none; box-shadow: inset 0 0 80px #e5c77f33, 0 0 0 1px #e5c77f26; opacity: calc(1 - var(--p) * 1.6) }
+.set-spot-copy { position: relative; z-index: 2; width: 100%; display: flex; justify-content: space-between; align-items: end; gap: 32px; padding-block: clamp(32px, 7vh, 80px); pointer-events: none; text-shadow: 0 2px 20px #000a }
+.set-spot-copy .set-head { opacity: calc(1 - var(--p) * 1.4) }
+.set-spot-cap { display: grid; gap: 6px; justify-items: end; text-align: left; max-width: 28em; opacity: clamp(0, calc(var(--p) * 3 - 1.6), 1); transform: translateY(calc((1 - var(--p)) * 20px)) }
+.set-spot-cap b { font-size: var(--step-2) }
+.set-spot-cap small { color: var(--muted) }
+@media (max-width: 760px) {
+  .set-spot-copy { flex-direction: column; align-items: stretch }
+  .set-spot-cap { justify-items: start; text-align: right }
+}
+@media (prefers-reduced-motion: reduce) { .set--spotlight { height: auto } .set--spotlight .set-pin { position: relative } }
+/* readability once the scene is lit */
+.set--spotlight .set-pin::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(0deg, #07090ae6 0%, #07090a80 28%, transparent 55%); opacity: calc(.4 + var(--p) * .6) }
+/* the whole room is clickable to zoom; the label would sit on the panel edge */
+.set-room .media-open span { display: none }

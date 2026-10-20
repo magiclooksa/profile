@@ -129,10 +129,95 @@ const duo = (c: Collection): HTMLElement[] => {
       side(b, 1)))];
 };
 
-const LAYOUTS: Record<Collection['style'], (c: Collection) => HTMLElement[]> = {
-  panels, collage, switch: switcher, stagger, strip, duo,
+/**
+ * Pinned horizontal journey: scrolling down slides through full-screen rooms.
+ * The section's --p (set by scrollProgress) drives the rail.
+ */
+const journey = (c: Collection): HTMLElement[] => {
+  const total = c.items.length;
+  const counter = h('span', { class: 'latin set-count' }, `01 / ${pad2(total)}`);
+  const intro = h('div', { class: 'set-room set-room-intro' },
+    h('div', { class: 'wrap' }, Head(c),
+      h('p', { class: 'set-hint', 'aria-hidden': 'true' }, h('i'), 'مرّر للأسفل لتتنقل بين المساحات')));
+  const rooms = c.items.map((item, i) => h('figure', { class: 'set-room' },
+    MediaView(item.image, 'set-media'),
+    h('span', { class: 'latin set-giant', 'aria-hidden': 'true' }, pad2(i + 1)),
+    h('figcaption', { class: 'set-room-cap' },
+      item.tag ? h('span', { class: 'set-tag' }, Swatch(item), item.tag) : null,
+      h('b', {}, item.title),
+      h('small', {}, item.image.caption))));
+  const rail = h('div', { class: 'set-rail' }, intro, rooms);
+  const pin = h('div', { class: 'set-pin' }, rail,
+    h('div', { class: 'set-hud', 'aria-hidden': 'true' }, counter, h('span', { class: 'set-hud-line' }, h('i'))));
+  // Keep the counter in step with the rail.
+  let last = -1;
+  const sync = (): void => {
+    const section = pin.parentElement;
+    if (!section) return;
+    // Same formula as scrollProgress, read from layout so it never lags a frame behind.
+    const rect = section.getBoundingClientRect();
+    const p = Math.min(1, Math.max(0, -rect.top / Math.max(1, rect.height - innerHeight)));
+    const index = Math.min(total, Math.max(1, Math.round(p * total)));
+    if (index !== last) { last = index; counter.textContent = `${pad2(index)} / ${pad2(total)}` }
+  };
+  addEventListener('scroll', () => requestAnimationFrame(sync), { passive: true });
+  return [pin];
 };
 
+/** A dark, colourless scene that the pointer lights up; scrolling floods it with light. */
+const spotlight = (c: Collection): HTMLElement[] => {
+  const item = c.items[0];
+  if (!item?.image.src) return [h('div', { class: 'wrap' }, Head(c))];
+  const src = item.image.src;
+  const pin = h('div', { class: 'set-pin' },
+    h('img', { class: 'set-dim', src, alt: '', 'aria-hidden': 'true', loading: 'lazy', decoding: 'async' }),
+    h('img', { class: 'set-lit', src, alt: item.image.caption, loading: 'lazy', decoding: 'async' }),
+    h('div', { class: 'set-glow', 'aria-hidden': 'true' }),
+    h('div', { class: 'wrap set-spot-copy' }, Head(c),
+      h('div', { class: 'set-spot-cap' },
+        item.tag ? h('span', { class: 'set-tag' }, Swatch(item), item.tag) : null,
+        h('b', {}, item.title), h('small', {}, item.image.caption))));
+
+  let x = 0.5; let y = 0.55; let idle = true; let idleTimer = 0; let visible = false; let raf = 0;
+  const place = (): void => {
+    pin.style.setProperty('--x', `${(x * 100).toFixed(2)}%`);
+    pin.style.setProperty('--y', `${(y * 100).toFixed(2)}%`);
+  };
+  pin.addEventListener('pointermove', (e) => {
+    const r = pin.getBoundingClientRect();
+    x = (e.clientX - r.left) / r.width; y = (e.clientY - r.top) / r.height;
+    idle = false; clearTimeout(idleTimer);
+    idleTimer = window.setTimeout(() => { idle = true }, 2500);
+    place();
+  });
+  // When nobody is pointing, the light drifts slowly on its own.
+  const drift = (t: number): void => {
+    raf = 0;
+    if (!visible) return;
+    if (idle) { x = 0.5 + Math.sin(t / 2600) * 0.24; y = 0.55 + Math.cos(t / 3400) * 0.16; place() }
+    raf = requestAnimationFrame(drift);
+  };
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    new IntersectionObserver(([entry]) => {
+      visible = entry?.isIntersecting ?? false;
+      if (visible && !raf) raf = requestAnimationFrame(drift);
+    }).observe(pin);
+  }
+  place();
+  return [pin];
+};
+
+const LAYOUTS: Record<Collection['style'], (c: Collection) => HTMLElement[]> = {
+  panels, collage, switch: switcher, stagger, strip, duo, journey, spotlight,
+};
+
+/** Styles whose section is pinned and driven by scroll progress. */
+const SCROLL_DRIVEN: ReadonlySet<Collection['style']> = new Set(['journey', 'spotlight']);
+
 export const CollectionSection = (c: Collection, index: number): HTMLElement =>
-  h('section', { class: `set set--${c.style}`, id: `collection-${index + 1}`, 'aria-label': c.title },
-    ...LAYOUTS[c.style](c));
+  h('section', {
+    class: `set set--${c.style}`, id: `collection-${index + 1}`, 'aria-label': c.title,
+    'data-scroll-progress': SCROLL_DRIVEN.has(c.style),
+    // The journey has one intro screen plus a screen per room.
+    style: c.style === 'journey' ? `--n: ${c.items.length + 1}` : undefined,
+  }, ...LAYOUTS[c.style](c));

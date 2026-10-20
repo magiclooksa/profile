@@ -295,6 +295,72 @@
           }
         }
       ]
+    },
+    {
+      "style": "journey",
+      "kicker": "SECTIONAL SOFAS",
+      "title": "جلسة واحدة… أربعة عوالم",
+      "text": "كنب الزاوية يتشكّل حسب المكان: نصمم التوزيع والمقاسات والخامات لتناسب روح كل مساحة.",
+      "items": [
+        {
+          "title": "روح المصنع",
+          "tag": "لوفت صناعي",
+          "color": "#6B6A68",
+          "image": {
+            "src": "images/collections/sectional-industrial-loft.webp",
+            "aspectRatio": "16:9",
+            "caption": "كنب زاوية رمادي على شكل U بين جدران الطوب والنوافذ الحديدية الواسعة"
+          }
+        },
+        {
+          "title": "حديقة داخلية",
+          "tag": "استوائي",
+          "color": "#A8733F",
+          "image": {
+            "src": "images/collections/sectional-wooden-sunroom.webp",
+            "aspectRatio": "16:9",
+            "caption": "جلسة زاوية بإطار خشبي محفور ووسائد بيضاء وسط نوافذ تطل على الخضرة"
+          }
+        },
+        {
+          "title": "دفء المدفأة",
+          "tag": "ريفي دافئ",
+          "color": "#55575A",
+          "image": {
+            "src": "images/collections/sectional-fireplace-lodge.webp",
+            "aspectRatio": "16:9",
+            "caption": "كنب زاوية واسع حول طاولة خشبية أمام مدفأة حجرية ومكتبة"
+          }
+        },
+        {
+          "title": "ركن القراءة",
+          "tag": "مكتبي هادئ",
+          "color": "#B9B2A6",
+          "image": {
+            "src": "images/collections/sectional-modular-library.webp",
+            "aspectRatio": "16:9",
+            "caption": "كنب زاوية معياري بذراع خشبية أمام مكتبة مضاءة بإضاءة دافئة"
+          }
+        }
+      ]
+    },
+    {
+      "style": "spotlight",
+      "kicker": "IN THE LIGHT",
+      "title": "التفاصيل تظهر في الضوء",
+      "text": "حرّك المؤشر أو إصبعك لتكشف ألوان الخامات… واستمر بالتمرير لتكتمل الإضاءة.",
+      "items": [
+        {
+          "title": "كنبة بيج بين الحديقة والضوء",
+          "tag": "هادئ",
+          "color": "#E8DFCF",
+          "image": {
+            "src": "images/collections/sofa-beige-garden.webp",
+            "aspectRatio": "16:9",
+            "caption": "كنبة بيج بوسائد كريمية بجانب نوافذ تطل على حديقة، مع طاولة خشبية دائرية"
+          }
+        }
+      ]
     }
   ]
 }

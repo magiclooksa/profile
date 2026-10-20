@@ -3,7 +3,7 @@ import { initJourneyFill } from './behaviors/journeyFill';
 import { initNavState } from './behaviors/navState';
 import { initReveal } from './behaviors/reveal';
 import { initMediaPlayback } from './behaviors/mediaPlayback';
-import { initFilmExpand } from './behaviors/filmExpand';
+import { initScrollProgress } from './behaviors/scrollProgress';
 import { About } from './components/About';
 import { BackgroundSound } from './components/BackgroundSound';
 import { Advantages } from './components/Advantages';
@@ -56,16 +56,18 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
     collection(5),
     film(1),
     Advantages(profile.advantages, company, next()),
+    collection(7),
     collection(1),
     Journey(profile.journey, next()),
     collection(2),
     Levels(profile.levels, next()),
     collection(4),
     film(2),
+    collection(6),
     film(3),
     ...company.films.slice(4).map((f, i) => FilmSection(f, i + 4)),
     collection(3),
-    ...company.collections.slice(6).map((c, i) => CollectionSection(c, i + 6)),
+    ...company.collections.slice(8).map((c, i) => CollectionSection(c, i + 8)),
     Clients(profile.clients, next()),
     Contact(company, profile.contact));
 
@@ -76,7 +78,7 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
   initNavState(document.getElementById('nav'));
   initReveal(root);
   initMediaPlayback(root);
-  initFilmExpand(root);
+  initScrollProgress(root);
   initJourneyFill(document.getElementById('track'));
 }
 

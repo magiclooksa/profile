@@ -38,7 +38,7 @@ export interface Film {
   readonly video: Media;
 }
 
-export const COLLECTION_STYLES = ['panels', 'collage', 'switch', 'stagger', 'strip', 'duo'] as const;
+export const COLLECTION_STYLES = ['panels', 'collage', 'switch', 'stagger', 'strip', 'duo', 'journey', 'spotlight'] as const;
 export type CollectionStyle = (typeof COLLECTION_STYLES)[number];
 
 export interface CollectionItem {
