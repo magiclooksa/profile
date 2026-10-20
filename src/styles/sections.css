@@ -202,3 +202,60 @@ ol.track, ol.lvls { list-style: none; padding: 0; margin: 0 }
 .site-.site-footer p { color: color-mix(in srgb, var(--band-fg) 65%, transparent) }
 
 @media (prefers-reduced-motion: reduce) { .pattern svg { animation: none } html { scroll-behavior: auto } }
+
+/* ── film sections: one design per style ── */
+.film { overflow: clip }
+.film .media { background: #0c1113 }
+.film .media video { object-fit: cover }
+.film-kicker { font-weight: 800; font-size: var(--step--1); letter-spacing: .28em; color: var(--accent); text-align: right }
+.film-copy { display: flex; flex-direction: column; gap: 14px; max-width: 36em }
+.film-copy h2 { font-size: var(--step-3); font-weight: 700 }
+.film-text { color: var(--muted) }
+
+/* 1. cinema: edge-to-edge widescreen with the title on the picture */
+.film-cinema { padding: 0; background: #0c1113; color: #fffaf0; --accent: #e5c77f; --muted: #e7e1d6 }
+.film-cinema .film-stage { position: relative; min-height: min(78svh, 760px); display: grid; align-items: end }
+.film-cinema .film-media { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; aspect-ratio: auto }
+.film-cinema .film-shade { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(0deg, #0c1113f2 0%, #0c111366 45%, transparent 75%), linear-gradient(180deg, #0c1113 0, transparent 14%) }
+.film-cinema .wrap { position: relative; z-index: 2; width: 100%; padding-block: clamp(40px, 7vw, 90px) }
+.film-cinema .film-copy { border-right: 3px solid var(--accent); padding-right: clamp(16px, 2vw, 28px) }
+.film-cinema .media-sound { top: 16px; bottom: auto; inset-inline-start: auto; inset-inline-end: 16px; z-index: 3 }
+
+/* 2. arch: arch-framed video beside numbered points */
+.film-portal { position: relative }
+.film-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(28px, 6vw, 96px); align-items: center }
+.film-portal { justify-self: center; width: min(100%, 460px) }
+.film-portal .film-media { aspect-ratio: 4 / 5; border-radius: 999px 999px var(--r) var(--r) }
+.film-portal-line { position: absolute; inset: -18px 18px 18px -18px; border: 1.5px solid var(--accent); border-radius: 999px 999px var(--r) var(--r); pointer-events: none }
+.film-portal .media-sound { top: auto; bottom: 14px; inset-inline-start: 50%; transform: translateX(50%) }
+.film-points { list-style: none; padding: 0; margin-top: 26px; counter-reset: pt; border-top: 1px solid var(--line) }
+.film-points li { counter-increment: pt; display: flex; gap: 18px; align-items: baseline; padding-block: 14px; border-bottom: 1px solid var(--line); font-weight: 500 }
+.film-points li::before { content: counter(pt, decimal-leading-zero); font-family: var(--font-en); font-weight: 800; color: var(--accent) }
+@media (max-width: 820px) { .film-grid { grid-template-columns: 1fr } .film-portal { width: min(84%, 380px) } }
+
+/* 3. frame: dark band, drifting brand word, gold-cornered frame */
+.film.film-frame { background: var(--band); color: var(--band-fg); --accent: #e5c77f; --muted: #cfc8ba; --line: #e5c77f40 }
+.film-marquee { position: absolute; top: 50%; left: 0; display: flex; width: max-content; transform: translateY(-50%); white-space: nowrap; font-weight: 800; font-size: clamp(5rem, 16vw, 15rem); line-height: 1; color: transparent; -webkit-text-stroke: 1px #e5c77f30; pointer-events: none; user-select: none }
+.film.film-frame .wrap { position: relative; z-index: 1; display: grid; justify-items: center; gap: clamp(24px, 4vw, 44px) }
+.film-center { align-items: center; text-align: center }
+.film-center .film-kicker { text-align: center }
+.film-box { position: relative; width: min(100%, 1040px); padding: clamp(10px, 1.4vw, 18px); border: 1px solid #e5c77f40 }
+.film-box .corner { width: 46px; height: 46px; z-index: 2 }
+.film-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; list-style: none; padding: 0 }
+.film-chips li { padding: 6px 20px; border: 1px solid #e5c77f66; border-radius: 99px; font-size: var(--step--1) }
+@media (prefers-reduced-motion: no-preference) {
+  .film-marquee { animation: film-marquee 40s linear infinite }
+}
+@keyframes film-marquee { from { transform: translate(-50%, -50%) } to { transform: translate(0, -50%) } }
+
+/* 4. expand: inset card that opens to full screen on scroll (--p from 0 to 1) */
+.film-expand { --p: 0; padding: 0; height: 220svh; background: var(--bg) }
+.film-sticky { position: sticky; top: 0; height: 100svh; display: grid; align-items: end; overflow: hidden }
+.film-window { position: absolute; inset: 0; clip-path: inset(calc((1 - var(--p)) * 14%) calc((1 - var(--p)) * 18%) round calc((1 - var(--p)) * 40px)) }
+.film-window .film-media { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; aspect-ratio: auto; transform: scale(calc(1.15 - var(--p) * .15)) }
+.film-expand .film-shade { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(0deg, #0c1113e6, transparent 60%); opacity: var(--p) }
+.film-expand .wrap { position: relative; z-index: 2; width: 100%; padding-block: clamp(40px, 8vw, 110px) }
+.film-overlay { display: flex; flex-direction: column; gap: 18px; color: #fffaf0; --accent: #e5c77f; --muted: #e7e1d6; opacity: clamp(0, calc(var(--p) * 2.5 - 1.5), 1); transform: translateY(calc((1 - var(--p)) * 40px)) }
+.film-overlay .mark { width: 64px }
+.film-expand .media-sound { top: 84px; bottom: auto; inset-inline-start: auto; inset-inline-end: 16px }
+@media (max-width: 760px) { .film-expand { height: 180svh } }

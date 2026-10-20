@@ -1,5 +1,5 @@
 import {
-  GALLERY_LAYOUTS,
+  FILM_STYLES, GALLERY_LAYOUTS, type Film,
   type Advantages, type Clients, type Company, type CompareProject, type Contact,
   type EngagementLevels, type IconName, type Journey, type Media, type Products,
   type Project, type Services, type StandardProject, type TitledText,
@@ -18,6 +18,11 @@ const media: Decoder<Media> = object<Media>({
   poster: nullable(string),
   aspectRatio: nullable(oneOf(['9:16', '16:9', 'auto'] as const)),
 });
+const film: Decoder<Film> = object<Film>({
+  style: oneOf(FILM_STYLES), kicker: string, title: string, text: string,
+  points: (v, path) => (v === undefined || v === null ? [] : array(string)(v, path)),
+  video: media,
+});
 const titledText: Decoder<TitledText> = object<TitledText>({ title: string, text: string });
 
 export const companyDecoder = object<Company>({
@@ -30,6 +35,7 @@ export const companyDecoder = object<Company>({
   about: object({ lead: string, highlight: string, paragraphs: array(string), image: media }),
   statements: array(titledText),
   interiorDesign: object({ intro: string, traits: array(string), images: array(media) }),
+  films: (v, path) => (v === undefined || v === null ? [] : array(film)(v, path)),
 });
 
 export const servicesDecoder = object<Services>({

@@ -25,6 +25,19 @@ export interface TitledText {
   readonly text: string;
 }
 
+export const FILM_STYLES = ['cinema', 'arch', 'frame', 'expand'] as const;
+export type FilmStyle = (typeof FILM_STYLES)[number];
+
+/** A video showcased in its own section; `style` picks the section design. */
+export interface Film {
+  readonly style: FilmStyle;
+  readonly kicker: string;
+  readonly title: string;
+  readonly text: string;
+  readonly points: readonly string[];
+  readonly video: Media;
+}
+
 export interface Company {
   readonly name: { readonly ar: string; readonly en: string };
   readonly entityType: string;
@@ -44,6 +57,7 @@ export interface Company {
     readonly traits: readonly string[];
     readonly images: readonly Media[];
   };
+  readonly films: readonly Film[];
 }
 
 export interface Service { readonly icon: IconName; readonly text: string }

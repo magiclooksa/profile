@@ -3,11 +3,13 @@ import { initJourneyFill } from './behaviors/journeyFill';
 import { initNavState } from './behaviors/navState';
 import { initReveal } from './behaviors/reveal';
 import { initMediaPlayback } from './behaviors/mediaPlayback';
+import { initFilmExpand } from './behaviors/filmExpand';
 import { About } from './components/About';
 import { BackgroundSound } from './components/BackgroundSound';
 import { Advantages } from './components/Advantages';
 import { Clients } from './components/Clients';
 import { Contact } from './components/Contact';
+import { FilmSection } from './components/FilmSection';
 import { Footer } from './components/Footer';
 import { Hero } from './components/Hero';
 import { InteriorDesign } from './components/InteriorDesign';
@@ -34,16 +36,27 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
   let n = 0;
   const next = (): number => ++n;
 
+  // Films are spread through the page, each in the slot below (missing ones are skipped).
+  const film = (i: number): HTMLElement | null => {
+    const f = company.films[i];
+    return f ? FilmSection(f, i) : null;
+  };
+
   const main = h('main', {},
     Hero(company),
     About(company, next()),
+    film(0),
     Services(profile.services, next()),
     Products(profile.products, next()),
+    film(1),
     Advantages(profile.advantages, company, next()),
     Journey(profile.journey, next()),
     Levels(profile.levels, next()),
+    film(2),
     profile.projects.length > 0 ? Projects(profile.projects, next()) : null,
     InteriorDesign(company),
+    film(3),
+    ...company.films.slice(4).map((f, i) => FilmSection(f, i + 4)),
     Clients(profile.clients, next()),
     Contact(company, profile.contact));
 
@@ -54,6 +67,7 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
   initNavState(document.getElementById('nav'));
   initReveal(root);
   initMediaPlayback(root);
+  initFilmExpand(root);
   initJourneyFill(document.getElementById('track'));
 }
 

@@ -61,5 +61,68 @@
         "caption": "تنسيق الكنب والستائر والخشب بألوان محايدة"
       }
     ]
-  }
+  },
+  "films": [
+    {
+      "style": "cinema",
+      "kicker": "FILM 01 — BEDROOM",
+      "title": "غرفة نوم تُصمَّم للراحة",
+      "text": "طقم متكامل يجمع السرير المنجّد والكمدينات والتسريحة بخامات هادئة وتفاصيل مدروسة، ليمنح غرفتك إحساس الفندق الفاخر كل يوم.",
+      "points": [],
+      "video": {
+        "type": "video",
+        "src": "videos/Bedroom_set_commercial__1080p.mp4",
+        "aspectRatio": "16:9",
+        "caption": "جولة مصوّرة في طقم غرفة نوم فاخر"
+      }
+    },
+    {
+      "style": "arch",
+      "kicker": "FILM 02 — DINING",
+      "title": "طاولة تجمع العائلة بأناقة",
+      "text": "طاولة طعام بتشطيب راقٍ وكراسٍ مريحة، تُصنع بمقاسات تناسب مساحتك وتُنسَّق مع الإضاءة والخامات المحيطة.",
+      "points": [
+        "خامات فاخرة بتشطيب يدوم",
+        "مقاسات مخصصة لمساحتك",
+        "تنسيق متكامل مع الإضاءة والديكور"
+      ],
+      "video": {
+        "type": "video",
+        "src": "videos/Showcasing_luxurious_dining_table.mp4",
+        "aspectRatio": "16:9",
+        "caption": "عرض لطاولة طعام فاخرة مع كراسيها"
+      }
+    },
+    {
+      "style": "frame",
+      "kicker": "FILM 03 — COLLECTION",
+      "title": "قطع تُصنع لتبقى",
+      "text": "لمحة عن مجموعة أثاث MAGIC LOOK: تصاميم تجمع الذوق والجودة، من المجالس إلى الكنب وقطع الديكور.",
+      "points": [
+        "تصميم",
+        "تصنيع",
+        "تنسيق",
+        "تأثيث"
+      ],
+      "video": {
+        "type": "video",
+        "src": "videos/Furniture_marketing_video_for_di…_20261019190133.mp4",
+        "aspectRatio": "16:9",
+        "caption": "لمحة عن مجموعة أثاث MAGIC LOOK"
+      }
+    },
+    {
+      "style": "expand",
+      "kicker": "FILM 04 — INTERIOR",
+      "title": "مساحة متكاملة من الفكرة إلى آخر تفصيلة",
+      "text": "جولة في تصميم داخلي يتناغم فيه الأثاث مع الجدران والإضاءة والخامات، كما نفعل في كل مشروع.",
+      "points": [],
+      "video": {
+        "type": "video",
+        "src": "videos/Luxury_interior_commercial_camer…__1080p_20261020154711.mp4",
+        "aspectRatio": "16:9",
+        "caption": "جولة في مساحة داخلية متكاملة"
+      }
+    }
+  ]
 }
