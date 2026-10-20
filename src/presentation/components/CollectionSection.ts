@@ -67,8 +67,70 @@ const stagger = (c: Collection): HTMLElement[] => [
         MediaView(item.image, 'set-media'), Caption(item, i))))),
 ];
 
+const Swatch = (item: CollectionItem): HTMLElement | null =>
+  item.color ? h('i', { class: 'set-swatch', style: `--swatch: ${item.color}`, 'aria-hidden': 'true' }) : null;
+
+/** Horizontal scroll-snap strip with arrows and a progress bar. */
+const strip = (c: Collection): HTMLElement[] => {
+  const track = h('div', { class: 'set-track', tabindex: '0', role: 'region', 'aria-label': c.title },
+    c.items.map((item, i) => h('figure', { class: 'set-card' },
+      MediaView(item.image, 'set-media'),
+      h('figcaption', { class: 'set-cap' },
+        h('span', { class: 'set-card-top' },
+          h('span', { class: 'latin set-no' }, pad2(i + 1)),
+          item.tag ? h('span', { class: 'set-tag' }, Swatch(item), item.tag) : null),
+        h('b', {}, item.title),
+        h('small', {}, item.image.caption)))));
+  const bar = h('i', { class: 'set-bar-fill' });
+  const step = (dir: 1 | -1): void => {
+    const card = track.querySelector<HTMLElement>('.set-card');
+    // In RTL the track scrolls towards negative scrollLeft.
+    track.scrollBy({ left: -dir * (card ? card.offsetWidth + 20 : track.clientWidth * 0.8), behavior: 'smooth' });
+  };
+  const prev = h('button', { type: 'button', class: 'set-arrow', 'aria-label': 'السابق' }, '→');
+  const next = h('button', { type: 'button', class: 'set-arrow', 'aria-label': 'التالي' }, '←');
+  prev.addEventListener('click', () => step(-1));
+  next.addEventListener('click', () => step(1));
+  const sync = (): void => {
+    const max = track.scrollWidth - track.clientWidth;
+    const p = max > 0 ? Math.abs(track.scrollLeft) / max : 1;
+    bar.style.setProperty('--p', p.toFixed(3));
+    prev.disabled = p <= 0.01;
+    next.disabled = p >= 0.99;
+  };
+  track.addEventListener('scroll', sync, { passive: true });
+  addEventListener('resize', sync);
+  requestAnimationFrame(sync);
+  return [
+    h('div', { class: 'wrap set-strip-head' }, Head(c, 'reveal'),
+      h('div', { class: 'set-arrows' }, prev, next)),
+    h('div', { class: 'wrap' }, track,
+      h('div', { class: 'set-bar', 'aria-hidden': 'true' }, bar)),
+  ];
+};
+
+/** Two looks facing each other across a centred label. */
+const duo = (c: Collection): HTMLElement[] => {
+  const [a, b] = c.items;
+  const side = (item: CollectionItem | undefined, i: number): HTMLElement | null => item
+    ? h('figure', { class: `set-side set-side-${i + 1} reveal` },
+        MediaView(item.image, 'set-media'),
+        h('figcaption', { class: 'set-cap' },
+          h('span', { class: 'set-tag' }, Swatch(item), item.tag ?? item.title),
+          h('b', {}, item.title),
+          h('small', {}, item.image.caption)))
+    : null;
+  return [h('div', { class: 'wrap' },
+    Head(c, 'set-center reveal'),
+    h('div', { class: 'set-duo' },
+      side(a, 0),
+      h('div', { class: 'set-versus', 'aria-hidden': 'true' },
+        h('span', {}, a?.tag ?? ''), h('i'), h('span', {}, b?.tag ?? '')),
+      side(b, 1)))];
+};
+
 const LAYOUTS: Record<Collection['style'], (c: Collection) => HTMLElement[]> = {
-  panels, collage, switch: switcher, stagger,
+  panels, collage, switch: switcher, stagger, strip, duo,
 };
 
 export const CollectionSection = (c: Collection, index: number): HTMLElement =>

@@ -25,7 +25,7 @@ const film: Decoder<Film> = object<Film>({
 });
 const collection: Decoder<Collection> = object<Collection>({
   style: oneOf(COLLECTION_STYLES), kicker: string, title: string, text: string,
-  items: array(object({ title: string, image: media })),
+  items: array(object({ title: string, image: media, tag: nullable(string), color: nullable(hexColor) })),
 });
 const titledText: Decoder<TitledText> = object<TitledText>({ title: string, text: string });
 

@@ -38,10 +38,17 @@ export interface Film {
   readonly video: Media;
 }
 
-export const COLLECTION_STYLES = ['panels', 'collage', 'switch', 'stagger'] as const;
+export const COLLECTION_STYLES = ['panels', 'collage', 'switch', 'stagger', 'strip', 'duo'] as const;
 export type CollectionStyle = (typeof COLLECTION_STYLES)[number];
 
-export interface CollectionItem { readonly title: string; readonly image: Media }
+export interface CollectionItem {
+  readonly title: string;
+  readonly image: Media;
+  /** Short style label, e.g. "جاباندي". */
+  readonly tag?: Maybe<string>;
+  /** Main colour of the piece, shown as a swatch. */
+  readonly color?: Maybe<string>;
+}
 
 /** A themed photo set shown in its own section; `style` picks the section design. */
 export interface Collection {

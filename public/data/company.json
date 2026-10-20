@@ -229,6 +229,72 @@
           }
         }
       ]
+    },
+    {
+      "style": "strip",
+      "kicker": "LIVING ROOMS",
+      "title": "كنبة لكل ذوق",
+      "text": "من الطابع الشرقي الدافئ إلى الكلاسيكي المشرق وبساطة الجاباندي، نختار الكنب والقماش والألوان لتناسب روح مساحتك.",
+      "items": [
+        {
+          "title": "شرقي دافئ",
+          "tag": "شرقي",
+          "color": "#CDBFA6",
+          "image": {
+            "src": "images/collections/sofa-oriental-beige.webp",
+            "aspectRatio": "16:9",
+            "caption": "كنبة بيج بإطار داكن ووسائد مطرّزة أمام قاطع خشبي شبكي وإضاءة خافتة"
+          }
+        },
+        {
+          "title": "كلاسيكي مشرق",
+          "tag": "كلاسيكي",
+          "color": "#4A6FB0",
+          "image": {
+            "src": "images/collections/sofa-classic-blue.webp",
+            "aspectRatio": "16:9",
+            "caption": "كنبة مخملية زرقاء بشراشيب في صالة بيضاء مشرقة بنوافذ واسعة"
+          }
+        },
+        {
+          "title": "هدوء الجاباندي",
+          "tag": "جاباندي",
+          "color": "#E6DDCD",
+          "image": {
+            "src": "images/collections/daybed-japandi-cream.webp",
+            "aspectRatio": "16:9",
+            "caption": "أريكة نهارية كريمية بقاعدة خشبية داكنة وسط خامات طبيعية وقواطع خشبية"
+          }
+        }
+      ]
+    },
+    {
+      "style": "duo",
+      "kicker": "RED VELVET",
+      "title": "المخمل الأحمر بطابعين",
+      "text": "لون واحد بشخصيتين: خطوط منحنية عصرية، أو تنجيد كلاسيكي بأزرار وأرجل خشبية. نصنع القطعة بالمقاس والقماش الذي تختاره.",
+      "items": [
+        {
+          "title": "عصري منحنٍ",
+          "tag": "عصري",
+          "color": "#A8402E",
+          "image": {
+            "src": "images/collections/sofa-red-velvet-modern.webp",
+            "aspectRatio": "16:9",
+            "caption": "كنبة مخملية بلون الطوب بخطوط منحنية ناعمة في صالة مضيئة"
+          }
+        },
+        {
+          "title": "كلاسيكي منجّد",
+          "tag": "كلاسيكي",
+          "color": "#A31F2A",
+          "image": {
+            "src": "images/collections/sofa-red-velvet-classic.webp",
+            "aspectRatio": "16:9",
+            "caption": "كنبة مخملية حمراء بتنجيد أزرار وأرجل خشبية ووسائد بيج"
+          }
+        }
+      ]
     }
   ]
 }
