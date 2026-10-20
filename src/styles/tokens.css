@@ -1,5 +1,9 @@
 
-/* Layout: one calm vertical scroll in the brand's ivory, ink and ochre; the LM mark leads, the L/V pattern breathes behind. */
+/*
+ * Layout: an editorial, motion-led page in the spirit of cuberto.com —
+ * oversized type, rounded media, magnetic round buttons, a follower cursor —
+ * kept in the brand's own ivory, ink and ochre, with the LM mark and the L/V pattern.
+ */
 :root {
   color-scheme: only light;
   --bg: #F4F0E8;          /* ivory */
@@ -10,6 +14,7 @@
   --line: #DCD3C0;
   --accent: #7B5D08;      /* ochre */
   --accent-2: #B48A1E;    /* lighter ochre for the sheen */
+  --accent-light: #E0BF6E;/* ochre that reads on ink */
   --band: #17191B;        /* dark band */
   --band-fg: #F4F0E8;
   --on-accent: #FFFFFF;
@@ -18,11 +23,17 @@
   --font-en: "Almarai", "Noto Kufi Arabic", Arial, sans-serif;
   --step--1: clamp(.85rem, .8rem + .2vw, .95rem);
   --step-0: clamp(1rem, .95rem + .25vw, 1.12rem);
-  --step-1: clamp(1.2rem, 1.1rem + .5vw, 1.45rem);
-  --step-2: clamp(1.5rem, 1.25rem + 1.1vw, 2.2rem);
-  --step-3: clamp(2.1rem, 1.6rem + 2.4vw, 3.6rem);
-  --step-4: clamp(2.6rem, 1.8rem + 4vw, 5.2rem);
-  --wrap: 1180px;
+  --step-1: clamp(1.15rem, 1.02rem + .6vw, 1.6rem);
+  --step-2: clamp(1.45rem, 1.15rem + 1.4vw, 2.6rem);
+  --step-3: clamp(2rem, 1.25rem + 3.4vw, 4.6rem);
+  --step-4: clamp(2.5rem, 1.3rem + 5.6vw, 7rem);
+  --step-5: clamp(2.7rem, 1.1rem + 7.4vw, 9.4rem);
+  --wrap: 1440px;
+  --gutter: clamp(16px, 4vw, 64px);
+  --r-sm: 14px;
+  --r: clamp(18px, 2vw, 32px);
+  --r-lg: clamp(26px, 3.6vw, 60px);
   --ease: cubic-bezier(.2,.7,.1,1);
+  --ease-out: cubic-bezier(.19,1,.22,1);
+  --ease-io: cubic-bezier(.77,0,.18,1);
 }
-
