@@ -19,7 +19,7 @@ export function Hero(company: Company): HTMLElement {
         h('p', { class: 'sub' }, company.field),
         h('p', { class: 'tag' }, company.tagline),
         h('div', { class: 'ctas' },
-          h('a', { class: 'btn solid', href: '#works' }, 'شاهد أعمالنا'),
+          h('a', { class: 'btn solid', href: '#collection-1' }, 'شاهد أعمالنا'),
           h('a', { class: 'btn ghost', href: '#contact' }, 'تواصل معنا'))),
       h('div', { class: 'hero-art', 'aria-hidden': 'true' },
         h('div', { class: 'frame' },

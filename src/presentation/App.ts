@@ -13,12 +13,10 @@ import { Contact } from './components/Contact';
 import { FilmSection } from './components/FilmSection';
 import { Footer } from './components/Footer';
 import { Hero } from './components/Hero';
-import { InteriorDesign } from './components/InteriorDesign';
 import { Journey } from './components/Journey';
 import { Levels } from './components/Levels';
 import { Nav, type NavLink } from './components/Nav';
 import { Products } from './components/Products';
-import { Projects } from './components/Projects';
 import { Services } from './components/Services';
 import { h } from './dom';
 
@@ -27,7 +25,7 @@ const NAV_LINKS: readonly NavLink[] = [
   { id: 'services', label: 'خدماتنا' },
   { id: 'products', label: 'منتجاتنا' },
   { id: 'journey', label: 'رحلة العمل' },
-  { id: 'works', label: 'أعمالنا' },
+  { id: 'collection-1', label: 'أعمالنا' },
   { id: 'contact', label: 'تواصل معنا' },
 ];
 
@@ -64,8 +62,6 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
     Levels(profile.levels, next()),
     collection(4),
     film(2),
-    profile.projects.length > 0 ? Projects(profile.projects, next()) : null,
-    InteriorDesign(company),
     film(3),
     ...company.films.slice(4).map((f, i) => FilmSection(f, i + 4)),
     collection(3),

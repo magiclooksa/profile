@@ -1,7 +1,6 @@
 import './styles/tokens.css';
 import './styles/base.css';
 import './styles/sections.css';
-import './styles/galleries.css';
 import { GetProfile } from './application/GetProfile';
 import { JsonProfileRepository, httpFetcher } from './infrastructure/JsonProfileRepository';
 import { renderApp, renderError } from './presentation/App';
