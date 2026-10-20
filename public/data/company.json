@@ -124,5 +124,111 @@
         "caption": "جولة في مساحة داخلية متكاملة"
       }
     }
+  ],
+  "collections": [
+    {
+      "style": "panels",
+      "kicker": "BEDROOMS",
+      "title": "غرف نوم بثلاث شخصيات",
+      "text": "من الفخامة الهادئة إلى البساطة العصرية وأجواء الفنادق، نصمم غرفة النوم كوحدة متكاملة تجمع السرير والخزائن والإضاءة.",
+      "items": [
+        {
+          "title": "فخامة هادئة",
+          "image": {
+            "src": "images/collections/luxury-bedroom-set.webp",
+            "aspectRatio": "16:9",
+            "caption": "طقم غرفة نوم فاخر بسرير منجّد ومقعد طويل وكمدينة بلون واحد"
+          }
+        },
+        {
+          "title": "جدار متكامل",
+          "image": {
+            "src": "images/collections/modern-bedroom-wall.webp",
+            "aspectRatio": "16:9",
+            "caption": "خزائن جدارية بيضاء بواجهة زجاجية مضاءة مع تسريحة مدمجة"
+          }
+        },
+        {
+          "title": "أجواء فندقية",
+          "image": {
+            "src": "images/collections/hotel-twin-bedroom.webp",
+            "aspectRatio": "16:9",
+            "caption": "غرفة بسريرين وكسوة خشبية بإضاءة مخفية خلف الرأسية"
+          }
+        }
+      ]
+    },
+    {
+      "style": "collage",
+      "kicker": "DINING",
+      "title": "سفرة تليق بضيوفك",
+      "text": "طاولات طعام بخامات الخشب والرخام، وكراسٍ منجّدة بتصاميم كلاسيكية وعصرية، تُنسَّق مع الإضاءة والسجاد والستائر لتكتمل الجلسة.",
+      "items": [
+        {
+          "title": "سفرة كبرى بالخشب",
+          "image": {
+            "src": "images/collections/luxury-dining-room.webp",
+            "aspectRatio": "16:9",
+            "caption": "غرفة طعام فاخرة بطاولة خشبية بيضاوية وكراسٍ منجّدة وإضاءة سقف مخفية"
+          }
+        },
+        {
+          "title": "رخام ونقوش",
+          "image": {
+            "src": "images/collections/marble-dining-set.webp",
+            "aspectRatio": "16:9",
+            "caption": "طاولة طعام رخامية مع كراسٍ بنقوش نباتية وستائر مخملية"
+          }
+        }
+      ]
+    },
+    {
+      "style": "switch",
+      "kicker": "KITCHENS",
+      "title": "مطابخ مدمجة بتفاصيل مدروسة",
+      "text": "وحدات مطبخ وتخزين بخطوط نظيفة، تجمع واجهات الحجر والخشب وخزائن العرض الزجاجية مع إضاءة خطية أسفل الوحدة.",
+      "items": [
+        {
+          "title": "وحدة تحضير",
+          "image": {
+            "src": "images/collections/kitchenette-unit.webp",
+            "aspectRatio": "16:9",
+            "caption": "وحدة مطبخ تحضيري بواجهة حجرية وتجويف خشبي مضاء وخزانة عرض زجاجية"
+          }
+        },
+        {
+          "title": "الواجهة الكاملة",
+          "image": {
+            "src": "images/collections/kitchen-front.webp",
+            "aspectRatio": "16:9",
+            "caption": "عرض أمامي لوحدة المطبخ والتخزين بإضاءة سفلية"
+          }
+        }
+      ]
+    },
+    {
+      "style": "stagger",
+      "kicker": "STORAGE & DISPLAY",
+      "title": "خزائن تحفظ وتعرض",
+      "text": "من خزائن الملابس الجدارية بالخشب الطبيعي والزجاج المدخّن، إلى خزائن العرض الكلاسيكية بزخارفها، نصمم التخزين ليكون جزءًا من جمال المكان.",
+      "items": [
+        {
+          "title": "خزانة جدارية",
+          "image": {
+            "src": "images/collections/closet-wall-unit.webp",
+            "aspectRatio": "16:9",
+            "caption": "وحدة خزائن ملابس جدارية بأرفف خشبية وأبواب زجاجية داكنة"
+          }
+        },
+        {
+          "title": "خزانة عرض",
+          "image": {
+            "src": "images/collections/glass-display-cabinet.webp",
+            "aspectRatio": "16:9",
+            "caption": "خزانة عرض كلاسيكية بواجهات زجاجية وزخارف منحوتة"
+          }
+        }
+      ]
+    }
   ]
 }

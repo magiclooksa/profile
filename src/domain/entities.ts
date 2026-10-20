@@ -38,6 +38,20 @@ export interface Film {
   readonly video: Media;
 }
 
+export const COLLECTION_STYLES = ['panels', 'collage', 'switch', 'stagger'] as const;
+export type CollectionStyle = (typeof COLLECTION_STYLES)[number];
+
+export interface CollectionItem { readonly title: string; readonly image: Media }
+
+/** A themed photo set shown in its own section; `style` picks the section design. */
+export interface Collection {
+  readonly style: CollectionStyle;
+  readonly kicker: string;
+  readonly title: string;
+  readonly text: string;
+  readonly items: readonly CollectionItem[];
+}
+
 export interface Company {
   readonly name: { readonly ar: string; readonly en: string };
   readonly entityType: string;
@@ -58,6 +72,7 @@ export interface Company {
     readonly images: readonly Media[];
   };
   readonly films: readonly Film[];
+  readonly collections: readonly Collection[];
 }
 
 export interface Service { readonly icon: IconName; readonly text: string }

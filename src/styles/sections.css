@@ -259,3 +259,85 @@ ol.track, ol.lvls { list-style: none; padding: 0; margin: 0 }
 .film-overlay .mark { width: 64px }
 .film-expand .media-sound { top: 84px; bottom: auto; inset-inline-start: auto; inset-inline-end: 16px }
 @media (max-width: 760px) { .film-expand { height: 180svh } }
+
+/* ── photo collections: one design per style ── */
+.set { overflow: clip }
+.set-kicker { font-weight: 800; font-size: var(--step--1); letter-spacing: .28em; color: var(--accent); text-align: right }
+.set-head { display: flex; flex-direction: column; gap: 12px; max-width: 40em }
+.set-head h2 { font-size: var(--step-3); font-weight: 700 }
+.set-text { color: var(--muted) }
+.set-no { font-weight: 800; color: var(--accent) }
+.set-cap { display: grid; gap: 2px }
+.set-cap b { font-size: var(--step-1); font-weight: 700; line-height: 1.4 }
+.set-cap small { font-size: var(--step--1); color: var(--muted); line-height: 1.7 }
+/* photos fill their frames in these layouts */
+.set .set-media { width: 100%; height: 100%; max-width: none; aspect-ratio: auto }
+.set .set-media img { object-fit: cover }
+
+/* 1. panels: tall strips that widen on hover or focus */
+.set--panels .set-head { margin-bottom: clamp(28px, 4vw, 48px) }
+.set-panels { display: flex; gap: 12px; height: clamp(420px, 62vh, 640px) }
+.set-panel { position: relative; flex: 1; min-width: 0; margin: 0; overflow: hidden; border-radius: var(--r); transition: flex .7s var(--ease) }
+.set-panel:hover, .set-panel:focus-within { flex: 2.4 }
+.set-panel::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(0deg, #0c1113e6, transparent 55%) }
+.set-panel .set-cap { position: absolute; z-index: 2; inset: auto 0 0; padding: clamp(16px, 2vw, 28px); color: #fffaf0; pointer-events: none; --accent: #e5c77f; --muted: #e7e1d6 }
+.set-panel .set-cap small { max-width: 30em; opacity: 0; transform: translateY(8px); transition: opacity .5s, transform .5s var(--ease) }
+.set-panel:hover .set-cap small, .set-panel:focus-within .set-cap small { opacity: 1; transform: none }
+.set-panel .media-open span { bottom: auto; top: 12px }
+@media (max-width: 760px) {
+  .set-panels { flex-direction: column; height: auto }
+  .set-panel, .set-panel:hover, .set-panel:focus-within { flex: none; aspect-ratio: 4 / 3 }
+  .set-panel .set-cap small { opacity: 1; transform: none }
+}
+
+/* 2. collage: overlapping editorial tiles */
+.set--collage { background: var(--sunk) }
+.set-collage { display: grid; grid-template-columns: repeat(12, 1fr); align-items: start; gap: 0 clamp(16px, 2vw, 28px) }
+.set-collage .set-head { grid-column: 1 / 6; grid-row: 1; align-self: center; padding-block: 24px }
+.set-tile { margin: 0; display: grid; gap: 14px }
+.set-tile .set-media { aspect-ratio: 16 / 10; border-radius: var(--r-sm) }
+.set-tile-1 { grid-column: 6 / 13; grid-row: 1 }
+/* caption above the photo so the overlapping tile never covers it */
+.set-tile-1 .set-cap { order: -1 }
+.set-tile-2 { position: relative; z-index: 1; grid-column: 2 / 8; grid-row: 2; margin-top: clamp(-120px, -8vw, -40px) }
+.set-tile-2 .set-media { outline: clamp(6px, 1vw, 12px) solid var(--sunk) }
+.set-tile .set-cap { grid-template-columns: auto 1fr; column-gap: 14px; align-items: baseline }
+.set-tile .set-no { grid-row: span 2; font-size: var(--step-3); line-height: 1; color: transparent; -webkit-text-stroke: 1px var(--accent) }
+@media (max-width: 820px) {
+  .set-collage { grid-template-columns: 1fr; gap: 28px }
+  .set-collage .set-head, .set-tile-1, .set-tile-2 { grid-column: 1; grid-row: auto; margin: 0 }
+  .set-tile-2 .set-media { outline: 0 }
+}
+
+/* 3. switch: one stage, cross-fading between photos */
+.set-switch { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(28px, 5vw, 80px); align-items: center }
+.set-tabs { display: grid; gap: 10px; margin-top: 28px }
+.set-tab { display: grid; grid-template-columns: auto 1fr; column-gap: 14px; text-align: right; padding: 16px 18px; border: 1px solid var(--line); border-radius: var(--r-sm); background: transparent; color: inherit; font: inherit; cursor: pointer; transition: background .3s, border-color .3s }
+.set-tab .set-no { grid-row: span 2 }
+.set-tab b { font-weight: 700 }
+.set-tab small { color: var(--muted); font-size: var(--step--1); line-height: 1.7 }
+.set-tab:hover { border-color: var(--accent) }
+.set-tab[aria-pressed="true"] { background: var(--surface); border-color: var(--accent); box-shadow: inset -4px 0 0 var(--accent) }
+.set-stage { position: relative; aspect-ratio: 16 / 10; border-radius: var(--r); overflow: hidden; background: var(--sunk) }
+.set-slide { position: absolute; inset: 0; margin: 0; opacity: 0; transform: scale(1.04); transition: opacity .7s, transform 1.2s var(--ease) }
+.set-slide.is-active { opacity: 1; transform: none }
+@media (max-width: 820px) { .set-switch { grid-template-columns: 1fr } .set-stage { order: -1 } }
+
+/* 4. stagger: dark band, offset photos beside a vertical label */
+.set--stagger { background: var(--band); color: var(--band-fg); --accent: #e5c77f; --muted: #cfc8ba; --line: #e5c77f40 }
+.set-stagger { position: relative; display: grid; grid-template-columns: 1fr 1.6fr; gap: clamp(28px, 5vw, 80px); align-items: start }
+.set-stagger .set-head { position: sticky; top: 110px }
+.set-vertical { position: absolute; inset-inline-start: 0; bottom: 0; writing-mode: vertical-rl; font-weight: 800; font-size: clamp(2.4rem, 4.6vw, 4.4rem); line-height: 1; letter-spacing: .06em; color: transparent; -webkit-text-stroke: 1px #e5c77f33; pointer-events: none; user-select: none }
+.set-steps { display: grid; gap: clamp(28px, 4vw, 56px) }
+.set-step { margin: 0; display: grid; gap: 14px; width: 86% }
+.set-step:nth-child(even) { justify-self: end }
+.set-step .set-media { aspect-ratio: 16 / 10; border: 1px solid #e5c77f40; padding: 8px; background: transparent }
+.set-step .set-media img { inset: 8px; width: calc(100% - 16px); height: calc(100% - 16px) }
+.set-step .set-cap { border-top: 1px solid var(--line); padding-top: 12px; grid-template-columns: auto 1fr; column-gap: 14px }
+.set-step .set-no { grid-row: span 2 }
+@media (max-width: 820px) {
+  .set-stagger { grid-template-columns: 1fr }
+  .set-stagger .set-head { position: static }
+  .set-vertical { display: none }
+  .set-step { width: 100% }
+}

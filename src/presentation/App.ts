@@ -8,6 +8,7 @@ import { About } from './components/About';
 import { BackgroundSound } from './components/BackgroundSound';
 import { Advantages } from './components/Advantages';
 import { Clients } from './components/Clients';
+import { CollectionSection } from './components/CollectionSection';
 import { Contact } from './components/Contact';
 import { FilmSection } from './components/FilmSection';
 import { Footer } from './components/Footer';
@@ -42,21 +43,31 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
     return f ? FilmSection(f, i) : null;
   };
 
+  const collection = (i: number): HTMLElement | null => {
+    const c = company.collections[i];
+    return c ? CollectionSection(c, i) : null;
+  };
+
   const main = h('main', {},
     Hero(company),
     About(company, next()),
     film(0),
     Services(profile.services, next()),
+    collection(0),
     Products(profile.products, next()),
     film(1),
     Advantages(profile.advantages, company, next()),
+    collection(1),
     Journey(profile.journey, next()),
+    collection(2),
     Levels(profile.levels, next()),
     film(2),
     profile.projects.length > 0 ? Projects(profile.projects, next()) : null,
     InteriorDesign(company),
     film(3),
     ...company.films.slice(4).map((f, i) => FilmSection(f, i + 4)),
+    collection(3),
+    ...company.collections.slice(4).map((c, i) => CollectionSection(c, i + 4)),
     Clients(profile.clients, next()),
     Contact(company, profile.contact));
 

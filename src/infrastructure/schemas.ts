@@ -1,5 +1,5 @@
 import {
-  FILM_STYLES, GALLERY_LAYOUTS, type Film,
+  COLLECTION_STYLES, FILM_STYLES, GALLERY_LAYOUTS, type Collection, type Film,
   type Advantages, type Clients, type Company, type CompareProject, type Contact,
   type EngagementLevels, type IconName, type Journey, type Media, type Products,
   type Project, type Services, type StandardProject, type TitledText,
@@ -23,6 +23,10 @@ const film: Decoder<Film> = object<Film>({
   points: (v, path) => (v === undefined || v === null ? [] : array(string)(v, path)),
   video: media,
 });
+const collection: Decoder<Collection> = object<Collection>({
+  style: oneOf(COLLECTION_STYLES), kicker: string, title: string, text: string,
+  items: array(object({ title: string, image: media })),
+});
 const titledText: Decoder<TitledText> = object<TitledText>({ title: string, text: string });
 
 export const companyDecoder = object<Company>({
@@ -36,6 +40,7 @@ export const companyDecoder = object<Company>({
   statements: array(titledText),
   interiorDesign: object({ intro: string, traits: array(string), images: array(media) }),
   films: (v, path) => (v === undefined || v === null ? [] : array(film)(v, path)),
+  collections: (v, path) => (v === undefined || v === null ? [] : array(collection)(v, path)),
 });
 
 export const servicesDecoder = object<Services>({
