@@ -5,9 +5,8 @@ import { Mark, MediaView } from './shared';
 
 export function Hero(company: Company): HTMLElement {
   const background = company.hero?.src ? MediaView(company.hero, 'hero-background') : null;
-  // Keep the sound button above the gradient and separate from the background.
-  const sound = background?.querySelector<HTMLButtonElement>('.media-sound') ?? null;
-  sound?.classList.add('hero-sound');
+  // The hero's soundtrack plays as the site-wide background sound, so the video stays muted.
+  background?.querySelector('.media-sound')?.remove();
   return h('header', { class: background ? 'hero hero-with-media' : 'hero', id: 'top' },
     background,
     background ? h('div', { class: 'hero-shade', 'aria-hidden': 'true' }) : null,
@@ -26,6 +25,5 @@ export function Hero(company: Company): HTMLElement {
         h('div', { class: 'frame' },
           h('div', { class: 'ring' }), h('div', { class: 'ring r2' }),
           h('i', { class: 'corner tr' }), h('i', { class: 'corner bl' }),
-          Mark('big')))),
-    sound);
+          Mark('big')))));
 }

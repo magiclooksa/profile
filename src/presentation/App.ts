@@ -4,6 +4,7 @@ import { initNavState } from './behaviors/navState';
 import { initReveal } from './behaviors/reveal';
 import { initMediaPlayback } from './behaviors/mediaPlayback';
 import { About } from './components/About';
+import { BackgroundSound } from './components/BackgroundSound';
 import { Advantages } from './components/Advantages';
 import { Clients } from './components/Clients';
 import { Contact } from './components/Contact';
@@ -46,7 +47,8 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
     Clients(profile.clients, next()),
     Contact(company, profile.contact));
 
-  root.replaceChildren(Nav(company, NAV_LINKS), main, Footer(company));
+  root.replaceChildren(Nav(company, NAV_LINKS), main, Footer(company),
+    BackgroundSound(`${import.meta.env.BASE_URL}audio/background.m4a`));
   document.title = `${company.name.ar} | ${company.name.en}`;
 
   initNavState(document.getElementById('nav'));
