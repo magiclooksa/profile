@@ -31,26 +31,25 @@ const previewTags = (p: Preview): string => [
   `<meta name="twitter:image" content="${escape(p.image)}" />`,
 ].join('\n    ');
 
-interface Section { id: string; title: string; text: string; alt: string }
+interface Product { id: string; title: string; description: string; alt: string }
 
-/** Every film and photo section, with the id the page gives it. */
-function sections(): Section[] {
+/** Every product photo, with the address the page gives it: collection-<section>-<item>. */
+function products(): Product[] {
   const company = JSON.parse(readFileSync(resolve(__dirname, 'public/data/company.json'), 'utf8')) as {
-    films?: { title: string; text: string; video: { caption: string } }[];
-    collections?: { title: string; text: string; items: { image: { caption: string } }[] }[];
+    collections?: { items: { title: string; image: { caption: string } }[] }[];
   };
-  return [
-    ...(company.films ?? []).map((f, i) => ({ id: `film-${i + 1}`, title: f.title, text: f.text, alt: f.video.caption })),
-    ...(company.collections ?? []).map((c, i) => ({
-      id: `collection-${i + 1}`, title: c.title, text: c.text, alt: c.items[0]?.image.caption ?? c.title,
-    })),
-  ];
+  return (company.collections ?? []).flatMap((c, i) => c.items.map((item, j) => ({
+    id: `collection-${i + 1}-${j + 1}`,
+    title: item.title,
+    description: item.image.caption,
+    alt: item.image.caption,
+  })));
 }
 
 /**
- * Link previews: tags for the main page, plus a small page per section at s/<id>/.
- * Crawlers ignore "#section" and do not run scripts, so each section needs its own URL;
- * people who open it are sent straight to that section.
+ * Link previews: tags for the main page, plus a small page per product at s/<id>/.
+ * Crawlers ignore "#id" and do not run scripts, so each product needs its own URL;
+ * people who open it are sent straight to that product on the page.
  */
 function linkPreviews(): Plugin {
   return {
@@ -63,7 +62,7 @@ function linkPreviews(): Plugin {
       return html.replace('</title>', `</title>\n    <link rel="canonical" href="${SITE_URL}" />\n    ${tags}`);
     },
     generateBundle() {
-      for (const s of sections()) {
+      for (const s of products()) {
         if (!existsSync(resolve(__dirname, `public/og/${s.id}.jpg`))) continue;
         const target = `../../#${s.id}`;
         const title = `${s.title} | النظرة الساحرة`;
@@ -73,9 +72,9 @@ function linkPreviews(): Plugin {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>${escape(title)}</title>
-    <meta name="description" content="${escape(s.text)}" />
+    <meta name="description" content="${escape(s.description)}" />
     <link rel="canonical" href="${SITE_URL}#${s.id}" />
-    ${previewTags({ title, description: s.text, url: `${SITE_URL}s/${s.id}/`, image: `${SITE_URL}og/${s.id}.jpg`, alt: s.alt })}
+    ${previewTags({ title, description: s.description, url: `${SITE_URL}s/${s.id}/`, image: `${SITE_URL}og/${s.id}.jpg`, alt: s.alt })}
     <meta http-equiv="refresh" content="0; url=${target}" />
     <script>location.replace(${JSON.stringify(target)})</script>
   </head>

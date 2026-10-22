@@ -509,8 +509,17 @@ ol.track, ol.lvls { list-style: none; padding: 0; margin: 0 }
   .set-board-photo { rotate: 0deg }
 }
 
-/* share button in each film and photo section */
-.share-btn { display: inline-flex; align-items: center; gap: 8px; align-self: flex-start; justify-self: start; width: fit-content; max-width: 100%; margin-top: 6px; padding: 7px 16px; border: 1px solid var(--line); border-radius: 99px; background: transparent; color: var(--accent); font: inherit; font-size: var(--step--1); cursor: pointer; pointer-events: auto; text-shadow: none; overflow-wrap: anywhere; transition: background .3s, color .3s, border-color .3s }
-.share-btn i { font-style: normal; font-family: var(--font-en) }
-.share-btn:hover { border-color: var(--accent); background: var(--accent); color: var(--on-accent) }
-.set-center .share-btn, .film-center .share-btn { align-self: center }
+/* product share button: a round icon on each product photo */
+.set-tile, .set-step, .set-card, .set-side { position: relative }
+.share-btn { position: absolute; z-index: 4; top: 12px; inset-inline-start: 12px; width: 42px; height: 42px; display: grid; place-items: center; padding: 0; border: 1px solid #ffffff59; border-radius: 50%; background: #101415a6; color: #fff; cursor: pointer; pointer-events: auto; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); box-shadow: 0 6px 16px #0004; transition: background .3s, transform .3s var(--ease) }
+.share-btn:hover { background: #101415; transform: scale(1.08) }
+.share-btn:focus-visible { outline: 3px solid #e5c77f; outline-offset: 2px }
+.share-ic { width: 18px; height: 18px; grid-area: 1 / 1 }
+.share-ic-done { opacity: 0; color: #e5c77f }
+.share-btn.is-done .share-ic:not(.share-ic-done) { opacity: 0 }
+.share-btn.is-done .share-ic-done { opacity: 1 }
+/* the first collage tile: the second tile overlaps its lower corner, so sit above the zoom button */
+.set-tile-1 > .share-btn { top: auto; bottom: 60px; inset-inline-start: auto; inset-inline-end: 12px }
+/* pinned sections sit under the sticky menu */
+.set--spotlight .set-pin > .share-btn, .set-room > .share-btn { top: 84px }
+.set-flow-card:not(.is-active) > .share-btn { opacity: 0; pointer-events: none }

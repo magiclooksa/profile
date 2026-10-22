@@ -4,7 +4,7 @@ import { initNavState } from './behaviors/navState';
 import { initReveal } from './behaviors/reveal';
 import { initMediaPlayback } from './behaviors/mediaPlayback';
 import { initScrollProgress } from './behaviors/scrollProgress';
-import { initSectionShare, scrollToHash } from './behaviors/sectionShare';
+import { scrollToHash } from './behaviors/share';
 import { About } from './components/About';
 import { Advantages } from './components/Advantages';
 import { Clients } from './components/Clients';
@@ -81,7 +81,6 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
   initReveal(root);
   initMediaPlayback(root);
   initScrollProgress(root);
-  initSectionShare(root);
   initJourneyFill(document.getElementById('track'));
   scrollToHash();
 }

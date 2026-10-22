@@ -1,6 +1,7 @@
 import type { Collection, CollectionItem } from '../../domain/entities';
 import { h, pad2 } from '../dom';
 import { MediaView } from './shared';
+import { ShareButton } from '../behaviors/share';
 
 const Head = (c: Collection, className = ''): HTMLElement =>
   h('div', { class: `set-head ${className}`.trim() },
@@ -257,6 +258,8 @@ const coverflow = (c: Collection): HTMLElement[] => {
   const cards = c.items.map((item, i) => {
     const card = h('figure', { class: 'set-flow-card' }, MediaView(item.image, 'set-media'));
     card.addEventListener('click', () => { if (i !== active) { auto = false; go(i) } });
+    // Opened from a shared product link: bring this wall to the front.
+    card.addEventListener('reveal-item', () => { auto = false; go(i) });
     return card;
   });
   const channel = h('span', { class: 'latin set-ch' });
@@ -364,10 +367,42 @@ const LAYOUTS: Record<Collection['style'], (c: Collection) => HTMLElement[]> = {
 /** Styles whose section is pinned and driven by scroll progress. */
 const SCROLL_DRIVEN: ReadonlySet<Collection['style']> = new Set(['journey', 'spotlight']);
 
-export const CollectionSection = (c: Collection, index: number): HTMLElement =>
-  h('section', {
-    class: `set set--${c.style}`, id: `collection-${index + 1}`, 'aria-label': c.title,
+/** Where each product's photo sits in a layout, in item order. */
+const ITEM_FRAMES: Record<Collection['style'], string> = {
+  panels: '.set-panel', collage: '.set-tile', switch: '.set-slide', stagger: '.set-step',
+  strip: '.set-card', duo: '.set-side', journey: '.set-room:not(.set-room-intro)',
+  spotlight: '.set-pin', hotspots: '.set-hot-photo', coverflow: '.set-flow-card', moodboard: '.set-board-img',
+};
+
+export function CollectionSection(c: Collection, index: number): HTMLElement {
+  const id = `collection-${index + 1}`;
+  const section = h('section', {
+    class: `set set--${c.style}`, id, 'aria-label': c.title,
     'data-scroll-progress': SCROLL_DRIVEN.has(c.style),
     // The journey has one intro screen plus a screen per room.
     style: c.style === 'journey' ? `--n: ${c.items.length + 1}` : undefined,
   }, ...LAYOUTS[c.style](c));
+
+  // Give every product an address (collection-<section>-<item>) and a share button on its photo.
+  section.querySelectorAll<HTMLElement>(ITEM_FRAMES[c.style]).forEach((frame, i) => {
+    const item = c.items[i];
+    if (!item) return;
+    frame.id = `${id}-${i + 1}`;
+    frame.classList.add('has-share');
+    frame.append(ShareButton(frame.id, item.title));
+    if (c.style === 'switch') {
+      // Select this photo's tab before scrolling to it.
+      frame.addEventListener('reveal-item', () => section.querySelectorAll<HTMLElement>('.set-tab')[i]?.click());
+    }
+    if (c.style === 'journey') {
+      // Rooms slide sideways, so scroll down to the point where this room is on screen.
+      frame.addEventListener('reveal-item', (e) => {
+        e.preventDefault();
+        const travel = section.offsetHeight - innerHeight;
+        const top = section.getBoundingClientRect().top + scrollY;
+        scrollTo({ top: top + travel * ((i + 1) / c.items.length), behavior: 'instant' });
+      });
+    }
+  });
+  return section;
+}
