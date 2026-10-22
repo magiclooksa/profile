@@ -4,7 +4,7 @@ import {
   type EngagementLevels, type IconName, type Journey, type Media, type Products,
   type Project, type Services, type StandardProject, type TitledText,
 } from '../domain/entities';
-import { array, hexColor, nullable, object, oneOf, string, tagged, type Decoder } from './decoders';
+import { array, hexColor, nullable, numberIn, object, oneOf, string, tagged, type Decoder } from './decoders';
 
 const ICONS: readonly IconName[] = [
   'sofa', 'bed', 'chair', 'table', 'tv', 'mirror', 'partition', 'cabinet', 'curtain', 'lamp',
@@ -25,7 +25,12 @@ const film: Decoder<Film> = object<Film>({
 });
 const collection: Decoder<Collection> = object<Collection>({
   style: oneOf(COLLECTION_STYLES), kicker: string, title: string, text: string,
-  items: array(object({ title: string, image: media, tag: nullable(string), color: nullable(hexColor) })),
+  items: array(object({
+    title: string, image: media, tag: nullable(string), color: nullable(hexColor),
+    spots: (v, path) => (v === undefined || v === null ? [] : array(object({
+      x: numberIn(0, 100), y: numberIn(0, 100), title: string, text: string,
+    }))(v, path)),
+  })),
 });
 const titledText: Decoder<TitledText> = object<TitledText>({ title: string, text: string });
 

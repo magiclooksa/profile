@@ -422,3 +422,73 @@ ol.track, ol.lvls { list-style: none; padding: 0; margin: 0 }
 .set--spotlight .set-pin::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(0deg, #07090ae6 0%, #07090a80 28%, transparent 55%); opacity: calc(.4 + var(--p) * .6) }
 /* the whole room is clickable to zoom; the label would sit on the panel edge */
 .set-room .media-open span { display: none }
+
+/* 9. hotspots: glowing points on a photo, linked to a numbered list */
+.set-hot { display: grid; grid-template-columns: .75fr 1.25fr; gap: clamp(28px, 5vw, 72px); align-items: center }
+.set-spot-list { display: grid; margin-top: 26px; border-top: 1px solid var(--line) }
+.set-spot-row { display: grid; grid-template-columns: auto 1fr; column-gap: 14px; padding: 14px 4px; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: inherit; font: inherit; text-align: right; cursor: pointer; transition: background .3s }
+.set-spot-row .set-no { grid-row: span 2 }
+.set-spot-row b { font-weight: 700 }
+.set-spot-row small { color: var(--muted); font-size: var(--step--1); line-height: 1.7; display: none }
+.set-spot-row:hover, .set-spot-row[aria-pressed="true"] { background: var(--surface) }
+.set-spot-row[aria-pressed="true"] small { display: block }
+.set-hot-photo { position: relative; margin: 0; aspect-ratio: 16 / 9; border-radius: var(--r); overflow: visible }
+.set-hot-photo img { width: 100%; height: 100%; object-fit: cover; border-radius: var(--r); display: block }
+.set-pin-dot { position: absolute; z-index: 2; width: 34px; height: 34px; margin: -17px 0 0 -17px; display: grid; place-items: center; border: 2px solid #fff; border-radius: 50%; background: var(--accent); color: var(--on-accent); font: inherit; font-size: .8rem; font-weight: 800; cursor: pointer; box-shadow: 0 4px 14px #0005; transition: transform .3s var(--ease), background .3s }
+.set-pin-dot::before { content: ""; position: absolute; inset: -8px; border-radius: 50%; border: 2px solid #ffffffb3; opacity: 0 }
+.set-pin-dot:hover, .set-pin-dot.is-hint, .set-pin-dot[aria-expanded="true"] { transform: scale(1.18); background: var(--fg) }
+.set-pin-dot:focus-visible { outline: 3px solid #fff; outline-offset: 3px }
+@media (prefers-reduced-motion: no-preference) {
+  .set-pin-dot::before { animation: set-ping 2.2s ease-out infinite }
+  .set-pin-dot:nth-of-type(2)::before { animation-delay: .5s } .set-pin-dot:nth-of-type(3)::before { animation-delay: 1s } .set-pin-dot:nth-of-type(4)::before { animation-delay: 1.5s }
+}
+@keyframes set-ping { 0% { transform: scale(.7); opacity: .9 } 100% { transform: scale(1.7); opacity: 0 } }
+.set-note { position: absolute; z-index: 3; width: min(280px, 70vw); margin: 26px 0 0 -20px; padding: 14px 16px; border-radius: var(--r-sm); background: #101415ee; color: #fffaf0; box-shadow: 0 12px 30px #0006; backdrop-filter: blur(6px) }
+.set-note.to-left { margin-left: calc(-1 * min(280px, 70vw) + 20px) }
+.set-note.to-top { margin-top: 0; transform: translateY(calc(-100% - 26px)) }
+.set-note b { display: block; color: #e5c77f; margin-bottom: 4px }
+.set-note p { font-size: var(--step--1); line-height: 1.7 }
+@media (max-width: 820px) {
+  .set-hot { grid-template-columns: 1fr }
+  .set-hot-photo { order: -1 }
+  .set-pin-dot { width: 28px; height: 28px; margin: -14px 0 0 -14px }
+  .set-note { display: none }
+}
+
+/* 10. coverflow: 3D wall picker with TV-remote buttons */
+.set--coverflow { background: radial-gradient(80% 60% at 50% 30%, #23292a, #0c1113 75%); color: #fffaf0; --accent: #e5c77f; --muted: #cfc8ba; --line: #e5c77f40; --surface: #0c1113 }
+.set-flow-stage { position: relative; height: clamp(240px, 42vw, 560px); perspective: 1400px; outline: none; touch-action: pan-y; user-select: none }
+.set-flow-stage:focus-visible { outline: 2px solid var(--accent); outline-offset: 8px; border-radius: var(--r) }
+.set-flow-card { position: absolute; top: 0; left: 50%; width: min(62%, 760px); margin: 0; aspect-ratio: 16 / 9; translate: -50% 0;
+  transform: translateX(calc(var(--d) * -64%)) translateZ(calc(var(--ad) * -320px)) rotateY(calc(var(--d) * 44deg));
+  z-index: calc(10 - var(--ad)); opacity: calc(1 - var(--ad) * .35); filter: brightness(calc(1 - var(--ad) * .35)); cursor: pointer;
+  transition: transform .9s var(--ease-out), opacity .9s, filter .9s }
+.set-flow-card .set-media { border-radius: var(--r); box-shadow: 0 30px 60px #0008 }
+.set-flow-card.is-active { cursor: default }
+.set-flow-card.is-active .set-media { box-shadow: 0 30px 70px #000a, 0 0 0 1px #e5c77f66 }
+.set-flow-card .media-open span { display: none }
+.set-flow-card:not(.is-active) .media-open { pointer-events: none }
+.set-flow-bar { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-top: clamp(24px, 4vw, 48px) }
+.set-flow-info { display: grid; gap: 6px; max-width: 40em }
+.set-flow-info > div { display: flex; align-items: center; gap: 12px }
+.set-ch { font-weight: 800; letter-spacing: .2em; color: var(--accent) }
+.set-flow-info b { font-size: var(--step-2) }
+.set-flow-info small { color: var(--muted) }
+.set-remote { display: flex; gap: 8px; padding: 8px; border-radius: 22px; background: linear-gradient(#2a3132, #151a1b); box-shadow: inset 0 1px 0 #ffffff14, 0 10px 24px #0007 }
+.set-remote-btn { min-width: 72px; height: 48px; border: 0; border-radius: 14px; background: #0c1113; color: var(--accent); font: inherit; font-family: var(--font-en); font-weight: 800; letter-spacing: .08em; cursor: pointer; box-shadow: inset 0 -2px 0 #000, 0 1px 0 #ffffff12; transition: transform .15s, background .3s }
+.set-remote-btn:hover { background: #1b2223 }
+.set-remote-btn:active { transform: translateY(1px) scale(.97) }
+@media (max-width: 760px) {
+  .set-flow-card { width: 82% }
+  .set-flow-bar { flex-direction: column; align-items: stretch }
+  .set-remote { justify-content: center }
+}
+@media (prefers-reduced-motion: reduce) { .set-flow-card { transition: none } }
+/* remote centred under the walls, clear of the fixed sound button in the corner */
+.set-flow-bar { flex-direction: column-reverse; align-items: center; text-align: center }
+.set-flow-info { justify-items: center }
+.set-flow-info > div { justify-content: center }
+/* stage height follows the card: 62% (or 82% on phones) of the width at 16:9, plus room for the 3D tilt */
+.set-flow-stage { height: auto; aspect-ratio: 16 / 6 }
+@media (min-width: 1226px) { .set-flow-stage { aspect-ratio: auto; height: 470px } }
+@media (max-width: 760px) { .set-flow-stage { aspect-ratio: 16 / 7.9 } }

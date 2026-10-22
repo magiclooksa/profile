@@ -207,8 +207,117 @@ const spotlight = (c: Collection): HTMLElement[] => {
   return [pin];
 };
 
+/** A photo with glowing points; each opens a note and lights its line in the list beside it. */
+const hotspots = (c: Collection): HTMLElement[] => {
+  const item = c.items[0];
+  const spots = item?.spots ?? [];
+  if (!item?.image.src || spots.length === 0) return [h('div', { class: 'wrap' }, Head(c))];
+  let open = -1;
+  const pins: HTMLButtonElement[] = [];
+  const notes: HTMLElement[] = [];
+  const rows: HTMLButtonElement[] = [];
+  const select = (i: number): void => {
+    open = open === i ? -1 : i;
+    pins.forEach((p, j) => p.setAttribute('aria-expanded', String(open === j)));
+    notes.forEach((n, j) => { n.hidden = open !== j });
+    rows.forEach((r, j) => r.setAttribute('aria-pressed', String(open === j)));
+  };
+  spots.forEach((s, i) => {
+    const noteId = `${c.kicker.replace(/\W+/g, '-').toLowerCase()}-spot-${i + 1}`;
+    const pin = h('button', {
+      type: 'button', class: 'set-pin-dot', style: `left: ${s.x}%; top: ${s.y}%`,
+      'aria-expanded': 'false', 'aria-controls': noteId, 'aria-label': s.title,
+    }, h('span', { class: 'latin' }, String(i + 1)));
+    pin.addEventListener('click', () => select(i));
+    // Notes open towards the roomier side of the photo.
+    const note = h('div', {
+      class: `set-note${s.x > 55 ? ' to-left' : ''}${s.y > 60 ? ' to-top' : ''}`, id: noteId, role: 'note',
+      style: `left: ${s.x}%; top: ${s.y}%`, hidden: true,
+    }, h('b', {}, s.title), h('p', {}, s.text));
+    const row = h('button', { type: 'button', class: 'set-spot-row', 'aria-pressed': 'false' },
+      h('span', { class: 'latin set-no' }, pad2(i + 1)), h('b', {}, s.title), h('small', {}, s.text));
+    row.addEventListener('click', () => select(i));
+    row.addEventListener('mouseenter', () => pin.classList.add('is-hint'));
+    row.addEventListener('mouseleave', () => pin.classList.remove('is-hint'));
+    pins.push(pin); notes.push(note); rows.push(row);
+  });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && open !== -1) select(open) });
+  return [h('div', { class: 'wrap set-hot' },
+    h('div', { class: 'set-hot-side reveal' }, Head(c), h('div', { class: 'set-spot-list' }, rows)),
+    h('figure', { class: 'set-hot-photo reveal' },
+      h('img', { src: item.image.src, alt: item.image.caption, loading: 'lazy', decoding: 'async' }),
+      ...pins, ...notes))];
+};
+
+/** 3D cover-flow with TV-remote style channel buttons, swipe and gentle auto-advance. */
+const coverflow = (c: Collection): HTMLElement[] => {
+  const n = c.items.length;
+  let active = 0;
+  let auto = true;
+  const cards = c.items.map((item, i) => {
+    const card = h('figure', { class: 'set-flow-card' }, MediaView(item.image, 'set-media'));
+    card.addEventListener('click', () => { if (i !== active) { auto = false; go(i) } });
+    return card;
+  });
+  const channel = h('span', { class: 'latin set-ch' });
+  const tag = h('span', { class: 'set-tag' });
+  const title = h('b', {});
+  const caption = h('small', {});
+  const info = h('div', { class: 'set-flow-info', 'aria-live': 'polite' }, h('div', {}, channel, tag), title, caption);
+  const go = (i: number): void => {
+    active = (i + n) % n;
+    cards.forEach((card, j) => {
+      // Shortest signed distance around the ring.
+      let d = j - active;
+      if (d > n / 2) d -= n;
+      if (d < -n / 2) d += n;
+      card.style.setProperty('--d', String(d));
+      card.style.setProperty('--ad', String(Math.abs(d)));
+      card.classList.toggle('is-active', d === 0);
+      card.inert = d !== 0;
+      card.setAttribute('aria-hidden', String(d !== 0));
+    });
+    const item = c.items[active];
+    if (!item) return;
+    channel.textContent = `CH ${pad2(active + 1)}`;
+    tag.replaceChildren(...[Swatch(item), item.tag ?? ''].filter((x): x is HTMLElement | string => x !== null));
+    title.textContent = item.title;
+    caption.textContent = item.image.caption;
+  };
+  const remote = (label: string, text: string, step: number): HTMLButtonElement => {
+    const b = h('button', { type: 'button', class: 'set-remote-btn latin', 'aria-label': label }, text);
+    b.addEventListener('click', () => { auto = false; go(active + step) });
+    return b;
+  };
+  const stage = h('div', { class: 'set-flow-stage', tabindex: '0', 'aria-label': c.title, role: 'region' }, cards);
+  stage.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') { auto = false; go(active + 1) }
+    if (e.key === 'ArrowRight') { auto = false; go(active - 1) }
+  });
+  // Swipe: in RTL, dragging left moves forward.
+  let startX = 0;
+  stage.addEventListener('pointerdown', (e) => { startX = e.clientX });
+  stage.addEventListener('pointerup', (e) => {
+    const dx = e.clientX - startX;
+    if (Math.abs(dx) > 40) { auto = false; go(active + (dx < 0 ? 1 : -1)) }
+  });
+  // Advance on its own while on screen, until the visitor takes over.
+  let visible = false;
+  new IntersectionObserver(([entry]) => { visible = entry?.isIntersecting ?? false }, { threshold: 0.5 }).observe(stage);
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    window.setInterval(() => { if (auto && visible && !document.hidden && !stage.matches(':hover')) go(active + 1) }, 4500);
+  }
+  go(0);
+  return [h('div', { class: 'wrap' },
+    Head(c, 'set-center reveal'),
+    stage,
+    h('div', { class: 'set-flow-bar' }, info,
+      h('div', { class: 'set-remote', role: 'group', 'aria-label': 'تبديل الجدار' },
+        remote('الجدار السابق', 'CH −', -1), remote('الجدار التالي', 'CH +', 1))))];
+};
+
 const LAYOUTS: Record<Collection['style'], (c: Collection) => HTMLElement[]> = {
-  panels, collage, switch: switcher, stagger, strip, duo, journey, spotlight,
+  panels, collage, switch: switcher, stagger, strip, duo, journey, spotlight, hotspots, coverflow,
 };
 
 /** Styles whose section is pinned and driven by scroll progress. */

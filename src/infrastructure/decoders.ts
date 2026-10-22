@@ -20,6 +20,14 @@ export const string: Decoder<string> = (v, path) => {
   return v;
 };
 
+/** A finite number between min and max (inclusive). */
+export const numberIn = (min: number, max: number): Decoder<number> => (v, path) => {
+  if (typeof v !== 'number' || !Number.isFinite(v) || v < min || v > max) {
+    throw new DataError(path, `رقم بين ${min} و ${max}`);
+  }
+  return v;
+};
+
 export const nullable = <T>(decoder: Decoder<T>): Decoder<T | null> => (v, path) =>
   v === null || v === undefined ? null : decoder(v, path);
 
