@@ -316,8 +316,49 @@ const coverflow = (c: Collection): HTMLElement[] => {
         remote('الجدار السابق', 'CH −', -1), remote('الجدار التالي', 'CH +', 1))))];
 };
 
+/** Designer's board: the photo, round lenses magnifying its details, and its colour palette. */
+const moodboard = (c: Collection): HTMLElement[] => {
+  const item = c.items[0];
+  if (!item?.image.src) return [h('div', { class: 'wrap' }, Head(c))];
+  const src = item.image.src;
+  const spots = item.spots ?? [];
+  const marks = spots.map((s, i) => h('span', {
+    class: 'set-mark', style: `left: ${s.x}%; top: ${s.y}%`, 'aria-hidden': 'true',
+  }, h('i', { class: 'latin' }, String(i + 1))));
+  const lenses = spots.map((s, i) => {
+    const lens = h('figure', { class: 'set-lens reveal', tabindex: '0', style: `--i: ${i}` },
+      h('div', {
+        class: 'set-lens-zoom', role: 'img', 'aria-label': s.title,
+        style: `background-image: url("${src}"); background-position: ${s.x}% ${s.y}%`,
+      }),
+      h('figcaption', {},
+        h('span', { class: 'latin set-no' }, pad2(i + 1)), h('b', {}, s.title), h('small', {}, s.text)));
+    // Point to where this detail sits in the photo.
+    const on = (): void => marks[i]?.classList.add('is-on');
+    const off = (): void => marks[i]?.classList.remove('is-on');
+    lens.addEventListener('mouseenter', on); lens.addEventListener('mouseleave', off);
+    lens.addEventListener('focus', on); lens.addEventListener('blur', off);
+    return lens;
+  });
+  const palette = (item.palette ?? []).map((p) => h('li', { class: 'set-chip' },
+    h('i', { style: `--swatch: ${p.color}`, 'aria-hidden': 'true' }),
+    h('b', {}, p.name), h('small', { class: 'latin' }, p.color.toUpperCase())));
+  return [h('div', { class: 'wrap set-board' },
+    Head(c, 'set-board-head reveal'),
+    h('figure', { class: 'set-board-photo reveal' },
+      // Markers are placed against the image area only, not the caption below it.
+      h('div', { class: 'set-board-img' },
+        h('img', { src, alt: item.image.caption, loading: 'lazy', decoding: 'async' }), ...marks),
+      h('figcaption', {}, item.tag ? h('span', { class: 'set-tag' }, Swatch(item), item.tag) : null, item.title)),
+    h('div', { class: 'set-lenses' }, lenses),
+    palette.length > 0
+      ? h('div', { class: 'set-palette reveal' },
+          h('p', { class: 'latin set-kicker' }, 'COLOUR PALETTE'), h('ul', {}, palette))
+      : null)];
+};
+
 const LAYOUTS: Record<Collection['style'], (c: Collection) => HTMLElement[]> = {
-  panels, collage, switch: switcher, stagger, strip, duo, journey, spotlight, hotspots, coverflow,
+  panels, collage, switch: switcher, stagger, strip, duo, journey, spotlight, hotspots, coverflow, moodboard,
 };
 
 /** Styles whose section is pinned and driven by scroll progress. */

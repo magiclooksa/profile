@@ -30,6 +30,7 @@ const collection: Decoder<Collection> = object<Collection>({
     spots: (v, path) => (v === undefined || v === null ? [] : array(object({
       x: numberIn(0, 100), y: numberIn(0, 100), title: string, text: string,
     }))(v, path)),
+    palette: (v, path) => (v === undefined || v === null ? [] : array(object({ name: string, color: hexColor }))(v, path)),
   })),
 });
 const titledText: Decoder<TitledText> = object<TitledText>({ title: string, text: string });

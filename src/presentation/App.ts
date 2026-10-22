@@ -4,6 +4,7 @@ import { initNavState } from './behaviors/navState';
 import { initReveal } from './behaviors/reveal';
 import { initMediaPlayback } from './behaviors/mediaPlayback';
 import { initScrollProgress } from './behaviors/scrollProgress';
+import { initSectionShare, scrollToHash } from './behaviors/sectionShare';
 import { About } from './components/About';
 import { Advantages } from './components/Advantages';
 import { Clients } from './components/Clients';
@@ -63,12 +64,13 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
     collection(9),
     Levels(profile.levels, next()),
     collection(4),
+    collection(10),
     film(2),
     collection(6),
     film(3),
     ...company.films.slice(4).map((f, i) => FilmSection(f, i + 4)),
     collection(3),
-    ...company.collections.slice(10).map((c, i) => CollectionSection(c, i + 10)),
+    ...company.collections.slice(11).map((c, i) => CollectionSection(c, i + 11)),
     Clients(profile.clients, next()),
     Contact(company, profile.contact));
 
@@ -79,7 +81,9 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
   initReveal(root);
   initMediaPlayback(root);
   initScrollProgress(root);
+  initSectionShare(root);
   initJourneyFill(document.getElementById('track'));
+  scrollToHash();
 }
 
 export function renderError(root: HTMLElement, error: unknown): void {

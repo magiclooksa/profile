@@ -38,7 +38,7 @@ export interface Film {
   readonly video: Media;
 }
 
-export const COLLECTION_STYLES = ['panels', 'collage', 'switch', 'stagger', 'strip', 'duo', 'journey', 'spotlight', 'hotspots', 'coverflow'] as const;
+export const COLLECTION_STYLES = ['panels', 'collage', 'switch', 'stagger', 'strip', 'duo', 'journey', 'spotlight', 'hotspots', 'coverflow', 'moodboard'] as const;
 export type CollectionStyle = (typeof COLLECTION_STYLES)[number];
 
 /** A labelled point on a photo; x and y are percentages from its left and top edges. */
@@ -52,6 +52,8 @@ export interface CollectionItem {
   /** Main colour of the piece, shown as a swatch. */
   readonly color?: Maybe<string>;
   readonly spots?: readonly Hotspot[];
+  /** Named colours taken from the photo. */
+  readonly palette?: readonly { readonly name: string; readonly color: string }[];
 }
 
 /** A themed photo set shown in its own section; `style` picks the section design. */
