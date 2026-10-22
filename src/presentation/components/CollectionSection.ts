@@ -1,7 +1,7 @@
 import type { Collection, CollectionItem } from '../../domain/entities';
 import { h, pad2 } from '../dom';
 import { MediaView } from './shared';
-import { ShareButton } from '../behaviors/share';
+import { glyph, ShareButton } from '../behaviors/share';
 
 const Head = (c: Collection, className = ''): HTMLElement =>
   h('div', { class: `set-head ${className}`.trim() },
@@ -287,17 +287,19 @@ const coverflow = (c: Collection): HTMLElement[] => {
     title.textContent = item.title;
     caption.textContent = item.image.caption;
   };
-  const remote = (label: string, text: string, step: number): HTMLButtonElement => {
-    const b = h('button', { type: 'button', class: 'set-remote-btn latin', 'aria-label': label }, text);
+  const remote = (label: string, path: string, step: number): HTMLButtonElement => {
+    const b = h('button', { type: 'button', class: 'set-remote-btn', 'aria-label': label, title: label });
+    b.append(glyph([path], 'set-remote-ic'));
     b.addEventListener('click', () => { auto = false; go(active + step) });
     return b;
   };
   const stage = h('div', { class: 'set-flow-stage', tabindex: '0', 'aria-label': c.title, role: 'region' }, cards);
   stage.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowLeft') { auto = false; go(active + 1) }
-    if (e.key === 'ArrowRight') { auto = false; go(active - 1) }
+    // The next wall waits on the right, the previous one on the left.
+    if (e.key === 'ArrowRight') { auto = false; go(active + 1) }
+    if (e.key === 'ArrowLeft') { auto = false; go(active - 1) }
   });
-  // Swipe: in RTL, dragging left moves forward.
+  // Swipe: dragging left pulls in the next wall from the right.
   let startX = 0;
   stage.addEventListener('pointerdown', (e) => { startX = e.clientX });
   stage.addEventListener('pointerup', (e) => {
@@ -316,7 +318,8 @@ const coverflow = (c: Collection): HTMLElement[] => {
     stage,
     h('div', { class: 'set-flow-bar' }, info,
       h('div', { class: 'set-remote', role: 'group', 'aria-label': 'تبديل الجدار' },
-        remote('الجدار السابق', 'CH −', -1), remote('الجدار التالي', 'CH +', 1))))];
+        // In this right-to-left page the first button sits on the right, beside the next wall.
+        remote('الجدار التالي', 'M9 5l7 7-7 7', 1), remote('الجدار السابق', 'M15 5l-7 7 7 7', -1))))];
 };
 
 /** Designer's board: the photo, round lenses magnifying its details, and its colour palette. */

@@ -3,7 +3,7 @@ import { h } from '../dom';
 const SVG_NS = 'http://www.w3.org/2000/svg';
 
 /** A small stroke icon on a 24×24 grid. */
-function glyph(paths: string[], className: string): SVGSVGElement {
+export function glyph(paths: string[], className: string): SVGSVGElement {
   const svg = document.createElementNS(SVG_NS, 'svg');
   for (const [k, v] of Object.entries({
     viewBox: '0 0 24 24', class: className, 'aria-hidden': 'true', fill: 'none', stroke: 'currentColor',
