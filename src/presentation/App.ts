@@ -5,7 +5,6 @@ import { initReveal } from './behaviors/reveal';
 import { initMediaPlayback } from './behaviors/mediaPlayback';
 import { initScrollProgress } from './behaviors/scrollProgress';
 import { About } from './components/About';
-import { BackgroundSound } from './components/BackgroundSound';
 import { Advantages } from './components/Advantages';
 import { Clients } from './components/Clients';
 import { CollectionSection } from './components/CollectionSection';
@@ -73,8 +72,7 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
     Clients(profile.clients, next()),
     Contact(company, profile.contact));
 
-  root.replaceChildren(Nav(company, NAV_LINKS), main, Footer(company),
-    BackgroundSound(`${import.meta.env.BASE_URL}audio/background.m4a`));
+  root.replaceChildren(Nav(company, NAV_LINKS), main, Footer(company));
   document.title = `${company.name.ar} | ${company.name.en}`;
 
   initNavState(document.getElementById('nav'));

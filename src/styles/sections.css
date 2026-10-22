@@ -10,21 +10,6 @@
 .hero-with-media .btn { text-shadow: none }
 .hero-with-media .btn.ghost { background: #11171450 }
 .hero-with-media .btn.ghost:hover { color: #17191b }
-/* site-wide background sound button */
-.bg-sound { position: fixed; z-index: 60; inset-inline-end: 16px; bottom: max(16px, env(safe-area-inset-bottom)); display: grid; place-items: center; width: 48px; height: 48px; padding: 0; border: 1px solid #e5c77f80; border-radius: 50%; background: #101415d9; color: #fffaf0; cursor: pointer; backdrop-filter: blur(8px); box-shadow: 0 6px 20px #0003 }
-.bg-sound:hover { background: #101415 }
-.bg-sound:focus-visible { outline: 3px solid #e5c77f; outline-offset: 2px }
-.bg-sound-bars { position: relative; display: inline-flex; align-items: flex-end; gap: 3px; height: 16px }
-/* A slash over the bars marks the muted state without text. */
-.bg-sound.is-muted .bg-sound-bars::after { content: ""; position: absolute; left: 50%; top: 50%; width: 24px; height: 2px; border-radius: 2px; background: #fffaf0; transform: translate(-50%, -50%) rotate(-45deg) }
-.bg-sound-bars i { width: 3px; height: 100%; border-radius: 2px; background: #e5c77f; transform-origin: bottom }
-.bg-sound.is-muted .bg-sound-bars i, .bg-sound.is-blocked .bg-sound-bars i { transform: scaleY(.25); opacity: .6 }
-@media (prefers-reduced-motion: no-preference) {
-  .bg-sound:not(.is-muted):not(.is-blocked) .bg-sound-bars i { animation: bg-sound-bar .9s ease-in-out infinite alternate }
-  .bg-sound-bars i:nth-child(2) { animation-delay: -.3s }
-  .bg-sound-bars i:nth-child(3) { animation-delay: -.6s }
-}
-@keyframes bg-sound-bar { from { transform: scaleY(.3) } to { transform: scaleY(1) } }
 .hero-copy { min-width: 0; display: flex; flex-direction: column; gap: 18px }
 .eyebrow { font-size: var(--step--1); color: var(--accent); font-weight: 500; letter-spacing: .02em; display: flex; align-items: center; gap: 12px }
 .eyebrow::before { content: ""; width: 38px; height: 2px; background: var(--accent) }
@@ -484,7 +469,7 @@ ol.track, ol.lvls { list-style: none; padding: 0; margin: 0 }
   .set-remote { justify-content: center }
 }
 @media (prefers-reduced-motion: reduce) { .set-flow-card { transition: none } }
-/* remote centred under the walls, clear of the fixed sound button in the corner */
+/* remote centred under the walls */
 .set-flow-bar { flex-direction: column-reverse; align-items: center; text-align: center }
 .set-flow-info { justify-items: center }
 .set-flow-info > div { justify-content: center }
