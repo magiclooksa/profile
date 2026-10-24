@@ -38,7 +38,7 @@ export interface Film {
   readonly video: Media;
 }
 
-export const COLLECTION_STYLES = ['panels', 'collage', 'switch', 'stagger', 'strip', 'duo', 'journey', 'spotlight', 'hotspots', 'coverflow', 'moodboard'] as const;
+export const COLLECTION_STYLES = ['panels', 'collage', 'switch', 'stagger', 'strip', 'duo', 'journey', 'spotlight', 'hotspots', 'coverflow', 'moodboard', 'cabinet'] as const;
 export type CollectionStyle = (typeof COLLECTION_STYLES)[number];
 
 /** A labelled point on a photo; x and y are percentages from its left and top edges. */

@@ -525,3 +525,41 @@ ol.track, ol.lvls { list-style: none; padding: 0; margin: 0 }
 /* pinned sections sit under the sticky menu */
 .set--spotlight .set-pin > .share-btn, .set-room > .share-btn { top: 84px }
 .set-flow-card:not(.is-active) > .share-btn { opacity: 0; pointer-events: none }
+
+/* 12. cabinet: built-in pieces revealed by cabinet doors that swing open */
+.set--cabinet { background: linear-gradient(180deg, var(--bg), #efe8dc 60%, var(--bg)) }
+.set-cab-head { margin-bottom: clamp(36px, 6vw, 84px) }
+.set-cab-head::after { content: ""; width: 64px; height: 1px; margin-top: 10px; background: var(--accent) }
+.set-cabs { display: grid; gap: clamp(48px, 8vw, 120px) }
+.set-cab { margin: 0; display: grid; grid-template-columns: 1.45fr 1fr; gap: clamp(28px, 5vw, 80px); align-items: center }
+.set-cab-b { grid-template-columns: 1fr 1.45fr }
+.set-cab-b .set-cab-frame { order: 2 }
+/* the opening */
+.set-cab-frame { position: relative; aspect-ratio: 16 / 9; perspective: 1800px; cursor: pointer; border-radius: 4px; box-shadow: 0 0 0 10px var(--surface), 0 0 0 11px var(--line), 0 30px 60px #3b2a1a26 }
+.set-cab-pic { position: absolute; inset: 0; overflow: hidden; border-radius: 4px; background: #2a2622 }
+.set-cab-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transform: scale(1.06); filter: brightness(.82); transition: transform 2.2s var(--ease-out), filter 1.6s }
+.set-cab-frame.is-open img { transform: none; filter: none }
+/* two doors in linen-toned wood with a fine grain */
+.set-door { position: absolute; z-index: 2; top: 0; bottom: 0; width: 50%; backface-visibility: hidden;
+  background: repeating-linear-gradient(90deg, #0000 0 7px, #ffffff0d 7px 8px, #0000 8px 15px), linear-gradient(180deg, #ece3d4, #ddd0bb);
+  box-shadow: inset 0 0 0 1px #ffffff80, inset 0 0 0 10px #ffffff12, inset 0 0 40px #8a744f26;
+  transition: transform 1.7s cubic-bezier(.65, 0, .25, 1), box-shadow 1.7s }
+.set-door-right { right: 0; transform-origin: right center; border-radius: 0 4px 4px 0 }
+.set-door-left { left: 0; transform-origin: left center; border-radius: 4px 0 0 4px }
+/* a recessed panel on each door */
+.set-door::before { content: ""; position: absolute; inset: 9% 11%; border: 1px solid #b59d7559; border-radius: 2px; box-shadow: inset 0 1px 0 #ffffff80 }
+.set-handle { position: absolute; top: 38%; width: 4px; height: 24%; border-radius: 4px; background: linear-gradient(90deg, #8a6a1f, #f4dc98 45%, #a9842a); box-shadow: 0 2px 6px #0003 }
+.set-door-right .set-handle { left: 12px }
+.set-door-left .set-handle { right: 12px }
+.set-cab-frame.is-open .set-door-right { transform: rotateY(-104deg); box-shadow: inset 0 0 0 1px #ffffff40, inset 0 0 80px #0000004d }
+.set-cab-frame.is-open .set-door-left { transform: rotateY(104deg); box-shadow: inset 0 0 0 1px #ffffff40, inset 0 0 80px #0000004d }
+/* editorial caption */
+.set-cab-text { display: grid; gap: 12px; justify-items: start; padding-block: 20px; border-block: 1px solid var(--line) }
+.set-cab-no { font-weight: 200; font-size: clamp(3.4rem, 7vw, 6rem); line-height: .9; color: transparent; -webkit-text-stroke: 1px var(--accent) }
+.set-cab-text b { font-size: var(--step-2); font-weight: 700; line-height: 1.3 }
+.set-cab-text small { color: var(--muted); font-size: var(--step-0); line-height: 1.9; max-width: 30em }
+@media (max-width: 820px) {
+  .set-cab, .set-cab-b { grid-template-columns: 1fr }
+  .set-cab-b .set-cab-frame { order: 0 }
+}
+@media (prefers-reduced-motion: reduce) { .set-door { display: none } .set-cab-frame img { transform: none; filter: none } }

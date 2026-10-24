@@ -51,6 +51,7 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
     About(company, next()),
     film(0),
     collection(8),
+    collection(11),
     Services(profile.services, next()),
     collection(0),
     Products(profile.products, next()),
@@ -70,7 +71,7 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
     film(3),
     ...company.films.slice(4).map((f, i) => FilmSection(f, i + 4)),
     collection(3),
-    ...company.collections.slice(11).map((c, i) => CollectionSection(c, i + 11)),
+    ...company.collections.slice(12).map((c, i) => CollectionSection(c, i + 12)),
     Clients(profile.clients, next()),
     Contact(company, profile.contact));
 

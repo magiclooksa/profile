@@ -517,6 +517,44 @@
           ]
         }
       ]
+    },
+    {
+      "style": "cabinet",
+      "kicker": "BUILT-IN",
+      "title": "خلف كل باب… تفصيلة",
+      "text": "وحدات مدمجة تُصمَّم بمقاس الجدار: تخزين مخفي، وإضاءة مدروسة، وتشطيبات تليق بالمكان.",
+      "items": [
+        {
+          "title": "جدار عرض بإضاءة مخفية",
+          "tag": "وحدة جدارية",
+          "color": "#D8CBB4",
+          "image": {
+            "src": "images/collections/wall-unit-lit-shelves.webp",
+            "aspectRatio": "16:9",
+            "caption": "وحدة جدارية بلون الكتان برفوف عرض متدرّجة، وإضاءة LED مخفية خلف الألواح وأسفل الوحدة"
+          }
+        },
+        {
+          "title": "ركن التسريحة",
+          "tag": "تسريحة",
+          "color": "#C9C3BA",
+          "image": {
+            "src": "images/collections/dressing-table-round-mirror.webp",
+            "aspectRatio": "16:9",
+            "caption": "تسريحة معلّقة بمرآة دائرية مضاءة من الخلف، وأدراج بلا مقابض ومقعد دائري ناعم"
+          }
+        },
+        {
+          "title": "مطبخ جداري مضيء",
+          "tag": "مطبخ",
+          "color": "#9A9894",
+          "image": {
+            "src": "images/collections/kitchen-wall-unit-stone.webp",
+            "aspectRatio": "16:9",
+            "caption": "وحدة مطبخ بواجهات رمادية بمظهر الحجر، وتجويف خشبي مضاء وخزانة عرض زجاجية"
+          }
+        }
+      ]
     }
   ]
 }
