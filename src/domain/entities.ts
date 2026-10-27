@@ -38,11 +38,25 @@ export interface Film {
   readonly video: Media;
 }
 
-export const COLLECTION_STYLES = ['panels', 'collage', 'switch', 'stagger', 'strip', 'duo', 'journey', 'spotlight', 'hotspots', 'coverflow', 'moodboard', 'cabinet'] as const;
+export const COLLECTION_STYLES = [
+  'panels', 'collage', 'switch', 'stagger', 'strip', 'duo', 'journey', 'spotlight', 'hotspots', 'coverflow', 'moodboard', 'cabinet',
+  'swatches', 'tiles', 'mirror', 'blueprint', 'lights',
+] as const;
 export type CollectionStyle = (typeof COLLECTION_STYLES)[number];
 
-/** A labelled point on a photo; x and y are percentages from its left and top edges. */
-export interface Hotspot { readonly x: number; readonly y: number; readonly title: string; readonly text: string }
+/**
+ * A labelled point on a photo; x and y are percentages from its left and top edges.
+ * w and h are the half-width and half-height of the area around it, also in percent,
+ * for layouts that light up that area.
+ */
+export interface Hotspot {
+  readonly x: number;
+  readonly y: number;
+  readonly title: string;
+  readonly text: string;
+  readonly w?: Maybe<number>;
+  readonly h?: Maybe<number>;
+}
 
 export interface CollectionItem {
   readonly title: string;

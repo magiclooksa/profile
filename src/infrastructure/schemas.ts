@@ -29,6 +29,7 @@ const collection: Decoder<Collection> = object<Collection>({
     title: string, image: media, tag: nullable(string), color: nullable(hexColor),
     spots: (v, path) => (v === undefined || v === null ? [] : array(object({
       x: numberIn(0, 100), y: numberIn(0, 100), title: string, text: string,
+      w: nullable(numberIn(1, 100)), h: nullable(numberIn(1, 100)),
     }))(v, path)),
     palette: (v, path) => (v === undefined || v === null ? [] : array(object({ name: string, color: hexColor }))(v, path)),
   })),
