@@ -1,0 +1,1304 @@
+{
+  "name": {
+    "ar": "فيلا الخشب",
+    "en": "THE WOOD VILLA"
+  },
+  "kicker": "كتالوج التصميم الداخلي والأثاث",
+  "tagline": "بلوط دافئ، وترافرتين هادئ، وكتان يتنفّس ضوء النهار.",
+  "cover": {
+    "src": "images/villa/living-wide-b.webp",
+    "ratio": "16:9",
+    "caption": "الصالة العائلية في فيلا الخشب: جدار من البلوط وثريا من الجوت فوق الجلسة"
+  },
+  "intro": {
+    "lead": "فيلا صُمّمت لتُعاش ببطء: خشب يدفّئ، وحجر يهدّئ، وأقمشة طبيعية تلتقط ضوء النهار وتنثره بهدوء في كل زاوية.",
+    "paragraphs": [
+      "اعتمدنا في الفيلا لوحة خامات محدودة ومتناغمة: البلوط الطبيعي في الجدران والخزائن والأبواب، والجوز الداكن في قواعد الأثاث وأذرع الكراسي، والترافرتين في الطاولات والرفوف، والكتان في الستائر ولوح السرير.",
+      "يجمع هذا الكتالوج الفيلا مساحةً مساحة، ثم يفصّل كل قطعة فيها: خاماتها وتشطيبها ومكانها، وتفاصيلها عن قرب كما نُفّذت."
+    ],
+    "words": [
+      {
+        "ar": "دفء",
+        "en": "Warmth"
+      },
+      {
+        "ar": "هدوء",
+        "en": "Calm"
+      },
+      {
+        "ar": "خامات طبيعية",
+        "en": "Natural materials"
+      },
+      {
+        "ar": "ضوء النهار",
+        "en": "Daylight"
+      }
+    ],
+    "image": {
+      "src": "images/villa/curtains-daylight.webp",
+      "ratio": "3:4",
+      "caption": "ضوء النهار عبر ستائر الشيفون والكتان"
+    },
+    "inset": {
+      "src": "images/villa/duvet-embroidery.webp",
+      "ratio": "3:4",
+      "caption": "تطريز بخيوط ذهبية على لحاف السرير"
+    }
+  },
+  "materials": [
+    {
+      "id": "oak",
+      "name": "البلوط الطبيعي",
+      "en": "Natural oak",
+      "color": "#C29563",
+      "swatch": "images/villa/materials/oak.webp",
+      "note": "الخامة الأساسية للفيلا: ألواح جدار التلفاز، وخزائن غرفة النوم والأبواب، والكونسول والكومودينو."
+    },
+    {
+      "id": "walnut",
+      "name": "خشب الجوز",
+      "en": "Walnut",
+      "color": "#5E3B26",
+      "swatch": "images/villa/materials/walnut.webp",
+      "note": "خشب داكن يرسم خطوط الأثاث: قواعد الكنب، وأذرع الكراسي، والقاعدة المتقاطعة لطاولة القهوة."
+    },
+    {
+      "id": "travertine",
+      "name": "الترافرتين",
+      "en": "Travertine",
+      "color": "#DDCDB4",
+      "swatch": "images/villa/materials/travertine.webp",
+      "note": "حجر طبيعي بمسامّ ظاهرة لأسطح الطاولات، وللرف المعلّق أسفل جدار التلفاز."
+    },
+    {
+      "id": "linen",
+      "name": "الكتان",
+      "en": "Linen",
+      "color": "#CBBDA6",
+      "swatch": "images/villa/materials/linen.webp",
+      "note": "نسيج طبيعي في لوح السرير وقاعدته وفي الستائر وأغطية الإضاءة، يمنح المكان ملمسًا هادئًا."
+    },
+    {
+      "id": "boucle",
+      "name": "النسيج المحبّب",
+      "en": "Bouclé weave",
+      "color": "#E6DED0",
+      "swatch": "images/villa/materials/boucle.webp",
+      "note": "قماش ناعم بنسيج بارز يكسو الكنبة الثلاثية والكنبة الزاوية بدرجات العاج والشوفان."
+    },
+    {
+      "id": "cane",
+      "name": "الخيزران المجدول",
+      "en": "Rattan cane",
+      "color": "#D3A563",
+      "swatch": "images/villa/materials/cane.webp",
+      "note": "شبك مجدول بنقشة كلاسيكية في ألواح البارتشن، يمرّر الضوء ويرسم ظلاله على الجدار."
+    },
+    {
+      "id": "leather",
+      "name": "الجلد الطبيعي",
+      "en": "Cognac leather",
+      "color": "#A5612F",
+      "swatch": "images/villa/materials/leather.webp",
+      "note": "جلد بلون الكونياك على كراسي الاسترخاء، يضيف إلى الجلسة دفئًا وعمقًا."
+    },
+    {
+      "id": "brass",
+      "name": "النحاس المطفي",
+      "en": "Brushed brass",
+      "color": "#AF8A4C",
+      "swatch": "images/villa/materials/brass.webp",
+      "note": "لمسة معدنية دافئة في الأباليك وفي الحزام الذي يلتف حول الثريا."
+    },
+    {
+      "id": "jute",
+      "name": "الجوت",
+      "en": "Jute",
+      "color": "#C7A26D",
+      "swatch": "images/villa/materials/jute.webp",
+      "note": "خيوط طبيعية مشدودة تشكّل غطاء الثريا، وتنشر ضوءًا ذهبيًا ناعمًا فوق الجلسة."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "living",
+      "name": "الصالة العائلية",
+      "en": "Family living",
+      "intro": "قلب الفيلا اليومي: جدار تلفاز من ألواح البلوط يرتكز على رف ترافرتين معلّق، وكنبة زاوية واسعة بلون العاج، وكرسي استرخاء بخطوط منتصف القرن، تحت ثريا من الجوت تنثر ضوءًا ذهبيًا.",
+      "look": {
+        "image": {
+          "src": "images/villa/living-wide-a.webp",
+          "ratio": "16:9",
+          "caption": "الصالة العائلية: جدار التلفاز والكنبة الزاوية والثريا"
+        },
+        "spots": [
+          {
+            "x": 41,
+            "y": 17,
+            "product": "pendant"
+          },
+          {
+            "x": 12,
+            "y": 30,
+            "product": "tv-wall"
+          },
+          {
+            "x": 60,
+            "y": 27,
+            "product": "curtains"
+          },
+          {
+            "x": 62,
+            "y": 56,
+            "product": "sectional"
+          },
+          {
+            "x": 43,
+            "y": 62,
+            "product": "coffee-table"
+          },
+          {
+            "x": 27,
+            "y": 72,
+            "product": "lounge-fabric"
+          },
+          {
+            "x": 41,
+            "y": 84,
+            "product": "side-table"
+          },
+          {
+            "x": 80,
+            "y": 75,
+            "product": "console"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/villa/tv-wall-front.webp",
+          "ratio": "16:9",
+          "caption": "جدار التلفاز: ألواح بلوط متساوية ورف ترافرتين معلّق بطول الجدار",
+          "span": 8
+        },
+        {
+          "src": "images/villa/living-pendant-glow.webp",
+          "ratio": "9:16",
+          "caption": "الثريا فوق طاولة القهوة، وجدار البلوط خلفها",
+          "span": 4
+        },
+        {
+          "src": "images/villa/coffee-table-living.webp",
+          "ratio": "3:4",
+          "caption": "طاولة القهوة الدائرية أمام الكنبة الزاوية",
+          "span": 4
+        },
+        {
+          "src": "images/villa/living-chair-pendant.webp",
+          "ratio": "9:16",
+          "caption": "كرسي الاسترخاء بين جدار التلفاز والثريا",
+          "span": 4
+        },
+        {
+          "src": "images/villa/console-behind-sofa.webp",
+          "ratio": "9:16",
+          "caption": "الكونسول خلف الكنبة يفصل الجلسة عن الممر",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/villa/travertine-ledge.webp",
+          "ratio": "3:4",
+          "caption": "حافة رف الترافرتين بمسامّه الطبيعية",
+          "product": "tv-wall"
+        },
+        {
+          "src": "images/villa/oak-panels-joint.webp",
+          "ratio": "3:4",
+          "caption": "التقاء ألواح البلوط بفواصل دقيقة",
+          "product": "tv-wall"
+        },
+        {
+          "src": "images/villa/coffee-table-joint.webp",
+          "ratio": "3:4",
+          "caption": "القاعدة المتقاطعة من خشب الجوز",
+          "product": "coffee-table"
+        },
+        {
+          "src": "images/villa/coffee-table-styling.webp",
+          "ratio": "3:4",
+          "caption": "سطح الترافرتين بتنسيق بسيط",
+          "product": "coffee-table"
+        },
+        {
+          "src": "images/villa/sectional-corner.webp",
+          "ratio": "3:4",
+          "caption": "زاوية الكنبة ووسائد بالأزرق الرمادي",
+          "product": "sectional"
+        },
+        {
+          "src": "images/villa/cushion-teal.webp",
+          "ratio": "3:4",
+          "caption": "وسادة محبوكة بنقشة متعرّجة",
+          "product": "sectional"
+        },
+        {
+          "src": "images/villa/fabric-chair-armrest.webp",
+          "ratio": "3:4",
+          "caption": "ذراع الجوز المنحني لكرسي الاسترخاء",
+          "product": "lounge-fabric"
+        },
+        {
+          "src": "images/villa/console-corner.webp",
+          "ratio": "3:4",
+          "caption": "زاوية الكونسول بعروق خشب متصلة",
+          "product": "console"
+        },
+        {
+          "src": "images/villa/console-styling.webp",
+          "ratio": "3:4",
+          "caption": "تنسيق الكونسول بالفخار والكتب",
+          "product": "console"
+        },
+        {
+          "src": "images/villa/pendant-brass-band.webp",
+          "ratio": "3:4",
+          "caption": "حزام النحاس حول خيوط الجوت",
+          "product": "pendant"
+        }
+      ]
+    },
+    {
+      "id": "lounge",
+      "name": "صالة الاستقبال",
+      "en": "The lounge",
+      "intro": "جلسة أهدأ لاستقبال الضيوف: كرسيان من الجلد بلون الكونياك، وكنبتان بنسيج محبّب وقواعد من الجوز، وبارتشن من الخيزران يحدد المكان ويمرّر الضوء دون أن يغلقه.",
+      "look": {
+        "image": {
+          "src": "images/villa/lounge-wide-a.webp",
+          "ratio": "16:9",
+          "caption": "صالة الاستقبال: الكراسي الجلدية والكنب والبارتشن"
+        },
+        "spots": [
+          {
+            "x": 50,
+            "y": 12,
+            "product": "pendant"
+          },
+          {
+            "x": 6,
+            "y": 40,
+            "product": "curtains"
+          },
+          {
+            "x": 77,
+            "y": 46,
+            "product": "screen"
+          },
+          {
+            "x": 38,
+            "y": 53,
+            "product": "side-table"
+          },
+          {
+            "x": 21,
+            "y": 66,
+            "product": "lounge-leather"
+          },
+          {
+            "x": 49,
+            "y": 71,
+            "product": "coffee-table"
+          },
+          {
+            "x": 84,
+            "y": 72,
+            "product": "sofa"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/villa/lounge-chairs.webp",
+          "ratio": "9:16",
+          "caption": "كرسيا الاسترخاء الجلديان تحت الثريا",
+          "span": 4
+        },
+        {
+          "src": "images/villa/lounge-wide-b.webp",
+          "ratio": "16:9",
+          "caption": "زاوية أخرى للصالة: البارتشن خلف الكنبة",
+          "span": 8
+        },
+        {
+          "src": "images/villa/screen-sofa.webp",
+          "ratio": "9:16",
+          "caption": "الكنبة أمام البارتشن ونبتة الزيتون",
+          "span": 4
+        },
+        {
+          "src": "images/villa/lamp-lounge.webp",
+          "ratio": "9:16",
+          "caption": "الأباجورة الخزفية على الطاولة الجانبية",
+          "span": 4
+        },
+        {
+          "src": "images/villa/lamp-ceramic-lit.webp",
+          "ratio": "3:4",
+          "caption": "ضوء الأباجورة في المساء بجوار الكرسي الجلدي",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/villa/cane-macro.webp",
+          "ratio": "3:4",
+          "caption": "شبك الخيزران المجدول بنقشة كلاسيكية",
+          "product": "screen"
+        },
+        {
+          "src": "images/villa/screen-shadow.webp",
+          "ratio": "3:4",
+          "caption": "ظل البارتشن الشبكي على الجدار",
+          "product": "screen"
+        },
+        {
+          "src": "images/villa/leather-cushion.webp",
+          "ratio": "3:4",
+          "caption": "الجلد بلون الكونياك ووسادة بنقشة بارزة",
+          "product": "lounge-leather"
+        },
+        {
+          "src": "images/villa/leather-chair-armrest.webp",
+          "ratio": "3:4",
+          "caption": "ذراع الجوز ومقعد الجلد",
+          "product": "lounge-leather"
+        },
+        {
+          "src": "images/villa/sofa-tufted-detail.webp",
+          "ratio": "3:4",
+          "caption": "خياطة الظهر المضلّعة",
+          "product": "sofa"
+        },
+        {
+          "src": "images/villa/sofa-corner-leg.webp",
+          "ratio": "3:4",
+          "caption": "قاعدة الجوز وأرجل الكنبة المائلة",
+          "product": "sofa"
+        },
+        {
+          "src": "images/villa/sofa-cushions.webp",
+          "ratio": "3:4",
+          "caption": "ثلاث وسائد بثلاث خامات",
+          "product": "sofa"
+        },
+        {
+          "src": "images/villa/travertine-top.webp",
+          "ratio": "3:4",
+          "caption": "حافة سطح الترافرتين",
+          "product": "coffee-table"
+        }
+      ]
+    },
+    {
+      "id": "bedroom",
+      "name": "غرفة النوم الرئيسية",
+      "en": "Master bedroom",
+      "intro": "غرفة صُمّمت للراحة: لوح سرير مدمج بإطارات من البلوط وحشوات من الكتان، تحمله أباليك نحاسية وكومودينات معلّقة، وخزائن من البلوط بكامل الارتفاع خلف أبواب بلا مقابض ظاهرة.",
+      "look": {
+        "image": {
+          "src": "images/villa/bedroom-wardrobe-c.webp",
+          "ratio": "16:9",
+          "caption": "غرفة النوم: لوح السرير المدمج والخزائن والباب"
+        },
+        "spots": [
+          {
+            "x": 35,
+            "y": 40,
+            "product": "headboard-wall"
+          },
+          {
+            "x": 15,
+            "y": 47,
+            "product": "sconce"
+          },
+          {
+            "x": 55,
+            "y": 32,
+            "product": "curtains"
+          },
+          {
+            "x": 17,
+            "y": 75,
+            "product": "nightstand"
+          },
+          {
+            "x": 52,
+            "y": 68,
+            "product": "bed"
+          },
+          {
+            "x": 93,
+            "y": 55,
+            "product": "wardrobe"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/villa/bedroom-front.webp",
+          "ratio": "16:9",
+          "caption": "لوح السرير المدمج بتناظر كامل، وأبليك على كل جانب",
+          "span": 8
+        },
+        {
+          "src": "images/villa/bedroom-side.webp",
+          "ratio": "9:16",
+          "caption": "السرير بجانب باب الشرفة",
+          "span": 4
+        },
+        {
+          "src": "images/villa/bedroom-sconces-a.webp",
+          "ratio": "9:16",
+          "caption": "الأباليك المضاءة والوسائد المطرّزة",
+          "span": 4
+        },
+        {
+          "src": "images/villa/wardrobe-corridor.webp",
+          "ratio": "9:16",
+          "caption": "ممر الخزائن بين السرير والجدار",
+          "span": 4
+        },
+        {
+          "src": "images/villa/headboard-nightstand.webp",
+          "ratio": "9:16",
+          "caption": "الكومودينو المعلّق تحت الأبليك",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/villa/oak-linen-joint.webp",
+          "ratio": "3:4",
+          "caption": "التقاء إطار البلوط بحشوة الكتان",
+          "product": "headboard-wall"
+        },
+        {
+          "src": "images/villa/sconce-headboard.webp",
+          "ratio": "3:4",
+          "caption": "الأبليك النحاسي بغطاء من الكتان",
+          "product": "sconce"
+        },
+        {
+          "src": "images/villa/nightstand-candle.webp",
+          "ratio": "3:4",
+          "caption": "الكومودينو المعلّق بدرج واحد",
+          "product": "nightstand"
+        },
+        {
+          "src": "images/villa/bed-pillows.webp",
+          "ratio": "3:4",
+          "caption": "وسائد مطرّزة وأخرى بحواف بنية",
+          "product": "bed"
+        },
+        {
+          "src": "images/villa/duvet-embroidery.webp",
+          "ratio": "3:4",
+          "caption": "تطريز لحاف السرير",
+          "product": "bed"
+        },
+        {
+          "src": "images/villa/bed-base-corner.webp",
+          "ratio": "3:4",
+          "caption": "قاعدة السرير المكسوّة بالكتان",
+          "product": "bed"
+        },
+        {
+          "src": "images/villa/curtains-layered.webp",
+          "ratio": "3:4",
+          "caption": "طبقتا الستارة: شيفون وكتان",
+          "product": "curtains"
+        },
+        {
+          "src": "images/villa/wardrobe-doors.webp",
+          "ratio": "3:4",
+          "caption": "أبواب الخزائن بكامل الارتفاع",
+          "product": "wardrobe"
+        },
+        {
+          "src": "images/villa/door-wardrobe.webp",
+          "ratio": "3:4",
+          "caption": "الباب والخزائن من الخشب نفسه",
+          "product": "wardrobe"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "ست عشرة قطعة صُمّمت أو اختيرت للفيلا، منها ما صُنع بمقاس المكان. افتح أي قطعة لترى صورها من كل زاوية، وتفاصيلها عن قرب، وخاماتها ومكانها في الفيلا.",
+    "image": {
+      "src": "images/villa/lounge-set-studio.webp",
+      "ratio": "16:9",
+      "caption": "المجموعة في الاستوديو: كرسيا الجلد والكنبة وطاولة القهوة والأباجورة"
+    }
+  },
+  "products": [
+    {
+      "id": "tv-wall",
+      "name": "جدار التلفاز",
+      "en": "Oak media wall",
+      "category": "أعمال مدمجة",
+      "spaces": [
+        "living"
+      ],
+      "custom": true,
+      "materials": [
+        "oak",
+        "travertine"
+      ],
+      "finish": "ألواح بلوط بفواصل دقيقة، ورف ترافرتين معلّق بطول الجدار",
+      "text": "جدار كامل من ألواح البلوط المتساوية يحتضن الشاشة بلا أسلاك ظاهرة، ويرتكز على رف من الترافرتين معلّق بطول الجدار.",
+      "card": "images/villa/cards/tv-wall.webp",
+      "views": [
+        {
+          "src": "images/villa/tv-wall-front.webp",
+          "ratio": "16:9",
+          "caption": "جدار التلفاز بالبلوط والترافرتين"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/villa/travertine-ledge.webp",
+          "ratio": "3:4",
+          "caption": "رف الترافرتين المعلّق"
+        },
+        {
+          "src": "images/villa/oak-panels-joint.webp",
+          "ratio": "3:4",
+          "caption": "فواصل ألواح البلوط"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/villa/tv-wall-chair.webp",
+          "ratio": "9:16",
+          "caption": "جدار التلفاز مع كرسي الاسترخاء"
+        },
+        {
+          "src": "images/villa/living-wide-a.webp",
+          "ratio": "16:9",
+          "caption": "الجدار في الصالة العائلية"
+        }
+      ]
+    },
+    {
+      "id": "sectional",
+      "name": "الكنبة الزاوية",
+      "en": "U-shaped sectional",
+      "category": "كنب",
+      "spaces": [
+        "living"
+      ],
+      "custom": false,
+      "materials": [
+        "boucle"
+      ],
+      "finish": "نسيج محبّب بلون العاج، ووسائد بالأزرق الرمادي",
+      "text": "كنبة زاوية على شكل حرف U بمقاعد عميقة وظهر منخفض، تحتضن الجلسة العائلية وتتسع لأفرادها جميعًا.",
+      "card": "images/villa/cards/sectional.webp",
+      "views": [
+        {
+          "src": "images/villa/sectional-studio.webp",
+          "ratio": "16:9",
+          "caption": "الكنبة الزاوية في الاستوديو"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/villa/sectional-corner.webp",
+          "ratio": "3:4",
+          "caption": "زاوية الكنبة بالوسائد"
+        },
+        {
+          "src": "images/villa/cushion-teal.webp",
+          "ratio": "3:4",
+          "caption": "وسادة محبوكة بالأزرق الرمادي"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/villa/living-sectional.webp",
+          "ratio": "9:16",
+          "caption": "الكنبة الزاوية في الصالة"
+        },
+        {
+          "src": "images/villa/living-wide-b.webp",
+          "ratio": "16:9",
+          "caption": "الكنبة تحت الثريا"
+        }
+      ]
+    },
+    {
+      "id": "lounge-fabric",
+      "name": "كرسي الاسترخاء القماشي",
+      "en": "Lounge chair, fabric",
+      "category": "كراسي",
+      "spaces": [
+        "living"
+      ],
+      "custom": false,
+      "materials": [
+        "walnut",
+        "linen"
+      ],
+      "finish": "إطار من الجوز، ومقعد وظهر بقماش كتاني فاتح",
+      "text": "كرسي بخطوط منتصف القرن: ذراعان منحنيان من الجوز يحتضنان مقعدًا مبطّنًا ووسادة ظهر بنية.",
+      "card": "images/villa/cards/lounge-fabric.webp",
+      "views": [
+        {
+          "src": "images/villa/fabric-chair-studio.webp",
+          "ratio": "16:9",
+          "caption": "كرسي الاسترخاء القماشي في الاستوديو"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/villa/fabric-chair-armrest.webp",
+          "ratio": "3:4",
+          "caption": "ذراع الجوز المنحني"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/villa/living-chair-pendant.webp",
+          "ratio": "9:16",
+          "caption": "الكرسي في الصالة العائلية"
+        },
+        {
+          "src": "images/villa/tv-wall-chair.webp",
+          "ratio": "9:16",
+          "caption": "الكرسي أمام جدار التلفاز"
+        }
+      ]
+    },
+    {
+      "id": "coffee-table",
+      "name": "طاولة القهوة",
+      "en": "Coffee table",
+      "category": "طاولات",
+      "spaces": [
+        "living",
+        "lounge"
+      ],
+      "custom": false,
+      "materials": [
+        "travertine",
+        "walnut"
+      ],
+      "finish": "سطح ترافرتين بحافة طبيعية، وقاعدة متقاطعة من الجوز",
+      "text": "طاولة دائرية بسطح من الترافرتين ترتكز على لوحين متقاطعين من الجوز؛ قطعة واحدة تجمع الحجر والخشب.",
+      "card": "images/villa/cards/coffee-table.webp",
+      "views": [
+        {
+          "src": "images/villa/coffee-table-studio.webp",
+          "ratio": "16:9",
+          "caption": "طاولة القهوة في الاستوديو"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/villa/coffee-table-joint.webp",
+          "ratio": "3:4",
+          "caption": "القاعدة المتقاطعة من الجوز"
+        },
+        {
+          "src": "images/villa/travertine-top.webp",
+          "ratio": "3:4",
+          "caption": "حافة سطح الترافرتين"
+        },
+        {
+          "src": "images/villa/coffee-table-styling.webp",
+          "ratio": "3:4",
+          "caption": "السطح بتنسيق بسيط"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/villa/coffee-table-living.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة في الصالة العائلية"
+        },
+        {
+          "src": "images/villa/lounge-wide-b.webp",
+          "ratio": "16:9",
+          "caption": "الطاولة في صالة الاستقبال"
+        }
+      ]
+    },
+    {
+      "id": "console",
+      "name": "كونسول البلوط",
+      "en": "Oak console",
+      "category": "طاولات",
+      "spaces": [
+        "living"
+      ],
+      "custom": false,
+      "materials": [
+        "oak"
+      ],
+      "finish": "بلوط طبيعي بتشطيب مطفي، وعروق متصلة عند الزوايا",
+      "text": "كونسول طويل بخطوط متصلة ورف سفلي مفتوح، يقف خلف الكنبة فيفصل الجلسة عن الممر ويحمل الفخار والكتب.",
+      "card": "images/villa/cards/console.webp",
+      "views": [
+        {
+          "src": "images/villa/console-studio.webp",
+          "ratio": "16:9",
+          "caption": "كونسول البلوط في الاستوديو"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/villa/console-corner.webp",
+          "ratio": "3:4",
+          "caption": "زاوية الكونسول"
+        },
+        {
+          "src": "images/villa/console-styling.webp",
+          "ratio": "3:4",
+          "caption": "تنسيق الكونسول"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/villa/console-behind-sofa.webp",
+          "ratio": "9:16",
+          "caption": "الكونسول خلف الكنبة الزاوية"
+        }
+      ]
+    },
+    {
+      "id": "pendant",
+      "name": "ثريا الجوت",
+      "en": "Jute pendant",
+      "category": "إضاءة",
+      "spaces": [
+        "living",
+        "lounge"
+      ],
+      "custom": false,
+      "materials": [
+        "jute",
+        "brass"
+      ],
+      "finish": "خيوط جوت طبيعية مشدودة، وحزام من النحاس المطفي",
+      "text": "ثريا بشكل الساعة الرملية من خيوط الجوت المشدودة، يتوسطها حزام نحاسي، وتنثر ضوءًا ذهبيًا دافئًا فوق الجلسة.",
+      "card": "images/villa/cards/pendant.webp",
+      "views": [
+        {
+          "src": "images/villa/pendant-studio.webp",
+          "ratio": "16:9",
+          "caption": "ثريا الجوت في الاستوديو"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/villa/pendant-brass-band.webp",
+          "ratio": "3:4",
+          "caption": "الحزام النحاسي وخيوط الجوت"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/villa/living-pendant-glow.webp",
+          "ratio": "9:16",
+          "caption": "الثريا فوق الجلسة العائلية"
+        },
+        {
+          "src": "images/villa/living-pendant-tv.webp",
+          "ratio": "9:16",
+          "caption": "الثريا أمام جدار التلفاز"
+        }
+      ]
+    },
+    {
+      "id": "sofa",
+      "name": "الكنبة الثلاثية",
+      "en": "Three-seat sofa",
+      "category": "كنب",
+      "spaces": [
+        "lounge"
+      ],
+      "custom": false,
+      "materials": [
+        "boucle",
+        "walnut"
+      ],
+      "finish": "نسيج محبّب بلون الشوفان، وقاعدة وأرجل من الجوز",
+      "text": "كنبة ثلاثية بظهر مضلّع وذراعين منحنيين، ترتفع على قاعدة رفيعة من الجوز، وتكتمل بوسائد من الجلد والمخمل والقماش المنقوش.",
+      "card": "images/villa/cards/sofa.webp",
+      "views": [
+        {
+          "src": "images/villa/sofa-studio-b.webp",
+          "ratio": "16:9",
+          "caption": "الكنبة الثلاثية من الأمام"
+        },
+        {
+          "src": "images/villa/sofa-studio-a.webp",
+          "ratio": "16:9",
+          "caption": "الكنبة من الزاوية اليسرى"
+        },
+        {
+          "src": "images/villa/sofa-studio-c.webp",
+          "ratio": "16:9",
+          "caption": "الكنبة من الزاوية اليمنى"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/villa/sofa-tufted-detail.webp",
+          "ratio": "3:4",
+          "caption": "خياطة الظهر المضلّعة"
+        },
+        {
+          "src": "images/villa/sofa-corner-leg.webp",
+          "ratio": "3:4",
+          "caption": "القاعدة والأرجل من الجوز"
+        },
+        {
+          "src": "images/villa/sofa-cushions.webp",
+          "ratio": "3:4",
+          "caption": "الوسائد بثلاث خامات"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/villa/screen-sofa.webp",
+          "ratio": "9:16",
+          "caption": "الكنبة أمام البارتشن"
+        },
+        {
+          "src": "images/villa/lounge-wide-a.webp",
+          "ratio": "16:9",
+          "caption": "الكنبتان في صالة الاستقبال"
+        }
+      ]
+    },
+    {
+      "id": "lounge-leather",
+      "name": "كرسي الاسترخاء الجلدي",
+      "en": "Lounge chair, leather",
+      "category": "كراسي",
+      "spaces": [
+        "lounge"
+      ],
+      "custom": false,
+      "materials": [
+        "leather",
+        "walnut"
+      ],
+      "finish": "جلد طبيعي بلون الكونياك، وإطار من الجوز",
+      "text": "النسخة الجلدية من كرسي الاسترخاء: مقعد وظهر من الجلد الكونياكي على إطار الجوز نفسه، مع وسادة جلدية بنقشة بارزة.",
+      "card": "images/villa/cards/lounge-leather.webp",
+      "views": [
+        {
+          "src": "images/villa/leather-chair-studio.webp",
+          "ratio": "16:9",
+          "caption": "كرسي الاسترخاء الجلدي في الاستوديو"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/villa/leather-cushion.webp",
+          "ratio": "3:4",
+          "caption": "الجلد والوسادة المنقوشة"
+        },
+        {
+          "src": "images/villa/leather-chair-armrest.webp",
+          "ratio": "3:4",
+          "caption": "ذراع الجوز والمقعد الجلدي"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/villa/lounge-chairs.webp",
+          "ratio": "9:16",
+          "caption": "الكرسيان في صالة الاستقبال"
+        },
+        {
+          "src": "images/villa/lounge-set-overhead.webp",
+          "ratio": "9:16",
+          "caption": "الكرسيان ضمن المجموعة"
+        }
+      ]
+    },
+    {
+      "id": "side-table",
+      "name": "الطاولة الجانبية والأباجورة",
+      "en": "Side table & lamp",
+      "category": "إضاءة",
+      "spaces": [
+        "lounge",
+        "living"
+      ],
+      "custom": false,
+      "materials": [
+        "travertine",
+        "linen"
+      ],
+      "finish": "قاعدة مخروطية من الترافرتين، وأباجورة خزفية مخططة بغطاء من الكتان",
+      "text": "طاولة جانبية مخروطية من الترافرتين تعلوها أباجورة خزفية بخطوط زرقاء، تضيف إلى الجلسة لمسة لونية هادئة.",
+      "card": "images/villa/cards/side-table.webp",
+      "views": [
+        {
+          "src": "images/villa/lamp-table-studio.webp",
+          "ratio": "16:9",
+          "caption": "الطاولة الجانبية والأباجورة في الاستوديو"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/villa/lamp-lounge.webp",
+          "ratio": "9:16",
+          "caption": "الأباجورة بين الكرسي الجلدي والكنبة"
+        },
+        {
+          "src": "images/villa/lounge-wide-a.webp",
+          "ratio": "16:9",
+          "caption": "الطاولة في صالة الاستقبال"
+        }
+      ]
+    },
+    {
+      "id": "screen",
+      "name": "بارتشن الخيزران",
+      "en": "Cane screen",
+      "category": "قواطع",
+      "spaces": [
+        "lounge"
+      ],
+      "custom": false,
+      "materials": [
+        "oak",
+        "cane"
+      ],
+      "finish": "إطار خشبي بلون العسل، وحشوات من الخيزران المجدول ومربعات مفتوحة",
+      "text": "بارتشن قابل للطي من أربعة ألواح: مربعات مفتوحة في الأعلى، وخيزران مجدول في الأسفل، يحدد الجلسة ويمرّر الضوء.",
+      "card": "images/villa/cards/screen.webp",
+      "views": [
+        {
+          "src": "images/villa/screen-studio.webp",
+          "ratio": "16:9",
+          "caption": "بارتشن الخيزران في الاستوديو"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/villa/cane-macro.webp",
+          "ratio": "3:4",
+          "caption": "شبك الخيزران عن قرب"
+        },
+        {
+          "src": "images/villa/screen-shadow.webp",
+          "ratio": "3:4",
+          "caption": "ظل البارتشن على الجدار"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/villa/screen-sofa.webp",
+          "ratio": "9:16",
+          "caption": "البارتشن خلف الكنبة"
+        },
+        {
+          "src": "images/villa/lounge-wide-b.webp",
+          "ratio": "16:9",
+          "caption": "البارتشن في صالة الاستقبال"
+        }
+      ]
+    },
+    {
+      "id": "headboard-wall",
+      "name": "لوح السرير المدمج",
+      "en": "Built-in headboard wall",
+      "category": "أعمال مدمجة",
+      "spaces": [
+        "bedroom"
+      ],
+      "custom": true,
+      "materials": [
+        "oak",
+        "linen"
+      ],
+      "finish": "إطارات من البلوط وحشوات من الكتان، تمتد على جانبي السرير",
+      "text": "لوح رأس مدمج يمتد على جانبي السرير: إطارات من البلوط وحشوات من الكتان، تحمل الأباليك والكومودينات في تكوين متناظر.",
+      "card": "images/villa/cards/headboard-wall.webp",
+      "views": [
+        {
+          "src": "images/villa/bedroom-front.webp",
+          "ratio": "16:9",
+          "caption": "لوح السرير المدمج من الأمام"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/villa/oak-linen-joint.webp",
+          "ratio": "3:4",
+          "caption": "التقاء البلوط بالكتان"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/villa/bedroom-wardrobe-b.webp",
+          "ratio": "16:9",
+          "caption": "لوح السرير في غرفة النوم"
+        },
+        {
+          "src": "images/villa/bedroom-side.webp",
+          "ratio": "9:16",
+          "caption": "لوح السرير بجانب الشرفة"
+        }
+      ]
+    },
+    {
+      "id": "bed",
+      "name": "السرير المنجّد",
+      "en": "Upholstered bed",
+      "category": "أسرّة",
+      "spaces": [
+        "bedroom"
+      ],
+      "custom": false,
+      "materials": [
+        "linen",
+        "oak"
+      ],
+      "finish": "قاعدة ولوح مكسوّان بالكتان، وإطار رفيع من البلوط",
+      "text": "سرير بقاعدة منجّدة بالكتان ولوح رأس يحيط به إطار رفيع من البلوط، مع مفارش قطنية بيضاء مطرّزة بخطوط ذهبية.",
+      "card": "images/villa/cards/bed.webp",
+      "views": [
+        {
+          "src": "images/villa/bed-studio-a.webp",
+          "ratio": "16:9",
+          "caption": "السرير في الاستوديو"
+        },
+        {
+          "src": "images/villa/bed-studio-b.webp",
+          "ratio": "16:9",
+          "caption": "السرير من زاوية أخرى"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/villa/bed-base-corner.webp",
+          "ratio": "3:4",
+          "caption": "القاعدة المكسوّة بالكتان"
+        },
+        {
+          "src": "images/villa/bed-pillows.webp",
+          "ratio": "3:4",
+          "caption": "الوسائد المطرّزة"
+        },
+        {
+          "src": "images/villa/duvet-embroidery.webp",
+          "ratio": "3:4",
+          "caption": "تطريز اللحاف"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/villa/bedroom-front.webp",
+          "ratio": "16:9",
+          "caption": "السرير في غرفة النوم الرئيسية"
+        },
+        {
+          "src": "images/villa/bedroom-sconces-b.webp",
+          "ratio": "9:16",
+          "caption": "السرير تحت الأباليك"
+        }
+      ]
+    },
+    {
+      "id": "nightstand",
+      "name": "الكومودينو المعلّق",
+      "en": "Floating nightstand",
+      "category": "تخزين",
+      "spaces": [
+        "bedroom"
+      ],
+      "custom": false,
+      "materials": [
+        "oak"
+      ],
+      "finish": "بلوط طبيعي، ودرج واحد بلا مقبض ظاهر",
+      "text": "كومودينو معلّق على الجدار بدرج واحد، يترك الأرضية خالية فتبدو الغرفة أخف وأوسع.",
+      "card": "images/villa/cards/nightstand.webp",
+      "views": [
+        {
+          "src": "images/villa/nightstand-studio.webp",
+          "ratio": "16:9",
+          "caption": "الكومودينو المعلّق في الاستوديو"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/villa/nightstand-candle.webp",
+          "ratio": "3:4",
+          "caption": "الكومودينو بجوار السرير"
+        },
+        {
+          "src": "images/villa/nightstand-sconce.webp",
+          "ratio": "9:16",
+          "caption": "الكومودينو تحت الأبليك"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/villa/headboard-nightstand.webp",
+          "ratio": "9:16",
+          "caption": "الكومودينو على لوح السرير"
+        },
+        {
+          "src": "images/villa/nightstand-sconce-lit.webp",
+          "ratio": "9:16",
+          "caption": "الكومودينو في ضوء المساء"
+        }
+      ]
+    },
+    {
+      "id": "sconce",
+      "name": "الأبليك النحاسي",
+      "en": "Brass wall sconce",
+      "category": "إضاءة",
+      "spaces": [
+        "bedroom"
+      ],
+      "custom": false,
+      "materials": [
+        "brass",
+        "linen"
+      ],
+      "finish": "قاعدة وذراع من النحاس المطفي، وغطاء من الكتان",
+      "text": "أبليك بذراع منحني من النحاس المطفي وغطاء كتاني، مثبّت على لوح السرير ليمنح ضوء قراءة دافئًا على جانبي السرير.",
+      "card": "images/villa/cards/sconce.webp",
+      "views": [
+        {
+          "src": "images/villa/sconce-studio.webp",
+          "ratio": "16:9",
+          "caption": "الأبليك النحاسي في الاستوديو"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/villa/sconce-headboard.webp",
+          "ratio": "3:4",
+          "caption": "الأبليك على لوح السرير"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/villa/bedroom-sconces-a.webp",
+          "ratio": "9:16",
+          "caption": "الأباليك المضاءة على جانبي السرير"
+        }
+      ]
+    },
+    {
+      "id": "wardrobe",
+      "name": "خزائن وأبواب البلوط",
+      "en": "Oak wardrobes & doors",
+      "category": "أعمال مدمجة",
+      "spaces": [
+        "bedroom"
+      ],
+      "custom": true,
+      "materials": [
+        "oak"
+      ],
+      "finish": "بلوط طبيعي بعروق رأسية، وأبواب بكامل الارتفاع بلا مقابض ظاهرة",
+      "text": "خزائن من الأرض حتى السقف تكمل خشب الباب المجاور، فتبدو الواجهة كلها جدارًا واحدًا من البلوط.",
+      "card": "images/villa/cards/wardrobe.webp",
+      "views": [
+        {
+          "src": "images/villa/wardrobe-front.webp",
+          "ratio": "16:9",
+          "caption": "واجهة الخزائن والباب"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/villa/wardrobe-doors.webp",
+          "ratio": "3:4",
+          "caption": "أبواب الخزائن بكامل الارتفاع"
+        },
+        {
+          "src": "images/villa/door-wardrobe.webp",
+          "ratio": "3:4",
+          "caption": "الباب والخزائن من الخشب نفسه"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/villa/wardrobe-corridor.webp",
+          "ratio": "9:16",
+          "caption": "الخزائن في ممر غرفة النوم"
+        },
+        {
+          "src": "images/villa/bedroom-wardrobe-a.webp",
+          "ratio": "16:9",
+          "caption": "الخزائن في غرفة النوم"
+        }
+      ]
+    },
+    {
+      "id": "curtains",
+      "name": "الستائر المزدوجة",
+      "en": "Layered curtains",
+      "category": "ستائر",
+      "spaces": [
+        "living",
+        "lounge",
+        "bedroom"
+      ],
+      "custom": true,
+      "materials": [
+        "linen"
+      ],
+      "finish": "طبقة شيفون شفافة وطبقة كتان بلون الرمل، على مجرى مخفي في السقف",
+      "text": "ستائر بطبقتين في كل مساحات الفيلا: شيفون أبيض يليّن ضوء النهار، وكتان بلون الرمل يكمل الخصوصية ويضيف دفئًا.",
+      "card": "images/villa/cards/curtains.webp",
+      "views": [
+        {
+          "src": "images/villa/curtains-layered.webp",
+          "ratio": "3:4",
+          "caption": "الستارة بطبقتيها"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/villa/curtains-daylight.webp",
+          "ratio": "3:4",
+          "caption": "ضوء النهار عبر الشيفون"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/villa/bedroom-side.webp",
+          "ratio": "9:16",
+          "caption": "الستائر في غرفة النوم"
+        },
+        {
+          "src": "images/villa/living-wide-b.webp",
+          "ratio": "16:9",
+          "caption": "الستائر في الصالة العائلية"
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "مساحتك… بهذه الروح؟",
+    "text": "نصمّم المساحة كاملة ونصنع قطعها بالمقاس، من أول مخطط إلى آخر وسادة. حدّثنا عن مكانك ونبدأ معًا."
+  }
+}

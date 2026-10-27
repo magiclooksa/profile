@@ -10,6 +10,7 @@ import { Advantages } from './components/Advantages';
 import { Clients } from './components/Clients';
 import { CollectionSection } from './components/CollectionSection';
 import { Contact } from './components/Contact';
+import { FeatureHero } from './components/FeatureHero';
 import { FilmSection } from './components/FilmSection';
 import { Footer } from './components/Footer';
 import { Hero } from './components/Hero';
@@ -48,6 +49,7 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
 
   const main = h('main', {},
     Hero(company),
+    company.feature ? FeatureHero(company.feature) : null,
     About(company, next()),
     film(0),
     collection(8),

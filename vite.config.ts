@@ -1,5 +1,5 @@
 import { existsSync, readFileSync } from 'node:fs';
-import { resolve } from 'node:path';
+import { basename, resolve } from 'node:path';
 import { defineConfig, type Plugin } from 'vite';
 
 /** Public address of the site. Link previews need absolute URLs. */
@@ -31,6 +31,17 @@ const previewTags = (p: Preview): string => [
   `<meta name="twitter:image" content="${escape(p.image)}" />`,
 ].join('\n    ');
 
+/** Pages other than the profile, each with its own preview. */
+const PAGE_PREVIEWS: Record<string, Preview> = {
+  'villa-wood.html': {
+    title: 'فيلا الخشب | النظرة الساحرة',
+    description: 'كتالوج تفصيلي لفيلا الخشب: ثلاث مساحات، وست عشرة قطعة، وتسع خامات طبيعية من البلوط والترافرتين والكتان.',
+    url: `${SITE_URL}villa-wood.html`,
+    image: `${SITE_URL}og/villa-wood.jpg`,
+    alt: 'الصالة العائلية في فيلا الخشب: جدار من البلوط وثريا من الجوت',
+  },
+};
+
 interface Product { id: string; title: string; description: string; alt: string }
 
 /** Every product photo, with the address the page gives it: collection-<section>-<item>. */
@@ -54,12 +65,12 @@ function products(): Product[] {
 function linkPreviews(): Plugin {
   return {
     name: 'link-previews',
-    transformIndexHtml(html) {
-      const tags = previewTags({
+    transformIndexHtml(html, ctx) {
+      const page = PAGE_PREVIEWS[basename(ctx.filename)] ?? {
         title: SITE_NAME, description: SITE_DESCRIPTION, url: SITE_URL,
         image: `${SITE_URL}og/home.jpg`, alt: 'غرفة طعام فاخرة من تصميم النظرة الساحرة',
-      });
-      return html.replace('</title>', `</title>\n    <link rel="canonical" href="${SITE_URL}" />\n    ${tags}`);
+      };
+      return html.replace('</title>', `</title>\n    <link rel="canonical" href="${page.url}" />\n    ${previewTags(page)}`);
     },
     generateBundle() {
       for (const s of products()) {
@@ -92,6 +103,11 @@ function linkPreviews(): Plugin {
 // Relative base so the built site works from any folder or sub-path.
 export default defineConfig({
   base: './',
-  build: { target: 'es2022', outDir: 'dist' },
+  build: {
+    target: 'es2022',
+    outDir: 'dist',
+    // Two pages: the profile and the villa catalogue.
+    rollupOptions: { input: { main: resolve(__dirname, 'index.html'), villa: resolve(__dirname, 'villa-wood.html') } },
+  },
   plugins: [linkPreviews()],
 });

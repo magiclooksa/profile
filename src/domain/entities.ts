@@ -79,6 +79,21 @@ export interface Collection {
   readonly items: readonly CollectionItem[];
 }
 
+/** A featured project shown as a full-width banner that opens its own page. */
+export interface Feature {
+  readonly kicker: string;
+  readonly title: string;
+  readonly en: string;
+  readonly text: string;
+  readonly cta: string;
+  /** The page it opens, relative to the site. */
+  readonly href: string;
+  readonly facts: readonly string[];
+  readonly image: Media;
+  /** A few photos fanned out like catalogue pages; each caption labels its page. */
+  readonly pages: readonly Media[];
+}
+
 export interface Company {
   readonly name: { readonly ar: string; readonly en: string };
   readonly entityType: string;
@@ -86,6 +101,7 @@ export interface Company {
   readonly tagline: string;
   readonly closingLine: string;
   readonly hero?: Maybe<Media>;
+  readonly feature?: Maybe<Feature>;
   readonly about: {
     readonly lead: string;
     readonly highlight: string;

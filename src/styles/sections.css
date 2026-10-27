@@ -793,3 +793,46 @@ ol.track, ol.lvls { list-style: none; padding: 0; margin: 0 }
   .set-glow-label { display: none }
 }
 @media (prefers-reduced-motion: reduce) { .set-lights-base, .set-lights-shade, .set-glow-zone { transition: none } }
+
+/* ── featured project: a banner that opens the villa catalogue ── */
+.feature { padding: 0 }
+.feature-link { position: relative; isolation: isolate; display: block; min-height: min(880px, 94svh); overflow: hidden; background: #1d1712; color: #fffaf0; text-decoration: none }
+.feature-link:focus-visible { outline: 3px solid #e5c77f; outline-offset: -6px }
+/* the photo grows into the villa page's cover (same name there) */
+.feature-bg { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; transform: scale(1.06); transition: transform 1.8s var(--ease-out); view-transition-name: villa-cover }
+.feature-link:hover .feature-bg { transform: scale(1.01) }
+.feature-shade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(270deg, #140f0bf2 0%, #140f0bb8 36%, #140f0b40 68%, #140f0b26 100%), linear-gradient(0deg, #140f0bb3, transparent 46%) }
+.feature-in { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); align-items: center; gap: clamp(32px, 6vw, 96px); min-height: inherit; padding-block: clamp(84px, 10vw, 140px) }
+.feature-copy { display: grid; justify-items: start; gap: 16px; max-width: 40em }
+.feature-kicker { display: inline-flex; align-items: center; gap: 12px; color: #e5c77f; font-size: var(--step--1); font-weight: 700; letter-spacing: .03em }
+.feature-kicker::before { content: ""; width: 42px; height: 1px; background: currentColor }
+.feature-title { font-size: clamp(3rem, 1.2rem + 7.4vw, 8.4rem); font-weight: 200; line-height: 1.05; view-transition-name: villa-title }
+.feature-en { font-family: "Cormorant Garamond", Georgia, serif; font-size: clamp(1.35rem, 1rem + 1.3vw, 2.2rem); font-style: italic; letter-spacing: .05em; color: #efe5d3; text-align: right }
+.feature-text { max-width: 34em; color: #e7ddcc }
+.feature-facts { display: flex; flex-wrap: wrap; row-gap: 6px; padding: 0; list-style: none; color: #f3eadb; font-size: .92rem }
+.feature-facts li + li::before { content: ""; display: inline-block; width: 1px; height: .9em; margin-inline: 14px; background: #e5c77f80; vertical-align: middle }
+.feature-cta { display: inline-flex; align-items: center; gap: 14px; margin-top: 12px; padding: 14px 28px; border-radius: 99px; background: #fffaf0; color: #1d1712; font-size: var(--step--1); font-weight: 700; transition: background .3s }
+.feature-cta i { font-style: normal; transition: transform .45s var(--ease) }
+.feature-link:hover .feature-cta { background: #e5c77f }
+.feature-link:hover .feature-cta i { transform: translateX(-8px) }
+/* three catalogue pages fanned out; they spread further on hover */
+.feature-pages { position: relative; justify-self: center; width: min(330px, 25vw); aspect-ratio: 3 / 4 }
+.feature-page { position: absolute; inset: 0; padding: 10px 10px 36px; background: #fbf8f2; box-shadow: 0 30px 70px #000a; transform-origin: 50% 100%; transition: transform 1.1s var(--ease-out) }
+.feature-page img { display: block; width: 100%; height: 100%; object-fit: cover }
+.feature-page b { position: absolute; right: 12px; bottom: 9px; color: #8c6a3c; font-size: .78rem; font-weight: 700 }
+.feature-page-1 { transform: translate(-16%, 3%) rotate(-9deg) }
+.feature-page-2 { transform: translate(12%, -1%) rotate(6deg) }
+.feature-page-3 { transform: rotate(-1.5deg) }
+.feature-link:hover .feature-page-1 { transform: translate(-44%, 5%) rotate(-16deg) }
+.feature-link:hover .feature-page-2 { transform: translate(40%, 1%) rotate(13deg) }
+.feature-link:hover .feature-page-3 { transform: translateY(-5%) rotate(0deg) }
+/* a round "open" label that follows the mouse */
+.feature-cursor { position: absolute; z-index: 3; left: 0; top: 0; width: 116px; height: 116px; display: grid; place-items: center; border-radius: 50%; background: #e5c77f; color: #1d1712; font-size: .85rem; font-weight: 700; text-align: center; pointer-events: none; translate: calc(var(--cx, -200px) - 58px) calc(var(--cy, -200px) - 58px); scale: 0; transition: scale .35s var(--ease), translate .12s linear }
+.feature-link.is-pointing { cursor: none }
+.feature-link.is-pointing .feature-cursor { scale: 1 }
+@media (max-width: 860px) {
+  .feature-in { grid-template-columns: 1fr; align-content: end }
+  .feature-pages { display: none }
+  .feature-shade { background: linear-gradient(0deg, #140f0bf2 0%, #140f0bb8 48%, #140f0b40 100%) }
+}
+@media (prefers-reduced-motion: reduce) { .feature-bg, .feature-page { transition: none } }

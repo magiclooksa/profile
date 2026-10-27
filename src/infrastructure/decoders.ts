@@ -20,6 +20,11 @@ export const string: Decoder<string> = (v, path) => {
   return v;
 };
 
+export const boolean: Decoder<boolean> = (v, path) => {
+  if (typeof v !== 'boolean') throw new DataError(path, 'true أو false');
+  return v;
+};
+
 /** A finite number between min and max (inclusive). */
 export const numberIn = (min: number, max: number): Decoder<number> => (v, path) => {
   if (typeof v !== 'number' || !Number.isFinite(v) || v < min || v > max) {

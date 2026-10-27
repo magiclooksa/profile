@@ -1,5 +1,5 @@
 import {
-  COLLECTION_STYLES, FILM_STYLES, GALLERY_LAYOUTS, type Collection, type Film,
+  COLLECTION_STYLES, FILM_STYLES, GALLERY_LAYOUTS, type Collection, type Feature, type Film,
   type Advantages, type Clients, type Company, type CompareProject, type Contact,
   type EngagementLevels, type IconName, type Journey, type Media, type Products,
   type Project, type Services, type StandardProject, type TitledText,
@@ -43,6 +43,10 @@ export const companyDecoder = object<Company>({
   tagline: string,
   closingLine: string,
   hero: nullable(media),
+  feature: nullable(object<Feature>({
+    kicker: string, title: string, en: string, text: string, cta: string, href: string,
+    facts: array(string), image: media, pages: array(media),
+  })),
   about: object({ lead: string, highlight: string, paragraphs: array(string), image: media }),
   statements: array(titledText),
   interiorDesign: object({ intro: string, traits: array(string), images: array(media) }),

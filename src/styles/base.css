@@ -78,3 +78,11 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 @keyframes spin { to { transform: rotate(360deg) } }
 .load-error { max-width: 640px; margin: 15vh auto; padding-inline: 16px; display: flex; flex-direction: column; gap: 12px }
 .load-error h1 { font-size: var(--step-2); color: var(--accent) }
+
+/* page to page: the villa banner's photo and title grow into the villa page's cover */
+@view-transition { navigation: auto }
+::view-transition-group(villa-cover), ::view-transition-group(villa-title) { animation-duration: .85s; animation-timing-function: cubic-bezier(.2, .7, .1, 1) }
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: .45s }
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important }
+}
