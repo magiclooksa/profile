@@ -33,6 +33,11 @@ jobs:
 
       - name: Build the website
         run: npm run build
+        env:
+          # Optional repository variable: address of the hosted server (e.g. https://magiclook.onrender.com).
+          # When set, the GitHub Pages copy reads content from the database and shows the contact form;
+          # when empty, it uses the JSON files in public/data as before.
+          VITE_API_URL: ${{ vars.VITE_API_URL }}
 
       - name: Upload the built website
         uses: actions/upload-pages-artifact@v3

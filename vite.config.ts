@@ -66,6 +66,7 @@ function linkPreviews(): Plugin {
   return {
     name: 'link-previews',
     transformIndexHtml(html, ctx) {
+      if (basename(ctx.filename) === 'admin.html') return html; // private page: no preview
       const page = PAGE_PREVIEWS[basename(ctx.filename)] ?? {
         title: SITE_NAME, description: SITE_DESCRIPTION, url: SITE_URL,
         image: `${SITE_URL}og/home.jpg`, alt: 'غرفة طعام فاخرة من تصميم النظرة الساحرة',
@@ -106,8 +107,16 @@ export default defineConfig({
   build: {
     target: 'es2022',
     outDir: 'dist',
-    // Two pages: the profile and the villa catalogue.
-    rollupOptions: { input: { main: resolve(__dirname, 'index.html'), villa: resolve(__dirname, 'villa-wood.html') } },
+    // Three pages: the profile, the villa catalogue and the dashboard.
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        villa: resolve(__dirname, 'villa-wood.html'),
+        admin: resolve(__dirname, 'admin.html'),
+      },
+    },
   },
+  // During development (npm run dev) API calls go to the local server (npm run server).
+  server: { proxy: { '/api': `http://localhost:${process.env.PORT ?? 3000}` } },
   plugins: [linkPreviews()],
 });

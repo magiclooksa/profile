@@ -168,6 +168,27 @@ ol.track, ol.lvls { list-style: none; padding: 0; margin: 0 }
 .card bdi { font-weight: 500; word-break: break-word }
 @media (max-width: 820px) { .contact .grid { grid-template-columns: 1fr } }
 
+/* contact form (shown only when the server is online) */
+.contact-form { margin-top: clamp(28px, 4vw, 56px); padding: clamp(20px, 3vw, 40px); border: 1px solid var(--line); background: var(--bg); border-radius: var(--r) }
+.contact-form h3 { font-size: var(--step-2); line-height: 1.2 }
+.contact-form .cf-lead { color: var(--muted); margin-block: 6px 22px }
+.cf-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 18px }
+.cf-field { display: flex; flex-direction: column; gap: 6px; min-width: 0 }
+.cf-field.wide { grid-column: 1 / -1 }
+.cf-field span { font-size: .85rem; color: var(--muted) }
+.cf-field input, .cf-field textarea { font: inherit; color: var(--fg); background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-sm); padding: 12px 14px; width: 100%; min-width: 0 }
+.cf-field textarea { resize: vertical; min-height: 120px }
+.cf-field input:focus-visible, .cf-field textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent) }
+.cf-field input[dir="ltr"] { text-align: right }
+.cf-trap { position: absolute; inset-inline-start: -9999px; width: 1px; height: 1px; overflow: hidden }
+.cf-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 20px }
+.cf-actions .btn { cursor: pointer; font-family: inherit }
+.cf-actions .btn[disabled] { opacity: .6; cursor: progress }
+.cf-status { font-size: var(--step--1); color: var(--muted) }
+.cf-status.ok { color: #2f6b3a }
+.cf-status.err { color: #a12d22 }
+@media (max-width: 640px) { .cf-grid { grid-template-columns: 1fr } }
+
 .site-footer { background: var(--band); color: var(--band-fg); padding-block: 34px }
 .site-.site-footer .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; font-size: var(--step--1) }
 .site-.site-footer .brand .mark { background: var(--accent) }

@@ -1,4 +1,5 @@
 import type { Profile } from '../domain/entities';
+import type { MessageGateway } from '../domain/MessageGateway';
 import { initJourneyFill } from './behaviors/journeyFill';
 import { initNavState } from './behaviors/navState';
 import { initReveal } from './behaviors/reveal';
@@ -30,8 +31,11 @@ const NAV_LINKS: readonly NavLink[] = [
   { id: 'contact', label: 'تواصل معنا' },
 ];
 
-/** Builds the whole page from the profile and wires its behaviours. */
-export function renderApp(root: HTMLElement, profile: Profile): void {
+/**
+ * Builds the whole page from the profile and wires its behaviours.
+ * The contact form appears only when a server is there to receive messages.
+ */
+export function renderApp(root: HTMLElement, profile: Profile, messages: MessageGateway | null = null): void {
   const { company } = profile;
   let n = 0;
   const next = (): number => ++n;
@@ -80,7 +84,7 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
     collection(3),
     ...company.collections.slice(17).map((c, i) => CollectionSection(c, i + 17)),
     Clients(profile.clients, next()),
-    Contact(company, profile.contact));
+    Contact(company, profile.contact, messages));
 
   root.replaceChildren(Nav(company, NAV_LINKS), main, Footer(company));
   document.title = `${company.name.ar} | ${company.name.en}`;

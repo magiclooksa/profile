@@ -2,19 +2,33 @@
   "name": "magic-look-profile",
   "private": true,
   "version": "1.0.0",
-  "description": "الملف التعريفي لمؤسسة النظرة الساحرة MAGIC LOOK كموقع ويب",
+  "description": "الملف التعريفي لمؤسسة النظرة الساحرة MAGIC LOOK كموقع ويب، مع لوحة تحكم وقاعدة بيانات MongoDB",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "server": "tsx watch --env-file-if-exists=.env server/index.ts",
+    "start": "tsx --env-file-if-exists=.env server/index.ts",
+    "seed": "tsx --env-file-if-exists=.env server/scripts/seed.ts",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
   "devDependencies": {
+    "@types/express": "5.0.6",
+    "@types/multer": "2.3.0",
     "@types/node": "22.15.3",
     "typescript": "5.8.3",
     "vite": "6.3.5",
     "vitest": "3.2.4"
+  },
+  "dependencies": {
+    "express": "5.3.0",
+    "mongodb": "6.21.0",
+    "multer": "2.5.0",
+    "tsx": "4.23.15"
+  },
+  "engines": {
+    "node": ">=22.9"
   }
 }
