@@ -1,3 +1,5 @@
+import { resolve } from 'node:path';
+
 /** Server settings, all read from environment variables (see .env.example). */
 
 const required = (name: string): string => {
@@ -18,6 +20,10 @@ export interface Config {
   corsOrigins: string[];
   /** Largest upload accepted, in megabytes. */
   maxUploadMb: number;
+  /** Where new uploads go: "disk" (a folder in the project) or "gridfs" (inside MongoDB). */
+  storageDriver: 'disk' | 'gridfs';
+  /** The storage folder for the disk driver. */
+  storageDir: string;
 }
 
 export function loadConfig(): Config {
@@ -32,5 +38,7 @@ export function loadConfig(): Config {
     publicUrl: (process.env.PUBLIC_URL ?? '').trim().replace(/\/+$/, ''),
     corsOrigins: (process.env.CORS_ORIGINS ?? '').split(',').map((s) => s.trim().replace(/\/+$/, '')).filter(Boolean),
     maxUploadMb: Number(process.env.MAX_UPLOAD_MB ?? 100),
+    storageDriver: process.env.STORAGE_DRIVER?.trim() === 'gridfs' ? 'gridfs' : 'disk',
+    storageDir: resolve(import.meta.dirname, '..', process.env.STORAGE_DIR?.trim() || 'storage'),
   };
 }

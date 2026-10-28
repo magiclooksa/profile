@@ -60,7 +60,7 @@ async function showShell(): Promise<void> {
     h('p', { class: 'side-title' }, 'المحتوى'),
     ...sections.map((s) => h('a', { href: `#section/${s.key}`, 'data-route': `section/${s.key}` }, s.label)),
     h('p', { class: 'side-title' }, 'أخرى'),
-    h('a', { href: '#media', 'data-route': 'media' }, 'مكتبة الملفات'),
+    h('a', { href: '#media', 'data-route': 'media' }, 'الملفات'),
     h('a', { href: '#messages', 'data-route': 'messages' }, 'رسائل التواصل', unread));
   const logout = h('button', { type: 'button', class: 'ed-btn quiet' }, 'تسجيل الخروج');
   logout.addEventListener('click', () => {
@@ -91,7 +91,7 @@ async function showShell(): Promise<void> {
     shell.classList.remove('nav-open');
     nav.querySelectorAll('a').forEach((a) => a.classList.toggle('active', a.dataset.route === target));
     if (target === 'media') {
-      view.replaceChildren(h('h1', {}, 'مكتبة الملفات'), MediaLibrary(client));
+      view.replaceChildren(h('h1', {}, 'الملفات'), MediaLibrary(client));
     } else if (target === 'messages') {
       view.replaceChildren(h('h1', {}, 'رسائل التواصل'), MessagesView(client, setUnread));
     } else {
@@ -136,7 +136,7 @@ async function sectionView(view: HTMLElement, section: SectionInfo): Promise<voi
   const ctx = {
     onChange: markDirty,
     upload: (file: File, onProgress: (f: number) => void) =>
-      client.upload([file], onProgress).then((files) => files[0]?.url ?? ''),
+      client.upload([file], onProgress, 'uploads').then((files) => files[0]?.url ?? ''),
     pick: () => pickMedia(client),
     resolve: (url: string) => /^(https?:|data:|blob:)/.test(url) ? url
       : url.includes('api/files/') ? client.resolve(url) : `${siteUrl}${url.replace(/^\.?\//, '')}`,

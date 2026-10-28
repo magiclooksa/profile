@@ -149,6 +149,30 @@ button, input, textarea, select { font: inherit; color: inherit }
 .media-card figcaption b { font-weight: 500; font-size: .82rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
 .media-card figcaption small { color: var(--muted); font-size: .75rem }
 .media-card .ed-btn { padding: 4px 8px; font-size: .78rem }
+.media-card figcaption small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.media-card[draggable=true] { cursor: grab }
+.fm-actions { display: flex; flex-wrap: wrap; gap: 2px }
+.fm-actions .ed-btn { padding: 3px 7px; font-size: .75rem }
+.fm-crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: .95rem; color: var(--muted) }
+.fm-crumbs b { color: var(--fg); font-weight: 500 }
+.fm-crumb { border: 0; background: none; padding: 2px 4px; border-radius: 6px; color: var(--accent); cursor: pointer }
+.fm-crumb:hover { background: color-mix(in srgb, var(--accent) 10%, transparent) }
+.fm-usage { color: var(--muted); font-size: .8rem }
+.fm-folders { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px }
+.fm-folders:empty { display: none }
+.fm-folder { display: flex; align-items: center; gap: 4px; padding: 4px 6px 4px 4px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; min-width: 0 }
+.fm-folder.drop { border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent) }
+.fm-folder-open { flex: 1; min-width: 0; display: flex; align-items: center; gap: 10px; padding: 8px; border: 0; background: none; cursor: pointer; text-align: start; border-radius: 8px }
+.fm-folder-open:hover { background: var(--bg) }
+.fm-folder-open b { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.fm-folder-icon { flex: none; width: 28px; height: 22px; border-radius: 3px 6px 6px 6px; background: var(--accent-2); position: relative }
+.fm-folder-icon::before { content: ''; position: absolute; top: -4px; inset-inline-start: 0; width: 12px; height: 6px; border-radius: 3px 3px 0 0; background: var(--accent-2) }
+.fm-folder .ed-tools .ed-icon { width: 26px; height: 26px }
+.fm-dialog { width: min(420px, calc(100vw - 32px)); padding: 20px; border: 0; border-radius: 16px; background: var(--bg); display: flex; flex-direction: column; gap: 14px }
+.fm-dialog:not([open]) { display: none }
+.fm-dialog::backdrop { background: #17191b80 }
+.fm-dialog label { display: flex; flex-direction: column; gap: 4px }
+.fm-select { padding: 9px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface) }
 .media-dialog { width: min(1000px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); padding: 20px; border: 0; border-radius: 18px; background: var(--bg) }
 .media-dialog::backdrop { background: #17191b80 }
 .media-dialog header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px }

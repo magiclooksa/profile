@@ -3,15 +3,17 @@
  *
  *   npm run seed                 copy sections that are not in the database yet
  *   npm run seed -- --force      overwrite every section with the files' content
- *   npm run seed -- --media      also upload every image and video the content uses
- *                                into the database (GridFS) and point the content at them
+ *   npm run seed -- --media      also move every image and video the content uses into the file
+ *                                storage (storage/ folder, or MongoDB with STORAGE_DRIVER=gridfs),
+ *                                in the same folders as in public/, and point the content at them
  */
 import { createReadStream, existsSync, readFileSync } from 'node:fs';
-import { basename, extname, resolve } from 'node:path';
-import { GridFSBucket } from 'mongodb';
+import { basename, extname, posix, resolve } from 'node:path';
+import { ObjectId } from 'mongodb';
 import { connect } from '../db';
-import { fileUrl, type FileMeta } from '../routes/files';
+import { fileUrl } from '../routes/files';
 import { SECTIONS } from '../sections';
+import { ancestors, cleanFolder, cleanName, createDrivers, type DriverName, type FileDoc, type FolderDoc } from '../storage';
 
 const ROOT = resolve(import.meta.dirname, '../..');
 // In the repository the content is in public/; in an installed release only the built copy (dist/) exists.
@@ -32,26 +34,32 @@ const MEDIA_PATH = /^(images|videos|assets)\/[^?#]+\.(webp|jpe?g|png|gif|avif|mp
 
 const { client, db } = await connect(uri, process.env.MONGODB_DB?.trim() || 'magiclook');
 const content = db.collection<{ _id: string; data: unknown; updatedAt: Date }>('content');
-const bucket = new GridFSBucket(db, { bucketName: 'media' });
-const files = db.collection('media.files');
+const files = db.collection<FileDoc>('files');
+const folders = db.collection<FolderDoc>('folders');
+const driverName: DriverName = process.env.STORAGE_DRIVER?.trim() === 'gridfs' ? 'gridfs' : 'disk';
+const driver = createDrivers(db, resolve(ROOT, process.env.STORAGE_DIR?.trim() || 'storage'))[driverName];
 
 /** Uploads a file from public/ once, and returns its URL on the server. */
 const uploaded = new Map<string, string>();
 async function uploadOnce(path: string): Promise<string> {
   const cached = uploaded.get(path);
   if (cached) return cached;
-  const existing = await files.findOne({ 'metadata.sourcePath': path });
+  const existing = await files.findOne({ sourcePath: path });
   let url: string;
   if (existing) {
-    url = fileUrl(publicUrl, existing._id.toString(), existing.filename as string);
+    url = fileUrl(publicUrl, existing._id.toString(), existing.name);
   } else {
-    const name = basename(path);
-    const meta: FileMeta = { contentType: TYPES[extname(path).toLowerCase()] ?? 'application/octet-stream', originalName: name, sourcePath: path };
-    const stream = bucket.openUploadStream(name, { metadata: meta });
-    await new Promise<void>((done, fail) => {
-      createReadStream(resolve(PUBLIC, path)).pipe(stream).on('finish', () => done()).on('error', fail);
+    const id = new ObjectId();
+    const folder = cleanFolder(posix.dirname(path)) ?? 'site';
+    const name = cleanName(basename(path)) ?? `${id.toString().slice(-6)}${extname(path)}`;
+    const key = driver.keyFor(id, folder, name);
+    const size = await driver.write(key, createReadStream(resolve(PUBLIC, path)), name);
+    for (const f of ancestors(folder)) await folders.updateOne({ _id: f }, { $setOnInsert: { createdAt: new Date() } }, { upsert: true });
+    await files.insertOne({
+      _id: id, name, folder, size, key, driver: driverName, sourcePath: path, uploadedAt: new Date(),
+      contentType: TYPES[extname(path).toLowerCase()] ?? 'application/octet-stream',
     });
-    url = fileUrl(publicUrl, stream.id.toString(), name);
+    url = fileUrl(publicUrl, id.toString(), name);
     console.log(`  ↑ ${path}`);
   }
   uploaded.set(path, url);

@@ -5,7 +5,8 @@ import type { Db } from 'mongodb';
 import { issueToken, rateLimit, requireAdmin, safeEqual } from './auth';
 import type { Config } from './config';
 import { contentRoutes } from './routes/content';
-import { fileRoutes } from './routes/files';
+import { storageRoutes } from './routes/files';
+import { createDrivers } from './storage';
 import { messageRoutes } from './routes/messages';
 
 /** Lets the listed sites (e.g. the GitHub Pages copy) call the API from the browser. */
@@ -49,7 +50,12 @@ export function createApp(db: Db, config: Config): express.Express {
   api.get('/auth/me', admin, (_req, res) => res.json({ ok: true }));
 
   api.use('/content', contentRoutes(db, admin));
-  api.use('/files', fileRoutes(db, admin, config));
+  const storage = storageRoutes(db, admin, {
+    publicUrl: config.publicUrl, maxUploadMb: config.maxUploadMb,
+    drivers: createDrivers(db, config.storageDir), current: config.storageDriver,
+  });
+  api.use('/files', storage.files);
+  api.use('/folders', storage.folders);
   api.use('/messages', messageRoutes(db, admin));
   api.use((_req, res) => res.status(404).json({ error: 'المسار غير موجود' }));
 

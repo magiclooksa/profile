@@ -19,5 +19,8 @@ services:
         sync: false
       - key: SESSION_SECRET
         generateValue: true
+      # Render's free disk is wiped on every restart, so files are kept inside MongoDB there.
+      - key: STORAGE_DRIVER
+        value: gridfs
       - key: CORS_ORIGINS
         value: https://magiclooksa.github.io

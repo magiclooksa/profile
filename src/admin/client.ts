@@ -3,7 +3,16 @@
 const TOKEN_KEY = 'ml-admin-token';
 
 export interface SectionInfo { key: string; label: string; updatedAt: string | null }
-export interface MediaFile { id: string; name: string; size: number; contentType: string; uploadedAt?: string; url: string }
+export interface MediaFile {
+  id: string; name: string; size: number; contentType: string; url: string;
+  folder?: string; uploadedAt?: string; driver?: 'disk' | 'gridfs';
+}
+export interface FolderListing {
+  folder: string;
+  folders: { path: string; name: string }[];
+  files: MediaFile[];
+  usage: { count: number; bytes: number; driver: 'disk' | 'gridfs' };
+}
 export interface Message {
   id: string; name: string; phone: string; email: string | null; city: string | null;
   message: string; read: boolean; createdAt: string;
@@ -70,16 +79,23 @@ export class AdminClient {
   restore = (key: string, id: string): Promise<{ data: unknown }> =>
     this.request('POST', `content/${encodeURIComponent(key)}/history/${id}/restore`);
 
-  files = (q = ''): Promise<MediaFile[]> => this.request('GET', `files${q ? `?q=${encodeURIComponent(q)}` : ''}`);
+  /** A folder's contents, or a search across every folder when q is given. */
+  files = (folder = '', q = ''): Promise<FolderListing> =>
+    this.request('GET', `files?folder=${encodeURIComponent(folder)}${q ? `&q=${encodeURIComponent(q)}` : ''}`);
   deleteFile = (id: string): Promise<unknown> => this.request('DELETE', `files/${id}`);
+  updateFile = (id: string, change: { name?: string; folder?: string }): Promise<MediaFile> => this.request('PATCH', `files/${id}`, change);
+  allFolders = (): Promise<string[]> => this.request('GET', 'folders');
+  createFolder = (path: string): Promise<unknown> => this.request('POST', 'folders', { path });
+  moveFolder = (from: string, to: string): Promise<unknown> => this.request('PATCH', 'folders', { from, to });
+  deleteFolder = (path: string): Promise<unknown> => this.request('DELETE', `folders?path=${encodeURIComponent(path)}`);
 
   /** Uploads with progress (fetch cannot report upload progress, XHR can). */
-  upload(files: File[], onProgress: (fraction: number) => void = () => {}): Promise<MediaFile[]> {
+  upload(files: File[], onProgress: (fraction: number) => void = () => {}, folder = ''): Promise<MediaFile[]> {
     const form = new FormData();
     for (const f of files) form.append('files', f);
     return new Promise((done, fail) => {
       const xhr = new XMLHttpRequest();
-      xhr.open('POST', `${this.base}api/files`);
+      xhr.open('POST', `${this.base}api/files?folder=${encodeURIComponent(folder)}`);
       if (this.token) xhr.setRequestHeader('Authorization', `Bearer ${this.token}`);
       xhr.upload.onprogress = (e) => { if (e.lengthComputable) onProgress(e.loaded / e.total) };
       xhr.onerror = () => fail(new ApiError('تعذّر رفع الملف', 0));

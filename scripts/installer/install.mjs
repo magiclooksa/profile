@@ -122,6 +122,7 @@ if (existsSync(envPath) && !args.has('--reconfigure')) {
     MONGODB_URI: uri, MONGODB_DB: 'magiclook', ADMIN_PASSWORD: password,
     SESSION_SECRET: randomBytes(32).toString('hex'), PORT: port,
     PUBLIC_URL: '', CORS_ORIGINS: 'https://magiclooksa.github.io', MAX_UPLOAD_MB: '100',
+    STORAGE_DRIVER: 'disk', STORAGE_DIR: 'storage',
   };
   writeFileSync(envPath, `${Object.entries(env).map(([k, v]) => `${k}="${v}"`).join('\n')}\n`, { mode: 0o600 });
   ok('حُفظت الإعدادات في .env');
@@ -178,7 +179,8 @@ if (isWindows) {
 say(`\n\x1b[32m\x1b[1m✓ اكتمل التثبيت\x1b[0m
   الموقع:        ${url}
   لوحة التحكم:   ${url}admin.html
-  الإعدادات:     ${envPath}`);
+  الإعدادات:     ${envPath}
+  الملفات:       ${join(DIR, 'storage')}`);
 if (!dbReady) say('  \x1b[31mملاحظة:\x1b[0m الخادم لن يعمل حتى تتصل قاعدة البيانات. بعد تجهيزها أعد تشغيل التثبيت.');
 
 // 7. Start now
