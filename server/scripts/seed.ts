@@ -14,6 +14,8 @@ import { fileUrl, type FileMeta } from '../routes/files';
 import { SECTIONS } from '../sections';
 
 const ROOT = resolve(import.meta.dirname, '../..');
+// In the repository the content is in public/; in an installed release only the built copy (dist/) exists.
+const PUBLIC = existsSync(resolve(ROOT, 'public/data')) ? resolve(ROOT, 'public') : resolve(ROOT, 'dist');
 const args = new Set(process.argv.slice(2));
 const force = args.has('--force');
 const withMedia = args.has('--media');
@@ -47,7 +49,7 @@ async function uploadOnce(path: string): Promise<string> {
     const meta: FileMeta = { contentType: TYPES[extname(path).toLowerCase()] ?? 'application/octet-stream', originalName: name, sourcePath: path };
     const stream = bucket.openUploadStream(name, { metadata: meta });
     await new Promise<void>((done, fail) => {
-      createReadStream(resolve(ROOT, 'public', path)).pipe(stream).on('finish', () => done()).on('error', fail);
+      createReadStream(resolve(PUBLIC, path)).pipe(stream).on('finish', () => done()).on('error', fail);
     });
     url = fileUrl(publicUrl, stream.id.toString(), name);
     console.log(`  ↑ ${path}`);
@@ -59,7 +61,7 @@ async function uploadOnce(path: string): Promise<string> {
 /** Replaces every media path in the content with the uploaded file's URL. */
 async function moveMedia(value: unknown): Promise<unknown> {
   if (typeof value === 'string') {
-    return MEDIA_PATH.test(value) && existsSync(resolve(ROOT, 'public', value)) ? uploadOnce(value) : value;
+    return MEDIA_PATH.test(value) && existsSync(resolve(PUBLIC, value)) ? uploadOnce(value) : value;
   }
   if (Array.isArray(value)) return Promise.all(value.map(moveMedia));
   if (value && typeof value === 'object') {
@@ -72,7 +74,7 @@ async function moveMedia(value: unknown): Promise<unknown> {
 
 try {
   for (const section of SECTIONS) {
-    const file = resolve(ROOT, 'public/data', `${section.key}.json`);
+    const file = resolve(PUBLIC, 'data', `${section.key}.json`);
     if (!existsSync(file)) continue;
     if (!force && await content.countDocuments({ _id: section.key })) {
       console.log(`- ${section.key}: موجود مسبقاً (استخدم --force للاستبدال)`);
