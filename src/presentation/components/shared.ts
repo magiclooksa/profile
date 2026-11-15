@@ -1,12 +1,12 @@
 import type { Media } from '../../domain/entities';
 import { h } from '../dom';
 import { pattern } from '../icons';
+import { BrandMark } from '../brand';
 import { openImageViewer } from './ImageViewer';
 import { bindMediaAspectRatio } from '../behaviors/mediaAspectRatio';
 
-/** The LM mark, drawn from the logo's alpha so it follows the theme colour. */
-export const Mark = (className = ''): HTMLElement =>
-  h('i', { class: `mark ${className}`.trim(), 'aria-hidden': 'true' });
+/** The brand mark (identity 2027). Its two colours follow --logo-top and --logo-bottom. */
+export const Mark = (className = ''): SVGSVGElement => BrandMark(className);
 
 /** An image or looping video, with a branded placeholder for missing media. */
 export function MediaView(media: Media, className = ''): HTMLElement {

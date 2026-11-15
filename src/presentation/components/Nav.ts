@@ -1,13 +1,12 @@
 import type { Company } from '../../domain/entities';
 import { h } from '../dom';
-import { Mark } from './shared';
+import { Logo } from '../brand';
 
 export interface NavLink { readonly id: string; readonly label: string }
 
 export const Brand = (company: Company): HTMLElement =>
   h('a', { class: 'brand', href: '#top', 'aria-label': `${company.name.ar} ${company.name.en}` },
-    Mark(),
-    h('span', {}, h('b', {}, company.name.ar), h('small', { class: 'latin' }, company.name.en)));
+    Logo('horizontal'));
 
 export const Nav = (company: Company, links: readonly NavLink[]): HTMLElement =>
   h('nav', { class: 'nav', id: 'nav', 'aria-label': 'التنقل الرئيسي' },

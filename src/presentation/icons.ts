@@ -1,4 +1,5 @@
 import type { IconName } from '../domain/entities';
+import { PATTERN_TILE } from './brand';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 
@@ -41,16 +42,17 @@ export function icon(name: IconName, className = 'ic'): SVGSVGElement {
 
 let patternCount = 0;
 
-/** The identity pattern: the L corner and the V of the mark, repeated. */
+/** The identity pattern: the brand's curve element, repeated as in the guide (page 13). */
 export function pattern(): HTMLDivElement {
   const id = `ml-pattern-${++patternCount}`;
+  const { width, height, content } = PATTERN_TILE;
   const wrap = document.createElement('div');
   wrap.className = 'pattern';
   wrap.setAttribute('aria-hidden', 'true');
+  // Static, trusted markup from the brand files.
   wrap.innerHTML =
-    `<svg><defs><pattern id="${id}" width="120" height="120" patternUnits="userSpaceOnUse">` +
-    `<g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">` +
-    `<path d="M18 14v24q0 8 8 8h18"/><path d="M74 76l14 13 14-13"/></g></pattern></defs>` +
+    `<svg><defs><pattern id="${id}" width="${width}" height="${height}" patternUnits="userSpaceOnUse" ` +
+    `patternTransform="scale(3)"><g fill="currentColor">${content}</g></pattern></defs>` +
     `<rect width="100%" height="100%" fill="url(#${id})"/></svg>`;
   return wrap;
 }

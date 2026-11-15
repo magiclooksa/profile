@@ -8,14 +8,19 @@ a { color: inherit }
 .wrap { max-width: var(--wrap); margin-inline: auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)) }
 .latin { font-family: var(--font-en); direction: ltr; unicode-bidi: isolate }
 
-/* mark rendered from the logo's own alpha, so it takes any token colour */
-.mark { display: block; aspect-ratio: 682 / 450; background: var(--accent);
-  -webkit-mask: url('../assets/mark.png') center / contain no-repeat; mask: url('../assets/mark.png') center / contain no-repeat }
+/* identity 2027 artwork: inline SVG whose parts take the --logo-* colours */
+.logo, .mark { display: block; overflow: visible }
+.mark { width: 100%; height: auto; aspect-ratio: 45.51 / 29.91 }
+.ml-top { fill: var(--logo-top) } .ml-bottom { fill: var(--logo-bottom) }
+.ml-ar { fill: var(--logo-ar) } .ml-en { fill: var(--logo-en) }
 
-/* pattern from the identity: the L corner and the V of the mark */
-.pattern { position: absolute; inset: 0; pointer-events: none; overflow: hidden; color: var(--pat); opacity: .13 }
-.pattern svg { position: absolute; inset: -120px; width: calc(100% + 240px); height: calc(100% + 240px); animation: drift 60s linear infinite }
-@keyframes drift { to { transform: translate(-120px, -120px) } }
+/* the brand's curve pattern (guide p.13); the drift moves by whole tiles so the loop is seamless */
+.pattern { position: absolute; inset: 0; pointer-events: none; overflow: hidden; color: var(--pat); opacity: .12 }
+.pattern svg { position: absolute; inset: -130px; width: calc(100% + 260px); height: calc(100% + 260px); animation: drift 48s linear infinite }
+@keyframes drift { to { transform: translate(-118.5px, -123.9px) } }
+
+::selection { background: var(--ml-bronze); color: #fff }
+html { scrollbar-color: var(--ml-green-60) var(--ml-beige-40) }
 
 /* nav */
 body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--bg) }
@@ -23,10 +28,9 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
   backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid transparent; transition: border-color .3s }
 .nav.scrolled { border-bottom-color: var(--line) }
 .nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px }
-.brand { display: flex; align-items: center; gap: 12px; text-decoration: none }
-.brand .mark { width: 46px }
-.brand b { display: block; font-weight: 500; font-size: 1rem; line-height: 1.2 }
-.brand small { display: block; font-family: var(--font-en); font-weight: 800; font-size: .66rem; letter-spacing: .28em; color: var(--accent); direction: ltr; text-align: right }
+.brand { display: flex; align-items: center; text-decoration: none; border-radius: 6px }
+.brand .logo { height: clamp(38px, 3.2vw, 46px); width: auto; transition: transform .5s var(--ease) }
+.brand:hover .logo { transform: scale(1.03) }
 .nav ul { display: flex; gap: clamp(12px, 2vw, 30px); list-style: none; padding: 0; font-size: var(--step--1) }
 .nav ul a { text-decoration: none; position: relative; padding-block: 4px }
 .nav ul a::after { content: ""; position: absolute; inset: auto 0 -2px 0; height: 2px; background: var(--accent); transform: scaleX(0); transform-origin: right; transition: transform .35s var(--ease) }
@@ -68,7 +72,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .ph { position: relative; overflow: hidden; background: var(--sunk); display: grid; place-items: center; isolation: isolate }
 .ph .pattern { opacity: .16 }
 .ph .ph-in { position: relative; display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; padding: 16px }
-.ph .mark { width: 74px; opacity: .55 }
+.ph .mark { width: 74px; opacity: .6 }
 .ph span { font-size: var(--step--1); color: var(--accent); background: color-mix(in srgb, var(--surface) 80%, transparent); padding: 4px 16px; border-radius: 99px }
 
 

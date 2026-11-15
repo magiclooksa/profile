@@ -4,6 +4,9 @@ import './styles/villa.css';
 import { httpFetcher } from './infrastructure/JsonProfileRepository';
 import { JsonVillaRepository } from './infrastructure/JsonVillaRepository';
 import { renderVilla, renderVillaError } from './presentation/villa/VillaPage';
+import { Logo } from './presentation/brand';
+
+document.querySelector('.vbar-brand')?.append(Logo('horizontal'));
 
 // Composition root of the villa catalogue page.
 const root = document.getElementById('villa-content');
