@@ -1,0 +1,28 @@
+/* Magic Look — النظرة الساحرة · brand colours (identity 2027) */
+:root {
+  /* Deep Forest Green — C79 M51 Y62 K63 */
+  --ml-green: #253a35;
+  --ml-green-rgb: 37, 58, 53;
+  --ml-green-80: #51615d;
+  --ml-green-60: #7c8986;
+  --ml-green-40: #a8b0ae;
+  --ml-green-20: #d3d8d7;
+  --ml-green-10: #e9ebeb;
+  /* Antique Bronze — C29 M42 Y66 K20 */
+  --ml-bronze: #a68356;
+  --ml-bronze-rgb: 166, 131, 86;
+  --ml-bronze-80: #b89c78;
+  --ml-bronze-60: #cab59a;
+  --ml-bronze-40: #dbcdbb;
+  --ml-bronze-20: #ede6dd;
+  --ml-bronze-10: #f6f3ee;
+  /* Warm Stone Beige — C18 M19 Y30 K2 */
+  --ml-beige: #d6c9b5;
+  --ml-beige-rgb: 214, 201, 181;
+  --ml-beige-80: #ded4c4;
+  --ml-beige-60: #e6dfd3;
+  --ml-beige-40: #efe9e1;
+  --ml-beige-20: #f7f4f0;
+  --ml-beige-10: #fbfaf8;
+  --ml-font: "Lama Sans", "Almarai", system-ui, sans-serif;
+}
