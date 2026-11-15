@@ -52,9 +52,10 @@
   --step-5: clamp(2.7rem, 1.1rem + 7.4vw, 9.4rem);
   --wrap: 1440px;
   --gutter: clamp(16px, 4vw, 64px);
-  --r-sm: 14px;
-  --r: clamp(18px, 2vw, 32px);
-  --r-lg: clamp(26px, 3.6vw, 60px);
+  /* corners: near-sharp, like the guide's panels */
+  --r-sm: 2px;
+  --r: 3px;
+  --r-lg: 4px;
   --ease: cubic-bezier(.2,.7,.1,1);
   --ease-out: cubic-bezier(.19,1,.22,1);
   --ease-io: cubic-bezier(.77,0,.18,1);

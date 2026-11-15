@@ -16,11 +16,10 @@ const cinema = (film: Film): HTMLElement[] => [
     h('div', { class: 'wrap' }, Copy(film, 'reveal'))),
 ];
 
-/** Arch-framed video beside numbered points. */
+/** Video in a plain frame beside numbered points. */
 const arch = (film: Film): HTMLElement[] => [
   h('div', { class: 'wrap film-grid' },
     h('div', { class: 'film-portal reveal' },
-      h('i', { class: 'film-portal-line', 'aria-hidden': 'true' }),
       MediaView(film.video, 'film-media')),
     h('div', { class: 'reveal' },
       Copy(film),

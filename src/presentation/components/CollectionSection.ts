@@ -364,41 +364,20 @@ const moodboard = (c: Collection): HTMLElement[] => {
       : null)];
 };
 
-/**
- * Built-in pieces shown behind a pair of cabinet doors that swing open as each one
- * scrolls into view, beside an editorial caption. Clicking the photo closes or reopens them.
- */
+/** Built-in pieces: each photo shown plainly beside an editorial caption, alternating sides. */
 const cabinet = (c: Collection): HTMLElement[] => {
-  const rows = c.items.map((item, i) => {
-    const door = (side: 'right' | 'left'): HTMLElement =>
-      h('span', { class: `set-door set-door-${side}`, 'aria-hidden': 'true' }, h('i', { class: 'set-handle' }));
-    const frame = h('div', { class: 'set-cab-frame' },
-      // The photo sits in its own clipped layer so its zoom never shows around the closed doors.
-      h('span', { class: 'set-cab-pic' },
+  const rows = c.items.map((item, i) =>
+    h('figure', { class: `set-cab set-cab-${i % 2 === 0 ? 'a' : 'b'}` },
+      h('div', { class: 'set-cab-frame reveal' },
         h('img', { src: item.image.src ?? '', alt: item.image.caption, loading: 'lazy', decoding: 'async' })),
-      door('right'), door('left'));
-    frame.addEventListener('click', () => frame.classList.toggle('is-open'));
-    const row = h('figure', { class: `set-cab set-cab-${i % 2 === 0 ? 'a' : 'b'}` },
-      frame,
       h('figcaption', { class: 'set-cab-text reveal' },
         h('span', { class: 'latin set-cab-no', 'aria-hidden': 'true' }, pad2(i + 1)),
         item.tag ? h('span', { class: 'set-tag' }, Swatch(item), item.tag) : null,
         h('b', {}, item.title),
-        h('small', {}, item.image.caption)));
-    return { row, frame };
-  });
-  // Doors open once, the first time each piece is well in view.
-  const io = new IntersectionObserver((entries) => {
-    for (const entry of entries) {
-      if (!entry.isIntersecting) continue;
-      io.unobserve(entry.target);
-      window.setTimeout(() => entry.target.classList.add('is-open'), 250);
-    }
-  }, { threshold: 0.55 });
-  rows.forEach(({ frame }) => io.observe(frame));
+        h('small', {}, item.image.caption))));
   return [h('div', { class: 'wrap' },
     Head(c, 'set-center set-cab-head reveal'),
-    h('div', { class: 'set-cabs' }, rows.map(({ row }) => row)))];
+    h('div', { class: 'set-cabs' }, rows))];
 };
 
 /** An absolute address, so it stays correct inside CSS custom properties and stylesheets in other folders. */

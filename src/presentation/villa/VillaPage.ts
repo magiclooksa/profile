@@ -336,8 +336,7 @@ const Closing = (v: Villa): HTMLElement =>
       h('p', { class: 'reveal' }, v.closing.text),
       h('div', { class: 'v-closing-ctas reveal' },
         h('a', { class: 'v-btn solid', href: 'index.html#contact' }, 'تواصل معنا'),
-        h('a', { class: 'v-btn ghost', href: 'index.html' }, 'العودة إلى الملف التعريفي')),
-      h('p', { class: 'v-colophon' }, `© ${new Date().getFullYear()} النظرة الساحرة · كتالوج ${v.name.ar}`)));
+        h('a', { class: 'v-btn ghost', href: 'index.html' }, 'العودة إلى الملف التعريفي'))));
 
 /** The top bar turns solid after the cover, shows reading progress and names the chapter in view. */
 function initBar(sections: readonly HTMLElement[]): void {

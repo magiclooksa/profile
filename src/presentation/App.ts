@@ -82,7 +82,18 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
     Clients(profile.clients, next()),
     Contact(company, profile.contact));
 
-  root.replaceChildren(Nav(company, NAV_LINKS), main, Footer(company));
+  root.replaceChildren(Nav(company, NAV_LINKS), main, Footer({
+    name: company.name,
+    tagline: company.tagline,
+    home: '#top',
+    top: '#top',
+    links: [
+      ...NAV_LINKS.map((l) => ({ href: `#${l.id}`, label: l.label })),
+      ...(company.feature ? [{ href: company.feature.href, label: `كتالوج ${company.feature.title}` }] : []),
+    ],
+    contact: profile.contact,
+    contactHref: '#contact',
+  }));
   document.title = `${company.name.ar} | ${company.name.en}`;
 
   initNavState(document.getElementById('nav'));
