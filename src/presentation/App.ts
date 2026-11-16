@@ -7,6 +7,8 @@ import { initScrollProgress } from './behaviors/scrollProgress';
 import { scrollToHash } from './behaviors/share';
 import { About } from './components/About';
 import { Advantages } from './components/Advantages';
+import { Ceo } from './components/Ceo';
+import { Faq } from './components/Faq';
 import { Clients } from './components/Clients';
 import { CollectionSection } from './components/CollectionSection';
 import { Contact } from './components/Contact';
@@ -52,6 +54,7 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
     Hero(company),
     Catalogues(profile.catalogues, company.feature),
     About(company, next()),
+    Ceo(profile.ceo, next()),
     film(0),
     collection(8),
     collection(11),
@@ -81,6 +84,7 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
     collection(3),
     ...company.collections.slice(17).map((c, i) => CollectionSection(c, i + 17)),
     Clients(profile.clients, next()),
+    Faq(profile.faq, next()),
     Contact(company, profile.contact));
 
   root.replaceChildren(Nav(company, NAV_LINKS), main, Footer({
@@ -90,12 +94,14 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
     top: '#top',
     links: [
       ...NAV_LINKS.map((l) => ({ href: `#${l.id}`, label: l.label })),
+      { href: '#ceo', label: profile.ceo.title },
+      ...(profile.faq.items.length > 0 ? [{ href: '#faq', label: 'الأسئلة الشائعة' }] : []),
       ...(company.feature ? [{ href: company.feature.href, label: `كتالوج ${company.feature.title}` }] : []),
     ],
     contact: profile.contact,
     contactHref: '#contact',
   }));
-  document.title = `${company.name.ar} | ${company.name.en}`;
+  // The <title> is written at build time from data/seo.json; keep it, search engines read the rendered one.
 
   initNavState(document.getElementById('nav'));
   initReveal(root);

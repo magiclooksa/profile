@@ -1,7 +1,7 @@
 import {
   COLLECTION_STYLES, FILM_STYLES, GALLERY_LAYOUTS, type Collection, type Feature, type Film,
-  type Advantages, type CatalogueCard, type Clients, type Company, type CompareProject, type Contact,
-  type EngagementLevels, type IconName, type Journey, type Media, type Products,
+  type Advantages, type CatalogueCard, type Ceo, type Clients, type Company, type CompareProject, type Contact,
+  type EngagementLevels, type Faq, type IconName, type Journey, type Media, type Products,
   type Project, type Services, type StandardProject, type TitledText,
 } from '../domain/entities';
 import { array, boolean, hexColor, nullable, numberIn, object, oneOf, string, tagged, type Decoder } from './decoders';
@@ -104,6 +104,21 @@ export const contactDecoder = object<Contact>({
   address: nullable(string),
   mapUrl: nullable(string),
   mapImage: media,
+});
+
+export const ceoDecoder = object<Ceo>({
+  title: string,
+  name: nullable(string),
+  role: string,
+  photo: media,
+  quote: nullable(string),
+  message: array(string),
+  signature: nullable(string),
+});
+
+export const faqDecoder = object<Faq>({
+  intro: string,
+  items: array(object({ question: string, answer: string })),
 });
 
 /** The index scripts/catalogue-pages.mjs writes: every project catalogue page. */

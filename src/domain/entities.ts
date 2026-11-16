@@ -173,6 +173,27 @@ export interface Contact {
   readonly mapImage: Media;
 }
 
+/** The chief executive's message, shown under "who we are". */
+export interface Ceo {
+  /** Section heading, e.g. "كلمة الرئيس التنفيذي". */
+  readonly title: string;
+  readonly name: Maybe<string>;
+  /** Job title under the name, e.g. "الرئيس التنفيذي". */
+  readonly role: string;
+  /** A portrait, cropped to 4:5. */
+  readonly photo: Media;
+  /** One line pulled out above the message. */
+  readonly quote: Maybe<string>;
+  readonly message: readonly string[];
+  /** A handwritten signature on a transparent background (PNG or SVG). */
+  readonly signature: Maybe<string>;
+}
+
+export interface FaqItem { readonly question: string; readonly answer: string }
+
+/** Frequently asked questions: shown on the page and given to search engines and AI assistants. */
+export interface Faq { readonly intro: string; readonly items: readonly FaqItem[] }
+
 /** One project catalogue page, as the profile lists it (from data/catalogues.json). */
 export interface CatalogueCard {
   readonly href: string;
@@ -201,4 +222,6 @@ export interface Profile {
   readonly clients: Clients;
   readonly contact: Contact;
   readonly catalogues: readonly CatalogueCard[];
+  readonly ceo: Ceo;
+  readonly faq: Faq;
 }

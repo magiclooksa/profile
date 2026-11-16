@@ -1,0 +1,43 @@
+{
+  "siteUrl": "https://magiclooksa.github.io/profile/",
+  "title": "النظرة الساحرة MAGIC LOOK | تصميم داخلي وديكور وتأثيث",
+  "description": "مؤسسة النظرة الساحرة MAGIC LOOK للتصميم الداخلي والديكور والتأثيث: كنب ومجالس، وغرف نوم، ووحدات تلفزيون، وكسوات خشبية، وستائر وإضاءة، بتصميم وتنفيذ حسب المقاس من الفكرة إلى آخر تفصيلة.",
+  "keywords": [
+    "النظرة الساحرة",
+    "MAGIC LOOK",
+    "تصميم داخلي",
+    "ديكور",
+    "تأثيث",
+    "أثاث حسب الطلب",
+    "أثاث حسب المقاس",
+    "كنب",
+    "مجالس",
+    "غرف نوم",
+    "وحدات تلفزيون",
+    "كسوات خشبية",
+    "قواطع خشبية",
+    "ستائر",
+    "تصميم فلل",
+    "السعودية",
+    "interior design",
+    "custom furniture",
+    "Saudi Arabia"
+  ],
+  "image": { "src": "og/home.jpg", "alt": "غرفة طعام فاخرة من تصميم النظرة الساحرة" },
+  "logo": "assets/logo.png",
+  "business": {
+    "types": ["HomeAndConstructionBusiness", "FurnitureStore"],
+    "foundingDate": null,
+    "city": null,
+    "region": null,
+    "country": "SA",
+    "latitude": null,
+    "longitude": null,
+    "openingHours": [],
+    "priceRange": null,
+    "areaServed": ["المملكة العربية السعودية"]
+  },
+  "social": [],
+  "verification": { "google": null, "bing": null },
+  "aiCrawlers": true
+}

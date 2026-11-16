@@ -156,6 +156,33 @@ ol.track, ol.lvls { list-style: none; padding: 0; margin: 0 }
 .cert figcaption { font-weight: 500; font-size: var(--step--1) }
 @media (max-width: 820px) { .segs { grid-template-columns: 1fr } .logos { grid-template-columns: repeat(3, 1fr) } .certs { grid-template-columns: 1fr } }
 
+/* CEO message */
+.ceo-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(28px, 5vw, 80px); align-items: center }
+.ceo-portrait { --media-ratio: 4 / 5; max-width: 460px; justify-self: start; align-self: center }
+.ceo-portrait img { object-fit: cover }
+.ceo-copy { min-width: 0; max-width: 40em; display: flex; flex-direction: column; gap: 18px }
+.ceo-copy > p { line-height: 1.95 }
+.ceo-quote { margin: 0 0 6px; padding-inline-start: clamp(18px, 2vw, 28px); border-inline-start: 3px solid var(--accent-2) }
+.ceo-quote p { font-size: var(--step-2); font-weight: 500; line-height: 1.55 }
+.ceo-sign { display: flex; flex-direction: column; gap: 2px; margin-top: 8px; padding-top: 18px; border-top: 1px solid var(--line) }
+.ceo-sign strong { font-size: var(--step-1); font-weight: 700 }
+.ceo-sign span { color: var(--accent); font-size: var(--step--1) }
+.ceo-signature { display: block; width: min(200px, 60%); height: auto; margin-bottom: 10px }
+@media (max-width: 820px) { .ceo-grid { grid-template-columns: 1fr } .ceo-portrait { max-width: 360px; justify-self: center } }
+
+/* FAQ */
+.faq-list { max-width: 980px; border-top: 1px solid var(--line) }
+.faq-item { border-bottom: 1px solid var(--line) }
+.faq-item summary { display: flex; align-items: center; justify-content: space-between; gap: 18px; min-height: 44px; padding-block: clamp(16px, 2.2vw, 24px); list-style: none; cursor: pointer }
+.faq-item summary::-webkit-details-marker { display: none }
+.faq-item summary h3 { font-size: var(--step-1); font-weight: 500 }
+.faq-item summary::after { content: "+"; flex: none; font-family: var(--font-en); font-size: 1.7rem; font-weight: 300; line-height: 1; color: var(--accent); transition: transform .3s var(--ease) }
+.faq-item[open] summary::after { transform: rotate(45deg) }
+.faq-item summary:hover h3 { color: var(--accent) }
+.faq-item summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px }
+.faq-item p { max-width: 46em; padding-bottom: clamp(18px, 2.4vw, 26px); color: var(--muted); line-height: 1.9 }
+@media (prefers-reduced-motion: reduce) { .faq-item summary::after { transition: none } }
+
 /* contact */
 .contact { background: var(--surface) }
 .contact .grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 4vw, 56px); align-items: stretch }
