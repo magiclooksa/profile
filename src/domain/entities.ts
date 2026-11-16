@@ -194,6 +194,32 @@ export interface FaqItem { readonly question: string; readonly answer: string }
 /** Frequently asked questions: shown on the page and given to search engines and AI assistants. */
 export interface Faq { readonly intro: string; readonly items: readonly FaqItem[] }
 
+/**
+ * A page per service (majlis, sofas, bedrooms…), written as plain HTML at build time so search
+ * engines can match it to what people search for. Its file is <slug>.html at the site root.
+ */
+export interface ServicePage {
+  readonly slug: string;
+  /** Short label for links, e.g. "المجالس". */
+  readonly name: string;
+  /** The <title>, as it shows in search results. */
+  readonly title: string;
+  /** About 120 to 160 characters: the snippet under the title in search results. */
+  readonly description: string;
+  readonly keywords: readonly string[];
+  readonly kicker: string;
+  /** The page's H1. */
+  readonly heading: string;
+  readonly lead: string;
+  readonly paragraphs: readonly string[];
+  /** What the service includes, as a list. */
+  readonly offers: readonly string[];
+  readonly images: readonly { readonly src: string; readonly caption: string }[];
+  /** Related catalogue pages, by file name, e.g. "majlis-sofa-room.html". */
+  readonly catalogues: readonly string[];
+  readonly faq: readonly FaqItem[];
+}
+
 /** One project catalogue page, as the profile lists it (from data/catalogues.json). */
 export interface CatalogueCard {
   readonly href: string;
@@ -224,4 +250,5 @@ export interface Profile {
   readonly catalogues: readonly CatalogueCard[];
   readonly ceo: Ceo;
   readonly faq: Faq;
+  readonly servicePages: readonly ServicePage[];
 }

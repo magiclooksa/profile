@@ -9,7 +9,7 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { basename, resolve } from 'node:path';
 import type { Plugin } from 'vite';
-import type { Profile } from '../src/domain/entities';
+import type { Profile, ServicePage } from '../src/domain/entities';
 import type { Villa } from '../src/domain/villa';
 import { array, DataError, nullable, numberIn, object, string, type Decoder } from '../src/infrastructure/decoders';
 import { JsonProfileRepository, type JsonFetcher } from '../src/infrastructure/JsonProfileRepository';
@@ -261,15 +261,74 @@ export function homeGraph(seo: SeoSettings, profile: Profile): Json[] {
   ];
 }
 
-export function catalogueGraph(seo: SeoSettings, profile: Profile, villa: Villa, page: PageMeta): Json[] {
+/** The business and the site, briefly: inner pages point to the full description on the home page. */
+const brandNodes = (seo: SeoSettings, profile: Profile): Json[] => {
   const { business, website } = ids(seo);
   return [
     {
       '@type': seo.business.types.length === 1 ? seo.business.types[0] : [...seo.business.types],
       '@id': business, name: profile.company.name.ar, alternateName: profile.company.name.en,
-      url: seo.siteUrl, logo: absolute(seo, seo.logo),
+      url: seo.siteUrl, logo: absolute(seo, seo.logo), telephone: profile.contact.phone,
+      address: { '@type': 'PostalAddress', addressLocality: seo.business.city, addressCountry: seo.business.country },
     },
     { '@type': 'WebSite', '@id': website, url: seo.siteUrl, name: profile.company.name.ar },
+  ];
+};
+
+/** A service page: the service itself, its questions, and the way back home. */
+export function serviceGraph(seo: SeoSettings, profile: Profile, service: ServicePage, page: PageMeta): Json[] {
+  const { business, website } = ids(seo);
+  const serviceId = `${page.url}#service`;
+  return [
+    ...brandNodes(seo, profile),
+    {
+      '@type': 'Service',
+      '@id': serviceId,
+      name: service.heading,
+      serviceType: service.name,
+      description: service.description,
+      url: page.url,
+      provider: { '@id': business },
+      areaServed: [...seo.business.areaServed],
+      image: service.images.map((i) => absolute(seo, i.src)),
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: service.heading,
+        itemListElement: service.offers.map((o) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: o } })),
+      },
+    },
+    {
+      '@type': service.faq.length > 0 ? 'FAQPage' : 'WebPage',
+      '@id': `${page.url}#webpage`,
+      url: page.url,
+      name: page.title,
+      description: page.description,
+      inLanguage: 'ar',
+      isPartOf: { '@id': website },
+      about: { '@id': serviceId },
+      breadcrumb: { '@id': `${page.url}#breadcrumb` },
+      primaryImageOfPage: service.images[0]
+        ? { '@type': 'ImageObject', url: absolute(seo, service.images[0].src), caption: service.images[0].caption } : null,
+      mainEntity: service.faq.map((q) => ({
+        '@type': 'Question', name: q.question, acceptedAnswer: { '@type': 'Answer', text: q.answer },
+      })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${page.url}#breadcrumb`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: profile.company.name.ar, item: seo.siteUrl },
+        { '@type': 'ListItem', position: 2, name: 'خدماتنا', item: `${seo.siteUrl}#services` },
+        { '@type': 'ListItem', position: 3, name: service.name, item: page.url },
+      ],
+    },
+  ];
+}
+
+export function catalogueGraph(seo: SeoSettings, profile: Profile, villa: Villa, page: PageMeta): Json[] {
+  const { business, website } = ids(seo);
+  return [
+    ...brandNodes(seo, profile),
     {
       '@type': 'CollectionPage',
       '@id': `${page.url}#webpage`,
@@ -328,7 +387,9 @@ export function homePrerender(profile: Profile): string {
       ceo.quote ? `<blockquote>${p(ceo.quote)}</blockquote>` : '',
       ...ceo.message.map(p),
       p(ceo.name ? `${ceo.name}، ${ceo.role}` : ceo.role)),
-    section('خدماتنا', p(services.intro), list('ul', services.items.map((s) => s.text)), p(services.note)),
+    section('خدماتنا', p(services.intro), list('ul', services.items.map((s) => s.text)), p(services.note),
+      profile.servicePages.length > 0 ? `<ul>${profile.servicePages.map((s) =>
+        `<li><a href="./services/${escape(s.slug)}.html">${t(s.heading)}</a></li>`).join('')}</ul>` : ''),
     section('منتجاتنا', p(products.intro), list('ul', products.items.map((i) => i.name))),
     section('التصميم الداخلي', p(company.interiorDesign.intro), list('ul', company.interiorDesign.traits)),
     section(`لماذا ${company.name.ar}؟`, ...advantages.items.map((a) => `<h3>${t(a.title)}</h3>${p(a.text)}`)),
@@ -417,6 +478,12 @@ export function llmsTxt(seo: SeoSettings, profile: Profile): string {
     '',
     ...services.items.map((s) => `- ${s.text}`),
     '',
+    ...(profile.servicePages.length > 0 ? [
+      '## صفحات الخدمات',
+      '',
+      ...profile.servicePages.map((s) => `- [${s.heading}](${absolute(seo, `services/${s.slug}.html`)}): ${s.description}`),
+      '',
+    ] : []),
     '## المنتجات',
     '',
     products.intro,
@@ -516,6 +583,22 @@ export function seoPlugin(root: string): Plugin {
           .replace(/(<div id="app"[^>]*>)/, `$1${homePrerender(profile)}`);
       }
 
+      const serviceSlug = /<body[^>]*data-service="([^"]+)"/.exec(html)?.[1];
+      if (serviceSlug) {
+        const service = profile.servicePages.find((s) => s.slug === serviceSlug);
+        if (!service) return html;
+        const page: PageMeta = {
+          title: service.title,
+          description: service.description,
+          url: absolute(seo, `services/${service.slug}.html`),
+          // Messaging apps read JPEG previews most reliably; the page's own photos go in the schema data.
+          image: absolute(seo, seo.image.src),
+          alt: seo.image.alt,
+          keywords: [...service.keywords, profile.company.name.ar, profile.company.name.en],
+        };
+        return html.replace('</title>', `</title>\n    ${headTags(seo, siteName, page, serviceGraph(seo, profile, service, page))}`);
+      }
+
       if (!html.includes('id="villa-content"')) return html;
       const dataFile = /<body[^>]*data-catalogue="([^"]+)"/.exec(html)?.[1] ?? 'villa-wood.json';
       const villa = villaDecoder(readJson(dataFile), dataFile);
@@ -534,6 +617,10 @@ export function seoPlugin(root: string): Plugin {
       this.emitFile({
         type: 'asset', fileName: 'sitemap.xml', source: sitemap([
           { url: seo.siteUrl, image: absolute(seo, seo.image.src) },
+          ...profile.servicePages.map((s) => ({
+            url: absolute(seo, `services/${s.slug}.html`),
+            image: s.images[0] ? absolute(seo, s.images[0].src) : null,
+          })),
           ...profile.catalogues.map((c) => ({ url: absolute(seo, c.href), image: absolute(seo, c.cover.src) })),
         ], today),
       });

@@ -1,10 +1,10 @@
 import {
   COLLECTION_STYLES, FILM_STYLES, GALLERY_LAYOUTS, type Collection, type Feature, type Film,
   type Advantages, type CatalogueCard, type Ceo, type Clients, type Company, type CompareProject, type Contact,
-  type EngagementLevels, type Faq, type IconName, type Journey, type Media, type Products,
+  type EngagementLevels, type Faq, type IconName, type Journey, type Media, type Products, type ServicePage,
   type Project, type Services, type StandardProject, type TitledText,
 } from '../domain/entities';
-import { array, boolean, hexColor, nullable, numberIn, object, oneOf, string, tagged, type Decoder } from './decoders';
+import { array, boolean, DataError, hexColor, nullable, numberIn, object, oneOf, string, tagged, type Decoder } from './decoders';
 
 const ICONS: readonly IconName[] = [
   'sofa', 'bed', 'chair', 'table', 'tv', 'mirror', 'partition', 'cabinet', 'curtain', 'lamp',
@@ -120,6 +120,28 @@ export const faqDecoder = object<Faq>({
   intro: string,
   items: array(object({ question: string, answer: string })),
 });
+
+const slug: Decoder<string> = (v, path) => {
+  const s = string(v, path);
+  if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(s)) throw new DataError(path, 'اسم ملف بحروف إنجليزية صغيرة وشرطات مثل majlis-design');
+  return s;
+};
+
+export const servicePagesDecoder = array(object<ServicePage>({
+  slug,
+  name: string,
+  title: string,
+  description: string,
+  keywords: array(string),
+  kicker: string,
+  heading: string,
+  lead: string,
+  paragraphs: array(string),
+  offers: array(string),
+  images: array(object({ src: string, caption: string })),
+  catalogues: array(string),
+  faq: array(object({ question: string, answer: string })),
+}));
 
 /** The index scripts/catalogue-pages.mjs writes: every project catalogue page. */
 export const cataloguesDecoder = array(object<CatalogueCard>({

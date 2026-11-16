@@ -59,7 +59,7 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
     collection(8),
     collection(11),
     collection(15),
-    Services(profile.services, next()),
+    Services(profile.services, profile.servicePages, next()),
     collection(13),
     collection(0),
     collection(16),

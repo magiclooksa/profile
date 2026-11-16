@@ -1,7 +1,11 @@
 import { existsSync, readFileSync } from 'node:fs';
-import { resolve } from 'node:path';
+import { basename, resolve } from 'node:path';
 import { defineConfig } from 'vite';
 import { seoPlugin } from './build/seo';
+import { writeServicePages } from './build/servicePages';
+
+// One page per service, written from public/data/service-pages.json before Vite reads its inputs.
+const servicePages = process.env.VITEST ? [] : writeServicePages(__dirname);
 
 /** Every catalogue page (the villa and the project pages), from the index scripts/catalogue-pages.mjs writes. */
 function catalogues(): { href: string }[] {
@@ -15,13 +19,14 @@ export default defineConfig({
   build: {
     target: 'es2022',
     outDir: 'dist',
-    // The profile, the villa catalogue and one page per project catalogue.
+    // The profile, the villa catalogue, one page per project catalogue and one per service.
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
         villa: resolve(__dirname, 'villa-wood.html'),
         ...Object.fromEntries(catalogues().filter((c) => c.href !== 'villa-wood.html')
           .map((c) => [c.href.replace(/.html$/, ''), resolve(__dirname, c.href)])),
+        ...Object.fromEntries(servicePages.map((file) => [`service-${basename(file, '.html')}`, file])),
       },
     },
   },

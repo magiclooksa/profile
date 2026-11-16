@@ -3,7 +3,7 @@ import type { ProfileRepository } from '../domain/ProfileRepository';
 import type { Decoder } from './decoders';
 import {
   advantagesDecoder, cataloguesDecoder, ceoDecoder, clientsDecoder, companyDecoder, contactDecoder, faqDecoder,
-  journeyDecoder, levelsDecoder, productsDecoder, projectsDecoder, servicesDecoder,
+  journeyDecoder, levelsDecoder, productsDecoder, projectsDecoder, servicePagesDecoder, servicesDecoder,
 } from './schemas';
 
 export type JsonFetcher = (path: string) => Promise<unknown>;
@@ -23,7 +23,7 @@ export class JsonProfileRepository implements ProfileRepository {
     const read = async <T>(file: string, decoder: Decoder<T>): Promise<T> =>
       decoder(await this.fetchJson(file), file);
 
-    const [company, services, products, advantages, journey, levels, projects, clients, contact, catalogues, ceo, faq] =
+    const [company, services, products, advantages, journey, levels, projects, clients, contact, catalogues, ceo, faq, servicePages] =
       await Promise.all([
         read('company.json', companyDecoder),
         read('services.json', servicesDecoder),
@@ -37,8 +37,12 @@ export class JsonProfileRepository implements ProfileRepository {
         read('catalogues.json', cataloguesDecoder),
         read('ceo.json', ceoDecoder),
         read('faq.json', faqDecoder),
+        read('service-pages.json', servicePagesDecoder),
       ]);
 
-    return { company, services, products, advantages, journey, levels, projects, clients, contact, catalogues, ceo, faq };
+    return {
+      company, services, products, advantages, journey, levels, projects, clients, contact, catalogues, ceo, faq,
+      servicePages,
+    };
   }
 }
