@@ -69,8 +69,19 @@ export interface Product {
   readonly inSitu: readonly VillaPhoto[];
 }
 
+/** A short walkthrough clip, shown as its own chapter. */
+export interface Film {
+  readonly src: string;
+  readonly poster: string;
+  readonly ratio: PhotoRatio;
+  readonly title: string;
+  readonly caption: string;
+}
+
 export interface Villa {
   readonly name: { readonly ar: string; readonly en: string };
+  /** How the text names the project, with its article: الفيلا، المجلس، الصالة. */
+  readonly place: string;
   readonly kicker: string;
   readonly tagline: string;
   readonly cover: VillaPhoto;
@@ -86,6 +97,7 @@ export interface Villa {
   readonly collection: { readonly intro: string; readonly image: VillaPhoto };
   readonly products: readonly Product[];
   readonly closing: { readonly title: string; readonly text: string };
+  readonly film: Film | null;
 }
 
 /** Port: where a villa catalogue comes from. */

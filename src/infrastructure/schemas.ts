@@ -1,10 +1,10 @@
 import {
   COLLECTION_STYLES, FILM_STYLES, GALLERY_LAYOUTS, type Collection, type Feature, type Film,
-  type Advantages, type Clients, type Company, type CompareProject, type Contact,
+  type Advantages, type CatalogueCard, type Clients, type Company, type CompareProject, type Contact,
   type EngagementLevels, type IconName, type Journey, type Media, type Products,
   type Project, type Services, type StandardProject, type TitledText,
 } from '../domain/entities';
-import { array, hexColor, nullable, numberIn, object, oneOf, string, tagged, type Decoder } from './decoders';
+import { array, boolean, hexColor, nullable, numberIn, object, oneOf, string, tagged, type Decoder } from './decoders';
 
 const ICONS: readonly IconName[] = [
   'sofa', 'bed', 'chair', 'table', 'tv', 'mirror', 'partition', 'cabinet', 'curtain', 'lamp',
@@ -105,3 +105,18 @@ export const contactDecoder = object<Contact>({
   mapUrl: nullable(string),
   mapImage: media,
 });
+
+/** The index scripts/catalogue-pages.mjs writes: every project catalogue page. */
+export const cataloguesDecoder = array(object<CatalogueCard>({
+  href: string,
+  name: object({ ar: string, en: string }),
+  place: string,
+  kicker: string,
+  tagline: string,
+  cover: object({ src: string, caption: string }),
+  spaces: numberIn(0, 999),
+  pieces: numberIn(0, 999),
+  materials: numberIn(0, 999),
+  film: boolean,
+  pages: array(object({ src: string, caption: string })),
+}));

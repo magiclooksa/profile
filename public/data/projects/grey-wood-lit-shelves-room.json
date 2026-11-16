@@ -1,0 +1,520 @@
+{
+  "name": {
+    "ar": "صالة الخشب الرمادي والأرفف المضيئة",
+    "en": "THE GREY OAK & LIT SHELVES"
+  },
+  "place": "الصالة",
+  "kicker": "مشروع تجاليد وخزائن · تصميم وتنفيذ",
+  "tagline": "بلوط مغسول بالرمادي، وحجر بيج، وضوء دافئ يخرج من تحت الأرفف.",
+  "cover": {
+    "src": "images/projects/grey-wood-lit-shelves-room/cover.webp",
+    "ratio": "16:9",
+    "caption": "الصالة: جدار التلفزيون والعمود المضيء وركن القهوة في العمق"
+  },
+  "intro": {
+    "lead": "مشروع خشب وضوء: ألواح جدار بلون رمادي بيج، وخزائن وأعمدة من خشب بلون البلوط المغسول، وأرفف تضيئها من الأسفل إضاءة دافئة.",
+    "paragraphs": [
+      "بجانب التلفزيون عمود رفيع بأرفف مضيئة، وعلى الطرف الآخر باب خفي من الخشب نفسه بمقبض أسود طويل، فيبدو الجدار سطحاً واحداً متصلاً.",
+      "وفي آخر الصالة ركن قهوة كامل: خزائن طويلة إلى السقف، وخلفية من الحجر البيج والرمادي، وثلاثة أرفف داكنة تحتها إضاءة دافئة، وكاونتر حجري بحوض أسود."
+    ],
+    "words": [
+      {
+        "ar": "ضوء",
+        "en": "Light"
+      },
+      {
+        "ar": "دقة",
+        "en": "Precision"
+      },
+      {
+        "ar": "هدوء",
+        "en": "Calm"
+      },
+      {
+        "ar": "ترتيب",
+        "en": "Order"
+      }
+    ],
+    "image": {
+      "src": "images/projects/grey-wood-lit-shelves-room/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "ركن القهوة بأرففه المضيئة"
+    },
+    "inset": {
+      "src": "images/projects/grey-wood-lit-shelves-room/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "العمود المضيء عن قرب"
+    }
+  },
+  "materials": [
+    {
+      "id": "grey-oak",
+      "name": "البلوط المغسول الرمادي",
+      "en": "Grey washed oak",
+      "color": "#8C8279",
+      "swatch": "images/projects/grey-wood-lit-shelves-room/material-grey-oak.webp",
+      "note": "خشب الخزائن الطويلة والباب الخفي وإطار العمود المضيء وأبواب ركن القهوة، بعروق طولية ولون رمادي دافئ."
+    },
+    {
+      "id": "panel",
+      "name": "ألواح الجدار الرمادية البيج",
+      "en": "Greige wall panels",
+      "color": "#CFC6BB",
+      "swatch": "images/projects/grey-wood-lit-shelves-room/material-panel.webp",
+      "note": "ألواح ناعمة بفواصل دقيقة تكسو الجدار حول التلفزيون وفي أرجاء الصالة."
+    },
+    {
+      "id": "stone",
+      "name": "الحجر البيج",
+      "en": "Beige stone",
+      "color": "#B8AC9A",
+      "swatch": "images/projects/grey-wood-lit-shelves-room/material-stone.webp",
+      "note": "خلفية ركن القهوة وسطح الكاونتر: حجر بيج ورمادي بعروق ناعمة."
+    },
+    {
+      "id": "light-oak",
+      "name": "البلوط الفاتح",
+      "en": "Light oak lining",
+      "color": "#C9AE8A",
+      "swatch": "images/projects/grey-wood-lit-shelves-room/material-light-oak.webp",
+      "note": "بطانة تجاويف العمود المضيء، يظهر دافئاً تحت الإضاءة."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "living",
+      "name": "الصالة",
+      "en": "The living room",
+      "intro": "جدار التلفزيون بألواحه الرمادية البيج، وبجانبه العمود المضيء، وعلى طرفه الباب الخفي بمقبضه الأسود الطويل.",
+      "look": {
+        "image": {
+          "src": "images/projects/grey-wood-lit-shelves-room/living-look-03.webp",
+          "ratio": "16:9",
+          "caption": "جدار التلفزيون والباب الخفي والعمود المضيء"
+        },
+        "spots": [
+          {
+            "x": 24,
+            "y": 39.3,
+            "product": "hidden-door"
+          },
+          {
+            "x": 58,
+            "y": 34,
+            "product": "tv-wall"
+          },
+          {
+            "x": 79,
+            "y": 23.3,
+            "product": "lit-column"
+          },
+          {
+            "x": 40,
+            "y": 63.3,
+            "product": "panels"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/living-g-04.webp",
+          "ratio": "16:9",
+          "caption": "العمود المضيء وركن القهوة",
+          "span": 6
+        },
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/living-g-05.webp",
+          "ratio": "16:9",
+          "caption": "الصالة من المدخل",
+          "span": 6
+        },
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/living-g-06.webp",
+          "ratio": "3:4",
+          "caption": "الطريق إلى ركن القهوة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/living-g-07.webp",
+          "ratio": "3:4",
+          "caption": "جدار التلفزيون والعمود",
+          "span": 4
+        },
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/living-g-08.webp",
+          "ratio": "3:4",
+          "caption": "أرفف العمود المضيئة",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/living-d-09.webp",
+          "ratio": "3:4",
+          "caption": "الإضاءة تحت كل رف",
+          "product": "lit-column"
+        },
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/living-d-10.webp",
+          "ratio": "3:4",
+          "caption": "مقبض الباب الخفي",
+          "product": "hidden-door"
+        },
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/living-d-11.webp",
+          "ratio": "3:4",
+          "caption": "فواصل ألواح الجدار",
+          "product": "panels"
+        }
+      ]
+    },
+    {
+      "id": "coffee",
+      "name": "ركن القهوة",
+      "en": "The coffee corner",
+      "intro": "في آخر الصالة: خزائن طويلة بالبلوط الرمادي، وبينها تجويف بخلفية حجرية وثلاثة أرفف مضيئة فوق كاونتر بحوض أسود.",
+      "look": {
+        "image": {
+          "src": "images/projects/grey-wood-lit-shelves-room/intro-01.webp",
+          "ratio": "3:4",
+          "caption": "ركن القهوة كاملاً من الأمام"
+        },
+        "spots": [
+          {
+            "x": 20,
+            "y": 45,
+            "product": "tall-cabinets"
+          },
+          {
+            "x": 62,
+            "y": 30,
+            "product": "coffee-shelves"
+          },
+          {
+            "x": 62,
+            "y": 63,
+            "product": "counter"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/coffee-g-13.webp",
+          "ratio": "3:4",
+          "caption": "ركن القهوة من الأمام",
+          "span": 3
+        },
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/coffee-g-14.webp",
+          "ratio": "3:4",
+          "caption": "الخزائن والأرفف",
+          "span": 3
+        },
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/coffee-g-15.webp",
+          "ratio": "3:4",
+          "caption": "ركن القهوة من الجانب",
+          "span": 3
+        },
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/coffee-g-16.webp",
+          "ratio": "3:4",
+          "caption": "الأرفف تحت الإضاءة",
+          "span": 3
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/coffee-d-17.webp",
+          "ratio": "3:4",
+          "caption": "الكاونتر الحجري والحوض الأسود",
+          "product": "counter"
+        },
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/coffee-d-18.webp",
+          "ratio": "3:4",
+          "caption": "الأرفف الداكنة وإضاءتها",
+          "product": "coffee-shelves"
+        },
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/coffee-d-19.webp",
+          "ratio": "3:4",
+          "caption": "زاوية الكاونتر والإضاءة تحته",
+          "product": "counter"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "سبع قطع صُنعت كلها بالمقاس لهذه الصالة، من ألواح الجدار إلى ركن القهوة. افتح أي قطعة لترى صورها وخاماتها.",
+    "image": {
+      "src": "images/projects/grey-wood-lit-shelves-room/collection-20.webp",
+      "ratio": "16:9",
+      "caption": "ركن القهوة بأرففه المضيئة"
+    }
+  },
+  "products": [
+    {
+      "id": "tv-wall",
+      "name": "جدار التلفزيون",
+      "en": "Media wall",
+      "category": "أعمال مدمجة",
+      "spaces": [
+        "living"
+      ],
+      "custom": true,
+      "materials": [
+        "panel"
+      ],
+      "finish": "ألواح رمادية بيج بتجويف للشاشة",
+      "text": "جدار من الألواح الرمادية البيج، تستقر الشاشة في تجويف بمستواه، فلا تظهر الأسلاك ولا الحواف.",
+      "card": "images/projects/grey-wood-lit-shelves-room/card-tv-wall.webp",
+      "views": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/tv-wall-v-21.webp",
+          "ratio": "3:4",
+          "caption": "جدار التلفزيون من الأمام"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/tv-wall-d-22.webp",
+          "ratio": "3:4",
+          "caption": "حافة الشاشة في الألواح"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/living-look-03.webp",
+          "ratio": "16:9",
+          "caption": "الجدار في الصالة"
+        }
+      ]
+    },
+    {
+      "id": "lit-column",
+      "name": "العمود المضيء",
+      "en": "Lit shelving column",
+      "category": "أعمال مدمجة",
+      "spaces": [
+        "living"
+      ],
+      "custom": true,
+      "materials": [
+        "grey-oak",
+        "light-oak"
+      ],
+      "finish": "إطار بلوط رمادي وتجاويف مبطنة بالبلوط الفاتح",
+      "text": "عمود رفيع من الأرض إلى السقف بجانب التلفزيون، فيه أرفف قصيرة تضيئها من الأسفل إضاءة دافئة مخفية.",
+      "card": "images/projects/grey-wood-lit-shelves-room/card-lit-column.webp",
+      "views": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/lit-column-v-24.webp",
+          "ratio": "3:4",
+          "caption": "العمود المضيء"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/living-d-09.webp",
+          "ratio": "3:4",
+          "caption": "رف وإضاءته"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/living-g-07.webp",
+          "ratio": "3:4",
+          "caption": "العمود بجانب الشاشة"
+        }
+      ]
+    },
+    {
+      "id": "hidden-door",
+      "name": "الباب الخفي",
+      "en": "Flush oak door",
+      "category": "أبواب",
+      "spaces": [
+        "living"
+      ],
+      "custom": true,
+      "materials": [
+        "grey-oak"
+      ],
+      "finish": "بلوط رمادي بمقبض أسود طولي",
+      "text": "باب بمستوى الجدار من البلوط الرمادي، لا يكشفه إلا مقبضه الأسود الطويل.",
+      "card": "images/projects/grey-wood-lit-shelves-room/card-hidden-door.webp",
+      "views": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/hidden-door-v-27.webp",
+          "ratio": "3:4",
+          "caption": "الباب الخفي"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/living-d-10.webp",
+          "ratio": "3:4",
+          "caption": "المقبض الطولي"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/hidden-door-i-29.webp",
+          "ratio": "3:4",
+          "caption": "الباب بجانب جدار التلفزيون"
+        }
+      ]
+    },
+    {
+      "id": "panels",
+      "name": "ألواح الجدار",
+      "en": "Wall panelling",
+      "category": "تجاليد",
+      "spaces": [
+        "living",
+        "coffee"
+      ],
+      "custom": true,
+      "materials": [
+        "panel"
+      ],
+      "finish": "ألواح رمادية بيج بفواصل دقيقة",
+      "text": "ألواح ناعمة تكسو جدران الصالة بفواصل دقيقة متساوية، فتجمع جدار التلفزيون والعمود والباب في سطح واحد.",
+      "card": "images/projects/grey-wood-lit-shelves-room/card-panels.webp",
+      "views": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/panels-v-30.webp",
+          "ratio": "3:4",
+          "caption": "الألواح على الجدار"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/panels-i-31.webp",
+          "ratio": "3:4",
+          "caption": "الألواح على طول الصالة"
+        }
+      ]
+    },
+    {
+      "id": "tall-cabinets",
+      "name": "الخزائن الطويلة",
+      "en": "Tall cabinets",
+      "category": "خزائن",
+      "spaces": [
+        "coffee"
+      ],
+      "custom": true,
+      "materials": [
+        "grey-oak"
+      ],
+      "finish": "بلوط رمادي من الأرض إلى السقف",
+      "text": "خزائن طويلة من البلوط الرمادي على جانبي ركن القهوة، بأبواب بلا مقابض ظاهرة.",
+      "card": "images/projects/grey-wood-lit-shelves-room/card-tall-cabinets.webp",
+      "views": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/tall-cabinets-v-32.webp",
+          "ratio": "3:4",
+          "caption": "الخزائن بجانب ركن القهوة"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/tall-cabinets-i-33.webp",
+          "ratio": "3:4",
+          "caption": "الخزائن من الجانب"
+        }
+      ]
+    },
+    {
+      "id": "coffee-shelves",
+      "name": "أرفف ركن القهوة",
+      "en": "Lit coffee shelves",
+      "category": "أعمال مدمجة",
+      "spaces": [
+        "coffee"
+      ],
+      "custom": true,
+      "materials": [
+        "stone",
+        "grey-oak"
+      ],
+      "finish": "ثلاثة أرفف داكنة أمام خلفية حجرية، بإضاءة دافئة تحت كل رف",
+      "text": "ثلاثة أرفف داكنة رفيعة أمام خلفية من الحجر البيج والرمادي، تحت كل منها شريط إضاءة دافئ.",
+      "card": "images/projects/grey-wood-lit-shelves-room/card-coffee-shelves.webp",
+      "views": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/coffee-shelves-v-34.webp",
+          "ratio": "3:4",
+          "caption": "الأرفف المضيئة"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/coffee-shelves-d-35.webp",
+          "ratio": "3:4",
+          "caption": "الإضاءة تحت الرف"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/intro-01.webp",
+          "ratio": "3:4",
+          "caption": "الأرفف في ركن القهوة"
+        }
+      ]
+    },
+    {
+      "id": "counter",
+      "name": "كاونتر القهوة",
+      "en": "Stone counter",
+      "category": "أسطح",
+      "spaces": [
+        "coffee"
+      ],
+      "custom": true,
+      "materials": [
+        "stone",
+        "grey-oak"
+      ],
+      "finish": "سطح حجر بيج بحوض أسود وصنبور أسود",
+      "text": "كاونتر بسطح من الحجر البيج نفسه، بحوض أسود صغير وصنبور أسود، فوق خزائن من البلوط الرمادي.",
+      "card": "images/projects/grey-wood-lit-shelves-room/card-counter.webp",
+      "views": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/counter-v-37.webp",
+          "ratio": "3:4",
+          "caption": "الكاونتر والحوض"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/counter-d-38.webp",
+          "ratio": "3:4",
+          "caption": "حافة الكاونتر"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/grey-wood-lit-shelves-room/counter-i-39.webp",
+          "ratio": "3:4",
+          "caption": "الكاونتر تحت الأرفف"
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "جدران بهذا الضوء؟",
+    "text": "نصمّم التجاليد والخزائن والإضاءة معاً، ونصنعها بالمقاس من الخشب والحجر الذي تختاره. حدّثنا عن مساحتك ونبدأ معاً."
+  },
+  "film": {
+    "src": "videos/projects/grey-wood-lit-shelves-room.mp4",
+    "poster": "images/projects/grey-wood-lit-shelves-room/film-poster.webp",
+    "ratio": "16:9",
+    "title": "جولة في الصالة",
+    "caption": "لقطة تمر على ركن القهوة والعمود المضيء وجدار التلفزيون كما نُفّذت في المكان."
+  }
+}

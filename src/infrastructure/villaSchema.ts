@@ -1,5 +1,5 @@
 import {
-  PHOTO_RATIOS, type CloseUp, type Material, type Product, type Space, type SpreadPhoto, type Villa, type VillaPhoto,
+  PHOTO_RATIOS, type CloseUp, type Film, type Material, type Product, type Space, type SpreadPhoto, type Villa, type VillaPhoto,
 } from '../domain/villa';
 import { DataError, array, boolean, hexColor, nullable, numberIn, object, oneOf, string, type Decoder } from './decoders';
 
@@ -11,6 +11,10 @@ const spreadPhoto: Decoder<SpreadPhoto> = object<SpreadPhoto>({
 
 const closeUp: Decoder<CloseUp> = object<CloseUp>({
   src: string, ratio: oneOf(PHOTO_RATIOS), caption: string, product: nullable(string),
+});
+
+const film: Decoder<Film> = object<Film>({
+  src: string, poster: string, ratio: oneOf(PHOTO_RATIOS), title: string, caption: string,
 });
 
 const material: Decoder<Material> = object<Material>({
@@ -36,6 +40,7 @@ const product: Decoder<Product> = object<Product>({
 
 const shape: Decoder<Villa> = object<Villa>({
   name: object({ ar: string, en: string }),
+  place: string,
   kicker: string,
   tagline: string,
   cover: photo,
@@ -48,6 +53,7 @@ const shape: Decoder<Villa> = object<Villa>({
   collection: object({ intro: string, image: photo }),
   products: array(product),
   closing: object({ title: string, text: string }),
+  film: nullable(film),
 });
 
 /** Ids must be unique, and every reference must point at something that exists. */

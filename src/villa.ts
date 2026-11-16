@@ -9,11 +9,13 @@ import { Footer } from './presentation/components/Footer';
 
 document.querySelector('.vbar-brand')?.append(Logo('horizontal'));
 
-// Composition root of the villa catalogue page.
+// Composition root of a project catalogue page (the villa and every project page share it).
+// The page names its data file on <body data-catalogue>, relative to public/data/.
 const root = document.getElementById('villa-content');
 if (!root) throw new Error('#villa-content not found');
+const dataFile = document.body.dataset.catalogue ?? 'villa-wood.json';
 
-new JsonVillaRepository(httpFetcher(`${import.meta.env.BASE_URL}data/`), 'villa-wood.json')
+new JsonVillaRepository(httpFetcher(`${import.meta.env.BASE_URL}data/`), dataFile)
   .load()
   .then((villa) => {
     renderVilla(root, villa);

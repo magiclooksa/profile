@@ -173,6 +173,22 @@ export interface Contact {
   readonly mapImage: Media;
 }
 
+/** One project catalogue page, as the profile lists it (from data/catalogues.json). */
+export interface CatalogueCard {
+  readonly href: string;
+  readonly name: { readonly ar: string; readonly en: string };
+  readonly place: string;
+  readonly kicker: string;
+  readonly tagline: string;
+  readonly cover: { readonly src: string; readonly caption: string };
+  readonly spaces: number;
+  readonly pieces: number;
+  readonly materials: number;
+  readonly film: boolean;
+  /** Three photos fanned out on the card like catalogue pages. */
+  readonly pages: readonly { readonly src: string; readonly caption: string }[];
+}
+
 /** Everything the profile page shows. */
 export interface Profile {
   readonly company: Company;
@@ -184,4 +200,5 @@ export interface Profile {
   readonly projects: readonly Project[];
   readonly clients: Clients;
   readonly contact: Contact;
+  readonly catalogues: readonly CatalogueCard[];
 }

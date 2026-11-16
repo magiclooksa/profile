@@ -31,6 +31,14 @@ const previewTags = (p: Preview): string => [
   `<meta name="twitter:image" content="${escape(p.image)}" />`,
 ].join('\n    ');
 
+interface CatalogueEntry { href: string; name: { ar: string }; tagline: string; cover: { caption: string } }
+
+/** Every catalogue page (the villa and the project pages), from the index scripts/catalogue-pages.mjs writes. */
+function catalogues(): CatalogueEntry[] {
+  const file = resolve(__dirname, 'public/data/catalogues.json');
+  return existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) as CatalogueEntry[] : [];
+}
+
 /** Pages other than the profile, each with its own preview. */
 const PAGE_PREVIEWS: Record<string, Preview> = {
   'villa-wood.html': {
@@ -40,6 +48,13 @@ const PAGE_PREVIEWS: Record<string, Preview> = {
     image: `${SITE_URL}og/villa-wood.jpg`,
     alt: 'الصالة العائلية في فيلا الخشب: جدار من البلوط وثريا من الجوت',
   },
+  ...Object.fromEntries(catalogues().filter((c) => c.href !== 'villa-wood.html').map((c) => [c.href, {
+    title: `${c.name.ar} | النظرة الساحرة`,
+    description: c.tagline,
+    url: `${SITE_URL}${c.href}`,
+    image: `${SITE_URL}og/${c.href.replace(/.html$/, '')}.jpg`,
+    alt: c.cover.caption,
+  }])),
 };
 
 interface Product { id: string; title: string; description: string; alt: string }
@@ -106,8 +121,15 @@ export default defineConfig({
   build: {
     target: 'es2022',
     outDir: 'dist',
-    // Two pages: the profile and the villa catalogue.
-    rollupOptions: { input: { main: resolve(__dirname, 'index.html'), villa: resolve(__dirname, 'villa-wood.html') } },
+    // The profile, the villa catalogue and one page per project catalogue.
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        villa: resolve(__dirname, 'villa-wood.html'),
+        ...Object.fromEntries(catalogues().filter((c) => c.href !== 'villa-wood.html')
+          .map((c) => [c.href.replace(/.html$/, ''), resolve(__dirname, c.href)])),
+      },
+    },
   },
   plugins: [linkPreviews()],
 });

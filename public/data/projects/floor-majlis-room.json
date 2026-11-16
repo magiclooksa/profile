@@ -1,0 +1,483 @@
+{
+  "name": {
+    "ar": "مجلس النقوش المفرّغة",
+    "en": "THE CARVED FRETWORK MAJLIS"
+  },
+  "place": "المجلس",
+  "kicker": "مشروع مجلس · من التصميم إلى التنفيذ",
+  "tagline": "جوز بني، ومخمل كريمي، ونقش إسلامي مفرّغ بالنجوم والزهور.",
+  "cover": {
+    "src": "images/projects/floor-majlis-room/cover.webp",
+    "ratio": "16:9",
+    "caption": "مجلس النقوش المفرّغة في المعرض: طاولة الوسط والفانوس النحاسي"
+  },
+  "intro": {
+    "lead": "مجلس بدأ رسماً ثلاثي الأبعاد ثم صُنع ونُفّذ في بيت العميل: إطارات صندوقية من الجوز البني، تتخللها لوحات خشب بنقش إسلامي مفرّغ.",
+    "paragraphs": [
+      "المقعد والظهر من المخمل الكريمي، وجوانب الكنب لوحات خشب مفرّغة بنجوم وزهور هندسية، وتنتهي الأطراف بأذرع خشبية عريضة.",
+      "حول الجلسة طاولات جنب مكعبة بسطح زجاج ونقش مفرّغ على جوانبها، وفي الوسط طاولة مستطيلة كبيرة بالنقش نفسه، ومقاعد مكعبة صغيرة تتوزع حولها."
+    ],
+    "words": [
+      {
+        "ar": "نقش",
+        "en": "Ornament"
+      },
+      {
+        "ar": "حِرفة",
+        "en": "Craft"
+      },
+      {
+        "ar": "وقار",
+        "en": "Dignity"
+      },
+      {
+        "ar": "ضيافة",
+        "en": "Hospitality"
+      }
+    ],
+    "image": {
+      "src": "images/projects/floor-majlis-room/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "الكنبة بين طاولتي الجنب المفرّغتين"
+    },
+    "inset": {
+      "src": "images/projects/floor-majlis-room/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "طاولة الجنب المكعبة بالزجاج"
+    }
+  },
+  "materials": [
+    {
+      "id": "walnut",
+      "name": "الجوز البني",
+      "en": "Brown walnut",
+      "color": "#5B3A26",
+      "swatch": "images/projects/floor-majlis-room/material-walnut.webp",
+      "note": "خشب الإطارات الصندوقية والأذرع وطاولات الجنب وطاولة الوسط والمقاعد المكعبة."
+    },
+    {
+      "id": "fretwork",
+      "name": "النقش المفرّغ",
+      "en": "Islamic fretwork",
+      "color": "#4A2E1E",
+      "swatch": "images/projects/floor-majlis-room/material-fretwork.webp",
+      "note": "لوحات خشب مفرّغة بنجوم وزهور هندسية على جوانب الكنب والطاولات."
+    },
+    {
+      "id": "velvet",
+      "name": "المخمل الكريمي",
+      "en": "Cream velvet",
+      "color": "#E5D9C3",
+      "swatch": "images/projects/floor-majlis-room/material-velvet.webp",
+      "note": "قماش المقعد والظهر، ناعم بلمعة خفيفة."
+    },
+    {
+      "id": "glass",
+      "name": "الزجاج",
+      "en": "Glass tops",
+      "color": "#8C7A68",
+      "swatch": "images/projects/floor-majlis-room/material-glass.webp",
+      "note": "أسطح زجاج فوق طاولات الجنب المكعبة تحمي الخشب وتُظهر عروقه."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "showroom",
+      "name": "في المعرض",
+      "en": "In the showroom",
+      "intro": "المجلس معروضاً في المعرض على سجادة بزخارف ملتفة، بين ستائر شفافة وفوانيس نحاسية، حيث يظهر النقش المفرّغ بوضوح تحت الضوء.",
+      "look": {
+        "image": {
+          "src": "images/projects/floor-majlis-room/cover.webp",
+          "ratio": "16:9",
+          "caption": "طاولة الوسط أمام الجلسة في المعرض"
+        },
+        "spots": [
+          {
+            "x": 50,
+            "y": 90.2,
+            "product": "coffee-table"
+          },
+          {
+            "x": 91,
+            "y": 78.4,
+            "product": "seating"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/floor-majlis-room/showroom-g-04.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الوسط بلوحاتها المفرّغة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/floor-majlis-room/showroom-g-05.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة والذراع الخشبية",
+          "span": 4
+        },
+        {
+          "src": "images/projects/floor-majlis-room/showroom-g-06.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة بين طاولتي الجنب",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/floor-majlis-room/showroom-d-07.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الجنب المكعبة بسطحها الزجاجي",
+          "product": "side-table"
+        },
+        {
+          "src": "images/projects/floor-majlis-room/showroom-d-08.webp",
+          "ratio": "3:4",
+          "caption": "النقش المفرّغ في طاولة الوسط",
+          "product": "coffee-table"
+        },
+        {
+          "src": "images/projects/floor-majlis-room/showroom-d-09.webp",
+          "ratio": "3:4",
+          "caption": "جانب الكنبة المفرّغ",
+          "product": "seating"
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "name": "في بيت العميل",
+      "en": "In the client’s home",
+      "intro": "المجلس منفذاً على شكل U في غرفة بيضاء بستائر طويلة وإضاءة مخفية، وطاولة الوسط ومقاعدها المكعبة في المنتصف.",
+      "look": {
+        "image": {
+          "src": "images/projects/floor-majlis-room/home-look-10.webp",
+          "ratio": "16:9",
+          "caption": "المجلس على شكل U في بيت العميل"
+        },
+        "spots": [
+          {
+            "x": 22,
+            "y": 59.3,
+            "product": "seating"
+          },
+          {
+            "x": 63,
+            "y": 34,
+            "product": "coffee-table"
+          },
+          {
+            "x": 54,
+            "y": 52.7,
+            "product": "stools"
+          },
+          {
+            "x": 72,
+            "y": 60.7,
+            "product": "side-table"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/floor-majlis-room/home-g-11.webp",
+          "ratio": "16:9",
+          "caption": "المجلس من الزاوية",
+          "span": 6
+        },
+        {
+          "src": "images/projects/floor-majlis-room/home-g-12.webp",
+          "ratio": "16:9",
+          "caption": "الجلسة وطاولة الوسط",
+          "span": 6
+        },
+        {
+          "src": "images/projects/floor-majlis-room/home-g-13.webp",
+          "ratio": "3:4",
+          "caption": "طرف الجلسة بذراعه الخشبية",
+          "span": 4
+        },
+        {
+          "src": "images/projects/floor-majlis-room/home-g-14.webp",
+          "ratio": "9:16",
+          "caption": "الجانب المفرّغ",
+          "span": 3
+        },
+        {
+          "src": "images/projects/floor-majlis-room/home-g-15.webp",
+          "ratio": "9:16",
+          "caption": "الكنبة بالطول",
+          "span": 3
+        },
+        {
+          "src": "images/projects/floor-majlis-room/home-g-16.webp",
+          "ratio": "9:16",
+          "caption": "المجلس تحت الإضاءة المخفية",
+          "span": 2
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/floor-majlis-room/home-d-17.webp",
+          "ratio": "9:16",
+          "caption": "لوح النقش في جانب الكنبة",
+          "product": "seating"
+        },
+        {
+          "src": "images/projects/floor-majlis-room/home-d-18.webp",
+          "ratio": "16:9",
+          "caption": "طاولة الوسط والمقاعد المكعبة",
+          "product": "stools"
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "name": "التصميم",
+      "en": "The design",
+      "intro": "قبل التنفيذ رسمنا المجلس ثلاثي الأبعاد، ليرى العميل الألوان والخامات وتوزيع القطع في غرفته قبل أن يُصنع أي شيء.",
+      "look": {
+        "image": {
+          "src": "images/projects/floor-majlis-room/design-look-19.webp",
+          "ratio": "16:9",
+          "caption": "التصميم ثلاثي الأبعاد للمجلس"
+        },
+        "spots": [
+          {
+            "x": 50,
+            "y": 43.5,
+            "product": "seating"
+          },
+          {
+            "x": 50,
+            "y": 75.6,
+            "product": "coffee-table"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/floor-majlis-room/design-g-20.webp",
+          "ratio": "16:9",
+          "caption": "التصميم: الجلسة وطاولة الوسط",
+          "span": 6
+        },
+        {
+          "src": "images/projects/floor-majlis-room/design-g-21.webp",
+          "ratio": "16:9",
+          "caption": "التصميم: المقاعد المكعبة حول الطاولة",
+          "span": 6
+        },
+        {
+          "src": "images/projects/floor-majlis-room/design-g-22.webp",
+          "ratio": "16:9",
+          "caption": "التصميم: الغرفة كاملة",
+          "span": 6
+        },
+        {
+          "src": "images/projects/floor-majlis-room/design-g-23.webp",
+          "ratio": "16:9",
+          "caption": "التصميم من زاوية أخرى",
+          "span": 6
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/floor-majlis-room/design-d-24.webp",
+          "ratio": "16:9",
+          "caption": "التصميم: زاوية الجلسة",
+          "product": "seating"
+        },
+        {
+          "src": "images/projects/floor-majlis-room/design-d-25.webp",
+          "ratio": "16:9",
+          "caption": "التصميم: طاولة الجنب المفرّغة",
+          "product": "side-table"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "أربع قطع صُنعت كلها بالمقاس من الجوز البني بالنقش المفرّغ: وحدات الجلسة، وطاولات الجنب، وطاولة الوسط، والمقاعد المكعبة. افتح أي قطعة لترى صورها في المعرض وفي بيت العميل.",
+    "image": {
+      "src": "images/projects/floor-majlis-room/collection-26.webp",
+      "ratio": "16:9",
+      "caption": "طاولة الوسط بالنقش المفرّغ"
+    }
+  },
+  "products": [
+    {
+      "id": "seating",
+      "name": "وحدات الجلسة",
+      "en": "Carved-frame seating",
+      "category": "مجالس",
+      "spaces": [
+        "home",
+        "showroom",
+        "design"
+      ],
+      "custom": true,
+      "materials": [
+        "velvet",
+        "walnut",
+        "fretwork"
+      ],
+      "finish": "مخمل كريمي في إطار صندوقي من الجوز بجوانب مفرّغة",
+      "text": "كنب بإطار صندوقي من خشب الجوز البني، مقعده وظهره من المخمل الكريمي، وجوانبه لوحات خشب بنقش إسلامي مفرّغ، وأذرعه صناديق خشب عريضة.",
+      "card": "images/projects/floor-majlis-room/card-seating.webp",
+      "views": [
+        {
+          "src": "images/projects/floor-majlis-room/intro-01.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة من الأمام"
+        },
+        {
+          "src": "images/projects/floor-majlis-room/seating-v-28.webp",
+          "ratio": "3:4",
+          "caption": "طرف الكنبة"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/floor-majlis-room/showroom-d-09.webp",
+          "ratio": "3:4",
+          "caption": "الجانب المفرّغ والذراع"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/floor-majlis-room/home-look-10.webp",
+          "ratio": "16:9",
+          "caption": "الجلسة في بيت العميل"
+        }
+      ]
+    },
+    {
+      "id": "side-table",
+      "name": "طاولات الجنب المكعبة",
+      "en": "Fretwork cube side tables",
+      "category": "طاولات",
+      "spaces": [
+        "showroom",
+        "home",
+        "design"
+      ],
+      "custom": true,
+      "materials": [
+        "walnut",
+        "fretwork",
+        "glass"
+      ],
+      "finish": "جوز بنقش مفرّغ على الجوانب وسطح زجاج",
+      "text": "طاولات مكعبة من الجوز بين أجزاء الكنب وفي أطرافه، على كل جانب منها لوح بنقش مفرّغ، ويغطي سطحها لوح زجاج.",
+      "card": "images/projects/floor-majlis-room/intro-02.webp",
+      "views": [
+        {
+          "src": "images/projects/floor-majlis-room/showroom-d-07.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الجنب"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/floor-majlis-room/side-table-d-32.webp",
+          "ratio": "3:4",
+          "caption": "طاولتا الجنب حول الكنبة"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/floor-majlis-room/intro-01.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة بجانب الكنبة"
+        }
+      ]
+    },
+    {
+      "id": "coffee-table",
+      "name": "طاولة الوسط",
+      "en": "Fretwork coffee table",
+      "category": "طاولات",
+      "spaces": [
+        "showroom",
+        "home",
+        "design"
+      ],
+      "custom": true,
+      "materials": [
+        "walnut",
+        "fretwork"
+      ],
+      "finish": "جوز بلوحات نقش مفرّغ",
+      "text": "طاولة مستطيلة كبيرة من الجوز، بلوحات نقش مفرّغ على جوانبها الطويلة، تتسع لضيافة المجلس كله.",
+      "card": "images/projects/floor-majlis-room/card-coffee-table.webp",
+      "views": [
+        {
+          "src": "images/projects/floor-majlis-room/coffee-table-v-34.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الوسط"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/floor-majlis-room/showroom-d-08.webp",
+          "ratio": "3:4",
+          "caption": "لوح النقش عن قرب"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/floor-majlis-room/cover.webp",
+          "ratio": "16:9",
+          "caption": "الطاولة في المعرض"
+        }
+      ]
+    },
+    {
+      "id": "stools",
+      "name": "المقاعد المكعبة",
+      "en": "Cube stools",
+      "category": "مقاعد",
+      "spaces": [
+        "home",
+        "design"
+      ],
+      "custom": true,
+      "materials": [
+        "walnut",
+        "fretwork"
+      ],
+      "finish": "جوز بنقش مفرّغ",
+      "text": "مقاعد مكعبة صغيرة من الجوز بالنقش نفسه، تتوزع حول طاولة الوسط وتنزلق تحتها حين لا تُستخدم.",
+      "card": "images/projects/floor-majlis-room/card-stools.webp",
+      "views": [
+        {
+          "src": "images/projects/floor-majlis-room/stools-v-37.webp",
+          "ratio": "16:9",
+          "caption": "المقاعد في التصميم"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/floor-majlis-room/stools-d-38.webp",
+          "ratio": "16:9",
+          "caption": "المقاعد حول الطاولة"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/floor-majlis-room/stools-i-39.webp",
+          "ratio": "16:9",
+          "caption": "المقاعد تحت طاولة الوسط"
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "مجلس بهذه النقوش؟",
+    "text": "نرسم مجلسك ثلاثي الأبعاد أولاً، ثم نصنعه بالمقاس من الخشب والنقش الذي تختاره. حدّثنا عن مساحتك ونبدأ معاً."
+  },
+  "film": null
+}

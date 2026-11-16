@@ -93,7 +93,7 @@ export function createProductSheet(villa: Villa, goToSpace: (spaceId: string) =>
     thumbs.replaceChildren(...[
       group(p.views.length > 1 ? 'من كل زاوية' : 'القطعة', p.views),
       group('عن قرب', p.details),
-      group('في الفيلا', p.inSitu),
+      group(`في ${villa.place}`, p.inSitu),
     ].filter((g): g is HTMLElement => g !== null));
     const materials = p.materials.flatMap((id) => villa.materials.filter((m) => m.id === id));
     specs.replaceChildren(
@@ -101,7 +101,7 @@ export function createProductSheet(villa: Villa, goToSpace: (spaceId: string) =>
         h('li', {}, h('img', { src: m.swatch, alt: '', loading: 'lazy', decoding: 'async' }), m.name)))),
       row('التشطيب', p.finish),
       row(p.spaces.length > 1 ? 'الأماكن' : 'المكان', ...places(p)),
-      row('التنفيذ', p.custom ? 'مصنوعة بمقاس المكان' : 'قطعة مستقلة من مجموعة الفيلا'));
+      row('التنفيذ', p.custom ? 'مصنوعة بمقاس المكان' : `قطعة مستقلة من مجموعة ${villa.place}`));
     const first = p.views[0] ?? p.inSitu[0] ?? p.details[0];
     if (first) show(first, thumbs.querySelector<HTMLButtonElement>('.v-thumb'));
     body.scrollTo({ top: 0 });

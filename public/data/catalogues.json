@@ -1,0 +1,398 @@
+[
+  {
+    "href": "villa-wood.html",
+    "name": {
+      "ar": "فيلا الخشب",
+      "en": "THE WOOD VILLA"
+    },
+    "place": "الفيلا",
+    "kicker": "كتالوج التصميم الداخلي والأثاث",
+    "tagline": "بلوط دافئ، وترافرتين هادئ، وكتان يتنفّس ضوء النهار.",
+    "cover": {
+      "src": "images/villa/living-wide-b.webp",
+      "ratio": "16:9",
+      "caption": "الصالة العائلية في فيلا الخشب: جدار من البلوط وثريا من الجوت فوق الجلسة"
+    },
+    "spaces": 3,
+    "pieces": 16,
+    "materials": 9,
+    "film": false,
+    "pages": [
+      {
+        "src": "images/villa/materials/oak.webp",
+        "caption": "الخامات"
+      },
+      {
+        "src": "images/villa/cards/tv-wall.webp",
+        "caption": "جدار التلفاز"
+      },
+      {
+        "src": "images/villa/curtains-daylight.webp",
+        "caption": "الصالة العائلية"
+      }
+    ]
+  },
+  {
+    "href": "beige-sofa-blue-carpet-majlis.html",
+    "name": {
+      "ar": "مجلس الكنب البيج والسجادة الزرقاء",
+      "en": "THE BEIGE & BLUE MAJLIS"
+    },
+    "place": "المجلس",
+    "kicker": "مشروع مجلس · تصميم وتنفيذ",
+    "tagline": "شانيل بيج بظهر مخيّط، وإطار من الجوز، وسجادة بميدالية زرقاء.",
+    "cover": {
+      "src": "images/projects/beige-sofa-blue-carpet-majlis/cover.webp",
+      "ratio": "16:9",
+      "caption": "المجلس بالطول تحت الثريا على السجادة ذات الميدالية الزرقاء"
+    },
+    "spaces": 1,
+    "pieces": 6,
+    "materials": 4,
+    "film": true,
+    "pages": [
+      {
+        "src": "images/projects/beige-sofa-blue-carpet-majlis/material-chenille.webp",
+        "caption": "الخامات"
+      },
+      {
+        "src": "images/projects/beige-sofa-blue-carpet-majlis/card-sofas.webp",
+        "caption": "الكنب"
+      },
+      {
+        "src": "images/projects/beige-sofa-blue-carpet-majlis/intro-01.webp",
+        "caption": "المجلس"
+      }
+    ]
+  },
+  {
+    "href": "classic-silver-majlis-fireplace.html",
+    "name": {
+      "ar": "المجلس الكلاسيكي الفضي",
+      "en": "THE CLASSIC SILVER MAJLIS"
+    },
+    "place": "المجلس",
+    "kicker": "مشروع مجلس · تصميم وتنفيذ",
+    "tagline": "خشب أسود لامع بظهر مقوس، وجاكار فضي، وثريا كريستال فوق المدفأة.",
+    "cover": {
+      "src": "images/projects/classic-silver-majlis-fireplace/cover.webp",
+      "ratio": "16:9",
+      "caption": "الكنبة الكلاسيكية الطويلة بإطارها الأسود وقماشها الفضي"
+    },
+    "spaces": 1,
+    "pieces": 5,
+    "materials": 4,
+    "film": true,
+    "pages": [
+      {
+        "src": "images/projects/classic-silver-majlis-fireplace/material-black-wood.webp",
+        "caption": "الخامات"
+      },
+      {
+        "src": "images/projects/classic-silver-majlis-fireplace/card-sofas.webp",
+        "caption": "الكنب الكلاسيكي"
+      },
+      {
+        "src": "images/projects/classic-silver-majlis-fireplace/intro-01.webp",
+        "caption": "المجلس"
+      }
+    ]
+  },
+  {
+    "href": "curved-sofa-wingchair-dining-villa.html",
+    "name": {
+      "ar": "فيلا الكنب المنحني وطقم الطعام",
+      "en": "THE CURVED SOFA & DINING VILLA"
+    },
+    "place": "الفيلا",
+    "kicker": "مشروع فيلا · جلسة وطعام",
+    "tagline": "بوكليه عاجي بخطوط منحنية، ورخام بيج، وجوز مضلّع.",
+    "cover": {
+      "src": "images/projects/curved-sofa-wingchair-dining-villa/cover.webp",
+      "ratio": "16:9",
+      "caption": "جلسة الكنب المنحني وطاولة الوسط الدائرية"
+    },
+    "spaces": 2,
+    "pieces": 6,
+    "materials": 6,
+    "film": true,
+    "pages": [
+      {
+        "src": "images/projects/curved-sofa-wingchair-dining-villa/material-boucle.webp",
+        "caption": "الخامات"
+      },
+      {
+        "src": "images/projects/curved-sofa-wingchair-dining-villa/card-sofa.webp",
+        "caption": "الكنب المنحني"
+      },
+      {
+        "src": "images/projects/curved-sofa-wingchair-dining-villa/intro-01.webp",
+        "caption": "الجلسة"
+      }
+    ]
+  },
+  {
+    "href": "curved-sofa-yellow-navy-room.html",
+    "name": {
+      "ar": "صالة الكنب المنحني بالأصفر والكحلي",
+      "en": "THE CURVED SOFA SALON"
+    },
+    "place": "الصالة",
+    "kicker": "مشروع صالة استقبال · تصميم وتنفيذ",
+    "tagline": "كنب عاجي منحني على شريط من خشب الكرز، ومخدات بالخردلي والكحلي.",
+    "cover": {
+      "src": "images/projects/curved-sofa-yellow-navy-room/cover.webp",
+      "ratio": "16:9",
+      "caption": "الصالة: الكنب المنحني والكرسي المطرز والطاولة الزجاجية"
+    },
+    "spaces": 1,
+    "pieces": 6,
+    "materials": 4,
+    "film": true,
+    "pages": [
+      {
+        "src": "images/projects/curved-sofa-yellow-navy-room/material-ivory.webp",
+        "caption": "الخامات"
+      },
+      {
+        "src": "images/projects/curved-sofa-yellow-navy-room/card-sofas.webp",
+        "caption": "الكنب المنحني"
+      },
+      {
+        "src": "images/projects/curved-sofa-yellow-navy-room/intro-01.webp",
+        "caption": "الصالة"
+      }
+    ]
+  },
+  {
+    "href": "floor-majlis-room.html",
+    "name": {
+      "ar": "مجلس النقوش المفرّغة",
+      "en": "THE CARVED FRETWORK MAJLIS"
+    },
+    "place": "المجلس",
+    "kicker": "مشروع مجلس · من التصميم إلى التنفيذ",
+    "tagline": "جوز بني، ومخمل كريمي، ونقش إسلامي مفرّغ بالنجوم والزهور.",
+    "cover": {
+      "src": "images/projects/floor-majlis-room/cover.webp",
+      "ratio": "16:9",
+      "caption": "مجلس النقوش المفرّغة في المعرض: طاولة الوسط والفانوس النحاسي"
+    },
+    "spaces": 3,
+    "pieces": 4,
+    "materials": 4,
+    "film": false,
+    "pages": [
+      {
+        "src": "images/projects/floor-majlis-room/material-walnut.webp",
+        "caption": "الخامات"
+      },
+      {
+        "src": "images/projects/floor-majlis-room/card-seating.webp",
+        "caption": "وحدات الجلسة"
+      },
+      {
+        "src": "images/projects/floor-majlis-room/intro-01.webp",
+        "caption": "في المعرض"
+      }
+    ]
+  },
+  {
+    "href": "grey-wood-lit-shelves-room.html",
+    "name": {
+      "ar": "صالة الخشب الرمادي والأرفف المضيئة",
+      "en": "THE GREY OAK & LIT SHELVES"
+    },
+    "place": "الصالة",
+    "kicker": "مشروع تجاليد وخزائن · تصميم وتنفيذ",
+    "tagline": "بلوط مغسول بالرمادي، وحجر بيج، وضوء دافئ يخرج من تحت الأرفف.",
+    "cover": {
+      "src": "images/projects/grey-wood-lit-shelves-room/cover.webp",
+      "ratio": "16:9",
+      "caption": "الصالة: جدار التلفزيون والعمود المضيء وركن القهوة في العمق"
+    },
+    "spaces": 2,
+    "pieces": 7,
+    "materials": 4,
+    "film": true,
+    "pages": [
+      {
+        "src": "images/projects/grey-wood-lit-shelves-room/material-grey-oak.webp",
+        "caption": "الخامات"
+      },
+      {
+        "src": "images/projects/grey-wood-lit-shelves-room/card-tv-wall.webp",
+        "caption": "جدار التلفزيون"
+      },
+      {
+        "src": "images/projects/grey-wood-lit-shelves-room/intro-01.webp",
+        "caption": "الصالة"
+      }
+    ]
+  },
+  {
+    "href": "majlis-sofa-carpet-room.html",
+    "name": {
+      "ar": "المجلس العاجي بالسجادة المزخرفة",
+      "en": "THE IVORY CARPET MAJLIS"
+    },
+    "place": "المجلس",
+    "kicker": "مشروع مجلس · تصميم وتنفيذ",
+    "tagline": "شانيل عاجي يلتف حول الغرفة، وماهوجني محفور، وسجادة بأوراق ملتفة.",
+    "cover": {
+      "src": "images/projects/majlis-sofa-carpet-room/cover.webp",
+      "ratio": "16:9",
+      "caption": "المجلس العاجي حول السجادة المزخرفة"
+    },
+    "spaces": 1,
+    "pieces": 4,
+    "materials": 5,
+    "film": true,
+    "pages": [
+      {
+        "src": "images/projects/majlis-sofa-carpet-room/material-chenille.webp",
+        "caption": "الخامات"
+      },
+      {
+        "src": "images/projects/majlis-sofa-carpet-room/card-seating.webp",
+        "caption": "وحدات الجلسة"
+      },
+      {
+        "src": "images/projects/majlis-sofa-carpet-room/intro-01.webp",
+        "caption": "المجلس"
+      }
+    ]
+  },
+  {
+    "href": "majlis-sofa-room.html",
+    "name": {
+      "ar": "المجلس الأزرق بالمشربية",
+      "en": "THE BLUE MASHRABIYA MAJLIS"
+    },
+    "place": "المجلس",
+    "kicker": "مشروع مجلس · تصميم وتنفيذ",
+    "tagline": "مخمل أزرق ملكي، وماهوجني لامع، ومشربية سوداء بنقش النجمة.",
+    "cover": {
+      "src": "images/projects/majlis-sofa-room/cover.webp",
+      "ratio": "16:9",
+      "caption": "المجلس الأزرق على شكل U بطول الغرفة تحت سقف الفوانيس"
+    },
+    "spaces": 1,
+    "pieces": 5,
+    "materials": 5,
+    "film": false,
+    "pages": [
+      {
+        "src": "images/projects/majlis-sofa-room/material-mahogany.webp",
+        "caption": "الخامات"
+      },
+      {
+        "src": "images/projects/majlis-sofa-room/card-seating.webp",
+        "caption": "وحدات الجلسة"
+      },
+      {
+        "src": "images/projects/majlis-sofa-room/intro-01.webp",
+        "caption": "المجلس"
+      }
+    ]
+  },
+  {
+    "href": "majlis-wood-sofa-room.html",
+    "name": {
+      "ar": "المجلس العاجي بالخشب العسلي",
+      "en": "THE IVORY & HONEY OAK MAJLIS"
+    },
+    "place": "المجلس",
+    "kicker": "مشروع مجلس · تصميم وتنفيذ",
+    "tagline": "شانيل عاجي، وبلوط عسلي، ولمسات من المخمل الطوبي.",
+    "cover": {
+      "src": "images/projects/majlis-wood-sofa-room/cover.webp",
+      "ratio": "16:9",
+      "caption": "الكنبة على شكل U وطاولة الوسط من البلوط العسلي"
+    },
+    "spaces": 1,
+    "pieces": 6,
+    "materials": 3,
+    "film": true,
+    "pages": [
+      {
+        "src": "images/projects/majlis-wood-sofa-room/material-oak.webp",
+        "caption": "الخامات"
+      },
+      {
+        "src": "images/projects/majlis-wood-sofa-room/card-seating.webp",
+        "caption": "الكنبة على شكل U"
+      },
+      {
+        "src": "images/projects/majlis-wood-sofa-room/intro-01.webp",
+        "caption": "المجلس"
+      }
+    ]
+  },
+  {
+    "href": "moroccan-majlis-lanterns.html",
+    "name": {
+      "ar": "المجلس المغربي بالفوانيس",
+      "en": "THE MOROCCAN LANTERN MAJLIS"
+    },
+    "place": "المجلس",
+    "kicker": "مشروع مجلس · تصميم وتنفيذ",
+    "tagline": "نقش مغربي مفرّغ، وشيفرون بالمرجاني والخردلي، وفوانيس بأحزمة نحاس.",
+    "cover": {
+      "src": "images/projects/moroccan-majlis-lanterns/cover.webp",
+      "ratio": "16:9",
+      "caption": "المجلس المغربي تحت السقف الجبسي المحفور والفوانيس"
+    },
+    "spaces": 1,
+    "pieces": 7,
+    "materials": 6,
+    "film": true,
+    "pages": [
+      {
+        "src": "images/projects/moroccan-majlis-lanterns/material-mahogany.webp",
+        "caption": "الخامات"
+      },
+      {
+        "src": "images/projects/moroccan-majlis-lanterns/card-seating.webp",
+        "caption": "وحدات الجلسة"
+      },
+      {
+        "src": "images/projects/moroccan-majlis-lanterns/intro-01.webp",
+        "caption": "المجلس"
+      }
+    ]
+  },
+  {
+    "href": "white-modern-living-room.html",
+    "name": {
+      "ar": "الصالة البيضاء الحديثة",
+      "en": "THE WHITE MODERN LIVING"
+    },
+    "place": "الصالة",
+    "kicker": "مشروع صالة ومدخل · تصميم وتنفيذ",
+    "tagline": "عاجي هادئ، وحجر رمادي، ولمسات من خشب الجوز تحت إضاءة مخفية.",
+    "cover": {
+      "src": "images/projects/white-modern-living-room/cover.webp",
+      "ratio": "16:9",
+      "caption": "الصالة البيضاء: الكنبة على شكل U أمام جدار الستائر المضاءة"
+    },
+    "spaces": 3,
+    "pieces": 12,
+    "materials": 6,
+    "film": true,
+    "pages": [
+      {
+        "src": "images/projects/white-modern-living-room/material-ivory.webp",
+        "caption": "الخامات"
+      },
+      {
+        "src": "images/projects/white-modern-living-room/card-sofa.webp",
+        "caption": "الكنبة على شكل U"
+      },
+      {
+        "src": "images/projects/white-modern-living-room/intro-01.webp",
+        "caption": "الصالة"
+      }
+    ]
+  }
+]

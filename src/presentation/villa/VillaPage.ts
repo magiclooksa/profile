@@ -1,4 +1,4 @@
-import type { Space, SpreadPhoto, Villa } from '../../domain/villa';
+import type { Film, Space, SpreadPhoto, Villa } from '../../domain/villa';
 import { initReveal } from '../behaviors/reveal';
 import { h, pad2 } from '../dom';
 import { createProductSheet } from './ProductSheet';
@@ -18,20 +18,30 @@ interface Entry {
   readonly image: string;
 }
 
-const entriesOf = (v: Villa): Entry[] => [
-  ...v.spaces.map((s, i) => ({
-    id: `space-${s.id}`, no: pad2(i + 1), title: s.name, en: s.en,
-    meta: plural(piecesIn(v, s.id).length, PIECES), image: s.look.image.src,
-  })),
-  {
-    id: 'materials', no: pad2(v.spaces.length + 1), title: 'مكتبة الخامات', en: 'Materials',
-    meta: plural(v.materials.length, MATERIALS), image: v.materials[0]?.swatch ?? v.cover.src,
-  },
-  {
-    id: 'collection', no: pad2(v.spaces.length + 2), title: 'كتالوج القطع', en: 'The collection',
-    meta: plural(v.products.length, PIECES), image: v.collection.image.src,
-  },
-];
+/** Chapter numbers after the spaces: the film (when there is one), the materials, the collection. */
+const numbersOf = (v: Villa): { film: string; materials: string; collection: string } => {
+  const after = v.spaces.length + (v.film ? 1 : 0);
+  return { film: pad2(v.spaces.length + 1), materials: pad2(after + 1), collection: pad2(after + 2) };
+};
+
+const entriesOf = (v: Villa): Entry[] => {
+  const no = numbersOf(v);
+  return [
+    ...v.spaces.map((s, i) => ({
+      id: `space-${s.id}`, no: pad2(i + 1), title: s.name, en: s.en,
+      meta: plural(piecesIn(v, s.id).length, PIECES), image: s.look.image.src,
+    })),
+    ...(v.film ? [{ id: 'film', no: no.film, title: v.film.title, en: 'Walkthrough', meta: 'فيديو', image: v.film.poster }] : []),
+    {
+      id: 'materials', no: no.materials, title: 'مكتبة الخامات', en: 'Materials',
+      meta: plural(v.materials.length, MATERIALS), image: v.materials[0]?.swatch ?? v.cover.src,
+    },
+    {
+      id: 'collection', no: no.collection, title: 'كتالوج القطع', en: 'The collection',
+      meta: plural(v.products.length, PIECES), image: v.collection.image.src,
+    },
+  ];
+};
 
 /** The word that goes after a big number, without repeating the number. */
 const noun = (n: number, f: typeof PIECES): string => {
@@ -50,7 +60,7 @@ const Intro = (v: Villa): HTMLElement => {
         h('div', { class: 'v-intro-text' },
           h('p', { class: 'v-lead reveal' }, v.intro.lead),
           h('div', { class: 'v-intro-body reveal' }, v.intro.paragraphs.map((p) => h('p', {}, p))),
-          h('ul', { class: 'v-words reveal', 'aria-label': 'الفيلا في كلمات' },
+          h('ul', { class: 'v-words reveal', 'aria-label': `${v.place} في كلمات` },
             v.intro.words.map((w, i) => h('li', {},
               h('span', { class: 'latin v-words-no' }, pad2(i + 1)), h('b', {}, w.ar), h('span', { class: 'latin' }, w.en))))),
         h('div', { class: 'v-intro-media reveal' },
@@ -233,7 +243,7 @@ const Materials = (v: Villa, no: string, pick: (id: string) => void): HTMLElemen
         h('div', {},
           h('p', { class: 'v-kicker' }, `الفصل ${no}`),
           h('h2', {}, 'مكتبة الخامات'),
-          h('p', {}, `${plural(v.materials.length, MATERIALS)} طبيعية تتكرر في أرجاء الفيلا وتربط مساحاتها ببعض. اضغط على أي خامة لترى القطع المصنوعة منها.`))),
+          h('p', {}, `${plural(v.materials.length, MATERIALS)} طبيعية تتكرر في أرجاء ${v.place} وتربط قطعه ببعض. اضغط على أي خامة لترى القطع المصنوعة منها.`))),
       h('ul', { class: 'v-mats' }, v.materials.map((m, i) => {
         const count = v.products.filter((p) => p.materials.includes(m.id)).length;
         const b = h('button', { type: 'button', class: 'v-mat', 'aria-label': `${m.name}: اعرض القطع المصنوعة منها` },
@@ -328,6 +338,28 @@ const Collection = (v: Villa, no: string, openPiece: OpenPiece): CollectionView 
   };
 };
 
+/** A silent walkthrough clip beside its title; it plays only while it is on screen. */
+const FilmChapter = (film: Film, no: string): HTMLElement => {
+  const video = h('video', {
+    src: film.src, poster: film.poster, muted: true, loop: true, playsinline: true, preload: 'none',
+    'aria-label': film.caption,
+  });
+  video.muted = true;
+  new IntersectionObserver(([entry]) => {
+    if (entry?.isIntersecting) void video.play().catch(() => { video.controls = true });
+    else video.pause();
+  }, { threshold: 0.35 }).observe(video);
+  return h('section', { class: 'v-sec v-film', id: 'film', 'data-title': film.title },
+    h('div', { class: 'wrap' },
+      Folio(`الفصل ${no}`, 'Walkthrough'),
+      h('div', { class: `v-film-grid is-${film.ratio === '16:9' ? 'wide' : 'tall'}` },
+        h('div', { class: 'v-film-text reveal' },
+          h('span', { class: 'latin v-chap-no', 'aria-hidden': 'true' }, no),
+          h('h2', { class: 'v-sec-title' }, film.title),
+          h('p', {}, film.caption)),
+        h('figure', { class: 'v-film-frame reveal', style: `aspect-ratio: ${film.ratio.replace(':', ' / ')}` }, video))));
+};
+
 const Closing = (v: Villa): HTMLElement =>
   h('section', { class: 'v-sec v-closing', id: 'closing', 'data-title': 'الخاتمة' },
     h('div', { class: 'wrap' },
@@ -403,11 +435,13 @@ export function renderVilla(root: HTMLElement, v: Villa): void {
     document.getElementById(`space-${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   const sheet = createProductSheet(v, goToSpace);
   const openPiece: OpenPiece = (id) => sheet.open(id);
-  const collection = Collection(v, pad2(v.spaces.length + 2), openPiece);
+  const no = numbersOf(v);
+  const collection = Collection(v, no.collection, openPiece);
   const chapters = v.spaces.map((s, i) => Chapter(v, s, i, openPiece));
-  const materials = Materials(v, pad2(v.spaces.length + 1), (id) => collection.showMaterial(id));
+  const film = v.film ? FilmChapter(v.film, no.film) : null;
+  const materials = Materials(v, no.materials, (id) => collection.showMaterial(id));
   const closing = Closing(v);
-  const sections = [Intro(v), Contents(entries), ...chapters, materials, collection.el, closing];
+  const sections = [Intro(v), Contents(entries), ...chapters, ...(film ? [film] : []), materials, collection.el, closing];
 
   root.replaceChildren(...sections);
   root.removeAttribute('aria-busy');
@@ -433,5 +467,5 @@ export function renderVillaError(root: HTMLElement, error: unknown): void {
     h('div', { class: 'load-error', role: 'alert' },
       h('h1', {}, 'تعذّر عرض الكتالوج'),
       h('p', {}, message),
-      h('p', {}, 'راجع ملف البيانات public/data/villa-wood.json ثم أعد تحميل الصفحة.')));
+      h('p', {}, 'راجع ملف بيانات الصفحة في public/data ثم أعد تحميل الصفحة.')));
 }

@@ -10,7 +10,7 @@ import { Advantages } from './components/Advantages';
 import { Clients } from './components/Clients';
 import { CollectionSection } from './components/CollectionSection';
 import { Contact } from './components/Contact';
-import { FeatureHero } from './components/FeatureHero';
+import { Catalogues } from './components/Catalogues';
 import { FilmSection } from './components/FilmSection';
 import { Footer } from './components/Footer';
 import { Hero } from './components/Hero';
@@ -27,6 +27,7 @@ const NAV_LINKS: readonly NavLink[] = [
   { id: 'products', label: 'منتجاتنا' },
   { id: 'journey', label: 'رحلة العمل' },
   { id: 'collection-1', label: 'أعمالنا' },
+  { id: 'projects', label: 'مشاريعنا' },
   { id: 'contact', label: 'تواصل معنا' },
 ];
 
@@ -49,7 +50,7 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
 
   const main = h('main', {},
     Hero(company),
-    company.feature ? FeatureHero(company.feature) : null,
+    Catalogues(profile.catalogues, company.feature),
     About(company, next()),
     film(0),
     collection(8),

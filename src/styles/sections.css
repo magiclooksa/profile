@@ -823,3 +823,80 @@ ol.track, ol.lvls { list-style: none; padding: 0; margin: 0 }
   --logo-top: var(--ml-beige); --logo-bottom: var(--ml-bronze); --logo-ar: var(--ml-bronze); --logo-en: var(--ml-beige) }
 .film-cinema, .film.film-frame, .set--stagger, .set--duo, .set--journey, .set--spotlight, .set--coverflow, .set--blueprint, .set--lights, .journey {
   background: var(--band); --surface: var(--ml-green); --bp: var(--ml-beige) }
+
+/* long project names in the banner design: smaller and balanced so they stay whole */
+.feature-title.is-long { font-size: clamp(2.3rem, 1rem + 4.2vw, 5.6rem); line-height: 1.2; text-wrap: balance }
+
+/* project catalogues: a full-width carousel, every slide in the featured-banner design */
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap }
+.cat-carousel { position: relative; isolation: isolate; background: #1a2a26; color: #f7f4f0 }
+.cat-track { display: grid }
+/* Slides sit on top of each other. The incoming one wipes in over the outgoing one from the side it
+   comes from (next comes from the left in a right-to-left page), its photo settling from a zoom while
+   the outgoing photo drifts away and dims underneath. */
+.cat-slide { grid-area: 1 / 1; display: grid; visibility: hidden }
+.cat-slide.is-active { z-index: 2; visibility: visible; animation: cat-wipe 1.05s cubic-bezier(.77, 0, .18, 1) both }
+.cat-slide.is-leaving { z-index: 1; visibility: visible }
+.cat-carousel[data-dir=prev] .cat-slide.is-active { animation-name: cat-wipe-prev }
+.cat-carousel.is-first .cat-slide.is-active { animation: none }
+.cat-slide .feature-link { min-height: min(820px, 90svh) }
+.cat-slide .feature-in { padding-block: clamp(96px, 9vw, 120px) clamp(120px, 12vw, 160px) }
+.cat-slide .feature-title.is-long ~ .feature-en { letter-spacing: .14em }
+/* Only the showing slide grows into the cover of the page it opens. */
+.cat-slide:not(.is-active) .feature-bg, .cat-slide:not(.is-active) .feature-title { view-transition-name: none }
+.cat-slide .feature-bg { transition: transform 7s linear }
+.cat-slide.is-active .feature-bg { transform: scale(1); animation: cat-settle 1.6s cubic-bezier(.22, 1, .36, 1) backwards }
+.cat-slide.is-leaving .feature-bg { animation: cat-drift 1.05s cubic-bezier(.77, 0, .18, 1) both }
+.cat-carousel[data-dir=prev] .cat-slide.is-leaving .feature-bg { animation-name: cat-drift-prev }
+.cat-carousel.is-first .cat-slide.is-active .feature-bg { animation: none }
+@keyframes cat-wipe { from { clip-path: inset(0 100% 0 0) } to { clip-path: inset(0) } }
+@keyframes cat-wipe-prev { from { clip-path: inset(0 0 0 100%) } to { clip-path: inset(0) } }
+@keyframes cat-settle { from { transform: scale(1.18) } }
+@keyframes cat-drift { to { transform: translateX(14%) scale(1.06); filter: brightness(.45) } }
+@keyframes cat-drift-prev { to { transform: translateX(-14%) scale(1.06); filter: brightness(.45) } }
+
+.cat-bar { position: absolute; z-index: 2; inset-inline: 0; bottom: clamp(24px, 3.4vw, 44px); display: flex; align-items: center; justify-content: space-between; gap: 24px; pointer-events: none }
+.cat-bar > * { pointer-events: auto }
+.cat-dots { display: flex; flex: 1; max-width: 560px; gap: 6px }
+.cat-dot { position: relative; flex: 1; height: 26px; padding: 0; border: 0; background: none; cursor: pointer }
+.cat-dot::before, .cat-dot i { content: ""; position: absolute; inset-inline: 0; top: 50%; height: 2px; translate: 0 -50%; border-radius: 2px }
+.cat-dot::before { background: #f7f4f040 }
+.cat-dot i { background: #f7f4f0; transform: scaleX(0); transform-origin: right }
+.cat-dot.is-done i { transform: scaleX(1) }
+.cat-dot.is-active i { animation: cat-fill var(--cat-interval, 5.5s) linear forwards }
+.cat-carousel.is-paused .cat-dot.is-active i { animation-play-state: paused }
+.cat-carousel.is-stopped .cat-dot.is-active i { animation: none; transform: scaleX(1) }
+.cat-dot:focus-visible { outline: 2px solid #d6c9b5; outline-offset: 2px }
+@keyframes cat-fill { from { transform: scaleX(0) } to { transform: scaleX(1) } }
+
+.cat-nav { display: flex; align-items: center; gap: 10px }
+.cat-count { min-width: 5.5ch; margin-inline-end: 6px; font-size: .95rem; letter-spacing: .08em; opacity: .9 }
+.cat-arrow, .cat-toggle { display: grid; place-items: center; height: 46px; border: 1px solid #f7f4f066; border-radius: var(--r); background: #111c1959; color: inherit; font: inherit; cursor: pointer; backdrop-filter: blur(6px); transition: background .3s, color .3s, border-color .3s }
+.cat-arrow { width: 46px; font-size: 1.15rem }
+.cat-toggle { padding-inline: 16px; font-size: .82rem }
+.cat-arrow:hover, .cat-toggle:hover { background: #f7f4f0; color: #1a2a26; border-color: #f7f4f0 }
+.cat-arrow:focus-visible, .cat-toggle:focus-visible { outline: 2px solid #d6c9b5; outline-offset: 2px }
+
+/* the copy of the incoming slide rises in */
+/* the incoming slide: its copy rises in word group by word group, its pages fly in from the side it comes from */
+.cat-slide.is-active .feature-copy > * { animation: cat-rise .9s var(--ease-out) both; animation-delay: calc(.32s + var(--k, 0) * .07s) }
+.cat-slide.is-active .feature-copy > :nth-child(2) { --k: 1 }
+.cat-slide.is-active .feature-copy > :nth-child(3) { --k: 2 }
+.cat-slide.is-active .feature-copy > :nth-child(4) { --k: 3 }
+.cat-slide.is-active .feature-copy > :nth-child(n+5) { --k: 4 }
+.cat-slide.is-active .feature-pages { animation: cat-pages 1.2s .25s var(--ease-out) both }
+.cat-carousel[data-dir=prev] .cat-slide.is-active .feature-pages { animation-name: cat-pages-prev }
+@keyframes cat-rise { from { opacity: 0; transform: translateY(28px); filter: blur(6px) } }
+@keyframes cat-pages { from { opacity: 0; transform: translateX(-90px) rotate(-7deg) scale(.94) } }
+@keyframes cat-pages-prev { from { opacity: 0; transform: translateX(90px) rotate(7deg) scale(.94) } }
+
+@media (max-width: 760px) {
+  .cat-bar { flex-wrap: wrap; gap: 12px }
+  .cat-dots { flex-basis: 100%; max-width: none; order: 2 }
+  .cat-nav { order: 1; margin-inline-start: auto }
+  .cat-slide .feature-in { padding-bottom: 150px }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cat-slide, .cat-slide.is-active, .cat-slide.is-leaving, .cat-slide .feature-bg { transition: none; animation: none }
+  .cat-slide.is-active .feature-copy > *, .cat-slide.is-active .feature-pages, .cat-slide.is-active .feature-bg { animation: none }
+}

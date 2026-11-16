@@ -1,0 +1,749 @@
+{
+  "name": {
+    "ar": "الصالة البيضاء الحديثة",
+    "en": "THE WHITE MODERN LIVING"
+  },
+  "place": "الصالة",
+  "kicker": "مشروع صالة ومدخل · تصميم وتنفيذ",
+  "tagline": "عاجي هادئ، وحجر رمادي، ولمسات من خشب الجوز تحت إضاءة مخفية.",
+  "cover": {
+    "src": "images/projects/white-modern-living-room/cover.webp",
+    "ratio": "16:9",
+    "caption": "الصالة البيضاء: الكنبة على شكل U أمام جدار الستائر المضاءة"
+  },
+  "intro": {
+    "lead": "صالة بيضاء مضاءة من خلف الستائر، تلتف فيها كنبة عاجية على شكل U حول طاولة حجرية، ويقابلها جدار تلفزيون بخانات من خشب الجوز.",
+    "paragraphs": [
+      "الستائر الشفافة تغطي الجدار كله، وفوقها إضاءة مخفية تغسل القماش بضوء دافئ. والسجادة عاجية، والكرسيان المفردان بقماش الكنبة نفسه.",
+      "وفي المدخل دولاب أبيض طويل، وإطار مرآة مقوس مبطن بالجوز، ومقعد أبيض منخفض، ورف من الجوز معلّق من السقف بقضبان ذهبية. وخلفهما جلسة صغيرة ثانية بكرسيين رماديين وكنبة عاجية."
+    ],
+    "words": [
+      {
+        "ar": "نور",
+        "en": "Light"
+      },
+      {
+        "ar": "صفاء",
+        "en": "Clarity"
+      },
+      {
+        "ar": "رحابة",
+        "en": "Space"
+      },
+      {
+        "ar": "أناقة",
+        "en": "Elegance"
+      }
+    ],
+    "image": {
+      "src": "images/projects/white-modern-living-room/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "الكنبة على شكل U وطاولة الوسط الحجرية"
+    },
+    "inset": {
+      "src": "images/projects/white-modern-living-room/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "الرف الخشبي المعلّق بقضبان ذهبية"
+    }
+  },
+  "materials": [
+    {
+      "id": "ivory",
+      "name": "القماش العاجي",
+      "en": "Ivory upholstery",
+      "color": "#E7E1D6",
+      "swatch": "images/projects/white-modern-living-room/material-ivory.webp",
+      "note": "قماش الكنبة الكبيرة والكرسيين وكنبة الجلسة الصغيرة."
+    },
+    {
+      "id": "sheer",
+      "name": "الستائر الشفافة",
+      "en": "Sheer curtains",
+      "color": "#DDD6CB",
+      "swatch": "images/projects/white-modern-living-room/material-sheer.webp",
+      "note": "قماش خفيف بطيّات عمودية يغطي الجدار كله، وتضيئه من الأعلى إضاءة مخفية."
+    },
+    {
+      "id": "stone",
+      "name": "الحجر الرمادي",
+      "en": "Grey stone finish",
+      "color": "#B9B3AA",
+      "swatch": "images/projects/white-modern-living-room/material-stone.webp",
+      "note": "سطح طاولة الوسط وطاولات الجنب بلون الحجر الرمادي."
+    },
+    {
+      "id": "walnut",
+      "name": "خشب الجوز",
+      "en": "Walnut",
+      "color": "#6E4A33",
+      "swatch": "images/projects/white-modern-living-room/material-walnut.webp",
+      "note": "خانات جدار التلفزيون، وبطانة إطار المرآة، والرف المعلّق، والمقعد الخشبي في الجلسة الصغيرة."
+    },
+    {
+      "id": "white",
+      "name": "الأبيض المطفي",
+      "en": "Matt white joinery",
+      "color": "#ECEBE7",
+      "swatch": "images/projects/white-modern-living-room/material-white.webp",
+      "note": "دولاب المدخل وجدار التلفزيون والمقعد المنخفض، بسطح أبيض ناعم بلا مقابض ظاهرة."
+    },
+    {
+      "id": "grey-fabric",
+      "name": "القماش الرمادي المزرق",
+      "en": "Blue-grey fabric",
+      "color": "#7F8A8C",
+      "swatch": "images/projects/white-modern-living-room/material-grey-fabric.webp",
+      "note": "قماش الكرسيين في الجلسة الصغيرة."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "living",
+      "name": "الصالة",
+      "en": "The living room",
+      "intro": "المساحة الرئيسية: كنبة عاجية كبيرة على شكل U أمام جدار الستائر المضاءة، وطاولة وسط حجرية، وجدار تلفزيون أبيض بخانات من الجوز.",
+      "look": {
+        "image": {
+          "src": "images/projects/white-modern-living-room/living-look-03.webp",
+          "ratio": "3:4",
+          "caption": "الصالة من جهة جدار التلفزيون"
+        },
+        "spots": [
+          {
+            "x": 22,
+            "y": 72,
+            "product": "sofa"
+          },
+          {
+            "x": 50,
+            "y": 48,
+            "product": "curtains"
+          },
+          {
+            "x": 70,
+            "y": 84,
+            "product": "coffee-table"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/white-modern-living-room/living-g-04.webp",
+          "ratio": "3:4",
+          "caption": "الصالة من الزاوية",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-modern-living-room/living-g-05.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة والكرسي المفرد وجدار التلفزيون",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-modern-living-room/living-g-06.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الوسط أمام الكنبة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-modern-living-room/living-g-07.webp",
+          "ratio": "3:4",
+          "caption": "جدار التلفزيون",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-modern-living-room/living-g-08.webp",
+          "ratio": "3:4",
+          "caption": "جدار التلفزيون بخاناته الخشبية",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-modern-living-room/living-g-09.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة من الأمام",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/white-modern-living-room/living-d-10.webp",
+          "ratio": "3:4",
+          "caption": "خانات الجوز بجانب الشاشة",
+          "product": "tv-wall"
+        },
+        {
+          "src": "images/projects/white-modern-living-room/living-d-11.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الوسط الحجرية",
+          "product": "coffee-table"
+        },
+        {
+          "src": "images/projects/white-modern-living-room/living-d-12.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي المفرد",
+          "product": "armchairs"
+        },
+        {
+          "src": "images/projects/white-modern-living-room/living-d-13.webp",
+          "ratio": "3:4",
+          "caption": "الستائر تحت الإضاءة المخفية",
+          "product": "curtains"
+        }
+      ]
+    },
+    {
+      "id": "entrance",
+      "name": "المدخل",
+      "en": "The entrance",
+      "intro": "عند الباب: دولاب أبيض طويل للحفظ، وإطار مرآة مقوس مبطن بالجوز فوق مقعد أبيض منخفض، ورف خشبي معلّق من السقف بقضبان ذهبية.",
+      "look": {
+        "image": {
+          "src": "images/projects/white-modern-living-room/entrance-look-14.webp",
+          "ratio": "16:9",
+          "caption": "ركن المدخل: الدولاب والمرآة المقوسة والمقعد"
+        },
+        "spots": [
+          {
+            "x": 29,
+            "y": 45,
+            "product": "wardrobe"
+          },
+          {
+            "x": 53,
+            "y": 35,
+            "product": "mirror"
+          },
+          {
+            "x": 60,
+            "y": 82,
+            "product": "bench"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/white-modern-living-room/entrance-g-15.webp",
+          "ratio": "3:4",
+          "caption": "الرف المعلّق بجانب المدخل",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-modern-living-room/entrance-g-16.webp",
+          "ratio": "3:4",
+          "caption": "الطريق من المدخل إلى الصالة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-modern-living-room/entrance-g-17.webp",
+          "ratio": "3:4",
+          "caption": "الدولاب الأبيض بجانب الباب",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-modern-living-room/entrance-g-18.webp",
+          "ratio": "16:9",
+          "caption": "المدخل والرف المعلّق والباب",
+          "span": 8
+        },
+        {
+          "src": "images/projects/white-modern-living-room/entrance-g-19.webp",
+          "ratio": "3:4",
+          "caption": "الرف والنبتة",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/white-modern-living-room/entrance-d-20.webp",
+          "ratio": "3:4",
+          "caption": "الرف الخشبي وقضيباه الذهبيان",
+          "product": "shelf"
+        },
+        {
+          "src": "images/projects/white-modern-living-room/entrance-d-21.webp",
+          "ratio": "3:4",
+          "caption": "المرآة المقوسة المبطنة بالجوز",
+          "product": "mirror"
+        },
+        {
+          "src": "images/projects/white-modern-living-room/entrance-d-22.webp",
+          "ratio": "16:9",
+          "caption": "المقعد الأبيض المنخفض",
+          "product": "bench"
+        }
+      ]
+    },
+    {
+      "id": "sitting",
+      "name": "الجلسة الصغيرة",
+      "en": "The sitting corner",
+      "intro": "جلسة ثانية أهدأ بجانب الستائر: كرسيان بقماش رمادي مزرق، وكنبة عاجية بمخدات خضراء فاتحة، وطاولة جانبية دائرية، ومقعد خشبي طويل على الجدار.",
+      "look": {
+        "image": {
+          "src": "images/projects/white-modern-living-room/sitting-look-23.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة الصغيرة أمام الستائر"
+        },
+        "spots": [
+          {
+            "x": 15,
+            "y": 55.3,
+            "product": "grey-armchairs"
+          },
+          {
+            "x": 65,
+            "y": 56.7,
+            "product": "loveseat"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/white-modern-living-room/sitting-g-24.webp",
+          "ratio": "3:4",
+          "caption": "الكرسيان والطاولة الدائرية",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-modern-living-room/sitting-g-25.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة العاجية والكرسي",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-modern-living-room/sitting-g-26.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة من الجهة الأخرى",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/white-modern-living-room/sitting-d-27.webp",
+          "ratio": "3:4",
+          "caption": "المخدات على الكنبة العاجية",
+          "product": "loveseat"
+        },
+        {
+          "src": "images/projects/white-modern-living-room/sitting-d-28.webp",
+          "ratio": "3:4",
+          "caption": "المقعد الخشبي على الجدار",
+          "product": "wood-bench"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "اثنتا عشرة قطعة في الصالة والمدخل والجلسة الصغيرة، منها ما صُنع بالمقاس مثل جدار التلفزيون ودولاب المدخل والستائر. افتح أي قطعة لترى صورها.",
+    "image": {
+      "src": "images/projects/white-modern-living-room/collection-29.webp",
+      "ratio": "16:9",
+      "caption": "الكنبة وطاولة الوسط"
+    }
+  },
+  "products": [
+    {
+      "id": "sofa",
+      "name": "الكنبة على شكل U",
+      "en": "U-shaped sofa",
+      "category": "كنب",
+      "spaces": [
+        "living"
+      ],
+      "custom": true,
+      "materials": [
+        "ivory"
+      ],
+      "finish": "قماش عاجي بيد ملفوفة",
+      "text": "كنبة كبيرة على شكل U بقماش عاجي وأيدٍ ملفوفة، تلتف حول طاولة الوسط أمام جدار الستائر، وعليها مخدات عاجية ورمادية مطرزة.",
+      "card": "images/projects/white-modern-living-room/card-sofa.webp",
+      "views": [
+        {
+          "src": "images/projects/white-modern-living-room/living-look-03.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة من الأمام"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/white-modern-living-room/sofa-d-31.webp",
+          "ratio": "3:4",
+          "caption": "اليد الملفوفة والقماش"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/white-modern-living-room/sofa-i-32.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة في الصالة"
+        }
+      ]
+    },
+    {
+      "id": "armchairs",
+      "name": "الكرسيان المفردان",
+      "en": "Ivory armchairs",
+      "category": "كراسي",
+      "spaces": [
+        "living"
+      ],
+      "custom": false,
+      "materials": [
+        "ivory"
+      ],
+      "finish": "قماش عاجي بظهر منحني",
+      "text": "كرسيان مفردان بقماش الكنبة نفسه وظهر منحني، يقابلان الكنبة من جهة جدار التلفزيون.",
+      "card": "images/projects/white-modern-living-room/card-armchairs.webp",
+      "views": [
+        {
+          "src": "images/projects/white-modern-living-room/armchairs-v-33.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي المفرد"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/white-modern-living-room/living-g-05.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي في الصالة"
+        }
+      ]
+    },
+    {
+      "id": "coffee-table",
+      "name": "طاولة الوسط",
+      "en": "Stone coffee table",
+      "category": "طاولات",
+      "spaces": [
+        "living"
+      ],
+      "custom": false,
+      "materials": [
+        "stone"
+      ],
+      "finish": "سطح مربع بلون الحجر الرمادي",
+      "text": "طاولة وسط مربعة بلون الحجر الرمادي، ومعها طاولات جنب من الخامة نفسها على أطراف الكنبة.",
+      "card": "images/projects/white-modern-living-room/card-coffee-table.webp",
+      "views": [
+        {
+          "src": "images/projects/white-modern-living-room/coffee-table-v-35.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الوسط"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/white-modern-living-room/coffee-table-d-36.webp",
+          "ratio": "3:4",
+          "caption": "سطح الطاولة الجانبية"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/white-modern-living-room/intro-01.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة أمام الكنبة"
+        }
+      ]
+    },
+    {
+      "id": "tv-wall",
+      "name": "جدار التلفزيون",
+      "en": "Media wall",
+      "category": "أعمال مدمجة",
+      "spaces": [
+        "living"
+      ],
+      "custom": true,
+      "materials": [
+        "white",
+        "walnut"
+      ],
+      "finish": "أبيض مطفي بوحدة خانات من الجوز",
+      "text": "جدار تلفزيون أبيض بوحدة سفلية طويلة، وبجانب الشاشة وحدة أرفف بخانات من خشب الجوز.",
+      "card": "images/projects/white-modern-living-room/card-tv-wall.webp",
+      "views": [
+        {
+          "src": "images/projects/white-modern-living-room/tv-wall-v-38.webp",
+          "ratio": "3:4",
+          "caption": "جدار التلفزيون من الجانب"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/white-modern-living-room/living-d-10.webp",
+          "ratio": "3:4",
+          "caption": "خانات الجوز"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/white-modern-living-room/tv-wall-i-40.webp",
+          "ratio": "3:4",
+          "caption": "الجدار في الصالة"
+        }
+      ]
+    },
+    {
+      "id": "curtains",
+      "name": "جدار الستائر",
+      "en": "Lit curtain wall",
+      "category": "ستائر",
+      "spaces": [
+        "living"
+      ],
+      "custom": true,
+      "materials": [
+        "sheer"
+      ],
+      "finish": "ستائر شفافة بطيّات عمودية وإضاءة مخفية",
+      "text": "ستائر شفافة على كامل الجدار، تعلوها إضاءة مخفية تغسل القماش بضوء دافئ وتجعل الجدار مصدر النور في الصالة.",
+      "card": "images/projects/white-modern-living-room/card-curtains.webp",
+      "views": [
+        {
+          "src": "images/projects/white-modern-living-room/curtains-v-41.webp",
+          "ratio": "3:4",
+          "caption": "الجدار المضاء"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/white-modern-living-room/curtains-i-42.webp",
+          "ratio": "3:4",
+          "caption": "الستائر في الجلسة الصغيرة"
+        }
+      ]
+    },
+    {
+      "id": "wardrobe",
+      "name": "دولاب المدخل",
+      "en": "Entrance wardrobe",
+      "category": "أعمال مدمجة",
+      "spaces": [
+        "entrance"
+      ],
+      "custom": true,
+      "materials": [
+        "white"
+      ],
+      "finish": "أبيض مطفي بمقبض طولي داكن",
+      "text": "دولاب أبيض طويل من الأرض إلى السقف بجانب الباب، بأبواب ناعمة ومقبض طولي رفيع.",
+      "card": "images/projects/white-modern-living-room/card-wardrobe.webp",
+      "views": [
+        {
+          "src": "images/projects/white-modern-living-room/wardrobe-v-43.webp",
+          "ratio": "3:4",
+          "caption": "الدولاب بجانب الباب"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/white-modern-living-room/wardrobe-i-44.webp",
+          "ratio": "3:4",
+          "caption": "الدولاب في المدخل"
+        }
+      ]
+    },
+    {
+      "id": "mirror",
+      "name": "المرآة المقوسة",
+      "en": "Arched mirror frame",
+      "category": "أعمال مدمجة",
+      "spaces": [
+        "entrance"
+      ],
+      "custom": true,
+      "materials": [
+        "walnut"
+      ],
+      "finish": "إطار مقوس مبطن بالجوز",
+      "text": "مرآة طويلة بقمة مقوسة، داخل تجويف مبطن بخشب الجوز فوق مقعد المدخل.",
+      "card": "images/projects/white-modern-living-room/card-mirror.webp",
+      "views": [
+        {
+          "src": "images/projects/white-modern-living-room/mirror-v-45.webp",
+          "ratio": "3:4",
+          "caption": "المرآة فوق المقعد"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/white-modern-living-room/mirror-i-46.webp",
+          "ratio": "3:4",
+          "caption": "المرآة تظهر من الصالة"
+        }
+      ]
+    },
+    {
+      "id": "bench",
+      "name": "مقعد المدخل",
+      "en": "Low entrance bench",
+      "category": "أعمال مدمجة",
+      "spaces": [
+        "entrance"
+      ],
+      "custom": true,
+      "materials": [
+        "white",
+        "ivory"
+      ],
+      "finish": "قاعدة بيضاء بأدراج ومقعد مبطن",
+      "text": "مقعد أبيض منخفض بأدراج من الأسفل ومرتبة مبطنة من الأعلى، يمتد تحت المرآة.",
+      "card": "images/projects/white-modern-living-room/card-bench.webp",
+      "views": [
+        {
+          "src": "images/projects/white-modern-living-room/bench-v-47.webp",
+          "ratio": "16:9",
+          "caption": "المقعد تحت المرآة"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/white-modern-living-room/entrance-look-14.webp",
+          "ratio": "16:9",
+          "caption": "المقعد في المدخل"
+        }
+      ]
+    },
+    {
+      "id": "shelf",
+      "name": "الرف المعلّق",
+      "en": "Suspended walnut shelf",
+      "category": "أعمال خشبية",
+      "spaces": [
+        "entrance"
+      ],
+      "custom": true,
+      "materials": [
+        "walnut"
+      ],
+      "finish": "لوح جوز معلّق بقضبان ذهبية",
+      "text": "لوح سميك من الجوز معلّق من السقف بقضيبين ذهبيين رفيعين، يبدو كأنه يطفو بجانب المدخل.",
+      "card": "images/projects/white-modern-living-room/card-shelf.webp",
+      "views": [
+        {
+          "src": "images/projects/white-modern-living-room/shelf-v-49.webp",
+          "ratio": "3:4",
+          "caption": "الرف المعلّق"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/white-modern-living-room/shelf-i-50.webp",
+          "ratio": "3:4",
+          "caption": "الرف بين المدخل والصالة"
+        }
+      ]
+    },
+    {
+      "id": "grey-armchairs",
+      "name": "الكرسيان الرماديان",
+      "en": "Blue-grey armchairs",
+      "category": "كراسي",
+      "spaces": [
+        "sitting"
+      ],
+      "custom": false,
+      "materials": [
+        "grey-fabric"
+      ],
+      "finish": "قماش رمادي مزرق",
+      "text": "كرسيان بقماش رمادي مزرق وأيدٍ مستديرة، بينهما طاولة جانبية دائرية.",
+      "card": "images/projects/white-modern-living-room/card-grey-armchairs.webp",
+      "views": [
+        {
+          "src": "images/projects/white-modern-living-room/grey-armchairs-v-51.webp",
+          "ratio": "3:4",
+          "caption": "الكرسيان والطاولة"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/white-modern-living-room/grey-armchairs-i-52.webp",
+          "ratio": "3:4",
+          "caption": "الكرسيان في الجلسة"
+        }
+      ]
+    },
+    {
+      "id": "loveseat",
+      "name": "الكنبة العاجية",
+      "en": "Ivory loveseat",
+      "category": "كنب",
+      "spaces": [
+        "sitting"
+      ],
+      "custom": false,
+      "materials": [
+        "ivory"
+      ],
+      "finish": "قماش عاجي بمخدات خضراء فاتحة",
+      "text": "كنبة عاجية لشخصين أو ثلاثة بمخدات خضراء فاتحة ومطرزة، أمام الستائر في الجلسة الصغيرة.",
+      "card": "images/projects/white-modern-living-room/card-loveseat.webp",
+      "views": [
+        {
+          "src": "images/projects/white-modern-living-room/loveseat-v-53.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة من الزاوية"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/white-modern-living-room/sitting-look-23.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة في الجلسة"
+        }
+      ]
+    },
+    {
+      "id": "wood-bench",
+      "name": "المقعد الخشبي",
+      "en": "Walnut wall bench",
+      "category": "أعمال خشبية",
+      "spaces": [
+        "sitting"
+      ],
+      "custom": true,
+      "materials": [
+        "walnut"
+      ],
+      "finish": "جوز بخط مستقيم",
+      "text": "مقعد خشبي طويل ومنخفض من الجوز على جدار الجلسة الصغيرة.",
+      "card": "images/projects/white-modern-living-room/card-wood-bench.webp",
+      "views": [
+        {
+          "src": "images/projects/white-modern-living-room/wood-bench-v-55.webp",
+          "ratio": "3:4",
+          "caption": "المقعد على الجدار"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/white-modern-living-room/wood-bench-i-56.webp",
+          "ratio": "3:4",
+          "caption": "المقعد بجانب الجلسة"
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "بيتك بهذا النور؟",
+    "text": "نصمّم الصالة والمدخل معاً، ونصنع الأعمال المدمجة والستائر بالمقاس، ونختار معك القطع والخامات. حدّثنا عن مساحتك ونبدأ معاً."
+  },
+  "film": {
+    "src": "videos/projects/white-modern-living-room.mp4",
+    "poster": "images/projects/white-modern-living-room/film-poster.webp",
+    "ratio": "16:9",
+    "title": "جولة في الصالة",
+    "caption": "لقطة تمر على الكنبة وجدار الستائر المضاءة وجدار التلفزيون كما نُفّذت في المكان."
+  }
+}

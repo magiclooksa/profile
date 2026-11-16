@@ -1,0 +1,437 @@
+{
+  "name": {
+    "ar": "المجلس العاجي بالخشب العسلي",
+    "en": "THE IVORY & HONEY OAK MAJLIS"
+  },
+  "place": "المجلس",
+  "kicker": "مشروع مجلس · تصميم وتنفيذ",
+  "tagline": "شانيل عاجي، وبلوط عسلي، ولمسات من المخمل الطوبي.",
+  "cover": {
+    "src": "images/projects/majlis-wood-sofa-room/cover.webp",
+    "ratio": "16:9",
+    "caption": "الكنبة على شكل U وطاولة الوسط من البلوط العسلي"
+  },
+  "intro": {
+    "lead": "مجلس هادئ بلون واحد تقريباً: كنب عاجي على شكل U يرتكز على قاعدة من البلوط العسلي، وحوله قطع خشبية صُنعت بالمقاس.",
+    "paragraphs": [
+      "بين أجزاء الكنب صناديق خشب بلون القاعدة نفسه تعمل كأسطح جانبية، ويقابله كرسيان مفردان بإطار خشب رفيع.",
+      "في الوسط طاولة خشب مكعبة بأسطح جانبية بارزة على مستويات مختلفة، وعلى الجدارين رفّان مفتوحان بخانات. وتكسر المخدات الطوبية من المخمل، والمخدات الدائرية بزر في وسطها، هدوء العاجي."
+    ],
+    "words": [
+      {
+        "ar": "سكينة",
+        "en": "Calm"
+      },
+      {
+        "ar": "دفء",
+        "en": "Warmth"
+      },
+      {
+        "ar": "بساطة",
+        "en": "Simplicity"
+      },
+      {
+        "ar": "اتزان",
+        "en": "Balance"
+      }
+    ],
+    "image": {
+      "src": "images/projects/majlis-wood-sofa-room/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "المجلس من زاويته مع الرف المفتوح"
+    },
+    "inset": {
+      "src": "images/projects/majlis-wood-sofa-room/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "الصندوق الخشبي في طرف الكنبة"
+    }
+  },
+  "materials": [
+    {
+      "id": "oak",
+      "name": "البلوط العسلي",
+      "en": "Honey oak",
+      "color": "#9A5A2E",
+      "swatch": "images/projects/majlis-wood-sofa-room/material-oak.webp",
+      "note": "خشب القاعدة والصناديق الجانبية وطاولة الوسط والرفوف المفتوحة وإطار الكرسيين، بعروق واضحة ولون عسلي دافئ."
+    },
+    {
+      "id": "chenille",
+      "name": "الشانيل العاجي",
+      "en": "Ivory chenille",
+      "color": "#E6DED2",
+      "swatch": "images/projects/majlis-wood-sofa-room/material-chenille.webp",
+      "note": "قماش الكنب والكرسيين: ناعم بملمس خفيف ولون عاجي يعكس الضوء."
+    },
+    {
+      "id": "rust-velvet",
+      "name": "المخمل الطوبي",
+      "en": "Rust velvet",
+      "color": "#6E2A22",
+      "swatch": "images/projects/majlis-wood-sofa-room/material-rust-velvet.webp",
+      "note": "قماش المخدات الداكنة والمخدات الدائرية، يكسر هدوء العاجي."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "majlis",
+      "name": "المجلس",
+      "en": "The majlis",
+      "intro": "غرفة بجدران عاجية وثريا كريستال وستائر شفافة على الجدار، تتوزع فيها القطع حول طاولة الوسط.",
+      "look": {
+        "image": {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-look-03.webp",
+          "ratio": "3:4",
+          "caption": "المجلس كاملاً مع الكرسيين وطاولة الوسط والرف"
+        },
+        "spots": [
+          {
+            "x": 22,
+            "y": 57,
+            "product": "seating"
+          },
+          {
+            "x": 42,
+            "y": 63,
+            "product": "coffee-table"
+          },
+          {
+            "x": 33,
+            "y": 84,
+            "product": "armchairs"
+          },
+          {
+            "x": 83,
+            "y": 73,
+            "product": "shelves"
+          },
+          {
+            "x": 71,
+            "y": 57,
+            "product": "cushions"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-g-04.webp",
+          "ratio": "3:4",
+          "caption": "المجلس من المدخل",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-g-05.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة وطاولة الوسط من الأمام",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-g-06.webp",
+          "ratio": "3:4",
+          "caption": "زاوية الكنبة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-g-07.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة على شكل U",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-g-08.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة بجانب الستارة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-g-09.webp",
+          "ratio": "3:4",
+          "caption": "جزء من الكنبة بين صندوقين",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-d-10.webp",
+          "ratio": "3:4",
+          "caption": "الصندوق الخشبي بين المقاعد",
+          "product": "side-box"
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-d-11.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي المفرد بإطاره الخشبي",
+          "product": "armchairs"
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-d-12.webp",
+          "ratio": "3:4",
+          "caption": "أسطح طاولة الوسط",
+          "product": "coffee-table"
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-d-13.webp",
+          "ratio": "3:4",
+          "caption": "المخدات الدائرية",
+          "product": "cushions"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "ست قطع لهذا المجلس، أربع منها صُنعت بالمقاس من البلوط العسلي: الكنبة، والصناديق الجانبية، وطاولة الوسط، والرفّان المفتوحان. افتح أي قطعة لترى صورها.",
+    "image": {
+      "src": "images/projects/majlis-wood-sofa-room/collection-14.webp",
+      "ratio": "16:9",
+      "caption": "طاولة الوسط أمام الكنبة"
+    }
+  },
+  "products": [
+    {
+      "id": "seating",
+      "name": "الكنبة على شكل U",
+      "en": "U-shaped sofa",
+      "category": "كنب",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": true,
+      "materials": [
+        "chenille",
+        "oak"
+      ],
+      "finish": "شانيل عاجي على قاعدة من البلوط العسلي",
+      "text": "كنبة زاوية على شكل U بقماش شانيل عاجي، ترتكز على قاعدة من البلوط العسلي، وتفصل بين أجزائها صناديق خشب بلون القاعدة.",
+      "card": "images/projects/majlis-wood-sofa-room/card-seating.webp",
+      "views": [
+        {
+          "src": "images/projects/majlis-wood-sofa-room/seating-v-15.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة من الأمام"
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/seating-v-16.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة من الجانب"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/majlis-wood-sofa-room/seating-d-17.webp",
+          "ratio": "3:4",
+          "caption": "القماش والقاعدة"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-look-03.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة في المجلس"
+        }
+      ]
+    },
+    {
+      "id": "side-box",
+      "name": "الصناديق الجانبية",
+      "en": "Oak side boxes",
+      "category": "أعمال خشبية",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": true,
+      "materials": [
+        "oak"
+      ],
+      "finish": "بلوط عسلي بحواف مستقيمة",
+      "text": "صناديق خشب بين أجزاء الكنبة وفي أطرافها، بارتفاع المقعد تقريباً، تعمل كأسطح جانبية للضيافة.",
+      "card": "images/projects/majlis-wood-sofa-room/card-side-box.webp",
+      "views": [
+        {
+          "src": "images/projects/majlis-wood-sofa-room/side-box-v-19.webp",
+          "ratio": "3:4",
+          "caption": "الصندوق في طرف الكنبة"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/majlis-wood-sofa-room/side-box-d-20.webp",
+          "ratio": "3:4",
+          "caption": "سطح الصندوق وحافته"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/majlis-wood-sofa-room/side-box-i-21.webp",
+          "ratio": "3:4",
+          "caption": "الصندوق بين المقاعد"
+        }
+      ]
+    },
+    {
+      "id": "armchairs",
+      "name": "الكرسيان المفردان",
+      "en": "Pair of armchairs",
+      "category": "كراسي",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": false,
+      "materials": [
+        "chenille",
+        "oak"
+      ],
+      "finish": "شانيل عاجي بإطار خشب رفيع",
+      "text": "كرسيان مفردان بقماش الكنبة نفسه، يرتكز كل منهما على إطار خشب رفيع، ويقابلان الكنبة من الجهة الأخرى للطاولة.",
+      "card": "images/projects/majlis-wood-sofa-room/card-armchairs.webp",
+      "views": [
+        {
+          "src": "images/projects/majlis-wood-sofa-room/armchairs-v-22.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي المفرد"
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/armchairs-v-23.webp",
+          "ratio": "3:4",
+          "caption": "الكرسيان معاً"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/majlis-wood-sofa-room/armchairs-d-24.webp",
+          "ratio": "3:4",
+          "caption": "الإطار الخشبي أسفل الكرسي"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/majlis-wood-sofa-room/armchairs-i-25.webp",
+          "ratio": "3:4",
+          "caption": "الكرسيان في المجلس"
+        }
+      ]
+    },
+    {
+      "id": "coffee-table",
+      "name": "طاولة الوسط",
+      "en": "Tiered oak coffee table",
+      "category": "طاولات",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": true,
+      "materials": [
+        "oak"
+      ],
+      "finish": "بلوط عسلي، كتلة مكعبة بأسطح جانبية على مستويات",
+      "text": "طاولة خشب مكعبة كبيرة تخرج منها أسطح جانبية بارزة على مستويات مختلفة، فتصل إليها كل جهة من الجلسة.",
+      "card": "images/projects/majlis-wood-sofa-room/card-coffee-table.webp",
+      "views": [
+        {
+          "src": "images/projects/majlis-wood-sofa-room/coffee-table-v-26.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الوسط من الأمام"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/majlis-wood-sofa-room/coffee-table-d-27.webp",
+          "ratio": "3:4",
+          "caption": "الأسطح البارزة عن قرب"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-look-03.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة في وسط المجلس"
+        }
+      ]
+    },
+    {
+      "id": "shelves",
+      "name": "الرفّان المفتوحان",
+      "en": "Open shelving units",
+      "category": "أعمال خشبية",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": true,
+      "materials": [
+        "oak"
+      ],
+      "finish": "بلوط عسلي بخانات مفتوحة",
+      "text": "رفّان منخفضان بخانات مفتوحة من البلوط نفسه، على جدارين من الغرفة، لعرض القطع أو حفظها.",
+      "card": "images/projects/majlis-wood-sofa-room/card-shelves.webp",
+      "views": [
+        {
+          "src": "images/projects/majlis-wood-sofa-room/shelves-v-29.webp",
+          "ratio": "3:4",
+          "caption": "الرف المفتوح"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/majlis-wood-sofa-room/shelves-d-30.webp",
+          "ratio": "3:4",
+          "caption": "خانات الرف"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/majlis-wood-sofa-room/armchairs-i-25.webp",
+          "ratio": "3:4",
+          "caption": "الرف في المجلس"
+        }
+      ]
+    },
+    {
+      "id": "cushions",
+      "name": "المخدات",
+      "en": "Cushions",
+      "category": "مفروشات",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": false,
+      "materials": [
+        "chenille",
+        "rust-velvet"
+      ],
+      "finish": "عاجي، ومخمل طوبي، ومخدات دائرية بزر",
+      "text": "مخدات عاجية من قماش الكنبة، وأخرى طوبية من المخمل، ومخدات دائرية بزر في الوسط تتوزع على أطراف الجلسة.",
+      "card": "images/projects/majlis-wood-sofa-room/card-cushions.webp",
+      "views": [
+        {
+          "src": "images/projects/majlis-wood-sofa-room/cushions-v-32.webp",
+          "ratio": "3:4",
+          "caption": "المخدات على الكنبة"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/majlis-wood-sofa-room/cushions-d-33.webp",
+          "ratio": "3:4",
+          "caption": "المخدة الدائرية عن قرب"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/majlis-wood-sofa-room/cushions-i-34.webp",
+          "ratio": "3:4",
+          "caption": "المخدات في زاوية الكنبة"
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "مجلس بهذا الهدوء؟",
+    "text": "نصمّم المجلس ونصنع قطعه الخشبية بالمقاس، ونختار معك القماش ولون الخشب. حدّثنا عن مساحتك ونبدأ معاً."
+  },
+  "film": {
+    "src": "videos/projects/majlis-wood-sofa-room.mp4",
+    "poster": "images/projects/majlis-wood-sofa-room/film-poster.webp",
+    "ratio": "9:16",
+    "title": "جولة في المجلس",
+    "caption": "لقطة قصيرة تمر على الكنبة وطاولة الوسط والصناديق الخشبية كما نُفّذت في المكان."
+  }
+}
