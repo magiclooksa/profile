@@ -54,7 +54,9 @@ export function servicePageHtml(page: ServicePage, ctx: ServiceContext): string 
   <body class="sp-body" data-service="${t(page.slug)}">
     <header class="sp-bar">
       <a class="sp-brand" href="../index.html" aria-label="الصفحة الرئيسية للنظرة الساحرة"></a>
-      <a class="sp-bar-cta" href="../index.html#contact">تواصل معنا</a>
+      <div class="sp-bar-end">
+        <a class="sp-bar-cta" href="../index.html#contact">تواصل معنا</a>
+      </div>
     </header>
     <main>
       <section class="sp-hero" aria-labelledby="sp-title">

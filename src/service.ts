@@ -5,10 +5,14 @@ import './styles/service.css';
 import { Logo } from './presentation/brand';
 import { Footer } from './presentation/components/Footer';
 import { openImageViewer } from './presentation/components/ImageViewer';
+import { createSiteSearch } from './presentation/search/SearchPanel';
 
 // A service page (services/<slug>.html). Its content is already in the HTML, written at build
 // time for search engines; this only adds the logo, the shared footer and full-screen photos.
 document.querySelector('.sp-brand')?.append(Logo('horizontal'));
+
+// The site search; these pages sit one folder below the site root.
+document.querySelector('.sp-bar-end')?.prepend(createSiteSearch('../').button);
 
 document.querySelectorAll<HTMLImageElement>('.sp-grid img, .sp-hero-img img').forEach((img) => {
   const open = document.createElement('button');

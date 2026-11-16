@@ -6,8 +6,13 @@ import { JsonVillaRepository } from './infrastructure/JsonVillaRepository';
 import { renderVilla, renderVillaError } from './presentation/villa/VillaPage';
 import { Logo } from './presentation/brand';
 import { Footer } from './presentation/components/Footer';
+import { createSiteSearch } from './presentation/search/SearchPanel';
 
 document.querySelector('.vbar-brand')?.append(Logo('horizontal'));
+
+// The site search, beside the catalogue's own index button.
+const search = createSiteSearch('./');
+document.getElementById('vbar-index')?.before(search.button);
 
 // Composition root of a project catalogue page (the villa and every project page share it).
 // The page names its data file on <body data-catalogue>, relative to public/data/.

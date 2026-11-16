@@ -22,6 +22,7 @@ import { Nav, type NavLink } from './components/Nav';
 import { Products } from './components/Products';
 import { Services } from './components/Services';
 import { h } from './dom';
+import { createSiteSearch } from './search/SearchPanel';
 
 const NAV_LINKS: readonly NavLink[] = [
   { id: 'about', label: 'من نحن' },
@@ -87,7 +88,8 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
     Faq(profile.faq, next()),
     Contact(company, profile.contact));
 
-  root.replaceChildren(Nav(company, NAV_LINKS), main, Footer({
+  const search = createSiteSearch('./');
+  root.replaceChildren(Nav(company, NAV_LINKS, search.button), main, Footer({
     name: company.name,
     tagline: company.tagline,
     home: '#top',

@@ -1,6 +1,7 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { basename, resolve } from 'node:path';
 import { defineConfig } from 'vite';
+import { searchIndexPlugin } from './build/searchIndex';
 import { seoPlugin } from './build/seo';
 import { writeServicePages } from './build/servicePages';
 
@@ -32,5 +33,6 @@ export default defineConfig({
   },
   // Titles, descriptions, link previews, schema.org data, sitemap.xml, robots.txt and llms.txt,
   // all from public/data/seo.json and the content files.
-  plugins: [seoPlugin(__dirname)],
+  // search-index.json for the site search.
+  plugins: [seoPlugin(__dirname), searchIndexPlugin(__dirname)],
 });
