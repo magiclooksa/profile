@@ -99,9 +99,12 @@ export const clientsDecoder = object<Clients>({
 
 export const contactDecoder = object<Contact>({
   phone: nullable(string),
+  whatsapp: nullable(string),
+  handle: nullable(string),
   email: nullable(string),
   website: nullable(string),
   address: nullable(string),
+  mapQuery: nullable(string),
   mapUrl: nullable(string),
   mapImage: media,
 });

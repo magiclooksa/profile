@@ -4,13 +4,13 @@ import { describe, expect, it } from 'vitest';
 import { JsonProfileRepository, type JsonFetcher } from '../src/infrastructure/JsonProfileRepository';
 import { cataloguesDecoder } from '../src/infrastructure/schemas';
 import { jsonLd, seoDecoder, serviceGraph } from './seo';
-import { loadServicePages, servicePageHtml } from './servicePages';
+import { collectionService, loadSite, servicePageHtml } from './site';
 
 const ROOT = join(import.meta.dirname, '..');
 const readJson = (file: string): unknown => JSON.parse(readFileSync(join(ROOT, 'public/data', file), 'utf8'));
-const pages = loadServicePages(ROOT);
+const ctx = loadSite(ROOT);
+const pages = ctx.profile.servicePages;
 const catalogues = cataloguesDecoder(readJson('catalogues.json'), 'catalogues.json');
-const ctx = { pages, catalogues, closingLine: 'تواصل معنا' };
 
 describe('service pages data', () => {
   it('has unique slugs, existing photos and known catalogues', () => {
@@ -29,6 +29,22 @@ describe('service pages data', () => {
   });
 });
 
+describe('the site data', () => {
+  it('gives every old photo collection a service page', () => {
+    ctx.profile.company.collections.forEach((_, i) => {
+      const slug = collectionService(ctx.site, i + 1);
+      expect(pages.some((p) => p.slug === slug), `collection ${i + 1}`).toBe(true);
+    });
+  });
+
+  it('points only at services and projects that exist', () => {
+    for (const slug of Object.values(ctx.site.productServices)) expect(pages.some((p) => p.slug === slug), slug).toBe(true);
+    for (const href of [...ctx.site.featuredProjects, ...ctx.site.contracting.projects]) {
+      expect(catalogues.some((c) => c.href === href), href).toBe(true);
+    }
+  });
+});
+
 describe('service page HTML', () => {
   const page = pages[0]!;
   const html = servicePageHtml(page, ctx);
@@ -42,6 +58,7 @@ describe('service page HTML', () => {
 
   it('links home, to its catalogues and to the other services', () => {
     expect(html).toContain('href="../index.html"');
+    expect(html).toContain('href="../contact.html?service=');
     for (const href of page.catalogues) expect(html).toContain(`href="../${href}"`);
     for (const other of pages.slice(1)) expect(html).toContain(`href="${other.slug}.html"`);
   });

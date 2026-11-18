@@ -10,7 +10,7 @@ const fromDisk: JsonFetcher = async (file) => JSON.parse(readFileSync(join(DATA_
 describe('JsonProfileRepository', () => {
   it('loads every data file shipped with the site', async () => {
     const profile = await new JsonProfileRepository(fromDisk).load();
-    expect(profile.company.name.en).toBe('MAGIC LOOK');
+    expect(profile.company.name.en).toBe('Magic Look');
     expect(profile.journey.steps).toHaveLength(15);
     expect(profile.projects.length).toBeGreaterThan(0);
   });

@@ -1,8 +1,14 @@
 {
-  "phone": null,
+  "phone": "05 35 34 65 55",
+  "whatsapp": "966535346555",
+  "handle": "@MAJICLOOK",
   "email": null,
-  "website": null,
-  "address": null,
-  "mapUrl": null,
-  "mapImage": { "src": null, "caption": "خريطة موقع المعرض" }
+  "website": "mgiclook.com",
+  "address": "الدمام - حي المنار - شارع ابوبكر الصديق - امام بنك الراجحي",
+  "mapQuery": "26.384721,50.053813",
+  "mapUrl": "https://www.google.com/maps/search/?api=1&query=26.384721%2C50.053813",
+  "mapImage": {
+    "src": null,
+    "caption": "خريطة موقع المعرض"
+  }
 }

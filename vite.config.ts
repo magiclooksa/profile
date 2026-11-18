@@ -3,6 +3,7 @@ import { basename, resolve } from 'node:path';
 import { defineConfig } from 'vite';
 import { searchIndexPlugin } from './build/searchIndex';
 import { seoPlugin } from './build/seo';
+import { sitePlugin } from './build/site';
 import { writeServicePages } from './build/servicePages';
 
 // One page per service, written from public/data/service-pages.json before Vite reads its inputs.
@@ -20,10 +21,14 @@ export default defineConfig({
   build: {
     target: 'es2022',
     outDir: 'dist',
-    // The profile, the villa catalogue, one page per project catalogue and one per service.
+    // The main pages, the villa, one page per project and one per service.
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+        services: resolve(__dirname, 'services.html'),
+        contracting: resolve(__dirname, 'contracting.html'),
+        projects: resolve(__dirname, 'projects.html'),
+        contact: resolve(__dirname, 'contact.html'),
         villa: resolve(__dirname, 'villa-wood.html'),
         ...Object.fromEntries(catalogues().filter((c) => c.href !== 'villa-wood.html')
           .map((c) => [c.href.replace(/.html$/, ''), resolve(__dirname, c.href)])),
@@ -34,5 +39,5 @@ export default defineConfig({
   // Titles, descriptions, link previews, schema.org data, sitemap.xml, robots.txt and llms.txt,
   // all from public/data/seo.json and the content files.
   // search-index.json for the site search.
-  plugins: [seoPlugin(__dirname), searchIndexPlugin(__dirname)],
+  plugins: [sitePlugin(__dirname), seoPlugin(__dirname), searchIndexPlugin(__dirname)],
 });

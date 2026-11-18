@@ -10,8 +10,8 @@
 
 html.search-open { overflow: hidden }
 
-.search-dialog { width: min(760px, calc(100% - 32px)); max-width: none; max-height: min(82dvh, 760px); margin: 8vh auto auto; padding: 0; border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--bg); color: var(--fg); box-shadow: 0 30px 80px -20px #1a2a2680; overflow: hidden; font-family: var(--font-ar) }
-.search-dialog::backdrop { background: #1a2a26b3; backdrop-filter: blur(3px) }
+.search-dialog { width: min(760px, calc(100% - 32px)); max-width: none; max-height: min(82dvh, 760px); margin: 8vh auto auto; padding: 0; border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--bg); color: var(--fg); box-shadow: 0 30px 80px -20px #253a3580; overflow: hidden; font-family: var(--font-ar) }
+.search-dialog::backdrop { background: #253a35b3; backdrop-filter: blur(3px) }
 .search-dialog[open] { display: flex }
 @media (prefers-reduced-motion: no-preference) {
   .search-dialog[open] { animation: search-in .28s var(--ease-out) }

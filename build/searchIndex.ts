@@ -11,6 +11,7 @@ import {
   cataloguesDecoder, companyDecoder, faqDecoder, productsDecoder, servicePagesDecoder,
 } from '../src/infrastructure/schemas';
 import { villaDecoder } from '../src/infrastructure/villaSchema';
+import { collectionHref, type SiteData } from './site';
 
 /** Where a catalogue page keeps its data: the villa at the top, every project in projects/. */
 export const catalogueDataFile = (href: string): string =>
@@ -71,6 +72,7 @@ export function buildSearchIndex(root: string): SearchDoc[] {
   const faq = faqDecoder(read('faq.json'), 'faq.json');
   const services = servicePagesDecoder(read('service-pages.json'), 'service-pages.json');
   const catalogues = cataloguesDecoder(read('catalogues.json'), 'catalogues.json');
+  const site = read('site.json') as SiteData;
 
   const docs: SearchDoc[] = [];
 
@@ -97,7 +99,7 @@ export function buildSearchIndex(root: string): SearchDoc[] {
     }));
   }
 
-  // Photos of our work on the profile, each with its own address (collection-<section>-<item>).
+  // Photos of our work, each with its own address on its service page.
   company.collections.forEach((c, i) => c.items.forEach((item, j) => docs.push({
     id: `work:${i + 1}-${j + 1}`,
     kind: 'work',
@@ -106,14 +108,14 @@ export function buildSearchIndex(root: string): SearchDoc[] {
     text: short(`${item.image.caption}. ${c.text}`),
     keywords: [c.kicker, item.tag ?? '', ...(item.palette ?? []).map((p) => p.name), ...(item.spots ?? []).map((s) => s.title)]
       .filter(Boolean),
-    href: `index.html#collection-${i + 1}-${j + 1}`,
+    href: collectionHref(site, i + 1, j + 1),
     image: item.image.src,
   })));
 
   for (const p of products.items) {
     docs.push({
       id: `category:${p.name}`, kind: 'category', title: p.name, subtitle: 'منتجاتنا',
-      text: products.intro, keywords: [], href: 'index.html#products', image: null,
+      text: products.intro, keywords: [], href: 'services.html#products', image: null,
     });
   }
 
@@ -122,18 +124,20 @@ export function buildSearchIndex(root: string): SearchDoc[] {
     text: q.answer, keywords: [], href: 'index.html#faq', image: null,
   }));
 
-  const section = (id: string, title: string, text: string, keywords: string[]): SearchDoc => ({
+  const section = (id: string, title: string, text: string, keywords: string[], href = `index.html#${id}`): SearchDoc => ({
     id: `section:${id}`, kind: 'section', title, subtitle: company.name.ar, text: short(text), keywords,
-    href: `index.html#${id}`, image: null,
+    href, image: null,
   });
   docs.push(
     section('about', 'من نحن', `${company.about.lead} ${company.about.paragraphs.join(' ')}`, ['نبذة', 'المؤسسة', 'رؤيتنا', 'رسالتنا', 'about']),
     section('ceo', 'كلمة الرئيس التنفيذي', 'كلمة الرئيس التنفيذي للنظرة الساحرة', ['المدير', 'الرئيس التنفيذي', 'ceo']),
-    section('services', 'خدماتنا', 'التصميم الداخلي والديكور والتأثيث', ['خدمات', 'services']),
-    section('journey', 'رحلة العمل معنا', 'خطوات العمل من التواصل الأولي حتى التسليم وخدمة ما بعد البيع', ['خطوات', 'مراحل', 'تنفيذ', 'تسليم', 'ما بعد البيع']),
-    section('levels', 'مستويات التعامل', 'شراء قطعة، أو تطوير جزء من غرفة، أو تصميم غرفة كاملة، أو تأثيث مساحة كاملة', ['أسعار', 'باقات', 'مستويات']),
+    section('services', 'خدماتنا', 'التصميم الداخلي والديكور والتأثيث', ['خدمات', 'services'], 'services.html'),
+    section('contracting', site.contracting.kicker, site.contracting.lead, ['مقاولات', 'مقاول', 'مطور عقاري', 'تنفيذ مشاريع', 'تسعير'], 'contracting.html'),
+    section('projects', 'مشاريعنا', 'فلل ومجالس وصالات من تصميم النظرة الساحرة', ['مشاريع', 'أعمال', 'projects'], 'projects.html'),
+    section('journey', 'رحلة العمل معنا', 'خطوات العمل من التواصل الأولي حتى التسليم وخدمة ما بعد البيع', ['خطوات', 'مراحل', 'تنفيذ', 'تسليم', 'ما بعد البيع'], 'services.html#journey'),
+    section('levels', 'مستويات التعامل', 'شراء قطعة، أو تطوير جزء من غرفة، أو تصميم غرفة كاملة، أو تأثيث مساحة كاملة', ['أسعار', 'باقات', 'مستويات'], 'services.html#levels'),
     section('clients', 'عملاؤنا', 'الأفراد والأعمال وقطاع المشاريع', ['عملاء', 'شركاء', 'شهادات']),
-    section('contact', 'تواصل معنا', 'الجوال والبريد الإلكتروني وموقع المعرض', ['تواصل', 'جوال', 'رقم', 'واتساب', 'عنوان', 'موقع', 'المعرض', 'contact']),
+    section('contact', 'تواصل معنا', 'الجوال والبريد الإلكتروني وموقع المعرض', ['تواصل', 'جوال', 'رقم', 'واتساب', 'عنوان', 'موقع', 'المعرض', 'contact'], 'contact.html'),
   );
 
   return docs;

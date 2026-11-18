@@ -100,7 +100,7 @@ describe('the real site index', () => {
   it('answers typical customer searches', () => {
     expect(index.search('مجلس مغربي').hits[0]?.doc.title).toContain('مغربي');
     expect(index.search('وحدة تلفزيون').hits[0]?.doc.kind).toBe('service');
-    expect(index.search('رقم الجوال').hits[0]?.doc.href).toBe('index.html#contact');
+    expect(index.search('رقم الجوال').hits[0]?.doc.href).toBe('contact.html');
     expect(index.search('طاوله طعام').hits.length).toBeGreaterThan(0);
   });
 

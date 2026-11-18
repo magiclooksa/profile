@@ -14,6 +14,7 @@ import type { Villa } from '../src/domain/villa';
 import { array, DataError, nullable, numberIn, object, string, type Decoder } from '../src/infrastructure/decoders';
 import { JsonProfileRepository, type JsonFetcher } from '../src/infrastructure/JsonProfileRepository';
 import { villaDecoder } from '../src/infrastructure/villaSchema';
+import { collectionHref, loadSite, PAGE_FILES, pageMeta, type PageKey } from './site';
 
 // ─── settings (public/data/seo.json) ────────────────────────────────────────────────────────────
 
@@ -318,8 +319,29 @@ export function serviceGraph(seo: SeoSettings, profile: Profile, service: Servic
       '@id': `${page.url}#breadcrumb`,
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: profile.company.name.ar, item: seo.siteUrl },
-        { '@type': 'ListItem', position: 2, name: 'خدماتنا', item: `${seo.siteUrl}#services` },
+        { '@type': 'ListItem', position: 2, name: 'خدماتنا', item: `${seo.siteUrl}services.html` },
         { '@type': 'ListItem', position: 3, name: service.name, item: page.url },
+      ],
+    },
+  ];
+}
+
+/** One of the main pages: what it is, and the way back home. */
+export function pageGraph(seo: SeoSettings, profile: Profile, label: string, page: PageMeta): Json[] {
+  const { business, website } = ids(seo);
+  return [
+    ...brandNodes(seo, profile),
+    {
+      '@type': 'WebPage', '@id': `${page.url}#webpage`, url: page.url, name: page.title,
+      description: page.description, inLanguage: 'ar', isPartOf: { '@id': website }, about: { '@id': business },
+      breadcrumb: { '@id': `${page.url}#breadcrumb` },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': `${page.url}#breadcrumb`,
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: profile.company.name.ar, item: seo.siteUrl },
+        { '@type': 'ListItem', position: 2, name: label, item: page.url },
       ],
     },
   ];
@@ -370,40 +392,6 @@ const section = (title: string, ...body: string[]): string =>
   `<section><h2>${t(title)}</h2>${body.join('')}</section>`;
 const p = (s: string | null): string => (s ? `<p>${t(s)}</p>` : '');
 
-/** The profile's text as plain HTML: what the page says, without the photos and motion. */
-export function homePrerender(profile: Profile): string {
-  const { company, ceo, services, products, advantages, journey, levels, clients, faq, contact, catalogues } = profile;
-  const contactLines = [
-    contact.phone && `الجوال: ${contact.phone}`,
-    contact.email && `البريد الإلكتروني: ${contact.email}`,
-    contact.website && `الموقع الإلكتروني: ${contact.website}`,
-    contact.address && `العنوان: ${contact.address}، المملكة العربية السعودية`,
-  ].filter((l): l is string => Boolean(l));
-  return `<div class="prerender">${[
-    `<header><h1>${t(company.name.ar)} | ${t(company.name.en)}</h1>${p(`${company.entityType} ${company.field}`)}${p(company.tagline)}</header>`,
-    section('من نحن', p(company.about.lead), ...company.about.paragraphs.map(p),
-      ...company.statements.map((s) => `<h3>${t(s.title)}</h3>${p(s.text)}`)),
-    section(ceo.title,
-      ceo.quote ? `<blockquote>${p(ceo.quote)}</blockquote>` : '',
-      ...ceo.message.map(p),
-      p(ceo.name ? `${ceo.name}، ${ceo.role}` : ceo.role)),
-    section('خدماتنا', p(services.intro), list('ul', services.items.map((s) => s.text)), p(services.note),
-      profile.servicePages.length > 0 ? `<ul>${profile.servicePages.map((s) =>
-        `<li><a href="./services/${escape(s.slug)}.html">${t(s.heading)}</a></li>`).join('')}</ul>` : ''),
-    section('منتجاتنا', p(products.intro), list('ul', products.items.map((i) => i.name))),
-    section('التصميم الداخلي', p(company.interiorDesign.intro), list('ul', company.interiorDesign.traits)),
-    section(`لماذا ${company.name.ar}؟`, ...advantages.items.map((a) => `<h3>${t(a.title)}</h3>${p(a.text)}`)),
-    section('رحلة العمل معنا', p(journey.intro), list('ol', journey.steps)),
-    section('مستويات التعامل', p(levels.intro), list('ol', levels.items)),
-    catalogues.length > 0 ? section('كتالوجات المشاريع', `<ul>${catalogues.map((c) =>
-      `<li><a href="./${escape(c.href)}">${t(c.name.ar)}</a>: ${t(c.tagline)}</li>`).join('')}</ul>`) : '',
-    section('عملاؤنا', ...clients.segments.map((s) => `<h3>${t(s.title)}</h3>${p(s.text)}`)),
-    faq.items.length > 0 ? section('الأسئلة الشائعة', p(faq.intro),
-      ...faq.items.map((q) => `<h3>${t(q.question)}</h3>${p(q.answer)}`)) : '',
-    section('تواصل معنا', p(company.closingLine), list('ul', contactLines)),
-  ].join('')}</div>`;
-}
-
 /** A catalogue's text as plain HTML: its story, spaces, pieces and materials. */
 export function cataloguePrerender(villa: Villa): string {
   const material = new Map(villa.materials.map((m) => [m.id, m.name]));
@@ -417,7 +405,7 @@ export function cataloguePrerender(villa: Villa): string {
       p(`الخامات: ${x.materials.map((id) => material.get(id) ?? id).join('، ')}. التشطيب: ${x.finish}`),
     ].join(''))),
     section('الخامات', list('ul', villa.materials.map((m) => `${m.name}: ${m.note}`))),
-    section(villa.closing.title, p(villa.closing.text), `<p><a href="./index.html">${t('الملف التعريفي للنظرة الساحرة')}</a></p>`),
+    section(villa.closing.title, p(villa.closing.text), `<p><a href="./projects.html">${t('كل مشاريع النظرة الساحرة')}</a></p>`),
   ].join('')}</div>`;
 }
 
@@ -484,6 +472,13 @@ export function llmsTxt(seo: SeoSettings, profile: Profile): string {
       ...profile.servicePages.map((s) => `- [${s.heading}](${absolute(seo, `services/${s.slug}.html`)}): ${s.description}`),
       '',
     ] : []),
+    '## صفحات الموقع',
+    '',
+    `- [الخدمات](${absolute(seo, 'services.html')})`,
+    `- [المقاولات وتنفيذ المشاريع](${absolute(seo, 'contracting.html')})`,
+    `- [المشاريع](${absolute(seo, 'projects.html')})`,
+    `- [تواصل معنا](${absolute(seo, 'contact.html')})`,
+    '',
     '## المنتجات',
     '',
     products.intro,
@@ -514,6 +509,8 @@ export function llmsTxt(seo: SeoSettings, profile: Profile): string {
       contact.phone && `- الجوال: ${contact.phone}`,
       contact.email && `- البريد الإلكتروني: ${contact.email}`,
       contact.website && `- الموقع الإلكتروني: ${contact.website}`,
+      contact.whatsapp && `- واتساب: https://wa.me/${contact.whatsapp}`,
+      contact.handle && `- الحساب: ${contact.handle}`,
       contact.address && `- العنوان: ${contact.address}، المملكة العربية السعودية`,
       contact.mapUrl && `- الخريطة: ${contact.mapUrl}`,
       ...seo.social.map((s) => `- ${s}`),
@@ -572,15 +569,20 @@ export function seoPlugin(root: string): Plugin {
       const file = basename(ctx.filename);
       const siteName = `${profile.company.name.ar} | ${profile.company.name.en}`;
 
-      if (file === 'index.html') {
+      const key = /<body[^>]*data-page="([a-z]+)"/.exec(html)?.[1];
+      if (key && key in PAGE_FILES) {
+        const site = loadSite(root);
+        const inner = key === 'home' ? null : pageMeta(site, key as Exclude<PageKey, 'home'>);
         const page: PageMeta = {
-          title: seo.title, description: seo.description, url: seo.siteUrl,
+          title: inner?.title ?? seo.title,
+          description: inner?.description ?? seo.description,
+          url: key === 'home' ? seo.siteUrl : absolute(seo, PAGE_FILES[key as PageKey]),
           image: absolute(seo, seo.image.src), alt: seo.image.alt, keywords: seo.keywords,
         };
+        const graph = inner ? pageGraph(seo, profile, inner.heading, page) : homeGraph(seo, profile);
         return html
-          .replace(/<meta name="description"[^>]*>/, `<meta name="description" content="${escape(seo.description)}" />`)
-          .replace(/<title>[^<]*<\/title>/, `<title>${escape(seo.title)}</title>\n    ${headTags(seo, siteName, page, homeGraph(seo, profile))}`)
-          .replace(/(<div id="app"[^>]*>)/, `$1${homePrerender(profile)}`);
+          .replace(/<meta name="description"[^>]*>/, `<meta name="description" content="${escape(page.description)}" />`)
+          .replace(/<title>[^<]*<\/title>/, `<title>${escape(page.title)}</title>\n    ${headTags(seo, siteName, page, graph)}`);
       }
 
       const serviceSlug = /<body[^>]*data-service="([^"]+)"/.exec(html)?.[1];
@@ -617,6 +619,7 @@ export function seoPlugin(root: string): Plugin {
       this.emitFile({
         type: 'asset', fileName: 'sitemap.xml', source: sitemap([
           { url: seo.siteUrl, image: absolute(seo, seo.image.src) },
+          ...(['services', 'contracting', 'projects', 'contact'] as const).map((k) => ({ url: absolute(seo, PAGE_FILES[k]), image: null })),
           ...profile.servicePages.map((s) => ({
             url: absolute(seo, `services/${s.slug}.html`),
             image: s.images[0] ? absolute(seo, s.images[0].src) : null,
@@ -628,10 +631,12 @@ export function seoPlugin(root: string): Plugin {
       // A small page per product photo at s/<id>/: crawlers ignore "#id" and do not run scripts,
       // so each product needs its own URL for its link preview. People who open it are sent on.
       const siteName = `${profile.company.name.ar} | ${profile.company.name.en}`;
+      const { site } = loadSite(root);
       profile.company.collections.forEach((c, i) => c.items.forEach((item, j) => {
         const id = `collection-${i + 1}-${j + 1}`;
         if (!existsSync(resolve(root, `public/og/${id}.jpg`))) return;
-        const target = `../../#${id}`;
+        const href = collectionHref(site, i + 1, j + 1);
+        const target = `../../${href}`;
         const title = `${item.title} | ${profile.company.name.ar}`;
         const meta: PageMeta = {
           title, description: item.image.caption, url: `${seo.siteUrl}s/${id}/`,
@@ -646,7 +651,7 @@ export function seoPlugin(root: string): Plugin {
     <title>${escape(title)}</title>
     <meta name="description" content="${escape(item.image.caption)}" />
     <meta name="robots" content="noindex, follow" />
-    <link rel="canonical" href="${seo.siteUrl}#${id}" />
+    <link rel="canonical" href="${absolute(seo, href)}" />
     ${previewTags(seo, siteName, meta).join('\n    ')}
     <meta http-equiv="refresh" content="0; url=${target}" />
     <script>location.replace(${JSON.stringify(target)})</script>

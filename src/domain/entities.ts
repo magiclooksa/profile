@@ -166,9 +166,15 @@ export interface Clients {
 
 export interface Contact {
   readonly phone: Maybe<string>;
+  /** International number without + or spaces, for wa.me links. */
+  readonly whatsapp: Maybe<string>;
+  /** The social media handle, e.g. @name. */
+  readonly handle: Maybe<string>;
   readonly email: Maybe<string>;
   readonly website: Maybe<string>;
   readonly address: Maybe<string>;
+  /** "latitude,longitude" of the showroom, for the map on the contact page. */
+  readonly mapQuery: Maybe<string>;
   readonly mapUrl: Maybe<string>;
   readonly mapImage: Media;
 }

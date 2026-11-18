@@ -367,19 +367,17 @@ const Closing = (v: Villa): HTMLElement =>
       h('h2', { class: 'reveal' }, v.closing.title),
       h('p', { class: 'reveal' }, v.closing.text),
       h('div', { class: 'v-closing-ctas reveal' },
-        h('a', { class: 'v-btn solid', href: 'index.html#contact' }, 'تواصل معنا'),
-        h('a', { class: 'v-btn ghost', href: 'index.html' }, 'العودة إلى الملف التعريفي'))));
+        h('a', { class: 'v-btn solid', href: `contact.html?project=${encodeURIComponent(v.name.ar)}#quote` }, 'اطلب عرض سعر لمشروع مشابه'),
+        h('a', { class: 'v-btn ghost', href: 'projects.html' }, 'كل المشاريع'))));
 
 /** The top bar turns solid after the cover, shows reading progress and names the chapter in view. */
 function initBar(sections: readonly HTMLElement[]): void {
   const bar = document.getElementById('vbar');
   const now = document.getElementById('vbar-now');
-  const cover = document.getElementById('cover');
   if (!bar) return;
   let frame = 0;
   const update = (): void => {
     frame = 0;
-    bar.classList.toggle('is-solid', scrollY > (cover?.offsetHeight ?? 0) - bar.offsetHeight - 1);
     const max = document.documentElement.scrollHeight - innerHeight;
     bar.style.setProperty('--p', (max > 0 ? Math.min(1, scrollY / max) : 0).toFixed(4));
   };
