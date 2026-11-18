@@ -1,6 +1,6 @@
 /** Play only visible media; pause hidden slides and background tabs. */
-export function initMediaPlayback(root: HTMLElement): void {
-  const videos = Array.from(root.querySelectorAll('video'));
+export function initMediaPlayback(root: ParentNode & Node, selector = 'video'): void {
+  const videos = Array.from(root.querySelectorAll<HTMLVideoElement>(selector));
   const visible = new Set<HTMLVideoElement>();
   const sync = (video: HTMLVideoElement): void => {
     if (visible.has(video) && !document.hidden && !video.closest('[aria-hidden="true"]') &&

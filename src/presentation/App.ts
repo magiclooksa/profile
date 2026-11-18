@@ -1,5 +1,4 @@
 import type { Profile } from '../domain/entities';
-import { initJourneyFill } from './behaviors/journeyFill';
 import { initNavState } from './behaviors/navState';
 import { initReveal } from './behaviors/reveal';
 import { initMediaPlayback } from './behaviors/mediaPlayback';
@@ -11,15 +10,12 @@ import { Ceo } from './components/Ceo';
 import { Faq } from './components/Faq';
 import { Clients } from './components/Clients';
 import { CollectionSection } from './components/CollectionSection';
-import { Contact } from './components/Contact';
 import { Catalogues } from './components/Catalogues';
 import { FilmSection } from './components/FilmSection';
 import { Footer } from './components/Footer';
 import { Hero } from './components/Hero';
-import { Journey } from './components/Journey';
 import { Levels } from './components/Levels';
 import { Nav, type NavLink } from './components/Nav';
-import { Products } from './components/Products';
 import { Services } from './components/Services';
 import { h } from './dom';
 import { createSiteSearch } from './search/SearchPanel';
@@ -32,6 +28,16 @@ const NAV_LINKS: readonly NavLink[] = [
   { href: 'projects.html', label: 'المشاريع' },
   { href: 'contact.html', label: 'تواصل معنا' },
 ];
+
+/** Sections that moved off this page: links people already shared still reach them. */
+function followMovedSection(): void {
+  const id = decodeURIComponent(location.hash.slice(1));
+  const moved: Readonly<Record<string, string>> = {
+    contact: 'contact.html', products: 'services.html#products', journey: 'services.html#journey',
+  };
+  const target = moved[id] ?? (/^collection-8(-\d+)?$/.test(id) ? `services/custom-sofas.html#${id}` : null);
+  if (target) location.replace(target);
+}
 
 /** Builds the whole page from the profile and wires its behaviours. */
 export function renderApp(root: HTMLElement, profile: Profile): void {
@@ -63,14 +69,11 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
     collection(13),
     collection(0),
     collection(16),
-    Products(profile.products, next()),
     collection(5),
     collection(12),
     film(1),
     Advantages(profile.advantages, company, next()),
-    collection(7),
     collection(1),
-    Journey(profile.journey, next()),
     collection(2),
     collection(9),
     Levels(profile.levels, next()),
@@ -84,8 +87,7 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
     collection(3),
     ...company.collections.slice(17).map((c, i) => CollectionSection(c, i + 17)),
     Clients(profile.clients, next()),
-    Faq(profile.faq, next()),
-    Contact(company, profile.contact));
+    Faq(profile.faq, next()));
 
   const search = createSiteSearch('./');
   root.replaceChildren(Nav(company, NAV_LINKS, search.button), main, Footer({
@@ -100,7 +102,7 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
       ...(company.feature ? [{ href: company.feature.href, label: `كتالوج ${company.feature.title}` }] : []),
     ],
     contact: profile.contact,
-    contactHref: '#contact',
+    contactHref: 'contact.html',
   }));
   // The <title> is written at build time from data/seo.json; keep it, search engines read the rendered one.
 
@@ -108,7 +110,7 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
   initReveal(root);
   initMediaPlayback(root);
   initScrollProgress(root);
-  initJourneyFill(document.getElementById('track'));
+  followMovedSection();
   scrollToHash();
 }
 

@@ -239,7 +239,11 @@ const offers = (title: string, items: readonly string[]): string => `
             <ul>${items.map((s) => `<li>${esc(s)}</li>`).join('')}</ul>
           </div>`;
 
-const filmBand = (root: string, number: number, video: string, poster: string | null, title: string, text: string): string => `
+/**
+ * `silentLoop` films play by themselves without sound while on screen (src/presentation/siteChrome.ts).
+ * They keep their controls until that script runs, for visitors who get no automatic motion.
+ */
+const filmBand = (root: string, number: number, video: string, poster: string | null, title: string, text: string, silentLoop = false): string => `
     <section class="journey pg-film">
       ${PATTERN}
       <div class="wrap pg-film-in">
@@ -250,7 +254,7 @@ const filmBand = (root: string, number: number, video: string, poster: string | 
         </div>
         <div class="pg-film-box reveal">
           <i class="corner tr" aria-hidden="true"></i><i class="corner bl" aria-hidden="true"></i>
-          <video controls preload="none" playsinline${poster ? ` poster="${asset(root, poster)}"` : ''} aria-label="${esc(title)}">
+          <video controls ${silentLoop ? 'data-silent-loop muted loop preload="metadata"' : 'preload="none"'} playsinline${poster ?` poster="${asset(root, poster)}"` : ''} aria-label="${esc(title)}">
             <source src="${asset(root, video)}" type="video/mp4" />
           </video>
         </div>
@@ -355,7 +359,7 @@ ${section({ id: 'products', number: next(), title: 'منتجاتنا', intro: pr
               : `<div class="prod reveal" ${stagger(i, 5)}>${inner}</div>`;
           }).join('\n          ')}
         </div>`)}
-${showcase?.video.src ? filmBand(r, next(), showcase.video.src, showcase.video.poster ?? null, showcase.title, showcase.text) : ''}
+${showcase?.video.src ? filmBand(r, next(), showcase.video.src, showcase.video.poster ?? null, showcase.title, showcase.text, true) : ''}
 ${section({ id: 'levels', number: next(), title: 'مستويات التعامل', intro: levels.intro }, `
         <ol class="lvls">
           ${levels.items.map((t, i) => `<li class="lvl reveal" ${stagger(i, 5)}><span class="latin">${i + 1}</span><p>${esc(t)}</p></li>`).join('\n          ')}

@@ -394,7 +394,7 @@ const p = (s: string | null): string => (s ? `<p>${t(s)}</p>` : '');
 
 /** The profile's text as plain HTML: what the page says, without the photos and motion. */
 export function homePrerender(profile: Profile): string {
-  const { company, ceo, services, products, advantages, journey, levels, clients, faq, contact, catalogues } = profile;
+  const { company, ceo, services, advantages, levels, clients, faq, contact, catalogues } = profile;
   const contactLines = [
     contact.phone && `الجوال: ${contact.phone}`,
     contact.email && `البريد الإلكتروني: ${contact.email}`,
@@ -412,17 +412,15 @@ export function homePrerender(profile: Profile): string {
     section('خدماتنا', p(services.intro), list('ul', services.items.map((s) => s.text)), p(services.note),
       profile.servicePages.length > 0 ? `<ul>${profile.servicePages.map((s) =>
         `<li><a href="./services/${escape(s.slug)}.html">${t(s.heading)}</a></li>`).join('')}</ul>` : ''),
-    section('منتجاتنا', p(products.intro), list('ul', products.items.map((i) => i.name))),
     section('التصميم الداخلي', p(company.interiorDesign.intro), list('ul', company.interiorDesign.traits)),
     section(`لماذا ${company.name.ar}؟`, ...advantages.items.map((a) => `<h3>${t(a.title)}</h3>${p(a.text)}`)),
-    section('رحلة العمل معنا', p(journey.intro), list('ol', journey.steps)),
     section('مستويات التعامل', p(levels.intro), list('ol', levels.items)),
     catalogues.length > 0 ? section('كتالوجات المشاريع', `<ul>${catalogues.map((c) =>
       `<li><a href="./${escape(c.href)}">${t(c.name.ar)}</a>: ${t(c.tagline)}</li>`).join('')}</ul>`) : '',
     section('عملاؤنا', ...clients.segments.map((s) => `<h3>${t(s.title)}</h3>${p(s.text)}`)),
     faq.items.length > 0 ? section('الأسئلة الشائعة', p(faq.intro),
       ...faq.items.map((q) => `<h3>${t(q.question)}</h3>${p(q.answer)}`)) : '',
-    section('تواصل معنا', p(company.closingLine), list('ul', contactLines)),
+    section('تواصل معنا', list('ul', contactLines)),
   ].join('')}</div>`;
 }
 

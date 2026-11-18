@@ -40,7 +40,7 @@ export function createProductSheet(villa: Villa, goToSpace: (spaceId: string) =>
   const body = h('div', { class: 'v-sheet-body' },
     h('div', { class: 'v-sheet-gallery' }, h('figure', { class: 'v-sheet-stage' }, frame, stageCaption), thumbs),
     h('div', { class: 'v-sheet-info' }, no, title, en, text, specs,
-      h('a', { class: 'v-btn', href: 'index.html#contact' }, 'اطلب قطعة مماثلة', h('span', { 'aria-hidden': 'true' }, '←'))));
+      h('a', { class: 'v-btn', href: 'contact.html#quote' }, 'اطلب قطعة مماثلة', h('span', { 'aria-hidden': 'true' }, '←'))));
   const dialog = h('dialog', { class: 'v-sheet', 'aria-labelledby': 'v-sheet-title' },
     h('div', { class: 'v-sheet-bar' }, counter, category, h('span', { class: 'v-sheet-navs' }, prev, next), close),
     body);
