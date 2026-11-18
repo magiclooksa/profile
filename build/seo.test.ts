@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest';
 import { JsonProfileRepository, type JsonFetcher } from '../src/infrastructure/JsonProfileRepository';
 import { villaDecoder } from '../src/infrastructure/villaSchema';
 import {
-  catalogueGraph, cataloguePrerender, homeGraph, jsonLd, llmsTxt, robots, seoDecoder, sitemap,
+  catalogueGraph, cataloguePrerender, homeGraph, homePrerender, jsonLd, llmsTxt, robots, seoDecoder, sitemap,
   type PageMeta,
 } from './seo';
 
@@ -63,6 +63,21 @@ describe('schema.org data', () => {
 });
 
 describe('page text for crawlers', () => {
+  it('carries the profile, the CEO message and the FAQ', async () => {
+    const profile = await loadProfile();
+    const html = homePrerender(profile);
+    expect(html).toContain(`<h1>${profile.company.name.ar}`);
+    expect(html).toContain(profile.ceo.title);
+    expect(html).toContain(profile.faq.items[0]?.question ?? '');
+    expect(html).toContain('href="./villa-wood.html"');
+  });
+
+  it('escapes text from the data', async () => {
+    const profile = await loadProfile();
+    const html = homePrerender({ ...profile, company: { ...profile.company, tagline: '<b>x</b> & y' } });
+    expect(html).toContain('&lt;b&gt;x&lt;/b&gt; &amp; y');
+  });
+
   it('carries a catalogue\'s pieces and materials', () => {
     const villa = villaDecoder(readJson('villa-wood.json'), 'villa-wood.json');
     const html = cataloguePrerender(villa);

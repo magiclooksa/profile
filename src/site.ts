@@ -7,15 +7,6 @@ import { openImageViewer } from './presentation/components/ImageViewer';
 // Every page's content is already in its HTML (see build/site.ts). This adds what needs a browser.
 initSiteChrome(document.body.dataset.root ?? './');
 
-/** Old one-page links such as "#contact" or "#collection-3-2" lead to the page that holds them now. */
-function followLegacyHash(): void {
-  const data = document.getElementById('legacy-routes');
-  const id = decodeURIComponent(location.hash.slice(1));
-  if (!data?.textContent || !id || document.getElementById(id)) return;
-  const target = (JSON.parse(data.textContent) as Record<string, string>)[id];
-  if (target) location.replace(target);
-}
-
 function initZoom(): void {
   document.querySelectorAll<HTMLImageElement>('[data-zoom] img').forEach((img) => {
     const open = document.createElement('button');
@@ -73,13 +64,6 @@ function initQuoteForm(): void {
   });
 }
 
-function initHeroVideo(): void {
-  const video = document.querySelector<HTMLVideoElement>('[data-hero-video]');
-  if (video && matchMedia('(prefers-reduced-motion: reduce)').matches) video.pause();
-}
-
-followLegacyHash();
 initZoom();
 initProjectFilters();
 initQuoteForm();
-initHeroVideo();

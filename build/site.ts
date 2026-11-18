@@ -3,7 +3,9 @@
  * without scripts and search engines see all of it. src/site.ts only adds the menu, search,
  * the photo viewer and the quote form.
  *
- * Root pages (index.html, services.html, …) are small templates naming a page on <body data-page>;
+ * The home page is the exception: src/main.ts draws it in the browser.
+ *
+ * Root pages (services.html, contact.html, …) are small templates naming a page on <body data-page>;
  * sitePlugin fills them. Catalogue pages take the shared header and footer through the same plugin.
  */
 import { readFileSync } from 'node:fs';
@@ -99,20 +101,6 @@ export function collectionHref(site: SiteData, collection: number, item?: number
   const slug = collectionService(site, collection);
   if (!slug) return PAGE_FILES.services;
   return `services/${slug}.html${item === undefined ? '' : `#collection-${collection}-${item}`}`;
-}
-
-/** Old one-page addresses, so links people already shared still arrive somewhere useful. */
-function legacyRoutes(ctx: SiteContext): Record<string, string> {
-  const routes: Record<string, string> = {
-    services: 'services.html', products: 'services.html#products', journey: 'services.html#journey',
-    levels: 'services.html#levels', projects: 'projects.html', catalogues: 'projects.html',
-    contact: 'contact.html',
-  };
-  ctx.profile.company.collections.forEach((c, i) => {
-    routes[`collection-${i + 1}`] = collectionHref(ctx.site, i + 1);
-    c.items.forEach((_, j) => { routes[`collection-${i + 1}-${j + 1}`] = collectionHref(ctx.site, i + 1, j + 1) });
-  });
-  return routes;
 }
 
 const digits = (s: string): string => s.replace(/\D/g, '');
@@ -272,152 +260,6 @@ export function siteFooter(ctx: SiteContext, root: string): string {
 
 const projectsByHref = (ctx: SiteContext, hrefs: readonly string[]): CatalogueCard[] =>
   hrefs.map((h) => ctx.profile.catalogues.find((c) => c.href === h)).filter((c): c is CatalogueCard => c !== undefined);
-
-/** "من الفكرة إلى آخر تفصيلة… نصمم…" becomes two display lines and a supporting sentence. */
-function splitTagline(tagline: string): { first: string; second: string; rest: string } {
-  const [lead = tagline, ...others] = tagline.split('…');
-  const cut = lead.indexOf(' إلى ');
-  return {
-    first: cut > 0 ? lead.slice(0, cut) : lead,
-    second: cut > 0 ? lead.slice(cut + 1) : '',
-    rest: others.join('…').trim(),
-  };
-}
-
-const mosaicTile = (root: string, href: string, image: Photo, title: string, note: string): string => `
-          <li class="rv"><a class="tile" href="${root}${esc(href)}">
-            ${photo(root, image)}
-            <span class="tile-text"><b>${esc(title)}</b><small>${esc(note)}</small></span>
-          </a></li>`;
-
-function homePage(ctx: SiteContext): string {
-  const { company, ceo, advantages, clients, faq, servicePages, journey } = ctx.profile;
-  const { contracting } = ctx.site;
-  const heroMedia = company.hero;
-  const r = './';
-  const headline = splitTagline(company.tagline);
-  const featuredProjects = projectsByHref(ctx, ctx.site.featuredProjects);
-  const featured = featuredProjects[0];
-  const secondPhoto = company.interiorDesign.images[0];
-  return `
-    <section class="hx on-green" aria-labelledby="page-title">
-      <img class="hx-art" src="assets/brand/half-symbol.svg" alt="" aria-hidden="true" />
-      <div class="wrap hx-grid">
-        <div class="hx-copy">
-          <p class="kicker">${esc(`${company.entityType} ${company.name.ar} ${company.field}`)}</p>
-          <h1 id="page-title">
-            <span class="hx-line"><span>${esc(headline.first)}</span></span>
-            <span class="hx-line"><span><em>${esc(headline.second)}</em></span></span>
-          </h1>
-          <p class="hx-sub">${esc(headline.rest)}</p>
-          <div class="actions">
-            ${button('contact.html#quote', 'اطلب عرض سعر')}
-            ${button('projects.html', 'تصفّح مشاريعنا', 'line')}
-          </div>
-        </div>
-        <div class="hx-stage">
-          <span class="hx-ring" aria-hidden="true"></span>
-          <div class="hx-arch">
-            ${heroMedia?.poster ? `<img src="${asset(r, heroMedia.poster)}" alt="" fetchpriority="high" />` : ''}
-            ${heroMedia?.src ? `<video data-hero-video autoplay muted loop playsinline preload="metadata"${heroMedia.poster ? ` poster="${asset(r, heroMedia.poster)}"` : ''} aria-hidden="true"><source src="${asset(r, heroMedia.src)}" type="video/mp4" /></video>` : ''}
-          </div>
-          <span class="hx-latin" aria-hidden="true">${NAME_EN}</span>${featured ? `
-          <a class="hx-feature" href="${esc(featured.href)}">
-            <img src="${asset(r, featured.cover.src)}" alt="" decoding="async" />
-            <span><small>مشروع مميز</small><b>${esc(featured.name.ar)}</b></span>
-          </a>` : ''}
-        </div>
-      </div>
-      <div class="wrap">
-        <ul class="hx-index">
-          <li><a href="services.html"><b>${servicePages.length}</b><span>خدمات للتصميم والتأثيث</span></a></li>
-          <li><a href="projects.html"><b>${ctx.profile.catalogues.length}</b><span>مشروعًا بتفاصيلها</span></a></li>
-          <li><a href="services.html#journey"><b>${journey.steps.length}</b><span>خطوة نتابعها معك</span></a></li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="sec about" id="about">
-      <div class="wrap">
-        <p class="kicker rv">من نحن</p>
-        <p class="about-lead rv">${esc(company.about.lead)}</p>
-        <div class="about-grid">
-          ${company.about.image.src ? `<figure class="about-main rv" data-zoom>${photo(r, { src: company.about.image.src, caption: company.about.image.caption })}</figure>` : ''}
-          <div class="about-side rv">
-            ${company.about.paragraphs.map((p) => `<p>${esc(p)}</p>`).join('\n            ')}
-            ${secondPhoto?.src ? `<figure data-zoom>${photo(r, { src: secondPhoto.src, caption: secondPhoto.caption })}</figure>` : ''}
-          </div>
-        </div>
-        <ul class="trio">
-          ${company.statements.map((s) => `<li class="rv"><h3>${esc(s.title)}</h3><p>${esc(s.text)}</p></li>`).join('\n          ')}
-        </ul>
-      </div>
-    </section>
-
-    <section class="sec sec-tint" id="services">
-      <div class="wrap">
-        <div class="head-row">${sectionHead('الخدمات', 'خدمة لكل مساحة في بيتك أو مشروعك', ctx.profile.services.intro)}
-          ${button('services.html', `كل الخدمات (${servicePages.length})`, 'line')}
-        </div>
-        <ul class="mosaic mosaic-services">${servicePages.slice(0, 6).map((s) => s.images[0] ? mosaicTile(r, `services/${s.slug}.html`, s.images[0], s.name, s.kicker) : '').join('')}
-        </ul>
-      </div>
-    </section>
-
-    <section class="band on-green" id="contracting">
-      <img class="band-art" src="assets/brand/half-symbol.svg" alt="" aria-hidden="true" />
-      <div class="wrap band-in">
-        <div class="rv">
-          <p class="kicker">${esc(contracting.kicker)}</p>
-          <h2>${esc(contracting.heading)}</h2>
-          <p>${esc(contracting.lead)}</p>
-          <div class="actions">${button('contracting.html', 'تفاصيل الخدمة')}</div>
-        </div>
-        <ol class="band-steps rv">${contracting.phases.map((p, i) => `<li><span class="num">${String(i + 1).padStart(2, '0')}</span><b>${esc(p.title)}</b></li>`).join('')}</ol>
-      </div>
-    </section>
-
-    <section class="sec" id="projects">
-      <div class="wrap">
-        <div class="head-row">${sectionHead('المشاريع', 'من أعمالنا')}
-          ${button('projects.html', `كل المشاريع (${ctx.profile.catalogues.length})`, 'line')}
-        </div>
-        <ul class="mosaic mosaic-projects">${featuredProjects.slice(0, 6).map((c) => mosaicTile(r, c.href, c.cover, c.name.ar, c.tagline)).join('')}
-        </ul>
-      </div>
-    </section>
-
-    <section class="sec sec-tint" id="why">
-      <div class="wrap">${sectionHead('لماذا نحن', `لماذا ${company.name.ar}؟`)}
-        <ol class="why">
-          ${advantages.items.map((a, i) => `<li class="rv"><span class="big-num">${i + 1}</span><h3>${esc(a.title)}</h3><p>${esc(a.text)}</p></li>`).join('\n          ')}
-        </ol>
-      </div>
-    </section>
-
-    <section class="sec" id="clients">
-      <div class="wrap">${sectionHead('عملاؤنا', 'نخدم البيوت والأعمال والمشاريع', journey.intro)}
-        <ul class="trio">
-          ${clients.segments.map((s) => `<li class="rv"><h3>${esc(s.title)}</h3><p>${esc(s.text)}</p></li>`).join('\n          ')}
-        </ul>
-      </div>
-    </section>
-
-    <section class="sec sec-tint" id="ceo">
-      <div class="wrap ceo rv">
-        <p class="kicker">${esc(ceo.title)}</p>
-        ${ceo.quote ? `<blockquote>${esc(ceo.quote)}</blockquote>` : ''}
-        ${ceo.message.map((p) => `<p>${esc(p)}</p>`).join('\n        ')}
-        <p class="ceo-by">${esc(ceo.name ? `${ceo.name}، ${ceo.role}` : ceo.role)}</p>
-      </div>
-    </section>
-
-    <section class="sec" id="faq">
-      <div class="wrap narrow">${sectionHead('الأسئلة الشائعة', 'إجابات سريعة', faq.intro)}${faqList(faq.items)}
-      </div>
-    </section>
-${quoteBand(ctx, r, 'ابدأ مشروعك معنا', company.closingLine, '', 'مشروع جديد')}`;
-}
 
 function servicesPage(ctx: SiteContext): string {
   const { services, products, levels, journey, company, servicePages } = ctx.profile;
@@ -618,17 +460,17 @@ function contactPage(ctx: SiteContext): string {
     </section>`;
 }
 
-const PAGE_RENDER: Readonly<Record<PageKey, (ctx: SiteContext) => string>> = {
-  home: homePage, services: servicesPage, contracting: contractingPage, projects: projectsPage, contact: contactPage,
+type GeneratedPage = Exclude<PageKey, 'home'>;
+
+const PAGE_RENDER: Readonly<Record<GeneratedPage, (ctx: SiteContext) => string>> = {
+  services: servicesPage, contracting: contractingPage, projects: projectsPage, contact: contactPage,
 };
 
-export function pageBody(ctx: SiteContext, key: PageKey): string {
-  const legacy = key === 'home'
-    ? `\n    <script type="application/json" id="legacy-routes">${JSON.stringify(legacyRoutes(ctx)).replace(/</g, '\\u003c')}</script>` : '';
+export function pageBody(ctx: SiteContext, key: GeneratedPage): string {
   return `${siteHeader('./', key)}
     <main id="main">${PAGE_RENDER[key](ctx)}
     </main>
-    ${siteFooter(ctx, './')}${legacy}`;
+    ${siteFooter(ctx, './')}`;
 }
 
 /** Title, description and share text of a root page. */
@@ -758,7 +600,7 @@ export function sitePlugin(root: string): Plugin {
     transformIndexHtml(html, hook) {
       if (!html.includes('<!--site:')) return html;
       const ctx = loadSite(root);
-      const key = /<body[^>]*data-page="([a-z]+)"/.exec(html)?.[1] as PageKey | undefined;
+      const key = /<body[^>]*data-page="([a-z]+)"/.exec(html)?.[1] as GeneratedPage | undefined;
       let out = html;
       if (key && key in PAGE_RENDER) out = out.replace('<!--site:page-->', () => pageBody(ctx, key));
       // Catalogue pages sit at the site root and belong under "projects".

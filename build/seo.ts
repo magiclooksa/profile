@@ -392,6 +392,40 @@ const section = (title: string, ...body: string[]): string =>
   `<section><h2>${t(title)}</h2>${body.join('')}</section>`;
 const p = (s: string | null): string => (s ? `<p>${t(s)}</p>` : '');
 
+/** The profile's text as plain HTML: what the page says, without the photos and motion. */
+export function homePrerender(profile: Profile): string {
+  const { company, ceo, services, products, advantages, journey, levels, clients, faq, contact, catalogues } = profile;
+  const contactLines = [
+    contact.phone && `الجوال: ${contact.phone}`,
+    contact.email && `البريد الإلكتروني: ${contact.email}`,
+    contact.website && `الموقع الإلكتروني: ${contact.website}`,
+    contact.address && `العنوان: ${contact.address}، المملكة العربية السعودية`,
+  ].filter((l): l is string => Boolean(l));
+  return `<div class="prerender">${[
+    `<header><h1>${t(company.name.ar)} | ${t(company.name.en)}</h1>${p(`${company.entityType} ${company.field}`)}${p(company.tagline)}</header>`,
+    section('من نحن', p(company.about.lead), ...company.about.paragraphs.map(p),
+      ...company.statements.map((s) => `<h3>${t(s.title)}</h3>${p(s.text)}`)),
+    section(ceo.title,
+      ceo.quote ? `<blockquote>${p(ceo.quote)}</blockquote>` : '',
+      ...ceo.message.map(p),
+      p(ceo.name ? `${ceo.name}، ${ceo.role}` : ceo.role)),
+    section('خدماتنا', p(services.intro), list('ul', services.items.map((s) => s.text)), p(services.note),
+      profile.servicePages.length > 0 ? `<ul>${profile.servicePages.map((s) =>
+        `<li><a href="./services/${escape(s.slug)}.html">${t(s.heading)}</a></li>`).join('')}</ul>` : ''),
+    section('منتجاتنا', p(products.intro), list('ul', products.items.map((i) => i.name))),
+    section('التصميم الداخلي', p(company.interiorDesign.intro), list('ul', company.interiorDesign.traits)),
+    section(`لماذا ${company.name.ar}؟`, ...advantages.items.map((a) => `<h3>${t(a.title)}</h3>${p(a.text)}`)),
+    section('رحلة العمل معنا', p(journey.intro), list('ol', journey.steps)),
+    section('مستويات التعامل', p(levels.intro), list('ol', levels.items)),
+    catalogues.length > 0 ? section('كتالوجات المشاريع', `<ul>${catalogues.map((c) =>
+      `<li><a href="./${escape(c.href)}">${t(c.name.ar)}</a>: ${t(c.tagline)}</li>`).join('')}</ul>`) : '',
+    section('عملاؤنا', ...clients.segments.map((s) => `<h3>${t(s.title)}</h3>${p(s.text)}`)),
+    faq.items.length > 0 ? section('الأسئلة الشائعة', p(faq.intro),
+      ...faq.items.map((q) => `<h3>${t(q.question)}</h3>${p(q.answer)}`)) : '',
+    section('تواصل معنا', p(company.closingLine), list('ul', contactLines)),
+  ].join('')}</div>`;
+}
+
 /** A catalogue's text as plain HTML: its story, spaces, pieces and materials. */
 export function cataloguePrerender(villa: Villa): string {
   const material = new Map(villa.materials.map((m) => [m.id, m.name]));
@@ -582,7 +616,8 @@ export function seoPlugin(root: string): Plugin {
         const graph = inner ? pageGraph(seo, profile, inner.heading, page) : homeGraph(seo, profile);
         return html
           .replace(/<meta name="description"[^>]*>/, `<meta name="description" content="${escape(page.description)}" />`)
-          .replace(/<title>[^<]*<\/title>/, `<title>${escape(page.title)}</title>\n    ${headTags(seo, siteName, page, graph)}`);
+          .replace(/<title>[^<]*<\/title>/, `<title>${escape(page.title)}</title>\n    ${headTags(seo, siteName, page, graph)}`)
+          .replace(/(<div id="app"[^>]*>)/, (m) => `${m}${homePrerender(profile)}`);
       }
 
       const serviceSlug = /<body[^>]*data-service="([^"]+)"/.exec(html)?.[1];
