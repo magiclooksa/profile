@@ -11,11 +11,11 @@
 
   /* brand palette */
   --ml-green: #253A35;      /* Deep Forest Green  C79 M51 Y62 K63 */
-  --ml-green-deep: #253A35;
+  --ml-green-deep: #1A2A26; /* darker shade for cinematic bands */
   --ml-green-80: #51615D;
   --ml-green-60: #7C8986;
   --ml-bronze: #A68356;     /* Antique Bronze     C29 M42 Y66 K20 */
-  --ml-bronze-ink: #51615D; /* small accents on light grounds: bronze itself is too light to read */
+  --ml-bronze-ink: #85663E; /* bronze deepened for small text on light grounds (WCAG AA) */
   --ml-beige: #D6C9B5;      /* Warm Stone Beige   C18 M19 Y30 K2 */
   --ml-beige-60: #E6DFD3;
   --ml-beige-40: #EFE9E1;
@@ -27,7 +27,7 @@
   --surface: #FFFFFF;
   --sunk: var(--ml-beige-60);
   --fg: var(--ml-green);
-  --muted: #51615D;
+  --muted: #56635F;
   --line: #DED4C4;
   --accent: var(--ml-bronze-ink);
   --accent-2: var(--ml-bronze);
@@ -43,8 +43,8 @@
   --logo-ar: var(--ml-bronze);
   --logo-en: var(--ml-green);
 
-  --font-ar: "Lama Sans", "Segoe UI", Tahoma, sans-serif;
-  --font-en: "Lama Sans", "Segoe UI", Arial, sans-serif;
+  --font-ar: "Lama Sans", "Noto Kufi Arabic", "Segoe UI", Tahoma, sans-serif;
+  --font-en: "Lama Sans", "Almarai", "Noto Kufi Arabic", Arial, sans-serif;
   --step--1: clamp(.85rem, .8rem + .2vw, .95rem);
   --step-0: clamp(1rem, .95rem + .25vw, 1.12rem);
   --step-1: clamp(1.15rem, 1.02rem + .6vw, 1.6rem);

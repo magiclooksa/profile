@@ -1,7 +1,3 @@
-import './styles/tokens.css';
-import './styles/base.css';
-import './styles/site.css';
-import './styles/villa.css';
 import { httpFetcher } from './infrastructure/JsonProfileRepository';
 import { JsonVillaRepository } from './infrastructure/JsonVillaRepository';
 import { renderVilla, renderVillaError } from './presentation/villa/VillaPage';

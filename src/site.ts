@@ -1,6 +1,3 @@
-import './styles/tokens.css';
-import './styles/base.css';
-import './styles/site.css';
 import { initSiteChrome } from './presentation/siteChrome';
 import { openImageViewer } from './presentation/components/ImageViewer';
 

@@ -2,7 +2,6 @@
  * The site search: a button that opens a full search panel (also on Ctrl/⌘+K or "/").
  * The index (search-index.json) loads the first time the panel opens or the button is hovered.
  */
-import '../../styles/search.css';
 import { SEARCH_KINDS, type SearchDoc, type SearchKind } from '../../domain/search';
 import { highlight, SearchIndex, type SearchHit } from '../../application/search';
 import { glyph } from '../behaviors/share';

@@ -3,7 +3,7 @@ import { basename, resolve } from 'node:path';
 import { defineConfig } from 'vite';
 import { searchIndexPlugin } from './build/searchIndex';
 import { seoPlugin } from './build/seo';
-import { sitePlugin } from './build/site';
+import { pageStylesPlugin, sitePlugin } from './build/site';
 import { writeServicePages } from './build/servicePages';
 
 // One page per service, written from public/data/service-pages.json before Vite reads its inputs.
@@ -39,5 +39,5 @@ export default defineConfig({
   // Titles, descriptions, link previews, schema.org data, sitemap.xml, robots.txt and llms.txt,
   // all from public/data/seo.json and the content files.
   // search-index.json for the site search.
-  plugins: [sitePlugin(__dirname), seoPlugin(__dirname), searchIndexPlugin(__dirname)],
+  plugins: [pageStylesPlugin(), sitePlugin(__dirname), seoPlugin(__dirname), searchIndexPlugin(__dirname)],
 });
