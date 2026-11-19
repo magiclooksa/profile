@@ -1,6 +1,6 @@
 # برومبتات قطع الأثاث وتفاصيلها — المجلس الكلاسيكي الفضي — MAGIC LOOK
 
-**THE CLASSIC SILVER MAJLIS** · صفحة الموقع: `classic-silver-majlis-fireplace.html` · مجلد الصور: `D:/magic-look/products/Interiors/Classic_Silver_Majlis_Fireplace/`
+**THE CLASSIC SILVER MAJLIS** · صفحة الموقع: `classic-silver-majlis-fireplace.html` · مجلد الصور: `E:/magiclook/magic-look/products/Interiors/Classic_Silver_Majlis_Fireplace/`
 
 هذا الملف بنفس أسلوب ملفات فيلا الخشب (`vila01`): **كل قطعة أثاث لوحدها** كصورة منتج، ثم **لقطات قريبة** تعرض الخامات والصنعة. ملف المشروع الأصلي في مجلد الصور يصوّر الفراغ كاملاً، وهذا الملف يكمّله.
 

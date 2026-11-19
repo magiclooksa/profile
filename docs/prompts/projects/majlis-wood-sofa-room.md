@@ -1,6 +1,6 @@
 # برومبتات قطع الأثاث وتفاصيلها — المجلس العاجي بالخشب العسلي — MAGIC LOOK
 
-**THE IVORY & HONEY OAK MAJLIS** · صفحة الموقع: `majlis-wood-sofa-room.html` · مجلد الصور: `D:/magic-look/products/Interiors/Majlis_Wood_Sofa_Room/`
+**THE IVORY & HONEY OAK MAJLIS** · صفحة الموقع: `majlis-wood-sofa-room.html` · مجلد الصور: `E:/magiclook/magic-look/products/Interiors/Majlis_Wood_Sofa_Room/`
 
 هذا الملف بنفس أسلوب ملفات فيلا الخشب (`vila01`): **كل قطعة أثاث لوحدها** كصورة منتج، ثم **لقطات قريبة** تعرض الخامات والصنعة. ملف المشروع الأصلي في مجلد الصور يصوّر الفراغ كاملاً، وهذا الملف يكمّله.
 

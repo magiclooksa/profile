@@ -1,6 +1,6 @@
 # برومبتات قطع الأثاث وتفاصيلها — المجلس المغربي بالفوانيس — MAGIC LOOK
 
-**THE MOROCCAN LANTERN MAJLIS** · صفحة الموقع: `moroccan-majlis-lanterns.html` · مجلد الصور: `D:/magic-look/products/Interiors/Moroccan_Majlis_Lanterns/`
+**THE MOROCCAN LANTERN MAJLIS** · صفحة الموقع: `moroccan-majlis-lanterns.html` · مجلد الصور: `E:/magiclook/magic-look/products/Interiors/Moroccan_Majlis_Lanterns/`
 
 هذا الملف بنفس أسلوب ملفات فيلا الخشب (`vila01`): **كل قطعة أثاث لوحدها** كصورة منتج، ثم **لقطات قريبة** تعرض الخامات والصنعة. ملف المشروع الأصلي في مجلد الصور يصوّر الفراغ كاملاً، وهذا الملف يكمّله.
 

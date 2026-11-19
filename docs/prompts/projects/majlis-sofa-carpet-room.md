@@ -1,6 +1,6 @@
 # برومبتات قطع الأثاث وتفاصيلها — المجلس العاجي بالسجادة المزخرفة — MAGIC LOOK
 
-**THE IVORY CARPET MAJLIS** · صفحة الموقع: `majlis-sofa-carpet-room.html` · مجلد الصور: `D:/magic-look/products/Interiors/Majlis_Sofa_Carpet_Room/`
+**THE IVORY CARPET MAJLIS** · صفحة الموقع: `majlis-sofa-carpet-room.html` · مجلد الصور: `E:/magiclook/magic-look/products/Interiors/Majlis_Sofa_Carpet_Room/`
 
 هذا الملف بنفس أسلوب ملفات فيلا الخشب (`vila01`): **كل قطعة أثاث لوحدها** كصورة منتج، ثم **لقطات قريبة** تعرض الخامات والصنعة. ملف المشروع الأصلي في مجلد الصور يصوّر الفراغ كاملاً، وهذا الملف يكمّله.
 

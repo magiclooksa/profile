@@ -1,6 +1,6 @@
 # برومبتات قطع الأثاث وتفاصيلها — مجلس النقوش المفرّغة — MAGIC LOOK
 
-**THE CARVED FRETWORK MAJLIS** · صفحة الموقع: `floor-majlis-room.html` · مجلد الصور: `D:/magic-look/products/Interiors/Floor_Majlis_Room/`
+**THE CARVED FRETWORK MAJLIS** · صفحة الموقع: `floor-majlis-room.html` · مجلد الصور: `E:/magiclook/magic-look/products/Interiors/Floor_Majlis_Room/`
 
 هذا الملف بنفس أسلوب ملفات فيلا الخشب (`vila01`): **كل قطعة أثاث لوحدها** كصورة منتج، ثم **لقطات قريبة** تعرض الخامات والصنعة. ملف المشروع الأصلي في مجلد الصور يصوّر الفراغ كاملاً، وهذا الملف يكمّله.
 

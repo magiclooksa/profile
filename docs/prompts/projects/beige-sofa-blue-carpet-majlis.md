@@ -1,6 +1,6 @@
 # برومبتات قطع الأثاث وتفاصيلها — مجلس الكنب البيج والسجادة الزرقاء — MAGIC LOOK
 
-**THE BEIGE & BLUE MAJLIS** · صفحة الموقع: `beige-sofa-blue-carpet-majlis.html` · مجلد الصور: `D:/magic-look/products/Interiors/Beige_Sofa_Blue_Carpet_Majlis/`
+**THE BEIGE & BLUE MAJLIS** · صفحة الموقع: `beige-sofa-blue-carpet-majlis.html` · مجلد الصور: `E:/magiclook/magic-look/products/Interiors/Beige_Sofa_Blue_Carpet_Majlis/`
 
 هذا الملف بنفس أسلوب ملفات فيلا الخشب (`vila01`): **كل قطعة أثاث لوحدها** كصورة منتج، ثم **لقطات قريبة** تعرض الخامات والصنعة. ملف المشروع الأصلي في مجلد الصور يصوّر الفراغ كاملاً، وهذا الملف يكمّله.
 

@@ -1,6 +1,6 @@
 # برومبتات قطع الأثاث وتفاصيلها — فيلا الكنب المنحني وطقم الطعام — MAGIC LOOK
 
-**THE CURVED SOFA & DINING VILLA** · صفحة الموقع: `curved-sofa-wingchair-dining-villa.html` · مجلد الصور: `D:/magic-look/products/Interiors/Curved_Sofa_Wingchair_Dining_Villa/`
+**THE CURVED SOFA & DINING VILLA** · صفحة الموقع: `curved-sofa-wingchair-dining-villa.html` · مجلد الصور: `E:/magiclook/magic-look/products/Interiors/Curved_Sofa_Wingchair_Dining_Villa/`
 
 هذا الملف بنفس أسلوب ملفات فيلا الخشب (`vila01`): **كل قطعة أثاث لوحدها** كصورة منتج، ثم **لقطات قريبة** تعرض الخامات والصنعة. ملف المشروع الأصلي في مجلد الصور يصوّر الفراغ كاملاً، وهذا الملف يكمّله.
 

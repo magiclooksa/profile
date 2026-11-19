@@ -1,6 +1,6 @@
 # برومبتات قطع الأثاث وتفاصيلها — صالة الخشب الرمادي والأرفف المضيئة — MAGIC LOOK
 
-**THE GREY OAK & LIT SHELVES** · صفحة الموقع: `grey-wood-lit-shelves-room.html` · مجلد الصور: `D:/magic-look/products/Interiors/Grey_Wood_Lit_Shelves_Room/`
+**THE GREY OAK & LIT SHELVES** · صفحة الموقع: `grey-wood-lit-shelves-room.html` · مجلد الصور: `E:/magiclook/magic-look/products/Interiors/Grey_Wood_Lit_Shelves_Room/`
 
 هذا الملف بنفس أسلوب ملفات فيلا الخشب (`vila01`): **كل قطعة أثاث لوحدها** كصورة منتج، ثم **لقطات قريبة** تعرض الخامات والصنعة. ملف المشروع الأصلي في مجلد الصور يصوّر الفراغ كاملاً، وهذا الملف يكمّله.
 

@@ -1,6 +1,6 @@
 # برومبتات قطع الأثاث وتفاصيلها — الصالة البيضاء الحديثة — MAGIC LOOK
 
-**THE WHITE MODERN LIVING** · صفحة الموقع: `white-modern-living-room.html` · مجلد الصور: `D:/magic-look/products/Interiors/White_Modern_Living_Room/`
+**THE WHITE MODERN LIVING** · صفحة الموقع: `white-modern-living-room.html` · مجلد الصور: `E:/magiclook/magic-look/products/Interiors/White_Modern_Living_Room/`
 
 هذا الملف بنفس أسلوب ملفات فيلا الخشب (`vila01`): **كل قطعة أثاث لوحدها** كصورة منتج، ثم **لقطات قريبة** تعرض الخامات والصنعة. ملف المشروع الأصلي في مجلد الصور يصوّر الفراغ كاملاً، وهذا الملف يكمّله.
 
