@@ -11,7 +11,6 @@ import { CollectionSection } from './components/CollectionSection';
 import { FilmSection } from './components/FilmSection';
 import { Footer } from './components/Footer';
 import { Hero } from './components/Hero';
-import { Levels } from './components/Levels';
 import { Nav, type NavLink } from './components/Nav';
 import { h } from '../shared/dom';
 import { createSiteSearch } from './search/SearchPanel';
@@ -29,11 +28,19 @@ const NAV_LINKS: readonly NavLink[] = [
 function followMovedSection(): void {
   const id = decodeURIComponent(location.hash.slice(1));
   const moved: Readonly<Record<string, string>> = {
-    about: 'about.html', projects: 'projects.html', services: 'services.html', ceo: 'about.html#ceo', contact: 'contact.html', products: 'services.html#products', journey: 'services.html#journey',
+    about: 'about.html', projects: 'projects.html', services: 'services.html', levels: 'services.html#levels', ceo: 'about.html#ceo', contact: 'contact.html', products: 'services.html#products', journey: 'services.html#journey',
   };
-  const target = moved[id] ?? (/^collection-8(-\d+)?$/.test(id) ? `services/custom-sofas.html#${id}` : null);
+  const collection = /^collection-(\d+)(?:-\d+)?$/.exec(id)?.[1];
+  const service = collection ? MOVED_COLLECTIONS[Number(collection)] : undefined;
+  const target = moved[id] ?? (service ? `services/${service}.html#${id}` : null);
   if (target) location.replace(target);
 }
+
+/** Photo collections (numbered from 1) shown only on a service page now, and that page. */
+const MOVED_COLLECTIONS: Readonly<Record<number, string>> = {
+  4: 'kitchens-cabinets', 5: 'custom-sofas', 6: 'custom-sofas', 7: 'custom-sofas', 8: 'custom-sofas',
+  10: 'tv-wall-units', 11: 'custom-sofas',
+};
 
 /** Builds the whole page from the profile and wires its behaviours. */
 export function renderApp(root: HTMLElement, profile: Profile): void {
@@ -59,22 +66,14 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
     collection(15),
     collection(13),
     collection(0),
-    collection(5),
     collection(12),
     film(1),
     Advantages(profile.advantages, company, next()),
     collection(1),
     collection(2),
-    collection(9),
-    Levels(profile.levels, next()),
     collection(14),
-    collection(4),
-    collection(10),
     film(2),
-    collection(6),
-    film(3),
     ...company.films.slice(4).map((f, i) => FilmSection(f, i + 4)),
-    collection(3),
     ...company.collections.slice(17).map((c, i) => CollectionSection(c, i + 17)),
     Clients(profile.clients, next()),
     Faq(profile.faq, next()));

@@ -345,7 +345,7 @@ export function homePrerender(profile: Profile): string {
     section('خدماتنا', p(services.intro), '<p><a href="./services.html">تصفّح خدماتنا</a></p>'),
     section('التصميم الداخلي', p(company.interiorDesign.intro), list('ul', company.interiorDesign.traits)),
     section(`لماذا ${company.name.ar}؟`, ...advantages.items.map((a) => `<h3>${t(a.title)}</h3>${p(a.text)}`)),
-    section('مستويات التعامل', p(levels.intro), list('ol', levels.items)),
+    section('مستويات التعامل', p(levels.intro), '<p><a href="./services.html#levels">مستويات التعامل في صفحة الخدمات</a></p>'),
     catalogues.length > 0 ? section('كتالوجات المشاريع', `<ul>${catalogues.map((c) =>
       `<li><a href="./${escape(c.href)}">${t(c.name.ar)}</a>: ${t(c.tagline)}</li>`).join('')}</ul>`) : '',
     section('عملاؤنا', ...clients.segments.map((s) => `<h3>${t(s.title)}</h3>${p(s.text)}`)),
