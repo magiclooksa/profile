@@ -147,3 +147,39 @@ a.prod:hover p { color: var(--accent) }
 .footer-bar { padding-inline-end: 72px }
 
 @media print { .nav, .wa-float { display: none } }
+
+/* ─── about: how we work ────────────────────────────────────── */
+/* Five stages on one line, joined by a rule through their numbers; a vertical timeline on phones. */
+.how-stages { --gap: clamp(14px, 1.6vw, 24px); display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--gap); margin: 0; padding: 0; list-style: none; position: relative }
+.how-stages::before { content: ""; position: absolute; inset-inline: 28px; top: 28px; height: 1px; background: var(--line) }
+.how-stage { position: relative; display: flex; flex-direction: column; gap: 10px; min-width: 0 }
+.how-no {
+  position: relative; display: grid; place-items: center; width: 56px; height: 56px; margin-bottom: 8px;
+  background: var(--bg); border: 1px solid var(--accent-2); color: var(--accent); font-size: var(--step-1); font-weight: 500;
+}
+.how-stage:last-child .how-no { background: var(--band); border-color: var(--band); color: var(--band-fg) }
+.how-stage h3 { font-size: var(--step-1); line-height: 1.4 }
+.how-stage > p { color: var(--muted); font-size: var(--step--1); line-height: 1.8 }
+.how-stage ul { display: grid; gap: 6px; margin: 6px 0 0; padding: 14px 0 0; border-top: 1px solid var(--line); list-style: none }
+.how-stage ul li { position: relative; padding-inline-start: 16px; font-size: .88rem; line-height: 1.6 }
+.how-stage ul li::before { content: ""; position: absolute; inset-inline-start: 0; top: .62em; width: 6px; height: 6px; background: var(--accent-2) }
+@media (max-width: 980px) {
+  .how-stages { grid-template-columns: minmax(0, 1fr); gap: 0 }
+  .how-stages::before { inset-inline: auto; inset-inline-start: 28px; top: 28px; bottom: 28px; width: 1px; height: auto }
+  .how-stage { display: grid; grid-template-columns: 56px minmax(0, 1fr); column-gap: 18px; padding-bottom: 28px }
+  .how-no { grid-row: span 3; margin: 0 }
+  .how-stage ul { grid-column: 2 }
+}
+
+.how-style { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 56px); align-items: start }
+.how-traits { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; margin: 0; padding: 0; list-style: none; background: var(--line); border: 1px solid var(--line) }
+.how-traits li { display: flex; align-items: center; gap: 14px; min-height: 76px; padding: 14px 18px; background: var(--surface); font-size: var(--step--1); line-height: 1.6 }
+.how-traits span { flex: none; color: var(--accent); font-size: .85rem; font-weight: 500 }
+.how-photos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px }
+.how-photo { margin: 0; min-width: 0 }
+.how-photo .media { --media-ratio: 4 / 5 }
+.how-photo:nth-child(2) { margin-top: clamp(24px, 4vw, 56px) }
+.how-photos img { object-fit: cover }
+.how-photos figcaption { margin-top: 8px; color: var(--muted); font-size: .85rem }
+@media (max-width: 820px) { .how-style { grid-template-columns: minmax(0, 1fr) } }
+@media (max-width: 480px) { .how-traits { grid-template-columns: minmax(0, 1fr) } }

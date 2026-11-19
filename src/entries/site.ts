@@ -1,0 +1,87 @@
+import { initSiteChrome } from '../presentation/site/siteChrome';
+import { openImageViewer } from '../presentation/site/components/ImageViewer';
+import { Catalogues } from '../presentation/site/components/Catalogues';
+import type { CatalogueCard, Feature } from '../domain/entities';
+
+/** The projects page hero: the catalogue carousel, from the data the build wrote into the page. */
+function initCatalogueHero(): void {
+  const mount = document.querySelector<HTMLElement>('[data-catalogue-hero]');
+  const data = document.getElementById('catalogue-hero-data')?.textContent;
+  if (!mount || !data) return;
+  const { heading, cards, feature } = JSON.parse(data) as { heading: string; cards: CatalogueCard[]; feature: Feature | null };
+  const carousel = Catalogues(cards, feature);
+  if (!carousel) {
+    document.documentElement.classList.remove('js'); // nothing to show: keep the plain hero
+    return;
+  }
+  // The page keeps its main heading for screen readers and search engines; the slides carry h2s.
+  const title = document.createElement('h1');
+  title.className = 'visually-hidden';
+  title.textContent = heading;
+  mount.replaceChildren(title, carousel);
+}
+
+// Every page's content is already in its HTML (see tooling/vite/site.ts). This adds what needs a browser.
+initSiteChrome(document.body.dataset.root ?? './');
+
+function initZoom(): void {
+  document.querySelectorAll<HTMLImageElement>('[data-zoom] img').forEach((img) => {
+    const open = document.createElement('button');
+    open.type = 'button';
+    open.className = 'media-open';
+    open.setAttribute('aria-label', `تكبير الصورة: ${img.alt}`);
+    open.setAttribute('aria-haspopup', 'dialog');
+    open.addEventListener('click', () => openImageViewer(img.currentSrc || img.src, img.alt));
+    img.parentElement?.append(open);
+  });
+}
+
+function initProjectFilters(): void {
+  const bar = document.querySelector<HTMLElement>('[data-filters]');
+  const list = document.querySelector<HTMLElement>('[data-filter-list]');
+  if (!bar || !list) return;
+  bar.hidden = false;
+  const buttons = [...bar.querySelectorAll<HTMLButtonElement>('button')];
+  buttons.forEach((button) => button.addEventListener('click', () => {
+    const place = button.dataset.filter ?? '';
+    buttons.forEach((b) => b.setAttribute('aria-pressed', String(b === button)));
+    list.querySelectorAll<HTMLElement>('li').forEach((item) => {
+      item.hidden = place !== '' && item.dataset.place !== place;
+    });
+  }));
+}
+
+/** The quote form keeps nothing: it writes a WhatsApp message for the visitor to review and send. */
+function initQuoteForm(): void {
+  const form = document.querySelector<HTMLFormElement>('#quote-form');
+  if (!form) return;
+  const select = form.elements.namedItem('service') as HTMLSelectElement;
+  const details = form.elements.namedItem('details') as HTMLTextAreaElement;
+  const params = new URLSearchParams(location.search);
+  const wanted = params.get('type') ?? params.get('service');
+  if (wanted && [...select.options].some((o) => o.value === wanted)) select.value = wanted;
+  const project = params.get('project');
+  if (project) {
+    select.value = 'other';
+    details.value = `أرغب في مشروع مشابه لـ: ${project}`;
+  }
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const value = (name: string): string =>
+      (form.elements.namedItem(name) as HTMLInputElement).value.trim();
+    const lines = [
+      'السلام عليكم، أرغب في طلب عرض سعر.',
+      `الاسم: ${value('name')}`,
+      value('city') && `المدينة: ${value('city')}`,
+      `نوع الطلب: ${select.selectedOptions[0]?.text ?? ''}`,
+      value('details') && `التفاصيل: ${value('details')}`,
+    ].filter(Boolean);
+    window.open(`https://wa.me/${form.dataset.whatsapp}?text=${encodeURIComponent(lines.join('\n'))}`, '_blank', 'noopener');
+  });
+}
+
+initCatalogueHero();
+initZoom();
+initProjectFilters();
+initQuoteForm();

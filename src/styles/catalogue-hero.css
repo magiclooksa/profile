@@ -1,0 +1,126 @@
+/* The projects page hero: every project catalogue as a full-width carousel (src/presentation/site/components/Catalogues.ts). */
+/* Its dark theme, as for the site's other dark sections (showcase.css). */
+.feature-link { color: var(--band-fg); --accent: var(--ml-beige); --accent-2: var(--ml-beige-40); --muted: #CBC0AD; --line: #D6C9B540; --on-accent: var(--ml-green) }
+/* Before the script draws the carousel, keep its place, so the page does not jump. */
+.js [data-catalogue-hero] { min-height: min(820px, 90svh); background: #1a2a26 }
+.js [data-catalogue-hero] > .pg-hero { visibility: hidden }
+
+/* ── featured project: a banner that opens the villa catalogue ── */
+.feature { padding: 0 }
+.feature-link { position: relative; isolation: isolate; display: block; min-height: min(880px, 94svh); overflow: hidden; background: #1a2a26; text-decoration: none }
+.feature-link:focus-visible { outline: 3px solid #d6c9b5; outline-offset: -6px }
+/* the photo grows into the villa page's cover (same name there) */
+.feature-bg { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; transform: scale(1.06); transition: transform 1.8s var(--ease-out); view-transition-name: villa-cover }
+.feature-link:hover .feature-bg { transform: scale(1.01) }
+.feature-shade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(270deg, #111c19f2 0%, #111c19b8 36%, #111c1940 68%, #111c1926 100%), linear-gradient(0deg, #111c19b3, transparent 46%) }
+.feature-in { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); align-items: center; gap: clamp(32px, 6vw, 96px); min-height: inherit; padding-block: clamp(84px, 10vw, 140px) }
+.feature-copy { display: grid; justify-items: start; gap: 16px; max-width: 40em }
+.feature-kicker { display: inline-flex; align-items: center; gap: 12px; color: #d6c9b5; font-size: var(--step--1); font-weight: 700; letter-spacing: .03em }
+.feature-kicker::before { content: ""; width: 42px; height: 1px; background: currentColor }
+.feature-title { font-size: clamp(3rem, 1.2rem + 7.4vw, 8.4rem); font-weight: 300; line-height: 1.05; view-transition-name: villa-title }
+.feature-en { font-family: var(--font-en); font-weight: 300; font-size: clamp(1.35rem, 1rem + 1.3vw, 2.2rem); letter-spacing: .32em; color: #efe9e1; text-align: right }
+.feature-text { max-width: 34em; color: #e6dfd3 }
+.feature-facts { display: flex; flex-wrap: wrap; row-gap: 6px; padding: 0; list-style: none; color: #efe9e1; font-size: .92rem }
+.feature-facts li + li::before { content: ""; display: inline-block; width: 1px; height: .9em; margin-inline: 14px; background: #d6c9b580; vertical-align: middle }
+.feature-cta { display: inline-flex; align-items: center; gap: 14px; margin-top: 12px; padding: 14px 28px; border-radius: var(--r); background: #f7f4f0; color: #1a2a26; font-size: var(--step--1); font-weight: 700; transition: background .3s }
+.feature-cta i { font-style: normal; transition: transform .45s var(--ease) }
+.feature-link:hover .feature-cta { background: #d6c9b5 }
+.feature-link:hover .feature-cta i { transform: translateX(-8px) }
+/* three catalogue pages fanned out; they spread further on hover */
+.feature-pages { position: relative; justify-self: center; width: min(330px, 25vw); aspect-ratio: 3 / 4 }
+.feature-page { position: absolute; inset: 0; padding: 10px 10px 36px; background: #fbfaf8; box-shadow: 0 30px 70px #000a; transform-origin: 50% 100%; transition: transform 1.1s var(--ease-out) }
+.feature-page img { display: block; width: 100%; height: 100%; object-fit: cover }
+.feature-page b { position: absolute; right: 12px; bottom: 9px; color: #85663e; font-size: .78rem; font-weight: 700 }
+.feature-page-1 { transform: translate(-16%, 3%) rotate(-9deg) }
+.feature-page-2 { transform: translate(12%, -1%) rotate(6deg) }
+.feature-page-3 { transform: rotate(-1.5deg) }
+.feature-link:hover .feature-page-1 { transform: translate(-44%, 5%) rotate(-16deg) }
+.feature-link:hover .feature-page-2 { transform: translate(40%, 1%) rotate(13deg) }
+.feature-link:hover .feature-page-3 { transform: translateY(-5%) rotate(0deg) }
+/* a round "open" label that follows the mouse */
+.feature-cursor { position: absolute; z-index: 3; left: 0; top: 0; width: 116px; height: 116px; display: grid; place-items: center; border-radius: 50%; background: #d6c9b5; color: #1a2a26; font-size: .85rem; font-weight: 700; text-align: center; pointer-events: none; translate: calc(var(--cx, -200px) - 58px) calc(var(--cy, -200px) - 58px); scale: 0; transition: scale .35s var(--ease), translate .12s linear }
+.feature-link.is-pointing { cursor: none }
+.feature-link.is-pointing .feature-cursor { scale: 1 }
+@media (max-width: 860px) {
+  .feature-in { grid-template-columns: 1fr; align-content: end }
+  .feature-pages { display: none }
+  .feature-shade { background: linear-gradient(0deg, #111c19f2 0%, #111c19b8 48%, #111c1940 100%) }
+}
+@media (prefers-reduced-motion: reduce) { .feature-bg, .feature-page { transition: none } }
+
+/* long project names in the banner design: smaller and balanced so they stay whole */
+.feature-title.is-long { font-size: clamp(2.3rem, 1rem + 4.2vw, 5.6rem); line-height: 1.2; text-wrap: balance }
+
+/* project catalogues: a full-width carousel, every slide in the featured-banner design */
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap }
+.cat-carousel { position: relative; isolation: isolate; background: #1a2a26; color: #f7f4f0 }
+.cat-track { display: grid }
+/* Slides sit on top of each other. The incoming one wipes in over the outgoing one from the side it
+   comes from (next comes from the left in a right-to-left page), its photo settling from a zoom while
+   the outgoing photo drifts away and dims underneath. */
+.cat-slide { grid-area: 1 / 1; display: grid; visibility: hidden }
+.cat-slide.is-active { z-index: 2; visibility: visible; animation: cat-wipe 1.05s cubic-bezier(.77, 0, .18, 1) both }
+.cat-slide.is-leaving { z-index: 1; visibility: visible }
+.cat-carousel[data-dir=prev] .cat-slide.is-active { animation-name: cat-wipe-prev }
+.cat-carousel.is-first .cat-slide.is-active { animation: none }
+.cat-slide .feature-link { min-height: min(820px, 90svh) }
+.cat-slide .feature-in { padding-block: clamp(96px, 9vw, 120px) clamp(120px, 12vw, 160px) }
+.cat-slide .feature-title.is-long ~ .feature-en { letter-spacing: .14em }
+/* Only the showing slide grows into the cover of the page it opens. */
+.cat-slide:not(.is-active) .feature-bg, .cat-slide:not(.is-active) .feature-title { view-transition-name: none }
+.cat-slide .feature-bg { transition: transform 7s linear }
+.cat-slide.is-active .feature-bg { transform: scale(1); animation: cat-settle 1.6s cubic-bezier(.22, 1, .36, 1) backwards }
+.cat-slide.is-leaving .feature-bg { animation: cat-drift 1.05s cubic-bezier(.77, 0, .18, 1) both }
+.cat-carousel[data-dir=prev] .cat-slide.is-leaving .feature-bg { animation-name: cat-drift-prev }
+.cat-carousel.is-first .cat-slide.is-active .feature-bg { animation: none }
+@keyframes cat-wipe { from { clip-path: inset(0 100% 0 0) } to { clip-path: inset(0) } }
+@keyframes cat-wipe-prev { from { clip-path: inset(0 0 0 100%) } to { clip-path: inset(0) } }
+@keyframes cat-settle { from { transform: scale(1.18) } }
+@keyframes cat-drift { to { transform: translateX(14%) scale(1.06); filter: brightness(.45) } }
+@keyframes cat-drift-prev { to { transform: translateX(-14%) scale(1.06); filter: brightness(.45) } }
+
+.cat-bar { position: absolute; z-index: 2; inset-inline: 0; bottom: clamp(24px, 3.4vw, 44px); display: flex; align-items: center; justify-content: space-between; gap: 24px; pointer-events: none }
+.cat-bar > * { pointer-events: auto }
+.cat-dots { display: flex; flex: 1; max-width: 560px; gap: 6px }
+.cat-dot { position: relative; flex: 1; height: 26px; padding: 0; border: 0; background: none; cursor: pointer }
+.cat-dot::before, .cat-dot i { content: ""; position: absolute; inset-inline: 0; top: 50%; height: 2px; translate: 0 -50%; border-radius: 2px }
+.cat-dot::before { background: #f7f4f040 }
+.cat-dot i { background: #f7f4f0; transform: scaleX(0); transform-origin: right }
+.cat-dot.is-done i { transform: scaleX(1) }
+.cat-dot.is-active i { animation: cat-fill var(--cat-interval, 5.5s) linear forwards }
+.cat-carousel.is-paused .cat-dot.is-active i { animation-play-state: paused }
+.cat-carousel.is-stopped .cat-dot.is-active i { animation: none; transform: scaleX(1) }
+.cat-dot:focus-visible { outline: 2px solid #d6c9b5; outline-offset: 2px }
+@keyframes cat-fill { from { transform: scaleX(0) } to { transform: scaleX(1) } }
+
+.cat-nav { display: flex; align-items: center; gap: 10px }
+.cat-count { min-width: 5.5ch; margin-inline-end: 6px; font-size: .95rem; letter-spacing: .08em; opacity: .9 }
+.cat-arrow, .cat-toggle { display: grid; place-items: center; height: 46px; border: 1px solid #f7f4f066; border-radius: var(--r); background: #111c1959; color: inherit; font: inherit; cursor: pointer; backdrop-filter: blur(6px); transition: background .3s, color .3s, border-color .3s }
+.cat-arrow { width: 46px; font-size: 1.15rem }
+.cat-toggle { padding-inline: 16px; font-size: .82rem }
+.cat-arrow:hover, .cat-toggle:hover { background: #f7f4f0; color: #1a2a26; border-color: #f7f4f0 }
+.cat-arrow:focus-visible, .cat-toggle:focus-visible { outline: 2px solid #d6c9b5; outline-offset: 2px }
+
+/* the copy of the incoming slide rises in */
+/* the incoming slide: its copy rises in word group by word group, its pages fly in from the side it comes from */
+.cat-slide.is-active .feature-copy > * { animation: cat-rise .9s var(--ease-out) both; animation-delay: calc(.32s + var(--k, 0) * .07s) }
+.cat-slide.is-active .feature-copy > :nth-child(2) { --k: 1 }
+.cat-slide.is-active .feature-copy > :nth-child(3) { --k: 2 }
+.cat-slide.is-active .feature-copy > :nth-child(4) { --k: 3 }
+.cat-slide.is-active .feature-copy > :nth-child(n+5) { --k: 4 }
+.cat-slide.is-active .feature-pages { animation: cat-pages 1.2s .25s var(--ease-out) both }
+.cat-carousel[data-dir=prev] .cat-slide.is-active .feature-pages { animation-name: cat-pages-prev }
+@keyframes cat-rise { from { opacity: 0; transform: translateY(28px); filter: blur(6px) } }
+@keyframes cat-pages { from { opacity: 0; transform: translateX(-90px) rotate(-7deg) scale(.94) } }
+@keyframes cat-pages-prev { from { opacity: 0; transform: translateX(90px) rotate(7deg) scale(.94) } }
+
+@media (max-width: 760px) {
+  .cat-bar { flex-wrap: wrap; gap: 12px }
+  .cat-dots { flex-basis: 100%; max-width: none; order: 2 }
+  .cat-nav { order: 1; margin-inline-start: auto }
+  .cat-slide .feature-in { padding-bottom: 150px }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cat-slide, .cat-slide.is-active, .cat-slide.is-leaving, .cat-slide .feature-bg { transition: none; animation: none }
+  .cat-slide.is-active .feature-copy > *, .cat-slide.is-active .feature-pages, .cat-slide.is-active .feature-bg { animation: none }
+}

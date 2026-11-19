@@ -1,6 +1,9 @@
 node_modules
 dist
 .DS_Store
-services/
+pages/services/
 dist-check*/
 release/
+server-dist/
+storage/
+server.config.json

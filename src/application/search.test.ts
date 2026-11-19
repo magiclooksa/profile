@@ -1,6 +1,6 @@
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { buildSearchIndex } from '../../build/searchIndex';
+import { buildSearchIndex } from '../../tooling/vite/searchIndex';
 import type { SearchDoc } from '../domain/search';
 import { distance, highlight, normalize, SearchIndex, stem } from './search';
 

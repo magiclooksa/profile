@@ -23,7 +23,7 @@
     "custom furniture",
     "Saudi Arabia"
   ],
-  "image": { "src": "og/home.jpg", "alt": "غرفة طعام فاخرة من تصميم النظرة الساحرة" },
+  "image": { "src": "assets/avatar.png", "alt": "شعار النظرة الساحرة Magic Look" },
   "logo": "assets/logo.png",
   "business": {
     "types": ["HomeAndConstructionBusiness", "FurnitureStore"],
