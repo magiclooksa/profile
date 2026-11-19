@@ -39,7 +39,7 @@ function followMovedSection(): void {
 /** Photo collections (numbered from 1) shown only on a service page now, and that page. */
 const MOVED_COLLECTIONS: Readonly<Record<number, string>> = {
   4: 'kitchens-cabinets', 5: 'custom-sofas', 6: 'custom-sofas', 7: 'custom-sofas', 8: 'custom-sofas',
-  10: 'tv-wall-units', 11: 'custom-sofas',
+  9: 'tv-wall-units', 10: 'tv-wall-units', 11: 'custom-sofas', 15: 'custom-sofas',
 };
 
 /** Builds the whole page from the profile and wires its behaviours. */
@@ -61,7 +61,6 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
 
   const main = h('main', {},
     Hero(company),
-    collection(8),
     collection(11),
     collection(15),
     collection(13),
@@ -71,7 +70,6 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
     Advantages(profile.advantages, company, next()),
     collection(1),
     collection(2),
-    collection(14),
     film(2),
     ...company.films.slice(4).map((f, i) => FilmSection(f, i + 4)),
     ...company.collections.slice(17).map((c, i) => CollectionSection(c, i + 17)),
