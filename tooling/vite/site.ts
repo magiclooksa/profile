@@ -343,17 +343,21 @@ function leadHtml(lead: string, highlight: string): string {
 function ceoSection(ctx: SiteContext, root: string, number: number): string {
   const ceo = ctx.profile.ceo;
   const portrait = ceo.photo.src ? { src: ceo.photo.src, caption: ceo.photo.caption } : null;
+  // Two columns: the portrait (once added), the quote and the signature on one side, the message
+  // on the other, so the section uses the page's width without long lines.
   return section({ id: 'ceo', number, title: ceo.title, className: 'ceo' }, `
-        <div class="${portrait ? 'ceo-grid' : 'ceo-grid ceo-grid-text'}">${portrait ? `
-          <figure class="media ceo-portrait reveal">${photo(root, portrait)}</figure>` : ''}
-          <div class="ceo-copy">${ceo.quote ? `
+        <div class="ceo-split">
+          <div class="ceo-aside">${portrait ? `
+            <figure class="media ceo-portrait reveal">${photo(root, portrait)}</figure>` : ''}${ceo.quote ? `
             <blockquote class="ceo-quote reveal"><p>${esc(ceo.quote)}</p></blockquote>` : ''}
-            ${ceo.message.map((p) => `<p class="reveal">${esc(p)}</p>`).join('\n            ')}
             <footer class="ceo-sign reveal">${ceo.signature && ceo.name ? `
               <img class="ceo-signature" src="${asset(root, ceo.signature)}" alt="توقيع ${esc(ceo.name)}" loading="lazy" />` : ''}${ceo.name ? `
               <strong>${esc(ceo.name)}</strong>` : ''}
               <span>${esc(ceo.role)}</span>
             </footer>
+          </div>
+          <div class="ceo-body">
+            ${ceo.message.map((p) => `<p class="reveal">${esc(p)}</p>`).join('\n            ')}
           </div>
         </div>`);
 }
@@ -361,24 +365,17 @@ function ceoSection(ctx: SiteContext, root: string, number: number): string {
 function aboutPage(ctx: SiteContext): string {
   const { company, journey } = ctx.profile;
   const { about, statements, interiorDesign } = company;
-  // The two style photos; videos and missing files are left out.
-  const styleImages = interiorDesign.images
-    .filter((m) => m.src && !/\.(mp4|webm|mov)$/i.test(m.src)).slice(0, 2)
-    .map((m) => ({ src: m.src ?? '', caption: m.caption }));
   const copy = ctx.site.pages.about;
   const r = './';
   const next = counter();
-  const image = about.image.src && !/\.(mp4|webm|mov)$/i.test(about.image.src)
-    ? { src: about.image.src, caption: about.image.caption } : null;
   return `${pageHero({ root: r, ...copy, image: heroPhoto(ctx, copy.image), trail: [{ label: 'من نحن' }],
     actions: `${link('services.html', 'خدماتنا')}${link('projects.html', 'مشاريعنا', 'ghost')}` })}
 ${section({ id: 'about', number: next(), title: 'من نحن', className: 'about' }, `
-        <div class="grid">
-          <div class="copy">
-            <p class="lead reveal">${leadHtml(about.lead, about.highlight)}</p>
+        <div class="about-split">
+          <p class="about-lead reveal">${leadHtml(about.lead, about.highlight)}</p>
+          <div class="about-body">
             ${about.paragraphs.map((p) => `<p class="reveal">${esc(p)}</p>`).join('\n            ')}
-          </div>${image ? `
-          <figure class="media reveal" data-zoom>${photo(r, image)}</figure>` : ''}
+          </div>
         </div>
         <div class="statements">
           ${statements.map((s, i) => `<article class="reveal" ${stagger(i)}><h3>${esc(s.title)}</h3><p>${esc(s.text)}</p></article>`).join('\n          ')}
@@ -394,14 +391,9 @@ ${section({ id: 'approach', number: next(), title: 'كيف نعمل', intro: jou
           </li>`).join('\n          ')}
         </ol>`)}
 ${section({ id: 'style', number: next(), title: 'أسلوبنا في التصميم', intro: interiorDesign.intro.replace(/\s*يظهر أسلوبنا في:?\s*$/, ''), className: 'services' }, `
-        <div class="how-style">
-          <ol class="how-traits">
-            ${interiorDesign.traits.map((t, i) => `<li class="reveal" ${stagger(i, 4)}><span class="latin" aria-hidden="true">${pad2(i + 1)}</span>${esc(t)}</li>`).join('\n            ')}
-          </ol>${styleImages.length > 0 ? `
-          <div class="how-photos">
-            ${styleImages.map((img) => `<figure class="how-photo reveal"><div class="media" data-zoom>${photo(r, img)}</div><figcaption>${esc(img.caption)}</figcaption></figure>`).join('\n            ')}
-          </div>` : ''}
-        </div>`)}
+        <ol class="how-traits">
+          ${interiorDesign.traits.map((t, i) => `<li class="reveal" ${stagger(i, 4)}><span class="latin" aria-hidden="true">${pad2(i + 1)}</span>${esc(t)}</li>`).join('\n          ')}
+        </ol>`)}
 ${closingBand(ctx, r, 'لنصمّم مساحتك معًا', company.closingLine, '', 'خدمات التصميم والتأثيث')}`;
 }
 
