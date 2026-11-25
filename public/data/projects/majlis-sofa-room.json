@@ -1,21 +1,22 @@
 {
   "name": {
-    "ar": "مجلس كنب أزرق بخشب الماهوجني والمشربية",
+    "ar": "مجلس المشربية",
     "en": "THE BLUE MAHOGANY MAJLIS"
   },
   "place": "المجلس",
   "kicker": "مشروع مجلس · تصميم وتنفيذ",
-  "tagline": "مجلس على شكل U بقماش مخمل أزرق، وقاعدة من خشب الماهوجني، ولوحات مشربية سوداء.",
+  "tagline": "عربي تقليدي · ماهوجني ومشربية ومخمل",
   "cover": {
     "src": "images/projects/majlis-sofa-room/cover.webp",
     "ratio": "16:9",
     "caption": "المجلس على شكل U بطول الغرفة"
   },
   "intro": {
-    "lead": "مجلس على شكل U على جدران الغرفة الثلاثة، صُنع خشبه ومشربيته بالمقاس.",
+    "lead": "مجلس عربي تقليدي على شكل U صنعنا خشبه ومشربيته وقماشه بالمقاس، ليمتد على جدران الغرفة الثلاثة في جلسة واحدة متصلة.",
     "paragraphs": [
-      "قاعدة الكنب وظهره وأيديه من خشب الماهوجني اللامع، وفي كل فتحة لوح مشربية أسود بنقش هندسي.",
-      "المقاعد والمساند من المخمل الأزرق، وفي الوسط طاولة من الخشب نفسه بسطح رخام أبيض."
+      "قاعدة الكنب وظهره الخلفي وصناديق الأيدي من خشب الماهوجني اللامع بإطارات بارزة، وفي كل فتحة منها لوح مشربية أسود بنقش هندسي.",
+      "فوق الخشب مقاعد ومساند من المخمل الأزرق، وفي الوسط طاولة من الخشب نفسه بسطح رخام أبيض ولوحات مشربية على جوانبها.",
+      "وفي أطراف الجلسة صناديق مربعة من الماهوجني بلوحات مشربية على كل جانب، تعمل كأيدٍ وأسطح جانبية."
     ],
     "words": [
       {
@@ -158,6 +159,42 @@
           "ratio": "3:4",
           "caption": "المخدات على الجلسة",
           "span": 4
+        },
+        {
+          "src": "images/projects/majlis-sofa-room/majlis-g-40.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة على الجدار",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-sofa-room/majlis-g-41.webp",
+          "ratio": "16:9",
+          "caption": "الزاوية والجلسة",
+          "span": 8
+        },
+        {
+          "src": "images/projects/majlis-sofa-room/majlis-g-42.webp",
+          "ratio": "16:9",
+          "caption": "صندوق اليد والجلسة",
+          "span": 8
+        },
+        {
+          "src": "images/projects/majlis-sofa-room/majlis-g-43.webp",
+          "ratio": "16:9",
+          "caption": "وحدة الزاوية",
+          "span": 8
+        },
+        {
+          "src": "images/projects/majlis-sofa-room/majlis-g-44.webp",
+          "ratio": "16:9",
+          "caption": "المخدات على الجلسة",
+          "span": 8
+        },
+        {
+          "src": "images/projects/majlis-sofa-room/majlis-g-45.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة بطولها",
+          "span": 4
         }
       ],
       "details": [
@@ -184,12 +221,30 @@
           "ratio": "3:4",
           "caption": "جانب طاولة الوسط",
           "product": "coffee-table"
+        },
+        {
+          "src": "images/projects/majlis-sofa-room/majlis-d-50.webp",
+          "ratio": "3:4",
+          "caption": "المشربية في القاعدة",
+          "product": "seating"
+        },
+        {
+          "src": "images/projects/majlis-sofa-room/majlis-d-51.webp",
+          "ratio": "3:4",
+          "caption": "صندوق اليد عن قرب",
+          "product": "arm-box"
+        },
+        {
+          "src": "images/projects/majlis-sofa-room/majlis-d-52.webp",
+          "ratio": "3:4",
+          "caption": "اللوحات المربعة في الصندوق",
+          "product": "arm-box"
         }
       ]
     }
   ],
   "collection": {
-    "intro": "خمس قطع، أربع منها صُنعت لهذا المجلس بالمقاس: وحدات الجلسة، وصناديق الأيدي، والظهر الخشبي، وطاولة الوسط.",
+    "intro": "خمس قطع، أربع منها صُنعت لهذا المجلس بالمقاس: وحدات الجلسة، وصناديق الأيدي، والظهر الخشبي، وطاولة الوسط. افتح أي قطعة لترى صورها وتفاصيلها.",
     "image": {
       "src": "images/projects/majlis-sofa-room/collection-13.webp",
       "ratio": "16:9",
@@ -224,6 +279,11 @@
           "src": "images/projects/majlis-sofa-room/seating-v-15.webp",
           "ratio": "3:4",
           "caption": "الجلسة بزاوية"
+        },
+        {
+          "src": "images/projects/majlis-sofa-room/seating-v-60.webp",
+          "ratio": "16:9",
+          "caption": "الجلسة وقاعدتها المنقوشة"
         }
       ],
       "details": [
@@ -265,6 +325,11 @@
         },
         {
           "src": "images/projects/majlis-sofa-room/arm-box-v-19.webp",
+          "ratio": "3:4",
+          "caption": "صندوق اليد من الزاوية"
+        },
+        {
+          "src": "images/projects/majlis-sofa-room/arm-box-v-62.webp",
           "ratio": "3:4",
           "caption": "صندوق اليد من الزاوية"
         }
@@ -343,6 +408,11 @@
           "src": "images/projects/majlis-sofa-room/coffee-table-v-25.webp",
           "ratio": "3:4",
           "caption": "طاولة الوسط من الأمام"
+        },
+        {
+          "src": "images/projects/majlis-sofa-room/coffee-table-v-61.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة بلوحات المشربية"
         }
       ],
       "details": [

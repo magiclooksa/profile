@@ -1,21 +1,22 @@
 {
   "name": {
-    "ar": "فيلا بكنب مودرن منحني وطاولة طعام رخام",
+    "ar": "فيلا الكنب المنحني",
     "en": "THE CURVED SOFA & MARBLE DINING VILLA"
   },
   "place": "الفيلا",
   "kicker": "مشروع فيلا · جلسة وطعام",
-  "tagline": "كنب مودرن بزوايا منحنية بقماش البوكليه، وطاولة طعام برخام بيج وخشب الزان.",
+  "tagline": "مودرن ناعم · بوكليه ورخام بيج",
   "cover": {
     "src": "images/projects/curved-sofa-wingchair-dining-villa/cover.webp",
     "ratio": "16:9",
     "caption": "جلسة الكنب المنحني وطاولة الوسط الدائرية"
   },
   "intro": {
-    "lead": "مساحة مفتوحة فيها جلسة وطعام: كنب مودرن بزوايا منحنية من البوكليه العاجي حول طاولة دائرية، وكرسي عالٍ دوّار، وطاولة طعام برخام بيج.",
+    "lead": "مساحة مفتوحة في فيلا صمّمنا فيها جلسة وركن طعام بطابع مودرن ناعم، يجمع البوكليه العاجي بالخطوط المنحنية مع الرخام البيج والخشب.",
     "paragraphs": [
-      "كنبة طويلة منحنية تقابلها كنبة منحنية أصغر، وبينهما طاولة وسط دائرية بسطح زجاج داكن، وطاولة سوداء صغيرة، وبجانبها كرسي عالٍ على قاعدة معدن سوداء.",
-      "وفي ركن الطعام طاولة مستطيلة بسطح رخام بيج وقاعدة مضلّعة من خشب الزان، حولها كراسٍ من البوكليه بأرجل خشبية."
+      "في الجلسة كنب مودرن بزوايا منحنية من البوكليه العاجي: كنبة طويلة تقابلها كنبة أصغر، وبينهما طاولة وسط دائرية بقاعدة مضلّعة وسطح زجاج داكن، وطاولة سوداء صغيرة.",
+      "وبجانب الجلسة كرسي دوّار بظهر عالٍ يحيط بالجالس، داخله بوكليه عاجي وخارجه قماش موكا، على قاعدة معدنية سوداء.",
+      "وفي ركن الطعام طاولة مستطيلة بسطح رخام بيج بحواف مستديرة على قاعدة مضلّعة من خشب الزان، وحولها كراسٍ بظهر منحني مرتفع من البوكليه على أرجل خشبية."
     ],
     "words": [
       {
@@ -162,6 +163,36 @@
           "ratio": "3:4",
           "caption": "الكنب المنحني في الجلسة",
           "span": 4
+        },
+        {
+          "src": "images/projects/curved-sofa-wingchair-dining-villa/lounge-g-40.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي العالي أمام الجلسة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/curved-sofa-wingchair-dining-villa/lounge-g-41.webp",
+          "ratio": "3:4",
+          "caption": "الكنب حول طاولة الوسط",
+          "span": 4
+        },
+        {
+          "src": "images/projects/curved-sofa-wingchair-dining-villa/lounge-g-42.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة والكرسي العالي",
+          "span": 4
+        },
+        {
+          "src": "images/projects/curved-sofa-wingchair-dining-villa/lounge-g-43.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة من الطرف",
+          "span": 4
+        },
+        {
+          "src": "images/projects/curved-sofa-wingchair-dining-villa/lounge-g-44.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة الطويلة",
+          "span": 4
         }
       ],
       "details": [
@@ -188,6 +219,18 @@
           "ratio": "3:4",
           "caption": "قاعدة الكرسي المعدنية",
           "product": "wingchair"
+        },
+        {
+          "src": "images/projects/curved-sofa-wingchair-dining-villa/lounge-d-45.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الوسط المضلّعة",
+          "product": "coffee-table"
+        },
+        {
+          "src": "images/projects/curved-sofa-wingchair-dining-villa/lounge-d-46.webp",
+          "ratio": "3:4",
+          "caption": "البوكليه والمخدات",
+          "product": "sofa"
         }
       ]
     },
@@ -239,6 +282,30 @@
           "ratio": "3:4",
           "caption": "ركن الطعام والمطبخ",
           "span": 3
+        },
+        {
+          "src": "images/projects/curved-sofa-wingchair-dining-villa/dining-g-47.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الطعام والكراسي",
+          "span": 4
+        },
+        {
+          "src": "images/projects/curved-sofa-wingchair-dining-villa/dining-g-48.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة بطولها",
+          "span": 4
+        },
+        {
+          "src": "images/projects/curved-sofa-wingchair-dining-villa/dining-g-49.webp",
+          "ratio": "3:4",
+          "caption": "ركن الطعام والمطبخ",
+          "span": 4
+        },
+        {
+          "src": "images/projects/curved-sofa-wingchair-dining-villa/dining-g-50.webp",
+          "ratio": "3:4",
+          "caption": "الكراسي حول الطاولة",
+          "span": 4
         }
       ],
       "details": [
@@ -259,6 +326,12 @@
           "ratio": "3:4",
           "caption": "حافة سطح الرخام",
           "product": "dining-table"
+        },
+        {
+          "src": "images/projects/curved-sofa-wingchair-dining-villa/dining-d-51.webp",
+          "ratio": "3:4",
+          "caption": "ظهر الكرسي وقاعدة الطاولة",
+          "product": "dining-chairs"
         }
       ]
     }
@@ -297,6 +370,11 @@
           "src": "images/projects/curved-sofa-wingchair-dining-villa/sofa-v-24.webp",
           "ratio": "3:4",
           "caption": "الكنبة المقابلة"
+        },
+        {
+          "src": "images/projects/curved-sofa-wingchair-dining-villa/sofa-v-60.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة المنحنية"
         }
       ],
       "details": [
@@ -341,6 +419,11 @@
           "src": "images/projects/curved-sofa-wingchair-dining-villa/wingchair-v-28.webp",
           "ratio": "3:4",
           "caption": "الكرسي من الخلف"
+        },
+        {
+          "src": "images/projects/curved-sofa-wingchair-dining-villa/wingchair-v-61.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي العالي من الجانب"
         }
       ],
       "details": [
@@ -378,6 +461,11 @@
           "src": "images/projects/curved-sofa-wingchair-dining-villa/coffee-table-v-31.webp",
           "ratio": "3:4",
           "caption": "الطاولة أمام الكنبة"
+        },
+        {
+          "src": "images/projects/curved-sofa-wingchair-dining-villa/coffee-table-v-62.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة والطاولة السوداء"
         }
       ],
       "details": [
@@ -447,6 +535,11 @@
           "src": "images/projects/curved-sofa-wingchair-dining-villa/dining-table-v-36.webp",
           "ratio": "3:4",
           "caption": "الطاولة بالطول"
+        },
+        {
+          "src": "images/projects/curved-sofa-wingchair-dining-villa/dining-table-v-63.webp",
+          "ratio": "3:4",
+          "caption": "سطح الرخام"
         }
       ],
       "details": [
@@ -485,6 +578,11 @@
           "src": "images/projects/curved-sofa-wingchair-dining-villa/dining-chairs-v-39.webp",
           "ratio": "3:4",
           "caption": "الكرسي من الخلف"
+        },
+        {
+          "src": "images/projects/curved-sofa-wingchair-dining-villa/dining-chairs-v-64.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي بظهره المرتفع"
         }
       ],
       "details": [

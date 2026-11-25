@@ -1,21 +1,22 @@
 {
   "name": {
-    "ar": "مجلس كنب كلاسيك بخشب أسود وقماش جاكار فضي",
+    "ar": "المجلس الكلاسيك الفضي",
     "en": "THE CLASSIC SILVER JACQUARD MAJLIS"
   },
   "place": "المجلس",
   "kicker": "مشروع مجلس · تصميم وتنفيذ",
-  "tagline": "كنب كلاسيك على شكل L بإطار خشب أسود لامع وظهر مقوس، وقماش جاكار فضي.",
+  "tagline": "كلاسيك · خشب أسود وجاكار فضي",
   "cover": {
     "src": "images/projects/classic-silver-majlis-fireplace/cover.webp",
     "ratio": "16:9",
     "caption": "الكنبة الكلاسيك الطويلة بإطارها الأسود"
   },
   "intro": {
-    "lead": "مجلس كلاسيك على شكل L: كنب بإطار من الخشب الأسود اللامع وظهر مقوس في الطرفين، ومقعده من الجاكار الفضي.",
+    "lead": "مجلس كلاسيك على شكل L صنعنا كنبه بالمقاس، يجمع الخشب الأسود اللامع مع قماش الجاكار الفضي في غرفة بيضاء ببراويز وألواح رخام.",
     "paragraphs": [
-      "الظهر من الداخل جاكار فضي، والمقعد جاكار بنقشة مختلفة. ومعه طاولات وسط سوداء بسطح زجاج أسود، وطاولات جنب مربعة.",
-      "الغرفة بيضاء ببراويز جبس وألواح بنقشة رخام، وفي جدارها مدفأة كهربائية بيضاء."
+      "الكنب بإطار من الخشب الأسود اللامع، يرتفع ظهره بخط مقوس في الطرفين، ومقعده بقماش جاكار فضي بنقش متكسر، وظهره من الداخل جاكار بنقش مثمنات.",
+      "أمام الكنب طاولات وسط مستطيلة من الخشب الأسود بسطح زجاج أسود وأرجل مخروطة، وفي الزوايا طاولات جانبية مربعة من الخشب نفسه.",
+      "وفي جدار المجلس مدفأة كهربائية بيضاء ببروز جبسي، والمخدات بقماش مشجر فضي وأخرى بالجاكار."
     ],
     "words": [
       {
@@ -145,6 +146,36 @@
           "ratio": "3:4",
           "caption": "الكنبة أمام الجدار",
           "span": 4
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-g-40.webp",
+          "ratio": "3:4",
+          "caption": "الكنب على الجدار الطويل",
+          "span": 4
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-g-41.webp",
+          "ratio": "3:4",
+          "caption": "المجلس من الزاوية",
+          "span": 4
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-g-42.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة بمخداتها",
+          "span": 4
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-g-43.webp",
+          "ratio": "3:4",
+          "caption": "المجلس على شكل L",
+          "span": 4
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-g-44.webp",
+          "ratio": "3:4",
+          "caption": "الكنب وطاولة الوسط",
+          "span": 4
         }
       ],
       "details": [
@@ -171,12 +202,30 @@
           "ratio": "3:4",
           "caption": "المخدات",
           "product": "cushions"
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-d-50.webp",
+          "ratio": "3:4",
+          "caption": "الظهر المقوس ونقش المثمنات",
+          "product": "sofas"
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-d-51.webp",
+          "ratio": "3:4",
+          "caption": "المقعد بالجاكار الفضي",
+          "product": "sofas"
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-d-52.webp",
+          "ratio": "3:4",
+          "caption": "المدفأة الكهربائية",
+          "product": "fireplace"
         }
       ]
     }
   ],
   "collection": {
-    "intro": "خمس قطع في هذا المجلس، منها الكنب الكلاسيك الذي صُنع بمقاس الغرفة.",
+    "intro": "خمس قطع في هذا المجلس. الكنب صُنع بمقاس الغرفة، والطاولات والمدفأة اخترناها لتكمل الطابع الكلاسيك. افتح أي قطعة لترى صورها وتفاصيلها.",
     "image": {
       "src": "images/projects/classic-silver-majlis-fireplace/cover.webp",
       "ratio": "16:9",
@@ -198,7 +247,7 @@
         "jacquard"
       ],
       "finish": "خشب أسود لامع بظهر مقوس، وجاكار فضي",
-      "text": "كنب بإطار من الخشب الأسود اللامع وظهر مقوس في الطرفين، بقماش جاكار فضي.",
+      "text": "كنب كلاسيك على شكل L بإطار من الخشب الأسود اللامع وظهر مقوس في الطرفين. المقعد بقماش جاكار فضي بنقش متكسر، والظهر من الداخل جاكار بنقش مثمنات، والحواف بحبكة رفيعة.",
       "card": "images/projects/classic-silver-majlis-fireplace/card-sofas.webp",
       "views": [
         {
@@ -210,6 +259,11 @@
           "src": "images/projects/classic-silver-majlis-fireplace/sofas-v-16.webp",
           "ratio": "3:4",
           "caption": "الكنبة والطاولة"
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/sofas-v-60.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة بطولها"
         }
       ],
       "details": [
@@ -217,6 +271,11 @@
           "src": "images/projects/classic-silver-majlis-fireplace/sofas-d-17.webp",
           "ratio": "3:4",
           "caption": "الظهر المقوس"
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/sofas-d-61.webp",
+          "ratio": "3:4",
+          "caption": "المخدات على الكنب"
         }
       ],
       "inSitu": [
@@ -248,6 +307,11 @@
           "src": "images/projects/classic-silver-majlis-fireplace/coffee-tables-v-19.webp",
           "ratio": "3:4",
           "caption": "طاولة الوسط"
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/coffee-tables-v-62.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الوسط أمام الكنب"
         }
       ],
       "details": [
@@ -286,6 +350,11 @@
           "src": "images/projects/classic-silver-majlis-fireplace/side-tables-v-22.webp",
           "ratio": "3:4",
           "caption": "طاولة الجنب"
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/side-tables-v-63.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة الجانبية في الزاوية"
         }
       ],
       "details": [],
@@ -317,6 +386,11 @@
           "src": "images/projects/classic-silver-majlis-fireplace/cushions-v-24.webp",
           "ratio": "3:4",
           "caption": "المخدات على الكنب"
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/cushions-v-64.webp",
+          "ratio": "3:4",
+          "caption": "المخدة بالجاكار الفضي"
         }
       ],
       "details": [],
@@ -348,7 +422,13 @@
           "caption": "المدفأة"
         }
       ],
-      "details": [],
+      "details": [
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/fireplace-d-65.webp",
+          "ratio": "3:4",
+          "caption": "المدفأة عن قرب"
+        }
+      ],
       "inSitu": [
         {
           "src": "images/projects/classic-silver-majlis-fireplace/fireplace-i-27.webp",

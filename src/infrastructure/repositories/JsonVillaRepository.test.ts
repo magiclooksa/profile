@@ -14,7 +14,7 @@ const serving = (data: unknown): JsonFetcher => async () => data;
 describe('JsonVillaRepository', () => {
   it('loads the villa catalogue shipped with the site', async () => {
     const villa = await new JsonVillaRepository(serving(raw()), FILE).load();
-    expect(villa.name.ar).toBe('فيلا بخشب الأوك والترافرتين');
+    expect(villa.name.ar).toBe('فيلا الأوك والترافرتين');
     expect(villa.spaces.map((s) => s.id)).toEqual(['living', 'lounge', 'bedroom']);
     expect(villa.products).toHaveLength(15);
     expect(villa.materials).toHaveLength(8);

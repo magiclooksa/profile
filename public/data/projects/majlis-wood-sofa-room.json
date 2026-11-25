@@ -1,21 +1,22 @@
 {
   "name": {
-    "ar": "مجلس كنب عاجي بخشب الأوك",
+    "ar": "مجلس العاجي والأوك",
     "en": "THE IVORY OAK MAJLIS"
   },
   "place": "المجلس",
   "kicker": "مشروع مجلس · تصميم وتنفيذ",
-  "tagline": "كنب على شكل U بقماش شانيل عاجي على قاعدة من خشب الأوك.",
+  "tagline": "مودرن دافئ · شانيل عاجي وخشب أوك",
   "cover": {
     "src": "images/projects/majlis-wood-sofa-room/cover.webp",
     "ratio": "16:9",
     "caption": "الكنبة على شكل U وطاولة الوسط من خشب الأوك"
   },
   "intro": {
-    "lead": "كنب عاجي على شكل U على قاعدة من خشب الأوك، وحوله قطع خشبية صُنعت بالمقاس.",
+    "lead": "مجلس صنعنا كنبه وقطعه الخشبية بالمقاس، يجمع قماش الشانيل العاجي مع خشب الأوك بلون عسلي دافئ.",
     "paragraphs": [
-      "بين أجزاء الكنب صناديق خشب بلون القاعدة تعمل كأسطح جانبية، ويقابله كرسيان مفردان بإطار خشبي.",
-      "في الوسط طاولة خشب مكعبة بأسطح جانبية على مستويات مختلفة، وعلى الجدارين رفّان مفتوحان."
+      "الكنب على شكل U بقماش شانيل عاجي، بمقاعد عريضة ومساند ظهر منفصلة، على قاعدة منخفضة من خشب الأوك تظهر تحت المقعد بخط متصل.",
+      "بين أجزاء الكنب وفي أطرافه صناديق خشبية بارتفاع المقعد تعمل كأسطح جانبية، ويقابل الكنب كرسيان مفردان بقماشه نفسه على إطار خشبي رفيع.",
+      "في الوسط طاولة خشب مكعبة كبيرة تخرج منها أسطح جانبية على مستويات مختلفة، وعلى جدارين من الغرفة رفّان منخفضان بخانات مفتوحة."
     ],
     "words": [
       {
@@ -148,6 +149,42 @@
           "ratio": "3:4",
           "caption": "جزء من الكنبة بين صندوقين",
           "span": 4
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-g-40.webp",
+          "ratio": "16:9",
+          "caption": "المجلس بالعرض",
+          "span": 8
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-g-41.webp",
+          "ratio": "3:4",
+          "caption": "الكرسيان المفردان",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-g-42.webp",
+          "ratio": "3:4",
+          "caption": "الكنب على شكل U",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-g-43.webp",
+          "ratio": "3:4",
+          "caption": "وحدة الكنب والصندوق الخشبي",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-g-44.webp",
+          "ratio": "3:4",
+          "caption": "المقعد والمخدات",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-g-45.webp",
+          "ratio": "3:4",
+          "caption": "الطرف بالصندوق الخشبي",
+          "span": 4
         }
       ],
       "details": [
@@ -174,12 +211,36 @@
           "ratio": "3:4",
           "caption": "المخدات الدائرية",
           "product": "cushions"
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-d-50.webp",
+          "ratio": "3:4",
+          "caption": "حافة الرف الخشبي",
+          "product": "shelves"
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-d-51.webp",
+          "ratio": "3:4",
+          "caption": "سطح طاولة الوسط",
+          "product": "coffee-table"
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-d-52.webp",
+          "ratio": "3:4",
+          "caption": "المخدة المستديرة",
+          "product": "cushions"
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/majlis-d-53.webp",
+          "ratio": "3:4",
+          "caption": "الصندوق الجانبي",
+          "product": "side-box"
         }
       ]
     }
   ],
   "collection": {
-    "intro": "ست قطع لهذا المجلس، أربع منها صُنعت بالمقاس من خشب الأوك: الكنبة، والصناديق الجانبية، وطاولة الوسط، والرفّان المفتوحان.",
+    "intro": "ست قطع لهذا المجلس، أربع منها صُنعت بالمقاس من خشب الأوك: الكنب، والصناديق الجانبية، وطاولة الوسط، والرفّان المفتوحان. افتح أي قطعة لترى صورها من أكثر من زاوية.",
     "image": {
       "src": "images/projects/majlis-wood-sofa-room/collection-14.webp",
       "ratio": "16:9",
@@ -201,7 +262,7 @@
         "oak"
       ],
       "finish": "شانيل عاجي على قاعدة من خشب الأوك",
-      "text": "كنبة زاوية على شكل U بقماش شانيل عاجي على قاعدة من خشب الأوك، وبين أجزائها صناديق خشب.",
+      "text": "كنبة زاوية على شكل U بقماش شانيل عاجي، بمقاعد عريضة ومساند ظهر منفصلة، على قاعدة منخفضة من خشب الأوك، وبين أجزائها صناديق خشب.",
       "card": "images/projects/majlis-wood-sofa-room/card-seating.webp",
       "views": [
         {
@@ -213,6 +274,11 @@
           "src": "images/projects/majlis-wood-sofa-room/seating-v-16.webp",
           "ratio": "3:4",
           "caption": "الكنبة من الجانب"
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/seating-v-60.webp",
+          "ratio": "3:4",
+          "caption": "الكنب من الزاوية"
         }
       ],
       "details": [
@@ -250,6 +316,11 @@
           "src": "images/projects/majlis-wood-sofa-room/side-box-v-19.webp",
           "ratio": "3:4",
           "caption": "الصندوق في طرف الكنبة"
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/side-box-v-64.webp",
+          "ratio": "3:4",
+          "caption": "الصندوق في طرف الكنب"
         }
       ],
       "details": [
@@ -293,6 +364,11 @@
           "src": "images/projects/majlis-wood-sofa-room/armchairs-v-23.webp",
           "ratio": "3:4",
           "caption": "الكرسيان معاً"
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/armchairs-v-61.webp",
+          "ratio": "3:4",
+          "caption": "الكرسيان من الأمام"
         }
       ],
       "details": [
@@ -323,13 +399,18 @@
         "oak"
       ],
       "finish": "خشب أوك، بأسطح جانبية على مستويات",
-      "text": "طاولة خشب مكعبة بأسطح جانبية على مستويات مختلفة.",
+      "text": "طاولة خشب مكعبة كبيرة من الأوك، تخرج منها أسطح جانبية بارزة على مستويات مختلفة، فتصل إليها كل جهة من الجلسة.",
       "card": "images/projects/majlis-wood-sofa-room/card-coffee-table.webp",
       "views": [
         {
           "src": "images/projects/majlis-wood-sofa-room/coffee-table-v-26.webp",
           "ratio": "3:4",
           "caption": "طاولة الوسط من الأمام"
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/coffee-table-v-62.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة من الجانب"
         }
       ],
       "details": [
@@ -367,6 +448,11 @@
           "src": "images/projects/majlis-wood-sofa-room/shelves-v-29.webp",
           "ratio": "3:4",
           "caption": "الرف المفتوح"
+        },
+        {
+          "src": "images/projects/majlis-wood-sofa-room/shelves-v-63.webp",
+          "ratio": "3:4",
+          "caption": "الرف بخاناته"
         }
       ],
       "details": [

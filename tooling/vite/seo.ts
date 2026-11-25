@@ -491,7 +491,7 @@ interface SiteData { readonly seo: SeoSettings; readonly profile: Profile }
 /** Special wording for pages whose preview should say more than their tagline. */
 const PAGE_OVERRIDES: Record<string, Partial<Pick<PageMeta, 'description' | 'alt'>>> = {
   'villa-wood.html': {
-    description: 'كتالوج فيلا بخشب الأوك والترافرتين: ثلاث مساحات، وخمس عشرة قطعة، وثماني خامات من خشب الأوك والزان والترافرتين والكتان.',
+    description: 'كتالوج فيلا الأوك والترافرتين: ثلاث مساحات، وخمس عشرة قطعة، وثماني خامات من خشب الأوك والزان والترافرتين والكتان.',
     alt: 'الصالة العائلية في الفيلا: جدار تلفاز بخشب الأوك',
   },
 };

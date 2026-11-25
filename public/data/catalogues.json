@@ -2,12 +2,12 @@
   {
     "href": "villa-wood.html",
     "name": {
-      "ar": "فيلا بخشب الأوك والترافرتين",
+      "ar": "فيلا الأوك والترافرتين",
       "en": "THE OAK & TRAVERTINE VILLA"
     },
     "place": "الفيلا",
     "kicker": "كتالوج التصميم الداخلي والأثاث",
-    "tagline": "خشب أوك، وترافرتين، وكتان بألوان هادئة.",
+    "tagline": "مودرن دافئ · خامات طبيعية هادئة",
     "cover": {
       "src": "images/villa/living-wide-b.webp",
       "ratio": "16:9",
@@ -35,12 +35,12 @@
   {
     "href": "arched-lit-shelves-curved-sofa-room.html",
     "name": {
-      "ar": "صالة بمكتبات مقوسة مضيئة وكنب منحني",
+      "ar": "صالة الأقواس المضيئة",
       "en": "THE ARCHED LIT SHELVES LIVING ROOM"
     },
     "place": "الصالة",
     "kicker": "مشروع صالة · تصميم وتنفيذ",
-    "tagline": "مكتبات جدارية بأقواس وإضاءة مخفية، وكنب منحني كبير بقماش شانيل بيج.",
+    "tagline": "مودرن · مكتبات مقوسة وإضاءة مخفية",
     "cover": {
       "src": "images/projects/arched-lit-shelves-curved-sofa-room/cover.webp",
       "ratio": "16:9",
@@ -68,12 +68,12 @@
   {
     "href": "arched-wall-sofa-set.html",
     "name": {
-      "ar": "مجلس كنب كلاسيك بخشب الزان وأرجل ذهبية",
+      "ar": "مجلس الزان والشامبين",
       "en": "THE CLASSIC BEECH & GOLD MAJLIS"
     },
     "place": "المجلس",
     "kicker": "مشروع مجلس · تصميم وتنفيذ",
-    "tagline": "كنب كلاسيك بخشب الزان الطبيعي وقماش شانيل بيج، بأرجل وأعمدة بلون الشامبين.",
+    "tagline": "كلاسيك معاصر · زان طبيعي وأرجل بلون الشامبين",
     "cover": {
       "src": "images/projects/arched-wall-sofa-set/cover.webp",
       "ratio": "16:9",
@@ -101,12 +101,12 @@
   {
     "href": "beige-floor-majlis-lit-ceiling.html",
     "name": {
-      "ar": "مجلس جلسة أرضية بيج بإضاءة خطية في السقف",
+      "ar": "المجلس الأرضي البيج",
       "en": "THE BEIGE FLOOR MAJLIS"
     },
     "place": "المجلس",
     "kicker": "مشروع مجلس · تصميم وتنفيذ",
-    "tagline": "جلسة أرضية منخفضة بقماش جاكار بيج حول الغرفة، وأرفف خشبية في الأطراف، ومخدات بقماش مشجر.",
+    "tagline": "جلسة أرضية مودرن · إضاءة خطية في السقف",
     "cover": {
       "src": "images/projects/beige-floor-majlis-lit-ceiling/cover.webp",
       "ratio": "16:9",
@@ -132,14 +132,47 @@
     ]
   },
   {
+    "href": "beige-majlis-dark-wood-room.html",
+    "name": {
+      "ar": "مجلس الحروف العربية",
+      "en": "THE BEIGE & DARK WOOD MAJLIS"
+    },
+    "place": "المجلس",
+    "kicker": "مشروع مجلس · تصميم وتنفيذ",
+    "tagline": "عربي معاصر · بيج وخشب داكن",
+    "cover": {
+      "src": "images/projects/beige-majlis-dark-wood-room/cover.webp",
+      "ratio": "16:9",
+      "caption": "المجلس بجلساته على الجدران"
+    },
+    "spaces": 1,
+    "pieces": 3,
+    "materials": 3,
+    "film": true,
+    "pages": [
+      {
+        "src": "images/projects/beige-majlis-dark-wood-room/material-chenille.webp",
+        "caption": "الخامات"
+      },
+      {
+        "src": "images/projects/beige-majlis-dark-wood-room/card-sofas.webp",
+        "caption": "الكنب"
+      },
+      {
+        "src": "images/projects/beige-majlis-dark-wood-room/intro-01.webp",
+        "caption": "المجلس"
+      }
+    ]
+  },
+  {
     "href": "beige-sofa-blue-carpet-majlis.html",
     "name": {
-      "ar": "مجلس كنب كلاسيك بيج بخشب الزان الطبيعي",
+      "ar": "مجلس الكلاسيك البيج",
       "en": "THE BEIGE CLASSIC BEECH MAJLIS"
     },
     "place": "المجلس",
     "kicker": "مشروع مجلس · تصميم وتنفيذ",
-    "tagline": "كنب كلاسيك بخشب الزان الطبيعي، بقماش شانيل بيج وظهر مخيّط.",
+    "tagline": "كلاسيك · زان طبيعي وظهر مخيّط",
     "cover": {
       "src": "images/projects/beige-sofa-blue-carpet-majlis/cover.webp",
       "ratio": "16:9",
@@ -167,12 +200,12 @@
   {
     "href": "classic-carved-sofa-set.html",
     "name": {
-      "ar": "مجلس كنب كلاسيك محفور بخشب الزان الطبيعي",
+      "ar": "المجلس الكلاسيك المحفور",
       "en": "THE CARVED CLASSIC BEECH MAJLIS"
     },
     "place": "المجلس",
     "kicker": "مشروع مجلس · تصميم وتنفيذ",
-    "tagline": "كنب وكراسي كلاسيك بخشب الزان الطبيعي المحفور، وظهر كابتونيه، وبوف بتخزين.",
+    "tagline": "كلاسيك فاخر · حفر يدوي على الزان",
     "cover": {
       "src": "images/projects/classic-carved-sofa-set/cover.webp",
       "ratio": "16:9",
@@ -200,12 +233,12 @@
   {
     "href": "classic-silver-majlis-fireplace.html",
     "name": {
-      "ar": "مجلس كنب كلاسيك بخشب أسود وقماش جاكار فضي",
+      "ar": "المجلس الكلاسيك الفضي",
       "en": "THE CLASSIC SILVER JACQUARD MAJLIS"
     },
     "place": "المجلس",
     "kicker": "مشروع مجلس · تصميم وتنفيذ",
-    "tagline": "كنب كلاسيك على شكل L بإطار خشب أسود لامع وظهر مقوس، وقماش جاكار فضي.",
+    "tagline": "كلاسيك · خشب أسود وجاكار فضي",
     "cover": {
       "src": "images/projects/classic-silver-majlis-fireplace/cover.webp",
       "ratio": "16:9",
@@ -233,12 +266,12 @@
   {
     "href": "curved-sofa-wingchair-dining-villa.html",
     "name": {
-      "ar": "فيلا بكنب مودرن منحني وطاولة طعام رخام",
+      "ar": "فيلا الكنب المنحني",
       "en": "THE CURVED SOFA & MARBLE DINING VILLA"
     },
     "place": "الفيلا",
     "kicker": "مشروع فيلا · جلسة وطعام",
-    "tagline": "كنب مودرن بزوايا منحنية بقماش البوكليه، وطاولة طعام برخام بيج وخشب الزان.",
+    "tagline": "مودرن ناعم · بوكليه ورخام بيج",
     "cover": {
       "src": "images/projects/curved-sofa-wingchair-dining-villa/cover.webp",
       "ratio": "16:9",
@@ -266,12 +299,12 @@
   {
     "href": "curved-sofa-yellow-navy-room.html",
     "name": {
-      "ar": "صالة كنب مودرن بزوايا منحنية",
+      "ar": "صالة الزوايا المنحنية",
       "en": "THE CURVED MODERN SOFA ROOM"
     },
     "place": "الصالة",
     "kicker": "مشروع صالة استقبال · تصميم وتنفيذ",
-    "tagline": "كنب مودرن بزوايا منحنية بقماش شانيل مقاوم للسوائل، على قاعدة من خشب الكرز، مع كرسيين بقماش مشجر وطاولة وسط زجاجية.",
+    "tagline": "مودرن · زوايا منحنية وخشب زان طبيعي",
     "cover": {
       "src": "images/projects/curved-sofa-yellow-navy-room/cover.webp",
       "ratio": "16:9",
@@ -297,14 +330,47 @@
     ]
   },
   {
+    "href": "dining-table-with-chairs.html",
+    "name": {
+      "ar": "طاولة الأوك الداكن",
+      "en": "THE DARK OAK OVAL DINING TABLE"
+    },
+    "place": "غرفة الطعام",
+    "kicker": "مشروع طاولة طعام · تصميم وتنفيذ",
+    "tagline": "مودرن · قاعدة مضلّعة وكراسٍ مخيّطة",
+    "cover": {
+      "src": "images/projects/dining-table-with-chairs/cover.webp",
+      "ratio": "16:9",
+      "caption": "الطاولة البيضاوية والكراسي في الغرفة"
+    },
+    "spaces": 1,
+    "pieces": 2,
+    "materials": 2,
+    "film": true,
+    "pages": [
+      {
+        "src": "images/projects/dining-table-with-chairs/material-oak.webp",
+        "caption": "الخامات"
+      },
+      {
+        "src": "images/projects/dining-table-with-chairs/card-table.webp",
+        "caption": "طاولة الطعام"
+      },
+      {
+        "src": "images/projects/dining-table-with-chairs/intro-01.webp",
+        "caption": "غرفة الطعام"
+      }
+    ]
+  },
+  {
     "href": "floor-majlis-room.html",
     "name": {
-      "ar": "مجلس كنب كلاسيك بخشب الزان والنقش المفرّغ",
+      "ar": "مجلس النقش المفرّغ",
       "en": "THE CARVED BEECH MAJLIS"
     },
     "place": "المجلس",
     "kicker": "مشروع مجلس · من التصميم إلى التنفيذ",
-    "tagline": "كنب كلاسيك بخشب الزان الطبيعي، ومخمل كريمي، ولوحات خشب بنقش إسلامي مفرّغ.",
+    "tagline": "كلاسيك شرقي · زان ونقش إسلامي",
     "cover": {
       "src": "images/projects/floor-majlis-room/cover.webp",
       "ratio": "16:9",
@@ -332,12 +398,12 @@
   {
     "href": "grey-brown-majlis-sofa.html",
     "name": {
-      "ar": "مجلس كنب على شكل U بقماش جاكار بني رمادي",
+      "ar": "المجلس البني الرمادي",
       "en": "THE GREY-BROWN U-SHAPED MAJLIS"
     },
     "place": "المجلس",
     "kicker": "مشروع مجلس · تصميم وتنفيذ",
-    "tagline": "كنب بوحدات متصلة على شكل U بقماش جاكار بني رمادي، ومخدات عاجية.",
+    "tagline": "مودرن بسيط · وحدات متصلة على شكل U",
     "cover": {
       "src": "images/projects/grey-brown-majlis-sofa/cover.webp",
       "ratio": "16:9",
@@ -365,12 +431,12 @@
   {
     "href": "grey-wood-lit-shelves-room.html",
     "name": {
-      "ar": "صالة بتجاليد خشب أوك رمادي وأرفف مضيئة",
+      "ar": "صالة الأوك الرمادي",
       "en": "THE GREY OAK LIVING ROOM"
     },
     "place": "الصالة",
     "kicker": "مشروع تجاليد وخزائن · تصميم وتنفيذ",
-    "tagline": "تجاليد وخزائن بخشب أوك رمادي، وحجر بيج، وأرفف بإضاءة مخفية.",
+    "tagline": "مودرن · تجاليد وأرفف مضيئة",
     "cover": {
       "src": "images/projects/grey-wood-lit-shelves-room/cover.webp",
       "ratio": "16:9",
@@ -398,12 +464,12 @@
   {
     "href": "long-dining-room.html",
     "name": {
-      "ar": "غرفة طعام بطاولة طويلة من خشب الأوك الداكن",
+      "ar": "غرفة الطعام الطويلة",
       "en": "THE LONG OAK DINING ROOM"
     },
     "place": "غرفة الطعام",
     "kicker": "مشروع غرفة طعام · تصميم وتنفيذ",
-    "tagline": "طاولة طعام طويلة من خشب الأوك الداكن، وكراسٍ منجّدة بظهر منحني، وكونسول جداري من الخشب نفسه.",
+    "tagline": "مودرن هادئ · أوك داكن وكراسٍ منجّدة",
     "cover": {
       "src": "images/projects/long-dining-room/cover.webp",
       "ratio": "16:9",
@@ -431,12 +497,12 @@
   {
     "href": "majlis-hall-project.html",
     "name": {
-      "ar": "قاعة مجلس وطعام بكنب مخمل وجدار بقرص مضيء",
+      "ar": "قاعة المجلس والطعام",
       "en": "THE MAJLIS & DINING HALL"
     },
     "place": "القاعة",
     "kicker": "مشروع قاعة · تصميم وتنفيذ",
-    "tagline": "مجلس بكنب مخمل أزرق داكن وكراسٍ مستديرة، وجدار بشرائح خشبية وقرص مضيء، وقاعة طعام بطاولات طويلة.",
+    "tagline": "معاصر فاخر · مخمل وقرص مضيء",
     "cover": {
       "src": "images/projects/majlis-hall-project/cover.webp",
       "ratio": "16:9",
@@ -464,12 +530,12 @@
   {
     "href": "majlis-sofa-carpet-room.html",
     "name": {
-      "ar": "مجلس كنب عاجي بقاعدة ماهوجني محفورة",
+      "ar": "المجلس العاجي المحفور",
       "en": "THE IVORY CARVED MAHOGANY MAJLIS"
     },
     "place": "المجلس",
     "kicker": "مشروع مجلس · تصميم وتنفيذ",
-    "tagline": "كنب بقماش شانيل عاجي حول الغرفة، على قاعدة من خشب الماهوجني المحفور.",
+    "tagline": "كلاسيك · ماهوجني محفور وشانيل عاجي",
     "cover": {
       "src": "images/projects/majlis-sofa-carpet-room/cover.webp",
       "ratio": "16:9",
@@ -497,12 +563,12 @@
   {
     "href": "majlis-sofa-room.html",
     "name": {
-      "ar": "مجلس كنب أزرق بخشب الماهوجني والمشربية",
+      "ar": "مجلس المشربية",
       "en": "THE BLUE MAHOGANY MAJLIS"
     },
     "place": "المجلس",
     "kicker": "مشروع مجلس · تصميم وتنفيذ",
-    "tagline": "مجلس على شكل U بقماش مخمل أزرق، وقاعدة من خشب الماهوجني، ولوحات مشربية سوداء.",
+    "tagline": "عربي تقليدي · ماهوجني ومشربية ومخمل",
     "cover": {
       "src": "images/projects/majlis-sofa-room/cover.webp",
       "ratio": "16:9",
@@ -530,12 +596,12 @@
   {
     "href": "majlis-wood-sofa-room.html",
     "name": {
-      "ar": "مجلس كنب عاجي بخشب الأوك",
+      "ar": "مجلس العاجي والأوك",
       "en": "THE IVORY OAK MAJLIS"
     },
     "place": "المجلس",
     "kicker": "مشروع مجلس · تصميم وتنفيذ",
-    "tagline": "كنب على شكل U بقماش شانيل عاجي على قاعدة من خشب الأوك.",
+    "tagline": "مودرن دافئ · شانيل عاجي وخشب أوك",
     "cover": {
       "src": "images/projects/majlis-wood-sofa-room/cover.webp",
       "ratio": "16:9",
@@ -563,12 +629,12 @@
   {
     "href": "modular-wood-base-sofa.html",
     "name": {
-      "ar": "كنب مودرن بوحدات على قاعدة خشبية وصناديق تخزين",
+      "ar": "كنب الوحدات الخشبية",
       "en": "THE MODULAR WOOD BASE SOFA"
     },
     "place": "الصالة",
     "kicker": "مشروع كنب · تصميم وتنفيذ",
-    "tagline": "وحدات كنب مودرن على قاعدة من خشب الزان، بينها صناديق بأدراج، وأرفف مفتوحة في الأطراف.",
+    "tagline": "مودرن عملي · وحدات وصناديق تخزين",
     "cover": {
       "src": "images/projects/modular-wood-base-sofa/cover.webp",
       "ratio": "16:9",
@@ -596,12 +662,12 @@
   {
     "href": "moroccan-majlis-lanterns.html",
     "name": {
-      "ar": "مجلس مغربي بخشب الماهوجني والنقش المفرّغ",
+      "ar": "المجلس المغربي",
       "en": "THE MOROCCAN CARVED MAJLIS"
     },
     "place": "المجلس",
     "kicker": "مشروع مجلس · تصميم وتنفيذ",
-    "tagline": "جلسة على شكل U بقاعدة ماهوجني ونقش مغربي مفرّغ، وظهر بقماش جاكار.",
+    "tagline": "مغربي · نقش مفرّغ وقماش جاكار",
     "cover": {
       "src": "images/projects/moroccan-majlis-lanterns/cover.webp",
       "ratio": "16:9",
@@ -627,14 +693,47 @@
     ]
   },
   {
+    "href": "oval-glass-top-dining-table.html",
+    "name": {
+      "ar": "طاولة الزجاج المضيئة",
+      "en": "THE LIT OVAL DINING TABLE"
+    },
+    "place": "غرفة الطعام",
+    "kicker": "مشروع طاولة طعام · تصميم وتنفيذ",
+    "tagline": "معاصر · زجاج وخشب وإضاءة مخفية",
+    "cover": {
+      "src": "images/projects/oval-glass-top-dining-table/cover.webp",
+      "ratio": "16:9",
+      "caption": "الطاولة بشريط الإضاءة تحت الزجاج"
+    },
+    "spaces": 1,
+    "pieces": 2,
+    "materials": 3,
+    "film": true,
+    "pages": [
+      {
+        "src": "images/projects/oval-glass-top-dining-table/material-wood.webp",
+        "caption": "الخامات"
+      },
+      {
+        "src": "images/projects/oval-glass-top-dining-table/card-table.webp",
+        "caption": "طاولة الطعام"
+      },
+      {
+        "src": "images/projects/oval-glass-top-dining-table/intro-01.webp",
+        "caption": "غرفة الطعام"
+      }
+    ]
+  },
+  {
     "href": "white-corner-sofa-room.html",
     "name": {
-      "ar": "صالة كنب زاوية مودرن عاجي وكرسي بإطار خشبي منحني",
+      "ar": "صالة الزاوية العاجية",
       "en": "THE WHITE CORNER SOFA ROOM"
     },
     "place": "الصالة",
     "kicker": "مشروع صالة · تصميم وتنفيذ",
-    "tagline": "كنب زاوية مودرن بقماش شانيل عاجي على قاعدة خشبية، وكرسي بإطار خشبي منحني.",
+    "tagline": "مودرن ناعم · زوايا مائلة وكرسي منحني",
     "cover": {
       "src": "images/projects/white-corner-sofa-room/cover.webp",
       "ratio": "16:9",
@@ -662,12 +761,12 @@
   {
     "href": "white-floor-majlis-rust-cushions.html",
     "name": {
-      "ar": "مجلس جلسة أرضية عاجية بأطراف خشبية داكنة",
+      "ar": "المجلس الأرضي العاجي",
       "en": "THE IVORY FLOOR MAJLIS"
     },
     "place": "المجلس",
     "kicker": "مشروع مجلس · تصميم وتنفيذ",
-    "tagline": "جلسة أرضية منخفضة بقماش عاجي على قاعدة خشبية داكنة، بأذرع صندوقية وطاولات زاوية بسطح زجاج أسود.",
+    "tagline": "جلسة أرضية معاصرة · عاجي وخشب داكن",
     "cover": {
       "src": "images/projects/white-floor-majlis-rust-cushions/cover.webp",
       "ratio": "16:9",
@@ -695,12 +794,12 @@
   {
     "href": "white-modern-living-room.html",
     "name": {
-      "ar": "صالة مودرن بيضاء بكنب على شكل U",
+      "ar": "الصالة البيضاء",
       "en": "THE WHITE MODERN LIVING ROOM"
     },
     "place": "الصالة",
     "kicker": "مشروع صالة ومدخل · تصميم وتنفيذ",
-    "tagline": "كنب عاجي على شكل U، وجدار تلفزيون من الشيبورد، وستائر بإضاءة مخفية.",
+    "tagline": "مودرن · أبيض وشيبورد وإضاءة مخفية",
     "cover": {
       "src": "images/projects/white-modern-living-room/cover.webp",
       "ratio": "16:9",
@@ -722,6 +821,39 @@
       {
         "src": "images/projects/white-modern-living-room/intro-01.webp",
         "caption": "الصالة"
+      }
+    ]
+  },
+  {
+    "href": "wood-meeting-table.html",
+    "name": {
+      "ar": "طاولة الاجتماعات البيضاوية",
+      "en": "THE OVAL WOOD MEETING TABLE"
+    },
+    "place": "غرفة الاجتماعات",
+    "kicker": "مشروع طاولة وكراسي · تصميم وتنفيذ",
+    "tagline": "مودرن · أوك عسلي وقاعدة مضلّعة",
+    "cover": {
+      "src": "images/projects/wood-meeting-table/cover.webp",
+      "ratio": "16:9",
+      "caption": "الطاولة البيضاوية والكراسي حولها"
+    },
+    "spaces": 1,
+    "pieces": 2,
+    "materials": 2,
+    "film": true,
+    "pages": [
+      {
+        "src": "images/projects/wood-meeting-table/material-wood.webp",
+        "caption": "الخامات"
+      },
+      {
+        "src": "images/projects/wood-meeting-table/card-table.webp",
+        "caption": "الطاولة البيضاوية"
+      },
+      {
+        "src": "images/projects/wood-meeting-table/intro-01.webp",
+        "caption": "غرفة الاجتماعات"
       }
     ]
   }

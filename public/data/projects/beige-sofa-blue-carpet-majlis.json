@@ -1,21 +1,22 @@
 {
   "name": {
-    "ar": "مجلس كنب كلاسيك بيج بخشب الزان الطبيعي",
+    "ar": "مجلس الكلاسيك البيج",
     "en": "THE BEIGE CLASSIC BEECH MAJLIS"
   },
   "place": "المجلس",
   "kicker": "مشروع مجلس · تصميم وتنفيذ",
-  "tagline": "كنب كلاسيك بخشب الزان الطبيعي، بقماش شانيل بيج وظهر مخيّط.",
+  "tagline": "كلاسيك · زان طبيعي وظهر مخيّط",
   "cover": {
     "src": "images/projects/beige-sofa-blue-carpet-majlis/cover.webp",
     "ratio": "16:9",
     "caption": "المجلس بالطول"
   },
   "intro": {
-    "lead": "مجلس طويل بكنب كلاسيك من الشانيل البيج، ظهره مخيّط بخطوط طولية، وأيديه وقاعدته من خشب الزان الطبيعي.",
+    "lead": "مجلس طويل بكنب كلاسيك صنعناه بمقاس الغرفة على جهتيها، يجمع قماش الشانيل البيج مع إطار من خشب الزان الطبيعي.",
     "paragraphs": [
-      "بين الكنب طاولات جنب من الخشب بسطح زجاج، وفي الوسط طاولة مستطيلة من الخشب والزجاج.",
-      "الكنب على جهتي الغرفة بطولها، وصُنع بمقاسها."
+      "الكنب طويل بقماش شانيل بيج ناعم، ظهره مخيّط بخطوط طولية بارزة، وأيديه وقاعدته في إطار من خشب الزان الطبيعي بلون دافئ.",
+      "في أطراف الجلسات كراسٍ مفردة بالقماش والإطار نفسيهما، وبين وحدات الكنب طاولات جانبية من الخشب بسطح زجاج، وفي الوسط طاولة مستطيلة من الخشب والزجاج.",
+      "والمخدات بنقوش متموجة ناعمة، وأخرى سادة، موزعة على طول الكنب."
     ],
     "words": [
       {
@@ -143,6 +144,30 @@
           "ratio": "3:4",
           "caption": "طرف الكنب",
           "span": 4
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-g-40.webp",
+          "ratio": "3:4",
+          "caption": "الكنب بظهره المخيّط",
+          "span": 4
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-g-41.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة بطولها",
+          "span": 4
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-g-42.webp",
+          "ratio": "3:4",
+          "caption": "طرف الجلسة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-g-43.webp",
+          "ratio": "3:4",
+          "caption": "الكنب والكرسي المفرد",
+          "span": 4
         }
       ],
       "details": [
@@ -163,12 +188,30 @@
           "ratio": "3:4",
           "caption": "طاولة الجنب بسطحها الزجاجي",
           "product": "side-tables"
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-d-50.webp",
+          "ratio": "3:4",
+          "caption": "إطار اليد من خشب الزان",
+          "product": "sofas"
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-d-51.webp",
+          "ratio": "3:4",
+          "caption": "المقعد والذراع",
+          "product": "sofas"
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-d-52.webp",
+          "ratio": "3:4",
+          "caption": "ظهر الكرسي المفرد",
+          "product": "armchair"
         }
       ]
     }
   ],
   "collection": {
-    "intro": "خمس قطع في هذا المجلس، منها الكنب الذي صُنع بمقاس الغرفة.",
+    "intro": "خمس قطع في هذا المجلس. الكنب والكراسي صُنعت بمقاس الغرفة، والطاولات اخترناها لتتناسق معها. افتح أي قطعة لترى صورها وتفاصيلها.",
     "image": {
       "src": "images/projects/beige-sofa-blue-carpet-majlis/collection-14.webp",
       "ratio": "16:9",
@@ -190,7 +233,7 @@
         "walnut"
       ],
       "finish": "شانيل بيج بظهر مخيّط وإطار من خشب الزان",
-      "text": "كنب كلاسيك طويل من الشانيل البيج، ظهره مخيّط بخطوط طولية، وأيديه وقاعدته من خشب الزان الطبيعي.",
+      "text": "كنب كلاسيك طويل من الشانيل البيج، ظهره مخيّط بخطوط طولية بارزة، وأيديه وقاعدته في إطار من خشب الزان الطبيعي. يمتد على جهتي الغرفة بوحدات متصلة.",
       "card": "images/projects/beige-sofa-blue-carpet-majlis/card-sofas.webp",
       "views": [
         {
@@ -202,6 +245,11 @@
           "src": "images/projects/beige-sofa-blue-carpet-majlis/sofas-v-16.webp",
           "ratio": "3:4",
           "caption": "الكنبة من الأمام"
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/sofas-v-60.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة من الأمام"
         }
       ],
       "details": [
@@ -209,6 +257,11 @@
           "src": "images/projects/beige-sofa-blue-carpet-majlis/sofas-d-17.webp",
           "ratio": "3:4",
           "caption": "إطار اليد الخشبي"
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-d-50.webp",
+          "ratio": "3:4",
+          "caption": "إطار اليد"
         }
       ],
       "inSitu": [
@@ -233,13 +286,18 @@
         "walnut"
       ],
       "finish": "شانيل بيج بإطار من خشب الزان",
-      "text": "كرسي مفرد بقماش الكنب نفسه وإطار من خشب الزان، في أطراف الجلسة.",
+      "text": "كرسي مفرد بقماش الكنب نفسه وظهر مخيّط، بأيدٍ في إطار من خشب الزان، في أطراف الجلسات.",
       "card": "images/projects/beige-sofa-blue-carpet-majlis/card-armchair.webp",
       "views": [
         {
           "src": "images/projects/beige-sofa-blue-carpet-majlis/armchair-v-19.webp",
           "ratio": "3:4",
           "caption": "الكرسي المفرد"
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/armchair-v-61.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي بجانب الكنب"
         }
       ],
       "details": [],
@@ -333,6 +391,11 @@
           "src": "images/projects/beige-sofa-blue-carpet-majlis/cushions-v-27.webp",
           "ratio": "3:4",
           "caption": "المخدات على الكنبة"
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/cushions-v-62.webp",
+          "ratio": "3:4",
+          "caption": "المخدة بنقشها المتموج"
         }
       ],
       "details": [],

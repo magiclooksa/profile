@@ -1,21 +1,22 @@
 {
   "name": {
-    "ar": "صالة مودرن بيضاء بكنب على شكل U",
+    "ar": "الصالة البيضاء",
     "en": "THE WHITE MODERN LIVING ROOM"
   },
   "place": "الصالة",
   "kicker": "مشروع صالة ومدخل · تصميم وتنفيذ",
-  "tagline": "كنب عاجي على شكل U، وجدار تلفزيون من الشيبورد، وستائر بإضاءة مخفية.",
+  "tagline": "مودرن · أبيض وشيبورد وإضاءة مخفية",
   "cover": {
     "src": "images/projects/white-modern-living-room/cover.webp",
     "ratio": "16:9",
     "caption": "الكنبة على شكل U أمام جدار الستائر المضاءة"
   },
   "intro": {
-    "lead": "صالة بيضاء فيها كنبة عاجية على شكل U حول طاولة وسط، ويقابلها جدار تلفزيون من الشيبورد بخانات بلون الخشب.",
+    "lead": "صالة ومدخل صمّمناهما معًا بطابع مودرن أبيض: كنب عاجي كبير على شكل U، وأعمال مدمجة من الشيبورد، وإضاءة مخفية في السقف وفوق الستائر.",
     "paragraphs": [
-      "الستائر الشفافة تغطي الجدار كله وفوقها إضاءة مخفية، والكرسيان المفردان بقماش الكنبة نفسه.",
-      "في المدخل دولاب أبيض طويل، ومرآة مقوسة بإطار من خشب الزان، ومقعد أبيض منخفض، ورف من خشب الزان معلّق من السقف. وخلفهما جلسة صغيرة بكرسيين وكنبة عاجية."
+      "في الصالة كنب عاجي على شكل U حول طاولة وسط رمادية، ويقابله جدار تلفزيون من الشيبورد الأبيض بوحدة سفلية طويلة وخانات بلون الخشب، والستائر الشفافة تغطي الجدار كله وفوقها إضاءة مخفية.",
+      "في المدخل دولاب أبيض طويل بتخزين تاتش، ومرآة مقوسة بإطار من خشب الزان فوق مقعد منخفض بأدراج، ورف من خشب الزان معلّق من السقف بقضيبين رفيعين.",
+      "وخلف المدخل جلسة صغيرة ثانية أمام الستائر: كرسيان بقماش رمادي، وكنبة عاجية، ومقعد خشبي طويل على الجدار."
     ],
     "words": [
       {
@@ -162,6 +163,30 @@
           "ratio": "3:4",
           "caption": "الكنبة من الأمام",
           "span": 4
+        },
+        {
+          "src": "images/projects/white-modern-living-room/living-g-40.webp",
+          "ratio": "3:4",
+          "caption": "الكنب وجدار التلفزيون",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-modern-living-room/living-g-41.webp",
+          "ratio": "3:4",
+          "caption": "الكنب والكرسيان",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-modern-living-room/living-g-42.webp",
+          "ratio": "16:9",
+          "caption": "الصالة بالعرض",
+          "span": 8
+        },
+        {
+          "src": "images/projects/white-modern-living-room/living-g-43.webp",
+          "ratio": "3:4",
+          "caption": "الكنب أمام الستائر",
+          "span": 4
         }
       ],
       "details": [
@@ -188,6 +213,18 @@
           "ratio": "3:4",
           "caption": "الستائر تحت الإضاءة المخفية",
           "product": "curtains"
+        },
+        {
+          "src": "images/projects/white-modern-living-room/living-d-44.webp",
+          "ratio": "3:4",
+          "caption": "جدار التلفزيون والخانات",
+          "product": "tv-wall"
+        },
+        {
+          "src": "images/projects/white-modern-living-room/living-d-45.webp",
+          "ratio": "3:4",
+          "caption": "المخدات على الكنب",
+          "product": "sofa"
         }
       ]
     },
@@ -250,6 +287,24 @@
           "ratio": "3:4",
           "caption": "الرف والنبتة",
           "span": 4
+        },
+        {
+          "src": "images/projects/white-modern-living-room/entrance-g-46.webp",
+          "ratio": "3:4",
+          "caption": "الممر من المدخل",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-modern-living-room/entrance-g-47.webp",
+          "ratio": "3:4",
+          "caption": "ألواح الجدار والقوس",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-modern-living-room/entrance-g-48.webp",
+          "ratio": "3:4",
+          "caption": "الرف المعلّق والعمود",
+          "span": 4
         }
       ],
       "details": [
@@ -270,6 +325,12 @@
           "ratio": "16:9",
           "caption": "المقعد الأبيض المنخفض",
           "product": "bench"
+        },
+        {
+          "src": "images/projects/white-modern-living-room/entrance-d-49.webp",
+          "ratio": "3:4",
+          "caption": "دولاب المدخل بجانب الباب",
+          "product": "wardrobe"
         }
       ]
     },
@@ -315,6 +376,18 @@
           "ratio": "3:4",
           "caption": "الجلسة من الجهة الأخرى",
           "span": 4
+        },
+        {
+          "src": "images/projects/white-modern-living-room/sitting-g-50.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة العاجية",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-modern-living-room/sitting-g-51.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي والكنبة",
+          "span": 4
         }
       ],
       "details": [
@@ -326,6 +399,12 @@
         },
         {
           "src": "images/projects/white-modern-living-room/sitting-d-28.webp",
+          "ratio": "3:4",
+          "caption": "المقعد الخشبي على الجدار",
+          "product": "wood-bench"
+        },
+        {
+          "src": "images/projects/white-modern-living-room/sitting-d-52.webp",
           "ratio": "3:4",
           "caption": "المقعد الخشبي على الجدار",
           "product": "wood-bench"
@@ -362,6 +441,11 @@
           "src": "images/projects/white-modern-living-room/living-look-03.webp",
           "ratio": "3:4",
           "caption": "الكنبة من الأمام"
+        },
+        {
+          "src": "images/projects/white-modern-living-room/sofa-v-60.webp",
+          "ratio": "3:4",
+          "caption": "الكنب بطوله"
         }
       ],
       "details": [
@@ -475,6 +559,11 @@
           "src": "images/projects/white-modern-living-room/living-d-10.webp",
           "ratio": "3:4",
           "caption": "الخانات بجانب الشاشة"
+        },
+        {
+          "src": "images/projects/white-modern-living-room/living-d-44.webp",
+          "ratio": "3:4",
+          "caption": "الخانات بجانب الشاشة"
         }
       ],
       "inSitu": [
@@ -536,6 +625,11 @@
           "src": "images/projects/white-modern-living-room/wardrobe-v-43.webp",
           "ratio": "3:4",
           "caption": "الدولاب بجانب الباب"
+        },
+        {
+          "src": "images/projects/white-modern-living-room/entrance-d-49.webp",
+          "ratio": "3:4",
+          "caption": "الدولاب والباب"
         }
       ],
       "details": [],
@@ -630,6 +724,11 @@
           "src": "images/projects/white-modern-living-room/shelf-v-49.webp",
           "ratio": "3:4",
           "caption": "الرف المعلّق"
+        },
+        {
+          "src": "images/projects/white-modern-living-room/shelf-v-61.webp",
+          "ratio": "3:4",
+          "caption": "الرف المعلّق والكونسول"
         }
       ],
       "details": [],
@@ -692,6 +791,11 @@
           "src": "images/projects/white-modern-living-room/loveseat-v-53.webp",
           "ratio": "3:4",
           "caption": "الكنبة من الزاوية"
+        },
+        {
+          "src": "images/projects/white-modern-living-room/loveseat-v-62.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة أمام الستائر"
         }
       ],
       "details": [],
@@ -723,6 +827,11 @@
           "src": "images/projects/white-modern-living-room/wood-bench-v-55.webp",
           "ratio": "3:4",
           "caption": "المقعد على الجدار"
+        },
+        {
+          "src": "images/projects/white-modern-living-room/sitting-d-52.webp",
+          "ratio": "3:4",
+          "caption": "المقعد بطوله"
         }
       ],
       "details": [],

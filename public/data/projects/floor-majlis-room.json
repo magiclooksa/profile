@@ -1,21 +1,22 @@
 {
   "name": {
-    "ar": "مجلس كنب كلاسيك بخشب الزان والنقش المفرّغ",
+    "ar": "مجلس النقش المفرّغ",
     "en": "THE CARVED BEECH MAJLIS"
   },
   "place": "المجلس",
   "kicker": "مشروع مجلس · من التصميم إلى التنفيذ",
-  "tagline": "كنب كلاسيك بخشب الزان الطبيعي، ومخمل كريمي، ولوحات خشب بنقش إسلامي مفرّغ.",
+  "tagline": "كلاسيك شرقي · زان ونقش إسلامي",
   "cover": {
     "src": "images/projects/floor-majlis-room/cover.webp",
     "ratio": "16:9",
     "caption": "المجلس في المعرض: طاولة الوسط بالنقش المفرّغ"
   },
   "intro": {
-    "lead": "مجلس رسمناه ثلاثي الأبعاد ثم صنعناه ونفذناه في بيت العميل: إطارات من خشب الزان تتخللها لوحات خشب بنقش إسلامي مفرّغ.",
+    "lead": "مجلس كلاسيك شرقي رسمناه ثلاثي الأبعاد أولًا، ثم صنعناه ونفذناه في بيت العميل: إطارات من خشب الزان الطبيعي تتخللها لوحات خشب بنقش إسلامي مفرّغ.",
     "paragraphs": [
-      "المقعد والظهر من المخمل الكريمي، وجوانب الكنب لوحات خشب مفرّغة بنقش هندسي، وفي الأطراف أذرع خشبية عريضة.",
-      "حول الجلسة طاولات جنب مكعبة بسطح زجاج، وفي الوسط طاولة مستطيلة كبيرة بالنقش نفسه، ومقاعد مكعبة صغيرة حولها."
+      "الكنب بإطار صندوقي من خشب الزان، مقعده وظهره من المخمل الكريمي، وجوانبه لوحات خشب مفرّغة بنقش هندسي من النجوم والزهور، وفي أطرافه أذرع خشبية عريضة.",
+      "حول الجلسة طاولات جنب مكعبة من الخشب نفسه بسطح زجاج ونقش مفرّغ على جوانبها، وفي الوسط طاولة مستطيلة كبيرة بالنقش نفسه، ومعها مقاعد مكعبة صغيرة تدخل تحتها.",
+      "وقبل التصنيع رسمنا المجلس ثلاثي الأبعاد في غرفة العميل، ليرى توزيع القطع والألوان والخامات قبل البدء."
     ],
     "words": [
       {
@@ -216,6 +217,42 @@
           "ratio": "9:16",
           "caption": "المجلس تحت الإضاءة المخفية",
           "span": 2
+        },
+        {
+          "src": "images/projects/floor-majlis-room/home-g-40.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة والذراع الخشبية",
+          "span": 4
+        },
+        {
+          "src": "images/projects/floor-majlis-room/home-g-41.webp",
+          "ratio": "3:4",
+          "caption": "طرف الجلسة بالنقش المفرّغ",
+          "span": 4
+        },
+        {
+          "src": "images/projects/floor-majlis-room/home-g-42.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة من الزاوية",
+          "span": 4
+        },
+        {
+          "src": "images/projects/floor-majlis-room/home-g-43.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة على الجدار",
+          "span": 4
+        },
+        {
+          "src": "images/projects/floor-majlis-room/home-g-44.webp",
+          "ratio": "3:4",
+          "caption": "المجلس بطوله",
+          "span": 4
+        },
+        {
+          "src": "images/projects/floor-majlis-room/home-g-45.webp",
+          "ratio": "3:4",
+          "caption": "المجلس من المدخل",
+          "span": 4
         }
       ],
       "details": [
@@ -230,6 +267,18 @@
           "ratio": "16:9",
           "caption": "طاولة الوسط والمقاعد المكعبة",
           "product": "stools"
+        },
+        {
+          "src": "images/projects/floor-majlis-room/home-d-46.webp",
+          "ratio": "3:4",
+          "caption": "جانب الكنبة المفرّغ",
+          "product": "seating"
+        },
+        {
+          "src": "images/projects/floor-majlis-room/home-d-47.webp",
+          "ratio": "3:4",
+          "caption": "الذراع والنقش",
+          "product": "seating"
         }
       ]
     },
@@ -281,6 +330,24 @@
           "ratio": "16:9",
           "caption": "التصميم من زاوية أخرى",
           "span": 6
+        },
+        {
+          "src": "images/projects/floor-majlis-room/design-g-48.webp",
+          "ratio": "16:9",
+          "caption": "التصميم: الجلسة وطاولة الوسط",
+          "span": 8
+        },
+        {
+          "src": "images/projects/floor-majlis-room/design-g-49.webp",
+          "ratio": "16:9",
+          "caption": "التصميم: زاوية الجلسة",
+          "span": 8
+        },
+        {
+          "src": "images/projects/floor-majlis-room/design-g-50.webp",
+          "ratio": "16:9",
+          "caption": "التصميم: المجلس كاملًا",
+          "span": 8
         }
       ],
       "details": [
@@ -337,6 +404,11 @@
           "src": "images/projects/floor-majlis-room/seating-v-28.webp",
           "ratio": "3:4",
           "caption": "طرف الكنبة"
+        },
+        {
+          "src": "images/projects/floor-majlis-room/seating-v-60.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة بإطارها المنقوش"
         }
       ],
       "details": [
@@ -378,6 +450,11 @@
           "src": "images/projects/floor-majlis-room/showroom-d-07.webp",
           "ratio": "3:4",
           "caption": "طاولة الجنب"
+        },
+        {
+          "src": "images/projects/floor-majlis-room/side-table-v-61.webp",
+          "ratio": "16:9",
+          "caption": "طاولة الجنب في التصميم"
         }
       ],
       "details": [

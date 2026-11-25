@@ -13,7 +13,7 @@ const KNOWN: Readonly<Record<string, Omit<ContentDocument, 'path'>>> = {
   'projects.json': { group: 'sections', title: 'معرض المشاريع', description: 'المشاريع وصورها وطريقة عرضها' },
   'clients.json': { group: 'sections', title: 'العملاء والشركاء', description: 'فئات العملاء والشركاء والشهادات' },
   'faq.json': { group: 'sections', title: 'الأسئلة الشائعة', description: 'الأسئلة وإجاباتها' },
-  'villa-wood.json': { group: 'catalogues', title: 'فيلا بخشب الأوك والترافرتين', description: 'كتالوج الفيلا: المساحات والقطع والخامات' },
+  'villa-wood.json': { group: 'catalogues', title: 'فيلا الأوك والترافرتين', description: 'كتالوج الفيلا: المساحات والقطع والخامات' },
   'service-pages.json': { group: 'pages', title: 'صفحات الخدمات', description: 'صفحة لكل خدمة: نصها وصورها وأسئلتها وكلماتها المفتاحية' },
   'site.json': { group: 'pages', title: 'الصفحات الداخلية', description: 'نصوص صفحات من نحن والخدمات والمقاولات والمشاريع والتواصل' },
   'seo.json': { group: 'settings', title: 'محركات البحث', description: 'العنوان والوصف والكلمات المفتاحية وبيانات النشاط' },

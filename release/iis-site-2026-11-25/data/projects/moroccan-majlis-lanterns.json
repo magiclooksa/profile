@@ -1,21 +1,22 @@
 {
   "name": {
-    "ar": "مجلس مغربي بخشب الماهوجني والنقش المفرّغ",
+    "ar": "المجلس المغربي",
     "en": "THE MOROCCAN CARVED MAJLIS"
   },
   "place": "المجلس",
   "kicker": "مشروع مجلس · تصميم وتنفيذ",
-  "tagline": "جلسة على شكل U بقاعدة ماهوجني ونقش مغربي مفرّغ، وظهر بقماش جاكار.",
+  "tagline": "مغربي · نقش مفرّغ وقماش جاكار",
   "cover": {
     "src": "images/projects/moroccan-majlis-lanterns/cover.webp",
     "ratio": "16:9",
     "caption": "المجلس المغربي تحت السقف الجبسي المحفور"
   },
   "intro": {
-    "lead": "مجلس مغربي على شكل U في غرفة بسقف وجدران من الجبس الأبيض المحفور.",
+    "lead": "مجلس مغربي على شكل U صنعنا خشبه ونقشه وقماشه بالمقاس، في غرفة بسقف وجدران من الجبس الأبيض المحفور بنقش مغربي.",
     "paragraphs": [
-      "قاعدة الجلسة من خشب الماهوجني بلوحات نقش مغربي مفرّغ، والمقاعد بقماش بيج منسوج، والظهر بقماش جاكار.",
-      "وفي الوسط طاولة مربعة من الخشب نفسه بسطح رخام أبيض، ومعها مقاعد مكعبة صغيرة، وفي أطراف الجلسة أيدٍ خشبية بأسطح رخام. وعلى النوافذ ستائر رومانية."
+      "قاعدة الجلسة وإطاراتها من خشب الماهوجني اللامع، وفي واجهاتها لوحات خشب بنقش مغربي مفرّغ. المقاعد بقماش بيج منسوج، والظهر على الجدار بقماش جاكار بخطوط متعرجة.",
+      "في الوسط طاولة مربعة من الماهوجني بسطح رخام أبيض ولوحات منقوشة على جوانبها، ومعها مقاعد مكعبة صغيرة تدخل تحتها. وفي أطراف الجلسة أيدٍ خشبية بأسطح رخام تعمل كأسطح جانبية.",
+      "ويكمل المجلس فوانيس من الزجاج المضلّع بأحزمة نحاس مفرّغة معلّقة من لوح خشبي في السقف، وستائر رومانية بقماش مقلّم على النوافذ، ومخدات بقماش مشجر بنقوش هندسية."
     ],
     "words": [
       {
@@ -177,6 +178,42 @@
           "ratio": "3:4",
           "caption": "الفوانيس والستائر الرومانية",
           "span": 4
+        },
+        {
+          "src": "images/projects/moroccan-majlis-lanterns/majlis-g-40.webp",
+          "ratio": "3:4",
+          "caption": "طرف الجلسة واليد الخشبية",
+          "span": 4
+        },
+        {
+          "src": "images/projects/moroccan-majlis-lanterns/majlis-g-41.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة على طول الجدار",
+          "span": 4
+        },
+        {
+          "src": "images/projects/moroccan-majlis-lanterns/majlis-g-42.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة والستائر الرومانية",
+          "span": 4
+        },
+        {
+          "src": "images/projects/moroccan-majlis-lanterns/majlis-g-43.webp",
+          "ratio": "3:4",
+          "caption": "المجلس من الطرف",
+          "span": 4
+        },
+        {
+          "src": "images/projects/moroccan-majlis-lanterns/majlis-g-44.webp",
+          "ratio": "3:4",
+          "caption": "المقاعد والمخدات",
+          "span": 4
+        },
+        {
+          "src": "images/projects/moroccan-majlis-lanterns/majlis-g-45.webp",
+          "ratio": "3:4",
+          "caption": "القاعدة المنقوشة بطولها",
+          "span": 4
         }
       ],
       "details": [
@@ -203,12 +240,36 @@
           "ratio": "3:4",
           "caption": "الستارة الرومانية",
           "product": "blinds"
+        },
+        {
+          "src": "images/projects/moroccan-majlis-lanterns/majlis-d-50.webp",
+          "ratio": "3:4",
+          "caption": "لوح النقش المغربي في الإطار الخشبي",
+          "product": "seating"
+        },
+        {
+          "src": "images/projects/moroccan-majlis-lanterns/majlis-d-51.webp",
+          "ratio": "3:4",
+          "caption": "قماش الجاكار على الظهر",
+          "product": "seating"
+        },
+        {
+          "src": "images/projects/moroccan-majlis-lanterns/majlis-d-52.webp",
+          "ratio": "3:4",
+          "caption": "الفانوس بحزامه النحاسي",
+          "product": "lanterns"
+        },
+        {
+          "src": "images/projects/moroccan-majlis-lanterns/majlis-d-53.webp",
+          "ratio": "3:4",
+          "caption": "قماش الستارة الرومانية",
+          "product": "blinds"
         }
       ]
     }
   ],
   "collection": {
-    "intro": "سبع قطع في هذا المجلس، منها الجلسة وطاولتها ومقاعدها وأيديها التي صُنعت بالمقاس من الماهوجني بالنقش المغربي.",
+    "intro": "سبع قطع في هذا المجلس. الجلسة وطاولتها ومقاعدها وأيديها صُنعت بالمقاس من الماهوجني بالنقش المغربي، والفوانيس والستائر والمخدات اخترناها لتكمل الطابع نفسه. افتح أي قطعة لترى صورها وتفاصيلها.",
     "image": {
       "src": "images/projects/moroccan-majlis-lanterns/collection-14.webp",
       "ratio": "16:9",
@@ -232,7 +293,7 @@
         "fretwork"
       ],
       "finish": "مقاعد منسوجة وظهر جاكار على قاعدة ماهوجني منقوشة",
-      "text": "جلسة على شكل U بمقاعد من القماش البيج المنسوج وظهر بقماش جاكار، على قاعدة ماهوجني بلوحات نقش مغربي مفرّغ.",
+      "text": "جلسة على شكل U على ثلاثة جدران، بمقاعد من القماش البيج المنسوج وظهر على الجدار بقماش جاكار بخطوط متعرجة. القاعدة من الماهوجني اللامع، وفي واجهتها لوحات خشب بنقش مغربي مفرّغ بطول الجلسة.",
       "card": "images/projects/moroccan-majlis-lanterns/card-seating.webp",
       "views": [
         {
@@ -244,6 +305,11 @@
           "src": "images/projects/moroccan-majlis-lanterns/seating-v-16.webp",
           "ratio": "3:4",
           "caption": "الجلسة بالطول"
+        },
+        {
+          "src": "images/projects/moroccan-majlis-lanterns/seating-v-60.webp",
+          "ratio": "3:4",
+          "caption": "المقاعد والظهر"
         }
       ],
       "details": [
@@ -251,6 +317,11 @@
           "src": "images/projects/moroccan-majlis-lanterns/seating-d-17.webp",
           "ratio": "3:4",
           "caption": "القاعدة المنقوشة"
+        },
+        {
+          "src": "images/projects/moroccan-majlis-lanterns/majlis-d-50.webp",
+          "ratio": "3:4",
+          "caption": "النقش المفرّغ في الإطار"
         }
       ],
       "inSitu": [
@@ -276,13 +347,18 @@
         "marble"
       ],
       "finish": "ماهوجني بنقش مغربي وسطح رخام أبيض",
-      "text": "طاولة مربعة من الماهوجني بلوحات نقش مغربي على جوانبها وسطح رخام أبيض.",
+      "text": "طاولة مربعة كبيرة من الماهوجني بسطح رخام أبيض، على جوانبها لوحات بالنقش المغربي نفسه، وتحتها مساحة تدخل فيها المقاعد المكعبة.",
       "card": "images/projects/moroccan-majlis-lanterns/card-coffee-table.webp",
       "views": [
         {
           "src": "images/projects/moroccan-majlis-lanterns/coffee-table-v-19.webp",
           "ratio": "3:4",
           "caption": "الطاولة من الأمام"
+        },
+        {
+          "src": "images/projects/moroccan-majlis-lanterns/coffee-table-v-61.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة من الجانب"
         }
       ],
       "details": [
@@ -315,7 +391,7 @@
         "woven"
       ],
       "finish": "ماهوجني بنقش مغربي ومقعد منسوج",
-      "text": "مقاعد مكعبة صغيرة من الماهوجني بالنقش المغربي، بمقعد من القماش المنسوج، حول طاولة الوسط.",
+      "text": "مقاعد مكعبة صغيرة من الماهوجني بالنقش المغربي، بمقعد من القماش المنسوج، تُسحب للجلوس حول الطاولة وتدخل تحتها بعد ذلك.",
       "card": "images/projects/moroccan-majlis-lanterns/card-stools.webp",
       "views": [
         {
@@ -330,6 +406,11 @@
           "src": "images/projects/moroccan-majlis-lanterns/stools-i-23.webp",
           "ratio": "3:4",
           "caption": "المقاعد تحت الطاولة"
+        },
+        {
+          "src": "images/projects/moroccan-majlis-lanterns/stools-i-62.webp",
+          "ratio": "3:4",
+          "caption": "المقاعد حول الطاولة"
         }
       ]
     },
@@ -347,11 +428,16 @@
         "marble"
       ],
       "finish": "ماهوجني بسطح رخام",
-      "text": "صناديق خشب في أطراف الجلسة من الماهوجني بسطح رخام أبيض، تعمل كأسطح جانبية.",
+      "text": "صناديق خشبية في أطراف الجلسة من الماهوجني بسطح رخام أبيض، بارتفاع المسند، تعمل كأسطح جانبية للضيافة.",
       "card": "images/projects/moroccan-majlis-lanterns/card-arm-boxes.webp",
       "views": [
         {
           "src": "images/projects/moroccan-majlis-lanterns/arm-boxes-v-24.webp",
+          "ratio": "3:4",
+          "caption": "اليد الخشبية بسطحها الرخامي"
+        },
+        {
+          "src": "images/projects/moroccan-majlis-lanterns/arm-boxes-v-63.webp",
           "ratio": "3:4",
           "caption": "اليد الخشبية بسطحها الرخامي"
         }
@@ -378,11 +464,16 @@
         "brass"
       ],
       "finish": "زجاج مضلّع بأحزمة نحاس مفرّغة",
-      "text": "فوانيس من الزجاج المضلّع بأحزمة نحاس مفرّغة، معلّقة من لوح خشبي في السقف.",
+      "text": "فوانيس بأطوال مختلفة من الزجاج المضلّع، يلتف حولها حزام نحاسي مفرّغ بنقش مغربي، معلّقة من لوح خشبي في السقف.",
       "card": "images/projects/moroccan-majlis-lanterns/card-lanterns.webp",
       "views": [
         {
           "src": "images/projects/moroccan-majlis-lanterns/lanterns-v-26.webp",
+          "ratio": "3:4",
+          "caption": "الفوانيس من الأسفل"
+        },
+        {
+          "src": "images/projects/moroccan-majlis-lanterns/lanterns-v-64.webp",
           "ratio": "3:4",
           "caption": "الفوانيس من الأسفل"
         }
@@ -413,7 +504,7 @@
       "custom": true,
       "materials": [],
       "finish": "قماش عاجي مقلّم",
-      "text": "ستائر رومانية بطيّات أفقية من قماش عاجي مقلّم.",
+      "text": "ستائر رومانية بطيّات أفقية من قماش عاجي بخطوط ذهبية بنقش الريش، تُرفع وتُنزل لتتحكم في الضوء.",
       "card": "images/projects/moroccan-majlis-lanterns/card-blinds.webp",
       "views": [
         {
@@ -422,7 +513,13 @@
           "caption": "الستارة تحت الإضاءة"
         }
       ],
-      "details": [],
+      "details": [
+        {
+          "src": "images/projects/moroccan-majlis-lanterns/blinds-d-65.webp",
+          "ratio": "3:4",
+          "caption": "الستارة بطيّاتها"
+        }
+      ],
       "inSitu": [
         {
           "src": "images/projects/moroccan-majlis-lanterns/blinds-i-30.webp",
@@ -444,13 +541,23 @@
         "chevron"
       ],
       "finish": "قماش مشجر وقماش مطرز",
-      "text": "مخدات بقماش مشجر، وأخرى مطرزة.",
+      "text": "مخدات بقماش مشجر بنقوش هندسية مغربية، وأخرى مطرزة بخطوط متشابكة، موزعة على طول الجلسة.",
       "card": "images/projects/moroccan-majlis-lanterns/card-cushions.webp",
       "views": [
         {
           "src": "images/projects/moroccan-majlis-lanterns/cushions-v-31.webp",
           "ratio": "3:4",
           "caption": "المخدة على الظهر"
+        },
+        {
+          "src": "images/projects/moroccan-majlis-lanterns/cushions-v-66.webp",
+          "ratio": "3:4",
+          "caption": "المخدة بنقشها الهندسي"
+        },
+        {
+          "src": "images/projects/moroccan-majlis-lanterns/cushions-v-67.webp",
+          "ratio": "3:4",
+          "caption": "المخدات على الجلسة"
         }
       ],
       "details": [
