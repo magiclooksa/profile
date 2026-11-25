@@ -2,7 +2,7 @@
   "name": "magic-look-profile",
   "private": true,
   "version": "1.0.0",
-  "description": "الملف التعريفي لمؤسسة النظرة الساحرة MAGIC LOOK كموقع ويب",
+  "description": "Ø§Ù„Ù…Ù„Ù Ø§Ù„ØªØ¹Ø±ÙŠÙÙŠ Ù„Ù…Ø¤Ø³Ø³Ø© Ø§Ù„Ù†Ø¸Ø±Ø© Ø§Ù„Ø³Ø§Ø­Ø±Ø© MAGIC LOOK ÙƒÙ…ÙˆÙ‚Ø¹ ÙˆÙŠØ¨",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,7 +14,8 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "catalogues": "node tooling/scripts/catalogue-pages.mjs"
+    "catalogues": "node tooling/scripts/catalogue-pages.mjs",
+    "catalogue:pdf": "node tooling/scripts/projects-catalogue.mjs"
   },
   "devDependencies": {
     "@types/node": "22.15.3",

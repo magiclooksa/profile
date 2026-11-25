@@ -14,10 +14,10 @@ const serving = (data: unknown): JsonFetcher => async () => data;
 describe('JsonVillaRepository', () => {
   it('loads the villa catalogue shipped with the site', async () => {
     const villa = await new JsonVillaRepository(serving(raw()), FILE).load();
-    expect(villa.name.ar).toBe('فيلا الخشب');
+    expect(villa.name.ar).toBe('فيلا بخشب الأوك والترافرتين');
     expect(villa.spaces.map((s) => s.id)).toEqual(['living', 'lounge', 'bedroom']);
-    expect(villa.products).toHaveLength(16);
-    expect(villa.materials).toHaveLength(9);
+    expect(villa.products).toHaveLength(15);
+    expect(villa.materials).toHaveLength(8);
   });
 
   it('points only at photos that exist', async () => {

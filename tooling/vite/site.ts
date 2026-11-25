@@ -471,6 +471,32 @@ ${closingBand(ctx, r, 'لديك مشروع قيد التنفيذ؟', 'أرسل �
 
 const PLACE_LABELS: Readonly<Record<string, string>> = { 'الفيلا': 'الفلل', 'المجلس': 'المجالس', 'الصالة': 'الصالات' };
 
+/** The catalogue of every project as one page (written by tooling/vite/projectsBook.ts). */
+const CATALOGUE_PAGE = 'projects-catalogue.html';
+
+function catalogueDownload(root: string, catalogues: readonly CatalogueCard[]): string {
+  // Three covers fanned out like the catalogue's pages: the newest living room, the villa, a majlis.
+  const fan = [catalogues[catalogues.length - 1], catalogues[0], catalogues[Math.floor(catalogues.length / 2)]]
+    .filter((c, i, all): c is CatalogueCard => c !== undefined && all.indexOf(c) === i);
+  return `
+    <section class="cat-dl" id="catalogue">
+      <div class="wrap cat-dl-in reveal">
+        <div class="cat-dl-fan" aria-hidden="true">
+          ${fan.map((c) => `<span class="cat-dl-page"><img src="${asset(root, c.cover.src)}" alt="" loading="lazy" /></span>`).join('\n          ')}
+          <span class="cat-dl-cover"><span class="cat-dl-cover-t">كتالوج<br />المشاريع</span><span class="cat-dl-cover-en latin">Projects Catalogue</span></span>
+        </div>
+        <div class="cat-dl-text">
+          <p class="cat-dl-kicker">كتالوج المشاريع · <span class="latin">${catalogues.length}</span> مشروعًا</p>
+          <h2>كتالوج المشاريع كاملًا</h2>
+          <p>كل مشاريعنا في صفحة واحدة: صور كل مشروع وخاماته والقطع التي صنعناها له بالمقاس.</p>
+          <div class="ctas">
+            <a class="btn solid" href="${root}${CATALOGUE_PAGE}">تصفّح الكتالوج</a>
+          </div>
+        </div>
+      </div>
+    </section>`;
+}
+
 function projectsPage(ctx: SiteContext): string {
   const copy = ctx.site.pages.projects;
   const { catalogues } = ctx.profile;
@@ -494,6 +520,7 @@ ${section({ id: 'all-projects', number: 1, title: 'كتالوجات المشار
         </div>
         <ul class="pj-grid" data-filter-list>${catalogues.map((c, i) => projectCard(r, c, i)).join('')}
         </ul>`)}
+${catalogueDownload(r, catalogues)}
 ${closingBand(ctx, r, 'أعجبك مشروع؟', 'نصمم لك مساحة بالروح نفسها، على مقاس بيتك وذوقك.', '', 'مشروع مشابه لأعمالكم')}`;
 }
 
@@ -659,6 +686,7 @@ ${closingBand(ctx, r, `اطلب عرض سعر لـ${page.name}`, ctx.profile.com
 
 const PAGE_STYLES: Readonly<Record<string, string>> = {
   '/src/entries/home.ts': 'page-home', '/src/entries/site.ts': 'page-site', '/src/entries/catalogue.ts': 'page-villa',
+  '/src/entries/book.ts': 'book',
 };
 
 const FONTS = `    <link rel="preconnect" href="https://fonts.googleapis.com" />

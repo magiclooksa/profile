@@ -491,8 +491,8 @@ interface SiteData { readonly seo: SeoSettings; readonly profile: Profile }
 /** Special wording for pages whose preview should say more than their tagline. */
 const PAGE_OVERRIDES: Record<string, Partial<Pick<PageMeta, 'description' | 'alt'>>> = {
   'villa-wood.html': {
-    description: 'كتالوج تفصيلي لفيلا الخشب: ثلاث مساحات، وست عشرة قطعة، وتسع خامات طبيعية من البلوط والترافرتين والكتان.',
-    alt: 'الصالة العائلية في فيلا الخشب: جدار من البلوط وثريا من الجوت',
+    description: 'كتالوج فيلا بخشب الأوك والترافرتين: ثلاث مساحات، وخمس عشرة قطعة، وثماني خامات من خشب الأوك والزان والترافرتين والكتان.',
+    alt: 'الصالة العائلية في الفيلا: جدار تلفاز بخشب الأوك',
   },
 };
 
@@ -594,6 +594,7 @@ export function seoPlugin(root: string): Plugin {
             image: s.images[0] ? absolute(seo, s.images[0].src) : null,
           })),
           ...profile.catalogues.map((c) => ({ url: absolute(seo, c.href), image: absolute(seo, c.cover.src) })),
+          { url: absolute(seo, 'projects-catalogue.html'), image: profile.catalogues[0] ? absolute(seo, profile.catalogues[0].cover.src) : null },
         ], today),
       });
 

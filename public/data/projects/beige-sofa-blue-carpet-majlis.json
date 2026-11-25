@@ -1,21 +1,21 @@
 {
   "name": {
-    "ar": "مجلس الكنب البيج والسجادة الزرقاء",
-    "en": "THE BEIGE & BLUE MAJLIS"
+    "ar": "مجلس كنب كلاسيك بيج بخشب الزان الطبيعي",
+    "en": "THE BEIGE CLASSIC BEECH MAJLIS"
   },
   "place": "المجلس",
   "kicker": "مشروع مجلس · تصميم وتنفيذ",
-  "tagline": "شانيل بيج بظهر مخيّط، وإطار من الجوز، وسجادة بميدالية زرقاء.",
+  "tagline": "كنب كلاسيك بخشب الزان الطبيعي، بقماش شانيل بيج وظهر مخيّط.",
   "cover": {
     "src": "images/projects/beige-sofa-blue-carpet-majlis/cover.webp",
     "ratio": "16:9",
-    "caption": "المجلس بالطول تحت الثريا على السجادة ذات الميدالية الزرقاء"
+    "caption": "المجلس بالطول"
   },
   "intro": {
-    "lead": "مجلس طويل بكنب من الشانيل البيج، ظهره مخيّط بخطوط طولية، وأيديه في إطار من خشب الجوز، على سجادة عاجية تتوسطها ميدالية زرقاء كبيرة.",
+    "lead": "مجلس طويل بكنب كلاسيك من الشانيل البيج، ظهره مخيّط بخطوط طولية، وأيديه وقاعدته من خشب الزان الطبيعي.",
     "paragraphs": [
-      "بين الكنب طاولات جنب من الخشب بسطح زجاج، وفي الوسط طاولة مستطيلة من الخشب والزجاج، تحت ثريا كريستال وسقف بقبة مضاءة.",
-      "المخدات عاجية بنقوش ناعمة، وبعضها بلون أخضر فاتح، فتبقى الألوان هادئة أمام زرقة السجادة وجدران الورق الرمادي."
+      "بين الكنب طاولات جنب من الخشب بسطح زجاج، وفي الوسط طاولة مستطيلة من الخشب والزجاج.",
+      "الكنب على جهتي الغرفة بطولها، وصُنع بمقاسها."
     ],
     "words": [
       {
@@ -27,12 +27,12 @@
         "en": "Luxury"
       },
       {
-        "ar": "ترحاب",
-        "en": "Welcome"
+        "ar": "كلاسيك",
+        "en": "Classic"
       },
       {
-        "ar": "تناسق",
-        "en": "Harmony"
+        "ar": "تفصيل بالمقاس",
+        "en": "Made to measure"
       }
     ],
     "image": {
@@ -57,8 +57,8 @@
     },
     {
       "id": "walnut",
-      "name": "الجوز",
-      "en": "Walnut",
+      "name": "خشب الزان",
+      "en": "Beech",
       "color": "#5C3320",
       "swatch": "images/projects/beige-sofa-blue-carpet-majlis/material-walnut.webp",
       "note": "إطار أيدي الكنب وقاعدته، وطاولات الجنب وطاولة الوسط."
@@ -70,14 +70,6 @@
       "color": "#9A8B78",
       "swatch": "images/projects/beige-sofa-blue-carpet-majlis/material-glass.webp",
       "note": "أسطح طاولات الجنب وطاولة الوسط."
-    },
-    {
-      "id": "carpet",
-      "name": "السجادة ذات الميدالية",
-      "en": "Medallion carpet",
-      "color": "#7A93BE",
-      "swatch": "images/projects/beige-sofa-blue-carpet-majlis/material-carpet.webp",
-      "note": "سجادة عاجية بميدالية زرقاء كبيرة وإطار مزخرف بالأزرق."
     }
   ],
   "spaces": [
@@ -85,12 +77,12 @@
       "id": "majlis",
       "name": "المجلس",
       "en": "The majlis",
-      "intro": "غرفة طويلة بجدران من الورق الرمادي وبراويز بيضاء، يمتد فيها الكنب على الجهتين حول السجادة، تحت ثريا كريستال.",
+      "intro": "غرفة طويلة بجدران رمادية وبراويز بيضاء، والكنب على الجهتين.",
       "look": {
         "image": {
           "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-look-03.webp",
           "ratio": "3:4",
-          "caption": "المجلس كاملاً حول السجادة"
+          "caption": "المجلس كاملًا"
         },
         "spots": [
           {
@@ -109,11 +101,6 @@
             "product": "side-tables"
           },
           {
-            "x": 50,
-            "y": 86,
-            "product": "carpet"
-          },
-          {
             "x": 37,
             "y": 30,
             "product": "cushions"
@@ -124,7 +111,7 @@
         {
           "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-g-04.webp",
           "ratio": "3:4",
-          "caption": "المجلس تحت الثريا",
+          "caption": "المجلس من الداخل",
           "span": 4
         },
         {
@@ -142,7 +129,7 @@
         {
           "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-g-07.webp",
           "ratio": "3:4",
-          "caption": "الكنب أمام السجادة",
+          "caption": "الكنب على الجهة الأخرى",
           "span": 4
         },
         {
@@ -154,7 +141,7 @@
         {
           "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-g-09.webp",
           "ratio": "3:4",
-          "caption": "طرف الكنب والسجادة",
+          "caption": "طرف الكنب",
           "span": 4
         }
       ],
@@ -176,18 +163,12 @@
           "ratio": "3:4",
           "caption": "طاولة الجنب بسطحها الزجاجي",
           "product": "side-tables"
-        },
-        {
-          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-d-13.webp",
-          "ratio": "3:4",
-          "caption": "الميدالية الزرقاء",
-          "product": "carpet"
         }
       ]
     }
   ],
   "collection": {
-    "intro": "ست قطع في هذا المجلس، منها الكنب الذي صُنع بمقاس الغرفة. افتح أي قطعة لترى صورها وخاماتها.",
+    "intro": "خمس قطع في هذا المجلس، منها الكنب الذي صُنع بمقاس الغرفة.",
     "image": {
       "src": "images/projects/beige-sofa-blue-carpet-majlis/collection-14.webp",
       "ratio": "16:9",
@@ -197,7 +178,7 @@
   "products": [
     {
       "id": "sofas",
-      "name": "الكنب",
+      "name": "الكنب الكلاسيك",
       "en": "Channel-back sofas",
       "category": "كنب",
       "spaces": [
@@ -208,8 +189,8 @@
         "chenille",
         "walnut"
       ],
-      "finish": "شانيل بيج بظهر مخيّط وإطار جوز",
-      "text": "كنب طويل من الشانيل البيج، ظهره مخيّط بخطوط طولية، وأيديه وقاعدته في إطار من خشب الجوز.",
+      "finish": "شانيل بيج بظهر مخيّط وإطار من خشب الزان",
+      "text": "كنب كلاسيك طويل من الشانيل البيج، ظهره مخيّط بخطوط طولية، وأيديه وقاعدته من خشب الزان الطبيعي.",
       "card": "images/projects/beige-sofa-blue-carpet-majlis/card-sofas.webp",
       "views": [
         {
@@ -251,8 +232,8 @@
         "chenille",
         "walnut"
       ],
-      "finish": "شانيل بيج بإطار جوز",
-      "text": "كرسي مفرد بقماش الكنب نفسه وإطار من الجوز، في أطراف الجلسة.",
+      "finish": "شانيل بيج بإطار من خشب الزان",
+      "text": "كرسي مفرد بقماش الكنب نفسه وإطار من خشب الزان، في أطراف الجلسة.",
       "card": "images/projects/beige-sofa-blue-carpet-majlis/card-armchair.webp",
       "views": [
         {
@@ -283,7 +264,7 @@
         "walnut",
         "glass"
       ],
-      "finish": "خشب جوز بسطح زجاج",
+      "finish": "خشب زان بسطح زجاج",
       "text": "طاولات جنب من الخشب بسطح زجاج وأرجل منحنية، بين وحدات الكنب.",
       "card": "images/projects/beige-sofa-blue-carpet-majlis/card-side-tables.webp",
       "views": [
@@ -335,37 +316,6 @@
       ]
     },
     {
-      "id": "carpet",
-      "name": "السجادة",
-      "en": "Medallion carpet",
-      "category": "سجاد",
-      "spaces": [
-        "majlis"
-      ],
-      "custom": false,
-      "materials": [
-        "carpet"
-      ],
-      "finish": "عاجي بميدالية زرقاء",
-      "text": "سجادة كبيرة عاجية بميدالية زرقاء في وسطها وإطار مزخرف بالأزرق، تمتد بطول المجلس.",
-      "card": "images/projects/beige-sofa-blue-carpet-majlis/card-carpet.webp",
-      "views": [
-        {
-          "src": "images/projects/beige-sofa-blue-carpet-majlis/carpet-v-25.webp",
-          "ratio": "3:4",
-          "caption": "السجادة بالطول"
-        }
-      ],
-      "details": [],
-      "inSitu": [
-        {
-          "src": "images/projects/beige-sofa-blue-carpet-majlis/carpet-i-26.webp",
-          "ratio": "3:4",
-          "caption": "السجادة أمام الكنب"
-        }
-      ]
-    },
-    {
       "id": "cushions",
       "name": "المخدات",
       "en": "Cushions",
@@ -375,8 +325,8 @@
       ],
       "custom": false,
       "materials": [],
-      "finish": "عاجي بنقوش ناعمة، وأخضر فاتح",
-      "text": "مخدات عاجية بنقوش متموجة ناعمة، وأخرى بلون أخضر فاتح، على أطراف الكنب.",
+      "finish": "قماش عاجي بنقوش ناعمة",
+      "text": "مخدات بنقوش ناعمة على أطراف الكنب.",
       "card": "images/projects/beige-sofa-blue-carpet-majlis/card-cushions.webp",
       "views": [
         {
@@ -396,14 +346,14 @@
     }
   ],
   "closing": {
-    "title": "مجلس بهذا الهدوء؟",
-    "text": "نصمّم المجلس ونصنع كنبه بالمقاس، ونختار معك القماش والخشب والسجادة. حدّثنا عن مساحتك ونبدأ معاً."
+    "title": "تريد مجلسًا مثل هذا؟",
+    "text": "نصمّم المجلس ونصنع كنبه بالمقاس، ونختار معك القماش والخشب. أرسل لنا تفاصيل مساحتك ونبدأ."
   },
   "film": {
     "src": "videos/projects/beige-sofa-blue-carpet-majlis.mp4",
     "poster": "images/projects/beige-sofa-blue-carpet-majlis/film-poster.webp",
     "ratio": "9:16",
     "title": "جولة في المجلس",
-    "caption": "لقطة تمر على المجلس بطوله والسجادة ذات الميدالية الزرقاء تحت الثريا."
+    "caption": "لقطة تمر على المجلس بطوله."
   }
 }

@@ -15,7 +15,7 @@ const FILTER_LABEL: Record<SearchKind, string> = {
   piece: 'القطع', catalogue: 'الكتالوجات', service: 'الخدمات', work: 'أعمالنا',
   space: 'المساحات', category: 'المنتجات', faq: 'الأسئلة', section: 'الأقسام',
 };
-const IDEAS = ['مجالس', 'كنب منحني', 'غرف نوم', 'وحدات تلفزيون', 'خشب الجوز', 'رخام', 'مجلس مغربي', 'طاولة طعام', 'ستائر', 'مخمل'];
+const IDEAS = ['مجالس', 'كنب منحني', 'غرف نوم', 'وحدات تلفزيون', 'خشب الزان', 'رخام', 'مجلس مغربي', 'طاولة طعام', 'ستائر', 'مخمل'];
 const RECENT_KEY = 'ml-search-recent';
 
 const searchIcon = (): SVGSVGElement => glyph(['M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14z', 'M20 20l-4-4'], 'search-ic');
@@ -76,7 +76,7 @@ export function createSiteSearch(root: string): SiteSearch {
 
   const input = h('input', {
     type: 'search', class: 'search-input', role: 'combobox', 'aria-expanded': 'false', 'aria-controls': 'search-results',
-    'aria-autocomplete': 'list', 'aria-label': 'ابحث في الموقع', placeholder: 'ابحث عن مجلس، كنبة، خشب الجوز، غرفة نوم…',
+    'aria-autocomplete': 'list', 'aria-label': 'ابحث في الموقع', placeholder: 'ابحث عن مجلس، كنبة، خشب الزان، غرفة نوم…',
     autocomplete: 'off', spellcheck: false, enterkeyhint: 'search',
   });
   const Speech = speechCtor();

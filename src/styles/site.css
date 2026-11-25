@@ -86,6 +86,30 @@ a.prod:hover p { color: var(--accent) }
 @media (max-width: 760px) { .pj-grid:not([data-filter-list]) > li:last-child:nth-child(odd) .pj-card { aspect-ratio: 4 / 3.4 } }
 @media (max-width: 760px) { .pj-grid { grid-template-columns: minmax(0, 1fr) } .pj-card { aspect-ratio: 4 / 3.4 } }
 
+/* projects catalogue: fanned pages beside the link to the catalogue page */
+.cat-dl { padding-block: clamp(56px, 8vw, 110px); background: var(--surface); overflow: hidden }
+.cat-dl-in { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(36px, 6vw, 96px); align-items: center }
+.cat-dl-fan { position: relative; aspect-ratio: 4 / 3; max-width: 560px; width: 100%; justify-self: center }
+.cat-dl-page, .cat-dl-cover { position: absolute; top: 12%; width: 62%; aspect-ratio: 297 / 210; box-shadow: 0 18px 40px -18px #1a2a2680; transition: transform .9s var(--ease) }
+.cat-dl-page { padding: 6px; background: #fff }
+.cat-dl-page img { display: block; width: 100%; height: 100%; object-fit: cover }
+.cat-dl-page:nth-child(1) { left: 2%; transform: rotate(-9deg) }
+.cat-dl-page:nth-child(2) { left: 19%; top: 4%; transform: rotate(-2deg) }
+.cat-dl-page:nth-child(3) { left: 36%; top: 16%; transform: rotate(6deg) }
+.cat-dl-cover { left: 10%; top: 38%; width: 46%; display: flex; flex-direction: column; justify-content: flex-end; padding: 6% 7%; background: var(--ml-green); color: #F3EEE6; transform: rotate(-4deg) }
+.cat-dl-cover::before { content: ""; position: absolute; inset: 6px; border: 1px solid #d6c9b566 }
+.cat-dl-cover-t { font-size: clamp(1rem, 2vw, 1.45rem); font-weight: 700; line-height: 1.2 }
+.cat-dl-cover-en { margin-top: 6px; color: var(--ml-bronze); font-size: .55rem; letter-spacing: .22em; text-transform: uppercase; text-align: right; white-space: nowrap }
+.cat-dl:hover .cat-dl-page:nth-child(1) { transform: rotate(-12deg) translateX(-10px) }
+.cat-dl:hover .cat-dl-page:nth-child(3) { transform: rotate(9deg) translateX(10px) }
+.cat-dl-kicker { color: var(--accent); font-size: var(--step--1); font-weight: 500 }
+.cat-dl h2 { margin-top: 8px; font-size: var(--step-3); font-weight: 700 }
+.cat-dl-text > p:not(.cat-dl-kicker) { max-width: 34em; margin-top: 12px; color: var(--muted) }
+.cat-dl .ctas { margin-top: 26px }
+.cat-dl .btn .ico { width: 1.1em; height: 1.1em; margin-inline-end: 8px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round }
+@media (max-width: 860px) { .cat-dl-in { grid-template-columns: minmax(0, 1fr) } .cat-dl-fan { max-width: 420px } }
+@media (prefers-reduced-motion: reduce) { .cat-dl-page, .cat-dl-cover { transition: none } }
+
 .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: clamp(20px, 3vw, 32px) }
 .filters button { min-height: 44px; padding: 6px 20px; border: 1px solid var(--line); background: none; color: inherit; font: inherit; font-size: var(--step--1); cursor: pointer; transition: background .3s, color .3s, border-color .3s }
 .filters button:hover { border-color: var(--accent) }

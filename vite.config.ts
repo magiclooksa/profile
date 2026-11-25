@@ -8,11 +8,14 @@ import { searchIndexPlugin } from './tooling/vite/searchIndex';
 import { seoPlugin } from './tooling/vite/seo';
 import { pageStylesPlugin, sitePlugin } from './tooling/vite/site';
 import { writeServicePages } from './tooling/vite/servicePages';
+import { writeProjectsBook } from './tooling/vite/projectsBook';
 
 const paths = projectPaths(__dirname);
 
 // One page per service, written from public/data/service-pages.json before Vite reads its inputs.
 const servicePages = process.env.VITEST ? [] : writeServicePages(__dirname);
+// The projects catalogue as a web page, written from the project data the same way.
+const projectsBook = process.env.VITEST ? null : writeProjectsBook(__dirname);
 
 /** Every catalogue page (the villa and the project pages), from the index tooling/scripts/catalogue-pages.mjs writes. */
 function catalogues(): { href: string }[] {
@@ -48,6 +51,7 @@ export default defineConfig({
         contact: paths.page('contact.html'),
         villa: paths.page('villa-wood.html'),
         dashboard: paths.page('dashboard.html'),
+        ...(projectsBook ? { book: projectsBook } : {}),
         ...Object.fromEntries(catalogues().filter((c) => c.href !== 'villa-wood.html')
           .map((c) => [c.href.replace(/.html$/, ''), paths.page(c.href)])),
         ...Object.fromEntries(servicePages.map((file) => [`service-${basename(file, '.html')}`, file])),

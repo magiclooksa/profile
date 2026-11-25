@@ -1,44 +1,44 @@
 {
   "name": {
-    "ar": "فيلا الكنب المنحني وطقم الطعام",
-    "en": "THE CURVED SOFA & DINING VILLA"
+    "ar": "فيلا بكنب مودرن منحني وطاولة طعام رخام",
+    "en": "THE CURVED SOFA & MARBLE DINING VILLA"
   },
   "place": "الفيلا",
   "kicker": "مشروع فيلا · جلسة وطعام",
-  "tagline": "بوكليه عاجي بخطوط منحنية، ورخام بيج، وجوز مضلّع.",
+  "tagline": "كنب مودرن بزوايا منحنية بقماش البوكليه، وطاولة طعام برخام بيج وخشب الزان.",
   "cover": {
     "src": "images/projects/curved-sofa-wingchair-dining-villa/cover.webp",
     "ratio": "16:9",
     "caption": "جلسة الكنب المنحني وطاولة الوسط الدائرية"
   },
   "intro": {
-    "lead": "فيلا بمساحة مفتوحة تجمع جلسة وطعاماً: كنب منحني من البوكليه العاجي يلتف حول طاولة دائرية، وكرسي عالٍ دوّار، وطاولة طعام برخام بيج.",
+    "lead": "مساحة مفتوحة فيها جلسة وطعام: كنب مودرن بزوايا منحنية من البوكليه العاجي حول طاولة دائرية، وكرسي عالٍ دوّار، وطاولة طعام برخام بيج.",
     "paragraphs": [
-      "الكنبة الطويلة منحنية وتقابلها كنبة منحنية أصغر، وبينهما طاولة وسط دائرية مضلّعة بسطح زجاج داكن، وطاولة سوداء صغيرة. وبجانبها كرسي عالٍ داخله بوكليه عاجي وخارجه قماش بني موكا، على قاعدة معدن سوداء.",
-      "وفي ركن الطعام طاولة مستطيلة بسطح رخام بيج وقاعدة من الجوز المضلّع، حولها كراسٍ من البوكليه بأرجل خشبية، على سجادة بلون الحجر."
+      "كنبة طويلة منحنية تقابلها كنبة منحنية أصغر، وبينهما طاولة وسط دائرية بسطح زجاج داكن، وطاولة سوداء صغيرة، وبجانبها كرسي عالٍ على قاعدة معدن سوداء.",
+      "وفي ركن الطعام طاولة مستطيلة بسطح رخام بيج وقاعدة مضلّعة من خشب الزان، حولها كراسٍ من البوكليه بأرجل خشبية."
     ],
     "words": [
       {
-        "ar": "نعومة",
-        "en": "Softness"
+        "ar": "مودرن",
+        "en": "Modern"
       },
       {
-        "ar": "انفتاح",
-        "en": "Openness"
+        "ar": "مساحة مفتوحة",
+        "en": "Open plan"
       },
       {
-        "ar": "دفء",
-        "en": "Warmth"
+        "ar": "زوايا منحنية",
+        "en": "Curved corners"
       },
       {
-        "ar": "أناقة",
-        "en": "Elegance"
+        "ar": "تفصيل بالمقاس",
+        "en": "Made to measure"
       }
     ],
     "image": {
       "src": "images/projects/curved-sofa-wingchair-dining-villa/intro-01.webp",
       "ratio": "3:4",
-      "caption": "الكرسي العالي بالبوكليه والموكا"
+      "caption": "الكرسي العالي"
     },
     "inset": {
       "src": "images/projects/curved-sofa-wingchair-dining-villa/intro-02.webp",
@@ -53,7 +53,7 @@
       "en": "Ivory bouclé",
       "color": "#EAE4DA",
       "swatch": "images/projects/curved-sofa-wingchair-dining-villa/material-boucle.webp",
-      "note": "قماش الكنب المنحني وداخل الكرسي العالي وكراسي الطعام، بملمس حبيبي ناعم."
+      "note": "قماش الكنب المنحني وداخل الكرسي العالي وكراسي الطعام."
     },
     {
       "id": "mocha",
@@ -61,7 +61,7 @@
       "en": "Mocha weave",
       "color": "#7A5C4C",
       "swatch": "images/projects/curved-sofa-wingchair-dining-villa/material-mocha.webp",
-      "note": "القماش البني على ظهر الكرسي العالي من الخارج."
+      "note": "القماش على ظهر الكرسي العالي من الخارج."
     },
     {
       "id": "fluted",
@@ -69,7 +69,7 @@
       "en": "Fluted ivory",
       "color": "#E3DCD0",
       "swatch": "images/projects/curved-sofa-wingchair-dining-villa/material-fluted.webp",
-      "note": "قاعدة طاولة الوسط الدائرية بأضلاع عمودية متكررة."
+      "note": "قاعدة طاولة الوسط الدائرية."
     },
     {
       "id": "marble",
@@ -77,15 +77,15 @@
       "en": "Beige marble",
       "color": "#D8CCBB",
       "swatch": "images/projects/curved-sofa-wingchair-dining-villa/material-marble.webp",
-      "note": "سطح طاولة الطعام بعروق ناعمة."
+      "note": "سطح طاولة الطعام."
     },
     {
       "id": "walnut",
-      "name": "الجوز المضلّع",
-      "en": "Ribbed walnut",
+      "name": "خشب الزان المضلّع",
+      "en": "Ribbed beech",
       "color": "#5A3A26",
       "swatch": "images/projects/curved-sofa-wingchair-dining-villa/material-walnut.webp",
-      "note": "قاعدة طاولة الطعام بأضلاع عمودية، وأرجل كراسي الطعام."
+      "note": "قاعدة طاولة الطعام وأرجل كراسي الطعام."
     },
     {
       "id": "black",
@@ -93,7 +93,7 @@
       "en": "Matt black",
       "color": "#1F1E1D",
       "swatch": "images/projects/curved-sofa-wingchair-dining-villa/material-black.webp",
-      "note": "قاعدة الكرسي العالي المعدنية والطاولة الصغيرة بجانب الكنب."
+      "note": "قاعدة الكرسي العالي والطاولة الصغيرة بجانب الكنب."
     }
   ],
   "spaces": [
@@ -101,7 +101,7 @@
       "id": "lounge",
       "name": "الجلسة",
       "en": "The lounge",
-      "intro": "كنب منحني من البوكليه العاجي حول طاولة دائرية مضلّعة، على سجادة بخطوط فاتحة، وبجانبه الكرسي العالي الدوّار.",
+      "intro": "كنب مودرن بزوايا منحنية من البوكليه العاجي حول طاولة دائرية، وبجانبه الكرسي العالي الدوّار.",
       "look": {
         "image": {
           "src": "images/projects/curved-sofa-wingchair-dining-villa/lounge-look-03.webp",
@@ -160,7 +160,7 @@
         {
           "src": "images/projects/curved-sofa-wingchair-dining-villa/lounge-g-09.webp",
           "ratio": "3:4",
-          "caption": "الكنب على السجادة",
+          "caption": "الكنب المنحني في الجلسة",
           "span": 4
         }
       ],
@@ -180,7 +180,7 @@
         {
           "src": "images/projects/curved-sofa-wingchair-dining-villa/lounge-d-12.webp",
           "ratio": "3:4",
-          "caption": "البوكليه والموكا في الكرسي العالي",
+          "caption": "قماش الكرسي العالي",
           "product": "wingchair"
         },
         {
@@ -195,7 +195,7 @@
       "id": "dining",
       "name": "ركن الطعام",
       "en": "The dining corner",
-      "intro": "طاولة طعام مستطيلة برخام بيج على قاعدة من الجوز المضلّع، وكراسٍ من البوكليه بأرجل خشبية، قريباً من المطبخ المفتوح.",
+      "intro": "طاولة طعام مستطيلة برخام بيج على قاعدة مضلّعة من خشب الزان، وكراسٍ من البوكليه بأرجل خشبية، بجانب المطبخ المفتوح.",
       "look": {
         "image": {
           "src": "images/projects/curved-sofa-wingchair-dining-villa/dining-look-14.webp",
@@ -251,7 +251,7 @@
         {
           "src": "images/projects/curved-sofa-wingchair-dining-villa/dining-d-20.webp",
           "ratio": "3:4",
-          "caption": "قاعدة الجوز المضلّعة",
+          "caption": "قاعدة طاولة الطعام من خشب الزان",
           "product": "dining-table"
         },
         {
@@ -264,7 +264,7 @@
     }
   ],
   "collection": {
-    "intro": "ست قطع في الجلسة وركن الطعام، منها الكنب المنحني الذي صُنع بمقاس المكان. افتح أي قطعة لترى صورها وخاماتها.",
+    "intro": "ست قطع في الجلسة وركن الطعام، منها الكنب المنحني الذي صُنع بالمقاس.",
     "image": {
       "src": "images/projects/curved-sofa-wingchair-dining-villa/collection-22.webp",
       "ratio": "16:9",
@@ -274,7 +274,7 @@
   "products": [
     {
       "id": "sofa",
-      "name": "الكنب المنحني",
+      "name": "الكنب المودرن بزوايا منحنية",
       "en": "Curved bouclé sofas",
       "category": "كنب",
       "spaces": [
@@ -284,8 +284,8 @@
       "materials": [
         "boucle"
       ],
-      "finish": "بوكليه عاجي بخط منحني",
-      "text": "كنبة طويلة منحنية من البوكليه العاجي، تقابلها كنبة منحنية أصغر، وعليهما مخدات عاجية وبنية.",
+      "finish": "بوكليه عاجي بزوايا منحنية",
+      "text": "كنبة طويلة منحنية من البوكليه العاجي، تقابلها كنبة منحنية أصغر.",
       "card": "images/projects/curved-sofa-wingchair-dining-villa/card-sofa.webp",
       "views": [
         {
@@ -329,7 +329,7 @@
         "black"
       ],
       "finish": "بوكليه عاجي من الداخل، وموكا من الخارج، وقاعدة معدن سوداء",
-      "text": "كرسي دوّار بظهر عالٍ يحيط بالجالس، داخله بوكليه عاجي وخارجه قماش بني موكا، على قاعدة معدنية سوداء بأربعة أذرع.",
+      "text": "كرسي دوّار بظهر عالٍ، داخله بوكليه عاجي وخارجه قماش موكا، على قاعدة معدنية سوداء.",
       "card": "images/projects/curved-sofa-wingchair-dining-villa/card-wingchair.webp",
       "views": [
         {
@@ -371,7 +371,7 @@
         "fluted"
       ],
       "finish": "قاعدة عاجية مضلّعة بسطح زجاج داكن",
-      "text": "طاولة دائرية بقاعدة عاجية مضلّعة بأضلاع عمودية، وسطح من الزجاج الداكن.",
+      "text": "طاولة دائرية بقاعدة عاجية مضلّعة وسطح زجاج داكن.",
       "card": "images/projects/curved-sofa-wingchair-dining-villa/card-coffee-table.webp",
       "views": [
         {
@@ -439,8 +439,8 @@
         "marble",
         "walnut"
       ],
-      "finish": "سطح رخام بيج على قاعدة جوز مضلّعة",
-      "text": "طاولة طعام مستطيلة بسطح من الرخام البيج بحواف مستديرة، على قاعدة من الجوز بأضلاع عمودية.",
+      "finish": "سطح رخام بيج على قاعدة مضلّعة من خشب الزان",
+      "text": "طاولة طعام مستطيلة بسطح رخام بيج على قاعدة مضلّعة من خشب الزان.",
       "card": "images/projects/curved-sofa-wingchair-dining-villa/card-dining-table.webp",
       "views": [
         {
@@ -478,7 +478,7 @@
         "walnut"
       ],
       "finish": "بوكليه عاجي بأرجل خشبية",
-      "text": "كراسي طعام بظهر منحني مرتفع من البوكليه العاجي، على أربع أرجل خشبية رفيعة.",
+      "text": "كراسي طعام بظهر منحني من البوكليه العاجي على أرجل خشبية.",
       "card": "images/projects/curved-sofa-wingchair-dining-villa/card-dining-chairs.webp",
       "views": [
         {
@@ -504,8 +504,8 @@
     }
   ],
   "closing": {
-    "title": "فيلتك بهذه النعومة؟",
-    "text": "نصمّم الجلسة وركن الطعام معاً، ونختار معك القطع والأقمشة والرخام والخشب. حدّثنا عن مساحتك ونبدأ معاً."
+    "title": "تريد جلسة وطاولة طعام مثل هذه؟",
+    "text": "نصمّم الجلسة وركن الطعام معًا، ونختار معك القطع والأقمشة والرخام والخشب. أرسل لنا تفاصيل مساحتك ونبدأ."
   },
   "film": {
     "src": "videos/projects/curved-sofa-wingchair-dining-villa.mp4",

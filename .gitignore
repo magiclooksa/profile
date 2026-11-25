@@ -3,7 +3,12 @@ dist
 .DS_Store
 pages/services/
 dist-check*/
-release/
+# release/
 server-dist/
 storage/
 server.config.json
+
+tooling/catalogue/out/
+pages/projects-catalogue.html
+.build-*/
+dist-next/
