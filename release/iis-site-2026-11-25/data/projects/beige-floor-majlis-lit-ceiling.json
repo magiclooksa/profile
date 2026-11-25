@@ -1,0 +1,309 @@
+{
+  "name": {
+    "ar": "مجلس جلسة أرضية بيج بإضاءة خطية في السقف",
+    "en": "THE BEIGE FLOOR MAJLIS"
+  },
+  "place": "المجلس",
+  "kicker": "مشروع مجلس · تصميم وتنفيذ",
+  "tagline": "جلسة أرضية منخفضة بقماش جاكار بيج حول الغرفة، وأرفف خشبية في الأطراف، ومخدات بقماش مشجر.",
+  "cover": {
+    "src": "images/projects/beige-floor-majlis-lit-ceiling/cover.webp",
+    "ratio": "16:9",
+    "caption": "الجلسة الأرضية حول الغرفة"
+  },
+  "intro": {
+    "lead": "مجلس بجلسة أرضية منخفضة صنعناها بمقاس الغرفة، تمتد على الجدران الثلاثة وتلتف في الزوايا دون فراغ.",
+    "paragraphs": [
+      "الجلسة بقواعد منخفضة مكسوّة بقماش جاكار بيج، ومقاعد عريضة، ومساند ظهر على الجدار، وفي الزوايا وحدات زاوية تصل الجلسة.",
+      "في أطراف الجلسة أرفف خشبية مفتوحة بخانات بارتفاع المقعد، تعمل كأسطح جانبية ومكان للحفظ.",
+      "المخدات بقماش مشجر بنقش النخيل وأخرى بنقوش هندسية، والغرفة بجدران مكسوّة بألواح بيج وإضاءة خطية في السقف وستائر بطبقتين."
+    ],
+    "words": [
+      {
+        "ar": "جلسة أرضية",
+        "en": "Floor seating"
+      },
+      {
+        "ar": "تفصيل بالمقاس",
+        "en": "Made to measure"
+      },
+      {
+        "ar": "إضاءة خطية",
+        "en": "Linear lighting"
+      },
+      {
+        "ar": "ضيافة",
+        "en": "Hospitality"
+      }
+    ],
+    "image": {
+      "src": "images/projects/beige-floor-majlis-lit-ceiling/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "طرف الجلسة والرف الخشبي"
+    },
+    "inset": {
+      "src": "images/projects/beige-floor-majlis-lit-ceiling/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "المخدات على الجلسة"
+    }
+  },
+  "materials": [
+    {
+      "id": "jacquard",
+      "name": "قماش الجاكار البيج",
+      "en": "Beige jacquard",
+      "color": "#D8D2C2",
+      "swatch": "images/projects/beige-floor-majlis-lit-ceiling/material-jacquard.webp",
+      "note": "قماش القواعد والمقاعد ومساند الظهر."
+    },
+    {
+      "id": "wood",
+      "name": "الخشب",
+      "en": "Wood",
+      "color": "#8A4A24",
+      "swatch": "images/projects/beige-floor-majlis-lit-ceiling/material-wood.webp",
+      "note": "الأرفف المفتوحة في أطراف الجلسة."
+    },
+    {
+      "id": "patterned",
+      "name": "القماش المشجر",
+      "en": "Patterned fabric",
+      "color": "#D9C795",
+      "swatch": "images/projects/beige-floor-majlis-lit-ceiling/material-patterned.webp",
+      "note": "قماش المخدات بنقش النخيل والنقوش الهندسية."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "main",
+      "name": "المجلس",
+      "en": "The majlis",
+      "intro": "غرفة طويلة بأرضية خشبية وجدران بألواح بيج، وإضاءة خطية متقاطعة في السقف، وستائر طويلة على النوافذ. الجلسة على ثلاثة جدران والوسط مفتوح.",
+      "look": {
+        "image": {
+          "src": "images/projects/beige-floor-majlis-lit-ceiling/main-look-03.webp",
+          "ratio": "3:4",
+          "caption": "المجلس بطوله"
+        },
+        "spots": [
+          {
+            "x": 30,
+            "y": 62,
+            "product": "seating"
+          },
+          {
+            "x": 25,
+            "y": 55,
+            "product": "cushions"
+          },
+          {
+            "x": 8,
+            "y": 85,
+            "product": "shelves"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/beige-floor-majlis-lit-ceiling/main-g-04.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة على جانبي الغرفة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/beige-floor-majlis-lit-ceiling/main-g-05.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة في صدر المجلس",
+          "span": 4
+        },
+        {
+          "src": "images/projects/beige-floor-majlis-lit-ceiling/main-g-06.webp",
+          "ratio": "16:9",
+          "caption": "المجلس بالعرض",
+          "span": 8
+        },
+        {
+          "src": "images/projects/beige-floor-majlis-lit-ceiling/main-g-07.webp",
+          "ratio": "3:4",
+          "caption": "زاوية الجلسة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/beige-floor-majlis-lit-ceiling/main-g-08.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة أمام الستارة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/beige-floor-majlis-lit-ceiling/main-g-09.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة بطولها",
+          "span": 4
+        },
+        {
+          "src": "images/projects/beige-floor-majlis-lit-ceiling/main-g-10.webp",
+          "ratio": "16:9",
+          "caption": "المجلس من الطرف",
+          "span": 8
+        },
+        {
+          "src": "images/projects/beige-floor-majlis-lit-ceiling/main-g-11.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة والجدار",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/beige-floor-majlis-lit-ceiling/main-d-12.webp",
+          "ratio": "3:4",
+          "caption": "الرف الخشبي بخاناته",
+          "product": "shelves"
+        },
+        {
+          "src": "images/projects/beige-floor-majlis-lit-ceiling/main-d-13.webp",
+          "ratio": "3:4",
+          "caption": "المخدات المشجرة",
+          "product": "cushions"
+        },
+        {
+          "src": "images/projects/beige-floor-majlis-lit-ceiling/main-d-14.webp",
+          "ratio": "3:4",
+          "caption": "طرف الجلسة والرف",
+          "product": "seating"
+        },
+        {
+          "src": "images/projects/beige-floor-majlis-lit-ceiling/main-d-15.webp",
+          "ratio": "3:4",
+          "caption": "الستائر والجلسة",
+          "product": "seating"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "ثلاث قطع صُنعت بالمقاس: الجلسة الأرضية، والأرفف الطرفية، والمخدات. افتح أي قطعة لترى صورها.",
+    "image": {
+      "src": "images/projects/beige-floor-majlis-lit-ceiling/collection-16.webp",
+      "ratio": "16:9",
+      "caption": "الجلسة في المجلس"
+    }
+  },
+  "products": [
+    {
+      "id": "seating",
+      "name": "الجلسة الأرضية",
+      "en": "Floor seating",
+      "category": "مجالس",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "jacquard"
+      ],
+      "finish": "قماش جاكار بيج على قواعد منخفضة",
+      "text": "جلسة أرضية منخفضة بقواعد مكسوّة بقماش جاكار بيج، ومقاعد عريضة ومساند ظهر على الجدار، تلتف في الزوايا بوحدات زاوية.",
+      "card": "images/projects/beige-floor-majlis-lit-ceiling/card-seating.webp",
+      "views": [
+        {
+          "src": "images/projects/beige-floor-majlis-lit-ceiling/seating-v-17.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة من الأمام"
+        },
+        {
+          "src": "images/projects/beige-floor-majlis-lit-ceiling/seating-v-18.webp",
+          "ratio": "3:4",
+          "caption": "وحدة الزاوية"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/beige-floor-majlis-lit-ceiling/seating-d-19.webp",
+          "ratio": "3:4",
+          "caption": "المقعد والمسند"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/beige-floor-majlis-lit-ceiling/seating-i-20.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة في المجلس"
+        }
+      ]
+    },
+    {
+      "id": "shelves",
+      "name": "الأرفف الطرفية",
+      "en": "End shelves",
+      "category": "تخزين",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "wood"
+      ],
+      "finish": "خشب بخانات مفتوحة",
+      "text": "أرفف خشبية مفتوحة بخانات في أطراف الجلسة، بارتفاع المقعد، تعمل كأسطح جانبية.",
+      "card": "images/projects/beige-floor-majlis-lit-ceiling/card-shelves.webp",
+      "views": [
+        {
+          "src": "images/projects/beige-floor-majlis-lit-ceiling/shelves-v-21.webp",
+          "ratio": "3:4",
+          "caption": "الرف الطرفي"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/beige-floor-majlis-lit-ceiling/shelves-i-22.webp",
+          "ratio": "3:4",
+          "caption": "الرف بجانب الجلسة"
+        }
+      ]
+    },
+    {
+      "id": "cushions",
+      "name": "المخدات",
+      "en": "Cushions",
+      "category": "مفروشات",
+      "spaces": [
+        "main"
+      ],
+      "custom": false,
+      "materials": [
+        "patterned"
+      ],
+      "finish": "قماش مشجر بنقش النخيل ونقوش هندسية",
+      "text": "مخدات بقماش مشجر بنقش النخيل، وأخرى بنقوش هندسية، موزعة على طول الجلسة.",
+      "card": "images/projects/beige-floor-majlis-lit-ceiling/card-cushions.webp",
+      "views": [
+        {
+          "src": "images/projects/beige-floor-majlis-lit-ceiling/cushions-v-23.webp",
+          "ratio": "3:4",
+          "caption": "المخدات في الزاوية"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/beige-floor-majlis-lit-ceiling/cushions-d-24.webp",
+          "ratio": "3:4",
+          "caption": "نقش النخيل"
+        }
+      ],
+      "inSitu": []
+    }
+  ],
+  "film": {
+    "src": "videos/projects/beige-floor-majlis-lit-ceiling.mp4",
+    "poster": "images/projects/beige-floor-majlis-lit-ceiling/film-poster.webp",
+    "ratio": "9:16",
+    "title": "جولة في المجلس",
+    "caption": "لقطة تمر على الجلسة الأرضية حول الغرفة."
+  },
+  "closing": {
+    "title": "تريد مجلسًا مثل هذا؟",
+    "text": "نصمّم الجلسة الأرضية بمقاس غرفتك، ونختار معك القماش. أرسل لنا تفاصيل مساحتك ونبدأ."
+  }
+}

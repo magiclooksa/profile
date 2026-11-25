@@ -1,0 +1,322 @@
+{
+  "name": {
+    "ar": "صالة كنب زاوية مودرن عاجي وكرسي بإطار خشبي منحني",
+    "en": "THE WHITE CORNER SOFA ROOM"
+  },
+  "place": "الصالة",
+  "kicker": "مشروع صالة · تصميم وتنفيذ",
+  "tagline": "كنب زاوية مودرن بقماش شانيل عاجي على قاعدة خشبية، وكرسي بإطار خشبي منحني.",
+  "cover": {
+    "src": "images/projects/white-corner-sofa-room/cover.webp",
+    "ratio": "16:9",
+    "caption": "كنب الزاوية على جدارين"
+  },
+  "intro": {
+    "lead": "صالة صغيرة صمّمنا كنبها بالمقاس ليلتف على جدارين بزوايا مائلة، ويقابله كرسي مودرن بإطار خشبي منحني.",
+    "paragraphs": [
+      "الكنب مودرن بوحدات متصلة، بقماش شانيل عاجي ومساند ظهر مستديرة الحواف، وأذرع منحنية في الطرفين، ويرتكز على قاعدة خشبية رفيعة بأرجل قصيرة.",
+      "في الزوايا وحدات مائلة تجعل الجلسة تلتف بخط واحد بدل زاوية حادة.",
+      "الكرسي بظهر وأذرع على شكل قوس مكسوّة بالقماش العاجي، يحملها من الخلف إطار خشبي منحني، وعليه مخدة بقماش مشجر."
+    ],
+    "words": [
+      {
+        "ar": "مودرن",
+        "en": "Modern"
+      },
+      {
+        "ar": "زوايا منحنية",
+        "en": "Curved corners"
+      },
+      {
+        "ar": "تفصيل بالمقاس",
+        "en": "Made to measure"
+      },
+      {
+        "ar": "هدوء",
+        "en": "Calm"
+      }
+    ],
+    "image": {
+      "src": "images/projects/white-corner-sofa-room/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "الكرسي من الأمام"
+    },
+    "inset": {
+      "src": "images/projects/white-corner-sofa-room/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "مخدة بقماش مشجر"
+    }
+  },
+  "materials": [
+    {
+      "id": "fabric",
+      "name": "الشانيل العاجي",
+      "en": "Ivory chenille",
+      "color": "#E3DED5",
+      "swatch": "images/projects/white-corner-sofa-room/material-fabric.webp",
+      "note": "قماش الكنب والكرسي."
+    },
+    {
+      "id": "wood",
+      "name": "الخشب",
+      "en": "Wood",
+      "color": "#5A4030",
+      "swatch": "images/projects/white-corner-sofa-room/material-wood.webp",
+      "note": "قاعدة الكنب وأرجله، وإطار الكرسي المنحني."
+    },
+    {
+      "id": "patterned",
+      "name": "القماش المشجر",
+      "en": "Patterned fabric",
+      "color": "#D6D8CC",
+      "swatch": "images/projects/white-corner-sofa-room/material-patterned.webp",
+      "note": "قماش جزء من المخدات بنقش نباتي."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "main",
+      "name": "الصالة",
+      "en": "The living room",
+      "intro": "غرفة بجدران بيضاء ببراويز وأرضية خشبية. الكنب يلتف على جدارين، والكرسي في الجهة المقابلة.",
+      "look": {
+        "image": {
+          "src": "images/projects/white-corner-sofa-room/main-look-03.webp",
+          "ratio": "3:4",
+          "caption": "كنب الزاوية في الصالة"
+        },
+        "spots": [
+          {
+            "x": 50,
+            "y": 62,
+            "product": "sofa"
+          },
+          {
+            "x": 38,
+            "y": 50,
+            "product": "cushions"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/white-corner-sofa-room/main-g-04.webp",
+          "ratio": "3:4",
+          "caption": "الكنب من الطرف",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-corner-sofa-room/main-g-05.webp",
+          "ratio": "3:4",
+          "caption": "وحدة الزاوية المائلة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-corner-sofa-room/main-g-06.webp",
+          "ratio": "3:4",
+          "caption": "الكنب على الجدارين",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-corner-sofa-room/main-g-07.webp",
+          "ratio": "3:4",
+          "caption": "الكنب والقاعدة الخشبية",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-corner-sofa-room/main-g-08.webp",
+          "ratio": "3:4",
+          "caption": "الكنب من الزاوية",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-corner-sofa-room/main-g-09.webp",
+          "ratio": "3:4",
+          "caption": "انحناءة الذراع",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-corner-sofa-room/main-g-10.webp",
+          "ratio": "3:4",
+          "caption": "الكنب أمام البراويز",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-corner-sofa-room/main-g-11.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة كاملة",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/white-corner-sofa-room/main-d-12.webp",
+          "ratio": "3:4",
+          "caption": "القاعدة الخشبية بين الوحدات",
+          "product": "sofa"
+        },
+        {
+          "src": "images/projects/white-corner-sofa-room/main-d-13.webp",
+          "ratio": "3:4",
+          "caption": "القماش العاجي عن قرب",
+          "product": "sofa"
+        },
+        {
+          "src": "images/projects/white-corner-sofa-room/main-d-14.webp",
+          "ratio": "3:4",
+          "caption": "إطار الكرسي الخشبي",
+          "product": "armchair"
+        },
+        {
+          "src": "images/projects/white-corner-sofa-room/main-d-15.webp",
+          "ratio": "3:4",
+          "caption": "المخدات على الكنب",
+          "product": "cushions"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "ثلاث قطع في الصالة: كنب الزاوية الذي صُنع بالمقاس، والكرسي، والمخدات. افتح أي قطعة لترى صورها.",
+    "image": {
+      "src": "images/projects/white-corner-sofa-room/collection-16.webp",
+      "ratio": "16:9",
+      "caption": "الكنب يلتف على جدارين"
+    }
+  },
+  "products": [
+    {
+      "id": "sofa",
+      "name": "كنب الزاوية",
+      "en": "Corner sofa",
+      "category": "كنب",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "fabric",
+        "wood"
+      ],
+      "finish": "شانيل عاجي على قاعدة خشبية رفيعة",
+      "text": "كنب زاوية مودرن بوحدات متصلة وزوايا مائلة، بقماش شانيل عاجي ومساند مستديرة الحواف وأذرع منحنية، على قاعدة خشبية رفيعة بأرجل قصيرة.",
+      "card": "images/projects/white-corner-sofa-room/card-sofa.webp",
+      "views": [
+        {
+          "src": "images/projects/white-corner-sofa-room/sofa-v-17.webp",
+          "ratio": "3:4",
+          "caption": "وحدة الزاوية"
+        },
+        {
+          "src": "images/projects/white-corner-sofa-room/sofa-v-18.webp",
+          "ratio": "3:4",
+          "caption": "الكنب من الأمام"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/white-corner-sofa-room/sofa-d-19.webp",
+          "ratio": "3:4",
+          "caption": "الذراع المنحنية"
+        },
+        {
+          "src": "images/projects/white-corner-sofa-room/sofa-d-20.webp",
+          "ratio": "3:4",
+          "caption": "القاعدة والقماش"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/white-corner-sofa-room/sofa-i-21.webp",
+          "ratio": "3:4",
+          "caption": "الكنب في الصالة"
+        }
+      ]
+    },
+    {
+      "id": "armchair",
+      "name": "الكرسي المنحني",
+      "en": "Curved armchair",
+      "category": "كراسي",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "fabric",
+        "wood"
+      ],
+      "finish": "شانيل عاجي بإطار خشبي منحني",
+      "text": "كرسي مودرن بظهر وأذرع على شكل قوس مكسوّة بالقماش العاجي، يحملها من الخلف إطار خشبي منحني، ومقعد مبطن.",
+      "card": "images/projects/white-corner-sofa-room/card-armchair.webp",
+      "views": [
+        {
+          "src": "images/projects/white-corner-sofa-room/armchair-v-22.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي من الزاوية"
+        },
+        {
+          "src": "images/projects/white-corner-sofa-room/armchair-v-23.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي من الخلف"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/white-corner-sofa-room/armchair-d-24.webp",
+          "ratio": "3:4",
+          "caption": "الإطار الخشبي والظهر"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/white-corner-sofa-room/armchair-i-25.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي في الصالة"
+        }
+      ]
+    },
+    {
+      "id": "cushions",
+      "name": "المخدات",
+      "en": "Cushions",
+      "category": "مفروشات",
+      "spaces": [
+        "main"
+      ],
+      "custom": false,
+      "materials": [
+        "patterned"
+      ],
+      "finish": "قماش سادة وقماش مشجر",
+      "text": "مخدات بقماش سادة، وأخرى بقماش مشجر بنقش نباتي، على الكنب والكرسي.",
+      "card": "images/projects/white-corner-sofa-room/card-cushions.webp",
+      "views": [
+        {
+          "src": "images/projects/white-corner-sofa-room/cushions-v-26.webp",
+          "ratio": "3:4",
+          "caption": "المخدات على الكنب"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/white-corner-sofa-room/cushions-d-27.webp",
+          "ratio": "3:4",
+          "caption": "المخدة المشجرة"
+        }
+      ],
+      "inSitu": []
+    }
+  ],
+  "film": {
+    "src": "videos/projects/white-corner-sofa-room.mp4",
+    "poster": "images/projects/white-corner-sofa-room/film-poster.webp",
+    "ratio": "9:16",
+    "title": "جولة في الصالة",
+    "caption": "لقطة تمر على الكرسي وكنب الزاوية."
+  },
+  "closing": {
+    "title": "تريد صالة مثل هذه؟",
+    "text": "نصمّم كنب الزاوية بمقاس جدرانك، ونختار معك القماش والخشب. أرسل لنا تفاصيل مساحتك ونبدأ."
+  }
+}

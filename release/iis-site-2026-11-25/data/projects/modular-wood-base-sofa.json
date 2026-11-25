@@ -1,0 +1,319 @@
+{
+  "name": {
+    "ar": "كنب مودرن بوحدات على قاعدة خشبية وصناديق تخزين",
+    "en": "THE MODULAR WOOD BASE SOFA"
+  },
+  "place": "الصالة",
+  "kicker": "مشروع كنب · تصميم وتنفيذ",
+  "tagline": "وحدات كنب مودرن على قاعدة من خشب الزان، بينها صناديق بأدراج، وأرفف مفتوحة في الأطراف.",
+  "cover": {
+    "src": "images/projects/modular-wood-base-sofa/cover.webp",
+    "ratio": "16:9",
+    "caption": "وحدات الكنب والصناديق الخشبية بينها"
+  },
+  "intro": {
+    "lead": "كنب مودرن صمّمناه بوحدات منفصلة على قاعدة خشبية واحدة، تتصل على طول الجدار وتلتف في الزاوية، وبين الوحدات قطع خشبية للتخزين.",
+    "paragraphs": [
+      "كل وحدة بمقعد عريض بقماش شانيل بيج ومساند ظهر منفصلة، وترتكز على قاعدة من خشب الزان بأرجل منحنية في كل طرف.",
+      "بين الوحدات صناديق خشبية بارتفاع المقعد، لكل صندوق غطاء يُرفع ودرج يُسحب، فتصير سطحًا جانبيًا ومكان تخزين في الوقت نفسه.",
+      "وفي أطراف الجلسة أرفف خشبية مفتوحة بخانات، بارتفاع ظهر الكنب، تحمل الكتب والقطع الديكورية."
+    ],
+    "words": [
+      {
+        "ar": "مودرن",
+        "en": "Modern"
+      },
+      {
+        "ar": "وحدات",
+        "en": "Modular"
+      },
+      {
+        "ar": "تخزين",
+        "en": "Storage"
+      },
+      {
+        "ar": "خشب الزان",
+        "en": "Beech"
+      }
+    ],
+    "image": {
+      "src": "images/projects/modular-wood-base-sofa/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "الصندوق الجانبي بغطائه ودرجه"
+    },
+    "inset": {
+      "src": "images/projects/modular-wood-base-sofa/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "القاعدة الخشبية بأرجلها المنحنية"
+    }
+  },
+  "materials": [
+    {
+      "id": "fabric",
+      "name": "الشانيل البيج",
+      "en": "Beige chenille",
+      "color": "#CFC6BA",
+      "swatch": "images/projects/modular-wood-base-sofa/material-fabric.webp",
+      "note": "قماش المقاعد ومساند الظهر والجوانب."
+    },
+    {
+      "id": "beech",
+      "name": "خشب الزان",
+      "en": "Beech",
+      "color": "#9A4F24",
+      "swatch": "images/projects/modular-wood-base-sofa/material-beech.webp",
+      "note": "القاعدة والأرجل، والصناديق الجانبية، والأرفف الطرفية، بتشطيب لامع."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "main",
+      "name": "الصالة",
+      "en": "The living room",
+      "intro": "صالة بجدران بيضاء وأرضية خشبية وإضاءة جدارية. الكنب يمتد على جدارين ويلتف في الزاوية، والصناديق بين الوحدات، والأرفف في الطرفين.",
+      "look": {
+        "image": {
+          "src": "images/projects/modular-wood-base-sofa/main-look-03.webp",
+          "ratio": "3:4",
+          "caption": "الكنب على طول الجدار"
+        },
+        "spots": [
+          {
+            "x": 40,
+            "y": 58,
+            "product": "units"
+          },
+          {
+            "x": 70,
+            "y": 56,
+            "product": "boxes"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/modular-wood-base-sofa/main-g-04.webp",
+          "ratio": "16:9",
+          "caption": "الوحدات والصناديق على الجدار",
+          "span": 8
+        },
+        {
+          "src": "images/projects/modular-wood-base-sofa/main-g-05.webp",
+          "ratio": "3:4",
+          "caption": "وحدة من الأمام",
+          "span": 4
+        },
+        {
+          "src": "images/projects/modular-wood-base-sofa/main-g-06.webp",
+          "ratio": "16:9",
+          "caption": "الكنب يلتف في الزاوية",
+          "span": 8
+        },
+        {
+          "src": "images/projects/modular-wood-base-sofa/main-g-07.webp",
+          "ratio": "3:4",
+          "caption": "الطرف بالرف المفتوح",
+          "span": 4
+        },
+        {
+          "src": "images/projects/modular-wood-base-sofa/main-g-08.webp",
+          "ratio": "16:9",
+          "caption": "الكنب في الصالة",
+          "span": 8
+        },
+        {
+          "src": "images/projects/modular-wood-base-sofa/main-g-09.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة بطولها",
+          "span": 4
+        },
+        {
+          "src": "images/projects/modular-wood-base-sofa/main-g-10.webp",
+          "ratio": "16:9",
+          "caption": "الكنب من الطرف",
+          "span": 8
+        },
+        {
+          "src": "images/projects/modular-wood-base-sofa/main-g-11.webp",
+          "ratio": "3:4",
+          "caption": "وحدة الزاوية",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/modular-wood-base-sofa/main-d-12.webp",
+          "ratio": "3:4",
+          "caption": "الدرج المفتوح في الصندوق",
+          "product": "boxes"
+        },
+        {
+          "src": "images/projects/modular-wood-base-sofa/main-d-13.webp",
+          "ratio": "3:4",
+          "caption": "القماش والرجل الخشبية",
+          "product": "units"
+        },
+        {
+          "src": "images/projects/modular-wood-base-sofa/main-d-14.webp",
+          "ratio": "3:4",
+          "caption": "الرف الطرفي بخاناته",
+          "product": "shelves"
+        },
+        {
+          "src": "images/projects/modular-wood-base-sofa/main-d-15.webp",
+          "ratio": "3:4",
+          "caption": "حافة الرف الخشبية",
+          "product": "shelves"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "ثلاث قطع صُنعت بالمقاس: وحدات الكنب، والصناديق الجانبية، والأرفف الطرفية. افتح أي قطعة لترى صورها وتفاصيلها.",
+    "image": {
+      "src": "images/projects/modular-wood-base-sofa/collection-16.webp",
+      "ratio": "16:9",
+      "caption": "الوحدات والصناديق"
+    }
+  },
+  "products": [
+    {
+      "id": "units",
+      "name": "وحدات الكنب",
+      "en": "Sofa units",
+      "category": "كنب",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "fabric",
+        "beech"
+      ],
+      "finish": "شانيل بيج على قاعدة من خشب الزان",
+      "text": "وحدات كنب مودرن بمقاعد عريضة بقماش شانيل بيج ومساند ظهر منفصلة، على قاعدة من خشب الزان بأرجل منحنية. تتصل الوحدات بطول الجدار وتلتف في الزاوية.",
+      "card": "images/projects/modular-wood-base-sofa/card-units.webp",
+      "views": [
+        {
+          "src": "images/projects/modular-wood-base-sofa/units-v-17.webp",
+          "ratio": "3:4",
+          "caption": "الوحدة من الأمام"
+        },
+        {
+          "src": "images/projects/modular-wood-base-sofa/units-v-18.webp",
+          "ratio": "3:4",
+          "caption": "الوحدات متصلة"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/modular-wood-base-sofa/units-d-19.webp",
+          "ratio": "3:4",
+          "caption": "القاعدة الخشبية"
+        },
+        {
+          "src": "images/projects/modular-wood-base-sofa/units-d-20.webp",
+          "ratio": "3:4",
+          "caption": "ظهر الوحدة"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/modular-wood-base-sofa/units-i-21.webp",
+          "ratio": "3:4",
+          "caption": "الوحدات في الصالة"
+        }
+      ]
+    },
+    {
+      "id": "boxes",
+      "name": "الصناديق الجانبية",
+      "en": "Storage side boxes",
+      "category": "تخزين",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "beech"
+      ],
+      "finish": "خشب زان بغطاء يُرفع ودرج يُسحب",
+      "text": "صناديق من خشب الزان بين وحدات الكنب، بارتفاع المقعد. الغطاء يُرفع على مساحة تخزين، وفي الأسفل درج يُسحب.",
+      "card": "images/projects/modular-wood-base-sofa/card-boxes.webp",
+      "views": [
+        {
+          "src": "images/projects/modular-wood-base-sofa/boxes-v-22.webp",
+          "ratio": "3:4",
+          "caption": "الصندوق بين وحدتين"
+        },
+        {
+          "src": "images/projects/modular-wood-base-sofa/boxes-v-23.webp",
+          "ratio": "3:4",
+          "caption": "الصندوق مفتوحًا"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/modular-wood-base-sofa/boxes-d-24.webp",
+          "ratio": "3:4",
+          "caption": "الغطاء والدرج"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/modular-wood-base-sofa/boxes-i-25.webp",
+          "ratio": "3:4",
+          "caption": "الصندوق في الجلسة"
+        }
+      ]
+    },
+    {
+      "id": "shelves",
+      "name": "الأرفف الطرفية",
+      "en": "End shelves",
+      "category": "تخزين",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "beech"
+      ],
+      "finish": "خشب زان بخانات مفتوحة",
+      "text": "أرفف خشبية مفتوحة بخانات في طرفي الجلسة، بارتفاع ظهر الكنب، ترتكز على أرجل منحنية مثل القاعدة.",
+      "card": "images/projects/modular-wood-base-sofa/card-shelves.webp",
+      "views": [
+        {
+          "src": "images/projects/modular-wood-base-sofa/shelves-v-26.webp",
+          "ratio": "3:4",
+          "caption": "الرف الطرفي"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/modular-wood-base-sofa/shelves-d-27.webp",
+          "ratio": "3:4",
+          "caption": "رجل الرف"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/modular-wood-base-sofa/shelves-i-28.webp",
+          "ratio": "3:4",
+          "caption": "الرف في طرف الكنب"
+        }
+      ]
+    }
+  ],
+  "film": {
+    "src": "videos/projects/modular-wood-base-sofa.mp4",
+    "poster": "images/projects/modular-wood-base-sofa/film-poster.webp",
+    "ratio": "9:16",
+    "title": "جولة في الصالة",
+    "caption": "لقطة تمر على وحدات الكنب والصناديق الخشبية."
+  },
+  "closing": {
+    "title": "تريد كنبًا مثل هذا؟",
+    "text": "نصمّم الوحدات والصناديق بمقاس جدرانك، ونختار معك القماش والخشب. أرسل لنا تفاصيل مساحتك ونبدأ."
+  }
+}
