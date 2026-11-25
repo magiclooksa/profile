@@ -1,0 +1,434 @@
+{
+  "name": {
+    "ar": "صالة كنب مودرن بزوايا منحنية",
+    "en": "THE CURVED MODERN SOFA ROOM"
+  },
+  "place": "الصالة",
+  "kicker": "مشروع صالة استقبال · تصميم وتنفيذ",
+  "tagline": "كنب مودرن بزوايا منحنية بقماش شانيل مقاوم للسوائل على قاعدة من خشب الكرز.",
+  "cover": {
+    "src": "images/projects/curved-sofa-yellow-navy-room/cover.webp",
+    "ratio": "16:9",
+    "caption": "الصالة: الكنب المنحني والكرسي والطاولة الزجاجية"
+  },
+  "intro": {
+    "lead": "صالة استقبال فيها كنب مودرن بزوايا منحنية حول الغرفة، بقماش شانيل عاجي مقاوم للسوائل على قاعدة رفيعة من خشب الكرز.",
+    "paragraphs": [
+      "بين الكنب كرسيان بإطار خشب منحني وظهر بقماش مشجر، وفي الوسط طاولة زجاج بإطار خشبي.",
+      "ويكمل المكان كونسول خشبي على الجدار، وبارتشن خشبي بخانات مفتوحة عند المدخل."
+    ],
+    "words": [
+      {
+        "ar": "مودرن",
+        "en": "Modern"
+      },
+      {
+        "ar": "زوايا منحنية",
+        "en": "Curved corners"
+      },
+      {
+        "ar": "تفصيل بالمقاس",
+        "en": "Made to measure"
+      },
+      {
+        "ar": "رقي",
+        "en": "Refinement"
+      }
+    ],
+    "image": {
+      "src": "images/projects/curved-sofa-yellow-navy-room/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "الكرسي بجانب الكنبة المنحنية"
+    },
+    "inset": {
+      "src": "images/projects/curved-sofa-yellow-navy-room/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "القماش المشجر على ظهر الكرسي"
+    }
+  },
+  "materials": [
+    {
+      "id": "ivory",
+      "name": "شانيل مقاوم للسوائل",
+      "en": "Liquid-resistant chenille",
+      "color": "#E8E2D6",
+      "swatch": "images/projects/curved-sofa-yellow-navy-room/material-ivory.webp",
+      "note": "قماش الكنب ومقاعد الكرسيين."
+    },
+    {
+      "id": "cherry",
+      "name": "خشب الكرز",
+      "en": "Cherry wood",
+      "color": "#6A2E1C",
+      "swatch": "images/projects/curved-sofa-yellow-navy-room/material-cherry.webp",
+      "note": "القاعدة تحت الكنب، وإطار الكرسيين، وإطار الطاولة الزجاجية، والكونسول، والبارتشن."
+    },
+    {
+      "id": "floral",
+      "name": "القماش المشجر",
+      "en": "Patterned fabric",
+      "color": "#D9CFA8",
+      "swatch": "images/projects/curved-sofa-yellow-navy-room/material-floral.webp",
+      "note": "على ظهر الكرسيين وبعض المخدات."
+    },
+    {
+      "id": "mustard",
+      "name": "المخمل",
+      "en": "Mustard velvet",
+      "color": "#C99A2E",
+      "swatch": "images/projects/curved-sofa-yellow-navy-room/material-mustard.webp",
+      "note": "قماش جزء من المخدات."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "salon",
+      "name": "الصالة",
+      "en": "The salon",
+      "intro": "غرفة بسقف جبسي وستائر رمادية فاتحة، والكنب المنحني حول طاولة الوسط الزجاجية.",
+      "look": {
+        "image": {
+          "src": "images/projects/curved-sofa-yellow-navy-room/salon-look-03.webp",
+          "ratio": "16:9",
+          "caption": "الصالة بالعرض: الكنب والكرسي والطاولة الزجاجية"
+        },
+        "spots": [
+          {
+            "x": 18,
+            "y": 67.3,
+            "product": "armchairs"
+          },
+          {
+            "x": 80,
+            "y": 74,
+            "product": "sofas"
+          },
+          {
+            "x": 22,
+            "y": 91.3,
+            "product": "coffee-table"
+          },
+          {
+            "x": 4,
+            "y": 60.7,
+            "product": "console"
+          },
+          {
+            "x": 62,
+            "y": 62,
+            "product": "cushions"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/salon-g-04.webp",
+          "ratio": "3:4",
+          "caption": "الصالة من المدخل",
+          "span": 4
+        },
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/salon-g-05.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة الزجاجية أمام الكنب",
+          "span": 4
+        },
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/salon-g-06.webp",
+          "ratio": "3:4",
+          "caption": "الكنب حول الغرفة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/salon-g-07.webp",
+          "ratio": "3:4",
+          "caption": "كنبة منحنية بالمخدات",
+          "span": 4
+        },
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/salon-g-08.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة تحت اللوحة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/salon-g-09.webp",
+          "ratio": "3:4",
+          "caption": "الصالة كاملة",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/salon-d-10.webp",
+          "ratio": "3:4",
+          "caption": "قاعدة الكنبة من خشب الكرز",
+          "product": "sofas"
+        },
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/salon-d-11.webp",
+          "ratio": "3:4",
+          "caption": "الإطار المنحني والقماش المشجر",
+          "product": "armchairs"
+        },
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/salon-d-12.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة الزجاجية بإطارها الخشبي",
+          "product": "coffee-table"
+        },
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/salon-d-13.webp",
+          "ratio": "3:4",
+          "caption": "مخدة بحافة رفيعة",
+          "product": "cushions"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "ست قطع لهذه الصالة، منها الكنب المنحني والبارتشن الخشبي اللذان صُنعا بالمقاس.",
+    "image": {
+      "src": "images/projects/curved-sofa-yellow-navy-room/collection-14.webp",
+      "ratio": "16:9",
+      "caption": "الكنب المنحني والكرسي"
+    }
+  },
+  "products": [
+    {
+      "id": "sofas",
+      "name": "الكنب المودرن بزوايا منحنية",
+      "en": "Curved sofas",
+      "category": "كنب",
+      "spaces": [
+        "salon"
+      ],
+      "custom": true,
+      "materials": [
+        "ivory",
+        "cherry"
+      ],
+      "finish": "شانيل مقاوم للسوائل على قاعدة من خشب الكرز",
+      "text": "كنب مودرن بزوايا منحنية يتبع جدران الغرفة، بقماش شانيل مقاوم للسوائل على قاعدة رفيعة من خشب الكرز.",
+      "card": "images/projects/curved-sofa-yellow-navy-room/card-sofas.webp",
+      "views": [
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/sofas-v-15.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة من الأمام"
+        },
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/sofas-v-16.webp",
+          "ratio": "3:4",
+          "caption": "انحناءة الكنبة"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/sofas-d-17.webp",
+          "ratio": "3:4",
+          "caption": "قاعدة الكنب"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/salon-g-04.webp",
+          "ratio": "3:4",
+          "caption": "الكنب حول الصالة"
+        }
+      ]
+    },
+    {
+      "id": "armchairs",
+      "name": "الكرسيان بالقماش المشجر",
+      "en": "Embroidered armchairs",
+      "category": "كراسي",
+      "spaces": [
+        "salon"
+      ],
+      "custom": false,
+      "materials": [
+        "ivory",
+        "floral",
+        "cherry"
+      ],
+      "finish": "إطار كرز منحني، مقعد عاجي، وظهر بقماش مشجر",
+      "text": "كرسيان بإطار من خشب الكرز حول الظهر، مقعدهما عاجي، وظهرهما من الخارج بقماش مشجر.",
+      "card": "images/projects/curved-sofa-yellow-navy-room/card-armchairs.webp",
+      "views": [
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/armchairs-v-19.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي من الأمام"
+        },
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/armchairs-v-20.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي من الجانب"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/armchairs-d-21.webp",
+          "ratio": "3:4",
+          "caption": "القماش المشجر والإطار"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/intro-01.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي في الصالة"
+        }
+      ]
+    },
+    {
+      "id": "coffee-table",
+      "name": "الطاولة الزجاجية",
+      "en": "Glass coffee table",
+      "category": "طاولات",
+      "spaces": [
+        "salon"
+      ],
+      "custom": false,
+      "materials": [
+        "cherry"
+      ],
+      "finish": "زجاج بإطار كرز رفيع ورف سفلي",
+      "text": "طاولة وسط مستطيلة بسطح زجاج ورف سفلي، في إطار رفيع من خشب الكرز.",
+      "card": "images/projects/curved-sofa-yellow-navy-room/card-coffee-table.webp",
+      "views": [
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/coffee-table-v-23.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة الزجاجية"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/coffee-table-d-24.webp",
+          "ratio": "3:4",
+          "caption": "زاوية الإطار"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/salon-look-03.webp",
+          "ratio": "16:9",
+          "caption": "الطاولة أمام الكنب"
+        }
+      ]
+    },
+    {
+      "id": "console",
+      "name": "الكونسول الخشبي",
+      "en": "Cherry console",
+      "category": "طاولات",
+      "spaces": [
+        "salon"
+      ],
+      "custom": false,
+      "materials": [
+        "cherry"
+      ],
+      "finish": "خشب كرز بأرجل رفيعة",
+      "text": "كونسول خشبي رفيع على الجدار بين الكنب، من خشب الكرز نفسه.",
+      "card": "images/projects/curved-sofa-yellow-navy-room/card-console.webp",
+      "views": [
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/console-v-26.webp",
+          "ratio": "3:4",
+          "caption": "الكونسول بجانب الكرسي"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/console-i-27.webp",
+          "ratio": "16:9",
+          "caption": "الكونسول في الصالة"
+        }
+      ]
+    },
+    {
+      "id": "divider",
+      "name": "البارتشن الخشبي",
+      "en": "Cherry room divider",
+      "category": "أعمال خشبية",
+      "spaces": [
+        "salon"
+      ],
+      "custom": true,
+      "materials": [
+        "cherry"
+      ],
+      "finish": "خشب كرز بخانات مفتوحة",
+      "text": "بارتشن خشبي عند مدخل الصالة بخانات مفتوحة في الأعلى والأسفل.",
+      "card": "images/projects/curved-sofa-yellow-navy-room/card-divider.webp",
+      "views": [
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/divider-v-28.webp",
+          "ratio": "3:4",
+          "caption": "البارتشن عند المدخل"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/divider-i-29.webp",
+          "ratio": "16:9",
+          "caption": "البارتشن بجانب الكنب"
+        }
+      ]
+    },
+    {
+      "id": "cushions",
+      "name": "المخدات",
+      "en": "Cushions",
+      "category": "مفروشات",
+      "spaces": [
+        "salon"
+      ],
+      "custom": false,
+      "materials": [
+        "mustard",
+        "floral"
+      ],
+      "finish": "مخمل، وقماش مشجر",
+      "text": "مخدات من المخمل بحواف رفيعة، وأخرى بالقماش المشجر.",
+      "card": "images/projects/curved-sofa-yellow-navy-room/card-cushions.webp",
+      "views": [
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/cushions-v-30.webp",
+          "ratio": "3:4",
+          "caption": "المخدات على الكنبة"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/cushions-d-31.webp",
+          "ratio": "3:4",
+          "caption": "الحافة الرفيعة"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/curved-sofa-yellow-navy-room/cushions-i-32.webp",
+          "ratio": "3:4",
+          "caption": "المخدات على الكنبة المنحنية"
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "تريد كنبًا مثل هذا؟",
+    "text": "نصمّم الكنب بزوايا تتبع جدرانك، ونختار معك القماش والخشب. أرسل لنا تفاصيل مساحتك ونبدأ."
+  },
+  "film": {
+    "src": "videos/projects/curved-sofa-yellow-navy-room.mp4",
+    "poster": "images/projects/curved-sofa-yellow-navy-room/film-poster.webp",
+    "ratio": "9:16",
+    "title": "جولة في الصالة",
+    "caption": "لقطة تمر على الكنب المنحني والكرسيين والطاولة الزجاجية."
+  }
+}

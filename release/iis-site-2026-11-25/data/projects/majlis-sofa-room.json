@@ -1,0 +1,407 @@
+{
+  "name": {
+    "ar": "مجلس كنب أزرق بخشب الماهوجني والمشربية",
+    "en": "THE BLUE MAHOGANY MAJLIS"
+  },
+  "place": "المجلس",
+  "kicker": "مشروع مجلس · تصميم وتنفيذ",
+  "tagline": "مجلس على شكل U بقماش مخمل أزرق، وقاعدة من خشب الماهوجني، ولوحات مشربية سوداء.",
+  "cover": {
+    "src": "images/projects/majlis-sofa-room/cover.webp",
+    "ratio": "16:9",
+    "caption": "المجلس على شكل U بطول الغرفة"
+  },
+  "intro": {
+    "lead": "مجلس على شكل U على جدران الغرفة الثلاثة، صُنع خشبه ومشربيته بالمقاس.",
+    "paragraphs": [
+      "قاعدة الكنب وظهره وأيديه من خشب الماهوجني اللامع، وفي كل فتحة لوح مشربية أسود بنقش هندسي.",
+      "المقاعد والمساند من المخمل الأزرق، وفي الوسط طاولة من الخشب نفسه بسطح رخام أبيض."
+    ],
+    "words": [
+      {
+        "ar": "ضيافة",
+        "en": "Hospitality"
+      },
+      {
+        "ar": "تفصيل بالمقاس",
+        "en": "Made to measure"
+      },
+      {
+        "ar": "أصالة",
+        "en": "Heritage"
+      },
+      {
+        "ar": "دفء",
+        "en": "Warmth"
+      }
+    ],
+    "image": {
+      "src": "images/projects/majlis-sofa-room/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "طرف الجلسة: صندوق اليد بالمشربية"
+    },
+    "inset": {
+      "src": "images/projects/majlis-sofa-room/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "صندوق اليد عن قرب"
+    }
+  },
+  "materials": [
+    {
+      "id": "mahogany",
+      "name": "الماهوجني اللامع",
+      "en": "Glossy mahogany",
+      "color": "#5E2420",
+      "swatch": "images/projects/majlis-sofa-room/material-mahogany.webp",
+      "note": "خشب القاعدة والظهر وصناديق الأيدي وطاولة الوسط، بلون أحمر داكن ولمعة."
+    },
+    {
+      "id": "mashrabiya",
+      "name": "المشربية السوداء",
+      "en": "Black mashrabiya",
+      "color": "#1E1A18",
+      "swatch": "images/projects/majlis-sofa-room/material-mashrabiya.webp",
+      "note": "لوحات مفرّغة بنقش هندسي في فتحات الخشب."
+    },
+    {
+      "id": "velvet",
+      "name": "المخمل الأزرق",
+      "en": "Royal blue velvet",
+      "color": "#2D4A9E",
+      "swatch": "images/projects/majlis-sofa-room/material-velvet.webp",
+      "note": "قماش المقاعد والمساند."
+    },
+    {
+      "id": "ivory",
+      "name": "القماش العاجي",
+      "en": "Ivory fabric",
+      "color": "#E9E1D2",
+      "swatch": "images/projects/majlis-sofa-room/material-ivory.webp",
+      "note": "قماش المخدات."
+    },
+    {
+      "id": "brown-velvet",
+      "name": "المخمل البني",
+      "en": "Chocolate velvet",
+      "color": "#6B4A33",
+      "swatch": "images/projects/majlis-sofa-room/material-brown-velvet.webp",
+      "note": "قماش جزء من المخدات."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "majlis",
+      "name": "المجلس",
+      "en": "The majlis",
+      "intro": "جلسة متصلة على شكل U بطول الغرفة، على أرضية رخام أبيض.",
+      "look": {
+        "image": {
+          "src": "images/projects/majlis-sofa-room/majlis-look-03.webp",
+          "ratio": "1:1",
+          "caption": "المجلس كاملاً من طرفه المفتوح"
+        },
+        "spots": [
+          {
+            "x": 9,
+            "y": 71,
+            "product": "arm-box"
+          },
+          {
+            "x": 30,
+            "y": 59.6,
+            "product": "back-rail"
+          },
+          {
+            "x": 56,
+            "y": 71,
+            "product": "coffee-table"
+          },
+          {
+            "x": 74,
+            "y": 64.8,
+            "product": "cushions"
+          },
+          {
+            "x": 86,
+            "y": 73.1,
+            "product": "seating"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/majlis-sofa-room/majlis-g-04.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة على طول الجدار",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-sofa-room/majlis-g-05.webp",
+          "ratio": "3:4",
+          "caption": "الطرف البعيد تحت النافذة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-sofa-room/majlis-g-06.webp",
+          "ratio": "3:4",
+          "caption": "زاوية الجلسة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-sofa-room/majlis-g-07.webp",
+          "ratio": "16:9",
+          "caption": "السقف بشريطه الخشبي",
+          "span": 8
+        },
+        {
+          "src": "images/projects/majlis-sofa-room/majlis-g-08.webp",
+          "ratio": "3:4",
+          "caption": "المخدات على الجلسة",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/majlis-sofa-room/majlis-d-09.webp",
+          "ratio": "3:4",
+          "caption": "لوح المشربية في قاعدة الكنب",
+          "product": "seating"
+        },
+        {
+          "src": "images/projects/majlis-sofa-room/majlis-d-10.webp",
+          "ratio": "3:4",
+          "caption": "صندوق اليد بلوحاته المربعة",
+          "product": "arm-box"
+        },
+        {
+          "src": "images/projects/majlis-sofa-room/majlis-d-11.webp",
+          "ratio": "3:4",
+          "caption": "المخدات",
+          "product": "cushions"
+        },
+        {
+          "src": "images/projects/majlis-sofa-room/majlis-d-12.webp",
+          "ratio": "3:4",
+          "caption": "جانب طاولة الوسط",
+          "product": "coffee-table"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "خمس قطع، أربع منها صُنعت لهذا المجلس بالمقاس: وحدات الجلسة، وصناديق الأيدي، والظهر الخشبي، وطاولة الوسط.",
+    "image": {
+      "src": "images/projects/majlis-sofa-room/collection-13.webp",
+      "ratio": "16:9",
+      "caption": "وحدات الجلسة من الأمام"
+    }
+  },
+  "products": [
+    {
+      "id": "seating",
+      "name": "وحدات الجلسة",
+      "en": "U-shaped seating",
+      "category": "مجالس",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": true,
+      "materials": [
+        "velvet",
+        "mahogany",
+        "mashrabiya"
+      ],
+      "finish": "مخمل أزرق على قاعدة ماهوجني بلوحات مشربية",
+      "text": "مقاعد ومساند من المخمل الأزرق على قاعدة عالية من الماهوجني على الجدران الثلاثة، وفي كل فتحة من القاعدة لوح مشربية أسود.",
+      "card": "images/projects/majlis-sofa-room/card-seating.webp",
+      "views": [
+        {
+          "src": "images/projects/majlis-sofa-room/seating-v-14.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة من الأمام"
+        },
+        {
+          "src": "images/projects/majlis-sofa-room/seating-v-15.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة بزاوية"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/majlis-sofa-room/seating-d-16.webp",
+          "ratio": "3:4",
+          "caption": "القاعدة ولوح المشربية"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/majlis-sofa-room/seating-i-17.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة في المجلس"
+        }
+      ]
+    },
+    {
+      "id": "arm-box",
+      "name": "صندوق اليد",
+      "en": "Mashrabiya arm box",
+      "category": "أعمال خشبية",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": true,
+      "materials": [
+        "mahogany",
+        "mashrabiya"
+      ],
+      "finish": "صندوق ماهوجني مربع بلوحات مشربية وغطاء كريمي",
+      "text": "صندوق مربع من الماهوجني في طرفي الجلسة، على كل جانب منه لوح مشربية، وعليه غطاء كريمي.",
+      "card": "images/projects/majlis-sofa-room/card-arm-box.webp",
+      "views": [
+        {
+          "src": "images/projects/majlis-sofa-room/arm-box-v-18.webp",
+          "ratio": "3:4",
+          "caption": "صندوق اليد من الجانب"
+        },
+        {
+          "src": "images/projects/majlis-sofa-room/arm-box-v-19.webp",
+          "ratio": "3:4",
+          "caption": "صندوق اليد من الزاوية"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/majlis-sofa-room/arm-box-d-20.webp",
+          "ratio": "3:4",
+          "caption": "لوح المشربية المربع"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/majlis-sofa-room/intro-01.webp",
+          "ratio": "3:4",
+          "caption": "صندوق اليد في طرف الجلسة"
+        }
+      ]
+    },
+    {
+      "id": "back-rail",
+      "name": "الظهر الخشبي",
+      "en": "Wall back rail",
+      "category": "أعمال خشبية",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": true,
+      "materials": [
+        "mahogany",
+        "mashrabiya"
+      ],
+      "finish": "شريط ماهوجني على الجدار بلوحات مشربية",
+      "text": "شريط من الماهوجني على الجدار خلف المساند بطول الجلسة، بلوحات مشربية سوداء.",
+      "card": "images/projects/majlis-sofa-room/card-back-rail.webp",
+      "views": [
+        {
+          "src": "images/projects/majlis-sofa-room/back-rail-v-22.webp",
+          "ratio": "3:4",
+          "caption": "الظهر الخشبي في الزاوية"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/majlis-sofa-room/back-rail-d-23.webp",
+          "ratio": "3:4",
+          "caption": "الظهر فوق المساند"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/majlis-sofa-room/seating-v-14.webp",
+          "ratio": "3:4",
+          "caption": "الظهر بطول الجدار"
+        }
+      ]
+    },
+    {
+      "id": "coffee-table",
+      "name": "طاولة الوسط",
+      "en": "Lattice coffee table",
+      "category": "طاولات",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": true,
+      "materials": [
+        "mahogany",
+        "mashrabiya"
+      ],
+      "finish": "ماهوجني بلوحات مشربية على الجوانب وسطح رخام أبيض",
+      "text": "طاولة مستطيلة منخفضة من الماهوجني، بلوحات مشربية على جوانبها وسطح رخام أبيض.",
+      "card": "images/projects/majlis-sofa-room/card-coffee-table.webp",
+      "views": [
+        {
+          "src": "images/projects/majlis-sofa-room/coffee-table-v-25.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الوسط من الأمام"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/majlis-sofa-room/coffee-table-d-26.webp",
+          "ratio": "3:4",
+          "caption": "لوحا المشربية في جانب الطاولة"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/majlis-sofa-room/coffee-table-i-27.webp",
+          "ratio": "16:9",
+          "caption": "الطاولة في وسط المجلس"
+        }
+      ]
+    },
+    {
+      "id": "cushions",
+      "name": "المخدات",
+      "en": "Throw cushions",
+      "category": "مفروشات",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": false,
+      "materials": [
+        "ivory",
+        "brown-velvet"
+      ],
+      "finish": "قماش عاجي ومخمل",
+      "text": "مخدات بترتيب واحد على طول الجلسة.",
+      "card": "images/projects/majlis-sofa-room/card-cushions.webp",
+      "views": [
+        {
+          "src": "images/projects/majlis-sofa-room/cushions-v-28.webp",
+          "ratio": "3:4",
+          "caption": "المخدات على الجلسة"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/majlis-sofa-room/cushions-d-29.webp",
+          "ratio": "3:4",
+          "caption": "المخدات عن قرب"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/majlis-sofa-room/cushions-i-30.webp",
+          "ratio": "3:4",
+          "caption": "المخدات على طول الجلسة"
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "تريد مجلسًا مثل هذا؟",
+    "text": "نصمّم المجلس ونصنع خشبه ومشربيته بالمقاس، ونختار معك القماش. أرسل لنا تفاصيل مساحتك ونبدأ."
+  },
+  "film": null
+}

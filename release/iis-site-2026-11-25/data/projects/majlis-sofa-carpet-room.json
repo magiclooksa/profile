@@ -1,0 +1,296 @@
+{
+  "name": {
+    "ar": "مجلس كنب عاجي بقاعدة ماهوجني محفورة",
+    "en": "THE IVORY CARVED MAHOGANY MAJLIS"
+  },
+  "place": "المجلس",
+  "kicker": "مشروع مجلس · تصميم وتنفيذ",
+  "tagline": "كنب بقماش شانيل عاجي حول الغرفة، على قاعدة من خشب الماهوجني المحفور.",
+  "cover": {
+    "src": "images/projects/majlis-sofa-carpet-room/cover.webp",
+    "ratio": "16:9",
+    "caption": "المجلس العاجي حول الغرفة"
+  },
+  "intro": {
+    "lead": "مجلس عاجي حول الغرفة كلها، على قاعدة من خشب الماهوجني المحفور بأرجل قصيرة.",
+    "paragraphs": [
+      "الكنب بقماش شانيل عاجي، وفي أطرافه أيدٍ ملفوفة تنتهي بخشب الماهوجني.",
+      "الكنب بوحدات زوايا تتبع جدران الغرفة، والقاعدة الخشبية مصنوعة بالمقاس."
+    ],
+    "words": [
+      {
+        "ar": "اتساع",
+        "en": "Grandeur"
+      },
+      {
+        "ar": "ضيافة",
+        "en": "Hospitality"
+      },
+      {
+        "ar": "تفصيل بالمقاس",
+        "en": "Made to measure"
+      },
+      {
+        "ar": "تناغم",
+        "en": "Harmony"
+      }
+    ],
+    "image": {
+      "src": "images/projects/majlis-sofa-carpet-room/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "طرف الكنب باليد الملفوفة والقاعدة الخشبية"
+    },
+    "inset": {
+      "src": "images/projects/majlis-sofa-carpet-room/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "زاوية الكنب"
+    }
+  },
+  "materials": [
+    {
+      "id": "chenille",
+      "name": "الشانيل العاجي",
+      "en": "Ivory chenille",
+      "color": "#E6DDD0",
+      "swatch": "images/projects/majlis-sofa-carpet-room/material-chenille.webp",
+      "note": "قماش المقاعد والمساند."
+    },
+    {
+      "id": "mahogany",
+      "name": "الماهوجني المحفور",
+      "en": "Carved mahogany",
+      "color": "#4A1E18",
+      "swatch": "images/projects/majlis-sofa-carpet-room/material-mahogany.webp",
+      "note": "قاعدة الكنب بأرجلها القصيرة، ونهايات الأيدي الملفوفة."
+    },
+    {
+      "id": "blue-velvet",
+      "name": "المخمل",
+      "en": "Blue-grey velvet",
+      "color": "#A9B4C2",
+      "swatch": "images/projects/majlis-sofa-carpet-room/material-blue-velvet.webp",
+      "note": "قماش جزء من المخدات."
+    },
+    {
+      "id": "bronze",
+      "name": "الساتان",
+      "en": "Bronze satin",
+      "color": "#A88B63",
+      "swatch": "images/projects/majlis-sofa-carpet-room/material-bronze.webp",
+      "note": "قماش جزء من المخدات."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "majlis",
+      "name": "المجلس",
+      "en": "The majlis",
+      "intro": "غرفة واسعة بستائر وسقف جبسي بإضاءة مخفية، والكنب على الجدران.",
+      "look": {
+        "image": {
+          "src": "images/projects/majlis-sofa-carpet-room/majlis-look-03.webp",
+          "ratio": "3:4",
+          "caption": "المجلس كاملًا"
+        },
+        "spots": [
+          {
+            "x": 30,
+            "y": 45,
+            "product": "seating"
+          },
+          {
+            "x": 80,
+            "y": 63,
+            "product": "scroll-end"
+          },
+          {
+            "x": 70,
+            "y": 47,
+            "product": "cushions"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/majlis-sofa-carpet-room/majlis-g-04.webp",
+          "ratio": "3:4",
+          "caption": "المجلس من المدخل",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-sofa-carpet-room/majlis-g-05.webp",
+          "ratio": "3:4",
+          "caption": "المجلس من الداخل",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-sofa-carpet-room/majlis-g-06.webp",
+          "ratio": "3:4",
+          "caption": "زاوية الكنب",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-sofa-carpet-room/majlis-g-07.webp",
+          "ratio": "16:9",
+          "caption": "الكنب على طول الجدار",
+          "span": 8
+        },
+        {
+          "src": "images/projects/majlis-sofa-carpet-room/majlis-g-08.webp",
+          "ratio": "3:4",
+          "caption": "الكنب أمام النافذة",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/majlis-sofa-carpet-room/majlis-d-09.webp",
+          "ratio": "3:4",
+          "caption": "القاعدة الخشبية بأرجلها",
+          "product": "seating"
+        },
+        {
+          "src": "images/projects/majlis-sofa-carpet-room/majlis-d-10.webp",
+          "ratio": "3:4",
+          "caption": "اليد الملفوفة",
+          "product": "scroll-end"
+        },
+        {
+          "src": "images/projects/majlis-sofa-carpet-room/majlis-d-11.webp",
+          "ratio": "3:4",
+          "caption": "زاوية الكنب",
+          "product": "cushions"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "ثلاث قطع في هذا المجلس: الكنب حول الغرفة، وطرفه الملفوف، والمخدات.",
+    "image": {
+      "src": "images/projects/majlis-sofa-carpet-room/collection-13.webp",
+      "ratio": "16:9",
+      "caption": "الكنب العاجي على الجدار"
+    }
+  },
+  "products": [
+    {
+      "id": "seating",
+      "name": "وحدات الجلسة",
+      "en": "Wrap-around seating",
+      "category": "مجالس",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": true,
+      "materials": [
+        "chenille",
+        "mahogany"
+      ],
+      "finish": "شانيل عاجي على قاعدة ماهوجني محفورة",
+      "text": "كنب عاجي حول الغرفة كلها بوحدات زوايا، على قاعدة من خشب الماهوجني المحفور بأرجل قصيرة.",
+      "card": "images/projects/majlis-sofa-carpet-room/card-seating.webp",
+      "views": [
+        {
+          "src": "images/projects/majlis-sofa-carpet-room/seating-v-14.webp",
+          "ratio": "16:9",
+          "caption": "الكنب على الجدار"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/majlis-sofa-carpet-room/seating-d-15.webp",
+          "ratio": "3:4",
+          "caption": "القاعدة عن قرب"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/majlis-sofa-carpet-room/majlis-look-03.webp",
+          "ratio": "3:4",
+          "caption": "الكنب حول المجلس"
+        }
+      ]
+    },
+    {
+      "id": "scroll-end",
+      "name": "الطرف الملفوف",
+      "en": "Scroll-arm end",
+      "category": "مجالس",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": true,
+      "materials": [
+        "chenille",
+        "mahogany"
+      ],
+      "finish": "يد ملفوفة تنتهي بخشب الماهوجني",
+      "text": "نهاية الكنب في الأطراف المفتوحة: يد ملفوفة من الشانيل العاجي تنتهي بإطار من الماهوجني المحفور.",
+      "card": "images/projects/majlis-sofa-carpet-room/card-scroll-end.webp",
+      "views": [
+        {
+          "src": "images/projects/majlis-sofa-carpet-room/intro-01.webp",
+          "ratio": "3:4",
+          "caption": "الطرف الملفوف"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/majlis-sofa-carpet-room/scroll-end-d-18.webp",
+          "ratio": "3:4",
+          "caption": "الخشب في اليد الملفوفة"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/majlis-sofa-carpet-room/scroll-end-i-19.webp",
+          "ratio": "3:4",
+          "caption": "الطرف في المجلس"
+        }
+      ]
+    },
+    {
+      "id": "cushions",
+      "name": "المخدات",
+      "en": "Cushions",
+      "category": "مفروشات",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": false,
+      "materials": [
+        "blue-velvet",
+        "bronze"
+      ],
+      "finish": "مخمل وساتان",
+      "text": "مخدات من المخمل والساتان بالتناوب على طول الجلسة.",
+      "card": "images/projects/majlis-sofa-carpet-room/card-cushions.webp",
+      "views": [
+        {
+          "src": "images/projects/majlis-sofa-carpet-room/cushions-v-23.webp",
+          "ratio": "3:4",
+          "caption": "المخدات على الكنب"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/majlis-sofa-carpet-room/seating-v-14.webp",
+          "ratio": "16:9",
+          "caption": "المخدات على طول الجلسة"
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "تريد مجلسًا مثل هذا؟",
+    "text": "نصمّم المجلس ونصنع كنبه وقاعدته الخشبية بالمقاس، ونختار معك القماش. أرسل لنا تفاصيل مساحتك ونبدأ."
+  },
+  "film": {
+    "src": "videos/projects/majlis-sofa-carpet-room.mp4",
+    "poster": "images/projects/majlis-sofa-carpet-room/film-poster.webp",
+    "ratio": "16:9",
+    "title": "جولة في المجلس",
+    "caption": "لقطة تمر على الكنب حول الغرفة."
+  }
+}
