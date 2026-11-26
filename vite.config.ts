@@ -3,6 +3,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { basename, resolve } from 'node:path';
 import { defineConfig } from 'vite';
 import { projectPaths } from './tooling/paths';
+import { analyticsPlugin } from './tooling/vite/analytics';
 import { contentApiPlugin } from './tooling/vite/contentApi';
 import { searchIndexPlugin } from './tooling/vite/searchIndex';
 import { seoPlugin } from './tooling/vite/seo';
@@ -62,8 +63,9 @@ export default defineConfig({
   // Titles, descriptions, link previews, schema.org data, sitemap.xml, robots.txt and llms.txt,
   // all from public/data/seo.json and the content files.
   // search-index.json for the site search, and the dashboard's content API in development.
+  // Google Analytics on every page but the dashboard (Measurement ID in tooling/vite/analytics.ts).
   plugins: [
     pageStylesPlugin(), sitePlugin(__dirname), seoPlugin(__dirname), searchIndexPlugin(__dirname),
-    contentApiPlugin(__dirname),
+    contentApiPlugin(__dirname), analyticsPlugin(),
   ],
 });
