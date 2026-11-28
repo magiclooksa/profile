@@ -1,0 +1,301 @@
+{
+  "name": {
+    "ar": "المجلس البني الرمادي",
+    "en": "THE GREY-BROWN U-SHAPED MAJLIS"
+  },
+  "place": "المجلس",
+  "kicker": "مشروع مجلس · تصميم وتنفيذ",
+  "tagline": "مودرن بسيط · وحدات متصلة على شكل U",
+  "cover": {
+    "src": "images/projects/grey-brown-majlis-sofa/cover.webp",
+    "ratio": "16:9",
+    "caption": "المجلس على شكل U حول الغرفة"
+  },
+  "intro": {
+    "lead": "مجلس بوحدات كنب متصلة صنعناها بمقاس الغرفة، تلتف على ثلاثة جدران على شكل U، وتتسع لعدد كبير من الضيوف.",
+    "paragraphs": [
+      "كل وحدة بقاعدة صندوقية مكسوّة بالقماش نفسه، ومقعد عريض، ومساند ظهر منفصلة. في الزوايا وحدات بزاوية مائلة تصل الجلسة دون فراغ، وفي الأطراف أذرع عريضة مستقيمة.",
+      "القماش جاكار بلون بني رمادي بملمس منسوج، والمخدات بقماش عاجي منسوج، ومنها مخدات مستديرة في الزوايا.",
+      "ونفّذنا القماش واللون نفسيهما في صالة ثانية بجلستين مستقيمتين على جدارين."
+    ],
+    "words": [
+      {
+        "ar": "جلسة متصلة",
+        "en": "Continuous seating"
+      },
+      {
+        "ar": "وحدات",
+        "en": "Modular"
+      },
+      {
+        "ar": "تفصيل بالمقاس",
+        "en": "Made to measure"
+      },
+      {
+        "ar": "ضيافة",
+        "en": "Hospitality"
+      }
+    ],
+    "image": {
+      "src": "images/projects/grey-brown-majlis-sofa/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "الذراع العريضة وطرف الجلسة"
+    },
+    "inset": {
+      "src": "images/projects/grey-brown-majlis-sofa/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "وحدة الزاوية والمخدة المستديرة"
+    }
+  },
+  "materials": [
+    {
+      "id": "jacquard",
+      "name": "قماش الجاكار البني الرمادي",
+      "en": "Grey-brown jacquard",
+      "color": "#7C7064",
+      "swatch": "images/projects/grey-brown-majlis-sofa/material-jacquard.webp",
+      "note": "قماش الكنب كله: المقاعد والمساند والقواعد والأذرع."
+    },
+    {
+      "id": "ivory",
+      "name": "القماش العاجي المنسوج",
+      "en": "Ivory weave",
+      "color": "#DCD3C2",
+      "swatch": "images/projects/grey-brown-majlis-sofa/material-ivory.webp",
+      "note": "قماش المخدات المربعة والمستديرة."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "majlis",
+      "name": "المجلس",
+      "en": "The majlis",
+      "intro": "غرفة طويلة بجدران بيضاء ببراويز وستائر شفافة. الكنب يلتف على الجدران الثلاثة على شكل U، والوسط مفتوح.",
+      "look": {
+        "image": {
+          "src": "images/projects/grey-brown-majlis-sofa/majlis-look-03.webp",
+          "ratio": "3:4",
+          "caption": "المجلس على شكل U"
+        },
+        "spots": [
+          {
+            "x": 22,
+            "y": 62,
+            "product": "seating"
+          },
+          {
+            "x": 70,
+            "y": 40,
+            "product": "seating"
+          },
+          {
+            "x": 42,
+            "y": 52,
+            "product": "cushions"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/grey-brown-majlis-sofa/majlis-g-04.webp",
+          "ratio": "3:4",
+          "caption": "المجلس من المدخل",
+          "span": 4
+        },
+        {
+          "src": "images/projects/grey-brown-majlis-sofa/majlis-g-05.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة على الجدار البعيد",
+          "span": 4
+        },
+        {
+          "src": "images/projects/grey-brown-majlis-sofa/majlis-g-06.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة من الطرف",
+          "span": 4
+        },
+        {
+          "src": "images/projects/grey-brown-majlis-sofa/majlis-g-07.webp",
+          "ratio": "3:4",
+          "caption": "الطرف المستقيم بذراعه",
+          "span": 4
+        },
+        {
+          "src": "images/projects/grey-brown-majlis-sofa/majlis-g-08.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة بطولها",
+          "span": 4
+        },
+        {
+          "src": "images/projects/grey-brown-majlis-sofa/majlis-g-09.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة أمام النافذة",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/grey-brown-majlis-sofa/majlis-d-10.webp",
+          "ratio": "3:4",
+          "caption": "جانب الذراع والقاعدة",
+          "product": "seating"
+        },
+        {
+          "src": "images/projects/grey-brown-majlis-sofa/majlis-d-11.webp",
+          "ratio": "3:4",
+          "caption": "الطرف المستقيم",
+          "product": "seating"
+        },
+        {
+          "src": "images/projects/grey-brown-majlis-sofa/majlis-d-12.webp",
+          "ratio": "3:4",
+          "caption": "المخدة العاجية على المقعد",
+          "product": "cushions"
+        }
+      ]
+    },
+    {
+      "id": "salon",
+      "name": "الصالة",
+      "en": "The living room",
+      "intro": "صالة ثانية بالقماش نفسه: جلستان مستقيمتان على جدارين، بين لوحات جدارية ونافذة بستارة.",
+      "look": {
+        "image": {
+          "src": "images/projects/grey-brown-majlis-sofa/salon-look-13.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة على جدار الصالة"
+        },
+        "spots": [
+          {
+            "x": 50,
+            "y": 50,
+            "product": "seating"
+          },
+          {
+            "x": 65,
+            "y": 38,
+            "product": "cushions"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/grey-brown-majlis-sofa/salon-g-14.webp",
+          "ratio": "16:9",
+          "caption": "الجلستان على جداري الصالة",
+          "span": 8
+        },
+        {
+          "src": "images/projects/grey-brown-majlis-sofa/salon-g-15.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة تحت اللوحة الجدارية",
+          "span": 4
+        },
+        {
+          "src": "images/projects/grey-brown-majlis-sofa/salon-g-16.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة بطولها",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/grey-brown-majlis-sofa/salon-d-17.webp",
+          "ratio": "3:4",
+          "caption": "المساند والمخدات",
+          "product": "seating"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "قطعتان صُنعتا بالمقاس: وحدات الكنب المتصلة، والمخدات. افتح أي قطعة لترى صورها.",
+    "image": {
+      "src": "images/projects/grey-brown-majlis-sofa/collection-18.webp",
+      "ratio": "16:9",
+      "caption": "الصالة بجلستيها"
+    }
+  },
+  "products": [
+    {
+      "id": "seating",
+      "name": "وحدات الكنب المتصلة",
+      "en": "Modular seating",
+      "category": "مجالس",
+      "spaces": [
+        "majlis",
+        "salon"
+      ],
+      "custom": true,
+      "materials": [
+        "jacquard"
+      ],
+      "finish": "قماش جاكار بني رمادي على قواعد صندوقية",
+      "text": "وحدات كنب بقواعد صندوقية مكسوّة بالقماش، ومقاعد عريضة، ومساند ظهر منفصلة. تتصل الوحدات على شكل U بوحدات زاوية مائلة، وتنتهي الأطراف بأذرع عريضة مستقيمة.",
+      "card": "images/projects/grey-brown-majlis-sofa/card-seating.webp",
+      "views": [
+        {
+          "src": "images/projects/grey-brown-majlis-sofa/seating-v-19.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة من الزاوية"
+        },
+        {
+          "src": "images/projects/grey-brown-majlis-sofa/seating-v-20.webp",
+          "ratio": "3:4",
+          "caption": "الطرف بذراعه"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/grey-brown-majlis-sofa/seating-d-21.webp",
+          "ratio": "3:4",
+          "caption": "وحدة الزاوية"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/grey-brown-majlis-sofa/seating-i-22.webp",
+          "ratio": "3:4",
+          "caption": "الوحدات في المجلس"
+        }
+      ]
+    },
+    {
+      "id": "cushions",
+      "name": "المخدات",
+      "en": "Cushions",
+      "category": "مفروشات",
+      "spaces": [
+        "majlis",
+        "salon"
+      ],
+      "custom": false,
+      "materials": [
+        "ivory"
+      ],
+      "finish": "قماش عاجي منسوج",
+      "text": "مخدات مربعة ومستديرة بقماش عاجي منسوج، موزعة على طول الجلسة.",
+      "card": "images/projects/grey-brown-majlis-sofa/card-cushions.webp",
+      "views": [
+        {
+          "src": "images/projects/grey-brown-majlis-sofa/cushions-v-23.webp",
+          "ratio": "3:4",
+          "caption": "المخدات على الجلسة"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/grey-brown-majlis-sofa/cushions-i-24.webp",
+          "ratio": "3:4",
+          "caption": "المخدات في الزاوية"
+        }
+      ]
+    }
+  ],
+  "film": null,
+  "closing": {
+    "title": "تريد مجلسًا مثل هذا؟",
+    "text": "نصمّم وحدات الكنب بمقاس غرفتك، ونختار معك القماش واللون. أرسل لنا تفاصيل مساحتك ونبدأ."
+  }
+}

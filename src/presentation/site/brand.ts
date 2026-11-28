@@ -23,7 +23,7 @@ export function Logo(ground: 'light' | 'green'): HTMLImageElement {
   const img = document.createElement('img');
   img.className = 'logo';
   img.src = `${import.meta.env.BASE_URL}assets/brand/logo-on-${ground}.svg`;
-  img.alt = '';
+  img.alt = 'شعار النظرة الساحرة Magic Look للأثاث والديكور';
   img.width = 173;
   img.height = 40;
   return img;

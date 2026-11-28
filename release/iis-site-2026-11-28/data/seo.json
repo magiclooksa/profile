@@ -1,0 +1,60 @@
+{
+  "siteUrl": "https://mgiclook.com/",
+  "title": "النظرة الساحرة | تصميم داخلي وأثاث حسب المقاس في الدمام",
+  "description": "النظرة الساحرة Magic Look في الدمام: تصميم داخلي وديكور وتأثيث حسب المقاس، كنب ومجالس وغرف نوم ووحدات تلفزيون وتكسية جداري وستائر وإضاءة، من الفكرة إلى التنفيذ.",
+  "keywords": [
+    "النظرة الساحرة",
+    "Magic Look",
+    "الدمام",
+    "تصميم داخلي",
+    "ديكور",
+    "تأثيث",
+    "أثاث حسب الطلب",
+    "أثاث حسب المقاس",
+    "كنب",
+    "مجالس",
+    "غرف نوم",
+    "وحدات تلفزيون",
+    "تكسية جداري",
+    "قواطع خشبية",
+    "ستائر",
+    "تصميم فلل",
+    "السعودية",
+    "interior design",
+    "custom furniture",
+    "Saudi Arabia"
+  ],
+  "image": {
+    "src": "og/home.jpg",
+    "alt": "صالة من تصميم وتنفيذ النظرة الساحرة"
+  },
+  "logo": "assets/logo.png",
+  "business": {
+    "types": [
+      "HomeAndConstructionBusiness",
+      "FurnitureStore"
+    ],
+    "foundingDate": null,
+    "city": "الدمام",
+    "region": "المنطقة الشرقية",
+    "streetAddress": "شارع أبو بكر الصديق، حي المنار، أمام بنك الراجحي",
+    "country": "SA",
+    "latitude": 26.3845132,
+    "longitude": 50.053576,
+    "openingHours": [],
+    "priceRange": null,
+    "areaServed": [
+      "الدمام",
+      "المنطقة الشرقية",
+      "المملكة العربية السعودية"
+    ]
+  },
+  "social": [],
+  "verification": {
+    "google": null,
+    "bing": null
+  },
+  "gtmId": null,
+  "ga4Id": "G-KMMYNYBGPG",
+  "aiCrawlers": true
+}

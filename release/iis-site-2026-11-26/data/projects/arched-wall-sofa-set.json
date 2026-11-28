@@ -1,0 +1,433 @@
+{
+  "name": {
+    "ar": "مجلس الزان والشامبين",
+    "en": "THE CLASSIC BEECH & GOLD MAJLIS"
+  },
+  "place": "المجلس",
+  "kicker": "مشروع مجلس · تصميم وتنفيذ",
+  "tagline": "كلاسيك معاصر · زان طبيعي وأرجل بلون الشامبين",
+  "cover": {
+    "src": "images/projects/arched-wall-sofa-set/cover.webp",
+    "ratio": "16:9",
+    "caption": "الكنبة الكلاسيك وطاولة الخدمة أمام القوس المضيء"
+  },
+  "intro": {
+    "lead": "مجلس واسع بكنب كلاسيك على جانبي القاعة: إطار من خشب الزان الطبيعي، وقماش شانيل بيج، وأرجل بلون الشامبين.",
+    "paragraphs": [
+      "الكنب الثلاثي والكراسي المفردة بإطار خشبي داكن يلتف حول الظهر والأيدي، وتحمل الأيدي أعمدة معدنية بلون الشامبين بحلقات بارزة.",
+      "بين الجلسات طاولات خدمة بسطح أسود وإطار ذهبي، وطاولات جانبية دائرية من خشب الزان بسطح زجاج، وفي الوسط طاولات من الخشب نفسه بسطح زجاج."
+    ],
+    "words": [
+      {
+        "ar": "كلاسيك",
+        "en": "Classic"
+      },
+      {
+        "ar": "خشب الزان",
+        "en": "Beech"
+      },
+      {
+        "ar": "تفصيل بالمقاس",
+        "en": "Made to measure"
+      },
+      {
+        "ar": "ضيافة",
+        "en": "Hospitality"
+      }
+    ],
+    "image": {
+      "src": "images/projects/arched-wall-sofa-set/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "الكرسي المفرد بإطاره الخشبي وعموده الذهبي"
+    },
+    "inset": {
+      "src": "images/projects/arched-wall-sofa-set/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "مخدة بقماش مشجر"
+    }
+  },
+  "materials": [
+    {
+      "id": "chenille",
+      "name": "الشانيل البيج",
+      "en": "Beige chenille",
+      "color": "#D9D0BF",
+      "swatch": "images/projects/arched-wall-sofa-set/material-chenille.webp",
+      "note": "قماش الكنب والكراسي المفردة."
+    },
+    {
+      "id": "beech",
+      "name": "خشب الزان",
+      "en": "Beech",
+      "color": "#4A2E24",
+      "swatch": "images/projects/arched-wall-sofa-set/material-beech.webp",
+      "note": "إطار الكنب والكراسي، والطاولات الجانبية وطاولات الوسط."
+    },
+    {
+      "id": "champagne",
+      "name": "معدن بلون الشامبين",
+      "en": "Champagne metal",
+      "color": "#B8A887",
+      "swatch": "images/projects/arched-wall-sofa-set/material-champagne.webp",
+      "note": "أعمدة الأيدي وأرجل الكنب وإطار طاولات الخدمة."
+    },
+    {
+      "id": "patterned",
+      "name": "القماش المشجر",
+      "en": "Patterned fabric",
+      "color": "#CFC3AE",
+      "swatch": "images/projects/arched-wall-sofa-set/material-patterned.webp",
+      "note": "قماش جزء من المخدات."
+    },
+    {
+      "id": "black-top",
+      "name": "الأسطح السوداء",
+      "en": "Black tops",
+      "color": "#1E2230",
+      "swatch": "images/projects/arched-wall-sofa-set/material-black-top.webp",
+      "note": "سطح طاولات الخدمة."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "majlis",
+      "name": "المجلس",
+      "en": "The majlis",
+      "intro": "قاعة طويلة بجدران بيضاء وأقواس مضيئة ونوافذ مقوسة، والكنب على الجانبين وطاولات الوسط في المنتصف.",
+      "look": {
+        "image": {
+          "src": "images/projects/arched-wall-sofa-set/majlis-look-03.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة أمام القوس المضيء مع طاولة الخدمة والطاولة الجانبية"
+        },
+        "spots": [
+          {
+            "x": 68,
+            "y": 58,
+            "product": "sofas"
+          },
+          {
+            "x": 34,
+            "y": 66,
+            "product": "c-tables"
+          },
+          {
+            "x": 52,
+            "y": 46,
+            "product": "cushions"
+          },
+          {
+            "x": 6,
+            "y": 48,
+            "product": "side-tables"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/arched-wall-sofa-set/majlis-g-04.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة الكلاسيك من الزاوية",
+          "span": 4
+        },
+        {
+          "src": "images/projects/arched-wall-sofa-set/majlis-g-05.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة أمام النافذة المقوسة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/arched-wall-sofa-set/majlis-g-06.webp",
+          "ratio": "9:16",
+          "caption": "القاعة كاملة والجلسات على الجانبين",
+          "span": 4
+        },
+        {
+          "src": "images/projects/arched-wall-sofa-set/majlis-g-07.webp",
+          "ratio": "3:4",
+          "caption": "الكراسي المفردة على الجدار",
+          "span": 4
+        },
+        {
+          "src": "images/projects/arched-wall-sofa-set/majlis-g-08.webp",
+          "ratio": "9:16",
+          "caption": "طاولة الوسط الدائرية أمام الجلسات",
+          "span": 4
+        },
+        {
+          "src": "images/projects/arched-wall-sofa-set/majlis-g-09.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة والكرسي المفرد",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/arched-wall-sofa-set/majlis-d-10.webp",
+          "ratio": "3:4",
+          "caption": "يد الكرسي الخشبية وعمودها الذهبي",
+          "product": "armchairs"
+        },
+        {
+          "src": "images/projects/arched-wall-sofa-set/majlis-d-11.webp",
+          "ratio": "3:4",
+          "caption": "طرف الكنبة والعمود بلون الشامبين",
+          "product": "sofas"
+        },
+        {
+          "src": "images/projects/arched-wall-sofa-set/majlis-d-12.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الخدمة بسطحها الأسود",
+          "product": "c-tables"
+        },
+        {
+          "src": "images/projects/arched-wall-sofa-set/majlis-d-13.webp",
+          "ratio": "3:4",
+          "caption": "رجل طاولة الوسط بطرف ذهبي",
+          "product": "coffee-table"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "ست قطع في هذا المجلس، منها الكنب والكراسي التي صُنعت بالمقاس.",
+    "image": {
+      "src": "images/projects/arched-wall-sofa-set/collection-14.webp",
+      "ratio": "16:9",
+      "caption": "القاعة والجلسات على الجانبين"
+    }
+  },
+  "products": [
+    {
+      "id": "sofas",
+      "name": "الكنب الكلاسيك",
+      "en": "Classic sofas",
+      "category": "كنب",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": true,
+      "materials": [
+        "chenille",
+        "beech",
+        "champagne"
+      ],
+      "finish": "شانيل بيج بإطار من خشب الزان وأعمدة بلون الشامبين",
+      "text": "كنب كلاسيك ثلاثي بقماش شانيل بيج، وإطار من خشب الزان الطبيعي يلتف حول الظهر والأيدي، وأعمدة وأرجل بلون الشامبين.",
+      "card": "images/projects/arched-wall-sofa-set/card-sofas.webp",
+      "views": [
+        {
+          "src": "images/projects/arched-wall-sofa-set/sofas-v-15.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة من الزاوية"
+        },
+        {
+          "src": "images/projects/arched-wall-sofa-set/sofas-v-16.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة مع طاولة الخدمة"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/arched-wall-sofa-set/sofas-d-17.webp",
+          "ratio": "3:4",
+          "caption": "طرف الكنبة والعمود الذهبي"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/arched-wall-sofa-set/sofas-i-18.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة أمام القوس المضيء"
+        }
+      ]
+    },
+    {
+      "id": "armchairs",
+      "name": "الكراسي المفردة",
+      "en": "Armchairs",
+      "category": "كراسي",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": true,
+      "materials": [
+        "chenille",
+        "beech",
+        "champagne"
+      ],
+      "finish": "شانيل بيج بإطار من خشب الزان وأعمدة بلون الشامبين",
+      "text": "كراسي مفردة بقماش الكنب نفسه، بإطار خشبي منحني حول الظهر، وعمود بلون الشامبين تحت كل يد.",
+      "card": "images/projects/arched-wall-sofa-set/card-armchairs.webp",
+      "views": [
+        {
+          "src": "images/projects/arched-wall-sofa-set/armchairs-v-19.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي مع طاولة الخدمة"
+        },
+        {
+          "src": "images/projects/arched-wall-sofa-set/armchairs-v-20.webp",
+          "ratio": "3:4",
+          "caption": "الكراسي على الجدار"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/arched-wall-sofa-set/armchairs-d-21.webp",
+          "ratio": "3:4",
+          "caption": "اليد الخشبية والعمود"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/arched-wall-sofa-set/armchairs-i-22.webp",
+          "ratio": "3:4",
+          "caption": "الكراسي في المجلس"
+        }
+      ]
+    },
+    {
+      "id": "c-tables",
+      "name": "طاولات الخدمة",
+      "en": "C-shaped side tables",
+      "category": "طاولات",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": false,
+      "materials": [
+        "black-top",
+        "champagne"
+      ],
+      "finish": "سطح أسود على إطار بلون الشامبين",
+      "text": "طاولات خدمة بإطار معدني بلون الشامبين يدخل تحت الكنبة، وسطح أسود فوق المقعد.",
+      "card": "images/projects/arched-wall-sofa-set/card-c-tables.webp",
+      "views": [
+        {
+          "src": "images/projects/arched-wall-sofa-set/c-tables-v-23.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الخدمة أمام الكنبة"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/arched-wall-sofa-set/c-tables-i-24.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الخدمة في المجلس"
+        }
+      ]
+    },
+    {
+      "id": "side-tables",
+      "name": "الطاولات الجانبية",
+      "en": "Round side tables",
+      "category": "طاولات",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": false,
+      "materials": [
+        "beech",
+        "champagne"
+      ],
+      "finish": "خشب زان بسطح زجاج وأرجل بأطراف ذهبية",
+      "text": "طاولات جانبية دائرية من خشب الزان بين الجلسات، بسطح زجاج وأرجل رفيعة بأطراف ذهبية.",
+      "card": "images/projects/arched-wall-sofa-set/card-side-tables.webp",
+      "views": [
+        {
+          "src": "images/projects/arched-wall-sofa-set/side-tables-v-25.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة الجانبية بجانب الكنبة"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/arched-wall-sofa-set/side-tables-d-26.webp",
+          "ratio": "3:4",
+          "caption": "الأرجل بأطرافها الذهبية"
+        }
+      ],
+      "inSitu": []
+    },
+    {
+      "id": "coffee-table",
+      "name": "طاولات الوسط",
+      "en": "Coffee tables",
+      "category": "طاولات",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": false,
+      "materials": [
+        "beech",
+        "champagne"
+      ],
+      "finish": "خشب زان بسطح زجاج وقضبان ذهبية",
+      "text": "طاولات وسط بيضاوية ودائرية من خشب الزان بسطح زجاج، وبين أرجلها قضبان رفيعة بلون الشامبين.",
+      "card": "images/projects/arched-wall-sofa-set/card-coffee-table.webp",
+      "views": [
+        {
+          "src": "images/projects/arched-wall-sofa-set/coffee-table-v-27.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الوسط البيضاوية"
+        },
+        {
+          "src": "images/projects/arched-wall-sofa-set/coffee-table-v-28.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الوسط الدائرية"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/arched-wall-sofa-set/coffee-table-d-29.webp",
+          "ratio": "3:4",
+          "caption": "الرجل والطرف الذهبي"
+        }
+      ],
+      "inSitu": []
+    },
+    {
+      "id": "cushions",
+      "name": "المخدات",
+      "en": "Cushions",
+      "category": "مفروشات",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": false,
+      "materials": [
+        "patterned"
+      ],
+      "finish": "قماش مشجر وساتان",
+      "text": "مخدات بقماش مشجر، وأخرى من الساتان، على الكنب والكراسي.",
+      "card": "images/projects/arched-wall-sofa-set/card-cushions.webp",
+      "views": [
+        {
+          "src": "images/projects/arched-wall-sofa-set/cushions-v-30.webp",
+          "ratio": "3:4",
+          "caption": "المخدة المشجرة على الكنبة"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/arched-wall-sofa-set/cushions-i-31.webp",
+          "ratio": "3:4",
+          "caption": "المخدات على الكرسي"
+        }
+      ]
+    }
+  ],
+  "film": {
+    "src": "videos/projects/arched-wall-sofa-set.mp4",
+    "poster": "images/projects/arched-wall-sofa-set/film-poster.webp",
+    "ratio": "9:16",
+    "title": "جولة في المجلس",
+    "caption": "لقطة تمر على القاعة والجلسات على الجانبين."
+  },
+  "closing": {
+    "title": "تريد مجلسًا مثل هذا؟",
+    "text": "نصمّم المجلس ونصنع كنبه وكراسيه بالمقاس، ونختار معك القماش والخشب. أرسل لنا تفاصيل مساحتك ونبدأ."
+  }
+}

@@ -48,6 +48,15 @@ export const jsonLd = (graph: Json[]): string =>
 
 const stripStop = (s: string): string => s.replace(/[.。]\s*$/, '');
 
+/** "05 35 34 65 55" → "+966535346555": the international form search engines and maps expect. */
+export const internationalPhone = (phone: string | null): string | null => {
+  if (!phone) return null;
+  const digits = phone.replace(/\D/g, '');
+  if (phone.trim().startsWith('+')) return `+${digits}`;
+  if (digits.startsWith('966')) return `+${digits}`;
+  return `+966${digits.replace(/^0/, '')}`;
+};
+
 // ─── head tags ──────────────────────────────────────────────────────────────────────────────────
 
 export interface PageMeta {
@@ -135,11 +144,11 @@ export function businessNode(seo: SeoSettings, profile: Profile): Json {
     url: seo.siteUrl,
     logo: absolute(seo, seo.logo),
     image: absolute(seo, seo.image.src),
-    telephone: contact.phone,
+    telephone: internationalPhone(contact.phone),
     email: contact.email,
     address: {
       '@type': 'PostalAddress',
-      streetAddress: contact.address,
+      streetAddress: b.streetAddress ?? contact.address,
       addressLocality: b.city,
       addressRegion: b.region,
       addressCountry: b.country,
@@ -204,8 +213,11 @@ const brandNodes = (seo: SeoSettings, profile: Profile): Json[] => {
     {
       '@type': seo.business.types.length === 1 ? seo.business.types[0] : [...seo.business.types],
       '@id': business, name: profile.company.name.ar, alternateName: profile.company.name.en,
-      url: seo.siteUrl, logo: absolute(seo, seo.logo), telephone: profile.contact.phone,
-      address: { '@type': 'PostalAddress', addressLocality: seo.business.city, addressCountry: seo.business.country },
+      url: seo.siteUrl, logo: absolute(seo, seo.logo), telephone: internationalPhone(profile.contact.phone),
+      address: {
+        '@type': 'PostalAddress', streetAddress: seo.business.streetAddress, addressLocality: seo.business.city,
+        addressRegion: seo.business.region, addressCountry: seo.business.country,
+      },
     },
     { '@type': 'WebSite', '@id': website, url: seo.siteUrl, name: profile.company.name.ar },
   ];
@@ -282,23 +294,31 @@ export function pageGraph(seo: SeoSettings, profile: Profile, label: string, pag
   ];
 }
 
+/** A project (or the villa) page: the project as a creative work by the company, with its photos and pieces. */
 export function catalogueGraph(seo: SeoSettings, profile: Profile, villa: Villa, page: PageMeta): Json[] {
   const { business, website } = ids(seo);
+  const projectId = `${page.url}#project`;
+  const photos = [villa.cover.src, ...villa.products.map((p) => p.card)]
+    .filter((src, i, all) => Boolean(src) && all.indexOf(src) === i).map((src) => absolute(seo, src));
   return [
     ...brandNodes(seo, profile),
     {
-      '@type': 'CollectionPage',
-      '@id': `${page.url}#webpage`,
+      '@type': 'CreativeWork',
+      '@id': projectId,
+      name: villa.name.ar,
+      alternateName: villa.name.en,
+      headline: villa.name.ar,
+      genre: villa.kicker,
+      description: villa.intro.lead || page.description,
       url: page.url,
-      name: page.title,
-      description: page.description,
       inLanguage: 'ar',
-      isPartOf: { '@id': website },
+      image: photos,
+      thumbnailUrl: absolute(seo, villa.cover.src),
+      creator: { '@id': business },
       publisher: { '@id': business },
-      breadcrumb: { '@id': `${page.url}#breadcrumb` },
-      primaryImageOfPage: { '@type': 'ImageObject', url: absolute(seo, villa.cover.src), caption: villa.cover.caption },
       keywords: page.keywords.join('، '),
-      mainEntity: {
+      material: villa.materials.map((m) => m.name),
+      hasPart: {
         '@type': 'ItemList',
         name: `قطع ${villa.name.ar}`,
         numberOfItems: villa.products.length,
@@ -308,11 +328,25 @@ export function catalogueGraph(seo: SeoSettings, profile: Profile, villa: Villa,
       },
     },
     {
+      '@type': 'WebPage',
+      '@id': `${page.url}#webpage`,
+      url: page.url,
+      name: page.title,
+      description: page.description,
+      inLanguage: 'ar',
+      isPartOf: { '@id': website },
+      publisher: { '@id': business },
+      breadcrumb: { '@id': `${page.url}#breadcrumb` },
+      primaryImageOfPage: { '@type': 'ImageObject', url: absolute(seo, villa.cover.src), caption: villa.cover.caption },
+      mainEntity: { '@id': projectId },
+    },
+    {
       '@type': 'BreadcrumbList',
       '@id': `${page.url}#breadcrumb`,
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: profile.company.name.ar, item: seo.siteUrl },
-        { '@type': 'ListItem', position: 2, name: villa.name.ar, item: page.url },
+        { '@type': 'ListItem', position: 2, name: 'المشاريع', item: `${seo.siteUrl}projects.html` },
+        { '@type': 'ListItem', position: 3, name: villa.name.ar, item: page.url },
       ],
     },
   ];
@@ -496,6 +530,17 @@ const PAGE_OVERRIDES: Record<string, Partial<Pick<PageMeta, 'description' | 'alt
   },
 };
 
+/** A project page title: its short name, then where it belongs. */
+export const projectTitle = (name: string, city: string | null): string =>
+  `${name} | مشاريع النظرة الساحرة${city ? ` في ${city}` : ''}`;
+
+/** A project page snippet from its tagline and kicker, e.g. "مودرن · أبيض" and "مشروع صالة · تصميم وتنفيذ". */
+export function projectDescription(name: string, tagline: string, kicker: string, city: string | null): string {
+  const style = tagline.replace(/\s*·\s*/g, '، ');
+  const kind = kicker.replace(/\s*·\s*تصميم وتنفيذ\s*$/, '').replace(/\s*·\s*/g, '، ');
+  return `${name}: ${style}. ${kind} من تصميم وتنفيذ النظرة الساحرة${city ? ` في ${city}` : ''}، بقطع مصنوعة حسب المقاس.`;
+}
+
 export function seoPlugin(root: string): Plugin {
   const dataDir = resolve(root, 'public/data');
   /** Adds the share image's type and size, read from its file in public/. */
@@ -515,16 +560,18 @@ export function seoPlugin(root: string): Plugin {
   const catalogueMeta = (seo: SeoSettings, profile: Profile, villa: Villa, href: string): PageMeta => {
     const card = profile.catalogues.find((c) => c.href === href);
     const override = PAGE_OVERRIDES[href] ?? {};
+    const og = `og/${href.replace(/\.html$/, '')}.jpg`;
     return {
-      title: `${villa.name.ar} | ${profile.company.name.ar}`,
-      description: override.description ?? card?.tagline ?? villa.tagline,
+      title: projectTitle(villa.name.ar, seo.business.city),
+      description: override.description ?? projectDescription(villa.name.ar, card?.tagline ?? villa.tagline, card?.kicker ?? villa.kicker, seo.business.city),
       url: absolute(seo, href),
-      image: absolute(seo, `og/${href.replace(/\.html$/, '')}.jpg`),
+      // The project's own share photo when there is one, else the site's.
+      image: absolute(seo, existsSync(resolve(root, 'public', og)) ? og : seo.image.src),
       alt: override.alt ?? villa.cover.caption,
       keywords: [
         villa.name.ar, profile.company.name.ar, profile.company.name.en,
         ...villa.products.map((x) => x.category), ...villa.materials.map((m) => m.name),
-        'تصميم داخلي', 'أثاث حسب المقاس',
+        'تصميم داخلي', 'أثاث حسب المقاس', ...(seo.business.city ? [`تصميم داخلي ${seo.business.city}`] : []),
       ],
     };
   };
@@ -575,7 +622,8 @@ export function seoPlugin(root: string): Plugin {
       const villa = villaDecoder(readJson(dataFile), dataFile);
       const page = catalogueMeta(seo, profile, villa, file);
       return html
-        .replace('</title>', `</title>\n    ${headTags(seo, siteName, withImage(seo, page), catalogueGraph(seo, profile, villa, page))}`)
+        .replace(/<meta name="description"[^>]*>/, `<meta name="description" content="${escape(page.description)}" />`)
+        .replace(/<title>[^<]*<\/title>/, `<title>${escape(page.title)}</title>\n    ${headTags(seo, siteName, withImage(seo, page), catalogueGraph(seo, profile, villa, page))}`)
         .replace(/(<div id="villa-content"[^>]*>)/, `$1${cataloguePrerender(villa)}`);
     },
 
@@ -594,7 +642,7 @@ export function seoPlugin(root: string): Plugin {
             image: s.images[0] ? absolute(seo, s.images[0].src) : null,
           })),
           ...profile.catalogues.map((c) => ({ url: absolute(seo, c.href), image: absolute(seo, c.cover.src) })),
-          { url: absolute(seo, 'projects-catalogue.html'), image: profile.catalogues[0] ? absolute(seo, profile.catalogues[0].cover.src) : null },
+          // projects-catalogue.html repeats the project pages in one place, so it is noindex and left out.
         ], today),
       });
 

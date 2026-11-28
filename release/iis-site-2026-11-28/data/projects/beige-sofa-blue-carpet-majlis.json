@@ -1,0 +1,422 @@
+{
+  "name": {
+    "ar": "مجلس الكلاسيك البيج",
+    "en": "THE BEIGE CLASSIC BEECH MAJLIS"
+  },
+  "place": "المجلس",
+  "kicker": "مشروع مجلس · تصميم وتنفيذ",
+  "tagline": "كلاسيك · زان طبيعي وظهر مخيّط",
+  "cover": {
+    "src": "images/projects/beige-sofa-blue-carpet-majlis/cover.webp",
+    "ratio": "16:9",
+    "caption": "المجلس بالطول"
+  },
+  "intro": {
+    "lead": "مجلس طويل بكنب كلاسيك صنعناه بمقاس الغرفة على جهتيها، يجمع قماش الشانيل البيج مع إطار من خشب الزان الطبيعي.",
+    "paragraphs": [
+      "الكنب طويل بقماش شانيل بيج ناعم، ظهره مخيّط بخطوط طولية بارزة، وأيديه وقاعدته في إطار من خشب الزان الطبيعي بلون دافئ.",
+      "في أطراف الجلسات كراسٍ مفردة بالقماش والإطار نفسيهما، وبين وحدات الكنب طاولات جانبية من الخشب بسطح زجاج، وفي الوسط طاولة مستطيلة من الخشب والزجاج.",
+      "والمخدات بنقوش متموجة ناعمة، وأخرى سادة، موزعة على طول الكنب."
+    ],
+    "words": [
+      {
+        "ar": "هدوء",
+        "en": "Serenity"
+      },
+      {
+        "ar": "فخامة",
+        "en": "Luxury"
+      },
+      {
+        "ar": "كلاسيك",
+        "en": "Classic"
+      },
+      {
+        "ar": "تفصيل بالمقاس",
+        "en": "Made to measure"
+      }
+    ],
+    "image": {
+      "src": "images/projects/beige-sofa-blue-carpet-majlis/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "الكنبة بظهرها المخيّط وإطارها الخشبي"
+    },
+    "inset": {
+      "src": "images/projects/beige-sofa-blue-carpet-majlis/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "اليد الخشبية والقماش عن قرب"
+    }
+  },
+  "materials": [
+    {
+      "id": "chenille",
+      "name": "الشانيل البيج",
+      "en": "Beige chenille",
+      "color": "#C9B79C",
+      "swatch": "images/projects/beige-sofa-blue-carpet-majlis/material-chenille.webp",
+      "note": "قماش الكنب، بظهر مخيّط بخطوط طولية (قنوات)."
+    },
+    {
+      "id": "walnut",
+      "name": "خشب الزان",
+      "en": "Beech",
+      "color": "#5C3320",
+      "swatch": "images/projects/beige-sofa-blue-carpet-majlis/material-walnut.webp",
+      "note": "إطار أيدي الكنب وقاعدته، وطاولات الجنب وطاولة الوسط."
+    },
+    {
+      "id": "glass",
+      "name": "الزجاج",
+      "en": "Glass",
+      "color": "#9A8B78",
+      "swatch": "images/projects/beige-sofa-blue-carpet-majlis/material-glass.webp",
+      "note": "أسطح طاولات الجنب وطاولة الوسط."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "majlis",
+      "name": "المجلس",
+      "en": "The majlis",
+      "intro": "غرفة طويلة بجدران رمادية وبراويز بيضاء، والكنب على الجهتين.",
+      "look": {
+        "image": {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-look-03.webp",
+          "ratio": "3:4",
+          "caption": "المجلس كاملًا"
+        },
+        "spots": [
+          {
+            "x": 52,
+            "y": 31.3,
+            "product": "sofas"
+          },
+          {
+            "x": 33,
+            "y": 50,
+            "product": "coffee-table"
+          },
+          {
+            "x": 88,
+            "y": 43.3,
+            "product": "side-tables"
+          },
+          {
+            "x": 37,
+            "y": 30,
+            "product": "cushions"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-g-04.webp",
+          "ratio": "3:4",
+          "caption": "المجلس من الداخل",
+          "span": 4
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-g-05.webp",
+          "ratio": "3:4",
+          "caption": "الكنب على جهة واحدة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-g-06.webp",
+          "ratio": "3:4",
+          "caption": "المجلس بالطول",
+          "span": 4
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-g-07.webp",
+          "ratio": "3:4",
+          "caption": "الكنب على الجهة الأخرى",
+          "span": 4
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-g-08.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة الطويلة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-g-09.webp",
+          "ratio": "3:4",
+          "caption": "طرف الكنب",
+          "span": 4
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-g-40.webp",
+          "ratio": "3:4",
+          "caption": "الكنب بظهره المخيّط",
+          "span": 4
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-g-41.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة بطولها",
+          "span": 4
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-g-42.webp",
+          "ratio": "3:4",
+          "caption": "طرف الجلسة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-g-43.webp",
+          "ratio": "3:4",
+          "caption": "الكنب والكرسي المفرد",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-d-10.webp",
+          "ratio": "3:4",
+          "caption": "اليد الخشبية والقماش",
+          "product": "sofas"
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-d-11.webp",
+          "ratio": "3:4",
+          "caption": "المقعد والظهر المخيّط",
+          "product": "sofas"
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-d-12.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الجنب بسطحها الزجاجي",
+          "product": "side-tables"
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-d-50.webp",
+          "ratio": "3:4",
+          "caption": "إطار اليد من خشب الزان",
+          "product": "sofas"
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-d-51.webp",
+          "ratio": "3:4",
+          "caption": "المقعد والذراع",
+          "product": "sofas"
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-d-52.webp",
+          "ratio": "3:4",
+          "caption": "ظهر الكرسي المفرد",
+          "product": "armchair"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "خمس قطع في هذا المجلس. الكنب والكراسي صُنعت بمقاس الغرفة، والطاولات اخترناها لتتناسق معها. افتح أي قطعة لترى صورها وتفاصيلها.",
+    "image": {
+      "src": "images/projects/beige-sofa-blue-carpet-majlis/collection-14.webp",
+      "ratio": "16:9",
+      "caption": "الكنبة بظهرها المخيّط"
+    }
+  },
+  "products": [
+    {
+      "id": "sofas",
+      "name": "الكنب الكلاسيك",
+      "en": "Channel-back sofas",
+      "category": "كنب",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": true,
+      "materials": [
+        "chenille",
+        "walnut"
+      ],
+      "finish": "شانيل بيج بظهر مخيّط وإطار من خشب الزان",
+      "text": "كنب كلاسيك طويل من الشانيل البيج، ظهره مخيّط بخطوط طولية بارزة، وأيديه وقاعدته في إطار من خشب الزان الطبيعي. يمتد على جهتي الغرفة بوحدات متصلة.",
+      "card": "images/projects/beige-sofa-blue-carpet-majlis/card-sofas.webp",
+      "views": [
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/sofas-v-15.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة من الجانب"
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/sofas-v-16.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة من الأمام"
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/sofas-v-60.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة من الأمام"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/sofas-d-17.webp",
+          "ratio": "3:4",
+          "caption": "إطار اليد الخشبي"
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-d-50.webp",
+          "ratio": "3:4",
+          "caption": "إطار اليد"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/sofas-i-18.webp",
+          "ratio": "3:4",
+          "caption": "الكنب في المجلس"
+        }
+      ]
+    },
+    {
+      "id": "armchair",
+      "name": "الكرسي المفرد",
+      "en": "Single armchair",
+      "category": "كراسي",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": true,
+      "materials": [
+        "chenille",
+        "walnut"
+      ],
+      "finish": "شانيل بيج بإطار من خشب الزان",
+      "text": "كرسي مفرد بقماش الكنب نفسه وظهر مخيّط، بأيدٍ في إطار من خشب الزان، في أطراف الجلسات.",
+      "card": "images/projects/beige-sofa-blue-carpet-majlis/card-armchair.webp",
+      "views": [
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/armchair-v-19.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي المفرد"
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/armchair-v-61.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي بجانب الكنب"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/armchair-i-20.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي في المجلس"
+        }
+      ]
+    },
+    {
+      "id": "side-tables",
+      "name": "طاولات الجنب",
+      "en": "Glass-top side tables",
+      "category": "طاولات",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": false,
+      "materials": [
+        "walnut",
+        "glass"
+      ],
+      "finish": "خشب زان بسطح زجاج",
+      "text": "طاولات جنب من الخشب بسطح زجاج وأرجل منحنية، بين وحدات الكنب.",
+      "card": "images/projects/beige-sofa-blue-carpet-majlis/card-side-tables.webp",
+      "views": [
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/side-tables-v-21.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الجنب"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/side-tables-i-22.webp",
+          "ratio": "3:4",
+          "caption": "الطاولات بين الكنب"
+        }
+      ]
+    },
+    {
+      "id": "coffee-table",
+      "name": "طاولة الوسط",
+      "en": "Glass coffee table",
+      "category": "طاولات",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": false,
+      "materials": [
+        "walnut",
+        "glass"
+      ],
+      "finish": "خشب بسطح زجاج ورف سفلي",
+      "text": "طاولة مستطيلة من الخشب بسطح زجاج ورف سفلي، في وسط المجلس.",
+      "card": "images/projects/beige-sofa-blue-carpet-majlis/card-coffee-table.webp",
+      "views": [
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/coffee-table-v-23.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الوسط"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/majlis-look-03.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة في المجلس"
+        }
+      ]
+    },
+    {
+      "id": "cushions",
+      "name": "المخدات",
+      "en": "Cushions",
+      "category": "مفروشات",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": false,
+      "materials": [],
+      "finish": "قماش عاجي بنقوش ناعمة",
+      "text": "مخدات بنقوش ناعمة على أطراف الكنب.",
+      "card": "images/projects/beige-sofa-blue-carpet-majlis/card-cushions.webp",
+      "views": [
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/cushions-v-27.webp",
+          "ratio": "3:4",
+          "caption": "المخدات على الكنبة"
+        },
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/cushions-v-62.webp",
+          "ratio": "3:4",
+          "caption": "المخدة بنقشها المتموج"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/beige-sofa-blue-carpet-majlis/cushions-i-28.webp",
+          "ratio": "3:4",
+          "caption": "المخدات في المجلس"
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "تريد مجلسًا مثل هذا؟",
+    "text": "نصمّم المجلس ونصنع كنبه بالمقاس، ونختار معك القماش والخشب. أرسل لنا تفاصيل مساحتك ونبدأ."
+  },
+  "film": {
+    "src": "videos/projects/beige-sofa-blue-carpet-majlis.mp4",
+    "poster": "images/projects/beige-sofa-blue-carpet-majlis/film-poster.webp",
+    "ratio": "9:16",
+    "title": "جولة في المجلس",
+    "caption": "لقطة تمر على المجلس بطوله."
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "name": {
+    "ar": "طاولة الاجتماعات البيضاوية",
+    "en": "THE OVAL WOOD MEETING TABLE"
+  },
+  "place": "غرفة الاجتماعات",
+  "kicker": "مشروع طاولة وكراسي · تصميم وتنفيذ",
+  "tagline": "مودرن · أوك عسلي وقاعدة مضلّعة",
+  "cover": {
+    "src": "images/projects/wood-meeting-table/cover.webp",
+    "ratio": "16:9",
+    "caption": "الطاولة البيضاوية والكراسي حولها"
+  },
+  "intro": {
+    "lead": "طاولة اجتماعات وطعام صنعناها بالمقاس، بشكل بيضاوي يتسع لعشرة أشخاص حولها دون زوايا حادة.",
+    "paragraphs": [
+      "سطح الطاولة من خشب الأوك بلون عسلي دافئ وعروق ظاهرة، بأطراف نصف دائرية وحافة رفيعة داكنة، ويرتكز على قاعدتين مضلّعتين بشرائح رأسية.",
+      "حولها كراسٍ بظهر عالٍ منحني بقماش جاكار رمادي بنقش بارز، يحملها هيكل خشبي من الأوك يلتف تحت المقعد وينتهي بأرجل مائلة."
+    ],
+    "words": [
+      {
+        "ar": "اجتماعات",
+        "en": "Meetings"
+      },
+      {
+        "ar": "خشب أوك",
+        "en": "Oak"
+      },
+      {
+        "ar": "تفصيل بالمقاس",
+        "en": "Made to measure"
+      },
+      {
+        "ar": "راحة",
+        "en": "Comfort"
+      }
+    ],
+    "image": {
+      "src": "images/projects/wood-meeting-table/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "الكرسي بظهره العالي أمام الطاولة"
+    },
+    "inset": {
+      "src": "images/projects/wood-meeting-table/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "سطح الطاولة بعروقه"
+    }
+  },
+  "materials": [
+    {
+      "id": "wood",
+      "name": "خشب الأوك",
+      "en": "Oak",
+      "color": "#A0582B",
+      "swatch": "images/projects/wood-meeting-table/material-wood.webp",
+      "note": "سطح الطاولة وقاعدتها المضلّعة، وهيكل الكراسي وأرجلها."
+    },
+    {
+      "id": "jacquard",
+      "name": "قماش الجاكار الرمادي",
+      "en": "Grey jacquard",
+      "color": "#B9B6B0",
+      "swatch": "images/projects/wood-meeting-table/material-jacquard.webp",
+      "note": "تنجيد الكراسي بنقش بارز."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "main",
+      "name": "غرفة الاجتماعات",
+      "en": "The meeting room",
+      "intro": "غرفة بستائر طويلة وجدار بلوح داكن، والطاولة في الوسط والكراسي موزعة حولها.",
+      "look": {
+        "image": {
+          "src": "images/projects/wood-meeting-table/main-look-03.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة والكراسي"
+        },
+        "spots": [
+          {
+            "x": 45,
+            "y": 45,
+            "product": "table"
+          },
+          {
+            "x": 30,
+            "y": 65,
+            "product": "chairs"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/wood-meeting-table/main-g-04.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة من الطرف",
+          "span": 4
+        },
+        {
+          "src": "images/projects/wood-meeting-table/main-g-05.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة من الأعلى",
+          "span": 4
+        },
+        {
+          "src": "images/projects/wood-meeting-table/main-g-06.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة والكراسي من الزاوية",
+          "span": 4
+        },
+        {
+          "src": "images/projects/wood-meeting-table/main-g-07.webp",
+          "ratio": "3:4",
+          "caption": "الغرفة كاملة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/wood-meeting-table/main-g-08.webp",
+          "ratio": "3:4",
+          "caption": "الكراسي حول الطاولة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/wood-meeting-table/main-g-09.webp",
+          "ratio": "3:4",
+          "caption": "سطح الطاولة",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/wood-meeting-table/main-d-10.webp",
+          "ratio": "3:4",
+          "caption": "القاعدة المضلّعة والكراسي",
+          "product": "table"
+        },
+        {
+          "src": "images/projects/wood-meeting-table/main-d-11.webp",
+          "ratio": "3:4",
+          "caption": "ظهر الكرسي المنحني",
+          "product": "chairs"
+        },
+        {
+          "src": "images/projects/wood-meeting-table/main-d-12.webp",
+          "ratio": "3:4",
+          "caption": "القاعدة المضلّعة عن قرب",
+          "product": "table"
+        },
+        {
+          "src": "images/projects/wood-meeting-table/main-d-13.webp",
+          "ratio": "3:4",
+          "caption": "الهيكل الخشبي للكرسي",
+          "product": "chairs"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "قطعتان صُنعتا بالمقاس: الطاولة البيضاوية والكراسي. افتح أي قطعة لترى صورها.",
+    "image": {
+      "src": "images/projects/wood-meeting-table/collection-14.webp",
+      "ratio": "16:9",
+      "caption": "الطاولة والكراسي"
+    }
+  },
+  "products": [
+    {
+      "id": "table",
+      "name": "الطاولة البيضاوية",
+      "en": "Oval table",
+      "category": "طاولات",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "wood"
+      ],
+      "finish": "خشب أوك عسلي على قاعدتين مضلّعتين",
+      "text": "طاولة بيضاوية من خشب الأوك بلون عسلي وعروق ظاهرة، بأطراف نصف دائرية وحافة رفيعة داكنة، على قاعدتين بشرائح رأسية.",
+      "card": "images/projects/wood-meeting-table/card-table.webp",
+      "views": [
+        {
+          "src": "images/projects/wood-meeting-table/table-v-15.webp",
+          "ratio": "3:4",
+          "caption": "السطح بعروقه"
+        },
+        {
+          "src": "images/projects/wood-meeting-table/table-v-16.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة من الطرف"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/wood-meeting-table/table-d-17.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة من الأعلى"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/wood-meeting-table/table-i-18.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة في الغرفة"
+        }
+      ]
+    },
+    {
+      "id": "chairs",
+      "name": "الكراسي",
+      "en": "Chairs",
+      "category": "كراسي",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "jacquard",
+        "wood"
+      ],
+      "finish": "قماش جاكار رمادي على هيكل من خشب الأوك",
+      "text": "كراسٍ بظهر عالٍ منحني بقماش جاكار رمادي بنقش بارز، على هيكل خشبي يلتف تحت المقعد وأرجل مائلة.",
+      "card": "images/projects/wood-meeting-table/card-chairs.webp",
+      "views": [
+        {
+          "src": "images/projects/wood-meeting-table/chairs-v-19.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي من الخلف"
+        },
+        {
+          "src": "images/projects/wood-meeting-table/chairs-v-20.webp",
+          "ratio": "3:4",
+          "caption": "الكراسي حول الطاولة"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/wood-meeting-table/chairs-d-21.webp",
+          "ratio": "3:4",
+          "caption": "القماش والهيكل"
+        },
+        {
+          "src": "images/projects/wood-meeting-table/chairs-d-22.webp",
+          "ratio": "3:4",
+          "caption": "الأرجل الخشبية"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/wood-meeting-table/chairs-i-23.webp",
+          "ratio": "3:4",
+          "caption": "الكراسي في الغرفة"
+        }
+      ]
+    }
+  ],
+  "film": {
+    "src": "videos/projects/wood-meeting-table.mp4",
+    "poster": "images/projects/wood-meeting-table/film-poster.webp",
+    "ratio": "9:16",
+    "title": "جولة حول الطاولة",
+    "caption": "لقطة تمر على الطاولة البيضاوية والكراسي."
+  },
+  "closing": {
+    "title": "تريد طاولة مثل هذه؟",
+    "text": "نصمّم طاولات الاجتماعات والطعام وكراسيها بالمقاس. أرسل لنا تفاصيل مساحتك ونبدأ."
+  }
+}

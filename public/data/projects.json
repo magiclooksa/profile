@@ -110,7 +110,7 @@
       },
       {
         "src": "images/products/0002-beige-bedroom-room-angles-af61f19fe2.webp",
-        "caption": "تصور غرفة نوم بيج مع كسوة جدارية وإضاءة مخفية"
+        "caption": "تصور غرفة نوم بيج مع تكسية جداري وإضاءة مخفية"
       },
       {
         "src": "images/products/twin-beds-floral-bedding-221a7917e1.webp",
@@ -357,7 +357,7 @@
   {
     "id": "wall-decor",
     "name": "تفاصيل الجدران والديكور",
-    "category": "كسوات وديكور",
+    "category": "تكسية جداري وديكور",
     "city": null,
     "colors": [
       "#D6CDBB",
@@ -368,11 +368,11 @@
     "images": [
       {
         "src": "images/products/cnc-b3b67fc290.webp",
-        "caption": "كسوة جدارية بارزة بنقوش متموجة"
+        "caption": "تكسية جداري بارزة بنقوش متموجة"
       },
       {
         "src": "images/products/cnc-ef5c44550c.webp",
-        "caption": "تنسيق الكسوة الجدارية مع الإضاءة"
+        "caption": "تنسيق التكسية الجداري مع الإضاءة"
       },
       {
         "src": "images/products/ml-p006-314ec323fe.webp",

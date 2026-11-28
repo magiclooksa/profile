@@ -1,0 +1,452 @@
+{
+  "name": {
+    "ar": "المجلس الكلاسيك الفضي",
+    "en": "THE CLASSIC SILVER JACQUARD MAJLIS"
+  },
+  "place": "المجلس",
+  "kicker": "مشروع مجلس · تصميم وتنفيذ",
+  "tagline": "كلاسيك · خشب أسود وجاكار فضي",
+  "cover": {
+    "src": "images/projects/classic-silver-majlis-fireplace/cover.webp",
+    "ratio": "16:9",
+    "caption": "الكنبة الكلاسيك الطويلة بإطارها الأسود"
+  },
+  "intro": {
+    "lead": "مجلس كلاسيك على شكل L صنعنا كنبه بالمقاس، يجمع الخشب الأسود اللامع مع قماش الجاكار الفضي في غرفة بيضاء ببراويز وألواح رخام.",
+    "paragraphs": [
+      "الكنب بإطار من الخشب الأسود اللامع، يرتفع ظهره بخط مقوس في الطرفين، ومقعده بقماش جاكار فضي بنقش متكسر، وظهره من الداخل جاكار بنقش مثمنات.",
+      "أمام الكنب طاولات وسط مستطيلة من الخشب الأسود بسطح زجاج أسود وأرجل مخروطة، وفي الزوايا طاولات جانبية مربعة من الخشب نفسه.",
+      "وفي جدار المجلس مدفأة كهربائية بيضاء ببروز جبسي، والمخدات بقماش مشجر فضي وأخرى بالجاكار."
+    ],
+    "words": [
+      {
+        "ar": "كلاسيك",
+        "en": "Classic"
+      },
+      {
+        "ar": "لمعان",
+        "en": "Lustre"
+      },
+      {
+        "ar": "تفصيل بالمقاس",
+        "en": "Made to measure"
+      },
+      {
+        "ar": "دفء",
+        "en": "Warmth"
+      }
+    ],
+    "image": {
+      "src": "images/projects/classic-silver-majlis-fireplace/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "الظهر المقوس والجاكار الفضي"
+    },
+    "inset": {
+      "src": "images/projects/classic-silver-majlis-fireplace/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "المدفأة البيضاء"
+    }
+  },
+  "materials": [
+    {
+      "id": "black-wood",
+      "name": "الخشب الأسود اللامع",
+      "en": "Black lacquered wood",
+      "color": "#1C1918",
+      "swatch": "images/projects/classic-silver-majlis-fireplace/material-black-wood.webp",
+      "note": "إطار الكنب بظهره المقوس وأرجله، وطاولات الوسط والجنب."
+    },
+    {
+      "id": "jacquard",
+      "name": "الجاكار الفضي",
+      "en": "Silver jacquard",
+      "color": "#C8C2B8",
+      "swatch": "images/projects/classic-silver-majlis-fireplace/material-jacquard.webp",
+      "note": "قماش المقعد والظهر من الداخل."
+    },
+    {
+      "id": "leaf",
+      "name": "القماش المشجر الفضي",
+      "en": "Silver patterned fabric",
+      "color": "#D6D1C8",
+      "swatch": "images/projects/classic-silver-majlis-fireplace/material-leaf.webp",
+      "note": "قماش المخدات."
+    },
+    {
+      "id": "black-glass",
+      "name": "الزجاج الأسود",
+      "en": "Black glass",
+      "color": "#2A2827",
+      "swatch": "images/projects/classic-silver-majlis-fireplace/material-black-glass.webp",
+      "note": "أسطح طاولات الوسط والجنب."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "majlis",
+      "name": "المجلس",
+      "en": "The majlis",
+      "intro": "غرفة بيضاء ببراويز جبس وألواح رخام، فيها الكنب على شكل L حول طاولات سوداء.",
+      "look": {
+        "image": {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-look-03.webp",
+          "ratio": "3:4",
+          "caption": "المجلس على شكل L مع الطاولات"
+        },
+        "spots": [
+          {
+            "x": 25,
+            "y": 62,
+            "product": "sofas"
+          },
+          {
+            "x": 33,
+            "y": 78,
+            "product": "coffee-tables"
+          },
+          {
+            "x": 52,
+            "y": 60,
+            "product": "side-tables"
+          },
+          {
+            "x": 78,
+            "y": 58,
+            "product": "cushions"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-g-04.webp",
+          "ratio": "3:4",
+          "caption": "المجلس كاملًا",
+          "span": 4
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-g-05.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة الطويلة والطاولة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-g-06.webp",
+          "ratio": "3:4",
+          "caption": "الزاوية وطاولة الجنب",
+          "span": 4
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-g-07.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الجنب",
+          "span": 4
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-g-09.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة أمام الجدار",
+          "span": 4
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-g-40.webp",
+          "ratio": "3:4",
+          "caption": "الكنب على الجدار الطويل",
+          "span": 4
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-g-41.webp",
+          "ratio": "3:4",
+          "caption": "المجلس من الزاوية",
+          "span": 4
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-g-42.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة بمخداتها",
+          "span": 4
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-g-43.webp",
+          "ratio": "3:4",
+          "caption": "المجلس على شكل L",
+          "span": 4
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-g-44.webp",
+          "ratio": "3:4",
+          "caption": "الكنب وطاولة الوسط",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-d-10.webp",
+          "ratio": "3:4",
+          "caption": "الظهر المقوس والجاكار",
+          "product": "sofas"
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-d-11.webp",
+          "ratio": "3:4",
+          "caption": "رجل الكنبة الخشبية",
+          "product": "sofas"
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-d-12.webp",
+          "ratio": "3:4",
+          "caption": "سطح الطاولة الزجاجي الأسود",
+          "product": "coffee-tables"
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-d-13.webp",
+          "ratio": "3:4",
+          "caption": "المخدات",
+          "product": "cushions"
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-d-50.webp",
+          "ratio": "3:4",
+          "caption": "الظهر المقوس ونقش المثمنات",
+          "product": "sofas"
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-d-51.webp",
+          "ratio": "3:4",
+          "caption": "المقعد بالجاكار الفضي",
+          "product": "sofas"
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-d-52.webp",
+          "ratio": "3:4",
+          "caption": "المدفأة الكهربائية",
+          "product": "fireplace"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "خمس قطع في هذا المجلس. الكنب صُنع بمقاس الغرفة، والطاولات والمدفأة اخترناها لتكمل الطابع الكلاسيك. افتح أي قطعة لترى صورها وتفاصيلها.",
+    "image": {
+      "src": "images/projects/classic-silver-majlis-fireplace/cover.webp",
+      "ratio": "16:9",
+      "caption": "الكنبة الكلاسيكية"
+    }
+  },
+  "products": [
+    {
+      "id": "sofas",
+      "name": "الكنب الكلاسيك",
+      "en": "Classic arched-back sofas",
+      "category": "كنب",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": true,
+      "materials": [
+        "black-wood",
+        "jacquard"
+      ],
+      "finish": "خشب أسود لامع بظهر مقوس، وجاكار فضي",
+      "text": "كنب كلاسيك على شكل L بإطار من الخشب الأسود اللامع وظهر مقوس في الطرفين. المقعد بقماش جاكار فضي بنقش متكسر، والظهر من الداخل جاكار بنقش مثمنات، والحواف بحبكة رفيعة.",
+      "card": "images/projects/classic-silver-majlis-fireplace/card-sofas.webp",
+      "views": [
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/sofas-v-15.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة من الأمام"
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/sofas-v-16.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة والطاولة"
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/sofas-v-60.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة بطولها"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/sofas-d-17.webp",
+          "ratio": "3:4",
+          "caption": "الظهر المقوس"
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/sofas-d-61.webp",
+          "ratio": "3:4",
+          "caption": "المخدات على الكنب"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/majlis-look-03.webp",
+          "ratio": "3:4",
+          "caption": "الكنب في المجلس"
+        }
+      ]
+    },
+    {
+      "id": "coffee-tables",
+      "name": "طاولات الوسط",
+      "en": "Black glass coffee tables",
+      "category": "طاولات",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": false,
+      "materials": [
+        "black-wood",
+        "black-glass"
+      ],
+      "finish": "أسود لامع بسطح زجاج أسود وأرجل مخروطة",
+      "text": "طاولات وسط مستطيلة من الخشب الأسود اللامع، بسطح من الزجاج الأسود وأرجل مخروطة.",
+      "card": "images/projects/classic-silver-majlis-fireplace/card-coffee-tables.webp",
+      "views": [
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/coffee-tables-v-19.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الوسط"
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/coffee-tables-v-62.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الوسط أمام الكنب"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/coffee-tables-d-20.webp",
+          "ratio": "3:4",
+          "caption": "السطح الزجاجي"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/coffee-tables-i-21.webp",
+          "ratio": "3:4",
+          "caption": "الطاولات في المجلس"
+        }
+      ]
+    },
+    {
+      "id": "side-tables",
+      "name": "طاولات الجنب",
+      "en": "Square side tables",
+      "category": "طاولات",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": false,
+      "materials": [
+        "black-wood",
+        "black-glass"
+      ],
+      "finish": "أسود لامع بسطح زجاج",
+      "text": "طاولات جنب مربعة من الخشب الأسود نفسه في زوايا الجلسة.",
+      "card": "images/projects/classic-silver-majlis-fireplace/card-side-tables.webp",
+      "views": [
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/side-tables-v-22.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الجنب"
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/side-tables-v-63.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة الجانبية في الزاوية"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/side-tables-i-23.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة في الزاوية"
+        }
+      ]
+    },
+    {
+      "id": "cushions",
+      "name": "المخدات",
+      "en": "Silver cushions",
+      "category": "مفروشات",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": false,
+      "materials": [
+        "leaf"
+      ],
+      "finish": "قماش مشجر فضي وجاكار",
+      "text": "مخدات بقماش مشجر فضي، وأخرى بقماش الجاكار.",
+      "card": "images/projects/classic-silver-majlis-fireplace/card-cushions.webp",
+      "views": [
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/cushions-v-24.webp",
+          "ratio": "3:4",
+          "caption": "المخدات على الكنب"
+        },
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/cushions-v-64.webp",
+          "ratio": "3:4",
+          "caption": "المخدة بالجاكار الفضي"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/cushions-i-25.webp",
+          "ratio": "3:4",
+          "caption": "المخدات على الكنبة"
+        }
+      ]
+    },
+    {
+      "id": "fireplace",
+      "name": "المدفأة",
+      "en": "Built-in fireplace",
+      "category": "أعمال مدمجة",
+      "spaces": [
+        "majlis"
+      ],
+      "custom": true,
+      "materials": [],
+      "finish": "إطار أبيض ومدفأة كهربائية",
+      "text": "مدفأة كهربائية مدمجة في جدار أبيض ببروز جبسي.",
+      "card": "images/projects/classic-silver-majlis-fireplace/card-fireplace.webp",
+      "views": [
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/fireplace-v-26.webp",
+          "ratio": "3:4",
+          "caption": "المدفأة"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/fireplace-d-65.webp",
+          "ratio": "3:4",
+          "caption": "المدفأة عن قرب"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/classic-silver-majlis-fireplace/fireplace-i-27.webp",
+          "ratio": "3:4",
+          "caption": "المدفأة في الجدار"
+        }
+      ]
+    }
+  ],
+  "closing": {
+    "title": "تريد مجلسًا مثل هذا؟",
+    "text": "نصمّم المجلس ونصنع كنبه بالمقاس، ونختار معك الخشب والأقمشة. أرسل لنا تفاصيل مساحتك ونبدأ."
+  },
+  "film": {
+    "src": "videos/projects/classic-silver-majlis-fireplace.mp4",
+    "poster": "images/projects/classic-silver-majlis-fireplace/film-poster.webp",
+    "ratio": "9:16",
+    "title": "جولة في المجلس",
+    "caption": "لقطة تمر على الكنب الكلاسيكي والطاولات السوداء في المجلس."
+  }
+}

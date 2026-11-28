@@ -6,3 +6,9 @@
 @import "./site.css";
 @import "./catalogue-hero.css";
 @import "./search.css";
+
+/* The 404 page: a short message and the main ways back in. */
+.not-found { padding: clamp(140px, 22vh, 220px) 0 clamp(72px, 12vh, 120px); text-align: center; }
+.not-found .eyebrow { justify-content: center }
+.not-found h1 { margin: 8px 0 12px; }
+.not-found-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 28px 0 0; padding: 0; list-style: none; }

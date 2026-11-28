@@ -16,6 +16,8 @@ export interface SeoSettings {
     readonly foundingDate: string | null;
     readonly city: string | null;
     readonly region: string | null;
+    /** Street and district only, e.g. "شارع أبو بكر الصديق، حي المنار" (the city has its own field). */
+    readonly streetAddress: string | null;
     /** Two-letter country code. */
     readonly country: string;
     readonly latitude: number | null;
@@ -30,6 +32,10 @@ export interface SeoSettings {
   readonly social: readonly string[];
   /** The content value of each search console's verification meta tag. */
   readonly verification: { readonly google: string | null; readonly bing: string | null };
+  /** Google Tag Manager container, e.g. "GTM-ABC1234". When set, GA4 is loaded through it. */
+  readonly gtmId: string | null;
+  /** GA4 Measurement ID, e.g. "G-ABC123". Used directly only while there is no GTM container. */
+  readonly ga4Id: string | null;
   /** Let AI assistants (ChatGPT, Claude, Perplexity, Gemini…) read the site so they can cite it. */
   readonly aiCrawlers: boolean;
 }

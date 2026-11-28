@@ -1,0 +1,276 @@
+{
+  "name": {
+    "ar": "مجلس الحروف العربية",
+    "en": "THE BEIGE & DARK WOOD MAJLIS"
+  },
+  "place": "المجلس",
+  "kicker": "مشروع مجلس · تصميم وتنفيذ",
+  "tagline": "عربي معاصر · بيج وخشب داكن",
+  "cover": {
+    "src": "images/projects/beige-majlis-dark-wood-room/cover.webp",
+    "ratio": "16:9",
+    "caption": "المجلس بجلساته على الجدران"
+  },
+  "intro": {
+    "lead": "مجلس طويل صنعنا كنبه بالمقاس على جدرانه، ليجمع الضيوف في جلسة متصلة على شكل U.",
+    "paragraphs": [
+      "الكنب بقماش شانيل بيج ناعم، بمقاعد عريضة ومساند ظهر بحواف مستديرة، يرتكز على قاعدة منخفضة من الخشب الداكن.",
+      "في أطراف الجلسات وحدات خشبية داكنة بخانات تعمل كأسطح جانبية.",
+      "والمخدات بقماش مشجر بنقش الحروف العربية، وأخرى سادة، موزعة على طول الجلسة."
+    ],
+    "words": [
+      {
+        "ar": "ضيافة",
+        "en": "Hospitality"
+      },
+      {
+        "ar": "حروف عربية",
+        "en": "Arabic letters"
+      },
+      {
+        "ar": "تفصيل بالمقاس",
+        "en": "Made to measure"
+      },
+      {
+        "ar": "خشب داكن",
+        "en": "Dark wood"
+      }
+    ],
+    "image": {
+      "src": "images/projects/beige-majlis-dark-wood-room/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "الكنبة والمخدات"
+    },
+    "inset": {
+      "src": "images/projects/beige-majlis-dark-wood-room/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "المخدة بنقش الحروف العربية"
+    }
+  },
+  "materials": [
+    {
+      "id": "chenille",
+      "name": "الشانيل البيج",
+      "en": "Beige chenille",
+      "color": "#CFC2A8",
+      "swatch": "images/projects/beige-majlis-dark-wood-room/material-chenille.webp",
+      "note": "قماش المقاعد ومساند الظهر."
+    },
+    {
+      "id": "wood",
+      "name": "الخشب الداكن",
+      "en": "Dark wood",
+      "color": "#2E1A15",
+      "swatch": "images/projects/beige-majlis-dark-wood-room/material-wood.webp",
+      "note": "قاعدة الكنب والوحدات الجانبية."
+    },
+    {
+      "id": "patterned",
+      "name": "القماش المشجر",
+      "en": "Patterned fabric",
+      "color": "#BFB297",
+      "swatch": "images/projects/beige-majlis-dark-wood-room/material-patterned.webp",
+      "note": "قماش المخدات بنقش الحروف العربية."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "main",
+      "name": "المجلس",
+      "en": "The majlis",
+      "intro": "مجلس طويل بجدران فاتحة وألواح خشبية داكنة عند الأبواب، والكنب على الجدران حول وسط مفتوح، وستائر بطيّات على النافذة.",
+      "look": {
+        "image": {
+          "src": "images/projects/beige-majlis-dark-wood-room/main-look-03.webp",
+          "ratio": "3:4",
+          "caption": "الجلسات على جانبي المجلس"
+        },
+        "spots": [
+          {
+            "x": 40,
+            "y": 55,
+            "product": "sofas"
+          },
+          {
+            "x": 75,
+            "y": 70,
+            "product": "units"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/beige-majlis-dark-wood-room/main-g-04.webp",
+          "ratio": "3:4",
+          "caption": "المجلس من الطرف",
+          "span": 4
+        },
+        {
+          "src": "images/projects/beige-majlis-dark-wood-room/main-g-05.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة والوحدة الخشبية",
+          "span": 4
+        },
+        {
+          "src": "images/projects/beige-majlis-dark-wood-room/main-g-06.webp",
+          "ratio": "3:4",
+          "caption": "المجلس بطوله",
+          "span": 4
+        },
+        {
+          "src": "images/projects/beige-majlis-dark-wood-room/main-g-07.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة والمخدات",
+          "span": 4
+        },
+        {
+          "src": "images/projects/beige-majlis-dark-wood-room/main-g-08.webp",
+          "ratio": "3:4",
+          "caption": "الستائر بطيّاتها",
+          "span": 4
+        },
+        {
+          "src": "images/projects/beige-majlis-dark-wood-room/main-g-09.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة من الزاوية",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/beige-majlis-dark-wood-room/main-d-10.webp",
+          "ratio": "3:4",
+          "caption": "ذراع الكنب والقاعدة",
+          "product": "sofas"
+        },
+        {
+          "src": "images/projects/beige-majlis-dark-wood-room/main-d-11.webp",
+          "ratio": "3:4",
+          "caption": "المخدات على الكنب",
+          "product": "cushions"
+        },
+        {
+          "src": "images/projects/beige-majlis-dark-wood-room/main-d-12.webp",
+          "ratio": "3:4",
+          "caption": "المخدات المشجرة",
+          "product": "cushions"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "ثلاث قطع صُنعت لهذا المجلس: الكنب، والوحدات الخشبية، والمخدات. افتح أي قطعة لترى صورها.",
+    "image": {
+      "src": "images/projects/beige-majlis-dark-wood-room/collection-13.webp",
+      "ratio": "16:9",
+      "caption": "الجلسات في المجلس"
+    }
+  },
+  "products": [
+    {
+      "id": "sofas",
+      "name": "الكنب",
+      "en": "Sofas",
+      "category": "كنب",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "chenille",
+        "wood"
+      ],
+      "finish": "شانيل بيج على قاعدة خشب داكن",
+      "text": "كنب بقماش شانيل بيج بمقاعد عريضة ومساند بحواف مستديرة، على قاعدة منخفضة من الخشب الداكن، يلتف على جدران المجلس.",
+      "card": "images/projects/beige-majlis-dark-wood-room/card-sofas.webp",
+      "views": [
+        {
+          "src": "images/projects/beige-majlis-dark-wood-room/sofas-v-14.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة من الأمام"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/beige-majlis-dark-wood-room/sofas-d-15.webp",
+          "ratio": "3:4",
+          "caption": "حافة المسند"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/beige-majlis-dark-wood-room/sofas-i-16.webp",
+          "ratio": "3:4",
+          "caption": "الكنب في المجلس"
+        }
+      ]
+    },
+    {
+      "id": "units",
+      "name": "الوحدات الخشبية",
+      "en": "Wood units",
+      "category": "أعمال خشبية",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "wood"
+      ],
+      "finish": "خشب داكن بخانات",
+      "text": "وحدات خشبية داكنة بخانات في أطراف الجلسات، بارتفاع المسند، تعمل كأسطح جانبية.",
+      "card": "images/projects/beige-majlis-dark-wood-room/card-units.webp",
+      "views": [
+        {
+          "src": "images/projects/beige-majlis-dark-wood-room/units-v-17.webp",
+          "ratio": "3:4",
+          "caption": "الوحدة في طرف الجلسة"
+        }
+      ],
+      "details": [],
+      "inSitu": []
+    },
+    {
+      "id": "cushions",
+      "name": "المخدات",
+      "en": "Cushions",
+      "category": "مفروشات",
+      "spaces": [
+        "main"
+      ],
+      "custom": false,
+      "materials": [
+        "patterned"
+      ],
+      "finish": "قماش مشجر بالحروف العربية وقماش سادة",
+      "text": "مخدات بقماش مشجر بنقش الحروف العربية، وأخرى سادة، على طول الجلسة.",
+      "card": "images/projects/beige-majlis-dark-wood-room/card-cushions.webp",
+      "views": [
+        {
+          "src": "images/projects/beige-majlis-dark-wood-room/cushions-v-18.webp",
+          "ratio": "3:4",
+          "caption": "المخدة المشجرة"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/beige-majlis-dark-wood-room/cushions-d-19.webp",
+          "ratio": "3:4",
+          "caption": "المخدات على الكنب"
+        }
+      ],
+      "inSitu": []
+    }
+  ],
+  "film": {
+    "src": "videos/projects/beige-majlis-dark-wood-room.mp4",
+    "poster": "images/projects/beige-majlis-dark-wood-room/film-poster.webp",
+    "ratio": "9:16",
+    "title": "جولة في المجلس",
+    "caption": "لقطة تمر على جلسات المجلس."
+  },
+  "closing": {
+    "title": "تريد مجلسًا مثل هذا؟",
+    "text": "نصمّم الكنب ووحداته الخشبية بمقاس مجلسك، ونختار معك القماش. أرسل لنا تفاصيل مساحتك ونبدأ."
+  }
+}

@@ -22,6 +22,7 @@ const LABELS: Readonly<Record<string, string>> = {
   social: 'الحسابات الرسمية', verification: 'رموز التحقق', aiCrawlers: 'السماح لمساعدي الذكاء الاصطناعي',
   openingHours: 'ساعات العمل', priceRange: 'نطاق الأسعار', areaServed: 'مناطق الخدمة', country: 'الدولة',
   region: 'المنطقة', latitude: 'خط العرض', longitude: 'خط الطول', foundingDate: 'تاريخ التأسيس', types: 'الأنواع',
+  streetAddress: 'الشارع والحي', gtmId: 'معرّف Google Tag Manager', ga4Id: 'معرّف Google Analytics 4',
 };
 
 export const fieldLabel = (key: string): string => LABELS[key] ?? key;

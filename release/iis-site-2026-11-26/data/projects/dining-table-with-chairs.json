@@ -1,0 +1,264 @@
+{
+  "name": {
+    "ar": "طاولة الأوك الداكن",
+    "en": "THE DARK OAK OVAL DINING TABLE"
+  },
+  "place": "غرفة الطعام",
+  "kicker": "مشروع طاولة طعام · تصميم وتنفيذ",
+  "tagline": "مودرن · قاعدة مضلّعة وكراسٍ مخيّطة",
+  "cover": {
+    "src": "images/projects/dining-table-with-chairs/cover.webp",
+    "ratio": "16:9",
+    "caption": "الطاولة البيضاوية والكراسي في الغرفة"
+  },
+  "intro": {
+    "lead": "طاولة طعام صنعناها بالمقاس لغرفة طعام بيضاء، تتسع لعشرة كراسٍ حولها.",
+    "paragraphs": [
+      "السطح بيضاوي من خشب الأوك الداكن بعروق ظاهرة، بحافة رفيعة مائلة، ويرتكز على قاعدتين مضلّعتين بشرائح خشبية رأسية.",
+      "الكراسي بظهر منحني مخيّط من الخلف بخطوط طولية، بقماش كريمي ناعم، على أرجل خشبية داكنة بأطراف سوداء."
+    ],
+    "words": [
+      {
+        "ar": "خشب أوك",
+        "en": "Oak"
+      },
+      {
+        "ar": "جلسة طعام",
+        "en": "Dining"
+      },
+      {
+        "ar": "تفصيل بالمقاس",
+        "en": "Made to measure"
+      },
+      {
+        "ar": "ضيافة",
+        "en": "Hospitality"
+      }
+    ],
+    "image": {
+      "src": "images/projects/dining-table-with-chairs/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "الكرسي بظهره المنحني"
+    },
+    "inset": {
+      "src": "images/projects/dining-table-with-chairs/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "عروق خشب الأوك على السطح"
+    }
+  },
+  "materials": [
+    {
+      "id": "oak",
+      "name": "خشب الأوك الداكن",
+      "en": "Dark oak",
+      "color": "#5A3A22",
+      "swatch": "images/projects/dining-table-with-chairs/material-oak.webp",
+      "note": "سطح الطاولة وقاعدتها المضلّعة، وأرجل الكراسي."
+    },
+    {
+      "id": "fabric",
+      "name": "القماش الكريمي",
+      "en": "Cream upholstery",
+      "color": "#E5E0D5",
+      "swatch": "images/projects/dining-table-with-chairs/material-fabric.webp",
+      "note": "تنجيد الكراسي، بخياطة طولية على الظهر."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "main",
+      "name": "غرفة الطعام",
+      "en": "The dining room",
+      "intro": "غرفة بيضاء بأرضية رخام فاتح وستائر على النافذة، والطاولة في الوسط، وبوفيه منخفض على الجدار.",
+      "look": {
+        "image": {
+          "src": "images/projects/dining-table-with-chairs/main-look-03.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة والكراسي حولها"
+        },
+        "spots": [
+          {
+            "x": 50,
+            "y": 52,
+            "product": "table"
+          },
+          {
+            "x": 35,
+            "y": 70,
+            "product": "chairs"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/dining-table-with-chairs/main-g-04.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة من الزاوية",
+          "span": 4
+        },
+        {
+          "src": "images/projects/dining-table-with-chairs/main-g-05.webp",
+          "ratio": "3:4",
+          "caption": "الكراسي من الخلف",
+          "span": 4
+        },
+        {
+          "src": "images/projects/dining-table-with-chairs/main-g-06.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة بطولها",
+          "span": 4
+        },
+        {
+          "src": "images/projects/dining-table-with-chairs/main-g-07.webp",
+          "ratio": "3:4",
+          "caption": "الغرفة من المدخل",
+          "span": 4
+        },
+        {
+          "src": "images/projects/dining-table-with-chairs/main-g-08.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة والقاعدة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/dining-table-with-chairs/main-g-09.webp",
+          "ratio": "3:4",
+          "caption": "الكراسي على جانب الطاولة",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/dining-table-with-chairs/main-d-10.webp",
+          "ratio": "3:4",
+          "caption": "الشرائح الخشبية في القاعدة",
+          "product": "table"
+        },
+        {
+          "src": "images/projects/dining-table-with-chairs/main-d-11.webp",
+          "ratio": "3:4",
+          "caption": "ظهر الكرسي المخيّط",
+          "product": "chairs"
+        },
+        {
+          "src": "images/projects/dining-table-with-chairs/main-d-12.webp",
+          "ratio": "3:4",
+          "caption": "حافة السطح",
+          "product": "table"
+        },
+        {
+          "src": "images/projects/dining-table-with-chairs/main-d-13.webp",
+          "ratio": "3:4",
+          "caption": "مقعد الكرسي",
+          "product": "chairs"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "قطعتان صُنعتا بالمقاس: الطاولة والكراسي. افتح أي قطعة لترى صورها.",
+    "image": {
+      "src": "images/projects/dining-table-with-chairs/collection-14.webp",
+      "ratio": "16:9",
+      "caption": "الطاولة والكراسي"
+    }
+  },
+  "products": [
+    {
+      "id": "table",
+      "name": "طاولة الطعام",
+      "en": "Dining table",
+      "category": "طاولات",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "oak"
+      ],
+      "finish": "خشب أوك داكن على قاعدتين مضلّعتين",
+      "text": "طاولة بيضاوية طويلة من خشب الأوك الداكن بعروق ظاهرة وحافة رفيعة، على قاعدتين بشرائح خشبية رأسية.",
+      "card": "images/projects/dining-table-with-chairs/card-table.webp",
+      "views": [
+        {
+          "src": "images/projects/dining-table-with-chairs/table-v-18.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة والقاعدة"
+        },
+        {
+          "src": "images/projects/dining-table-with-chairs/table-v-19.webp",
+          "ratio": "3:4",
+          "caption": "السطح بطوله"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/dining-table-with-chairs/table-d-20.webp",
+          "ratio": "3:4",
+          "caption": "حافة السطح"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/dining-table-with-chairs/table-i-21.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة في الغرفة"
+        }
+      ]
+    },
+    {
+      "id": "chairs",
+      "name": "كراسي الطعام",
+      "en": "Dining chairs",
+      "category": "كراسي",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "fabric",
+        "oak"
+      ],
+      "finish": "قماش كريمي بظهر مخيّط وأرجل خشبية داكنة",
+      "text": "كراسٍ بظهر منحني مخيّط من الخلف بخطوط طولية، بقماش كريمي، على أرجل خشبية داكنة بأطراف سوداء.",
+      "card": "images/projects/dining-table-with-chairs/card-chairs.webp",
+      "views": [
+        {
+          "src": "images/projects/dining-table-with-chairs/chairs-v-22.webp",
+          "ratio": "3:4",
+          "caption": "الكراسي حول الطاولة"
+        },
+        {
+          "src": "images/projects/dining-table-with-chairs/chairs-v-23.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي من الجانب"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/dining-table-with-chairs/chairs-d-24.webp",
+          "ratio": "3:4",
+          "caption": "الأرجل الخشبية"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/dining-table-with-chairs/chairs-i-25.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي أمام الطاولة"
+        }
+      ]
+    }
+  ],
+  "film": {
+    "src": "videos/projects/dining-table-with-chairs.mp4",
+    "poster": "images/projects/dining-table-with-chairs/film-poster.webp",
+    "ratio": "9:16",
+    "title": "جولة حول الطاولة",
+    "caption": "لقطة تمر على الطاولة والكراسي."
+  },
+  "closing": {
+    "title": "تريد طاولة مثل هذه؟",
+    "text": "نصمّم طاولة الطعام وكراسيها بمقاس غرفتك وعدد ضيوفك. أرسل لنا تفاصيل مساحتك ونبدأ."
+  }
+}

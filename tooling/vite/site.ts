@@ -13,6 +13,7 @@ import { basename, resolve } from 'node:path';
 import type { Plugin } from 'vite';
 import type { CatalogueCard, IconName, Profile, ServicePage } from '../../src/domain/entities';
 import { ICON_PATHS } from '../../src/presentation/site/iconPaths';
+import { imageInfo } from './imageInfo';
 import {
   advantagesDecoder, cataloguesDecoder, ceoDecoder, clientsDecoder, companyDecoder, contactDecoder, faqDecoder,
   journeyDecoder, levelsDecoder, productsDecoder, projectsDecoder, servicePagesDecoder, servicesDecoder,
@@ -55,7 +56,7 @@ export const PAGE_FILES: Readonly<Record<PageKey, string>> = {
 };
 
 const NAV: readonly { key: PageKey; href: string; label: string }[] = [
-  { key: 'home', href: PAGE_FILES.home, label: 'الرئيسية' },
+  { key: 'home', href: '', label: 'الرئيسية' }, // the site root: one address for the home page
   { key: 'about', href: PAGE_FILES.about, label: 'من نحن' },
   { key: 'services', href: PAGE_FILES.services, label: 'الخدمات' },
   { key: 'contracting', href: PAGE_FILES.contracting, label: 'المقاولات' },
@@ -65,6 +66,11 @@ const NAV: readonly { key: PageKey; href: string; label: string }[] = [
 
 const NAME = 'النظرة الساحرة';
 const NAME_EN = 'Magic Look';
+/** The logo's text for search engines and screen readers. */
+export const LOGO_ALT = `شعار ${NAME} ${NAME_EN} للأثاث والديكور`;
+/** The WhatsApp message a page starts, naming what the visitor was reading. */
+export const inquiryText = (subject: string | null): string =>
+  subject ? `السلام عليكم، أبغى استفسار عن ${subject}` : 'السلام عليكم، أرغب في الاستفسار عن خدماتكم';
 
 export const esc = (s: string): string =>
   s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -72,7 +78,17 @@ const asset = (root: string, src: string): string => esc(`${root}${encodeURI(src
 
 // ─── data ───────────────────────────────────────────────────────────────────────────────────────
 
+/** public/ of the site being built, so photos can carry their real width and height. */
+let publicDir: string | null = null;
+
+/** width and height attributes for a photo in public/, so the page does not jump while it loads. */
+const sizeAttrs = (src: string): string => {
+  const info = publicDir ? imageInfo(resolve(publicDir, src)) : null;
+  return info ? ` width="${info.width}" height="${info.height}"` : '';
+};
+
 export function loadSite(root: string): SiteContext {
+  publicDir = resolve(root, 'public');
   const read = (file: string): unknown => JSON.parse(readFileSync(resolve(root, 'public/data', file), 'utf8'));
   const profile: Profile = {
     company: companyDecoder(read('company.json'), 'company.json'),
@@ -124,7 +140,7 @@ const icon = (name: keyof typeof ICONS): string =>
   `<svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false">${ICONS[name]}</svg>`;
 
 const photo = (root: string, p: Photo, eager = false): string =>
-  `<img src="${asset(root, p.src)}" alt="${esc(p.caption)}"${eager ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async" />`;
+  `<img src="${asset(root, p.src)}" alt="${esc(p.caption)}"${sizeAttrs(p.src)}${eager ? ' fetchpriority="high"' : ' loading="lazy"'} decoding="async" />`;
 
 const brandIcon = (name: IconName): string =>
   `<svg class="ic" viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">${ICON_PATHS[name]}</svg>`;
@@ -164,7 +180,7 @@ const whatsappLink = (ctx: SiteContext, text: string, label: string, kind: 'soli
 
 const crumbs = (root: string, items: readonly { label: string; href?: string }[]): string => `
           <nav class="crumbs" aria-label="مسار التنقل"><ol>
-            <li><a href="${root}index.html">الرئيسية</a></li>
+            <li><a href="${root}">الرئيسية</a></li>
             ${items.map((c) => c.href ? `<li><a href="${esc(c.href)}">${esc(c.label)}</a></li>` : `<li aria-current="page">${esc(c.label)}</li>`).join('\n            ')}
           </ol></nav>`;
 
@@ -273,8 +289,8 @@ export function siteHeader(root: string, active: NavKey): string {
   return `<a class="skip" href="#main">تخطَّ إلى المحتوى</a>
     <nav class="nav" id="nav" aria-label="التنقل الرئيسي">
       <div class="wrap">
-        <a class="brand" href="${root}index.html" aria-label="${NAME} ${NAME_EN}، الصفحة الرئيسية">
-          <img class="logo" src="${root}assets/brand/logo-on-light.svg" alt="" width="173" height="40" />
+        <a class="brand" href="${root}">
+          <img class="logo" src="${root}assets/brand/logo-on-light.svg" alt="${LOGO_ALT}" width="173" height="40" />
         </a>
         <ul>
           ${NAV.map((n) => `<li><a href="${root}${n.href}"${n.key === active ? ' class="active" aria-current="page"' : ''}>${n.label}</a></li>`).join('\n          ')}
@@ -284,15 +300,15 @@ export function siteHeader(root: string, active: NavKey): string {
     </nav>`;
 }
 
-export function siteFooter(ctx: SiteContext, root: string): string {
+export function siteFooter(ctx: SiteContext, root: string, subject: string | null = null): string {
   const { contact, servicePages, company } = ctx.profile;
-  const hello = whatsappHref(ctx, 'السلام عليكم، أرغب في الاستفسار عن خدماتكم');
+  const hello = whatsappHref(ctx, inquiryText(subject));
   return `<footer class="site-footer">
       ${PATTERN}
       <div class="wrap">
         <div class="footer-main footer-wide">
           <div class="footer-brand">
-            <a href="${root}index.html" aria-label="${NAME} ${NAME_EN}"><img class="logo" src="${root}assets/brand/logo-on-green.svg" alt="" width="173" height="40" loading="lazy" /></a>
+            <a href="${root}"><img class="logo" src="${root}assets/brand/logo-on-green.svg" alt="${LOGO_ALT}" width="173" height="40" loading="lazy" /></a>
             <p>${esc(company.tagline)}</p>
           </div>
           <div class="footer-col">
@@ -330,7 +346,7 @@ const projectsByHref = (ctx: SiteContext, hrefs: readonly string[]): CatalogueCa
 
 /** The page's own photo, or the home page's when it has none. */
 const heroPhoto = (ctx: SiteContext, image: Photo | undefined): Photo =>
-  image ?? { src: ctx.profile.company.hero?.poster ?? 'images/hero-poster.webp', caption: '' };
+  image ?? { src: ctx.profile.company.hero?.poster ?? 'images/hero-poster.webp', caption: ctx.profile.company.hero?.caption ?? `تصميم داخلي من ${NAME}` };
 
 /** The lead with its highlighted phrase in <em>. */
 function leadHtml(lead: string, highlight: string): string {
@@ -580,11 +596,17 @@ const PAGE_RENDER: Readonly<Record<GeneratedPage, (ctx: SiteContext) => string>>
   about: aboutPage, services: servicesPage, contracting: contractingPage, projects: projectsPage, contact: contactPage,
 };
 
+/** What a root page's WhatsApp message asks about (the home and contact pages ask in general). */
+const PAGE_SUBJECTS: Readonly<Record<GeneratedPage, string | null>> = {
+  about: null, services: 'خدماتكم في التصميم والتأثيث', contracting: 'تنفيذ المشاريع للمقاولين والمطورين',
+  projects: 'مشروع مشابه لمشاريعكم', contact: null,
+};
+
 export function pageBody(ctx: SiteContext, key: GeneratedPage): string {
   return `${siteHeader('./', key)}
     <main id="main">${PAGE_RENDER[key](ctx)}
     </main>
-    ${siteFooter(ctx, './')}`;
+    ${siteFooter(ctx, './', PAGE_SUBJECTS[key])}`;
 }
 
 /** Title, description and share text of a root page. */
@@ -662,7 +684,7 @@ ${related.length > 0 ? section({ number: next(), title: 'مشاريع ذات ص�
         <ul class="pj-grid">${related.map((c, i) => projectCard(r, c, i)).join('')}
         </ul>`) : ''}
 ${page.faq.length > 0 ? section({ number: next(), title: `أسئلة عن ${page.name}`, className: 'services' }, faqList(page.faq)) : ''}
-${closingBand(ctx, r, `اطلب عرض سعر لـ${page.name}`, ctx.profile.company.closingLine, query, page.name)}
+${closingBand(ctx, r, `اطلب عرض سعر لخدمة ${page.name}`, ctx.profile.company.closingLine, query, page.name)}
 
     <section class="more-services">
       <div class="wrap">
@@ -675,7 +697,7 @@ ${closingBand(ctx, r, `اطلب عرض سعر لـ${page.name}`, ctx.profile.com
       </div>
     </section>
     </main>
-    ${siteFooter(ctx, r)}
+    ${siteFooter(ctx, r, `خدمة ${page.name}`)}
     <script type="module" src="/src/entries/site.ts"></script>
   </body>
 </html>
@@ -725,11 +747,22 @@ export function sitePlugin(root: string): Plugin {
       const key = /<body[^>]*data-page="([a-z]+)"/.exec(html)?.[1] as GeneratedPage | undefined;
       let out = html;
       if (key && key in PAGE_RENDER) out = out.replace('<!--site:page-->', () => pageBody(ctx, key));
-      // Catalogue pages sit at the site root and belong under "projects".
-      out = out.replace('<!--site:header-->', () => siteHeader('./', 'projects'));
-      out = out.replace('<!--site:footer-->', () => siteFooter(ctx, './'));
+      // Catalogue pages sit at the site root and belong under "projects". The 404 page belongs nowhere.
+      const notFound = /<body[^>]*data-page="notfound"/.test(html);
+      const subject = notFound ? null : /<title>([^<|]+)/.exec(html)?.[1]?.trim() ?? null;
+      out = out.replace('<!--site:header-->', () => siteHeader('./', notFound ? 'none' : 'projects'));
+      out = out.replace('<!--site:footer-->', () => siteFooter(ctx, './', subject));
       if (out.includes('<!--site:')) throw new Error(`${basename(hook.filename)}: unknown page`);
       return out;
     },
+    // The 404 page is shown at any missing address, however deep, so its links start from the site root.
+    generateBundle: { order: 'post', handler(_options, bundle) {
+      // The IIS settings (redirects to https://mgiclook.com, the 404 page, caching) travel with the site.
+      this.emitFile({ type: 'asset', fileName: 'web.config', source: readFileSync(resolve(root, 'deploy/iis-static/web.config'), 'utf8') });
+      const page = bundle['404.html'];
+      if (page?.type === 'asset' && typeof page.source === 'string') {
+        page.source = page.source.replace(/(href|src)="\.\/(?!\/)/g, '$1="/');
+      }
+    } },
   };
 }

@@ -1,0 +1,349 @@
+{
+  "name": {
+    "ar": "صالة الأقواس المضيئة",
+    "en": "THE ARCHED LIT SHELVES LIVING ROOM"
+  },
+  "place": "الصالة",
+  "kicker": "مشروع صالة · تصميم وتنفيذ",
+  "tagline": "مودرن · مكتبات مقوسة وإضاءة مخفية",
+  "cover": {
+    "src": "images/projects/arched-lit-shelves-curved-sofa-room/cover.webp",
+    "ratio": "16:9",
+    "caption": "المكتبات المقوسة المضيئة والكنب المنحني في الصالة"
+  },
+  "intro": {
+    "lead": "صالة صمّمنا جدرانها ومكتباتها وكنبها معًا: مكتبات مقوسة بإضاءة مخفية على جدار، وكنب مودرن بزوايا منحنية يلتف حول الغرفة على الجدار المقابل.",
+    "paragraphs": [
+      "المكتبات وحدات جدارية من الشيبورد الرمادي الفاتح، في كل وحدة فتحة مقوسة بثلاثة رفوف من خشب الأوك الداكن، وتحت كل رف إضاءة مخفية دافئة. وأسفل الفتحة خزائن بأبواب تخزين تاتش.",
+      "الكنب مودرن بزوايا منحنية بطول الجدار، بقماش شانيل بيج ومقاعد عميقة، وينتهي بطرف مستقيم بذراع عريضة، ويرتكز على قاعدة وأرجل خشبية.",
+      "على الكنب مخدات بقماش مشجر وأخرى بقماش جاكار مقلّم، بألوان تربط الكنب بإضاءة المكتبات."
+    ],
+    "words": [
+      {
+        "ar": "إضاءة مخفية",
+        "en": "Hidden lighting"
+      },
+      {
+        "ar": "أقواس",
+        "en": "Arches"
+      },
+      {
+        "ar": "تفصيل بالمقاس",
+        "en": "Made to measure"
+      },
+      {
+        "ar": "تخزين تاتش",
+        "en": "Touch storage"
+      }
+    ],
+    "image": {
+      "src": "images/projects/arched-lit-shelves-curved-sofa-room/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "طرف الكنب بذراعه العريضة والمخدات"
+    },
+    "inset": {
+      "src": "images/projects/arched-lit-shelves-curved-sofa-room/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "رف من خشب الأوك وإضاءته"
+    }
+  },
+  "materials": [
+    {
+      "id": "grey",
+      "name": "الشيبورد الرمادي الفاتح",
+      "en": "Light grey chipboard",
+      "color": "#B9BCB8",
+      "swatch": "images/projects/arched-lit-shelves-curved-sofa-room/material-grey.webp",
+      "note": "هيكل المكتبات والخزائن السفلية، بتشطيب مطفي وأبواب تخزين تاتش."
+    },
+    {
+      "id": "oak",
+      "name": "خشب الأوك الداكن",
+      "en": "Dark oak",
+      "color": "#4A3326",
+      "swatch": "images/projects/arched-lit-shelves-curved-sofa-room/material-oak.webp",
+      "note": "رفوف الفتحات المقوسة، وتحت كل رف إضاءة مخفية."
+    },
+    {
+      "id": "chenille",
+      "name": "الشانيل البيج",
+      "en": "Beige chenille",
+      "color": "#D9D0C1",
+      "swatch": "images/projects/arched-lit-shelves-curved-sofa-room/material-chenille.webp",
+      "note": "قماش الكنب المنحني ومساند الظهر والأذرع."
+    },
+    {
+      "id": "patterned",
+      "name": "القماش المشجر",
+      "en": "Patterned fabric",
+      "color": "#D8CFB8",
+      "swatch": "images/projects/arched-lit-shelves-curved-sofa-room/material-patterned.webp",
+      "note": "قماش جزء من المخدات بنقش نباتي."
+    },
+    {
+      "id": "jacquard",
+      "name": "قماش الجاكار",
+      "en": "Jacquard",
+      "color": "#CFC6A8",
+      "swatch": "images/projects/arched-lit-shelves-curved-sofa-room/material-jacquard.webp",
+      "note": "قماش المخدات المقلّمة."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "main",
+      "name": "الصالة",
+      "en": "The living room",
+      "intro": "صالة واسعة بسقف جبسي وستائر طويلة. على جدار مكتبتان مقوستان بإضاءة مخفية، وعلى الجدار المقابل الكنب المنحني بطوله، وبينهما مساحة مفتوحة.",
+      "look": {
+        "image": {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/main-look-03.webp",
+          "ratio": "3:4",
+          "caption": "الصالة: المكتبات المقوسة والكنب المنحني"
+        },
+        "spots": [
+          {
+            "x": 16,
+            "y": 42,
+            "product": "shelves"
+          },
+          {
+            "x": 62,
+            "y": 50,
+            "product": "sofas"
+          },
+          {
+            "x": 70,
+            "y": 66,
+            "product": "cushions"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/main-g-04.webp",
+          "ratio": "16:9",
+          "caption": "المكتبتان المقوستان والكنب",
+          "span": 8
+        },
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/main-g-05.webp",
+          "ratio": "3:4",
+          "caption": "المكتبة المقوسة من الأمام",
+          "span": 4
+        },
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/main-g-06.webp",
+          "ratio": "16:9",
+          "caption": "الكنب المنحني على طول الجدار",
+          "span": 8
+        },
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/main-g-07.webp",
+          "ratio": "3:4",
+          "caption": "الرفوف تحت الإضاءة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/main-g-08.webp",
+          "ratio": "16:9",
+          "caption": "انحناءة الكنب",
+          "span": 8
+        },
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/main-g-09.webp",
+          "ratio": "3:4",
+          "caption": "الكنب أمام المكتبة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/main-g-10.webp",
+          "ratio": "3:4",
+          "caption": "الكنب من الطرف",
+          "span": 4
+        },
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/main-g-11.webp",
+          "ratio": "3:4",
+          "caption": "الصالة كاملة",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/main-d-12.webp",
+          "ratio": "3:4",
+          "caption": "الإضاءة المخفية تحت الرف",
+          "product": "shelves"
+        },
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/main-d-13.webp",
+          "ratio": "3:4",
+          "caption": "الخزائن السفلية بتخزين تاتش",
+          "product": "shelves"
+        },
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/main-d-14.webp",
+          "ratio": "3:4",
+          "caption": "ذراع الكنب والقاعدة الخشبية",
+          "product": "sofas"
+        },
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/main-d-15.webp",
+          "ratio": "3:4",
+          "caption": "مخدة بقماش جاكار مقلّم",
+          "product": "cushions"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "ثلاث قطع صُنعت بالمقاس لهذه الصالة: المكتبات المقوسة المضيئة، والكنب المنحني، والمخدات. افتح أي قطعة لترى صورها وتفاصيلها.",
+    "image": {
+      "src": "images/projects/arched-lit-shelves-curved-sofa-room/collection-16.webp",
+      "ratio": "16:9",
+      "caption": "المكتبات المقوسة والكنب"
+    }
+  },
+  "products": [
+    {
+      "id": "shelves",
+      "name": "المكتبات المقوسة المضيئة",
+      "en": "Arched lit shelving",
+      "category": "أعمال مدمجة",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "grey",
+        "oak"
+      ],
+      "finish": "شيبورد رمادي فاتح، ورفوف خشب أوك داكن، وإضاءة مخفية، وخزائن تخزين تاتش",
+      "text": "وحدات جدارية بفتحات مقوسة، في كل فتحة ثلاثة رفوف من خشب الأوك الداكن وتحت كل رف إضاءة مخفية. أسفل الفتحة خزائن بأبواب تخزين تاتش، والهيكل كله من الشيبورد الرمادي الفاتح.",
+      "card": "images/projects/arched-lit-shelves-curved-sofa-room/card-shelves.webp",
+      "views": [
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/shelves-v-17.webp",
+          "ratio": "3:4",
+          "caption": "المكتبة من الزاوية"
+        },
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/shelves-v-18.webp",
+          "ratio": "3:4",
+          "caption": "المكتبة كاملة"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/shelves-d-19.webp",
+          "ratio": "3:4",
+          "caption": "الرفوف والإضاءة عن قرب"
+        },
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/shelves-d-20.webp",
+          "ratio": "3:4",
+          "caption": "حافة الفتحة المقوسة"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/shelves-i-21.webp",
+          "ratio": "3:4",
+          "caption": "المكتبات في الصالة"
+        }
+      ]
+    },
+    {
+      "id": "sofas",
+      "name": "الكنب المنحني",
+      "en": "Curved sofa",
+      "category": "كنب",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "chenille"
+      ],
+      "finish": "شانيل بيج على قاعدة وأرجل خشبية",
+      "text": "كنب مودرن كبير بزوايا منحنية يتبع جدار الصالة، بقماش شانيل بيج ومقاعد عميقة ومساند ظهر منفصلة. ينتهي بطرف مستقيم بذراع عريضة، ويرتكز على قاعدة وأرجل خشبية.",
+      "card": "images/projects/arched-lit-shelves-curved-sofa-room/card-sofas.webp",
+      "views": [
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/sofas-v-22.webp",
+          "ratio": "3:4",
+          "caption": "الكنب من الأمام"
+        },
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/sofas-v-23.webp",
+          "ratio": "3:4",
+          "caption": "الكنب بطوله"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/sofas-d-24.webp",
+          "ratio": "3:4",
+          "caption": "الذراع والأرجل الخشبية"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/sofas-i-25.webp",
+          "ratio": "3:4",
+          "caption": "طرف الكنب والمخدات"
+        }
+      ]
+    },
+    {
+      "id": "cushions",
+      "name": "المخدات",
+      "en": "Cushions",
+      "category": "مفروشات",
+      "spaces": [
+        "main"
+      ],
+      "custom": false,
+      "materials": [
+        "patterned",
+        "jacquard"
+      ],
+      "finish": "قماش مشجر وقماش جاكار مقلّم",
+      "text": "مخدات مربعة بقماش مشجر، ومخدات مستطيلة بقماش جاكار مقلّم بحواف مهدّبة، موزعة على طول الكنب.",
+      "card": "images/projects/arched-lit-shelves-curved-sofa-room/card-cushions.webp",
+      "views": [
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/cushions-v-26.webp",
+          "ratio": "3:4",
+          "caption": "المخدات على الكنب"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/cushions-d-27.webp",
+          "ratio": "3:4",
+          "caption": "المخدة المقلّمة عن قرب"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/arched-lit-shelves-curved-sofa-room/cushions-i-28.webp",
+          "ratio": "3:4",
+          "caption": "المخدات أمام المكتبة"
+        }
+      ]
+    }
+  ],
+  "film": {
+    "src": "videos/projects/arched-lit-shelves-curved-sofa-room.mp4",
+    "poster": "images/projects/arched-lit-shelves-curved-sofa-room/film-poster.webp",
+    "ratio": "9:16",
+    "title": "جولة في الصالة",
+    "caption": "لقطة تمر على المكتبات المقوسة والكنب المنحني."
+  },
+  "closing": {
+    "title": "تريد صالة مثل هذه؟",
+    "text": "نصمّم المكتبات والكنب معًا، ونصنعها بمقاس جدرانك. أرسل لنا تفاصيل مساحتك ونبدأ."
+  }
+}

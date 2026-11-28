@@ -1,10 +1,11 @@
 {
   "siteUrl": "https://mgiclook.com/",
-  "title": "النظرة الساحرة Magic Look | تصميم داخلي وديكور وتأثيث",
-  "description": "مؤسسة النظرة الساحرة Magic Look للتصميم الداخلي والديكور والتأثيث: كنب ومجالس، وغرف نوم، ووحدات تلفزيون، وكسوات خشبية، وستائر وإضاءة، بتصميم وتنفيذ حسب المقاس من الفكرة إلى آخر تفصيلة.",
+  "title": "النظرة الساحرة | تصميم داخلي وأثاث حسب المقاس في الدمام",
+  "description": "النظرة الساحرة Magic Look في الدمام: تصميم داخلي وديكور وتأثيث حسب المقاس، كنب ومجالس وغرف نوم ووحدات تلفزيون وتكسية جداري وستائر وإضاءة، من الفكرة إلى التنفيذ.",
   "keywords": [
     "النظرة الساحرة",
     "Magic Look",
+    "الدمام",
     "تصميم داخلي",
     "ديكور",
     "تأثيث",
@@ -14,7 +15,7 @@
     "مجالس",
     "غرف نوم",
     "وحدات تلفزيون",
-    "كسوات خشبية",
+    "تكسية جداري",
     "قواطع خشبية",
     "ستائر",
     "تصميم فلل",
@@ -23,21 +24,37 @@
     "custom furniture",
     "Saudi Arabia"
   ],
-  "image": { "src": "assets/avatar.png", "alt": "شعار النظرة الساحرة Magic Look" },
+  "image": {
+    "src": "og/home.jpg",
+    "alt": "صالة من تصميم وتنفيذ النظرة الساحرة"
+  },
   "logo": "assets/logo.png",
   "business": {
-    "types": ["HomeAndConstructionBusiness", "FurnitureStore"],
+    "types": [
+      "HomeAndConstructionBusiness",
+      "FurnitureStore"
+    ],
     "foundingDate": null,
     "city": "الدمام",
     "region": "المنطقة الشرقية",
+    "streetAddress": "شارع أبو بكر الصديق، حي المنار، أمام بنك الراجحي",
     "country": "SA",
     "latitude": 26.3845132,
     "longitude": 50.053576,
     "openingHours": [],
     "priceRange": null,
-    "areaServed": ["المملكة العربية السعودية"]
+    "areaServed": [
+      "الدمام",
+      "المنطقة الشرقية",
+      "المملكة العربية السعودية"
+    ]
   },
   "social": [],
-  "verification": { "google": null, "bing": null },
+  "verification": {
+    "google": null,
+    "bing": null
+  },
+  "gtmId": null,
+  "ga4Id": "G-KMMYNYBGPG",
   "aiCrawlers": true
 }

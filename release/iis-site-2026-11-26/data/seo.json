@@ -1,0 +1,43 @@
+{
+  "siteUrl": "https://mgiclook.com/",
+  "title": "النظرة الساحرة Magic Look | تصميم داخلي وديكور وتأثيث",
+  "description": "مؤسسة النظرة الساحرة Magic Look للتصميم الداخلي والديكور والتأثيث: كنب ومجالس، وغرف نوم، ووحدات تلفزيون، وكسوات خشبية، وستائر وإضاءة، بتصميم وتنفيذ حسب المقاس من الفكرة إلى آخر تفصيلة.",
+  "keywords": [
+    "النظرة الساحرة",
+    "Magic Look",
+    "تصميم داخلي",
+    "ديكور",
+    "تأثيث",
+    "أثاث حسب الطلب",
+    "أثاث حسب المقاس",
+    "كنب",
+    "مجالس",
+    "غرف نوم",
+    "وحدات تلفزيون",
+    "كسوات خشبية",
+    "قواطع خشبية",
+    "ستائر",
+    "تصميم فلل",
+    "السعودية",
+    "interior design",
+    "custom furniture",
+    "Saudi Arabia"
+  ],
+  "image": { "src": "assets/avatar.png", "alt": "شعار النظرة الساحرة Magic Look" },
+  "logo": "assets/logo.png",
+  "business": {
+    "types": ["HomeAndConstructionBusiness", "FurnitureStore"],
+    "foundingDate": null,
+    "city": "الدمام",
+    "region": "المنطقة الشرقية",
+    "country": "SA",
+    "latitude": 26.3845132,
+    "longitude": 50.053576,
+    "openingHours": [],
+    "priceRange": null,
+    "areaServed": ["المملكة العربية السعودية"]
+  },
+  "social": [],
+  "verification": { "google": null, "bing": null },
+  "aiCrawlers": true
+}

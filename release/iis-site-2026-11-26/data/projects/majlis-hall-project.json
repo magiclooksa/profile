@@ -1,0 +1,450 @@
+{
+  "name": {
+    "ar": "قاعة المجلس والطعام",
+    "en": "THE MAJLIS & DINING HALL"
+  },
+  "place": "القاعة",
+  "kicker": "مشروع قاعة · تصميم وتنفيذ",
+  "tagline": "معاصر فاخر · مخمل وقرص مضيء",
+  "cover": {
+    "src": "images/projects/majlis-hall-project/cover.webp",
+    "ratio": "16:9",
+    "caption": "المجلس أمام جدار القرص المضيء"
+  },
+  "intro": {
+    "lead": "قاعة كبيرة بمساحتين: مجلس للاستقبال في جهة، وقاعة طعام بطاولات طويلة في الجهة الأخرى، صمّمنا أثاثهما وجدرانهما معًا.",
+    "paragraphs": [
+      "في المجلس كنب مخمل أزرق داكن بظهر منحني على الجدران، وبينه كراسٍ مستديرة دوّارة بقماش مخمل خردلي، وأمامه طاولات وسط على شكل قبة بسطح رخام أسود.",
+      "خلف الجلسة الرئيسية جدار مكسو بقماش بيج، يتوسطه قرص دائري بإضاءة خلفية، وعلى جانبيه شرائح خشبية داكنة بإضاءة مخفية بينها.",
+      "وفي قاعة الطعام طاولات طويلة من الخشب بحواف مضلّعة، وحولها كراسٍ بظهر بيضاوي، وفي جانب القاعة كراسٍ بمخمل فيروزي وكنبة ثنائية أمام بارتشن خشبي."
+    ],
+    "words": [
+      {
+        "ar": "ضيافة",
+        "en": "Hospitality"
+      },
+      {
+        "ar": "إضاءة مخفية",
+        "en": "Hidden lighting"
+      },
+      {
+        "ar": "مخمل",
+        "en": "Velvet"
+      },
+      {
+        "ar": "تفصيل بالمقاس",
+        "en": "Made to measure"
+      }
+    ],
+    "image": {
+      "src": "images/projects/majlis-hall-project/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "الكنبة الثنائية أمام البارتشن الخشبي"
+    },
+    "inset": {
+      "src": "images/projects/majlis-hall-project/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "الكراسي بمخمل فيروزي"
+    }
+  },
+  "materials": [
+    {
+      "id": "velvet",
+      "name": "المخمل",
+      "en": "Velvet",
+      "color": "#24474D",
+      "swatch": "images/projects/majlis-hall-project/material-velvet.webp",
+      "note": "قماش الكنب والكراسي: أزرق داكن للكنب، وفيروزي للكراسي الجانبية."
+    },
+    {
+      "id": "mustard",
+      "name": "المخمل الخردلي",
+      "en": "Mustard velvet",
+      "color": "#C49A2C",
+      "swatch": "images/projects/majlis-hall-project/material-mustard.webp",
+      "note": "قماش الكراسي المستديرة الدوّارة."
+    },
+    {
+      "id": "marble",
+      "name": "الرخام الأسود",
+      "en": "Black marble",
+      "color": "#2B2A2A",
+      "swatch": "images/projects/majlis-hall-project/material-marble.webp",
+      "note": "سطح طاولات الوسط على شكل قبة."
+    },
+    {
+      "id": "wood",
+      "name": "الخشب",
+      "en": "Wood",
+      "color": "#7A3E22",
+      "swatch": "images/projects/majlis-hall-project/material-wood.webp",
+      "note": "طاولات الطعام، والشرائح الجدارية، والبارتشن، وقواعد الكراسي."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "main",
+      "name": "المجلس",
+      "en": "The majlis",
+      "intro": "مجلس بسقف بعوارض خشبية وأرضية رخام فاتح. الكنب على الجدران، والكراسي المستديرة بين الجلسات، وطاولات القبة في الوسط، وجدار القرص المضيء في الصدر.",
+      "look": {
+        "image": {
+          "src": "images/projects/majlis-hall-project/main-look-03.webp",
+          "ratio": "3:4",
+          "caption": "المجلس: الكنب والكراسي وطاولات الوسط"
+        },
+        "spots": [
+          {
+            "x": 50,
+            "y": 58,
+            "product": "sofas"
+          },
+          {
+            "x": 30,
+            "y": 60,
+            "product": "round-chairs"
+          },
+          {
+            "x": 45,
+            "y": 66,
+            "product": "coffee-tables"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/majlis-hall-project/main-g-04.webp",
+          "ratio": "3:4",
+          "caption": "المجلس وجدار القرص المضيء",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-hall-project/main-g-05.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة وطاولة القبة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-hall-project/main-g-06.webp",
+          "ratio": "3:4",
+          "caption": "المجلس بطوله",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-hall-project/main-g-07.webp",
+          "ratio": "3:4",
+          "caption": "المجلس من الزاوية",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-hall-project/main-g-08.webp",
+          "ratio": "3:4",
+          "caption": "الجلسات على الجانبين",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-hall-project/main-g-09.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة والكرسي المستدير",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-hall-project/main-g-10.webp",
+          "ratio": "3:4",
+          "caption": "الكراسي الفيروزية في جانب القاعة",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/majlis-hall-project/main-d-11.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي المستدير أمام الشرائح الخشبية",
+          "product": "round-chairs"
+        },
+        {
+          "src": "images/projects/majlis-hall-project/main-d-13.webp",
+          "ratio": "3:4",
+          "caption": "القرص المضيء",
+          "product": "wall"
+        }
+      ]
+    },
+    {
+      "id": "dining",
+      "name": "قاعة الطعام",
+      "en": "The dining hall",
+      "intro": "قاعة طعام واسعة بطاولات طويلة متصلة وطاولات مستديرة، حولها كراسٍ بظهر بيضاوي.",
+      "look": {
+        "image": {
+          "src": "images/projects/majlis-hall-project/dining-look-14.webp",
+          "ratio": "3:4",
+          "caption": "قاعة الطعام بطاولاتها"
+        },
+        "spots": [
+          {
+            "x": 45,
+            "y": 70,
+            "product": "dining"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/majlis-hall-project/dining-g-15.webp",
+          "ratio": "3:4",
+          "caption": "الطاولات الطويلة والكراسي",
+          "span": 4
+        },
+        {
+          "src": "images/projects/majlis-hall-project/dining-g-16.webp",
+          "ratio": "3:4",
+          "caption": "القاعة بطولها",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/majlis-hall-project/dining-d-17.webp",
+          "ratio": "3:4",
+          "caption": "حافة الطاولة المضلّعة",
+          "product": "dining"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "سبع قطع في القاعة: الكنب، والكراسي المستديرة، والكراسي الفيروزية، وطاولات القبة، وجدار القرص المضيء، والكنبة الثنائية، وطاولات الطعام وكراسيها.",
+    "image": {
+      "src": "images/projects/majlis-hall-project/collection-18.webp",
+      "ratio": "16:9",
+      "caption": "المجلس وطاولات الوسط"
+    }
+  },
+  "products": [
+    {
+      "id": "sofas",
+      "name": "الكنب المخمل",
+      "en": "Velvet sofas",
+      "category": "كنب",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "velvet"
+      ],
+      "finish": "مخمل أزرق داكن بظهر منحني",
+      "text": "كنب طويل بقماش مخمل أزرق داكن، بظهر منحني يلتف على الأطراف، ومخدات من المخمل نفسه وأخرى خردلية.",
+      "card": "images/projects/majlis-hall-project/card-sofas.webp",
+      "views": [
+        {
+          "src": "images/projects/majlis-hall-project/sofas-v-19.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة من الأمام"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/majlis-hall-project/sofas-d-20.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة والكرسي المستدير"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/majlis-hall-project/sofas-i-21.webp",
+          "ratio": "3:4",
+          "caption": "الكنب في المجلس"
+        }
+      ]
+    },
+    {
+      "id": "round-chairs",
+      "name": "الكراسي المستديرة",
+      "en": "Round swivel chairs",
+      "category": "كراسي",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "mustard"
+      ],
+      "finish": "مخمل خردلي بظهر مستدير وقاعدة دوّارة",
+      "text": "كراسٍ مستديرة بظهر يحيط بالجالس وقاعدة دوّارة، بقماش مخمل خردلي، موزعة بين وحدات الكنب.",
+      "card": "images/projects/majlis-hall-project/card-round-chairs.webp",
+      "views": [],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/majlis-hall-project/armchairs-i-24.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي أمام الشرائح الخشبية"
+        }
+      ]
+    },
+    {
+      "id": "teal-armchairs",
+      "name": "الكراسي الفيروزية",
+      "en": "Teal armchairs",
+      "category": "كراسي",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "velvet",
+        "wood"
+      ],
+      "finish": "مخمل فيروزي بقاعدة وأرجل خشبية",
+      "text": "كراسٍ بقماش مخمل فيروزي بأذرع عريضة، على قاعدة وأرجل خشبية مائلة.",
+      "card": "images/projects/majlis-hall-project/card-teal-armchairs.webp",
+      "views": [
+        {
+          "src": "images/projects/majlis-hall-project/armchairs-v-22.webp",
+          "ratio": "3:4",
+          "caption": "الكراسي في جانب القاعة"
+        }
+      ],
+      "details": [],
+      "inSitu": []
+    },
+    {
+      "id": "coffee-tables",
+      "name": "طاولات القبة",
+      "en": "Dome coffee tables",
+      "category": "طاولات",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "marble"
+      ],
+      "finish": "سطح رخام أسود على قاعدة على شكل قبة",
+      "text": "طاولات وسط مستديرة على قاعدة على شكل قبة بضلوع رأسية، بسطح من الرخام الأسود.",
+      "card": "images/projects/majlis-hall-project/card-coffee-tables.webp",
+      "views": [
+        {
+          "src": "images/projects/majlis-hall-project/coffee-tables-v-25.webp",
+          "ratio": "3:4",
+          "caption": "طاولة القبة أمام الكنب"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/majlis-hall-project/coffee-tables-d-26.webp",
+          "ratio": "3:4",
+          "caption": "سطح الرخام"
+        }
+      ],
+      "inSitu": []
+    },
+    {
+      "id": "wall",
+      "name": "جدار القرص المضيء",
+      "en": "Backlit disc wall",
+      "category": "أعمال مدمجة",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "wood"
+      ],
+      "finish": "قماش بيج، وقرص بإضاءة خلفية، وشرائح خشبية بإضاءة مخفية",
+      "text": "جدار مكسو بقماش بيج يتوسطه قرص دائري بإضاءة خلفية، وعلى جانبيه شرائح خشبية داكنة رأسية بإضاءة مخفية بينها.",
+      "card": "images/projects/majlis-hall-project/card-wall.webp",
+      "views": [
+        {
+          "src": "images/projects/majlis-hall-project/wall-v-27.webp",
+          "ratio": "3:4",
+          "caption": "الجدار والجلسة"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/majlis-hall-project/wall-d-28.webp",
+          "ratio": "3:4",
+          "caption": "الشرائح الخشبية"
+        }
+      ],
+      "inSitu": []
+    },
+    {
+      "id": "loveseat",
+      "name": "الكنبة الثنائية",
+      "en": "Loveseat",
+      "category": "كنب",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "velvet",
+        "wood"
+      ],
+      "finish": "قماش بيج بأرجل خشبية",
+      "text": "كنبة ثنائية بقماش بيج فاتح وأذرع منحنية وأرجل خشبية، أمام بارتشن خشبي بنقش هندسي.",
+      "card": "images/projects/majlis-hall-project/card-loveseat.webp",
+      "views": [
+        {
+          "src": "images/projects/majlis-hall-project/loveseat-v-29.webp",
+          "ratio": "3:4",
+          "caption": "الكنبة أمام البارتشن"
+        }
+      ],
+      "details": [],
+      "inSitu": []
+    },
+    {
+      "id": "dining",
+      "name": "طاولات الطعام وكراسيها",
+      "en": "Dining tables & chairs",
+      "category": "طاولات",
+      "spaces": [
+        "dining"
+      ],
+      "custom": true,
+      "materials": [
+        "wood"
+      ],
+      "finish": "خشب بحواف مضلّعة، وكراسٍ بظهر بيضاوي",
+      "text": "طاولات طعام طويلة من الخشب بحواف مضلّعة، تتصل لتكوّن طاولة واحدة، وحولها كراسٍ بظهر بيضاوي منجّد.",
+      "card": "images/projects/majlis-hall-project/card-dining.webp",
+      "views": [
+        {
+          "src": "images/projects/majlis-hall-project/dining-v-30.webp",
+          "ratio": "3:4",
+          "caption": "الطاولات والكراسي"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/majlis-hall-project/dining-d-31.webp",
+          "ratio": "3:4",
+          "caption": "الحافة المضلّعة"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/majlis-hall-project/dining-i-32.webp",
+          "ratio": "3:4",
+          "caption": "القاعة بطاولاتها"
+        }
+      ]
+    }
+  ],
+  "film": {
+    "src": "videos/projects/majlis-hall-project.mp4",
+    "poster": "images/projects/majlis-hall-project/film-poster.webp",
+    "ratio": "9:16",
+    "title": "جولة في القاعة",
+    "caption": "لقطة تمر على المجلس وجدار القرص المضيء."
+  },
+  "closing": {
+    "title": "تريد قاعة مثل هذه؟",
+    "text": "نصمّم القاعات والمجالس وأثاثها وجدرانها معًا، وننفذها بالمقاس. أرسل لنا تفاصيل مشروعك ونبدأ."
+  }
+}

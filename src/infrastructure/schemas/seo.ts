@@ -24,6 +24,7 @@ export const seoDecoder = object<SeoSettings>({
     foundingDate: nullable(string),
     city: nullable(string),
     region: nullable(string),
+    streetAddress: nullable(string),
     country: string,
     latitude: nullable(numberIn(-90, 90)),
     longitude: nullable(numberIn(-180, 180)),
@@ -33,5 +34,7 @@ export const seoDecoder = object<SeoSettings>({
   }),
   social: array(string),
   verification: object({ google: nullable(string), bing: nullable(string) }),
+  gtmId: nullable(string),
+  ga4Id: nullable(string),
   aiCrawlers: flag,
 });

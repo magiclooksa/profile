@@ -15,6 +15,9 @@ import { Nav, type NavLink } from './components/Nav';
 import { h } from '../shared/dom';
 import { createSiteSearch } from './search/SearchPanel';
 
+/** The chat bubble of the inner pages' WhatsApp button (tooling/vite/site.ts), as static markup. */
+const WHATSAPP_ICON = '<svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.8L3.5 20.5l4.3-1.1A8.5 8.5 0 1 0 12 3.5Z"/><path d="M9 8.5c-.6.5-.8 1.3-.5 2.2a7 7 0 0 0 4.8 4.8c.9.3 1.7.1 2.2-.5l.5-.8-2-1.2-.8.8a4.5 4.5 0 0 1-2.5-2.5l.8-.8-1.2-2Z"/></svg>';
+
 const NAV_LINKS: readonly NavLink[] = [
   { href: '#top', label: 'الرئيسية' },
   { href: 'about.html', label: 'من نحن' },
@@ -91,6 +94,16 @@ export function renderApp(root: HTMLElement, profile: Profile): void {
     contact: profile.contact,
     contactHref: 'contact.html',
   }));
+  // The floating WhatsApp button every page has (the inner pages get it from tooling/vite/site.ts).
+  if (profile.contact.whatsapp) {
+    const text = encodeURIComponent('السلام عليكم، أرغب في الاستفسار عن خدماتكم');
+    const button = h('a', {
+      class: 'wa-float', href: `https://wa.me/${profile.contact.whatsapp}?text=${text}`,
+      target: '_blank', rel: 'noopener', 'aria-label': 'راسلنا على واتساب',
+    });
+    button.innerHTML = WHATSAPP_ICON;
+    root.append(button);
+  }
   // The <title> is written at build time from data/seo.json; keep it, search engines read the rendered one.
 
   initNavState(document.getElementById('nav'));

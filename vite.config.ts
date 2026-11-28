@@ -52,6 +52,7 @@ export default defineConfig({
         contact: paths.page('contact.html'),
         villa: paths.page('villa-wood.html'),
         dashboard: paths.page('dashboard.html'),
+        notFound: paths.page('404.html'),
         ...(projectsBook ? { book: projectsBook } : {}),
         ...Object.fromEntries(catalogues().filter((c) => c.href !== 'villa-wood.html')
           .map((c) => [c.href.replace(/.html$/, ''), paths.page(c.href)])),
@@ -66,6 +67,6 @@ export default defineConfig({
   // Google Analytics on every page but the dashboard (Measurement ID in tooling/vite/analytics.ts).
   plugins: [
     pageStylesPlugin(), sitePlugin(__dirname), seoPlugin(__dirname), searchIndexPlugin(__dirname),
-    contentApiPlugin(__dirname), analyticsPlugin(),
+    contentApiPlugin(__dirname), analyticsPlugin(__dirname),
   ],
 });

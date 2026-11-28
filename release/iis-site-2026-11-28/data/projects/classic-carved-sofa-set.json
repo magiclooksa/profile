@@ -1,0 +1,424 @@
+{
+  "name": {
+    "ar": "المجلس الكلاسيك المحفور",
+    "en": "THE CARVED CLASSIC BEECH MAJLIS"
+  },
+  "place": "المجلس",
+  "kicker": "مشروع مجلس · تصميم وتنفيذ",
+  "tagline": "كلاسيك فاخر · حفر يدوي على الزان",
+  "cover": {
+    "src": "images/projects/classic-carved-sofa-set/cover.webp",
+    "ratio": "16:9",
+    "caption": "المجلس كاملًا: الكنب والكراسي وطاولة الوسط والبوف"
+  },
+  "intro": {
+    "lead": "مجلس كلاسيك كامل صنعناه بالمقاس: كنب وكراسي بإطار من خشب الزان الطبيعي المحفور يدويًا، وقماش بيج فاتح، وطاولات من الخشب نفسه.",
+    "paragraphs": [
+      "الكنب الثلاثي والكراسي المفردة بأذرع ملفوفة وأرجل منحنية، وفي أسفل كل قطعة شريط خشبي محفور بزخارف نباتية. ظهر الكراسي والجزء الأوسط من ظهر الكنب بتنجيد كابتونيه، وتعلوه قطعة خشب محفورة.",
+      "في الوسط طاولة كبيرة من خشب الزان بسطح بحواف متموجة وأرجل منحنية، وبين الجلسات طاولات جانبية بالأرجل نفسها.",
+      "وأمام الطاولة بوف طويل بسطح كابتونيه وجوانب بقماش مشجر، وغطاؤه يُفتح على مساحة تخزين."
+    ],
+    "words": [
+      {
+        "ar": "كلاسيك",
+        "en": "Classic"
+      },
+      {
+        "ar": "حفر يدوي",
+        "en": "Hand carving"
+      },
+      {
+        "ar": "خشب الزان",
+        "en": "Beech"
+      },
+      {
+        "ar": "تفصيل بالمقاس",
+        "en": "Made to measure"
+      }
+    ],
+    "image": {
+      "src": "images/projects/classic-carved-sofa-set/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "الكرسي المفرد بظهر كابتونيه"
+    },
+    "inset": {
+      "src": "images/projects/classic-carved-sofa-set/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "الحفر على رجل الكنب"
+    }
+  },
+  "materials": [
+    {
+      "id": "beech",
+      "name": "خشب الزان الطبيعي",
+      "en": "Natural beech",
+      "color": "#6B4426",
+      "swatch": "images/projects/classic-carved-sofa-set/material-beech.webp",
+      "note": "إطارات الكنب والكراسي المحفورة، وطاولة الوسط، والطاولات الجانبية."
+    },
+    {
+      "id": "fabric",
+      "name": "القماش البيج",
+      "en": "Beige upholstery",
+      "color": "#DCD5C8",
+      "swatch": "images/projects/classic-carved-sofa-set/material-fabric.webp",
+      "note": "قماش المقاعد والظهر والأذرع، بحبكة رفيعة على الحواف."
+    },
+    {
+      "id": "patterned",
+      "name": "القماش المشجر",
+      "en": "Patterned fabric",
+      "color": "#D6CDB8",
+      "swatch": "images/projects/classic-carved-sofa-set/material-patterned.webp",
+      "note": "جوانب البوف وجزء من المخدات."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "main",
+      "name": "المجلس",
+      "en": "The majlis",
+      "intro": "مجلس بجدران بيضاء ببراويز وستائر طويلة. الكنب على الجانبين وفي الصدر، والكراسي المفردة في الزوايا، وطاولة الوسط والبوف في المنتصف.",
+      "look": {
+        "image": {
+          "src": "images/projects/classic-carved-sofa-set/main-look-03.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي المفرد والكنب والبوف"
+        },
+        "spots": [
+          {
+            "x": 40,
+            "y": 50,
+            "product": "armchairs"
+          },
+          {
+            "x": 75,
+            "y": 50,
+            "product": "sofas"
+          },
+          {
+            "x": 55,
+            "y": 80,
+            "product": "ottoman"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/classic-carved-sofa-set/main-g-04.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي المفرد بجانب الكنب",
+          "span": 4
+        },
+        {
+          "src": "images/projects/classic-carved-sofa-set/main-g-05.webp",
+          "ratio": "3:4",
+          "caption": "الكنب الثلاثي من الأمام",
+          "span": 4
+        },
+        {
+          "src": "images/projects/classic-carved-sofa-set/main-g-06.webp",
+          "ratio": "3:4",
+          "caption": "المجلس من الزاوية",
+          "span": 4
+        },
+        {
+          "src": "images/projects/classic-carved-sofa-set/main-g-07.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الوسط المحفورة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/classic-carved-sofa-set/main-g-08.webp",
+          "ratio": "3:4",
+          "caption": "البوف أمام الكنب",
+          "span": 4
+        },
+        {
+          "src": "images/projects/classic-carved-sofa-set/main-g-09.webp",
+          "ratio": "3:4",
+          "caption": "الكنب من الجانب",
+          "span": 4
+        },
+        {
+          "src": "images/projects/classic-carved-sofa-set/main-g-10.webp",
+          "ratio": "3:4",
+          "caption": "الكنب الثنائي",
+          "span": 4
+        },
+        {
+          "src": "images/projects/classic-carved-sofa-set/main-g-11.webp",
+          "ratio": "3:4",
+          "caption": "الكنب في صدر المجلس",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/classic-carved-sofa-set/main-d-12.webp",
+          "ratio": "3:4",
+          "caption": "الشريط المحفور أسفل الكنب",
+          "product": "sofas"
+        },
+        {
+          "src": "images/projects/classic-carved-sofa-set/main-d-13.webp",
+          "ratio": "3:4",
+          "caption": "الذراع الملفوفة",
+          "product": "sofas"
+        },
+        {
+          "src": "images/projects/classic-carved-sofa-set/main-d-14.webp",
+          "ratio": "3:4",
+          "caption": "مساحة التخزين داخل البوف",
+          "product": "ottoman"
+        },
+        {
+          "src": "images/projects/classic-carved-sofa-set/main-d-15.webp",
+          "ratio": "3:4",
+          "caption": "حفر رجل الطاولة",
+          "product": "coffee-table"
+        },
+        {
+          "src": "images/projects/classic-carved-sofa-set/main-d-16.webp",
+          "ratio": "3:4",
+          "caption": "ظهر الكرسي الكابتونيه",
+          "product": "armchairs"
+        },
+        {
+          "src": "images/projects/classic-carved-sofa-set/main-d-17.webp",
+          "ratio": "3:4",
+          "caption": "الرجل المنحنية المحفورة",
+          "product": "armchairs"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "خمس قطع صُنعت بالمقاس لهذا المجلس: الكنب، والكراسي المفردة، وطاولة الوسط، والطاولات الجانبية، والبوف. افتح أي قطعة لترى صورها وتفاصيل الحفر عن قرب.",
+    "image": {
+      "src": "images/projects/classic-carved-sofa-set/collection-18.webp",
+      "ratio": "16:9",
+      "caption": "الجلسات وطاولة الوسط والبوف"
+    }
+  },
+  "products": [
+    {
+      "id": "sofas",
+      "name": "الكنب الكلاسيك",
+      "en": "Classic sofas",
+      "category": "كنب",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "beech",
+        "fabric"
+      ],
+      "finish": "خشب زان طبيعي محفور، وقماش بيج، وظهر أوسط كابتونيه",
+      "text": "كنب كلاسيك ثلاثي وثنائي بإطار من خشب الزان الطبيعي المحفور، بأذرع ملفوفة وأرجل منحنية وشريط محفور في الأسفل. المقعد والظهر بقماش بيج، والجزء الأوسط من الظهر كابتونيه تعلوه قطعة محفورة.",
+      "card": "images/projects/classic-carved-sofa-set/card-sofas.webp",
+      "views": [
+        {
+          "src": "images/projects/classic-carved-sofa-set/sofas-v-19.webp",
+          "ratio": "3:4",
+          "caption": "الكنب من الأمام"
+        },
+        {
+          "src": "images/projects/classic-carved-sofa-set/sofas-v-20.webp",
+          "ratio": "3:4",
+          "caption": "الكنب من الجانب"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/classic-carved-sofa-set/sofas-d-21.webp",
+          "ratio": "3:4",
+          "caption": "الشريط المحفور والمقعد"
+        },
+        {
+          "src": "images/projects/classic-carved-sofa-set/sofas-d-22.webp",
+          "ratio": "3:4",
+          "caption": "الحفر عند الرجل"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/classic-carved-sofa-set/sofas-i-23.webp",
+          "ratio": "3:4",
+          "caption": "الكنب في المجلس"
+        }
+      ]
+    },
+    {
+      "id": "armchairs",
+      "name": "الكراسي المفردة",
+      "en": "Armchairs",
+      "category": "كراسي",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "beech",
+        "fabric"
+      ],
+      "finish": "خشب زان طبيعي محفور، وظهر عالٍ كابتونيه",
+      "text": "كراسي مفردة بظهر عالٍ مقوّس بتنجيد كابتونيه، تعلوه قطعة خشب محفورة. الأذرع ملفوفة والأرجل منحنية، وعلى كل كرسي مخدة مستطيلة.",
+      "card": "images/projects/classic-carved-sofa-set/card-armchairs.webp",
+      "views": [
+        {
+          "src": "images/projects/classic-carved-sofa-set/armchairs-v-24.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي من الأمام"
+        },
+        {
+          "src": "images/projects/classic-carved-sofa-set/armchairs-v-25.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي من الزاوية"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/classic-carved-sofa-set/armchairs-d-26.webp",
+          "ratio": "3:4",
+          "caption": "الذراع الملفوفة"
+        },
+        {
+          "src": "images/projects/classic-carved-sofa-set/armchairs-d-27.webp",
+          "ratio": "3:4",
+          "caption": "المقعد والحفر أسفله"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/classic-carved-sofa-set/armchairs-i-28.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي في المجلس"
+        }
+      ]
+    },
+    {
+      "id": "coffee-table",
+      "name": "طاولة الوسط",
+      "en": "Coffee table",
+      "category": "طاولات",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "beech"
+      ],
+      "finish": "خشب زان طبيعي محفور بسطح متموج الحواف",
+      "text": "طاولة وسط مستطيلة كبيرة من خشب الزان، بسطح بحواف متموجة، وإطار محفور بزخرفة نباتية في المنتصف، وأرجل منحنية تنتهي بحفر.",
+      "card": "images/projects/classic-carved-sofa-set/card-coffee-table.webp",
+      "views": [
+        {
+          "src": "images/projects/classic-carved-sofa-set/coffee-table-v-29.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة من الزاوية"
+        },
+        {
+          "src": "images/projects/classic-carved-sofa-set/coffee-table-v-30.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة من الجانب"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/classic-carved-sofa-set/coffee-table-d-31.webp",
+          "ratio": "3:4",
+          "caption": "حافة السطح والحفر"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/classic-carved-sofa-set/coffee-table-i-32.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة بين الجلسات"
+        }
+      ]
+    },
+    {
+      "id": "side-tables",
+      "name": "الطاولات الجانبية",
+      "en": "Side tables",
+      "category": "طاولات",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "beech"
+      ],
+      "finish": "خشب زان طبيعي بأرجل منحنية",
+      "text": "طاولات جانبية صغيرة من خشب الزان بين الكنب والكراسي، بسطح بحواف متموجة وأرجل منحنية مثل طاولة الوسط.",
+      "card": "images/projects/classic-carved-sofa-set/card-side-tables.webp",
+      "views": [
+        {
+          "src": "images/projects/classic-carved-sofa-set/side-tables-v-33.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة الجانبية بين الكنب"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/classic-carved-sofa-set/side-tables-d-34.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة بين ذراعين"
+        }
+      ],
+      "inSitu": []
+    },
+    {
+      "id": "ottoman",
+      "name": "البوف بتخزين",
+      "en": "Storage ottoman",
+      "category": "مقاعد",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "fabric",
+        "patterned"
+      ],
+      "finish": "سطح كابتونيه وجوانب بقماش مشجر، وغطاء يُفتح للتخزين",
+      "text": "بوف طويل أمام طاولة الوسط، سطحه بتنجيد كابتونيه وجوانبه بقماش مشجر. الغطاء يُفتح على مساحة تخزين مبطّنة.",
+      "card": "images/projects/classic-carved-sofa-set/card-ottoman.webp",
+      "views": [
+        {
+          "src": "images/projects/classic-carved-sofa-set/ottoman-v-35.webp",
+          "ratio": "3:4",
+          "caption": "البوف من الجانب"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/classic-carved-sofa-set/ottoman-d-36.webp",
+          "ratio": "3:4",
+          "caption": "البوف مفتوحًا"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/classic-carved-sofa-set/ottoman-i-37.webp",
+          "ratio": "3:4",
+          "caption": "البوف في المجلس"
+        }
+      ]
+    }
+  ],
+  "film": {
+    "src": "videos/projects/classic-carved-sofa-set.mp4",
+    "poster": "images/projects/classic-carved-sofa-set/film-poster.webp",
+    "ratio": "9:16",
+    "title": "جولة في المجلس",
+    "caption": "لقطة تمر على الكنب والكراسي المحفورة في المجلس."
+  },
+  "closing": {
+    "title": "تريد مجلسًا مثل هذا؟",
+    "text": "نصمّم المجلس الكلاسيك ونصنع خشبه المحفور بالمقاس، ونختار معك القماش. أرسل لنا تفاصيل مساحتك ونبدأ."
+  }
+}

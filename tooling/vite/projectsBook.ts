@@ -87,7 +87,7 @@ function chapter(p: Project, i: number): string {
         <div class="bk-materials">
           <h3 data-reveal>الخامات</h3>
           <ul>${p.materials.slice(0, 6).map((m, j) => `
-            <li data-reveal style="--d:${j * 60}ms"><img src="${src(m.swatch)}" alt="" loading="lazy" /><span><strong>${esc(m.name)}</strong>${m.en ? `<em class="latin">${esc(m.en)}</em>` : ''}</span></li>`).join('')}
+            <li data-reveal style="--d:${j * 60}ms"><img src="${src(m.swatch)}" alt="${esc(`خامة ${m.name}`)}" loading="lazy" /><span><strong>${esc(m.name)}</strong>${m.en ? `<em class="latin">${esc(m.en)}</em>` : ''}</span></li>`).join('')}
           </ul>
         </div>
         <div class="bk-pieces">
@@ -116,6 +116,9 @@ export function projectsBookHtml(root: string): string {
     <meta name="description" content="كتالوج مشاريع النظرة الساحرة: ${projects.length} مشروعًا من المجالس والصالات والفلل، بصورها وخاماتها والقطع التي صنعناها بالمقاس." />
     <meta name="theme-color" content="#253A35" />
     <title>كتالوج المشاريع | النظرة الساحرة</title>
+    <!-- The same projects have their own pages, which search engines should list instead of this one. -->
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href="https://mgiclook.com/projects-catalogue.html" />
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png" />
     <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" />
@@ -136,7 +139,7 @@ export function projectsBookHtml(root: string): string {
           <img class="bk-mark" src="./assets/brand/half-symbol.svg" alt="" aria-hidden="true" />
           <img class="bk-logo" src="./assets/brand/logo-stacked-on-green.svg" alt="النظرة الساحرة" />
           <p class="bk-cover-kicker">النظرة الساحرة · للأثاث والديكور</p>
-          <h1 id="bk-title"><span>كتالوج</span><span>المشاريع</span></h1>
+          <h1 id="bk-title"><span>كتالوج</span> <span>المشاريع</span></h1>
           <p class="bk-cover-en latin">Projects Catalogue · MMXXVI</p>
           <span class="bk-rule"></span>
           <p class="bk-cover-meta"><span class="latin">${two(projects.length)}</span> مشروعًا صمّمناها ونفّذناها بالمقاس في المجالس والصالات والفلل.</p>
@@ -158,7 +161,7 @@ export function projectsBookHtml(root: string): string {
         <header class="bk-head" data-reveal><p class="bk-kicker">المحتوى</p><h2 id="bk-index-title">المشاريع</h2></header>
         <ol class="bk-toc">${projects.map((p, i) => `
           <li data-reveal style="--d:${(i % 4) * 70}ms"><a href="#p-${two(i + 1)}">
-            <span class="bk-toc-img"><img src="${src(p.cover.src)}" alt="" loading="lazy" /></span>
+            <span class="bk-toc-img"><img src="${src(p.cover.src)}" alt="${esc(p.cover.caption)}" loading="lazy" /></span>
             <span class="bk-toc-n latin">${two(i + 1)}</span>
             <strong>${esc(p.name.ar)}</strong>
             <em>${esc(p.place)}</em>

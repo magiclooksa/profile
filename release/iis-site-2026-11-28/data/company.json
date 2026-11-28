@@ -1,0 +1,767 @@
+{
+  "name": {
+    "ar": "النظرة الساحرة",
+    "en": "Magic Look"
+  },
+  "entityType": "مؤسسة",
+  "field": "للتصميم الداخلي والديكور والتأثيث",
+  "tagline": "من الفكرة إلى آخر تفصيلة… نصمم المساحة ونكملها بما يناسب ذوقك.",
+  "closingLine": "كل زاوية تستحق النظرة الساحرة. تواصل معنا ونبدأ بفهم مساحتك.",
+  "hero": {
+    "type": "video",
+    "src": "videos/Luxury_interior_commercial_camer…__1080p_20261020154711.mp4",
+    "poster": "images/hero-poster.webp",
+    "caption": "جولة في تفاصيل التصميم الداخلي من النظرة الساحرة"
+  },
+  "feature": {
+    "kicker": "مشروع مميز · كتالوج تفصيلي",
+    "title": "فيلا الأوك والترافرتين",
+    "en": "The Oak & Travertine Villa",
+    "text": "خشب أوك وترافرتين وكتان بألوان هادئة. تصفّح الفيلا مساحةً مساحة وقطعةً قطعة: صورها وتفاصيلها وخاماتها.",
+    "cta": "افتح الكتالوج",
+    "href": "villa-wood.html",
+    "facts": [
+      "3 مساحات",
+      "16 قطعة",
+      "9 خامات"
+    ],
+    "image": {
+      "src": "images/villa/living-wide-b.webp",
+      "caption": "الصالة العائلية في الفيلا"
+    },
+    "pages": [
+      {
+        "src": "images/villa/pendant-brass-band.webp",
+        "caption": "الخامات"
+      },
+      {
+        "src": "images/villa/lounge-chairs.webp",
+        "caption": "صالة الاستقبال"
+      },
+      {
+        "src": "images/villa/bedroom-sconces-a.webp",
+        "caption": "غرفة النوم الرئيسية"
+      }
+    ]
+  },
+  "about": {
+    "lead": "النظرة الساحرة مؤسسة متخصصة في التصميم الداخلي والديكور والتأثيث، نبتكر المساحات الداخلية المتكاملة وننفذها، ونقدم حلول الأثاث والديكور التي تجمع بين الجمال والراحة والوظيفة وجودة التنفيذ.",
+    "highlight": "التصميم الداخلي والديكور والتأثيث",
+    "paragraphs": [
+      "نحوّل المساحات السكنية والتجارية إلى بيئات متناسقة تعكس ذوق العميل واحتياجاته، بداية من الفكرة والتصميم واختيار الخامات والألوان، مرورًا بتفاصيل الأثاث وتكسية جداري والإضاءة، وصولًا إلى التنفيذ والتأثيث النهائي.",
+      "لا ننظر إلى الأثاث على أنه قطع منفصلة، بل جزء من منظومة تصميم متكاملة يتناغم فيها الأثاث مع الجدران والأرضيات والإضاءة والستائر والمرايا."
+    ],
+    "image": {
+      "src": "images/products/brown-majlis-interior-a7a46c3f15.webp",
+      "caption": "تصور تنسيقي لمجلس من مجموعة Magic Look"
+    }
+  },
+  "statements": [
+    {
+      "title": "رؤيتنا",
+      "text": "أن تصبح Magic Look خيارًا موثوقًا للعملاء الباحثين عن مساحة داخلية متكاملة تجمع بين التصميم الراقي والجودة والراحة، وحسن استغلال المساحة والتفاصيل المدروسة، والتناسق البصري والمرونة في التخصيص."
+    },
+    {
+      "title": "رسالتنا",
+      "text": "تقديم تجربة تصميم وتأثيث تبدأ بفهم العميل وتنتهي بمساحة تعبّر عنه، من خلال حلول مدروسة، وخامات مناسبة، وتفاصيل دقيقة، وتنفيذ متناسق يجمع عناصر المشروع كلها تحت رؤية واحدة."
+    },
+    {
+      "title": "قيمتنا",
+      "text": "قيمتنا الأساسية ليست في بيع الأثاث فقط، بل في القدرة على رؤية المساحة ككل."
+    }
+  ],
+  "interiorDesign": {
+    "intro": "نقدم حلول تصميم مخصصة تلبي احتياجات المساحة ووظيفتها، من الفكرة إلى التنفيذ. يظهر أسلوبنا في:",
+    "traits": [
+      "الطابع العصري الدافئ",
+      "الألوان المحايدة والهادئة",
+      "الخشب بدرجات طبيعية أو متوسطة",
+      "الأقمشة البيج والكريمية والرمادية",
+      "الإضاءة الخطية المخفية",
+      "المرايا لإضافة عمق بصري",
+      "الأشكال المنحنية في قطع الكنب",
+      "القواطع الخشبية الشبكية"
+    ],
+    "images": [
+      {
+        "src": "images/products/blue-gray-bedroom-interior-2d23665bc1.webp",
+        "caption": "تصور تنسيقي لغرفة نوم بدرجات الأزرق الرمادي"
+      },
+      {
+        "src": "images/products/0003-beige-sofa-scene-9201249651.webp",
+        "caption": "تنسيق الكنب والستائر والخشب بألوان محايدة"
+      }
+    ]
+  },
+  "films": [
+    {
+      "style": "cinema",
+      "kicker": "FILM 01 — BEDROOM",
+      "title": "طقم غرفة نوم متكامل",
+      "text": "طقم يجمع السرير المنجّد والكمدينات والتسريحة بخامات هادئة وطابع فندقي.",
+      "points": [],
+      "video": {
+        "type": "video",
+        "src": "videos/Bedroom_set_commercial__1080p.mp4",
+        "aspectRatio": "16:9",
+        "caption": "جولة مصوّرة في طقم غرفة نوم فاخر"
+      }
+    },
+    {
+      "style": "arch",
+      "kicker": "FILM 02 — DINING",
+      "title": "طاولة طعام بكراسيها",
+      "text": "طاولة طعام بتشطيب فاخر وكراسٍ مريحة، تُصنع بالمقاس وتُنسَّق مع الإضاءة والخامات حولها.",
+      "points": [
+        "خامات فاخرة بتشطيب يدوم",
+        "مقاسات مخصصة لمساحتك",
+        "تنسيق متكامل مع الإضاءة والديكور"
+      ],
+      "video": {
+        "type": "video",
+        "src": "videos/Showcasing_luxurious_dining_table.mp4",
+        "aspectRatio": "16:9",
+        "caption": "عرض لطاولة طعام فاخرة مع كراسيها"
+      }
+    },
+    {
+      "style": "frame",
+      "kicker": "FILM 03 — COLLECTION",
+      "title": "مجموعة أثاث النظرة الساحرة",
+      "text": "لمحة عن مجموعة أثاث Magic Look: تصاميم تجمع الذوق والجودة، من المجالس إلى الكنب وقطع الديكور.",
+      "points": [
+        "تصميم",
+        "تصنيع",
+        "تنسيق",
+        "تأثيث"
+      ],
+      "video": {
+        "type": "video",
+        "src": "videos/Furniture_marketing_video_for_di…_20261019190133.mp4",
+        "aspectRatio": "16:9",
+        "caption": "لمحة عن مجموعة أثاث Magic Look"
+      }
+    },
+    {
+      "style": "expand",
+      "kicker": "FILM 04 — INTERIOR",
+      "title": "تصميم داخلي متكامل",
+      "text": "جولة في تصميم داخلي يتناسق فيه الأثاث مع الجدران والإضاءة والخامات.",
+      "points": [],
+      "video": {
+        "type": "video",
+        "src": "videos/Luxury_interior_commercial_camer…__1080p_20261020154711.mp4",
+        "aspectRatio": "16:9",
+        "caption": "جولة في مساحة داخلية متكاملة"
+      }
+    }
+  ],
+  "collections": [
+    {
+      "style": "panels",
+      "kicker": "BEDROOMS",
+      "title": "غرف نوم بثلاثة تصاميم",
+      "text": "نصمم غرفة النوم كاملة: السرير والخزائن والإضاءة، بتصميم مودرن أو كلاسيك أو بطابع فندقي.",
+      "items": [
+        {
+          "title": "طقم غرفة نوم منجّد",
+          "image": {
+            "src": "images/collections/luxury-bedroom-set.webp",
+            "aspectRatio": "16:9",
+            "caption": "طقم غرفة نوم فاخر بسرير منجّد ومقعد طويل وكمدينة بلون واحد"
+          }
+        },
+        {
+          "title": "غرفة نوم بخزائن جدارية",
+          "image": {
+            "src": "images/collections/modern-bedroom-wall.webp",
+            "aspectRatio": "16:9",
+            "caption": "خزائن جدارية بيضاء بواجهة زجاجية مضاءة مع تسريحة مدمجة"
+          }
+        },
+        {
+          "title": "غرفة نوم بسريرين",
+          "image": {
+            "src": "images/collections/hotel-twin-bedroom.webp",
+            "aspectRatio": "16:9",
+            "caption": "غرفة بسريرين وتكسية جداري بإضاءة مخفية خلف الرأسية"
+          }
+        }
+      ]
+    },
+    {
+      "style": "collage",
+      "kicker": "DINING",
+      "title": "طاولات طعام بالمقاس",
+      "text": "طاولات طعام من الخشب والرخام، وكراسٍ منجّدة بتصاميم كلاسيك ومودرن، تُنسَّق مع الإضاءة والستائر.",
+      "items": [
+        {
+          "title": "طاولة طعام خشبية بيضاوية",
+          "image": {
+            "src": "images/collections/luxury-dining-room.webp",
+            "aspectRatio": "16:9",
+            "caption": "غرفة طعام فاخرة بطاولة خشبية بيضاوية وكراسٍ منجّدة وإضاءة سقف مخفية"
+          }
+        },
+        {
+          "title": "طاولة طعام رخامية",
+          "image": {
+            "src": "images/collections/marble-dining-set.webp",
+            "aspectRatio": "16:9",
+            "caption": "طاولة طعام رخامية مع كراسٍ بنقوش نباتية وستائر مخملية"
+          }
+        }
+      ]
+    },
+    {
+      "style": "switch",
+      "kicker": "KITCHENS",
+      "title": "وحدات مطبخ مدمجة",
+      "text": "وحدات مطبخ وتخزين بواجهات حجر وخشب، وخزائن عرض زجاجية، وإضاءة خطية أسفل الوحدة.",
+      "items": [
+        {
+          "title": "وحدة تحضير",
+          "image": {
+            "src": "images/collections/kitchenette-unit.webp",
+            "aspectRatio": "16:9",
+            "caption": "وحدة مطبخ تحضيري بواجهة حجرية وتجويف خشبي مضاء وخزانة عرض زجاجية"
+          }
+        },
+        {
+          "title": "وحدة مطبخ وتخزين",
+          "image": {
+            "src": "images/collections/kitchen-front.webp",
+            "aspectRatio": "16:9",
+            "caption": "عرض أمامي لوحدة المطبخ والتخزين بإضاءة سفلية"
+          }
+        }
+      ]
+    },
+    {
+      "style": "stagger",
+      "kicker": "STORAGE & DISPLAY",
+      "title": "خزائن ملابس وخزائن عرض",
+      "text": "خزائن ملابس جدارية بالخشب والزجاج المدخّن، وخزائن عرض كلاسيك بزخارف منحوتة.",
+      "items": [
+        {
+          "title": "خزانة جدارية",
+          "image": {
+            "src": "images/collections/closet-wall-unit.webp",
+            "aspectRatio": "16:9",
+            "caption": "وحدة خزائن ملابس جدارية بأرفف خشبية وأبواب زجاجية داكنة"
+          }
+        },
+        {
+          "title": "خزانة عرض",
+          "image": {
+            "src": "images/collections/glass-display-cabinet.webp",
+            "aspectRatio": "16:9",
+            "caption": "خزانة عرض كلاسيكية بواجهات زجاجية وزخارف منحوتة"
+          }
+        }
+      ]
+    },
+    {
+      "style": "strip",
+      "kicker": "LIVING ROOMS",
+      "title": "كنب بثلاثة طرازات",
+      "text": "كنب شرقي وكلاسيك وجاباندي، نختار له القماش والألوان بحسب المساحة.",
+      "items": [
+        {
+          "title": "كنب شرقي",
+          "tag": "شرقي",
+          "color": "#CDBFA6",
+          "image": {
+            "src": "images/collections/sofa-oriental-beige.webp",
+            "aspectRatio": "16:9",
+            "caption": "كنبة بيج بإطار داكن أمام بارتشن خشبي شبكي"
+          }
+        },
+        {
+          "title": "كنب كلاسيك",
+          "tag": "كلاسيك",
+          "color": "#4A6FB0",
+          "image": {
+            "src": "images/collections/sofa-classic-blue.webp",
+            "aspectRatio": "16:9",
+            "caption": "كنبة مخمل زرقاء بشراشيب في صالة بيضاء بنوافذ واسعة"
+          }
+        },
+        {
+          "title": "كنب جاباندي",
+          "tag": "جاباندي",
+          "color": "#E6DDCD",
+          "image": {
+            "src": "images/collections/daybed-japandi-cream.webp",
+            "aspectRatio": "16:9",
+            "caption": "أريكة كريمية بقاعدة خشبية داكنة بين بارتشنات خشبية"
+          }
+        }
+      ]
+    },
+    {
+      "style": "duo",
+      "kicker": "RED VELVET",
+      "title": "كنب مخمل أحمر مودرن وكلاسيك",
+      "text": "تصميمان بلون واحد: كنب مودرن بزوايا منحنية، وكنب كلاسيك بتنجيد أزرار وأرجل خشبية. نصنع القطعة بالمقاس والقماش الذي تختاره.",
+      "items": [
+        {
+          "title": "كنب مودرن بزوايا منحنية",
+          "tag": "مودرن",
+          "color": "#A8402E",
+          "image": {
+            "src": "images/collections/sofa-red-velvet-modern.webp",
+            "aspectRatio": "16:9",
+            "caption": "كنبة مخمل بلون الطوب بزوايا منحنية في صالة مضيئة"
+          }
+        },
+        {
+          "title": "كنب كلاسيك بتنجيد أزرار",
+          "tag": "كلاسيك",
+          "color": "#A31F2A",
+          "image": {
+            "src": "images/collections/sofa-red-velvet-classic.webp",
+            "aspectRatio": "16:9",
+            "caption": "كنبة مخمل حمراء بتنجيد أزرار وأرجل خشبية"
+          }
+        }
+      ]
+    },
+    {
+      "style": "journey",
+      "kicker": "SECTIONAL SOFAS",
+      "title": "كنب زاوية بأربعة طرازات",
+      "text": "نصمم كنب الزاوية بالتوزيع والمقاسات والخامات المناسبة لكل مساحة.",
+      "items": [
+        {
+          "title": "كنب زاوية رمادي على شكل U",
+          "tag": "لوفت صناعي",
+          "color": "#6B6A68",
+          "image": {
+            "src": "images/collections/sectional-industrial-loft.webp",
+            "aspectRatio": "16:9",
+            "caption": "كنب زاوية رمادي على شكل U بين جدران الطوب والنوافذ الحديدية الواسعة"
+          }
+        },
+        {
+          "title": "جلسة زاوية بإطار خشبي محفور",
+          "tag": "استوائي",
+          "color": "#A8733F",
+          "image": {
+            "src": "images/collections/sectional-wooden-sunroom.webp",
+            "aspectRatio": "16:9",
+            "caption": "جلسة زاوية بإطار خشبي محفور ووسائد بيضاء وسط نوافذ تطل على الخضرة"
+          }
+        },
+        {
+          "title": "كنب زاوية أمام المدفأة",
+          "tag": "ريفي دافئ",
+          "color": "#55575A",
+          "image": {
+            "src": "images/collections/sectional-fireplace-lodge.webp",
+            "aspectRatio": "16:9",
+            "caption": "كنب زاوية واسع حول طاولة خشبية أمام مدفأة حجرية ومكتبة"
+          }
+        },
+        {
+          "title": "كنب زاوية معياري بجانب المكتبة",
+          "tag": "مكتبي هادئ",
+          "color": "#B9B2A6",
+          "image": {
+            "src": "images/collections/sectional-modular-library.webp",
+            "aspectRatio": "16:9",
+            "caption": "كنب زاوية معياري بذراع خشبية أمام مكتبة مضاءة بإضاءة دافئة"
+          }
+        }
+      ]
+    },
+    {
+      "style": "spotlight",
+      "kicker": "IN THE LIGHT",
+      "title": "خامات الكنبة في الإضاءة",
+      "text": "حرّك المؤشر أو إصبعك لتكشف ألوان الخامات… واستمر بالتمرير لتكتمل الإضاءة.",
+      "items": [
+        {
+          "title": "كنبة بيج بجانب نوافذ الحديقة",
+          "tag": "هادئ",
+          "color": "#E8DFCF",
+          "image": {
+            "src": "images/collections/sofa-beige-garden.webp",
+            "aspectRatio": "16:9",
+            "caption": "كنبة بيج بجانب نوافذ تطل على حديقة، مع طاولة خشبية دائرية"
+          }
+        }
+      ]
+    },
+    {
+      "style": "hotspots",
+      "kicker": "TV WALL · DETAILS",
+      "title": "جدار تلفاز بخشب الزان",
+      "text": "جدار تلفاز متكامل بخشب الزان. اضغط على النقاط لترى تفاصيل كل جزء.",
+      "items": [
+        {
+          "title": "جدار تلفاز بخشب الزان ورفوف مضيئة",
+          "tag": "خشب الزان",
+          "color": "#7A4A2A",
+          "image": {
+            "src": "images/collections/tv-walnut-lit-shelves.webp",
+            "aspectRatio": "16:9",
+            "caption": "جدار تلفاز بخشب الزان يتوسطه لوح أبيض بقروف سوداء، وحوله رفوف عرض مضاءة"
+          },
+          "spots": [
+            {
+              "x": 76,
+              "y": 34,
+              "title": "رفوف عرض مضاءة",
+              "text": "إضاءة LED مخفية أسفل كل رف تُظهر القطع المعروضة."
+            },
+            {
+              "x": 53,
+              "y": 38,
+              "title": "لوح بقروف سوداء",
+              "text": "قروف سوداء رفيعة على لوح أبيض خلف الشاشة."
+            },
+            {
+              "x": 50,
+              "y": 79,
+              "title": "وحدة تخزين سفلية",
+              "text": "أدراج وأبواب بتخزين تاتش تُخفي الأجهزة والأسلاك."
+            },
+            {
+              "x": 13,
+              "y": 46,
+              "title": "خزائن جانبية طولية",
+              "text": "خزائن بارتفاع الجدار على الجانبين للتخزين."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "coverflow",
+      "kicker": "TV WALLS",
+      "title": "أربعة تصاميم لجدار التلفاز",
+      "text": "أربعة تصاميم لجدار التلفاز بالخشب والحجر والإضاءة. بدّل بينها للمقارنة.",
+      "items": [
+        {
+          "title": "جدار بلياسة بيج وأعمدة زان",
+          "tag": "دافئ",
+          "color": "#8A6A4F",
+          "image": {
+            "src": "images/collections/tv-plaster-walnut-columns.webp",
+            "aspectRatio": "16:9",
+            "caption": "جدار بلياسة بيج بين عمودين من خشب الزان، مع وحدة معلّقة وإضاءة سفلية"
+          }
+        },
+        {
+          "title": "لوح مضيء ورفوف زجاجية",
+          "tag": "فاخر",
+          "color": "#D9C79E",
+          "image": {
+            "src": "images/collections/tv-onyx-glow-panel.webp",
+            "aspectRatio": "16:9",
+            "caption": "لوح منحوت بإضاءة خلفية ورفوف زجاجية مضاءة بجانب وحدة رمادية فاتحة"
+          }
+        },
+        {
+          "title": "جدار كريمي بتجاويف منحنية",
+          "tag": "ناعم",
+          "color": "#E3D6BF",
+          "image": {
+            "src": "images/collections/tv-cream-curved-niches.webp",
+            "aspectRatio": "16:9",
+            "caption": "جدار كريمي بتجاويف منحنية ورفوف مضاءة للقطع الديكورية حول الشاشة"
+          }
+        },
+        {
+          "title": "لوح رخام وشرائح خشبية",
+          "tag": "عصري",
+          "color": "#A08C7A",
+          "image": {
+            "src": "images/collections/tv-marble-slat-wall.webp",
+            "aspectRatio": "16:9",
+            "caption": "لوح بمظهر الرخام بإضاءة خلفية على جدار من الشرائح الخشبية، مع وحدة معلّقة"
+          }
+        }
+      ]
+    },
+    {
+      "style": "moodboard",
+      "kicker": "FAMILY ROOM · MOODBOARD",
+      "title": "كنبة كريمية في غرفة العائلة",
+      "text": "جلسة عائلية بكنب كريمي منجّد أمام مدفأة حجرية، ومعها لوحة الخامات والألوان.",
+      "items": [
+        {
+          "title": "كنبة كريمية في غرفة العائلة",
+          "tag": "كلاسيك",
+          "color": "#E6D9C3",
+          "image": {
+            "src": "images/collections/family-room-cream-sofa.webp",
+            "aspectRatio": "16:9",
+            "caption": "كنبة كريمية بأطراف بالشراشيب أمام مدفأة حجرية ونوافذ واسعة"
+          },
+          "spots": [
+            {
+              "x": 79,
+              "y": 80,
+              "title": "أطراف بالشراشيب",
+              "text": "تفصيلة كلاسيك أسفل الكنبة."
+            },
+            {
+              "x": 23,
+              "y": 52,
+              "title": "مدفأة حجرية",
+              "text": "حجر طبيعي وخشب حول المدفأة."
+            }
+          ],
+          "palette": [
+            {
+              "name": "كريمي",
+              "color": "#E6D9C3"
+            },
+            {
+              "name": "حجر",
+              "color": "#8E8172"
+            },
+            {
+              "name": "كتّان",
+              "color": "#E1CFBC"
+            },
+            {
+              "name": "زان",
+              "color": "#6E5440"
+            },
+            {
+              "name": "أوك",
+              "color": "#9A6A3E"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "cabinet",
+      "kicker": "BUILT-IN",
+      "title": "وحدات مدمجة بالمقاس",
+      "text": "وحدات مدمجة بمقاس الجدار: تخزين تاتش، وإضاءة مخفية، وتشطيب نظيف.",
+      "items": [
+        {
+          "title": "وحدة جدارية برفوف عرض مضاءة",
+          "tag": "وحدة جدارية",
+          "color": "#D8CBB4",
+          "image": {
+            "src": "images/collections/wall-unit-lit-shelves.webp",
+            "aspectRatio": "16:9",
+            "caption": "وحدة جدارية بلون الكتان برفوف عرض متدرّجة، وإضاءة LED مخفية خلف الألواح وأسفل الوحدة"
+          }
+        },
+        {
+          "title": "تسريحة معلّقة بمرآة مضاءة",
+          "tag": "تسريحة",
+          "color": "#C9C3BA",
+          "image": {
+            "src": "images/collections/dressing-table-round-mirror.webp",
+            "aspectRatio": "16:9",
+            "caption": "تسريحة معلّقة بمرآة دائرية مضاءة من الخلف، وأدراج بتخزين تاتش ومقعد دائري"
+          }
+        },
+        {
+          "title": "وحدة مطبخ جدارية مضاءة",
+          "tag": "مطبخ",
+          "color": "#9A9894",
+          "image": {
+            "src": "images/collections/kitchen-wall-unit-stone.webp",
+            "aspectRatio": "16:9",
+            "caption": "وحدة مطبخ بواجهات رمادية بمظهر الحجر، وتجويف خشبي مضاء وخزانة عرض زجاجية"
+          }
+        }
+      ]
+    },
+    {
+      "style": "swatches",
+      "kicker": "ONE MAJLIS · TWO MOODS",
+      "title": "مجلس بلونين للقماش",
+      "text": "التوزيع نفسه بلونين مختلفين للقماش. اختر العيّنة لترى الفرق.",
+      "items": [
+        {
+          "title": "قماش رمادي أزرق",
+          "tag": "رمادي أزرق",
+          "color": "#6F7A8C",
+          "image": {
+            "src": "images/collections/majlis-classic-grey-blue.webp",
+            "aspectRatio": "16:9",
+            "caption": "مجلس نيوكلاسيك بجدران مزخرفة بالبانوهات، وكنب أبيض، وكرسيان من المخمل الرمادي الأزرق أمام ستائر رمادية"
+          },
+          "spots": [
+            {
+              "x": 84,
+              "y": 70,
+              "title": "المخمل الرمادي الأزرق",
+              "text": "قماش الكراسي يحدد لون المجلس"
+            }
+          ],
+          "palette": [
+            {
+              "name": "عاجي الجدران",
+              "color": "#E7E4DF"
+            },
+            {
+              "name": "أبيض الكنب",
+              "color": "#E1DED9"
+            },
+            {
+              "name": "رمادي أزرق",
+              "color": "#6F7A8C"
+            },
+            {
+              "name": "رمادي الستائر",
+              "color": "#A7AAAF"
+            }
+          ]
+        },
+        {
+          "title": "قماش زيتوني",
+          "tag": "زيتوني",
+          "color": "#55603A",
+          "image": {
+            "src": "images/collections/majlis-classic-olive.webp",
+            "aspectRatio": "16:9",
+            "caption": "المجلس نفسه بكنب كريمي، وكرسيين من المخمل الزيتوني، وستائر ذهبية فاتحة"
+          },
+          "spots": [
+            {
+              "x": 20,
+              "y": 70,
+              "title": "المخمل الزيتوني",
+              "text": "قماش الكراسي يحدد لون المجلس"
+            }
+          ],
+          "palette": [
+            {
+              "name": "كريمي الجدران",
+              "color": "#EADFCB"
+            },
+            {
+              "name": "بيج الكنب",
+              "color": "#DCCDB4"
+            },
+            {
+              "name": "زيتوني",
+              "color": "#55603A"
+            },
+            {
+              "name": "ذهبي الستائر",
+              "color": "#C4A67E"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "style": "tiles",
+      "kicker": "MAJLIS",
+      "title": "مجالس بثلاثة طرازات",
+      "text": "نصمم المجلس مودرن بالخشب، أو مغربيًا بالنقوش، أو جلسة أرضية، وكلها بمقاس المساحة.",
+      "items": [
+        {
+          "title": "مجلس مودرن بخشب الزان",
+          "tag": "مودرن",
+          "color": "#B8A48C",
+          "image": {
+            "src": "images/collections/majlis-modern-walnut.webp",
+            "aspectRatio": "16:9",
+            "caption": "جلسات بيج متصلة على شكل حرف U، بقواعد وطاولات جانبية من خشب الزان"
+          }
+        },
+        {
+          "title": "مجلس مغربي بخشب محفور",
+          "tag": "مغربي",
+          "color": "#2F6F73",
+          "image": {
+            "src": "images/collections/majlis-moroccan-carved.webp",
+            "aspectRatio": "16:9",
+            "caption": "جلسة ممتدة بقواعد خشبية محفورة بنقوش مغربية، وطاولة رخامية بمقاعد صغيرة"
+          }
+        },
+        {
+          "title": "جلسة أرضية على شكل U",
+          "tag": "أرضي",
+          "color": "#C9A15A",
+          "image": {
+            "src": "images/collections/majlis-floor-palm.webp",
+            "aspectRatio": "16:9",
+            "caption": "جلسة أرضية منخفضة على شكل حرف U، بقماش مشجر بنقش النخيل والسدو، وصناديق جانبية من الخشب"
+          }
+        }
+      ]
+    },
+    {
+      "style": "mirror",
+      "kicker": "SYMMETRY",
+      "title": "غرفة معيشة بتصميم متناظر",
+      "text": "لكل قطعة قطعة مماثلة تقابلها، وفي المنتصف لوحة فنية.",
+      "items": [
+        {
+          "title": "غرفة معيشة متناظرة",
+          "tag": "مودرن",
+          "color": "#E6DCCB",
+          "image": {
+            "src": "images/collections/living-room-sunburst.webp",
+            "aspectRatio": "16:9",
+            "caption": "كنبتان كريميتان متقابلتان، وكرسيان في المنتصف أمام لوحة بنقش الشمس، وجدران من الشرائح الخشبية وإضاءة خطية مخفية"
+          }
+        }
+      ]
+    },
+    {
+      "style": "blueprint",
+      "kicker": "FROM PLAN TO WALL",
+      "title": "وحدة جدارية من المخطط إلى التنفيذ",
+      "text": "نرسم الوحدة بالخطوط والمقاسات، ثم ننفذها بالخشب والحجر والإضاءة. هنا المخطط وهنا التنفيذ.",
+      "items": [
+        {
+          "title": "وحدة جدارية بخشب الزان والحجر",
+          "tag": "وحدة جدارية",
+          "color": "#7A5E4C",
+          "image": {
+            "src": "images/collections/wall-unit-walnut-stone.webp",
+            "aspectRatio": "16:9",
+            "caption": "خزانة بكامل الارتفاع، ورفوف بإضاءة مخفية، وتجويف للشاشة، وخزانة معلّقة فوق قاعدة عائمة يعبرها عمود من الحجر الداكن"
+          },
+          "spots": [
+            {
+              "x": 22,
+              "y": 45,
+              "title": "خزانة بكامل الارتفاع",
+              "text": "أبواب بتخزين تاتش من الأرض حتى السقف"
+            },
+            {
+              "x": 38,
+              "y": 46,
+              "title": "رفوف مضيئة",
+              "text": "إضاءة LED دافئة مخفية داخل الرفوف"
+            },
+            {
+              "x": 55,
+              "y": 43,
+              "title": "تجويف الشاشة",
+              "text": "إطار خشبي غائر يحتضن الشاشة ويُخفي الأسلاك"
+            },
+            {
+              "x": 82,
+              "y": 38,
+              "title": "خزانة معلّقة",
+              "text": "خزانة معلّقة فوق القاعدة"
+            },
+            {
+              "x": 73,
+              "y": 74,
+              "title": "عمود حجري",
+              "text": "حجر داكن يعبر قاعدة معلّقة فوق الأرض"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -59,7 +59,7 @@ describe('service page HTML', () => {
   });
 
   it('links home, to its catalogues and to the other services', () => {
-    expect(html).toContain('href="../index.html"');
+    expect(html).toContain('href="../"');
     expect(html).toContain('href="../contact.html?service=');
     for (const href of page.catalogues) expect(html).toContain(`href="../${href}"`);
     for (const other of pages.slice(1)) expect(html).toContain(`href="${other.slug}.html"`);

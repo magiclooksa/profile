@@ -91,6 +91,15 @@ export function createStaticHandler(roots: () => readonly string[]) {
     }
     res.statusCode = 404;
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
+    // The site's own 404 page (built from pages/404.html), with the 404 status kept.
+    for (const root of roots()) {
+      const page = resolveStatic(root, '/404.html');
+      if (page) {
+        if (req.method === 'HEAD') { res.end(); return; }
+        createReadStream(page).pipe(res);
+        return;
+      }
+    }
     res.end('<!doctype html><html lang="ar" dir="rtl"><meta charset="utf-8"><title>غير موجود</title>'
       + '<body style="font-family:sans-serif;text-align:center;padding:4rem"><h1>الصفحة غير موجودة</h1>'
       + '<p><a href="/">العودة إلى الرئيسية</a></p></body></html>');

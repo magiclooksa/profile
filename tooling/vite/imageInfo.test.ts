@@ -18,6 +18,13 @@ describe('imageInfo', () => {
     expect(info?.height).toBeGreaterThan(0);
   });
 
+  it('reads lossy, lossless and extended WebP', () => {
+    const fixture = (name: string) => imageInfo(join(import.meta.dirname, 'fixtures', name));
+    expect(fixture('lossy.webp')).toEqual({ type: 'image/webp', width: 321, height: 123 });
+    expect(fixture('lossless.webp')).toEqual({ type: 'image/webp', width: 77, height: 55 });
+    expect(fixture('alpha.webp')).toEqual({ type: 'image/webp', width: 640, height: 360 });
+  });
+
   it('gives null for missing or other files', () => {
     expect(imageInfo(join(PUBLIC, 'nope.png'))).toBeNull();
     expect(imageInfo(join(PUBLIC, 'data/faq.json'))).toBeNull();

@@ -1,0 +1,308 @@
+{
+  "name": {
+    "ar": "غرفة الطعام الطويلة",
+    "en": "THE LONG OAK DINING ROOM"
+  },
+  "place": "غرفة الطعام",
+  "kicker": "مشروع غرفة طعام · تصميم وتنفيذ",
+  "tagline": "مودرن هادئ · أوك داكن وكراسٍ منجّدة",
+  "cover": {
+    "src": "images/projects/long-dining-room/cover.webp",
+    "ratio": "16:9",
+    "caption": "غرفة الطعام بطاولتها الطويلة"
+  },
+  "intro": {
+    "lead": "غرفة طعام صنعنا طاولتها وكراسيها وكونسولها بالمقاس، لتتسع لعدد كبير من الضيوف على طاولة واحدة.",
+    "paragraphs": [
+      "الطاولة طويلة من خشب الأوك الداكن بعروق ظاهرة، بأطراف مستدقة وحواف مستديرة، ترتكز على قواعد خشبية مستطيلة.",
+      "حولها كراسٍ منجّدة بقماش كريمي، بظهر منحني يحيط بالجالس وأرجل خشبية داكنة.",
+      "وعلى الجدار كونسول من الخشب نفسه بسطح سميك على قاعدتين مستطيلتين."
+    ],
+    "words": [
+      {
+        "ar": "ضيافة",
+        "en": "Hospitality"
+      },
+      {
+        "ar": "خشب أوك",
+        "en": "Oak"
+      },
+      {
+        "ar": "تفصيل بالمقاس",
+        "en": "Made to measure"
+      },
+      {
+        "ar": "جلسة طعام",
+        "en": "Dining"
+      }
+    ],
+    "image": {
+      "src": "images/projects/long-dining-room/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "الكرسي بظهره المنحني"
+    },
+    "inset": {
+      "src": "images/projects/long-dining-room/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "عروق خشب الأوك على سطح الطاولة"
+    }
+  },
+  "materials": [
+    {
+      "id": "oak",
+      "name": "خشب الأوك الداكن",
+      "en": "Dark oak",
+      "color": "#4A2A1A",
+      "swatch": "images/projects/long-dining-room/material-oak.webp",
+      "note": "سطح الطاولة وقواعدها، وأرجل الكراسي، والكونسول."
+    },
+    {
+      "id": "fabric",
+      "name": "القماش الكريمي",
+      "en": "Cream upholstery",
+      "color": "#E6E0D4",
+      "swatch": "images/projects/long-dining-room/material-fabric.webp",
+      "note": "تنجيد الكراسي."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "main",
+      "name": "غرفة الطعام",
+      "en": "The dining room",
+      "intro": "غرفة طويلة بجدران مكسوّة بستائر بطيّات، وباب خشبي داكن، والطاولة في الوسط بطول الغرفة.",
+      "look": {
+        "image": {
+          "src": "images/projects/long-dining-room/dining-look-03.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة والكراسي حولها"
+        },
+        "spots": [
+          {
+            "x": 50,
+            "y": 55,
+            "product": "table"
+          },
+          {
+            "x": 25,
+            "y": 70,
+            "product": "chairs"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/long-dining-room/dining-g-04.webp",
+          "ratio": "3:4",
+          "caption": "الغرفة من المدخل",
+          "span": 4
+        },
+        {
+          "src": "images/projects/long-dining-room/dining-g-05.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة من الأعلى",
+          "span": 4
+        },
+        {
+          "src": "images/projects/long-dining-room/dining-g-06.webp",
+          "ratio": "3:4",
+          "caption": "صف الكراسي",
+          "span": 4
+        },
+        {
+          "src": "images/projects/long-dining-room/dining-g-07.webp",
+          "ratio": "16:9",
+          "caption": "الغرفة بالعرض",
+          "span": 8
+        },
+        {
+          "src": "images/projects/long-dining-room/dining-g-08.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة بطولها",
+          "span": 4
+        },
+        {
+          "src": "images/projects/long-dining-room/dining-g-09.webp",
+          "ratio": "3:4",
+          "caption": "سطح الطاولة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/long-dining-room/dining-g-10.webp",
+          "ratio": "3:4",
+          "caption": "طرف الطاولة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/long-dining-room/dining-g-11.webp",
+          "ratio": "3:4",
+          "caption": "الكونسول على الجدار",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/long-dining-room/dining-d-12.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي عن قرب",
+          "product": "chairs"
+        },
+        {
+          "src": "images/projects/long-dining-room/dining-d-13.webp",
+          "ratio": "3:4",
+          "caption": "حافة الكونسول",
+          "product": "console"
+        },
+        {
+          "src": "images/projects/long-dining-room/dining-d-14.webp",
+          "ratio": "3:4",
+          "caption": "طرف الطاولة المستدق",
+          "product": "table"
+        },
+        {
+          "src": "images/projects/long-dining-room/dining-d-15.webp",
+          "ratio": "3:4",
+          "caption": "ظهر الكرسي",
+          "product": "chairs"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "ثلاث قطع صُنعت بالمقاس: طاولة الطعام، والكراسي، والكونسول. افتح أي قطعة لترى صورها.",
+    "image": {
+      "src": "images/projects/long-dining-room/collection-16.webp",
+      "ratio": "16:9",
+      "caption": "الطاولة والكراسي"
+    }
+  },
+  "products": [
+    {
+      "id": "table",
+      "name": "طاولة الطعام",
+      "en": "Dining table",
+      "category": "طاولات",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "oak"
+      ],
+      "finish": "خشب أوك داكن بأطراف مستدقة",
+      "text": "طاولة طعام طويلة من خشب الأوك الداكن بعروق ظاهرة، بأطراف مستدقة وحواف مستديرة، على قواعد خشبية مستطيلة.",
+      "card": "images/projects/long-dining-room/card-table.webp",
+      "views": [
+        {
+          "src": "images/projects/long-dining-room/table-v-17.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة من الأعلى"
+        },
+        {
+          "src": "images/projects/long-dining-room/table-v-18.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة بطولها"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/long-dining-room/table-d-19.webp",
+          "ratio": "3:4",
+          "caption": "عروق الخشب"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/long-dining-room/table-i-20.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة في الغرفة"
+        }
+      ]
+    },
+    {
+      "id": "chairs",
+      "name": "كراسي الطعام",
+      "en": "Dining chairs",
+      "category": "كراسي",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "fabric",
+        "oak"
+      ],
+      "finish": "قماش كريمي بأرجل خشبية داكنة",
+      "text": "كراسٍ منجّدة بقماش كريمي بظهر منحني يحيط بالجالس، على أرجل خشبية داكنة.",
+      "card": "images/projects/long-dining-room/card-chairs.webp",
+      "views": [
+        {
+          "src": "images/projects/long-dining-room/chairs-v-21.webp",
+          "ratio": "3:4",
+          "caption": "الكراسي حول الطاولة"
+        },
+        {
+          "src": "images/projects/long-dining-room/chairs-v-22.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي من الجانب"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/long-dining-room/chairs-d-23.webp",
+          "ratio": "3:4",
+          "caption": "الظهر المنحني"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/long-dining-room/chairs-i-24.webp",
+          "ratio": "3:4",
+          "caption": "الكراسي في الغرفة"
+        }
+      ]
+    },
+    {
+      "id": "console",
+      "name": "الكونسول الجداري",
+      "en": "Wall console",
+      "category": "طاولات",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "oak"
+      ],
+      "finish": "خشب أوك داكن بسطح سميك",
+      "text": "كونسول على الجدار من خشب الأوك الداكن، بسطح سميك بحواف مستديرة على قاعدتين مستطيلتين.",
+      "card": "images/projects/long-dining-room/card-console.webp",
+      "views": [
+        {
+          "src": "images/projects/long-dining-room/console-v-25.webp",
+          "ratio": "3:4",
+          "caption": "الكونسول من الزاوية"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/long-dining-room/console-d-26.webp",
+          "ratio": "3:4",
+          "caption": "سطح الكونسول"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/long-dining-room/console-i-27.webp",
+          "ratio": "3:4",
+          "caption": "الكونسول في الغرفة"
+        }
+      ]
+    }
+  ],
+  "film": null,
+  "closing": {
+    "title": "تريد غرفة طعام مثل هذه؟",
+    "text": "نصمّم طاولة الطعام وكراسيها بمقاس غرفتك وعدد ضيوفك. أرسل لنا تفاصيل مساحتك ونبدأ."
+  }
+}

@@ -5,7 +5,7 @@
 import { closeSync, existsSync, openSync, readSync } from 'node:fs';
 
 export interface ImageInfo {
-  readonly type: 'image/png' | 'image/jpeg';
+  readonly type: 'image/png' | 'image/jpeg' | 'image/webp';
   readonly width: number;
   readonly height: number;
 }
@@ -43,11 +43,24 @@ function jpeg(b: Buffer): ImageInfo | null {
   return null;
 }
 
-/** The image's type and size, or null when the file is missing or not a PNG or JPEG. */
+/** WebP: the first chunk after the RIFF header holds the size, in one of three layouts. */
+function webp(b: Buffer): ImageInfo | null {
+  if (b.length < 30 || b.toString('ascii', 0, 4) !== 'RIFF' || b.toString('ascii', 8, 12) !== 'WEBP') return null;
+  const chunk = b.toString('ascii', 12, 16);
+  if (chunk === 'VP8 ') return { type: 'image/webp', width: b.readUInt16LE(26) & 0x3fff, height: b.readUInt16LE(28) & 0x3fff };
+  if (chunk === 'VP8L') {
+    const bits = b.readUInt32LE(21);
+    return { type: 'image/webp', width: (bits & 0x3fff) + 1, height: ((bits >> 14) & 0x3fff) + 1 };
+  }
+  if (chunk === 'VP8X') return { type: 'image/webp', width: b.readUIntLE(24, 3) + 1, height: b.readUIntLE(27, 3) + 1 };
+  return null;
+}
+
+/** The image's type and size, or null when the file is missing or not a PNG, JPEG or WebP. */
 export function imageInfo(file: string): ImageInfo | null {
   if (!existsSync(file)) return null;
   const head = readHead(file);
-  return png(head) ?? jpeg(head);
+  return png(head) ?? jpeg(head) ?? webp(head);
 }
 
 /** X shows a large card only for wide images; a square logo reads better as the small card. */

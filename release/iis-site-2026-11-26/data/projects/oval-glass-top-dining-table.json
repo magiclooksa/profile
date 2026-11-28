@@ -1,0 +1,245 @@
+{
+  "name": {
+    "ar": "طاولة الزجاج المضيئة",
+    "en": "THE LIT OVAL DINING TABLE"
+  },
+  "place": "غرفة الطعام",
+  "kicker": "مشروع طاولة طعام · تصميم وتنفيذ",
+  "tagline": "معاصر · زجاج وخشب وإضاءة مخفية",
+  "cover": {
+    "src": "images/projects/oval-glass-top-dining-table/cover.webp",
+    "ratio": "16:9",
+    "caption": "الطاولة بشريط الإضاءة تحت الزجاج"
+  },
+  "intro": {
+    "lead": "طاولة طعام طويلة صنعناها بالمقاس لقاعة واسعة، تجمع الخشب والزجاج والإضاءة في قطعة واحدة.",
+    "paragraphs": [
+      "سطح الطاولة بيضاوي من الخشب، يغطيه لوح زجاج شفاف، وتحت الزجاج شريط إضاءة مخفية يرسم شكل الطاولة. حافة السطح مكسوّة بشرائح خشبية رأسية، وترتكز الطاولة على قواعد أسطوانية.",
+      "حولها كراسٍ بظهر منحني منجّد بقماش بيج، بإطار خشبي رفيع يلتف حول الظهر، وأرجل خشبية."
+    ],
+    "words": [
+      {
+        "ar": "إضاءة مخفية",
+        "en": "Hidden lighting"
+      },
+      {
+        "ar": "زجاج وخشب",
+        "en": "Glass & wood"
+      },
+      {
+        "ar": "تفصيل بالمقاس",
+        "en": "Made to measure"
+      },
+      {
+        "ar": "ضيافة",
+        "en": "Hospitality"
+      }
+    ],
+    "image": {
+      "src": "images/projects/oval-glass-top-dining-table/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "الكرسي بإطاره الخشبي"
+    },
+    "inset": {
+      "src": "images/projects/oval-glass-top-dining-table/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "الإضاءة تحت الزجاج والحافة المضلّعة"
+    }
+  },
+  "materials": [
+    {
+      "id": "wood",
+      "name": "الخشب",
+      "en": "Wood",
+      "color": "#8A5A33",
+      "swatch": "images/projects/oval-glass-top-dining-table/material-wood.webp",
+      "note": "سطح الطاولة وحافتها المضلّعة وقواعدها، وإطار الكراسي."
+    },
+    {
+      "id": "glass",
+      "name": "الزجاج الشفاف",
+      "en": "Clear glass",
+      "color": "#9C7A55",
+      "swatch": "images/projects/oval-glass-top-dining-table/material-glass.webp",
+      "note": "لوح يغطي سطح الطاولة، وتحته شريط الإضاءة."
+    },
+    {
+      "id": "fabric",
+      "name": "القماش البيج",
+      "en": "Beige upholstery",
+      "color": "#CDBFA8",
+      "swatch": "images/projects/oval-glass-top-dining-table/material-fabric.webp",
+      "note": "تنجيد الكراسي."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "main",
+      "name": "غرفة الطعام",
+      "en": "The dining room",
+      "intro": "قاعة بنوافذ مقوسة وأبواب بإطارات داكنة وسقف بإضاءة مخفية، والطاولة في الوسط بطول القاعة.",
+      "look": {
+        "image": {
+          "src": "images/projects/oval-glass-top-dining-table/main-look-03.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة والكراسي في القاعة"
+        },
+        "spots": [
+          {
+            "x": 45,
+            "y": 55,
+            "product": "table"
+          },
+          {
+            "x": 30,
+            "y": 70,
+            "product": "chairs"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/oval-glass-top-dining-table/main-g-04.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة من الطرف",
+          "span": 4
+        },
+        {
+          "src": "images/projects/oval-glass-top-dining-table/main-g-05.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة بطولها",
+          "span": 4
+        },
+        {
+          "src": "images/projects/oval-glass-top-dining-table/main-g-06.webp",
+          "ratio": "3:4",
+          "caption": "الكراسي على جانب الطاولة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/oval-glass-top-dining-table/main-g-07.webp",
+          "ratio": "3:4",
+          "caption": "صف الكراسي",
+          "span": 4
+        },
+        {
+          "src": "images/projects/oval-glass-top-dining-table/main-g-08.webp",
+          "ratio": "3:4",
+          "caption": "القاعة كاملة",
+          "span": 4
+        },
+        {
+          "src": "images/projects/oval-glass-top-dining-table/main-g-09.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة بالإضاءة",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/oval-glass-top-dining-table/main-d-10.webp",
+          "ratio": "3:4",
+          "caption": "طرف الطاولة والإضاءة",
+          "product": "table"
+        },
+        {
+          "src": "images/projects/oval-glass-top-dining-table/main-d-11.webp",
+          "ratio": "3:4",
+          "caption": "شريط الإضاءة تحت الزجاج",
+          "product": "table"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "قطعتان صُنعتا بالمقاس: الطاولة والكراسي. افتح أي قطعة لترى صورها.",
+    "image": {
+      "src": "images/projects/oval-glass-top-dining-table/collection-12.webp",
+      "ratio": "16:9",
+      "caption": "الطاولة والكراسي"
+    }
+  },
+  "products": [
+    {
+      "id": "table",
+      "name": "طاولة الطعام",
+      "en": "Dining table",
+      "category": "طاولات",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "wood",
+        "glass"
+      ],
+      "finish": "خشب بسطح زجاج وإضاءة مخفية وحافة مضلّعة",
+      "text": "طاولة طعام بيضاوية طويلة من الخشب، بلوح زجاج شفاف فوق السطح وشريط إضاءة مخفي تحته، وحافة بشرائح خشبية رأسية، على قواعد أسطوانية.",
+      "card": "images/projects/oval-glass-top-dining-table/card-table.webp",
+      "views": [
+        {
+          "src": "images/projects/oval-glass-top-dining-table/table-v-13.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة في القاعة"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/oval-glass-top-dining-table/table-d-14.webp",
+          "ratio": "3:4",
+          "caption": "السطح والحافة"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/oval-glass-top-dining-table/table-i-15.webp",
+          "ratio": "3:4",
+          "caption": "الطاولة والكراسي"
+        }
+      ]
+    },
+    {
+      "id": "chairs",
+      "name": "الكراسي",
+      "en": "Chairs",
+      "category": "كراسي",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "fabric",
+        "wood"
+      ],
+      "finish": "قماش بيج بإطار خشبي",
+      "text": "كراسٍ بظهر منحني منجّد بقماش بيج، بإطار خشبي رفيع حول الظهر وأرجل خشبية.",
+      "card": "images/projects/oval-glass-top-dining-table/card-chairs.webp",
+      "views": [
+        {
+          "src": "images/projects/oval-glass-top-dining-table/chairs-v-16.webp",
+          "ratio": "3:4",
+          "caption": "الكراسي على جانب الطاولة"
+        }
+      ],
+      "details": [],
+      "inSitu": [
+        {
+          "src": "images/projects/oval-glass-top-dining-table/chairs-i-17.webp",
+          "ratio": "3:4",
+          "caption": "الكرسي أمام الطاولة"
+        }
+      ]
+    }
+  ],
+  "film": {
+    "src": "videos/projects/oval-glass-top-dining-table.mp4",
+    "poster": "images/projects/oval-glass-top-dining-table/film-poster.webp",
+    "ratio": "9:16",
+    "title": "جولة حول الطاولة",
+    "caption": "لقطة تمر على الطاولة والكراسي في القاعة."
+  },
+  "closing": {
+    "title": "تريد طاولة مثل هذه؟",
+    "text": "نصمّم طاولات الطعام بالمقاس ونضيف لها الإضاءة والزجاج حسب مساحتك. أرسل لنا تفاصيل مشروعك ونبدأ."
+  }
+}

@@ -1,0 +1,362 @@
+{
+  "name": {
+    "ar": "المجلس الأرضي العاجي",
+    "en": "THE IVORY FLOOR MAJLIS"
+  },
+  "place": "المجلس",
+  "kicker": "مشروع مجلس · تصميم وتنفيذ",
+  "tagline": "جلسة أرضية معاصرة · عاجي وخشب داكن",
+  "cover": {
+    "src": "images/projects/white-floor-majlis-rust-cushions/cover.webp",
+    "ratio": "16:9",
+    "caption": "الجلسة الأرضية على شكل U"
+  },
+  "intro": {
+    "lead": "مجلس بجلسة أرضية منخفضة صنعناها بمقاس الغرفة على شكل U، تجمع القماش العاجي الفاتح مع الخشب الداكن.",
+    "paragraphs": [
+      "الجلسة بمقاعد ومساند بقماش عاجي بحبكة رفيعة على الحواف، ترتكز على قاعدة خشبية داكنة منخفضة تظهر تحت المقعد بخط متصل.",
+      "في أطراف الجلسة أذرع خشبية صندوقية بارتفاع المسند، وفي الزوايا طاولات مربعة من الخشب نفسه بسطح زجاج أسود.",
+      "وعلى الجدار المقابل كونسول خشبي منخفض ورف معلّق من الخشب الداكن نفسه."
+    ],
+    "words": [
+      {
+        "ar": "جلسة أرضية",
+        "en": "Floor seating"
+      },
+      {
+        "ar": "خشب داكن",
+        "en": "Dark wood"
+      },
+      {
+        "ar": "تفصيل بالمقاس",
+        "en": "Made to measure"
+      },
+      {
+        "ar": "ضيافة",
+        "en": "Hospitality"
+      }
+    ],
+    "image": {
+      "src": "images/projects/white-floor-majlis-rust-cushions/intro-01.webp",
+      "ratio": "3:4",
+      "caption": "الذراع الخشبية الصندوقية"
+    },
+    "inset": {
+      "src": "images/projects/white-floor-majlis-rust-cushions/intro-02.webp",
+      "ratio": "1:1",
+      "caption": "طاولة الزاوية بين الجلستين"
+    }
+  },
+  "materials": [
+    {
+      "id": "fabric",
+      "name": "القماش العاجي",
+      "en": "Ivory fabric",
+      "color": "#E8E3DA",
+      "swatch": "images/projects/white-floor-majlis-rust-cushions/material-fabric.webp",
+      "note": "قماش المقاعد والمساند بحبكة رفيعة."
+    },
+    {
+      "id": "wood",
+      "name": "الخشب الداكن",
+      "en": "Dark wood",
+      "color": "#3A1E19",
+      "swatch": "images/projects/white-floor-majlis-rust-cushions/material-wood.webp",
+      "note": "القاعدة، والأذرع الصندوقية، وطاولات الزوايا، والكونسول، والرف المعلّق."
+    },
+    {
+      "id": "glass",
+      "name": "الزجاج الأسود",
+      "en": "Black glass",
+      "color": "#141414",
+      "swatch": "images/projects/white-floor-majlis-rust-cushions/material-glass.webp",
+      "note": "سطح طاولات الزوايا والأذرع."
+    }
+  ],
+  "spaces": [
+    {
+      "id": "main",
+      "name": "المجلس",
+      "en": "The majlis",
+      "intro": "غرفة بجدران كريمية وإضاءة سقف على مسار، والجلسة على ثلاثة جدران حول وسط مفتوح، والكونسول على الجدار الرابع.",
+      "look": {
+        "image": {
+          "src": "images/projects/white-floor-majlis-rust-cushions/main-look-03.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة على جدار المجلس"
+        },
+        "spots": [
+          {
+            "x": 50,
+            "y": 58,
+            "product": "seating"
+          },
+          {
+            "x": 10,
+            "y": 60,
+            "product": "ends"
+          },
+          {
+            "x": 40,
+            "y": 55,
+            "product": "cushions"
+          }
+        ]
+      },
+      "gallery": [
+        {
+          "src": "images/projects/white-floor-majlis-rust-cushions/main-g-04.webp",
+          "ratio": "16:9",
+          "caption": "الجلسة على شكل U",
+          "span": 8
+        },
+        {
+          "src": "images/projects/white-floor-majlis-rust-cushions/main-g-05.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة في صدر المجلس",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-floor-majlis-rust-cushions/main-g-06.webp",
+          "ratio": "16:9",
+          "caption": "المجلس من الزاوية",
+          "span": 8
+        },
+        {
+          "src": "images/projects/white-floor-majlis-rust-cushions/main-g-07.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الزاوية بين الجلستين",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-floor-majlis-rust-cushions/main-g-08.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة بطولها",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-floor-majlis-rust-cushions/main-g-09.webp",
+          "ratio": "3:4",
+          "caption": "المجلس من الطرف",
+          "span": 4
+        },
+        {
+          "src": "images/projects/white-floor-majlis-rust-cushions/main-g-10.webp",
+          "ratio": "16:9",
+          "caption": "الجلسة والذراع الخشبية",
+          "span": 8
+        },
+        {
+          "src": "images/projects/white-floor-majlis-rust-cushions/main-g-11.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة على الجدار الجانبي",
+          "span": 4
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/white-floor-majlis-rust-cushions/main-d-12.webp",
+          "ratio": "3:4",
+          "caption": "الذراع الصندوقية بسطحها",
+          "product": "ends"
+        },
+        {
+          "src": "images/projects/white-floor-majlis-rust-cushions/main-d-13.webp",
+          "ratio": "3:4",
+          "caption": "المقعد والذراع",
+          "product": "seating"
+        },
+        {
+          "src": "images/projects/white-floor-majlis-rust-cushions/main-d-14.webp",
+          "ratio": "3:4",
+          "caption": "المقعد بحبكته",
+          "product": "seating"
+        },
+        {
+          "src": "images/projects/white-floor-majlis-rust-cushions/main-d-15.webp",
+          "ratio": "3:4",
+          "caption": "الكونسول والرف المعلّق",
+          "product": "console"
+        }
+      ]
+    }
+  ],
+  "collection": {
+    "intro": "خمس قطع صُنعت لهذا المجلس: الجلسة الأرضية، والأذرع الصندوقية، وطاولات الزوايا، والكونسول، والمخدات.",
+    "image": {
+      "src": "images/projects/white-floor-majlis-rust-cushions/collection-16.webp",
+      "ratio": "16:9",
+      "caption": "المجلس كاملًا"
+    }
+  },
+  "products": [
+    {
+      "id": "seating",
+      "name": "الجلسة الأرضية",
+      "en": "Floor seating",
+      "category": "مجالس",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "fabric",
+        "wood"
+      ],
+      "finish": "قماش عاجي على قاعدة خشبية داكنة",
+      "text": "جلسة أرضية منخفضة على شكل U، بمقاعد ومساند بقماش عاجي بحبكة رفيعة، على قاعدة خشبية داكنة متصلة.",
+      "card": "images/projects/white-floor-majlis-rust-cushions/card-seating.webp",
+      "views": [
+        {
+          "src": "images/projects/white-floor-majlis-rust-cushions/seating-v-17.webp",
+          "ratio": "3:4",
+          "caption": "المقعد والمسند"
+        },
+        {
+          "src": "images/projects/white-floor-majlis-rust-cushions/seating-v-18.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة من الزاوية"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/white-floor-majlis-rust-cushions/seating-d-19.webp",
+          "ratio": "3:4",
+          "caption": "حافة المقعد والقاعدة"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/white-floor-majlis-rust-cushions/seating-i-20.webp",
+          "ratio": "3:4",
+          "caption": "الجلسة في المجلس"
+        }
+      ]
+    },
+    {
+      "id": "ends",
+      "name": "الأذرع الصندوقية",
+      "en": "Box arms",
+      "category": "أعمال خشبية",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "wood",
+        "glass"
+      ],
+      "finish": "خشب داكن بسطح زجاج أسود",
+      "text": "أذرع خشبية صندوقية في أطراف الجلسة، بارتفاع المسند، بسطح زجاج أسود يمكن وضع الضيافة عليه.",
+      "card": "images/projects/white-floor-majlis-rust-cushions/card-ends.webp",
+      "views": [
+        {
+          "src": "images/projects/white-floor-majlis-rust-cushions/ends-v-21.webp",
+          "ratio": "3:4",
+          "caption": "الذراع من الجانب"
+        }
+      ],
+      "details": [
+        {
+          "src": "images/projects/white-floor-majlis-rust-cushions/ends-d-22.webp",
+          "ratio": "3:4",
+          "caption": "سطح الذراع"
+        }
+      ],
+      "inSitu": [
+        {
+          "src": "images/projects/white-floor-majlis-rust-cushions/ends-i-23.webp",
+          "ratio": "3:4",
+          "caption": "الذراع في طرف الجلسة"
+        }
+      ]
+    },
+    {
+      "id": "tables",
+      "name": "طاولات الزوايا",
+      "en": "Corner tables",
+      "category": "طاولات",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "wood",
+        "glass"
+      ],
+      "finish": "خشب داكن بسطح زجاج أسود",
+      "text": "طاولات مربعة في زوايا الجلسة، من الخشب الداكن بسطح زجاج أسود، بارتفاع المقعد.",
+      "card": "images/projects/white-floor-majlis-rust-cushions/card-tables.webp",
+      "views": [
+        {
+          "src": "images/projects/white-floor-majlis-rust-cushions/tables-v-24.webp",
+          "ratio": "3:4",
+          "caption": "طاولة الزاوية"
+        }
+      ],
+      "details": [],
+      "inSitu": []
+    },
+    {
+      "id": "console",
+      "name": "الكونسول والرف",
+      "en": "Console & shelf",
+      "category": "تخزين",
+      "spaces": [
+        "main"
+      ],
+      "custom": true,
+      "materials": [
+        "wood"
+      ],
+      "finish": "خشب داكن",
+      "text": "كونسول خشبي منخفض على الجدار، وفوقه رف معلّق رفيع من الخشب نفسه.",
+      "card": "images/projects/white-floor-majlis-rust-cushions/card-console.webp",
+      "views": [
+        {
+          "src": "images/projects/white-floor-majlis-rust-cushions/console-v-25.webp",
+          "ratio": "3:4",
+          "caption": "الكونسول والرف"
+        }
+      ],
+      "details": [],
+      "inSitu": []
+    },
+    {
+      "id": "cushions",
+      "name": "المخدات",
+      "en": "Cushions",
+      "category": "مفروشات",
+      "spaces": [
+        "main"
+      ],
+      "custom": false,
+      "materials": [
+        "fabric"
+      ],
+      "finish": "قماش مخمل وقماش عاجي",
+      "text": "مخدات من المخمل بحواف رفيعة، وأخرى عاجية ومستديرة، على طول الجلسة.",
+      "card": "images/projects/white-floor-majlis-rust-cushions/card-cushions.webp",
+      "views": [
+        {
+          "src": "images/projects/white-floor-majlis-rust-cushions/cushions-v-26.webp",
+          "ratio": "3:4",
+          "caption": "مخدة على الجلسة"
+        }
+      ],
+      "details": [],
+      "inSitu": []
+    }
+  ],
+  "film": {
+    "src": "videos/projects/white-floor-majlis-rust-cushions.mp4",
+    "poster": "images/projects/white-floor-majlis-rust-cushions/film-poster.webp",
+    "ratio": "9:16",
+    "title": "جولة في المجلس",
+    "caption": "لقطة تمر على الجلسة الأرضية حول المجلس."
+  },
+  "closing": {
+    "title": "تريد مجلسًا مثل هذا؟",
+    "text": "نصمّم الجلسة الأرضية وأطرافها الخشبية بمقاس غرفتك. أرسل لنا تفاصيل مساحتك ونبدأ."
+  }
+}

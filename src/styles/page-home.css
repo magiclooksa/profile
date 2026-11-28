@@ -5,3 +5,9 @@
 @import "./sections.css";
 @import "./showcase.css";
 @import "./search.css";
+
+/* The floating WhatsApp button, as on the inner pages (site.css). */
+.wa-float { position: fixed; z-index: 15; inset-block-end: max(18px, env(safe-area-inset-bottom)); inset-inline-end: 18px; display: grid; place-items: center; width: 54px; height: 54px; border: 1px solid var(--ml-bronze); border-radius: 50%; background: var(--ml-green); color: var(--ml-beige-20); box-shadow: 0 6px 20px #253a354d }
+.wa-float .ico { width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round }
+.wa-float:hover { background: var(--ml-green-80) }
+@media print { .wa-float { display: none } }
